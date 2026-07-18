@@ -1,15 +1,30 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
   <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#eef1fb"/><stop offset="1" stop-color="#a8b3e6"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3b82f6"/>
+      <stop offset="1" stop-color="#1d4ed8"/>
+    </linearGradient>
+    <linearGradient id="fl" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fde68a"/>
+      <stop offset="1" stop-color="#f59e0b"/>
     </linearGradient>
   </defs>
-  <rect width="64" height="64" rx="8" fill="#05070d"/>
-  <circle cx="14" cy="12" r="1.6" fill="#4bb8ff" opacity=".8"/>
-  <circle cx="50" cy="18" r="1.2" fill="#eef1fb" opacity=".7"/>
-  <circle cx="45" cy="50" r="1.4" fill="#55617e" opacity=".8"/>
-  <path d="M32 6c8 4.2 12.6 13 12.6 21.6 0 3.4-.6 6.8-1.8 9.9l5.2 7.8-8.3-1.4a20.6 20.6 0 0 1-15.4 0l-8.3 1.4 5.2-7.8a26.6 26.6 0 0 1-1.8-9.9C19.4 19 24 10.2 32 6Z" fill="url(#g)"/>
-  <circle cx="32" cy="24" r="4.6" fill="#05070d"/>
-  <circle cx="32" cy="24" r="2.6" fill="#4bb8ff"/>
-  <path d="M32 44c2.4 3 3.2 6.6 2.6 10.4-5-1-8-3.6-9-7.4 2-1.6 4.2-2.6 6.4-3Z" fill="#ffe81f"/>
+  <rect width="64" height="64" rx="15" fill="url(#bg)"/>
+  <!-- earth horizon arc, bottom-left -->
+  <circle cx="2" cy="66" r="21" fill="#ffffff" opacity=".14"/>
+  <circle cx="2" cy="66" r="16.5" fill="#ffffff" opacity=".10"/>
+  <!-- sparkle + stars -->
+  <path d="M50 11.5 l1.4 3.4 3.4 1.4 -3.4 1.4 -1.4 3.4 -1.4 -3.4 -3.4 -1.4 3.4 -1.4 Z" fill="#ffffff" opacity=".95"/>
+  <circle cx="13" cy="15" r="1.3" fill="#ffffff" opacity=".8"/>
+  <circle cx="55" cy="34" r="1.1" fill="#ffffff" opacity=".55"/>
+  <!-- rocket, climbing at 45° -->
+  <g transform="rotate(45 32 32)">
+    <path d="M32 10.5 C36.4 15 38 19.8 38 26 L38 35.5 C38 38.6 35.6 40.5 32 40.5 C28.4 40.5 26 38.6 26 35.5 L26 26 C26 19.8 27.6 15 32 10.5 Z" fill="#ffffff"/>
+    <circle cx="32" cy="24.5" r="3.4" fill="#1d4ed8"/>
+    <circle cx="32" cy="24.5" r="1.5" fill="#93c5fd"/>
+    <path d="M26 29.5 L19.5 40.5 L26 37.5 Z" fill="#dbeafe"/>
+    <path d="M38 29.5 L44.5 40.5 L38 37.5 Z" fill="#dbeafe"/>
+    <path d="M32 42 C34.6 45.4 34.8 49.6 32 54.5 C29.2 49.6 29.4 45.4 32 42 Z" fill="url(#fl)"/>
+    <path d="M32 43.5 C33.4 45.6 33.5 48 32 50.8 C30.5 48 30.6 45.6 32 43.5 Z" fill="#ffffff" opacity=".85"/>
+  </g>
 </svg>
