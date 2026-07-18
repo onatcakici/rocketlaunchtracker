@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-18T15:36:18Z",
+  "generated": "2026-07-18T21:08:48Z",
   "sample": false,
   "count": 60,
   "results": [
@@ -10,9 +10,9 @@
       "window_start": "2026-07-18T05:00:00Z",
       "window_end": "2026-07-18T09:00:00Z",
       "status": {
-        "abbrev": "Deployed",
-        "name": "Payload Deployed",
-        "description": "Deployment of the payload(s) has been confirmed."
+        "abbrev": "Success",
+        "name": "Launch Successful",
+        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
       },
       "probability": null,
       "provider": "Skyroot Aerospace",
