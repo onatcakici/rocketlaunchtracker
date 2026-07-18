@@ -1,0 +1,537 @@
+{
+ "generated": "2026-07-17T18:00:00Z",
+ "sample": true,
+ "count": 15,
+ "results": [
+  {
+   "id": "sample-1",
+   "name": "Falcon 9 Block 5 | Starlink Group 12-31",
+   "net": "2026-07-18T03:00:00Z",
+   "window_start": "2026-07-18T03:00:00Z",
+   "window_end": "2026-07-18T07:00:00Z",
+   "status": {
+    "abbrev": "Go",
+    "name": "Go for Launch",
+    "description": null
+   },
+   "probability": 90,
+   "provider": "SpaceX",
+   "rocket": "Falcon 9 Block 5",
+   "mission": {
+    "name": "Starlink Group 12-31",
+    "description": "A batch of Starlink v2 Mini satellites headed to the constellation providing global broadband internet.",
+    "type": "Communications",
+    "orbit": "Low Earth Orbit"
+   },
+   "pad": {
+    "name": "SLC-40",
+    "map_url": null,
+    "location": {
+     "name": "Cape Canaveral SFS, FL",
+     "country_code": "USA"
+    },
+    "latitude": "28.5619",
+    "longitude": "-80.5772"
+   },
+   "image": null,
+   "webcasts": [
+    {
+     "title": "Official webcast",
+     "url": "https://www.youtube.com/spacex"
+    }
+   ],
+   "webcast_live": false
+  },
+  {
+   "id": "sample-2",
+   "name": "Falcon 9 Block 5 | Starlink Group 17-8",
+   "net": "2026-07-18T22:00:00Z",
+   "window_start": "2026-07-18T22:00:00Z",
+   "window_end": "2026-07-19T01:00:00Z",
+   "status": {
+    "abbrev": "Go",
+    "name": "Go for Launch",
+    "description": null
+   },
+   "probability": 85,
+   "provider": "SpaceX",
+   "rocket": "Falcon 9 Block 5",
+   "mission": {
+    "name": "Starlink Group 17-8",
+    "description": "West-coast Starlink delivery to a polar shell of the broadband constellation.",
+    "type": "Communications",
+    "orbit": "Low Earth Orbit"
+   },
+   "pad": {
+    "name": "SLC-4E",
+    "map_url": null,
+    "location": {
+     "name": "Vandenberg SFB, CA",
+     "country_code": "USA"
+    },
+    "latitude": "34.632",
+    "longitude": "-120.6107"
+   },
+   "image": null,
+   "webcasts": [],
+   "webcast_live": false
+  },
+  {
+   "id": "sample-3",
+   "name": "Atlas V 551 | Project Kuiper KA-12",
+   "net": "2026-07-20T07:00:00Z",
+   "window_start": "2026-07-20T07:00:00Z",
+   "window_end": "2026-07-20T09:00:00Z",
+   "status": {
+    "abbrev": "Go",
+    "name": "Go for Launch",
+    "description": null
+   },
+   "probability": 75,
+   "provider": "United Launch Alliance",
+   "rocket": "Atlas V 551",
+   "mission": {
+    "name": "Project Kuiper KA-12",
+    "description": "Another full stack of Amazon's Kuiper broadband satellites rides ULA's most powerful Atlas V configuration.",
+    "type": "Communications",
+    "orbit": "Low Earth Orbit"
+   },
+   "pad": {
+    "name": "SLC-41",
+    "map_url": null,
+    "location": {
+     "name": "Cape Canaveral SFS, FL",
+     "country_code": "USA"
+    },
+    "latitude": "28.583",
+    "longitude": "-80.5832"
+   },
+   "image": null,
+   "webcasts": [
+    {
+     "title": "Official webcast",
+     "url": "https://www.ulalaunch.com"
+    }
+   ],
+   "webcast_live": false
+  },
+  {
+   "id": "sample-4",
+   "name": "Electron | Electron | Synspective 7",
+   "net": "2026-07-21T16:00:00Z",
+   "window_start": "2026-07-21T16:00:00Z",
+   "window_end": "2026-07-21T17:00:00Z",
+   "status": {
+    "abbrev": "TBC",
+    "name": "To Be Confirmed",
+    "description": null
+   },
+   "probability": null,
+   "provider": "Rocket Lab",
+   "rocket": "Electron",
+   "mission": {
+    "name": "Electron | Synspective 7",
+    "description": "Rocket Lab launches a SAR imaging satellite for Japanese operator Synspective from New Zealand.",
+    "type": "Earth Observation",
+    "orbit": "Sun-Synchronous Orbit"
+   },
+   "pad": {
+    "name": "LC-1B",
+    "map_url": null,
+    "location": {
+     "name": "Mahia Peninsula",
+     "country_code": "NZL"
+    },
+    "latitude": "-39.2621",
+    "longitude": "177.8649"
+   },
+   "image": null,
+   "webcasts": [],
+   "webcast_live": false
+  },
+  {
+   "id": "sample-5",
+   "name": "New Glenn | New Glenn | ESCAPADE Follow-on",
+   "net": "2026-07-23T02:00:00Z",
+   "window_start": "2026-07-23T02:00:00Z",
+   "window_end": "2026-07-23T05:00:00Z",
+   "status": {
+    "abbrev": "TBC",
+    "name": "To Be Confirmed",
+    "description": null
+   },
+   "probability": null,
+   "provider": "Blue Origin",
+   "rocket": "New Glenn",
+   "mission": {
+    "name": "New Glenn | ESCAPADE Follow-on",
+    "description": "Blue Origin's heavy-lift New Glenn carries a NASA small-satellite science payload toward Mars.",
+    "type": "Planetary Science",
+    "orbit": "Trans-Mars Injection"
+   },
+   "pad": {
+    "name": "LC-36",
+    "map_url": null,
+    "location": {
+     "name": "Cape Canaveral SFS, FL",
+     "country_code": "USA"
+    },
+    "latitude": "28.4595",
+    "longitude": "-80.5378"
+   },
+   "image": null,
+   "webcasts": [],
+   "webcast_live": false
+  },
+  {
+   "id": "sample-6",
+   "name": "Starship | Starship Flight Test",
+   "net": "2026-07-24T11:00:00Z",
+   "window_start": "2026-07-24T11:00:00Z",
+   "window_end": "2026-07-24T13:00:00Z",
+   "status": {
+    "abbrev": "TBD",
+    "name": "To Be Determined",
+    "description": null
+   },
+   "probability": null,
+   "provider": "SpaceX",
+   "rocket": "Starship",
+   "mission": {
+    "name": "Starship Flight Test",
+    "description": "Full-stack Starship integrated flight test: booster catch attempt at the tower and a targeted splashdown of the ship.",
+    "type": "Test Flight",
+    "orbit": "Suborbital"
+   },
+   "pad": {
+    "name": "Orbital Launch Mount A",
+    "map_url": null,
+    "location": {
+     "name": "Starbase, TX",
+     "country_code": "USA"
+    },
+    "latitude": "25.9971",
+    "longitude": "-97.1554"
+   },
+   "image": null,
+   "webcasts": [
+    {
+     "title": "Official webcast",
+     "url": "https://www.spacex.com/launches"
+    }
+   ],
+   "webcast_live": false
+  },
+  {
+   "id": "sample-7",
+   "name": "Ariane 62 | Ariane 6 | Galileo L14",
+   "net": "2026-07-25T20:30:00Z",
+   "window_start": "2026-07-25T20:30:00Z",
+   "window_end": "2026-07-25T21:30:00Z",
+   "status": {
+    "abbrev": "Go",
+    "name": "Go for Launch",
+    "description": null
+   },
+   "probability": null,
+   "provider": "Arianespace",
+   "rocket": "Ariane 62",
+   "mission": {
+    "name": "Ariane 6 | Galileo L14",
+    "description": "Europe's Ariane 6 lofts the next pair of Galileo navigation satellites.",
+    "type": "Navigation",
+    "orbit": "Medium Earth Orbit"
+   },
+   "pad": {
+    "name": "ELA-4",
+    "map_url": null,
+    "location": {
+     "name": "Kourou, French Guiana",
+     "country_code": "GUF"
+    },
+    "latitude": "5.256",
+    "longitude": "-52.775"
+   },
+   "image": null,
+   "webcasts": [],
+   "webcast_live": false
+  },
+  {
+   "id": "sample-8",
+   "name": "LVM3 | GSLV Mk III | Chandrayaan-4 TV-D2",
+   "net": "2026-07-27T14:00:00Z",
+   "window_start": "2026-07-27T14:00:00Z",
+   "window_end": "2026-07-27T14:00:00Z",
+   "status": {
+    "abbrev": "TBC",
+    "name": "To Be Confirmed",
+    "description": null
+   },
+   "probability": null,
+   "provider": "ISRO",
+   "rocket": "LVM3",
+   "mission": {
+    "name": "GSLV Mk III | Chandrayaan-4 TV-D2",
+    "description": "ISRO test flight supporting the Chandrayaan-4 lunar sample-return architecture.",
+    "type": "Test Flight",
+    "orbit": "Low Earth Orbit"
+   },
+   "pad": {
+    "name": "Second Launch Pad",
+    "map_url": null,
+    "location": {
+     "name": "Satish Dhawan Space Centre",
+     "country_code": "IND"
+    },
+    "latitude": "13.7331",
+    "longitude": "80.2354"
+   },
+   "image": null,
+   "webcasts": [],
+   "webcast_live": false
+  },
+  {
+   "id": "sample-9",
+   "name": "Vulcan VC4S | Vulcan | USSF-106",
+   "net": "2026-07-29T00:00:00Z",
+   "window_start": "2026-07-29T00:00:00Z",
+   "window_end": "2026-07-29T04:00:00Z",
+   "status": {
+    "abbrev": "TBD",
+    "name": "To Be Determined",
+    "description": null
+   },
+   "probability": null,
+   "provider": "United Launch Alliance",
+   "rocket": "Vulcan VC4S",
+   "mission": {
+    "name": "Vulcan | USSF-106",
+    "description": "National-security payload for the U.S. Space Force aboard ULA's Vulcan Centaur.",
+    "type": "Government/Top Secret",
+    "orbit": "Geostationary Transfer Orbit"
+   },
+   "pad": {
+    "name": "SLC-41",
+    "map_url": null,
+    "location": {
+     "name": "Cape Canaveral SFS, FL",
+     "country_code": "USA"
+    },
+    "latitude": "28.583",
+    "longitude": "-80.5832"
+   },
+   "image": null,
+   "webcasts": [],
+   "webcast_live": false
+  },
+  {
+   "id": "sample-10",
+   "name": "Falcon Heavy | Falcon Heavy | ViaSat-4",
+   "net": "2026-07-31T09:00:00Z",
+   "window_start": "2026-07-31T09:00:00Z",
+   "window_end": "2026-07-31T11:00:00Z",
+   "status": {
+    "abbrev": "TBC",
+    "name": "To Be Confirmed",
+    "description": null
+   },
+   "probability": null,
+   "provider": "SpaceX",
+   "rocket": "Falcon Heavy",
+   "mission": {
+    "name": "Falcon Heavy | ViaSat-4",
+    "description": "Triple-core Falcon Heavy delivers a high-throughput broadband satellite, with dual booster landings back at the Cape.",
+    "type": "Communications",
+    "orbit": "Geostationary Transfer Orbit"
+   },
+   "pad": {
+    "name": "LC-39A",
+    "map_url": null,
+    "location": {
+     "name": "Kennedy Space Center, FL",
+     "country_code": "USA"
+    },
+    "latitude": "28.6082",
+    "longitude": "-80.6041"
+   },
+   "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Falcon%20Heavy%20Demo%20Mission%20(40126461851).jpg?width=900",
+   "webcasts": [],
+   "webcast_live": false
+  },
+  {
+   "id": "sample-11",
+   "name": "H3-24 | H3 | HTV-X2",
+   "net": "2026-08-03T04:00:00Z",
+   "window_start": "2026-08-03T04:00:00Z",
+   "window_end": "2026-08-03T04:00:00Z",
+   "status": {
+    "abbrev": "Go",
+    "name": "Go for Launch",
+    "description": null
+   },
+   "probability": 80,
+   "provider": "JAXA",
+   "rocket": "H3-24",
+   "mission": {
+    "name": "H3 | HTV-X2",
+    "description": "Japan's HTV-X cargo craft carries supplies and experiments to the International Space Station.",
+    "type": "Resupply",
+    "orbit": "Low Earth Orbit"
+   },
+   "pad": {
+    "name": "LA-Y2",
+    "map_url": null,
+    "location": {
+     "name": "Tanegashima Space Center",
+     "country_code": "JPN"
+    },
+    "latitude": "30.4009",
+    "longitude": "130.9686"
+   },
+   "image": null,
+   "webcasts": [],
+   "webcast_live": false
+  },
+  {
+   "id": "sample-12",
+   "name": "Firefly Alpha | Alpha | Elytra Dawn",
+   "net": "2026-08-05T19:00:00Z",
+   "window_start": "2026-08-05T19:00:00Z",
+   "window_end": "2026-08-05T19:00:00Z",
+   "status": {
+    "abbrev": "TBD",
+    "name": "To Be Determined",
+    "description": null
+   },
+   "probability": null,
+   "provider": "Firefly Aerospace",
+   "rocket": "Firefly Alpha",
+   "mission": {
+    "name": "Alpha | Elytra Dawn",
+    "description": "Firefly's Alpha carries the company's Elytra orbital vehicle on a responsive-space demonstration.",
+    "type": "Technology Demo",
+    "orbit": "Sun-Synchronous Orbit"
+   },
+   "pad": {
+    "name": "SLC-2W",
+    "map_url": null,
+    "location": {
+     "name": "Vandenberg SFB, CA",
+     "country_code": "USA"
+    },
+    "latitude": "34.7556",
+    "longitude": "-120.6224"
+   },
+   "image": null,
+   "webcasts": [],
+   "webcast_live": false
+  },
+  {
+   "id": "sample-13",
+   "name": "Falcon 9 Block 5 | Falcon 9 | Crew-14 (Expedition rotation)",
+   "net": "2026-08-09T12:00:00Z",
+   "window_start": "2026-08-09T12:00:00Z",
+   "window_end": "2026-08-09T12:00:00Z",
+   "status": {
+    "abbrev": "TBC",
+    "name": "To Be Confirmed",
+    "description": null
+   },
+   "probability": null,
+   "provider": "SpaceX",
+   "rocket": "Falcon 9 Block 5",
+   "mission": {
+    "name": "Falcon 9 | Crew-14 (Expedition rotation)",
+    "description": "Crew Dragon rotation flight carrying four astronauts to the International Space Station for a six-month stay.",
+    "type": "Human Exploration",
+    "orbit": "Low Earth Orbit"
+   },
+   "pad": {
+    "name": "LC-39A",
+    "map_url": null,
+    "location": {
+     "name": "Kennedy Space Center, FL",
+     "country_code": "USA"
+    },
+    "latitude": "28.6082",
+    "longitude": "-80.6041"
+   },
+   "image": "https://commons.wikimedia.org/wiki/Special:FilePath/SpaceX%20Demo-2%20Launch%20(NHQ202005300044).jpg?width=900",
+   "webcasts": [
+    {
+     "title": "Official webcast",
+     "url": "https://plus.nasa.gov"
+    }
+   ],
+   "webcast_live": false
+  },
+  {
+   "id": "sample-14",
+   "name": "Neutron | Neutron | Return To Sender II",
+   "net": "2026-08-14T06:00:00Z",
+   "window_start": "2026-08-14T06:00:00Z",
+   "window_end": "2026-08-14T06:00:00Z",
+   "status": {
+    "abbrev": "TBD",
+    "name": "To Be Determined",
+    "description": null
+   },
+   "probability": null,
+   "provider": "Rocket Lab",
+   "rocket": "Neutron",
+   "mission": {
+    "name": "Neutron | Return To Sender II",
+    "description": "Early flight of Rocket Lab's reusable medium-lift Neutron, with a downrange barge landing attempt.",
+    "type": "Test Flight",
+    "orbit": "Low Earth Orbit"
+   },
+   "pad": {
+    "name": "LC-3",
+    "map_url": null,
+    "location": {
+     "name": "Wallops Island, VA",
+     "country_code": "USA"
+    },
+    "latitude": "37.8337",
+    "longitude": "-75.4881"
+   },
+   "image": null,
+   "webcasts": [],
+   "webcast_live": false
+  },
+  {
+   "id": "sample-15",
+   "name": "Falcon 9 Block 5 | Starlink Group 12-34",
+   "net": "2026-08-18T03:00:00Z",
+   "window_start": "2026-08-18T03:00:00Z",
+   "window_end": "2026-08-18T07:00:00Z",
+   "status": {
+    "abbrev": "TBC",
+    "name": "To Be Confirmed",
+    "description": null
+   },
+   "probability": null,
+   "provider": "SpaceX",
+   "rocket": "Falcon 9 Block 5",
+   "mission": {
+    "name": "Starlink Group 12-34",
+    "description": "Continued build-out of the Starlink broadband constellation.",
+    "type": "Communications",
+    "orbit": "Low Earth Orbit"
+   },
+   "pad": {
+    "name": "SLC-40",
+    "map_url": null,
+    "location": {
+     "name": "Cape Canaveral SFS, FL",
+     "country_code": "USA"
+    },
+    "latitude": "28.5619",
+    "longitude": "-80.5772"
+   },
+   "image": null,
+   "webcasts": [],
+   "webcast_live": false
+  }
+ ]
+}

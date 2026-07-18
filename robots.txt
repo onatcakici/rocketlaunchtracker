@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://rocketlaunchtracker.com/sitemap.xml

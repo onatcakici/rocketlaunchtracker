@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rocket Launch Tracker — Rocket Launch Schedule, Countdown & Calendar</title>
+<meta name="description" content="Live countdown to the next rocket launch, plus a full schedule and calendar of upcoming launches from SpaceX, NASA, ULA, Rocket Lab and every other provider — with launch pads, mission details and webcast links. Times shown in your timezone.">
+<meta name="keywords" content="rocket launch today, rocket launch schedule, upcoming rocket launches, next rocket launch, rocket launch calendar, rocket launch tracker, space launch">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<meta name="theme-color" content="#030407">
+<link rel="canonical" href="https://rocketlaunchtracker.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Rocket Launch Tracker">
+<meta property="og:title" content="Rocket Launch Tracker — When is the next rocket launch?">
+<meta property="og:description" content="Live countdown, schedule and calendar for every upcoming rocket launch worldwide.">
+<meta property="og:url" content="https://rocketlaunchtracker.com/">
+<meta property="og:image" content="https://rocketlaunchtracker.com/docs/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Rocket Launch Tracker — countdown to the next rocket launch">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Rocket Launch Tracker — When is the next rocket launch?">
+<meta name="twitter:description" content="Live countdown, schedule and calendar for every upcoming rocket launch worldwide. Times in your timezone.">
+<meta name="twitter:image" content="https://rocketlaunchtracker.com/docs/og.png">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://ll.thespacedevs.com">
+<link rel="preconnect" href="https://commons.wikimedia.org">
+<link rel="preconnect" href="https://upload.wikimedia.org">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"Rocket Launch Tracker","url":"https://rocketlaunchtracker.com/","description":"Live rocket launch schedule, calendar and countdowns for upcoming launches worldwide.","publisher":{"@type":"Organization","name":"Rocket Launch Tracker","url":"https://rocketlaunchtracker.com/","logo":"https://rocketlaunchtracker.com/apple-touch-icon.png"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://rocketlaunchtracker.com/?q={search_term_string}"},"query-input":"required name=search_term_string"}}
+</script>
+</head>
+<body>
+<canvas id="starfield" aria-hidden="true"></canvas>
+<div class="page">
+
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="Rocket Launch Tracker home">
+      <svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2c3.5 1.8 5.5 5.6 5.5 9.4 0 1.5-.3 3-.8 4.3l2.3 3.4-3.6-.6a9 9 0 0 1-6.8 0l-3.6.6 2.3-3.4a11.6 11.6 0 0 1-.8-4.3C6.5 7.6 8.5 3.8 12 2Z" fill="currentColor" opacity=".9"/><circle cx="12" cy="10" r="2.1" fill="#000006"/><path d="M12 18.5c.9 1.2 1.2 2.6 1 4-1.9-.4-3-1.4-3.4-2.9.8-.6 1.6-1 2.4-1.1Z" fill="var(--accent)"/></svg>
+      <span class="brand-name">Rocket<em>Launch</em>Tracker</span>
+    </a>
+    <div class="topbar-right">
+      <div class="utc-clock mono" id="utcClock" title="Coordinated Universal Time" aria-label="Current UTC time">--:--:-- UTC</div>
+      <nav class="view-toggle" role="tablist" aria-label="View">
+        <button class="vt-btn is-active" id="btnListView" role="tab" aria-selected="true">List</button>
+        <button class="vt-btn" id="btnCalView" role="tab" aria-selected="false">Calendar</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1 class="sr-only">Rocket Launch Tracker — live rocket launch schedule, countdown and calendar of upcoming launches</h1>
+    <noscript><p style="padding:20px;border:1px solid #161d33;margin:10px 0">Rocket Launch Tracker lists every upcoming rocket launch — SpaceX, NASA, ULA, Rocket Lab, Blue Origin, Arianespace, ISRO and more — with launch schedule, countdown and calendar views. Enable JavaScript for live data from <a href="https://thespacedevs.com/llapi">Launch Library 2</a>.</p></noscript>
+    <!-- ============ HERO / NEXT LAUNCH — real photo, left-weighted ============ -->
+    <section class="hero frame" id="hero" aria-labelledby="heroLabel">
+      <canvas class="hero-wire" id="wireframe" aria-hidden="true"></canvas>
+      <div class="hero-grain" aria-hidden="true"></div>
+      <div class="hero-coord mono" id="heroCoord" aria-hidden="true"></div>
+      <div class="hero-inner">
+        <div class="hero-content">
+          <p class="hero-crawl" aria-hidden="true">// <b>A short time from now, on a launch pad not far away…</b></p>
+          <p class="hero-kicker mono" id="heroLabel">NEXT LAUNCH · T‑MINUS</p>
+          <div class="countdown mono" id="heroCountdown" role="timer" aria-live="off">
+            <div class="cd-cell"><span class="cd-num" id="cdD">--</span><span class="cd-unit">days</span></div>
+            <span class="cd-sep">:</span>
+            <div class="cd-cell"><span class="cd-num" id="cdH">--</span><span class="cd-unit">hrs</span></div>
+            <span class="cd-sep">:</span>
+            <div class="cd-cell"><span class="cd-num" id="cdM">--</span><span class="cd-unit">min</span></div>
+            <span class="cd-sep">:</span>
+            <div class="cd-cell"><span class="cd-num" id="cdS">--</span><span class="cd-unit">sec</span></div>
+          </div>
+          <h2 class="hero-title is-loading" id="heroTitle">Acquiring signal</h2>
+          <p class="hero-sub" id="heroSub"></p>
+          <div class="hero-meta" id="heroMeta"></div>
+          <div class="hero-actions">
+            <a class="btn btn-primary" id="heroWatch" href="#" target="_blank" rel="noopener" hidden>▶ Webcast</a>
+            <button class="btn btn-ghost" id="heroDetails" hidden>Details</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TELEMETRY STRIP ============ -->
+    <section class="stats" id="stats" aria-label="Launch statistics"></section>
+
+    <!-- ============ CONTROLS ============ -->
+    <section class="controls" aria-label="Filters">
+      <input type="search" id="searchBox" class="control search" placeholder="SEARCH MISSIONS / ROCKETS / PADS" aria-label="Search launches">
+      <select id="providerSel" class="control" aria-label="Filter by provider"><option value="">All providers</option></select>
+      <select id="statusSel" class="control" aria-label="Filter by status">
+        <option value="">All statuses</option>
+        <option value="Go">Go for launch</option>
+        <option value="TBC">To be confirmed</option>
+        <option value="TBD">To be determined</option>
+      </select>
+      <button class="control refresh-btn" id="refreshBtn" title="Refresh data">⟳</button>
+      <span class="updated-note" id="updatedNote"></span>
+    </section>
+
+    <!-- ============ LIST VIEW ============ -->
+    <section id="listView" class="launch-grid" aria-label="Upcoming launches"></section>
+
+    <!-- ============ CALENDAR VIEW ============ -->
+    <section id="calView" class="calendar" hidden aria-label="Launch calendar">
+      <div class="cal-head">
+        <button class="cal-nav" id="calPrev" aria-label="Previous month">‹</button>
+        <h2 class="cal-title" id="calTitle">—</h2>
+        <button class="cal-nav" id="calNext" aria-label="Next month">›</button>
+        <button class="cal-today-btn" id="calToday">Today</button>
+      </div>
+      <div class="cal-weekdays" aria-hidden="true"></div>
+      <div class="cal-grid" id="calGrid"></div>
+      <p class="cal-hint">Launch times shift often. Dates render in your local timezone and refresh from live data.</p>
+    </section>
+
+    <!-- ============ READING THE BOARD ============ -->
+    <section class="info" aria-labelledby="infoTitle">
+      <h2 id="infoTitle">Reading the board</h2>
+      <div class="info-grid">
+        <div class="info-list">
+          <article class="info-item">
+            <span class="num">01</span>
+            <div>
+              <h3>Go / TBC / TBD</h3>
+              <p><strong>Go</strong> means the launch is confirmed for the time shown. <strong class="tbc">TBC</strong> is a targeted date awaiting official confirmation, and <strong class="tbd">TBD</strong> means the team is still working toward one — treat it as a placeholder. A Starlink time can slip three times in an afternoon for weather, range traffic or a sensor reading. That's not drama; that's rocketry.</p>
+            </div>
+          </article>
+          <article class="info-item">
+            <span class="num">02</span>
+            <div>
+              <h3>NET — No Earlier Than</h3>
+              <p>Launch times are published as <span class="mono amber">NET</span>: the earliest possible liftoff. A mission may fly hours into its <em>window</em>, but never before NET. Every time on this board is already converted to <strong>your timezone</strong> — no UTC math at 4 a.m.</p>
+            </div>
+          </article>
+          <article class="info-item">
+            <span class="num">03</span>
+            <div>
+              <h3>T‑minus and holds</h3>
+              <p>“<span class="mono cyan">T−</span>” counts to ignition. Crews build planned <em>holds</em> into the clock (T−9:40 for a Falcon 9 static-check, T−10 for many crewed flights), so T‑time and wall-clock time drift apart. The big countdown here tracks the official NET and re-syncs whenever an agency revises it.</p>
+            </div>
+          </article>
+          <article class="info-item">
+            <span class="num">04</span>
+            <div>
+              <h3>Where the data comes from</h3>
+              <p>Every schedule on this site streams from <a href="https://thespacedevs.com/llapi" target="_blank" rel="noopener">Launch Library 2</a>, the open API maintained by The Space Devs and used by most mission-tracking apps. A refresh job pulls a new copy every 6 hours; your browser tops it up with live data on each visit.</p>
+            </div>
+          </article>
+        </div>
+        <figure class="info-figure">
+          <img src="img/apollo11.jpg" width="1000" height="1250"
+               alt="Saturn V carrying Apollo 11 climbs past the launch tower, July 16, 1969" loading="lazy"
+               onerror="if(!this.dataset.f){this.dataset.f=1;this.src='https://commons.wikimedia.org/wiki/Special:FilePath/Apollo%2011%20Launch%20-%20GPN-2000-000630.jpg?width=1000'}else{this.closest('figure').remove()}">
+          <figcaption>SA‑506 · Saturn V · Apollo 11 · LC‑39A, July 16 1969, 13:32 UTC.
+            Photo: <a href="https://commons.wikimedia.org/wiki/File:Apollo_11_Launch_-_GPN-2000-000630.jpg" target="_blank" rel="noopener">NASA (public domain)</a></figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>
+        <p><strong>Rocket Launch Tracker</strong> — every upcoming launch, one board.</p>
+        <p class="footer-fine">Times shown in your local timezone · Data refreshes every 6 h + live on visit · Not affiliated with any launch provider. May the thrust be with you.</p>
+      </div>
+      <p class="footer-credits">Data: <a href="https://thespacedevs.com/llapi" target="_blank" rel="noopener">Launch Library 2 · The Space Devs</a><br>
+        Photos: <a href="https://commons.wikimedia.org/wiki/File:Apollo_11_Launch_-_GPN-2000-000630.jpg" target="_blank" rel="noopener">NASA</a> ·
+        <a href="https://commons.wikimedia.org/wiki/File:SpaceX_Demo-2_Launch_(NHQ202005300044).jpg" target="_blank" rel="noopener">NASA/B. Ingalls</a> — via Wikimedia Commons · mission imagery via Launch Library 2</p>
+    </div>
+  </footer>
+</div>
+
+<!-- ============ MODAL ============ -->
+<div class="modal-backdrop" id="modalBackdrop" hidden>
+  <div class="modal frame" role="dialog" aria-modal="true" aria-labelledby="modalTitle" id="modal">
+    <button class="modal-close" id="modalClose" aria-label="Close">✕</button>
+    <div id="modalBody"></div>
+  </div>
+</div>
+
+<script src="js/app.js"></script>
+<script src="js/wireframe.js"></script>
+</body>
+</html>
