@@ -134,11 +134,14 @@ select.control{appearance:none;padding-right:28px;background-image:linear-gradie
 
 /* ============ LAUNCH LIST ============ */
 .launch-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px;margin-bottom:44px}
-.launch-card{border:1px solid var(--line);overflow:hidden;cursor:pointer;background:var(--surface);transition:border-color .15s;text-align:left;display:flex;flex-direction:column}
+.launch-card{border:1px solid var(--line);overflow:hidden;cursor:pointer;background:var(--surface);transition:border-color .15s;text-align:left;display:flex;flex-direction:column;
+  content-visibility:auto;contain-intrinsic-size:auto 350px}
 .launch-card:hover{border-color:var(--accent)}
 .lc-img{position:relative;aspect-ratio:16/9;background:#05080f;overflow:hidden;
   background-image:radial-gradient(rgba(138,147,180,.1) 1px,transparent 1px);background-size:20px 20px}
 .lc-wire{position:absolute;inset:0;width:100%;height:100%;display:block}
+.lc-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .4s ease;filter:saturate(.85)}
+.lc-photo.on{opacity:1}
 .lc-img img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.85)}
 .lc-fallback{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
   background:repeating-linear-gradient(0deg,transparent 0 3px,rgba(120,135,190,.04) 3px 4px)}
@@ -259,7 +262,7 @@ html{scrollbar-width:thin;scrollbar-color:#1a2240 transparent}
 ::-webkit-scrollbar-thumb{background:#1a2240;border:2px solid #030407}
 ::-webkit-scrollbar-track{background:transparent}
 .btn:active{transform:translateY(1px)}
-.launch-card{animation:cardIn .22s ease both}
+.launch-card:nth-child(-n+9){animation:cardIn .22s ease both}
 .launch-card:nth-child(1){animation-delay:.02s}.launch-card:nth-child(2){animation-delay:.05s}
 .launch-card:nth-child(3){animation-delay:.08s}.launch-card:nth-child(4){animation-delay:.11s}
 .launch-card:nth-child(5){animation-delay:.14s}.launch-card:nth-child(6){animation-delay:.17s}

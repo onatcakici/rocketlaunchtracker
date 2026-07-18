@@ -141,7 +141,7 @@
   /* ---------- renderer ---------- */
   function render(cv, model, yaw, tilt, o){
     const ctx = cv.getContext("2d");
-    const DPR = Math.min(devicePixelRatio || 1, 2);
+    const DPR = Math.min(devicePixelRatio || 1, o.maxDpr || 2);
     const W = cv.clientWidth * DPR, H = cv.clientHeight * DPR;
     if (cv.width !== W || cv.height !== H){ cv.width = W; cv.height = H; }
     ctx.clearRect(0, 0, W, H);
@@ -188,18 +188,34 @@
   }
 
   /* ---------- public: static card/modal paint ---------- */
+  let cardIO = null;
+  if ("IntersectionObserver" in window){
+    cardIO = new IntersectionObserver(entries => {
+      for (const e of entries){
+        if (e.isIntersecting){
+          window.RLTWire.paintStatic(e.target, e.target.dataset.name || "");
+          cardIO.unobserve(e.target);
+        }
+      }
+    }, { rootMargin: "500px 0px" });
+  }
   window.RLTWire = {
     paintStatic(cv, name){
-      if (!cv || !cv.clientWidth) return;
+      if (!cv) return;
+      const w = cv.clientWidth;
+      if (!w || cv.dataset.w == w) return;      // not laid out yet / already painted at this size
       const yaw = (hash(name) % 628) / 100;
       render(cv, modelFor(name), yaw, 0.14, {
-        rgb: [138, 147, 180], glow: false, base: .5, decor: true, seedKey: name,
+        rgb: [138, 147, 180], glow: false, base: .5, decor: true, seedKey: name, maxDpr: 1.25,
       });
-      cv.dataset.painted = "1";
+      cv.dataset.w = w; cv.dataset.painted = "1";
     },
     paintAll(root){
-      (root || document).querySelectorAll("canvas.lc-wire").forEach(cv =>
-        window.RLTWire.paintStatic(cv, cv.dataset.name || ""));
+      (root || document).querySelectorAll("canvas.lc-wire").forEach(cv => {
+        if (cv.dataset.painted) return;
+        if (cardIO) cardIO.observe(cv);
+        else window.RLTWire.paintStatic(cv, cv.dataset.name || "");
+      });
     },
   };
 
@@ -229,5 +245,16 @@
 
   // paint any cards that rendered before this script loaded
   window.RLTWire.paintAll();
-  addEventListener("resize", () => window.RLTWire.paintAll());
+  // repaint only on real width changes (mobile URL-bar scrolling fires
+  // height-only resize events — ignoring them kills the scroll jank)
+  let rT = null, lastW = innerWidth;
+  addEventListener("resize", () => {
+    if (innerWidth === lastW) return;
+    lastW = innerWidth;
+    clearTimeout(rT);
+    rT = setTimeout(() => {
+      document.querySelectorAll("canvas.lc-wire").forEach(cv => { delete cv.dataset.painted; delete cv.dataset.w; });
+      window.RLTWire.paintAll();
+    }, 250);
+  });
 })();

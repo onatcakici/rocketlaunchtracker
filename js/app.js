@@ -276,6 +276,7 @@ function cardHtml(l){
   return `
   <button class="launch-card" data-id="${escapeHtml(l.id)}" aria-label="${escapeHtml(l.name)} details">
     <div class="lc-img"><canvas class="lc-wire" data-name="${escapeHtml(l.rocket)}" aria-hidden="true"></canvas>
+      ${l.image ? `<img class="lc-photo" src="${escapeHtml(l.image)}" alt="${escapeHtml(l.name)}" loading="lazy" decoding="async" onload="this.classList.add('on')" onerror="this.remove()">` : ""}
       ${chip(l)}<span class="lc-tminus" data-net="${l.net.toISOString()}"></span></div>
     <div class="lc-body">
       <span class="lc-rocket">${escapeHtml(l.rocket)} · ${escapeHtml(l.provider)}</span>
@@ -357,9 +358,9 @@ function openModal(id){
   if (!l) return;
   const t = tMinus(l.net);
   $("#modalBody").innerHTML = `
-    <div class="md-img">${l.image
-      ? `<img src="${escapeHtml(l.image)}" alt="${escapeHtml(l.name)}" onerror="this.replaceWith(Object.assign(document.createElement('canvas'),{className:'lc-wire'})),window.RLTWire&&RLTWire.paintAll(this.closest('.md-img'))">`
-      : `<canvas class="lc-wire" data-name="${escapeHtml(l.rocket)}" aria-hidden="true"></canvas>`}</div>
+    <div class="md-img"><canvas class="lc-wire" data-name="${escapeHtml(l.rocket)}" aria-hidden="true"></canvas>${l.image
+      ? `<img class="lc-photo" src="${escapeHtml(l.image)}" alt="${escapeHtml(l.name)}" decoding="async" onload="this.classList.add('on')" onerror="this.remove()">`
+      : ``}</div>
     <div class="md-body">
       <span class="md-rocket">${escapeHtml(l.rocket)} · ${escapeHtml(l.provider)}</span>
       <h2 class="md-title" id="modalTitle">${escapeHtml(l.name)}</h2>
