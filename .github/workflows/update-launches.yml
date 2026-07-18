@@ -2,68 +2,67 @@ name: Update launch data
 
 on:
   schedule:
-      - cron: "17 */6 * * *"
-        workflow_dispatch:
-          push:
-              branches: [main]
-                  paths: [".github/workflows/update-launches.yml"]
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [".github/workflows/update-launches.yml"]
 
-                  permissions:
-                    contents: write
+permissions:
+  contents: write
 
-                    jobs:
-                      update:
-                          runs-on: ubuntu-latest
-                              steps:
-                                    - uses: actions/checkout@v4
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
 
-                                          - name: Fetch upcoming launches
-                                                  run: |
-                                                            curl -sf --retry 5 --retry-delay 40 --retry-all-errors \
-                                                                        -H "Accept: application/json" \
-                                                                                    "https://ll.thespacedevs.com/2.3.0/launches/upcoming/?limit=60&mode=detailed" \
-                                                                                                -o raw.json
-                                                                                                          jq '{
-                                                                                                                      generated: (now | todate),
-                                                                                                                                  sample: false,
-                                                                                                                                              count: (.results | length),
-                                                                                                                                                          results: [.results[] | {
-                                                                                                                                                                        id, name, net, window_start, window_end,
-                                                                                                                                                                                      status: { abbrev: (.status.abbrev // .status.name // "TBD"),
-                                                                                                                                                                                                              name: (.status.name // "Unknown"),
-                                                                                                                                                                                                                                      description: (.status.description // null) },
-                                                                                                                                                                                                                                                    probability: (.probability // null),
-                                                                                                                                                                                                                                                                  provider: (.launch_service_provider.name // "Unknown"),
-                                                                                                                                                                                                                                                                                rocket: (.rocket.configuration.full_name // .rocket.configuration.name // "Rocket"),
-                                                                                                                                                                                                                                                                                              mission: { name: (.mission.name // null),
-                                                                                                                                                                                                                                                                                                                       description: (.mission.description // null),
-                                                                                                                                                                                                                                                                                                                                                type: (if (.mission.type | type) == "object" then .mission.type.name else (.mission.type // null) end),
-                                                                                                                                                                                                                                                                                                                                                                         orbit: (if (.mission.orbit | type) == "object" then .mission.orbit.name else (.mission.orbit // null) end) },
-                                                                                                                                                                                                                                                                                                                                                                                       pad: { name: (.pad.name // null),
-                                                                                                                                                                                                                                                                                                                                                                                                            map_url: (.pad.map_url // null),
-                                                                                                                                                                                                                                                                                                                                                                                                                                 latitude: (.pad.latitude // null),
-                                                                                                                                                                                                                                                                                                                                                                                                                                                      longitude: (.pad.longitude // null),
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                           location: { name: (.pad.location.name // null),
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            country_code: (.pad.location.country_code // .pad.location.country.alpha_2_code // null) } },
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          image: (if (.image | type) == "object" then (.image.image_url // .image.thumbnail_url) else (.image // null) end),
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        webcasts: ([ (.vid_urls // .vidURLs // [])[]? |
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   (if type == "object" then { title: (.title // .publisher // "Webcast"), url } else { title: "Webcast", url: . } end) ]),
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 webcast_live: (.webcast_live // false)
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             }]
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       }' raw.json > data/launches.json
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 rm raw.json
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       - name: Self-host site photos (first run only)
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               run: |
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         mkdir -p img
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   [ -f img/apollo11.jpg ] || curl -sfL --retry 3 -o img/apollo11.jpg "https://commons.wikimedia.org/wiki/Special:FilePath/Apollo%2011%20Launch%20-%20GPN-2000-000630.jpg?width=1000" || true
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         - name: Commit if changed
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 run: |
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           git config user.name  "launch-bot"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     git config user.email "actions@users.noreply.github.com"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               git add data/launches.json img
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         git diff --cached --quiet && echo "No changes." && exit 0
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   git commit -m "data: refresh launches ($(date -u +'%Y-%m-%d %H:%M UTC'))"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             git push
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+      - name: Fetch upcoming launches
+        run: |
+          curl -sf --retry 5 --retry-delay 40 --retry-all-errors \
+            -H "Accept: application/json" \
+            "https://ll.thespacedevs.com/2.3.0/launches/upcoming/?limit=60&mode=detailed" \
+            -o raw.json
+          jq '{
+            generated: (now | todate),
+            sample: false,
+            count: (.results | length),
+            results: [.results[] | {
+              id, name, net, window_start, window_end,
+              status: { abbrev: (.status.abbrev // .status.name // "TBD"),
+                        name: (.status.name // "Unknown"),
+                        description: (.status.description // null) },
+              probability: (.probability // null),
+              provider: (.launch_service_provider.name // "Unknown"),
+              rocket: (.rocket.configuration.full_name // .rocket.configuration.name // "Rocket"),
+              mission: { name: (.mission.name // null),
+                         description: (.mission.description // null),
+                         type: (if (.mission.type | type) == "object" then .mission.type.name else (.mission.type // null) end),
+                         orbit: (if (.mission.orbit | type) == "object" then .mission.orbit.name else (.mission.orbit // null) end) },
+              pad: { name: (.pad.name // null),
+                     map_url: (.pad.map_url // null),
+                     latitude: (.pad.latitude // null),
+                     longitude: (.pad.longitude // null),
+                     location: { name: (.pad.location.name // null),
+                                 country_code: (.pad.location.country_code // .pad.location.country.alpha_2_code // null) } },
+              image: (if (.image | type) == "object" then (.image.image_url // .image.thumbnail_url) else (.image // null) end),
+              webcasts: ([ (.vid_urls // .vidURLs // [])[]? |
+                           (if type == "object" then { title: (.title // .publisher // "Webcast"), url } else { title: "Webcast", url: . } end) ]),
+              webcast_live: (.webcast_live // false)
+            }]
+          }' raw.json > data/launches.json
+          rm raw.json
+
+      - name: Self-host site photos (first run only)
+        run: |
+          mkdir -p img
+          [ -f img/apollo11.jpg ] || curl -sfL --retry 3 -o img/apollo11.jpg "https://commons.wikimedia.org/wiki/Special:FilePath/Apollo%2011%20Launch%20-%20GPN-2000-000630.jpg?width=1000" || true
+
+      - name: Commit if changed
+        run: |
+          git config user.name  "launch-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/launches.json img
+          git diff --cached --quiet && echo "No changes." && exit 0
+          git commit -m "data: refresh launches ($(date -u +'%Y-%m-%d %H:%M UTC'))"
+          git push
