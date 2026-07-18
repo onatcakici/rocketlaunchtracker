@@ -1,18 +1,18 @@
 {
-  "generated": "2026-07-18T00:31:44Z",
+  "generated": "2026-07-18T10:47:48Z",
   "sample": false,
   "count": 60,
   "results": [
     {
       "id": "10fa7952-f00b-4292-80a2-4207e208844e",
       "name": "Vikram-I | Demo Flight",
-      "net": "2026-07-18T06:00:00Z",
+      "net": "2026-07-18T06:35:30Z",
       "window_start": "2026-07-18T05:00:00Z",
       "window_end": "2026-07-18T09:00:00Z",
       "status": {
-        "abbrev": "Go",
-        "name": "Go for Launch",
-        "description": "Current T-0 confirmed by official or reliable sources."
+        "abbrev": "Deployed",
+        "name": "Payload Deployed",
+        "description": "Deployment of the payload(s) has been confirmed."
       },
       "probability": null,
       "provider": "Skyroot Aerospace",
@@ -37,7 +37,11 @@
       "webcasts": [
         {
           "title": "Vikram-1 | Test Flight-1 | Skyroot | Mission Aagaman| India's First Private Orbital Rocket Launch",
-          "url": "https://www.youtube.com/watch?v=-lLd1cI7v0U"
+          "url": "https://www.youtube.com/watch?v=2KKZbSX9SgI"
+        },
+        {
+          "title": "Vikram-1 | Test Flight-1 | Skyroot | Mission Aagaman| India's First Private Orbital Rocket Launch",
+          "url": "https://x.com/i/broadcasts/1PJqrrXWeXbxb"
         }
       ],
       "webcast_live": false
@@ -118,7 +122,7 @@
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/starship_on_the_image_20250111100520.jpg",
       "webcasts": [
         {
-          "title": "TBD - SpaceX - Starship - Starship Flight 13 - Pad 2 - Starbase, TX - Space Affairs Live",
+          "title": "GO! - SpaceX - Starship - Starship Flight 13 - Pad 2 - Starbase, TX - Space Affairs Live",
           "url": "https://www.youtube.com/watch?v=0EnOQCjgq4E"
         },
         {
