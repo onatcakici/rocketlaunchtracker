@@ -47,7 +47,7 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
   background:rgba(246,247,249,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 .brand{display:flex;align-items:center;gap:10px;color:var(--text)}
 .brand:hover{text-decoration:none}
-.brand-mark{width:26px;height:26px;color:var(--accent)}
+.brand-mark{width:26px;height:26px;border-radius:8px;display:block}
 .brand-name{font-size:1.02rem;font-weight:700;letter-spacing:-.01em}
 .brand-name em{font-style:normal;color:var(--accent)}
 .topbar-right{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
