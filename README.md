@@ -4,8 +4,6 @@
 
 Static site, zero build step, free hosting on GitHub Pages. Launch data streams from [Launch Library 2](https://thespacedevs.com/llapi) by The Space Devs and is auto-refreshed every 6 hours by a GitHub Action.
 
-![screenshot](docs/screenshot.png)
-
 ## Features
 
 - **T‑minus hero countdown** to the very next liftoff, with webcast link
