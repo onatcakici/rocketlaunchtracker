@@ -1,0 +1,538 @@
+/* ============================================================
+   ROCKET LAUNCH TRACKER — app.js
+   Data: Launch Library 2 (The Space Devs)
+   Strategy: use repo-cached data/launches.json (refreshed by a
+   GitHub Action every ~6h); fall back to / refresh from the live
+   API in the browser. All times rendered in the viewer's zone.
+   ============================================================ */
+"use strict";
+
+const DATA_URL = "data/launches.json";
+const API_URL  = "https://ll.thespacedevs.com/2.3.0/launches/upcoming/?limit=60&mode=detailed";
+const STALE_MS = 6 * 3600 * 1000;      // cached file considered stale after 6h
+const LS_KEY   = "rlt.cache.v1";
+
+const $  = (s, el) => (el || document).querySelector(s);
+const $$ = (s, el) => Array.from((el || document).querySelectorAll(s));
+
+const state = {
+  launches: [],        // normalized, sorted by net
+  generated: null,     // Date the dataset was produced
+  source: "…",
+  sample: false,
+  q: "", provider: "", status: "",
+  view: "list",
+  calCursor: null,     // Date anchored to displayed month
+};
+
+/* ---------------- utilities ---------------- */
+function escapeHtml(s){
+  return String(s == null ? "" : s)
+    .replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;")
+    .replace(/"/g,"&quot;").replace(/'/g,"&#39;");
+}
+function pad2(n){ return String(n).padStart(2,"0"); }
+const TZ_NAME = (() => { try { return Intl.DateTimeFormat().resolvedOptions().timeZone || "local time"; } catch(e){ return "local time"; } })();
+
+function fmtLocal(d, opts){
+  return new Intl.DateTimeFormat(undefined, Object.assign({
+    weekday:"short", month:"short", day:"numeric", hour:"numeric", minute:"2-digit"
+  }, opts || {})).format(d);
+}
+function fmtUTC(d){
+  return d.toISOString().replace("T"," ").slice(0,16) + " UTC";
+}
+function sameLocalDay(a,b){
+  return a.getFullYear()===b.getFullYear() && a.getMonth()===b.getMonth() && a.getDate()===b.getDate();
+}
+function dayKey(d){ return d.getFullYear()+"-"+pad2(d.getMonth()+1)+"-"+pad2(d.getDate()); }
+
+const CC3 = { USA:"US",NZL:"NZ",IND:"IN",GUF:"GF",JPN:"JP",CHN:"CN",RUS:"RU",KAZ:"KZ",FRA:"FR",GBR:"GB",
+  KOR:"KR",PRK:"KP",ISR:"IL",IRN:"IR",AUS:"AU",BRA:"BR",NOR:"NO",SWE:"SE",ESP:"ES",DEU:"DE",ITA:"IT",
+  CAN:"CA",MEX:"MX",UKR:"UA",IDN:"ID",ARG:"AR",NLD:"NL",PRT:"PT" };
+function flag(code){
+  if (!code) return "";
+  let cc = String(code).trim().toUpperCase();
+  if (cc.length === 3) cc = CC3[cc] || "";
+  if (!/^[A-Z]{2}$/.test(cc)) return "";
+  return String.fromCodePoint(...[...cc].map(c => 0x1F1E6 + c.charCodeAt(0) - 65)) + " ";
+}
+
+function statusClass(abbrev){
+  if (abbrev === "Go" || abbrev === "Success") return "go";
+  if (abbrev === "TBC") return "tbc";
+  if (abbrev === "TBD" || abbrev === "Hold" || abbrev === "Failure") return "tbd";
+  return "other";
+}
+function chip(l){
+  const cls = statusClass(l.status.abbrev);
+  const map = { go:"chip-go", tbc:"chip-tbc", tbd:"chip-tbd", other:"chip-other" };
+  return `<span class="chip ${map[cls]}" title="${escapeHtml(l.status.name)}">${escapeHtml(l.status.abbrev || l.status.name || "?")}</span>`;
+}
+function tMinus(net, now){
+  let diff = net - (now || Date.now());
+  const past = diff < 0; if (past) diff = -diff;
+  const d = Math.floor(diff/86400000), h = Math.floor(diff/3600000)%24,
+        m = Math.floor(diff/60000)%60, s = Math.floor(diff/1000)%60;
+  return { past, d, h, m, s,
+    short: (past?"T+":"T−") + (d>0 ? `${d}d ${pad2(h)}h` : `${pad2(h)}:${pad2(m)}:${pad2(s)}`) };
+}
+
+/* ---------------- normalization (defensive across LL2 versions) ---------------- */
+function pick(...vals){ for (const v of vals) if (v !== undefined && v !== null && v !== "") return v; return null; }
+function normalize(raw){
+  const list = Array.isArray(raw) ? raw : (raw.results || raw.launches || []);
+  const out = [];
+  for (const r of list){
+    try{
+      const img = r.image && typeof r.image === "object" ? pick(r.image.image_url, r.image.thumbnail_url) : r.image;
+      const vids = (r.webcasts || r.vid_urls || r.vidURLs || []).map(v =>
+        typeof v === "string" ? { title:"Webcast", url:v } :
+        { title: pick(v.title, v.publisher, "Webcast"), url: v.url }).filter(v => v.url);
+      const mtypeRaw = r.mission && (r.mission.type !== undefined ? r.mission.type : null);
+      const mtype = mtypeRaw && typeof mtypeRaw === "object" ? pick(mtypeRaw.name) : mtypeRaw;
+      const orbitRaw = r.mission && r.mission.orbit;
+      const orbit = orbitRaw && typeof orbitRaw === "object" ? pick(orbitRaw.name, orbitRaw.abbrev) : orbitRaw;
+      const loc = r.pad && (r.pad.location || {});
+      const provider = pick(r.provider, r.launch_service_provider && r.launch_service_provider.name, "Unknown provider");
+      const rocket = pick(r.rocket && typeof r.rocket === "object" && r.rocket.configuration
+          ? pick(r.rocket.configuration.full_name, r.rocket.configuration.name) : null,
+          typeof r.rocket === "string" ? r.rocket : null,
+          r.name && r.name.split("|")[0].trim(), "Rocket");
+      const net = new Date(pick(r.net, r.window_start, r.t0));
+      if (isNaN(+net)) continue;
+      out.push({
+        id: pick(r.id, r.slug, r.name),
+        name: pick(r.name, "Launch"),
+        missionName: pick(r.mission && r.mission.name, (r.name||"").split("|")[1] && r.name.split("|")[1].trim(), r.name),
+        rocket, provider,
+        net,
+        windowStart: r.window_start ? new Date(r.window_start) : null,
+        windowEnd: r.window_end ? new Date(r.window_end) : null,
+        netPrecision: pick(r.net_precision && (r.net_precision.name || r.net_precision), null),
+        status: {
+          abbrev: pick(r.status && r.status.abbrev, r.status && r.status.name, "TBD"),
+          name: pick(r.status && r.status.name, "Unknown"),
+          description: pick(r.status && r.status.description, null),
+        },
+        probability: (typeof r.probability === "number" && r.probability >= 0) ? r.probability : null,
+        image: img || null,
+        desc: pick(r.mission && r.mission.description, null),
+        mtype: mtype || null, orbit: orbit || null,
+        pad: pick(r.pad && r.pad.name, null),
+        mapUrl: pick(r.pad && r.pad.map_url, null),
+        latitude: pick(r.pad && r.pad.latitude, null),
+        longitude: pick(r.pad && r.pad.longitude, null),
+        location: pick(loc.name, null),
+        country: pick(loc.country_code, loc.country && (loc.country.alpha_2_code || loc.country.name), null),
+        webcasts: vids,
+        webcastLive: !!r.webcast_live,
+      });
+    }catch(e){ /* skip malformed record */ }
+  }
+  out.sort((a,b) => a.net - b.net);
+  return out;
+}
+
+/* ---------------- data loading ---------------- */
+async function fetchJson(url){
+  const res = await fetch(url, { headers: { "Accept": "application/json" } });
+  if (!res.ok) throw new Error(url + " → HTTP " + res.status);
+  return res.json();
+}
+function lsGet(){ try { return JSON.parse(localStorage.getItem(LS_KEY)); } catch(e){ return null; } }
+function lsSet(v){ try { localStorage.setItem(LS_KEY, JSON.stringify(v)); } catch(e){} }
+
+async function loadData(force){
+  let dataset = null;
+
+  // 1. repo-cached file (production path on GitHub Pages)
+  if (!force){
+    try {
+      const j = await fetchJson(DATA_URL);
+      dataset = { raw:j, source:"cached feed", generated: j.generated ? new Date(j.generated) : null, sample: !!j.sample };
+    } catch(e){ /* file:// preview or missing file */ }
+  }
+
+  const stale = !dataset || dataset.sample || !dataset.generated || (Date.now() - dataset.generated > STALE_MS);
+
+  // 2. live API when cache is missing/stale (browser hits the API directly)
+  if (stale || force){
+    try {
+      const j = await fetchJson(API_URL);
+      dataset = { raw:j, source:"live API", generated:new Date(), sample:false };
+      lsSet({ t: Date.now(), data: j });
+    } catch(e){
+      // 3. last-resort: localStorage copy from an earlier visit
+      if (!dataset){
+        const c = lsGet();
+        if (c && c.data) dataset = { raw:c.data, source:"saved copy", generated:new Date(c.t), sample:false };
+      }
+    }
+  }
+
+  if (!dataset){
+    $("#heroTitle").textContent = "Couldn't reach launch data — check your connection and refresh.";
+    return;
+  }
+
+  state.launches  = normalize(dataset.raw);
+  state.generated = dataset.generated;
+  state.source    = dataset.source;
+  state.sample    = dataset.sample;
+  buildProviderOptions();
+  renderAll();
+  injectSchema();
+}
+
+/* ---------------- filtering ---------------- */
+function visibleLaunches(){
+  const q = state.q.trim().toLowerCase();
+  return state.launches.filter(l => {
+    if (state.provider && l.provider !== state.provider) return false;
+    if (state.status && l.status.abbrev !== state.status) return false;
+    if (q){
+      const hay = [l.name, l.missionName, l.rocket, l.provider, l.pad, l.location].join(" ").toLowerCase();
+      if (!hay.includes(q)) return false;
+    }
+    return true;
+  });
+}
+function buildProviderOptions(){
+  const sel = $("#providerSel");
+  const cur = sel.value;
+  const provs = [...new Set(state.launches.map(l => l.provider))].sort();
+  sel.innerHTML = '<option value="">All providers</option>' +
+    provs.map(p => `<option value="${escapeHtml(p)}">${escapeHtml(p)}</option>`).join("");
+  if (provs.includes(cur)) sel.value = cur;
+}
+
+/* ---------------- hero ---------------- */
+function nextLaunch(){
+  const now = Date.now();
+  return state.launches.find(l => l.net >= now) || state.launches[0] || null;
+}
+function renderHero(){
+  const l = nextLaunch();
+  if (!l){ $("#heroTitle").textContent = "No upcoming launches found."; return; }
+  $("#hero").dataset.net = l.net.toISOString();
+  $("#heroTitle").textContent = l.missionName || l.name;
+  $("#heroSub").textContent = "";
+  $("#heroMeta").innerHTML = `
+    <div class="readout">
+      <span class="k">Status</span><span class="v">${chip(l)}</span>
+      <span class="k">NET</span><span class="v">${escapeHtml(fmtLocal(l.net))} <span class="dim">· ${escapeHtml(TZ_NAME)}</span></span>
+      <span class="k">Vehicle</span><span class="v">${escapeHtml(l.rocket)} <span class="dim">· ${escapeHtml(l.provider)}</span></span>
+      ${l.location ? `<span class="k">Pad</span><span class="v">${flag(l.country)}${escapeHtml([l.pad, l.location].filter(Boolean).join(" · "))}</span>` : ""}
+      ${(l.probability != null) ? `<span class="k">Weather</span><span class="v">${l.probability}% go</span>` : ""}
+    </div>`;
+  const watch = $("#heroWatch");
+  if (l.webcasts.length){ watch.hidden = false; watch.href = l.webcasts[0].url; }
+  else watch.hidden = true;
+  const det = $("#heroDetails");
+  det.hidden = false;
+  det.onclick = () => openModal(l.id);
+  const coordEl = $("#heroCoord");
+  if (coordEl){
+    const la = parseFloat(l.latitude), lo = parseFloat(l.longitude);
+    coordEl.textContent = (isFinite(la) && isFinite(lo))
+      ? `PAD ${Math.abs(la).toFixed(4)}°${la >= 0 ? "N" : "S"} ${Math.abs(lo).toFixed(4)}°${lo >= 0 ? "E" : "W"}`
+      : "";
+  }
+  $("#heroTitle").classList.remove("is-loading");
+  tickHero();
+}
+function tickHero(){
+  const iso = $("#hero").dataset.net;
+  if (!iso) return;
+  const t = tMinus(new Date(iso));
+  $("#cdD").textContent = pad2(t.d); $("#cdH").textContent = pad2(t.h);
+  $("#cdM").textContent = pad2(t.m); $("#cdS").textContent = pad2(t.s);
+  $("#hero").classList.toggle("is-liftoff", t.past);
+  $("#heroLabel").textContent = t.past ? "LIFTOFF · T‑PLUS" : "NEXT LAUNCH · T‑MINUS";
+  let seen = t.past;
+  for (const [id, val] of [["cdD", t.d], ["cdH", t.h], ["cdM", t.m]]){
+    const cell = $("#" + id).parentElement;
+    if (!seen && val === 0) cell.classList.add("is-zero");
+    else { cell.classList.remove("is-zero"); seen = true; }
+  }
+}
+
+/* ---------------- stats ---------------- */
+function renderStats(){
+  const now = new Date();
+  const in7 = new Date(+now + 7*86400000);
+  const ls = state.launches;
+  const week  = ls.filter(l => l.net >= now && l.net <= in7).length;
+  const month = ls.filter(l => l.net.getMonth() === now.getMonth() && l.net.getFullYear() === now.getFullYear()).length;
+  const provs = new Set(ls.map(l => l.provider)).size;
+  $("#stats").innerHTML = [
+    [week, "next 7 days"], [month, "this month"], [provs, "providers"], [ls.length, "tracked upcoming"],
+  ].map(([n, lab]) => `<div class="stat"><div class="stat-num">${n}</div><div class="stat-label">${lab}</div></div>`).join("");
+}
+
+/* ---------------- list view ---------------- */
+function cardHtml(l){
+  return `
+  <button class="launch-card" data-id="${escapeHtml(l.id)}" aria-label="${escapeHtml(l.name)} details">
+    <div class="lc-img"><canvas class="lc-wire" data-name="${escapeHtml(l.rocket)}" aria-hidden="true"></canvas>
+      ${l.image ? `<img class="lc-photo" src="${escapeHtml(l.image)}" alt="${escapeHtml(l.name)}" loading="lazy" decoding="async" onload="this.classList.add('on')" onerror="this.remove()">` : ""}
+      ${chip(l)}<span class="lc-tminus" data-net="${l.net.toISOString()}"></span></div>
+    <div class="lc-body">
+      <span class="lc-rocket">${escapeHtml(l.rocket)} · ${escapeHtml(l.provider)}</span>
+      <span class="lc-name">${escapeHtml(l.missionName || l.name)}</span>
+      <div class="lc-facts">
+        <span class="k">NET</span><span class="v hot">${escapeHtml(fmtLocal(l.net))}</span>
+        ${l.location ? `<span class="k">Pad</span><span class="v">${flag(l.country)}${escapeHtml([l.pad, l.location].filter(Boolean).join(" · "))}</span>` : ""}
+      </div>
+    </div>
+  </button>`;
+}
+function renderList(){
+  const ls = visibleLaunches();
+  $("#listView").innerHTML = ls.length
+    ? ls.map(cardHtml).join("")
+    : `<div class="empty-note">NO LAUNCHES MATCH.<button id="resetFilters" type="button">Reset filters</button></div>`;
+  tickCards();
+  if (window.RLTWire) RLTWire.paintAll($("#listView"));
+}
+function tickCards(){
+  const now = Date.now();
+  $$(".lc-tminus").forEach(el => { el.textContent = tMinus(new Date(el.dataset.net), now).short; });
+}
+
+/* ---------------- calendar view ---------------- */
+function renderCalendar(){
+  const cur = state.calCursor || (state.calCursor = new Date());
+  const y = cur.getFullYear(), m = cur.getMonth();
+  $("#calTitle").textContent = new Intl.DateTimeFormat(undefined,{month:"long",year:"numeric"}).format(cur);
+
+  const wd = $(".cal-weekdays");
+  if (!wd.childElementCount){
+    const base = new Date(2026, 2, 1); // a Sunday
+    for (let i=0;i<7;i++){ const d=document.createElement("div");
+      d.textContent = new Intl.DateTimeFormat(undefined,{weekday:"short"}).format(new Date(+base + i*86400000)).slice(0,3);
+      wd.appendChild(d); }
+  }
+
+  const byDay = new Map();
+  for (const l of visibleLaunches()){
+    const k = dayKey(l.net);
+    if (!byDay.has(k)) byDay.set(k, []);
+    byDay.get(k).push(l);
+  }
+
+  const first = new Date(y, m, 1);
+  const today = new Date();
+  let html = "";
+  for (let i=0;i<42;i++){
+    const d = new Date(y, m, 1 - first.getDay() + i);
+    const inMonth = d.getMonth() === m;
+    const k = dayKey(d);
+    const items = byDay.get(k) || [];
+    const MAX = 3;
+    const chips = items.slice(0, MAX).map(l => `
+      <button class="cal-chip st-${statusClass(l.status.abbrev)}" data-id="${escapeHtml(l.id)}"
+        title="${escapeHtml(l.name)}"><span class="t">${new Intl.DateTimeFormat(undefined,{hour:"numeric"}).format(l.net).replace(/\s/g,"")}</span>${escapeHtml(l.rocket)}</button>`).join("");
+    const more = items.length > MAX ? `<button class="cal-more" data-day="${k}">+${items.length - MAX} more</button>` : "";
+    html += `<div class="cal-day ${inMonth?"":"other-month"} ${sameLocalDay(d,today)?"is-today":""} ${items.length?"has-launch":""}">
+      <span class="cal-date">${d.getDate()}</span>${chips}${more}</div>`;
+  }
+  $("#calGrid").innerHTML = html;
+}
+
+/* ---------------- modal ---------------- */
+function gcalLink(l){
+  const f = d => d.toISOString().replace(/[-:]|\.\d{3}/g,"");
+  const end = l.windowEnd && l.windowEnd > l.net ? l.windowEnd : new Date(+l.net + 3600000);
+  const p = new URLSearchParams({
+    action:"TEMPLATE", text:`🚀 ${l.name}`,
+    dates:`${f(l.net)}/${f(end)}`,
+    details:(l.desc ? l.desc.slice(0,600)+"\n\n" : "") + "Tracked via Rocket Launch Tracker",
+    location:[l.pad, l.location].filter(Boolean).join(", "),
+  });
+  return "https://calendar.google.com/calendar/render?" + p.toString();
+}
+function openModal(id){
+  const l = state.launches.find(x => String(x.id) === String(id));
+  if (!l) return;
+  const t = tMinus(l.net);
+  $("#modalBody").innerHTML = `
+    <div class="md-img"><canvas class="lc-wire" data-name="${escapeHtml(l.rocket)}" aria-hidden="true"></canvas>${l.image
+      ? `<img class="lc-photo" src="${escapeHtml(l.image)}" alt="${escapeHtml(l.name)}" decoding="async" onload="this.classList.add('on')" onerror="this.remove()">`
+      : ``}</div>
+    <div class="md-body">
+      <span class="md-rocket">${escapeHtml(l.rocket)} · ${escapeHtml(l.provider)}</span>
+      <h2 class="md-title" id="modalTitle">${escapeHtml(l.name)}</h2>
+      <div class="md-chips">${chip(l)}
+        ${l.probability != null ? `<span class="chip chip-other">Weather ${l.probability}% go</span>` : ""}
+        ${l.webcastLive ? `<span class="chip chip-go">LIVE NOW</span>` : ""}</div>
+      <p class="md-countdown" data-net="${l.net.toISOString()}">${t.short} to launch</p>
+      <div class="md-facts">
+        <div class="md-fact"><div class="k">Liftoff (your time)</div><div class="v">${escapeHtml(fmtLocal(l.net,{year:"numeric"}))}</div></div>
+        <div class="md-fact"><div class="k">Liftoff (UTC)</div><div class="v mono">${escapeHtml(fmtUTC(l.net))}</div></div>
+        ${l.windowEnd && l.windowStart && +l.windowEnd !== +l.windowStart ? `<div class="md-fact"><div class="k">Window closes</div><div class="v">${escapeHtml(fmtLocal(l.windowEnd))}</div></div>` : ""}
+        ${l.pad ? `<div class="md-fact"><div class="k">Pad</div><div class="v">${escapeHtml(l.pad)}</div></div>` : ""}
+        ${l.location ? `<div class="md-fact"><div class="k">Location</div><div class="v">${flag(l.country)}${escapeHtml(l.location)}${l.country ? " · " + escapeHtml(l.country) : ""}</div></div>` : ""}
+        ${l.mtype ? `<div class="md-fact"><div class="k">Mission type</div><div class="v">${escapeHtml(l.mtype)}</div></div>` : ""}
+        ${l.orbit ? `<div class="md-fact"><div class="k">Target orbit</div><div class="v">${escapeHtml(l.orbit)}</div></div>` : ""}
+        ${l.status.description ? `<div class="md-fact"><div class="k">Status note</div><div class="v">${escapeHtml(l.status.description)}</div></div>` : ""}
+      </div>
+      ${l.desc ? `<p class="md-desc">${escapeHtml(l.desc)}</p>` : ""}
+      <div class="md-links">
+        ${l.webcasts.slice(0,2).map(w => `<a class="btn btn-primary" href="${escapeHtml(w.url)}" target="_blank" rel="noopener">▶ ${escapeHtml(w.title)}</a>`).join("")}
+        <a class="btn btn-ghost" href="${escapeHtml(gcalLink(l))}" target="_blank" rel="noopener">+ Google Calendar</a>
+        ${l.mapUrl ? `<a class="btn btn-ghost" href="${escapeHtml(l.mapUrl)}" target="_blank" rel="noopener">Pad map</a>` : ""}
+      </div>
+    </div>`;
+  $("#modalBackdrop").hidden = false;
+  document.body.style.overflow = "hidden";
+  if (window.RLTWire) RLTWire.paintAll($("#modalBody"));
+  $("#modalClose").focus();
+}
+function openDayModal(k){
+  const items = visibleLaunches().filter(l => dayKey(l.net) === k);
+  if (!items.length) return;
+  const d = new Date(k + "T12:00:00");
+  $("#modalBody").innerHTML = `
+    <div class="md-body" style="margin-top:0">
+      <h2 class="md-title" id="modalTitle">${escapeHtml(new Intl.DateTimeFormat(undefined,{weekday:"long",month:"long",day:"numeric"}).format(d))}</h2>
+      <div class="launch-grid" style="grid-template-columns:1fr">${items.map(cardHtml).join("")}</div>
+    </div>`;
+  $("#modalBackdrop").hidden = false;
+  document.body.style.overflow = "hidden";
+  tickCards();
+  if (window.RLTWire) RLTWire.paintAll($("#modalBody"));
+}
+function closeModal(){
+  $("#modalBackdrop").hidden = true;
+  document.body.style.overflow = "";
+}
+
+/* ---------------- render all / events ---------------- */
+function renderAll(){
+  renderHero(); renderStats();
+  if (state.view === "list") renderList(); else renderCalendar();
+  const g = state.generated;
+  $("#updatedNote").textContent = g
+    ? `${state.source} · updated ${fmtLocal(g,{weekday:undefined,month:"short"})}` + (state.sample ? " · sample data" : "")
+    : "";
+}
+function setView(v){
+  state.view = v;
+  $("#btnListView").classList.toggle("is-active", v==="list");
+  $("#btnListView").setAttribute("aria-selected", v==="list");
+  $("#btnCalView").classList.toggle("is-active", v==="cal");
+  $("#btnCalView").setAttribute("aria-selected", v==="cal");
+  $("#listView").hidden = v!=="list";
+  $("#calView").hidden = v!=="cal";
+  if (v==="cal") renderCalendar(); else renderList();
+}
+
+document.addEventListener("click", e => {
+  if (e.target.id === "resetFilters"){
+    state.q = state.provider = state.status = "";
+    $("#searchBox").value = ""; $("#providerSel").value = ""; $("#statusSel").value = "";
+    renderAll(); return;
+  }
+  const card = e.target.closest(".launch-card");
+  if (card){ openModal(card.dataset.id); return; }
+  const chipEl = e.target.closest(".cal-chip");
+  if (chipEl){ openModal(chipEl.dataset.id); return; }
+  const more = e.target.closest(".cal-more");
+  if (more){ openDayModal(more.dataset.day); return; }
+  if (e.target === $("#modalBackdrop")) closeModal();
+});
+document.addEventListener("keydown", e => { if (e.key === "Escape") closeModal(); });
+$("#modalClose").addEventListener("click", closeModal);
+$("#btnListView").addEventListener("click", () => setView("list"));
+$("#btnCalView").addEventListener("click", () => setView("cal"));
+$("#searchBox").addEventListener("input", e => { state.q = e.target.value; renderAll(); });
+$("#providerSel").addEventListener("change", e => { state.provider = e.target.value; renderAll(); });
+$("#statusSel").addEventListener("change", e => { state.status = e.target.value; renderAll(); });
+$("#refreshBtn").addEventListener("click", async e => {
+  const b = e.currentTarget; b.classList.add("spinning");
+  await loadData(true);
+  setTimeout(() => b.classList.remove("spinning"), 600);
+});
+$("#calPrev").addEventListener("click", () => { state.calCursor = new Date(state.calCursor.getFullYear(), state.calCursor.getMonth()-1, 1); renderCalendar(); });
+$("#calNext").addEventListener("click", () => { state.calCursor = new Date(state.calCursor.getFullYear(), state.calCursor.getMonth()+1, 1); renderCalendar(); });
+$("#calToday").addEventListener("click", () => { state.calCursor = new Date(); renderCalendar(); });
+
+/* ---------------- clocks ---------------- */
+setInterval(() => {
+  const n = new Date();
+  $("#utcClock").textContent = `${pad2(n.getUTCHours())}:${pad2(n.getUTCMinutes())}:${pad2(n.getUTCSeconds())} UTC`;
+  tickHero();
+  if (state.view === "list" && new Date().getSeconds() % 10 === 0) tickCards();
+  const mc = $(".md-countdown");
+  if (mc && !$("#modalBackdrop").hidden) mc.textContent = tMinus(new Date(mc.dataset.net)).short + " to launch";
+}, 1000);
+
+/* ---------------- starfield ---------------- */
+(function starfield(){
+  const cv = $("#starfield"), ctx = cv.getContext("2d");
+  const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  let stars = [], W, H;
+  function resize(){
+    W = cv.width = innerWidth * devicePixelRatio;
+    H = cv.height = innerHeight * devicePixelRatio;
+    cv.style.width = innerWidth+"px"; cv.style.height = innerHeight+"px";
+    stars = Array.from({length: Math.min(110, Math.floor(innerWidth/13))}, () => ({
+      x: Math.random()*W, y: Math.random()*H,
+      r: (Math.random()*1.15 + .25) * devicePixelRatio,
+      tw: Math.random()*Math.PI*2, sp: .3 + Math.random()*.9,
+    }));
+  }
+  let lastT = 0;
+  function frame(t){
+    if (!reduced && t - lastT < 33){ requestAnimationFrame(frame); return; }
+    lastT = t;
+    ctx.clearRect(0,0,W,H);
+    for (const s of stars){
+      const a = reduced ? .5 : .28 + .45 * Math.abs(Math.sin(t/1600*s.sp + s.tw));
+      ctx.globalAlpha = a;
+      ctx.fillStyle = s.r > devicePixelRatio ? "#cfd8ff" : "#8fa0d8";
+      ctx.beginPath(); ctx.arc(s.x, s.y, s.r, 0, 7); ctx.fill();
+    }
+    ctx.globalAlpha = 1;
+    if (!reduced) requestAnimationFrame(frame);
+  }
+  addEventListener("resize", resize);
+  resize(); requestAnimationFrame(frame);
+})();
+
+/* ---------------- SEO: structured data for upcoming launches ---------------- */
+function injectSchema(){
+  try{
+    const old = document.getElementById("ld-events");
+    if (old) old.remove();
+    const items = state.launches.slice(0, 20).map((l, i) => ({
+      "@type": "ListItem", "position": i + 1,
+      "item": Object.assign({
+        "@type": "Event",
+        "name": l.name,
+        "startDate": l.net.toISOString(),
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/MixedEventAttendanceMode",
+        "location": { "@type": "Place", "name": l.pad || "Launch pad", "address": l.location || "TBA" },
+        "organizer": { "@type": "Organization", "name": l.provider }
+      },
+      l.windowEnd ? { "endDate": l.windowEnd.toISOString() } : {},
+      l.image ? { "image": l.image } : {},
+      l.desc ? { "description": l.desc.slice(0, 300) } : {})
+    }));
+    const s = document.createElement("script");
+    s.type = "application/ld+json"; s.id = "ld-events";
+    s.textContent = JSON.stringify({ "@context": "https://schema.org", "@type": "ItemList",
+      "name": "Upcoming rocket launches", "itemListElement": items });
+    document.head.appendChild(s);
+  }catch(e){}
+}
+
+/* ---------------- go ---------------- */
+try{
+  const qp = new URLSearchParams(location.search).get("q");
+  if (qp){ state.q = qp; $("#searchBox").value = qp; }
+}catch(e){}
+loadData(false);
