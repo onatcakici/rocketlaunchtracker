@@ -188,16 +188,50 @@
   }
 
   /* ---------- public: static card/modal paint ---------- */
+  // paint queue: max 2 canvases per animation frame so a scroll burst
+  // never blocks the main thread long enough to drop frames
+  const pq = [];
+  let draining = false;
+  function drain(){
+    if (draining) return;
+    draining = true;
+    (function step(){
+      let n = 0;
+      while (pq.length && n < 2){
+        const cv = pq.shift();
+        delete cv.dataset.q;
+        window.RLTWire.paintStatic(cv, cv.dataset.name || "");
+        n++;
+      }
+      if (pq.length) requestAnimationFrame(step);
+      else draining = false;
+    })();
+  }
+  function enqueue(cv){
+    if (!cv || cv.dataset.painted || cv.dataset.q) return;
+    cv.dataset.q = "1";
+    pq.push(cv);
+    drain();
+  }
+  // idle prepaint: after load, quietly paint everything not yet painted,
+  // so the first scroll meets already-painted cards
+  function prepaintIdle(){
+    const next = document.querySelector("canvas.lc-wire:not([data-painted]):not([data-q])");
+    if (!next) return;
+    enqueue(next);
+    if ("requestIdleCallback" in window) requestIdleCallback(prepaintIdle, { timeout: 400 });
+    else setTimeout(prepaintIdle, 90);
+  }
   let cardIO = null;
   if ("IntersectionObserver" in window){
     cardIO = new IntersectionObserver(entries => {
       for (const e of entries){
         if (e.isIntersecting){
-          window.RLTWire.paintStatic(e.target, e.target.dataset.name || "");
+          enqueue(e.target);
           cardIO.unobserve(e.target);
         }
       }
-    }, { rootMargin: "500px 0px" });
+    }, { rootMargin: "600px 0px" });
   }
   window.RLTWire = {
     paintStatic(cv, name){
@@ -214,8 +248,10 @@
       (root || document).querySelectorAll("canvas.lc-wire").forEach(cv => {
         if (cv.dataset.painted) return;
         if (cardIO) cardIO.observe(cv);
-        else window.RLTWire.paintStatic(cv, cv.dataset.name || "");
+        else enqueue(cv);
       });
+      if ("requestIdleCallback" in window) requestIdleCallback(prepaintIdle, { timeout: 600 });
+      else setTimeout(prepaintIdle, 250);
     },
   };
 
@@ -223,13 +259,20 @@
   const heroCv = document.getElementById("wireframe");
   if (heroCv){
     const model = modelFor("falcon default");
-    let start = null, running = true;
+    let start = null, running = true, lastDraw = 0, scrolling = false, scrollT = null;
+    addEventListener("scroll", () => {
+      scrolling = true;
+      clearTimeout(scrollT);
+      scrollT = setTimeout(() => { scrolling = false; }, 160);
+    }, { passive: true });
     function frame(now){
       if (start === null) start = now;
+      if (!reduced && (scrolling || now - lastDraw < 33)){ if (running) requestAnimationFrame(frame); return; }
+      lastDraw = now;
       const t = (now - start) / 1000;
       render(heroCv, model, reduced ? 0.7 : t * 0.4,
         0.12 + (reduced ? 0 : Math.sin(t * 0.23) * 0.05),
-        { rgb: [255, 232, 31], glow: true, base: .62 });
+        { rgb: [255, 232, 31], glow: true, base: .62, maxDpr: 1.5 });
       if (running && !reduced) requestAnimationFrame(frame);
     }
     addEventListener("resize", () => { if (reduced) requestAnimationFrame(frame); });

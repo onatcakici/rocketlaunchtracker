@@ -147,6 +147,7 @@ select.control{appearance:none;padding-right:28px;background-image:linear-gradie
   background:repeating-linear-gradient(0deg,transparent 0 3px,rgba(120,135,190,.04) 3px 4px)}
 .lc-fallback span{font-size:.6rem;letter-spacing:.3em;color:var(--faint);text-transform:uppercase}
 .lc-img .chip{position:absolute;top:10px;left:10px;background:rgba(3,4,7,.85);padding:3px 8px}
+.lc-img .chip::before{animation:none}
 .lc-tminus{position:absolute;right:0;bottom:0;font-size:.66rem;background:rgba(3,4,7,.88);color:var(--blue);padding:4px 9px;letter-spacing:.08em}
 .lc-body{padding:13px 15px 14px;display:flex;flex-direction:column;gap:5px;flex:1}
 .lc-rocket{font-size:.6rem;color:var(--faint);letter-spacing:.2em;text-transform:uppercase}

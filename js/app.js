@@ -6,6 +6,7 @@
    API in the browser. All times rendered in the viewer's zone.
    ============================================================ */
 "use strict";
+console.log("RLT build v3.9");
 
 const DATA_URL = "data/launches.json";
 const API_URL  = "https://ll.thespacedevs.com/2.3.0/launches/upcoming/?limit=60&mode=detailed";
@@ -471,32 +472,26 @@ setInterval(() => {
 
 /* ---------------- starfield ---------------- */
 (function starfield(){
+  // static: drawn once (and on resize). An animated full-screen canvas
+  // behind scrolling content costs frames on mobile for a twinkle nobody misses.
   const cv = $("#starfield"), ctx = cv.getContext("2d");
-  const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
-  let stars = [], W, H;
-  function resize(){
-    W = cv.width = innerWidth * devicePixelRatio;
-    H = cv.height = innerHeight * devicePixelRatio;
+  function draw(){
+    const DPR = Math.min(devicePixelRatio || 1, 1.5);
+    const W = cv.width = innerWidth * DPR;
+    const H = cv.height = innerHeight * DPR;
     cv.style.width = innerWidth+"px"; cv.style.height = innerHeight+"px";
-    stars = Array.from({length: Math.min(110, Math.floor(innerWidth/13))}, () => ({
-      x: Math.random()*W, y: Math.random()*H,
-      r: (Math.random()*1.15 + .25) * devicePixelRatio,
-      tw: Math.random()*Math.PI*2, sp: .3 + Math.random()*.9,
-    }));
-  }
-  function frame(t){
-    ctx.clearRect(0,0,W,H);
-    for (const s of stars){
-      const a = reduced ? .5 : .28 + .45 * Math.abs(Math.sin(t/1600*s.sp + s.tw));
-      ctx.globalAlpha = a;
-      ctx.fillStyle = s.r > devicePixelRatio ? "#cfd8ff" : "#8fa0d8";
-      ctx.beginPath(); ctx.arc(s.x, s.y, s.r, 0, 7); ctx.fill();
+    const n = Math.min(110, Math.floor(innerWidth/13));
+    for (let i = 0; i < n; i++){
+      const r = (Math.random()*1.15 + .25) * DPR;
+      ctx.globalAlpha = .2 + Math.random()*.4;
+      ctx.fillStyle = r > DPR ? "#cfd8ff" : "#8fa0d8";
+      ctx.beginPath(); ctx.arc(Math.random()*W, Math.random()*H, r, 0, 7); ctx.fill();
     }
     ctx.globalAlpha = 1;
-    if (!reduced) requestAnimationFrame(frame);
   }
-  addEventListener("resize", resize);
-  resize(); requestAnimationFrame(frame);
+  let rt = null;
+  addEventListener("resize", () => { clearTimeout(rt); rt = setTimeout(draw, 200); });
+  draw();
 })();
 
 /* ---------------- SEO: structured data for upcoming launches ---------------- */
