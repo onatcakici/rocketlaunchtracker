@@ -7,7 +7,7 @@
 <meta name="description" content="Live countdown to the next rocket launch, plus a full schedule and calendar of upcoming launches from SpaceX, NASA, ULA, Rocket Lab and every other provider — with launch pads, mission details and webcast links. Times shown in your timezone.">
 <meta name="keywords" content="rocket launch today, rocket launch schedule, upcoming rocket launches, next rocket launch, rocket launch calendar, rocket launch tracker, space launch">
 <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
-<meta name="theme-color" content="#030407">
+<meta name="theme-color" content="#f6f7f9">
 <link rel="canonical" href="https://rocketlaunchtracker.com/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Rocket Launch Tracker">
@@ -29,14 +29,13 @@
 <link rel="preconnect" href="https://ll.thespacedevs.com">
 <link rel="preconnect" href="https://commons.wikimedia.org">
 <link rel="preconnect" href="https://upload.wikimedia.org">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"WebSite","name":"Rocket Launch Tracker","url":"https://rocketlaunchtracker.com/","description":"Live rocket launch schedule, calendar and countdowns for upcoming launches worldwide.","publisher":{"@type":"Organization","name":"Rocket Launch Tracker","url":"https://rocketlaunchtracker.com/","logo":"https://rocketlaunchtracker.com/apple-touch-icon.png"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://rocketlaunchtracker.com/?q={search_term_string}"},"query-input":"required name=search_term_string"}}
 </script>
 </head>
 <body>
-<canvas id="starfield" aria-hidden="true"></canvas>
 <div class="page">
 
   <header class="topbar">
@@ -57,32 +56,27 @@
     <h1 class="sr-only">Rocket Launch Tracker — live rocket launch schedule, countdown and calendar of upcoming launches</h1>
     <noscript><p style="padding:20px;border:1px solid #161d33;margin:10px 0">Rocket Launch Tracker lists every upcoming rocket launch — SpaceX, NASA, ULA, Rocket Lab, Blue Origin, Arianespace, ISRO and more — with launch schedule, countdown and calendar views. Enable JavaScript for live data from <a href="https://thespacedevs.com/llapi">Launch Library 2</a>.</p></noscript>
     <!-- ============ HERO / NEXT LAUNCH — real photo, left-weighted ============ -->
-    <section class="hero frame" id="hero" aria-labelledby="heroLabel">
-      <canvas class="hero-wire" id="wireframe" aria-hidden="true"></canvas>
-      <div class="hero-grain" aria-hidden="true"></div>
-      <div class="hero-coord mono" id="heroCoord" aria-hidden="true"></div>
-      <div class="hero-inner">
-        <div class="hero-content">
-          <p class="hero-crawl" aria-hidden="true">// <b>A short time from now, on a launch pad not far away…</b></p>
-          <p class="hero-kicker mono" id="heroLabel">NEXT LAUNCH · T‑MINUS</p>
-          <div class="countdown mono" id="heroCountdown" role="timer" aria-live="off">
-            <div class="cd-cell"><span class="cd-num" id="cdD">--</span><span class="cd-unit">days</span></div>
-            <span class="cd-sep">:</span>
-            <div class="cd-cell"><span class="cd-num" id="cdH">--</span><span class="cd-unit">hrs</span></div>
-            <span class="cd-sep">:</span>
-            <div class="cd-cell"><span class="cd-num" id="cdM">--</span><span class="cd-unit">min</span></div>
-            <span class="cd-sep">:</span>
-            <div class="cd-cell"><span class="cd-num" id="cdS">--</span><span class="cd-unit">sec</span></div>
-          </div>
-          <h2 class="hero-title is-loading" id="heroTitle">Acquiring signal</h2>
-          <p class="hero-sub" id="heroSub"></p>
-          <div class="hero-meta" id="heroMeta"></div>
-          <div class="hero-actions">
-            <a class="btn btn-primary" id="heroWatch" href="#" target="_blank" rel="noopener" hidden>▶ Webcast</a>
-            <button class="btn btn-ghost" id="heroDetails" hidden>Details</button>
-          </div>
+    <section class="hero" id="hero" aria-labelledby="heroLabel">
+      <div class="hero-content">
+        <p class="hero-kicker" id="heroLabel">Next launch · T−</p>
+        <div class="countdown mono" id="heroCountdown" role="timer" aria-live="off">
+          <div class="cd-cell"><span class="cd-num" id="cdD">--</span><span class="cd-unit">days</span></div>
+          <span class="cd-sep">:</span>
+          <div class="cd-cell"><span class="cd-num" id="cdH">--</span><span class="cd-unit">hours</span></div>
+          <span class="cd-sep">:</span>
+          <div class="cd-cell"><span class="cd-num" id="cdM">--</span><span class="cd-unit">min</span></div>
+          <span class="cd-sep">:</span>
+          <div class="cd-cell"><span class="cd-num" id="cdS">--</span><span class="cd-unit">sec</span></div>
+        </div>
+        <h2 class="hero-title is-loading" id="heroTitle">Loading upcoming launches</h2>
+        <p class="hero-sub" id="heroSub"></p>
+        <div class="hero-meta" id="heroMeta"></div>
+        <div class="hero-actions">
+          <a class="btn btn-primary" id="heroWatch" href="#" target="_blank" rel="noopener" hidden>▶ Watch webcast</a>
+          <button class="btn btn-ghost" id="heroDetails" hidden>Mission details</button>
         </div>
       </div>
+      <div class="hero-media"><img id="heroPhoto" alt="" hidden decoding="async" fetchpriority="high"></div>
     </section>
 
     <!-- ============ TELEMETRY STRIP ============ -->
@@ -90,7 +84,7 @@
 
     <!-- ============ CONTROLS ============ -->
     <section class="controls" aria-label="Filters">
-      <input type="search" id="searchBox" class="control search" placeholder="SEARCH MISSIONS / ROCKETS / PADS" aria-label="Search launches">
+      <input type="search" id="searchBox" class="control search" placeholder="Search missions, rockets, pads…" aria-label="Search launches">
       <select id="providerSel" class="control" aria-label="Filter by provider"><option value="">All providers</option></select>
       <select id="statusSel" class="control" aria-label="Filter by status">
         <option value="">All statuses</option>
@@ -167,7 +161,7 @@
     <div class="footer-inner">
       <div>
         <p><strong>Rocket Launch Tracker</strong> — every upcoming launch, one board.</p>
-        <p class="footer-fine">Times shown in your local timezone · Data refreshes every 6 h + live on visit · Not affiliated with any launch provider. May the thrust be with you.</p>
+        <p class="footer-fine">Times shown in your local timezone · Data refreshes every 6 h + live on visit · Not affiliated with any launch provider. Fly safe.</p>
       </div>
       <p class="footer-credits">Data: <a href="https://thespacedevs.com/llapi" target="_blank" rel="noopener">Launch Library 2 · The Space Devs</a><br>
         Photos: <a href="https://commons.wikimedia.org/wiki/File:Apollo_11_Launch_-_GPN-2000-000630.jpg" target="_blank" rel="noopener">NASA</a> ·
@@ -185,6 +179,5 @@
 </div>
 
 <script src="js/app.js"></script>
-<script src="js/wireframe.js"></script>
 </body>
 </html>

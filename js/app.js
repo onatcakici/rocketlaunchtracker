@@ -6,7 +6,7 @@
    API in the browser. All times rendered in the viewer's zone.
    ============================================================ */
 "use strict";
-console.log("RLT build v3.9");
+console.log("RLT build v4.0");
 
 const DATA_URL = "data/launches.json";
 const API_URL  = "https://ll.thespacedevs.com/2.3.0/launches/upcoming/?limit=60&mode=detailed";
@@ -233,12 +233,10 @@ function renderHero(){
   const det = $("#heroDetails");
   det.hidden = false;
   det.onclick = () => openModal(l.id);
-  const coordEl = $("#heroCoord");
-  if (coordEl){
-    const la = parseFloat(l.latitude), lo = parseFloat(l.longitude);
-    coordEl.textContent = (isFinite(la) && isFinite(lo))
-      ? `PAD ${Math.abs(la).toFixed(4)}°${la >= 0 ? "N" : "S"} ${Math.abs(lo).toFixed(4)}°${lo >= 0 ? "E" : "W"}`
-      : "";
+  const hp = $("#heroPhoto");
+  if (hp){
+    if (l.image){ hp.src = l.image; hp.alt = l.name; hp.hidden = false; }
+    else hp.hidden = true;
   }
   $("#heroTitle").classList.remove("is-loading");
   tickHero();
@@ -250,7 +248,7 @@ function tickHero(){
   $("#cdD").textContent = pad2(t.d); $("#cdH").textContent = pad2(t.h);
   $("#cdM").textContent = pad2(t.m); $("#cdS").textContent = pad2(t.s);
   $("#hero").classList.toggle("is-liftoff", t.past);
-  $("#heroLabel").textContent = t.past ? "LIFTOFF · T‑PLUS" : "NEXT LAUNCH · T‑MINUS";
+  $("#heroLabel").textContent = t.past ? "Liftoff · T+" : "Next launch · T−";
   let seen = t.past;
   for (const [id, val] of [["cdD", t.d], ["cdH", t.h], ["cdM", t.m]]){
     const cell = $("#" + id).parentElement;
@@ -276,8 +274,7 @@ function renderStats(){
 function cardHtml(l){
   return `
   <button class="launch-card" data-id="${escapeHtml(l.id)}" aria-label="${escapeHtml(l.name)} details">
-    <div class="lc-img"><canvas class="lc-wire" data-name="${escapeHtml(l.rocket)}" aria-hidden="true"></canvas>
-      ${l.image ? `<img class="lc-photo" src="${escapeHtml(l.image)}" alt="${escapeHtml(l.name)}" loading="lazy" decoding="async" onload="this.classList.add('on')" onerror="this.remove()">` : ""}
+    <div class="lc-img">${l.image ? `<img class="lc-photo" src="${escapeHtml(l.image)}" alt="${escapeHtml(l.name)}" loading="lazy" decoding="async" onload="this.classList.add('on')" onerror="this.remove()">` : ""}
       ${chip(l)}<span class="lc-tminus" data-net="${l.net.toISOString()}"></span></div>
     <div class="lc-body">
       <span class="lc-rocket">${escapeHtml(l.rocket)} · ${escapeHtml(l.provider)}</span>
@@ -293,9 +290,8 @@ function renderList(){
   const ls = visibleLaunches();
   $("#listView").innerHTML = ls.length
     ? ls.map(cardHtml).join("")
-    : `<div class="empty-note">NO LAUNCHES MATCH.<button id="resetFilters" type="button">Reset filters</button></div>`;
+    : `<div class="empty-note">No launches match those filters.<button id="resetFilters" type="button">Reset filters</button></div>`;
   tickCards();
-  if (window.RLTWire) RLTWire.paintAll($("#listView"));
 }
 function tickCards(){
   const now = Date.now();
@@ -359,7 +355,7 @@ function openModal(id){
   if (!l) return;
   const t = tMinus(l.net);
   $("#modalBody").innerHTML = `
-    <div class="md-img"><canvas class="lc-wire" data-name="${escapeHtml(l.rocket)}" aria-hidden="true"></canvas>${l.image
+    <div class="md-img">${l.image
       ? `<img class="lc-photo" src="${escapeHtml(l.image)}" alt="${escapeHtml(l.name)}" decoding="async" onload="this.classList.add('on')" onerror="this.remove()">`
       : ``}</div>
     <div class="md-body">
@@ -388,7 +384,6 @@ function openModal(id){
     </div>`;
   $("#modalBackdrop").hidden = false;
   document.body.style.overflow = "hidden";
-  if (window.RLTWire) RLTWire.paintAll($("#modalBody"));
   $("#modalClose").focus();
 }
 function openDayModal(k){
@@ -403,7 +398,6 @@ function openDayModal(k){
   $("#modalBackdrop").hidden = false;
   document.body.style.overflow = "hidden";
   tickCards();
-  if (window.RLTWire) RLTWire.paintAll($("#modalBody"));
 }
 function closeModal(){
   $("#modalBackdrop").hidden = true;
@@ -472,26 +466,8 @@ setInterval(() => {
 
 /* ---------------- starfield ---------------- */
 (function starfield(){
-  // static: drawn once (and on resize). An animated full-screen canvas
-  // behind scrolling content costs frames on mobile for a twinkle nobody misses.
-  const cv = $("#starfield"), ctx = cv.getContext("2d");
-  function draw(){
-    const DPR = Math.min(devicePixelRatio || 1, 1.5);
-    const W = cv.width = innerWidth * DPR;
-    const H = cv.height = innerHeight * DPR;
-    cv.style.width = innerWidth+"px"; cv.style.height = innerHeight+"px";
-    const n = Math.min(110, Math.floor(innerWidth/13));
-    for (let i = 0; i < n; i++){
-      const r = (Math.random()*1.15 + .25) * DPR;
-      ctx.globalAlpha = .2 + Math.random()*.4;
-      ctx.fillStyle = r > DPR ? "#cfd8ff" : "#8fa0d8";
-      ctx.beginPath(); ctx.arc(Math.random()*W, Math.random()*H, r, 0, 7); ctx.fill();
-    }
-    ctx.globalAlpha = 1;
-  }
-  let rt = null;
-  addEventListener("resize", () => { clearTimeout(rt); rt = setTimeout(draw, 200); });
-  draw();
+  const cv = $("#starfield");
+  if (!cv) return;
 })();
 
 /* ---------------- SEO: structured data for upcoming launches ---------------- */
