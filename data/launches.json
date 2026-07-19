@@ -1,51 +1,8 @@
 {
-  "generated": "2026-07-19T03:58:09Z",
+  "generated": "2026-07-19T08:35:25Z",
   "sample": false,
   "count": 60,
   "results": [
-    {
-      "id": "10fa7952-f00b-4292-80a2-4207e208844e",
-      "name": "Vikram-I | Demo Flight",
-      "net": "2026-07-18T06:35:30Z",
-      "window_start": "2026-07-18T05:00:00Z",
-      "window_end": "2026-07-18T09:00:00Z",
-      "status": {
-        "abbrev": "Success",
-        "name": "Launch Successful",
-        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
-      },
-      "probability": null,
-      "provider": "Skyroot Aerospace",
-      "rocket": "Vikram-I",
-      "mission": {
-        "name": "Demo Flight",
-        "description": "First launch of Skyroot Aerospace's Vikram-I launch vehicle. \r\n\r\nThis first launch will carry 4 payloads:\r\n- Grahaa Space's SOLARAS S3 satellite\r\n- Cosmoserve Space's in-orbit robotic arm Embrace\r\n- An in-orbit demonstration from DCUBED\r\n- Skyroot's own SCOPE satellite",
-        "type": "Test Flight",
-        "orbit": "Low Earth Orbit"
-      },
-      "pad": {
-        "name": "Satish Dhawan Space Centre First Launch Pad",
-        "map_url": "https://www.google.com/maps?q=13.733,80.235",
-        "latitude": 13.733,
-        "longitude": 80.235,
-        "location": {
-          "name": "Satish Dhawan Space Centre, India",
-          "country_code": "IN"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/vikram-i_on_lau_image_20260717052522.jpg",
-      "webcasts": [
-        {
-          "title": "Vikram-1 | Test Flight-1 | Skyroot | Mission Aagaman| India's First Private Orbital Rocket Launch",
-          "url": "https://www.youtube.com/watch?v=2KKZbSX9SgI"
-        },
-        {
-          "title": "Vikram-1 | Test Flight-1 | Skyroot | Mission Aagaman| India's First Private Orbital Rocket Launch",
-          "url": "https://x.com/i/broadcasts/1PJqrrXWeXbxb"
-        }
-      ],
-      "webcast_live": false
-    },
     {
       "id": "e1079d3a-c0a6-4b42-bc1d-92e48a5a78fc",
       "name": "Falcon 9 Block 5 | Starlink Group 17-39",
@@ -246,13 +203,13 @@
     {
       "id": "fa42624c-1e30-4b4b-a06b-59b6153bc4e5",
       "name": "Kinetica 1 | Unknown Payload",
-      "net": "2026-07-24T02:00:00Z",
-      "window_start": "2026-07-24T02:00:00Z",
-      "window_end": "2026-07-24T08:00:00Z",
+      "net": "2026-07-23T23:30:00Z",
+      "window_start": "2026-07-23T23:24:00Z",
+      "window_end": "2026-07-23T23:50:00Z",
       "status": {
-        "abbrev": "TBC",
-        "name": "To Be Confirmed",
-        "description": "Awaiting official confirmation - current date is known with some certainty."
+        "abbrev": "Go",
+        "name": "Go for Launch",
+        "description": "Current T-0 confirmed by official or reliable sources."
       },
       "probability": null,
       "provider": "CAS Space",
@@ -2105,6 +2062,40 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "bf2c3027-a314-403e-a416-2bfd5d165ad1",
+      "name": "Falcon 9 Block 5 | Dragon CRS-2 SpX-35",
+      "net": "2026-12-31T00:00:00Z",
+      "window_start": "2026-12-31T00:00:00Z",
+      "window_end": "2026-12-31T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "SpaceX",
+      "rocket": "Falcon 9 Block 5",
+      "mission": {
+        "name": "Dragon CRS-2 SpX-35",
+        "description": "35th commercial resupply services mission to the International Space Station operated by SpaceX. The flight will be conducted under the second Commercial Resupply Services contract with NASA.\r\n\r\nCargo Dragon 2 brings supplies and payloads, including critical materials to directly support science and research investigations that occur onboard the orbiting laboratory.",
+        "type": "Resupply",
+        "orbit": "Low Earth Orbit"
+      },
+      "pad": {
+        "name": "Unknown Pad",
+        "map_url": "https://www.google.com/maps?q=28.458,-80.528",
+        "latitude": 28.458,
+        "longitude": -80.528,
+        "location": {
+          "name": "Cape Canaveral SFS, FL, USA",
+          "country_code": "US"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20210520085648.jpeg",
       "webcasts": [],
       "webcast_live": false
     }
