@@ -6,7 +6,7 @@
    API in the browser. All times rendered in the viewer's zone.
    ============================================================ */
 "use strict";
-console.log("RLT build v4.3");
+console.log("RLT build v4.4");
 
 const DATA_URL = "data/launches.json";
 const API_URL  = "https://ll.thespacedevs.com/2.3.0/launches/upcoming/?limit=60&mode=detailed";
@@ -145,39 +145,10 @@ async function fetchJson(url){
 function lsGet(){ try { return JSON.parse(localStorage.getItem(LS_KEY)); } catch(e){ return null; } }
 function lsSet(v){ try { localStorage.setItem(LS_KEY, JSON.stringify(v)); } catch(e){} }
 
-async function loadData(force){
-  let dataset = null;
-
-  // 1. repo-cached file (production path on GitHub Pages)
-  if (!force){
-    try {
-      const j = await fetchJson(DATA_URL);
-      dataset = { raw:j, source:"cached feed", generated: j.generated ? new Date(j.generated) : null, sample: !!j.sample };
-    } catch(e){ /* file:// preview or missing file */ }
-  }
-
-  const stale = !dataset || dataset.sample || !dataset.generated || (Date.now() - dataset.generated > STALE_MS);
-
-  // 2. live API when cache is missing/stale (browser hits the API directly)
-  if (stale || force){
-    try {
-      const j = await fetchJson(API_URL);
-      dataset = { raw:j, source:"live API", generated:new Date(), sample:false };
-      lsSet({ t: Date.now(), data: j });
-    } catch(e){
-      // 3. last-resort: localStorage copy from an earlier visit
-      if (!dataset){
-        const c = lsGet();
-        if (c && c.data) dataset = { raw:c.data, source:"saved copy", generated:new Date(c.t), sample:false };
-      }
-    }
-  }
-
-  if (!dataset){
-    $("#heroTitle").textContent = "Couldn't reach launch data — check your connection and refresh.";
-    return;
-  }
-
+let painted = false;
+function applyDataset(dataset){
+  // never replace real data with sample data
+  if (painted && dataset.sample && !state.sample) return;
   state.launches  = normalize(dataset.raw);
   state.generated = dataset.generated;
   state.source    = dataset.source;
@@ -186,8 +157,44 @@ async function loadData(force){
   renderSites();
   renderAll();
   injectSchema();
-  loadPrevious();
-  openFromHash();
+  if (!painted){ painted = true; loadPrevious(); openFromHash(); }
+}
+
+async function loadData(force){
+  // 0. instant paint from the previous visit's saved copy (no network wait)
+  if (!force && !painted){
+    const c = lsGet();
+    if (c && c.data){
+      applyDataset({ raw:c.data, source:"saved copy", generated:new Date(c.t), sample:false });
+    }
+  }
+
+  // 1. repo-cached feed (preloaded in <head>; fast, same-origin)
+  let dataset = null;
+  if (!force){
+    try {
+      const j = await fetchJson(DATA_URL);
+      dataset = { raw:j, source:"cached feed", generated: j.generated ? new Date(j.generated) : null, sample: !!j.sample };
+      applyDataset(dataset);
+      if (!dataset.sample) lsSet({ t: dataset.generated ? +dataset.generated : Date.now(), data: j });
+    } catch(e){ /* file:// preview or missing file */ }
+  }
+
+  // 2. live API refresh in the background when the feed is missing/stale.
+  //    The page is already interactive — this only upgrades the data.
+  const stale = !dataset || dataset.sample || !dataset.generated || (Date.now() - dataset.generated > STALE_MS);
+  if (stale || force){
+    try {
+      const j = await fetchJson(API_URL);
+      applyDataset({ raw:j, source:"live API", generated:new Date(), sample:false });
+      lsSet({ t: Date.now(), data: j });
+    } catch(e){ /* offline or rate-limited — whatever painted stays */ }
+  }
+
+  if (!painted){
+    $("#heroTitle").textContent = "Couldn't reach launch data — check your connection and refresh.";
+    $("#listView").innerHTML = "";
+  }
 }
 
 async function loadPrevious(){
@@ -412,7 +419,7 @@ function openModal(id){
         ${l.status.description ? `<div class="md-fact"><div class="k">Status note</div><div class="v">${escapeHtml(l.status.description)}</div></div>` : ""}
         <div class="md-fact" id="wxFact" hidden><div class="k">Pad weather now</div><div class="v">—</div></div>
       </div>
-      <div class="md-orbit"><canvas id="orbitCv" aria-hidden="true"></canvas><div class="orbit-cap" id="orbitCap">Illustrative trajectory</div></div>
+      ${window.RLTOrbit ? `<div class="md-orbit"><canvas id="orbitCv" aria-hidden="true"></canvas><div class="orbit-cap" id="orbitCap">Illustrative trajectory</div></div>` : ""}
       ${l.desc ? `<p class="md-desc">${escapeHtml(l.desc)}</p>` : ""}
       <div class="md-links">
         ${l.webcasts.slice(0,2).map(w => `<a class="btn btn-primary" href="${escapeHtml(w.url)}" target="_blank" rel="noopener">▶ ${escapeHtml(w.title)}</a>`).join("")}

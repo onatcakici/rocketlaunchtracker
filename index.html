@@ -29,6 +29,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://ll.thespacedevs.com">
+<link rel="preload" href="data/launches.json" as="fetch">
 <link rel="preconnect" href="https://commons.wikimedia.org">
 <link rel="preconnect" href="https://upload.wikimedia.org">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -115,7 +116,9 @@
     <div class="sites-row" id="sitesRow" aria-label="Filter by launch site"></div>
 
     <!-- ============ LIST VIEW ============ -->
-    <section id="listView" class="launch-grid" aria-label="Upcoming launches"></section>
+    <section id="listView" class="launch-grid" aria-label="Upcoming launches">
+      <div class="sk-card" aria-hidden="true"></div><div class="sk-card" aria-hidden="true"></div><div class="sk-card" aria-hidden="true"></div><div class="sk-card" aria-hidden="true"></div><div class="sk-card" aria-hidden="true"></div><div class="sk-card" aria-hidden="true"></div>
+    </section>
 
     <!-- ============ RECENT VIEW ============ -->
     <section id="recentView" class="launch-grid" hidden aria-label="Recent launches"></section>

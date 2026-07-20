@@ -308,3 +308,11 @@ select.control{appearance:none;padding-right:32px;background-image:linear-gradie
 :root[data-theme="dark"] .md-orbit,:root.auto-dark .md-orbit{background:#0e1420;border-color:var(--line)}
 :root[data-theme="dark"] .orbit-cap,:root.auto-dark .orbit-cap{background:var(--card)}
 :root[data-theme="dark"] .mapwrap,:root.auto-dark .mapwrap{background:var(--card)}
+
+/* ===== v4.4 LOADING SKELETONS ===== */
+.sk-card{height:290px;border-radius:14px;border:1px solid var(--line);
+  background:linear-gradient(100deg,var(--card) 40%,var(--bg) 50%,var(--card) 60%);
+  background-size:200% 100%;animation:sk 1.1s linear infinite}
+@keyframes sk{to{background-position:-200% 0}}
+@media (prefers-reduced-motion: reduce){.sk-card{animation:none}}
+:root[data-theme="dark"] .sk-card,:root.auto-dark .sk-card{border-color:var(--line)}
