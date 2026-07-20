@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>2026 rocket launches — complete list and results | Rocket Launch Tracker</title>
+<meta name="description" content="Every 2026 rocket launch tracked by this site: dates, missions, providers, rockets, launch sites and outcomes, updated automatically.">
+<link rel="canonical" href="https://rocketlaunchtracker.com/launches-2026.html">
+<meta name="robots" content="index,follow">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="lp">
+<header class="lp-head"><a class="lp-brand" href="./"><img src="favicon.png" alt="" width="22" height="22"> Rocket<span>Launch</span>Tracker</a></header>
+<main class="lp-main">
+  <p class="lp-kicker">Archive</p>
+  <h1 class="lp-title">2026 rocket launches</h1>
+  <p class="lp-desc" id="yrNote">Every launch this site has tracked in 2026, newest first. The list grows automatically after each flight.</p>
+  <div class="cmp-wrap"><table class="cmp" id="yrTable"><thead><tr><th>Date (UTC)</th><th>Mission</th><th>Provider</th><th>Rocket</th><th>Site</th><th>Result</th></tr></thead><tbody></tbody></table></div>
+  <p class="lp-fine"><a href="./">← All upcoming launches</a> · <a href="stats.html">Stats</a> · Data: <a href="https://thespacedevs.com/llapi" rel="noopener" target="_blank">Launch Library 2</a></p>
+</main>
+<script>
+(async () => {
+  const seen = new Map();
+  for (const u of ["archive/2026.json", "data/previous.json"]){
+    try{ const r = await fetch(u); if (r.ok) for (const l of ((await r.json()).results || [])) if ((l.net || "").startsWith("2026")) seen.set(String(l.id), l); }catch(e){}
+  }
+  const L = [...seen.values()].sort((a, b) => new Date(b.net) - new Date(a.net));
+  const esc = x => String(x == null ? "" : x).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+  const chip = s => { const a = (s && s.abbrev) || "?";
+    const cls = a === "Success" ? "chip-go" : (a === "Failure" ? "chip-tbd" : "chip-other");
+    return '<span class="chip ' + cls + '">' + esc(a) + "</span>"; };
+  document.querySelector("#yrTable tbody").innerHTML = L.map(l =>
+    "<tr><td>" + esc((l.net || "").slice(0, 16).replace("T", " ")) + "</td><td>" + esc(l.name) + "</td><td>" + esc(l.provider) +
+    "</td><td>" + esc(l.rocket) + "</td><td>" + esc(((l.pad || {}).location || {}).name || "—") + "</td><td>" + chip(l.status) + "</td></tr>").join("");
+  if (!L.length) document.getElementById("yrNote").textContent = "No 2026 launches archived yet — check back after the next flight.";
+})();
+</script>
+</body>
+</html>

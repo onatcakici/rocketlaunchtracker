@@ -104,3 +104,10 @@ Launch data © [The Space Devs — Launch Library 2](https://thespacedevs.com/ll
 
 ## New pages
 Provider pages (spacex, rocket-lab, ula, blue-origin, arianespace, isro), rocket pages (falcon-9, starship, electron, new-glenn, ariane-6, vulcan), `glossary.html`, `stats.html` (reads the archive), `offline.html` (service-worker fallback).
+
+## v4.7 additions
+- Year archive pages `launches-<year>.html` (auto-generated per archive year), `compare.html` (rocket spec comparison), `api.html` (public feed docs).
+- Crew shown on crewed missions (slimmed from LL2 `spacecraft_stage.launch_crew`).
+- Saved launches: ☆ Save in any mission popup + ★ filter button next to refresh (localStorage only).
+- Alerts now ALSO post to per-provider topics: `rocketlaunchtracker-alerts-<provider-slug>` (e.g. `-spacex`, `-rocket-lab`).
+- Optional Mastodon bot: create a Mastodon account for the site, then add repo secrets `MASTODON_SERVER` (e.g. https://mastodon.social) and `MASTODON_TOKEN` (Settings → Development → New application → write:statuses). The alerts workflow will toot before every launch automatically. No secrets = silently skipped.

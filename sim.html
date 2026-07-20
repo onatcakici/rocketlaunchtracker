@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mission Simulator | Rocket Launch Tracker</title>
+<meta name="description" content="Interactive launch simulator: scrub any upcoming mission from ignition to orbit — physics-based ascent, staging, booster landing and telemetry, on a real day/night Earth.">
+<link rel="canonical" href="https://rocketlaunchtracker.com/sim.html">
+<meta name="robots" content="index,follow">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="lp">
+<header class="lp-head"><a class="lp-brand" href="./"><img src="favicon.png" alt="" width="22" height="22"> Rocket<span>Launch</span>Tracker</a></header>
+<main class="lp-main sim-main">
+  <p class="lp-kicker">Mission simulator · <span class="sim-tag">simulated — not actual telemetry</span></p>
+  <h1 class="lp-title" id="simTitle">Loading mission…</h1>
+  <p class="sim-sub" id="simSub"></p>
+
+  <div class="sim-stage">
+    <canvas id="simCv"></canvas>
+    <div class="sim-hud sim-hud-tl" id="hudPhase">—</div>
+    <div class="sim-hud sim-hud-tr">
+      <div class="hud-g"><span class="hud-k">T-CLOCK</span><span class="hud-v mono" id="gT">T−00:10</span></div>
+      <div class="hud-g"><span class="hud-k">ALTITUDE</span><span class="hud-v mono" id="gAlt">0.0 km</span></div>
+      <div class="hud-g"><span class="hud-k">VELOCITY</span><span class="hud-v mono" id="gVel">0 m/s</span></div>
+      <div class="hud-g"><span class="hud-k">DOWNRANGE</span><span class="hud-v mono" id="gRng">0 km</span></div>
+    </div>
+    <div class="sim-hud sim-hud-bl" id="hudHint">drag to rotate · scroll to zoom</div>
+  </div>
+
+  <div class="sim-bar">
+    <button class="sim-btn" id="btnPlay" aria-label="Play or pause">▶</button>
+    <div class="sim-scrub">
+      <div class="sim-ticks" id="ticks"></div>
+      <input type="range" id="scrub" min="-10" max="600" step="0.5" value="-10" aria-label="Mission time">
+    </div>
+    <div class="sim-seg" role="group" aria-label="Playback speed">
+      <button class="seg-btn is-active" data-speed="1">1×</button>
+      <button class="seg-btn" data-speed="10">10×</button>
+      <button class="seg-btn" data-speed="100">100×</button>
+    </div>
+    <div class="sim-seg" role="group" aria-label="Camera">
+      <button class="seg-btn is-active" data-cam="free">Free</button>
+      <button class="seg-btn" data-cam="chase">Chase</button>
+      <button class="seg-btn" data-cam="pad">Pad</button>
+    </div>
+    <button class="sim-btn sim-btn-txt" id="btnTrack" aria-pressed="false" title="Ground track view">Track</button>
+  </div>
+
+  <p class="lp-fine">Physics: point-mass gravity-turn integration with approximate public vehicle figures — real gravity, atmosphere and staging; guidance and masses are simplified. <a href="glossary.html">Glossary</a> · <a href="./" id="backBoard">← All launches</a> <span id="lpLink"></span></p>
+</main>
+<script src="js/orbit.js"></script>
+<script src="js/simcore.js"></script>
+<script src="js/sim.js"></script>
+</body>
+</html>

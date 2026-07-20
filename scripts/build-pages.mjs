@@ -69,6 +69,7 @@ function page(l, past){
     offers: { "@type": "Offer", url: `${SITE}/launch/${s}.html`, price: "0", priceCurrency: "USD",
       availability: "https://schema.org/InStock", validFrom: l.net }
   };
+  const crew = Array.isArray(l.crew) ? l.crew.filter(c => c && c.name) : [];
   const data = { id: l.id, name: l.name, net: l.net, windowEnd: l.window_end, status: l.status || {},
     provider: l.provider, rocket: l.rocket, orbit: orbitName, pad: pad.name,
     location: loc.name, country: loc.country_code,
@@ -113,6 +114,7 @@ function page(l, past){
   <h1 class="lp-title">${esc(l.name)}</h1>
   <p class="lp-count" id="lpCount">${past ? "Launched" : "—"}</p>
   <div id="lpLive"></div>
+  ${crew.length ? `<div class="md-crew">${crew.map(c => `<span class="crew-chip">${c.img ? `<img src="${esc(c.img)}" alt="" loading="lazy" onerror="this.remove()">` : ""}<span><strong>${esc(c.name)}</strong>${c.role ? ` · ${esc(c.role)}` : ""}</span></span>`).join("")}</div>` : ""}
   <div class="md-facts lp-facts">
     ${facts.map(([k, v]) => `<div class="md-fact"><div class="k">${k}</div><div class="v">${v}</div></div>`).join("\n    ")}
     <div class="md-fact" id="lpWx" hidden><div class="k">Forecast at liftoff</div><div class="v">—</div></div>
@@ -122,6 +124,7 @@ function page(l, past){
   <div class="md-links">
     ${(l.webcasts || []).slice(0, 2).map(w => `<a class="btn btn-primary" href="${esc(w.url)}" target="_blank" rel="noopener">▶ ${esc(w.title || "Webcast")}</a>`).join("\n    ")}
     ${pad.map_url ? `<a class="btn btn-ghost" href="${esc(pad.map_url)}" target="_blank" rel="noopener">Pad map</a>` : ""}
+    <a class="btn btn-ghost" href="../sim.html?id=${encodeURIComponent(String(l.id))}">Open simulator ▸</a>
     <a class="btn btn-ghost" href="../">All launches →</a>
   </div>
   <p class="lp-fine">Times on this page update to your timezone. Data: <a href="https://thespacedevs.com/llapi" rel="noopener" target="_blank">Launch Library 2</a> · <a href="../glossary.html">Glossary</a> · <a href="../stats.html">Stats</a></p>
@@ -139,6 +142,54 @@ for (const l of upcoming){ const s = slug(l); keep.add(s + ".html"); writeFileSy
 for (const l of previous){ const s = slug(l); if (!keep.has(s + ".html")){ keep.add(s + ".html"); writeFileSync(`launch/${s}.html`, page(l, true)); } }
 for (const f of readdirSync("launch")) if (f.endsWith(".html") && !keep.has(f)) unlinkSync(`launch/${f}`);
 
+/* ---------- year archive pages ---------- */
+const YEARS = Object.keys(byYear).concat(
+  (() => { try { return readdirSync("archive").filter(f => /^\d{4}\.json$/.test(f)).map(f => f.slice(0, 4)); } catch { return []; } })()
+).filter((v, i, arr) => arr.indexOf(v) === i).sort();
+for (const y of YEARS){
+  writeFileSync(`launches-${y}.html`, `<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>${y} rocket launches — complete list and results | Rocket Launch Tracker</title>
+<meta name="description" content="Every ${y} rocket launch tracked by this site: dates, missions, providers, rockets, launch sites and outcomes, updated automatically.">
+<link rel="canonical" href="${SITE}/launches-${y}.html">
+<meta name="robots" content="index,follow">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="lp">
+<header class="lp-head"><a class="lp-brand" href="./"><img src="favicon.png" alt="" width="22" height="22"> Rocket<span>Launch</span>Tracker</a></header>
+<main class="lp-main">
+  <p class="lp-kicker">Archive</p>
+  <h1 class="lp-title">${y} rocket launches</h1>
+  <p class="lp-desc" id="yrNote">Every launch this site has tracked in ${y}, newest first. The list grows automatically after each flight.</p>
+  <div class="cmp-wrap"><table class="cmp" id="yrTable"><thead><tr><th>Date (UTC)</th><th>Mission</th><th>Provider</th><th>Rocket</th><th>Site</th><th>Result</th></tr></thead><tbody></tbody></table></div>
+  <p class="lp-fine"><a href="./">← All upcoming launches</a> · <a href="stats.html">Stats</a> · Data: <a href="https://thespacedevs.com/llapi" rel="noopener" target="_blank">Launch Library 2</a></p>
+</main>
+<script>
+(async () => {
+  const seen = new Map();
+  for (const u of ["archive/${y}.json", "data/previous.json"]){
+    try{ const r = await fetch(u); if (r.ok) for (const l of ((await r.json()).results || [])) if ((l.net || "").startsWith("${y}")) seen.set(String(l.id), l); }catch(e){}
+  }
+  const L = [...seen.values()].sort((a, b) => new Date(b.net) - new Date(a.net));
+  const esc = x => String(x == null ? "" : x).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+  const chip = s => { const a = (s && s.abbrev) || "?";
+    const cls = a === "Success" ? "chip-go" : (a === "Failure" ? "chip-tbd" : "chip-other");
+    return '<span class="chip ' + cls + '">' + esc(a) + "</span>"; };
+  document.querySelector("#yrTable tbody").innerHTML = L.map(l =>
+    "<tr><td>" + esc((l.net || "").slice(0, 16).replace("T", " ")) + "</td><td>" + esc(l.name) + "</td><td>" + esc(l.provider) +
+    "</td><td>" + esc(l.rocket) + "</td><td>" + esc(((l.pad || {}).location || {}).name || "—") + "</td><td>" + chip(l.status) + "</td></tr>").join("");
+  if (!L.length) document.getElementById("yrNote").textContent = "No ${y} launches archived yet — check back after the next flight.";
+})();
+</script>
+</body>
+</html>
+`);
+}
+
 /* ---------- og manifest ---------- */
 mkdirSync("og", { recursive: true });
 const man = upcoming.map(l => ({ slug: slug(l), name: l.name, provider: l.provider || "", rocket: l.rocket || "",
@@ -152,7 +203,8 @@ const today = (up.generated || new Date().toISOString()).slice(0, 10);
 const core = ["", "cape-canaveral.html", "vandenberg.html", "starbase.html", "florida.html",
   "spacex.html", "rocket-lab.html", "ula.html", "blue-origin.html", "arianespace.html", "isro.html",
   "falcon-9.html", "starship.html", "electron.html", "new-glenn.html", "ariane-6.html", "vulcan.html",
-  "glossary.html", "stats.html"];
+  "glossary.html", "stats.html", "compare.html", "api.html", "sim.html",
+  ...YEARS.map(y => `launches-${y}.html`)];
 const urls = [
   ...core.map(u => `  <url><loc>${SITE}/${u}</loc><lastmod>${today}</lastmod><changefreq>${u === "" ? "hourly" : "daily"}</changefreq><priority>${u === "" ? "1.0" : "0.7"}</priority></url>`),
   ...upcoming.map(l => `  <url><loc>${SITE}/launch/${slug(l)}.html</loc><lastmod>${today}</lastmod><changefreq>hourly</changefreq><priority>0.8</priority></url>`)
