@@ -6,7 +6,7 @@
    API in the browser. All times rendered in the viewer's zone.
    ============================================================ */
 "use strict";
-console.log("RLT build v4.0");
+console.log("RLT build v4.2");
 
 const DATA_URL = "data/launches.json";
 const API_URL  = "https://ll.thespacedevs.com/2.3.0/launches/upcoming/?limit=60&mode=detailed";
@@ -22,6 +22,7 @@ const state = {
   source: "…",
   sample: false,
   q: "", provider: "", status: "",
+  previous: [],
   view: "list",
   calCursor: null,     // Date anchored to displayed month
 };
@@ -182,8 +183,19 @@ async function loadData(force){
   state.source    = dataset.source;
   state.sample    = dataset.sample;
   buildProviderOptions();
+  renderSites();
   renderAll();
   injectSchema();
+  loadPrevious();
+  openFromHash();
+}
+
+async function loadPrevious(){
+  try{
+    const jj = await fetchJson("data/previous.json");
+    state.previous = normalize(jj).sort((a, b) => b.net - a.net);
+    if (state.view === "recent") renderRecent();
+  }catch(e){}
 }
 
 /* ---------------- filtering ---------------- */
@@ -298,6 +310,30 @@ function tickCards(){
   $$(".lc-tminus").forEach(el => { el.textContent = tMinus(new Date(el.dataset.net), now).short; });
 }
 
+function renderRecent(){
+  const ls = state.previous;
+  $("#recentView").innerHTML = ls.length
+    ? ls.map(cardHtml).join("")
+    : `<div class="empty-note">Recent launches appear after the next data refresh.</div>`;
+  tickCards();
+}
+
+/* ---------------- launch sites row ---------------- */
+function renderSites(){
+  const row = $("#sitesRow");
+  if (!row) return;
+  const counts = {};
+  for (const l of state.launches){
+    if (!l.location) continue;
+    const key = l.location.split(",")[0].trim();
+    if (!counts[key]) counts[key] = { n: 0, country: l.country };
+    counts[key].n++;
+  }
+  const top = Object.entries(counts).sort((a, b) => b[1].n - a[1].n).slice(0, 8);
+  row.innerHTML = top.map(([name, v]) =>
+    `<button class="site-chip${state.q === name ? " on" : ""}" data-site="${escapeHtml(name)}">${flag(v.country)}${escapeHtml(name)} <span class="n">${v.n}</span></button>`).join("");
+}
+
 /* ---------------- calendar view ---------------- */
 function renderCalendar(){
   const cur = state.calCursor || (state.calCursor = new Date());
@@ -374,6 +410,7 @@ function openModal(id){
         ${l.mtype ? `<div class="md-fact"><div class="k">Mission type</div><div class="v">${escapeHtml(l.mtype)}</div></div>` : ""}
         ${l.orbit ? `<div class="md-fact"><div class="k">Target orbit</div><div class="v">${escapeHtml(l.orbit)}</div></div>` : ""}
         ${l.status.description ? `<div class="md-fact"><div class="k">Status note</div><div class="v">${escapeHtml(l.status.description)}</div></div>` : ""}
+        <div class="md-fact" id="wxFact" hidden><div class="k">Pad weather now</div><div class="v">—</div></div>
       </div>
       ${l.desc ? `<p class="md-desc">${escapeHtml(l.desc)}</p>` : ""}
       <div class="md-links">
@@ -384,7 +421,36 @@ function openModal(id){
     </div>`;
   $("#modalBackdrop").hidden = false;
   document.body.style.overflow = "hidden";
+  try{ history.replaceState(null, "", "#l-" + encodeURIComponent(id)); }catch(e){}
+  fetchWeather(l);
   $("#modalClose").focus();
+}
+function openFromHash(){
+  const m = location.hash.match(/^#l-(.+)$/);
+  if (m) openModal(decodeURIComponent(m[1]));
+}
+addEventListener("hashchange", openFromHash);
+
+/* ---------------- pad weather (Open-Meteo, keyless) ---------------- */
+const wxCache = {};
+async function fetchWeather(l){
+  const la = parseFloat(l.latitude), lo = parseFloat(l.longitude);
+  if (!isFinite(la) || !isFinite(lo)) return;
+  const key = la.toFixed(2) + "," + lo.toFixed(2);
+  try{
+    if (!wxCache[key]){
+      const r = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${la}&longitude=${lo}&current=temperature_2m,wind_speed_10m,cloud_cover,precipitation&wind_speed_unit=kn`);
+      if (!r.ok) return;
+      wxCache[key] = (await r.json()).current;
+    }
+    const w = wxCache[key], el = $("#wxFact");
+    if (w && el){
+      el.querySelector(".v").textContent =
+        `${Math.round(w.temperature_2m)}°C · wind ${Math.round(w.wind_speed_10m)} kn · ${w.cloud_cover}% cloud` +
+        (w.precipitation > 0 ? ` · rain ${w.precipitation} mm` : "");
+      el.hidden = false;
+    }
+  }catch(e){}
 }
 function openDayModal(k){
   const items = visibleLaunches().filter(l => dayKey(l.net) === k);
@@ -402,6 +468,9 @@ function openDayModal(k){
 function closeModal(){
   $("#modalBackdrop").hidden = true;
   document.body.style.overflow = "";
+  if (location.hash.startsWith("#l-")){
+    try{ history.replaceState(null, "", location.pathname + location.search); }catch(e){}
+  }
 }
 
 /* ---------------- render all / events ---------------- */
@@ -415,13 +484,19 @@ function renderAll(){
 }
 function setView(v){
   state.view = v;
-  $("#btnListView").classList.toggle("is-active", v==="list");
-  $("#btnListView").setAttribute("aria-selected", v==="list");
-  $("#btnCalView").classList.toggle("is-active", v==="cal");
-  $("#btnCalView").setAttribute("aria-selected", v==="cal");
-  $("#listView").hidden = v!=="list";
-  $("#calView").hidden = v!=="cal";
-  if (v==="cal") renderCalendar(); else renderList();
+  const map = { list: "#btnListView", cal: "#btnCalView", recent: "#btnRecentView" };
+  for (const [key, sel] of Object.entries(map)){
+    const b = $(sel);
+    if (!b) continue;
+    b.classList.toggle("is-active", v === key);
+    b.setAttribute("aria-selected", v === key);
+  }
+  $("#listView").hidden = v !== "list";
+  $("#calView").hidden = v !== "cal";
+  $("#recentView").hidden = v !== "recent";
+  if (v === "cal") renderCalendar();
+  else if (v === "recent") renderRecent();
+  else renderList();
 }
 
 document.addEventListener("click", e => {
@@ -432,6 +507,17 @@ document.addEventListener("click", e => {
   }
   const card = e.target.closest(".launch-card");
   if (card){ openModal(card.dataset.id); return; }
+  const sc = e.target.closest(".site-chip");
+  if (sc){
+    const site = sc.dataset.site;
+    state.q = (state.q === site) ? "" : site;
+    $("#searchBox").value = state.q;
+    renderSites(); renderAll();
+    return;
+  }
+  const sb = e.target.closest("#subBtn");
+  if (sb){ const p = $("#subPop"); p.hidden = !p.hidden; return; }
+  if (!e.target.closest(".subwrap")){ const p = $("#subPop"); if (p) p.hidden = true; }
   const chipEl = e.target.closest(".cal-chip");
   if (chipEl){ openModal(chipEl.dataset.id); return; }
   const more = e.target.closest(".cal-more");
@@ -442,6 +528,7 @@ document.addEventListener("keydown", e => { if (e.key === "Escape") closeModal()
 $("#modalClose").addEventListener("click", closeModal);
 $("#btnListView").addEventListener("click", () => setView("list"));
 $("#btnCalView").addEventListener("click", () => setView("cal"));
+$("#btnRecentView") && $("#btnRecentView").addEventListener("click", () => setView("recent"));
 $("#searchBox").addEventListener("input", e => { state.q = e.target.value; renderAll(); });
 $("#providerSel").addEventListener("change", e => { state.provider = e.target.value; renderAll(); });
 $("#statusSel").addEventListener("change", e => { state.status = e.target.value; renderAll(); });
@@ -462,6 +549,24 @@ setInterval(() => {
   if (state.view === "list" && new Date().getSeconds() % 10 === 0) tickCards();
   const mc = $(".md-countdown");
   if (mc && !$("#modalBackdrop").hidden) mc.textContent = tMinus(new Date(mc.dataset.net)).short + " to launch";
+
+  // tab-title countdown + LIVE banner
+  const nl = state.launches.find(l => +l.net >= Date.now() - 30 * 60000);
+  if (nl){
+    const t = tMinus(nl.net);
+    document.title = `${t.short} · ${nl.missionName || nl.name} — Rocket Launch Tracker`;
+    const lb = $("#liveBanner");
+    if (lb){
+      const ms = +nl.net - Date.now();
+      const show = ms < 35 * 60000 && ms > -30 * 60000 && nl.webcasts.length > 0;
+      const k = show ? nl.id + (ms <= 0 ? "live" : "soon") : "off";
+      if (lb.dataset.k !== k){
+        lb.dataset.k = k;
+        lb.hidden = !show;
+        if (show) lb.innerHTML = `<span class="live-dot"></span> ${ms <= 0 ? "LIVE NOW" : "Launching soon"} — ${escapeHtml(nl.missionName || nl.name)} <a href="${escapeHtml(nl.webcasts[0].url)}" target="_blank" rel="noopener">Watch webcast →</a>`;
+      }
+    }
+  }
 }, 1000);
 
 /* ---------------- starfield ---------------- */
@@ -498,9 +603,35 @@ function injectSchema(){
   }catch(e){}
 }
 
+/* ---------------- theme ---------------- */
+(function theme(){
+  const root = document.documentElement;
+  const mq = matchMedia("(prefers-color-scheme: dark)");
+  const stored = () => { try{ return localStorage.getItem("rlt.theme"); }catch(e){ return null; } };
+  function apply(){
+    const s = stored();
+    if (s) root.dataset.theme = s; else delete root.dataset.theme;
+    root.classList.toggle("auto-dark", !s && mq.matches);
+  }
+  mq.addEventListener && mq.addEventListener("change", apply);
+  const btn = $("#themeBtn");
+  if (btn) btn.addEventListener("click", () => {
+    const cur = stored();
+    const isDark = cur === "dark" || (!cur && mq.matches);
+    try{ localStorage.setItem("rlt.theme", isDark ? "light" : "dark"); }catch(e){}
+    apply();
+  });
+  apply();
+})();
+
 /* ---------------- go ---------------- */
 try{
   const qp = new URLSearchParams(location.search).get("q");
   if (qp){ state.q = qp; $("#searchBox").value = qp; }
 }catch(e){}
+const preset = document.body.dataset.preset;
+if (preset && !state.q){ state.q = preset; $("#searchBox").value = preset; }
+if ("serviceWorker" in navigator && (location.protocol === "https:" || location.hostname === "localhost")){
+  addEventListener("load", () => { navigator.serviceWorker.register("sw.js").catch(() => {}); });
+}
 loadData(false);

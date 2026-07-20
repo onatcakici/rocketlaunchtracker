@@ -1,0 +1,141 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Rocket Launch Tracker//EN
+X-WR-CALNAME:Rocket Launches
+X-WR-TIMEZONE:UTC
+BEGIN:VEVENT
+UID:sample-1@rocketlaunchtracker.com
+DTSTAMP:20260720T033920Z
+DTSTART:20260720T040928Z
+SUMMARY:🚀 Falcon 9 Block 5 | Starlink Group 12-31
+DESCRIPTION:SpaceX · SLC-40 Cape Canaveral SFS\, FL
+URL:https://rocketlaunchtracker.com/#l-sample-1
+END:VEVENT
+
+BEGIN:VEVENT
+UID:sample-2@rocketlaunchtracker.com
+DTSTAMP:20260720T033920Z
+DTSTART:20260720T180100Z
+SUMMARY:🚀 Falcon 9 Block 5 | Starlink Group 17-8
+DESCRIPTION:SpaceX · SLC-4E Vandenberg SFB\, CA
+URL:https://rocketlaunchtracker.com/#l-sample-2
+END:VEVENT
+
+BEGIN:VEVENT
+UID:sample-3@rocketlaunchtracker.com
+DTSTAMP:20260720T033920Z
+DTSTART:20260722T153700Z
+SUMMARY:🚀 Atlas V 551 | Project Kuiper KA-12
+DESCRIPTION:United Launch Alliance · SLC-41 Cape Canaveral SFS\, FL
+URL:https://rocketlaunchtracker.com/#l-sample-3
+END:VEVENT
+
+BEGIN:VEVENT
+UID:sample-4@rocketlaunchtracker.com
+DTSTAMP:20260720T033920Z
+DTSTART:20260724T011300Z
+SUMMARY:🚀 Electron | Electron | Synspective 7
+DESCRIPTION:Rocket Lab · LC-1B Mahia Peninsula
+URL:https://rocketlaunchtracker.com/#l-sample-4
+END:VEVENT
+
+BEGIN:VEVENT
+UID:sample-5@rocketlaunchtracker.com
+DTSTAMP:20260720T033920Z
+DTSTART:20260725T104900Z
+SUMMARY:🚀 New Glenn | New Glenn | ESCAPADE Follow-on
+DESCRIPTION:Blue Origin · LC-36 Cape Canaveral SFS\, FL
+URL:https://rocketlaunchtracker.com/#l-sample-5
+END:VEVENT
+
+BEGIN:VEVENT
+UID:sample-6@rocketlaunchtracker.com
+DTSTAMP:20260720T033920Z
+DTSTART:20260726T202500Z
+SUMMARY:🚀 Starship | Starship Flight Test
+DESCRIPTION:SpaceX · Orbital Launch Mount A Starbase\, TX
+URL:https://rocketlaunchtracker.com/#l-sample-6
+END:VEVENT
+
+BEGIN:VEVENT
+UID:sample-7@rocketlaunchtracker.com
+DTSTAMP:20260720T033920Z
+DTSTART:20260728T082500Z
+SUMMARY:🚀 Ariane 62 | Ariane 6 | Galileo L14
+DESCRIPTION:Arianespace · ELA-4 Kourou\, French Guiana
+URL:https://rocketlaunchtracker.com/#l-sample-7
+END:VEVENT
+
+BEGIN:VEVENT
+UID:sample-8@rocketlaunchtracker.com
+DTSTAMP:20260720T033920Z
+DTSTART:20260730T011300Z
+SUMMARY:🚀 LVM3 | GSLV Mk III | Chandrayaan-4 TV-D2
+DESCRIPTION:ISRO · Second Launch Pad Satish Dhawan Space Centre
+URL:https://rocketlaunchtracker.com/#l-sample-8
+END:VEVENT
+
+BEGIN:VEVENT
+UID:sample-9@rocketlaunchtracker.com
+DTSTAMP:20260720T033920Z
+DTSTART:20260731T104900Z
+SUMMARY:🚀 Vulcan VC4S | Vulcan | USSF-106
+DESCRIPTION:United Launch Alliance · SLC-41 Cape Canaveral SFS\, FL
+URL:https://rocketlaunchtracker.com/#l-sample-9
+END:VEVENT
+
+BEGIN:VEVENT
+UID:sample-10@rocketlaunchtracker.com
+DTSTAMP:20260720T033920Z
+DTSTART:20260802T153700Z
+SUMMARY:🚀 Falcon Heavy | Falcon Heavy | ViaSat-4
+DESCRIPTION:SpaceX · LC-39A Kennedy Space Center\, FL
+URL:https://rocketlaunchtracker.com/#l-sample-10
+END:VEVENT
+
+BEGIN:VEVENT
+UID:sample-11@rocketlaunchtracker.com
+DTSTAMP:20260720T033920Z
+DTSTART:20260805T060100Z
+SUMMARY:🚀 H3-24 | H3 | HTV-X2
+DESCRIPTION:JAXA · LA-Y2 Tanegashima Space Center
+URL:https://rocketlaunchtracker.com/#l-sample-11
+END:VEVENT
+
+BEGIN:VEVENT
+UID:sample-12@rocketlaunchtracker.com
+DTSTAMP:20260720T033920Z
+DTSTART:20260808T131300Z
+SUMMARY:🚀 Firefly Alpha | Alpha | Elytra Dawn
+DESCRIPTION:Firefly Aerospace · SLC-2W Vandenberg SFB\, CA
+URL:https://rocketlaunchtracker.com/#l-sample-12
+END:VEVENT
+
+BEGIN:VEVENT
+UID:sample-13@rocketlaunchtracker.com
+DTSTAMP:20260720T033920Z
+DTSTART:20260811T224900Z
+SUMMARY:🚀 Falcon 9 Block 5 | Falcon 9 | Crew-14 (Expedition rotation)
+DESCRIPTION:SpaceX · LC-39A Kennedy Space Center\, FL
+URL:https://rocketlaunchtracker.com/#l-sample-13
+END:VEVENT
+
+BEGIN:VEVENT
+UID:sample-14@rocketlaunchtracker.com
+DTSTAMP:20260720T033920Z
+DTSTART:20260816T082500Z
+SUMMARY:🚀 Neutron | Neutron | Return To Sender II
+DESCRIPTION:Rocket Lab · LC-3 Wallops Island\, VA
+URL:https://rocketlaunchtracker.com/#l-sample-14
+END:VEVENT
+
+BEGIN:VEVENT
+UID:sample-15@rocketlaunchtracker.com
+DTSTAMP:20260720T033920Z
+DTSTART:20260821T011300Z
+SUMMARY:🚀 Falcon 9 Block 5 | Starlink Group 12-34
+DESCRIPTION:SpaceX · SLC-40 Cape Canaveral SFS\, FL
+URL:https://rocketlaunchtracker.com/#l-sample-15
+END:VEVENT
+
+END:VCALENDAR
