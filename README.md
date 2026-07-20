@@ -94,3 +94,13 @@ python3 -m http.server 8000
 ## Credits
 
 Launch data © [The Space Devs — Launch Library 2](https://thespacedevs.com/llapi) (free, attribution appreciated). Fonts: Oswald, Inter, IBM Plex Mono via Google Fonts. Not affiliated with any launch provider.
+
+## Mission pages, share cards & archive (auto-generated)
+- `scripts/build-pages.mjs` — run by the Action each refresh: writes `launch/<slug>.html` for every upcoming + recent launch (full SEO/Event schema + trajectory animation), merges past launches into `archive/<year>.json`, and regenerates `sitemap.xml`.
+- `scripts/build-og.mjs` — renders `og/<slug>.png` share cards (1200×630) with headless Chrome via `playwright-core` (installed on the fly in CI). Unchanged cards are skipped via `og/.stamps.json`.
+
+## Push alerts (free, no server)
+`.github/workflows/alerts.yml` runs twice an hour and posts to the public ntfy topic **rocketlaunchtracker-alerts** when a Go/TBC launch is 30–60 minutes out. Anyone can subscribe: install the ntfy app (or open https://ntfy.sh/rocketlaunchtracker-alerts) and subscribe to the topic. Note: public ntfy topics are open — anyone who knows the name can post; rename the topic in alerts.yml + index.html if that ever becomes a problem.
+
+## New pages
+Provider pages (spacex, rocket-lab, ula, blue-origin, arianespace, isro), rocket pages (falcon-9, starship, electron, new-glenn, ariane-6, vulcan), `glossary.html`, `stats.html` (reads the archive), `offline.html` (service-worker fallback).

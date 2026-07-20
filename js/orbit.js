@@ -525,7 +525,22 @@
   }
 
   /* ---------- map of all launch sites (live terminator) ---------- */
-  function map(cv, pads, highlightKey){
+  function map(cv, pads, highlightKey, onPick){
+    if (cv.__rltPick) cv.removeEventListener("click", cv.__rltPick);
+    if (onPick){
+      cv.__rltPick = (ev) => {
+        const rc = cv.getBoundingClientRect();
+        const sx = (ev.clientX - rc.left) * (cv.width / rc.width);
+        const sy = (ev.clientY - rc.top) * (cv.height / rc.height);
+        let best = null, bd = 1e9;
+        for (const h of (cv.__rltHits || [])){
+          const d = Math.hypot(h[0] - sx, h[1] - sy);
+          if (d < bd){ bd = d; best = h; }
+        }
+        if (best && bd < 22 * (cv.__rltDPR || 1)) onPick(best[2]);
+      };
+      cv.addEventListener("click", cv.__rltPick);
+    }
     stop();
     const r = makeRenderer(cv);
     mode = "map";
@@ -543,7 +558,7 @@
       ctx.clearRect(0, 0, r.W, r.H);
       r.earth(yaw, tilt, C, sunDir(new Date()));
       ctx.font = `${10.5 * r.DPR}px Inter, sans-serif`;
-      const taken = [];
+      const taken = [], hits = [];
       for (const p of pads){
         const q = ll2xyz(p.lat, p.lon);
         const [x, y, z] = r.pj(q[0], q[1], q[2]);
@@ -558,6 +573,7 @@
           ctx.strokeStyle = C.pad; ctx.globalAlpha = .5;
           ctx.beginPath(); ctx.arc(x, y, (7 + (now / 60 % 10)) * r.DPR / 1.2, 0, TAU); ctx.stroke();
         }
+        hits.push([x, y, p.key]);
         const lbl = p.name + " · " + p.n;
         let ly = y + 3 * r.DPR;
         while (taken.some(q2 => Math.abs(q2[1] - ly) < 12 * r.DPR && Math.abs(q2[0] - x) < 150 * r.DPR)) ly += 13 * r.DPR;
@@ -567,6 +583,7 @@
         ctx.fillStyle = C.txt;
         ctx.fillText(lbl, x + 8 * r.DPR, ly);
       }
+      cv.__rltHits = hits; cv.__rltDPR = r.DPR;
       if (!reduced) raf = requestAnimationFrame(frame);
     }
     raf = requestAnimationFrame(frame);

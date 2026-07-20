@@ -6,7 +6,7 @@
    API in the browser. All times rendered in the viewer's zone.
    ============================================================ */
 "use strict";
-console.log("RLT build v4.5");
+console.log("RLT build v4.6");
 
 const DATA_URL = "data/launches.json";
 const API_URL  = "https://ll.thespacedevs.com/2.3.0/launches/upcoming/?limit=60&mode=detailed";
@@ -60,6 +60,33 @@ function flag(code){
   return String.fromCodePoint(...[...cc].map(c => 0x1F1E6 + c.charCodeAt(0) - 65)) + " ";
 }
 
+function slugFor(l){
+  return (l.name || "launch").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "").slice(0, 60)
+    + "-" + String(l.id).replace(/[^a-z0-9]/gi, "").slice(0, 8);
+}
+function ytId(u){
+  try{
+    const url = new URL(u);
+    if (url.hostname.includes("youtu.be")) return url.pathname.slice(1) || null;
+    if (url.hostname.includes("youtube.com")){
+      if (url.pathname.startsWith("/watch")) return url.searchParams.get("v");
+      const m = url.pathname.match(/^\/(live|embed)\/([\w-]{6,})/);
+      if (m) return m[2];
+    }
+  }catch(e){}
+  return null;
+}
+function glossaryAnchor(orbitName){
+  const o = (orbitName || "").toLowerCase();
+  if (o.includes("gto") || o.includes("transfer")) return "gto";
+  if (o.includes("sun-sync") || o.includes("sso") || o.includes("polar")) return "sso";
+  if (o.includes("geo")) return "geo";
+  if (o.includes("medium") || o.includes("meo")) return "meo";
+  if (o.includes("suborbital")) return "suborbital";
+  if (o.includes("mars") || o.includes("lunar") || o.includes("moon") || o.includes("injection") || o.includes("escape")) return "escape";
+  if (o.includes("low earth") || o.includes("leo")) return "leo";
+  return "";
+}
 function statusClass(abbrev){
   if (abbrev === "Go" || abbrev === "Success") return "go";
   if (abbrev === "TBC") return "tbc";
@@ -415,9 +442,10 @@ function openModal(id){
         ${l.pad ? `<div class="md-fact"><div class="k">Pad</div><div class="v">${escapeHtml(l.pad)}</div></div>` : ""}
         ${l.location ? `<div class="md-fact"><div class="k">Location</div><div class="v">${flag(l.country)}${escapeHtml(l.location)}${l.country ? " · " + escapeHtml(l.country) : ""}</div></div>` : ""}
         ${l.mtype ? `<div class="md-fact"><div class="k">Mission type</div><div class="v">${escapeHtml(l.mtype)}</div></div>` : ""}
-        ${l.orbit ? `<div class="md-fact"><div class="k">Target orbit</div><div class="v">${escapeHtml(l.orbit)}</div></div>` : ""}
+        ${l.orbit ? `<div class="md-fact"><div class="k">Target orbit</div><div class="v">${glossaryAnchor(l.orbit) ? `<a class="fact-link" href="glossary.html#${glossaryAnchor(l.orbit)}">${escapeHtml(l.orbit)}</a>` : escapeHtml(l.orbit)}</div></div>` : ""}
         ${l.status.description ? `<div class="md-fact"><div class="k">Status note</div><div class="v">${escapeHtml(l.status.description)}</div></div>` : ""}
         <div class="md-fact" id="wxFact" hidden><div class="k">Pad weather now</div><div class="v">—</div></div>
+        <div class="md-fact" id="wxT0" hidden><div class="k">Forecast at liftoff</div><div class="v">—</div></div>
       </div>
       ${window.RLTOrbit ? `<div class="md-orbit"><canvas id="orbitCv" aria-hidden="true"></canvas><div class="orbit-cap" id="orbitCap">Illustrative trajectory</div></div>` : ""}
       ${l.desc ? `<p class="md-desc">${escapeHtml(l.desc)}</p>` : ""}
@@ -425,12 +453,14 @@ function openModal(id){
         ${l.webcasts.slice(0,2).map(w => `<a class="btn btn-primary" href="${escapeHtml(w.url)}" target="_blank" rel="noopener">▶ ${escapeHtml(w.title)}</a>`).join("")}
         <a class="btn btn-ghost" href="${escapeHtml(gcalLink(l))}" target="_blank" rel="noopener">+ Google Calendar</a>
         ${l.mapUrl ? `<a class="btn btn-ghost" href="${escapeHtml(l.mapUrl)}" target="_blank" rel="noopener">Pad map</a>` : ""}
+        <a class="btn btn-ghost" href="launch/${slugFor(l)}.html">Mission page</a>
       </div>
     </div>`;
   $("#modalBackdrop").hidden = false;
   document.body.style.overflow = "hidden";
   try{ history.replaceState(null, "", "#l-" + encodeURIComponent(id)); }catch(e){}
   fetchWeather(l);
+  liveMode(l);
   if (window.RLTOrbit) RLTOrbit.play($("#orbitCv"), l);
   $("#modalClose").focus();
 }
@@ -448,18 +478,63 @@ async function fetchWeather(l){
   const key = la.toFixed(2) + "," + lo.toFixed(2);
   try{
     if (!wxCache[key]){
-      const r = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${la}&longitude=${lo}&current=temperature_2m,wind_speed_10m,cloud_cover,precipitation&wind_speed_unit=kn`);
+      const r = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${la}&longitude=${lo}&current=temperature_2m,wind_speed_10m,cloud_cover,precipitation&hourly=temperature_2m,wind_speed_10m,cloud_cover,precipitation_probability&forecast_days=16&timezone=UTC&wind_speed_unit=kn`);
       if (!r.ok) return;
-      wxCache[key] = (await r.json()).current;
+      const j = await r.json();
+      wxCache[key] = { cur: j.current, hr: j.hourly };
     }
-    const w = wxCache[key], el = $("#wxFact");
-    if (w && el){
+    const { cur, hr } = wxCache[key], el = $("#wxFact");
+    if (cur && el){
       el.querySelector(".v").textContent =
-        `${Math.round(w.temperature_2m)}°C · wind ${Math.round(w.wind_speed_10m)} kn · ${w.cloud_cover}% cloud` +
-        (w.precipitation > 0 ? ` · rain ${w.precipitation} mm` : "");
+        `${Math.round(cur.temperature_2m)}°C · wind ${Math.round(cur.wind_speed_10m)} kn · ${cur.cloud_cover}% cloud` +
+        (cur.precipitation > 0 ? ` · rain ${cur.precipitation} mm` : "");
       el.hidden = false;
     }
+    const t0 = $("#wxT0");
+    if (hr && t0 && l.net){
+      const want = l.net.toISOString().slice(0, 13) + ":00";
+      const i = (hr.time || []).indexOf(want);
+      if (i >= 0){
+        t0.querySelector(".v").textContent =
+          `${Math.round(hr.temperature_2m[i])}°C · wind ${Math.round(hr.wind_speed_10m[i])} kn · ${hr.cloud_cover[i]}% cloud · ${hr.precipitation_probability[i]}% rain chance`;
+        t0.hidden = false;
+      }
+    }
   }catch(e){}
+}
+let livePollId = 0;
+function liveMode(l){
+  clearInterval(livePollId); livePollId = 0;
+  const ms = l.net - Date.now();
+  if (ms < 3600e3 && ms > -1800e3){
+    const vid = (l.webcasts || []).map(w => ytId(w.url)).find(Boolean);
+    if (vid){
+      const holder = document.createElement("div");
+      holder.className = "md-player";
+      holder.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${vid}?rel=0" title="Launch webcast" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen loading="lazy"></iframe>`;
+      const img = $("#modalBody .md-img");
+      if (img) img.replaceWith(holder); else $("#modalBody").prepend(holder);
+    }
+  }
+  // status re-check for real launches near T-0 (LL2 single-launch endpoint)
+  if (/^[0-9a-f]{8}-[0-9a-f]{4}/.test(String(l.id)) && ms < 7200e3 && ms > -3600e3){
+    livePollId = setInterval(async () => {
+      if ($("#modalBackdrop").hidden){ clearInterval(livePollId); return; }
+      try{
+        const r = await fetch(`https://ll.thespacedevs.com/2.3.0/launches/${l.id}/?format=json`);
+        if (!r.ok) return;
+        const j = await r.json();
+        const newNet = new Date(j.net);
+        const abbrev = j.status && j.status.abbrev;
+        if (Math.abs(newNet - l.net) > 1000 || (abbrev && abbrev !== l.status.abbrev)){
+          l.net = newNet;
+          if (abbrev) l.status = { abbrev, name: (j.status && j.status.name) || abbrev, description: l.status.description };
+          renderAll();
+          openModal(l.id);
+        }
+      }catch(e){}
+    }, 60e3);
+  }
 }
 function openDayModal(k){
   const items = visibleLaunches().filter(l => dayKey(l.net) === k);
@@ -475,6 +550,7 @@ function openDayModal(k){
   tickCards();
 }
 function closeModal(){
+  clearInterval(livePollId); livePollId = 0;
   if (window.RLTOrbit) RLTOrbit.stop();
   $("#modalBackdrop").hidden = true;
   document.body.style.overflow = "";
@@ -524,7 +600,10 @@ function renderMap(){
   }
   const pads = Object.values(groups);
   const next = state.launches.find(l => isFinite(parseFloat(l.latitude)));
-  RLTOrbit.map($("#mapCv"), pads, next ? nameOf(next) : null);
+  RLTOrbit.map($("#mapCv"), pads, next ? nameOf(next) : null, key => {
+    state.q = key; $("#searchBox").value = key; setView("list");
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
 }
 
 document.addEventListener("click", e => {
@@ -663,4 +742,51 @@ if (preset && !state.q){ state.q = preset; $("#searchBox").value = preset; }
 if ("serviceWorker" in navigator && (location.protocol === "https:" || location.hostname === "localhost")){
   addEventListener("load", () => { navigator.serviceWorker.register("sw.js").catch(() => {}); });
 }
+/* PWA install nudge */
+let bip = null;
+addEventListener("beforeinstallprompt", e => {
+  e.preventDefault(); bip = e;
+  try{ if (localStorage.getItem("rlt.nudge") === "off") return; }catch(err){}
+  const n = $("#installNudge"); if (n) n.hidden = false;
+});
+$("#nudgeGo") && $("#nudgeGo").addEventListener("click", async () => {
+  $("#installNudge").hidden = true;
+  if (bip){ bip.prompt(); try{ await bip.userChoice; }catch(e){} bip = null; }
+});
+$("#nudgeX") && $("#nudgeX").addEventListener("click", () => {
+  $("#installNudge").hidden = true;
+  try{ localStorage.setItem("rlt.nudge", "off"); }catch(e){}
+});
+
+/* nearest launch site */
+$("#nearBtn") && $("#nearBtn").addEventListener("click", () => {
+  const out = $("#nearOut");
+  if (!navigator.geolocation){ out.textContent = " Location isn't available in this browser."; return; }
+  out.textContent = " Locating…";
+  navigator.geolocation.getCurrentPosition(pos => {
+    const { latitude: la, longitude: lo } = pos.coords;
+    const seen = {};
+    for (const l of state.launches){
+      const pla = parseFloat(l.latitude), plo = parseFloat(l.longitude);
+      if (!isFinite(pla) || !isFinite(plo)) continue;
+      const nm = (l.location || l.pad || "Site").split(",")[0].trim();
+      if (!seen[nm]) seen[nm] = { nm, la: pla, lo: plo };
+    }
+    let best = null, bd = 1e9;
+    const R = 6371, rad = Math.PI / 180;
+    for (const s of Object.values(seen)){
+      const dLa = (s.la - la) * rad, dLo = (s.lo - lo) * rad;
+      const h = Math.sin(dLa/2)**2 + Math.cos(la*rad) * Math.cos(s.la*rad) * Math.sin(dLo/2)**2;
+      const d = 2 * R * Math.asin(Math.sqrt(h));
+      if (d < bd){ bd = d; best = s; }
+    }
+    if (!best){ out.textContent = " No sites with coordinates right now."; return; }
+    out.innerHTML = ` Nearest: <strong>${escapeHtml(best.nm)}</strong> — ${Math.round(bd).toLocaleString()} km away · <button class="linklike" id="nearGo">view its launches</button>`;
+    $("#nearGo").addEventListener("click", () => {
+      state.q = best.nm; $("#searchBox").value = best.nm; setView("list");
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  }, () => { out.textContent = " Couldn't get your location (permission denied)."; }, { timeout: 8000 });
+});
+
 loadData(false);

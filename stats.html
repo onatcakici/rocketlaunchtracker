@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Launch statistics — missions per month, providers & success rate | Rocket Launch Tracker</title>
+<meta name="description" content="Rocket launch statistics tracked by Rocket Launch Tracker: launches per month, success rate, busiest providers and launch sites.">
+<link rel="canonical" href="https://rocketlaunchtracker.com/stats.html">
+<meta name="robots" content="index,follow">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="lp">
+<header class="lp-head"><a class="lp-brand" href="./"><img src="favicon.png" alt="" width="22" height="22"> Rocket<span>Launch</span>Tracker</a></header>
+<main class="lp-main">
+  <p class="lp-kicker">Numbers</p>
+  <h1 class="lp-title">Launch statistics</h1>
+  <p class="lp-desc" id="statNote">Compiled from launches this site has tracked. The archive grows automatically with every data refresh.</p>
+  <div class="stat-row" id="statKpis"></div>
+  <h2 class="stat-h">Launches per month</h2>
+  <div class="bars" id="byMonth"></div>
+  <h2 class="stat-h">Busiest providers</h2>
+  <div class="bars" id="byProvider"></div>
+  <h2 class="stat-h">Busiest launch sites</h2>
+  <div class="bars" id="bySite"></div>
+<script>
+(async () => {
+  const $ = s => document.querySelector(s);
+  const esc = x => String(x).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+  const y = new Date().getUTCFullYear();
+  const seen = new Map();
+  for (const url of [`archive/${y}.json`, `archive/${y-1}.json`, "data/previous.json"]){
+    try{
+      const r = await fetch(url); if (!r.ok) continue;
+      for (const l of ((await r.json()).results || [])) seen.set(String(l.id), l);
+    }catch(e){}
+  }
+  const L = [...seen.values()].filter(l => l.net);
+  if (!L.length){ $("#statNote").textContent = "No archived launches yet — check back after the next data refresh."; return; }
+  const ok = L.filter(l => (l.status && l.status.abbrev) === "Success").length;
+  const fail = L.filter(l => (l.status && l.status.abbrev) === "Failure").length;
+  const provs = {}, sites = {}, months = {};
+  for (const l of L){
+    provs[l.provider || "Unknown"] = (provs[l.provider || "Unknown"] || 0) + 1;
+    const site = ((l.pad && l.pad.location && l.pad.location.name) || "Unknown").split(",")[0].trim();
+    sites[site] = (sites[site] || 0) + 1;
+    months[l.net.slice(0, 7)] = (months[l.net.slice(0, 7)] || 0) + 1;
+  }
+  const rate = ok + fail ? Math.round(ok / (ok + fail) * 100) : null;
+  $("#statKpis").innerHTML = [
+    ["Tracked launches", L.length],
+    ["Success rate", rate == null ? "—" : rate + "%"],
+    ["Providers", Object.keys(provs).length],
+    ["Launch sites", Object.keys(sites).length],
+  ].map(([k, v]) => `<div class="stat-kpi"><div class="v">${v}</div><div class="k">${k}</div></div>`).join("");
+  const bar = (label, n, max) => `<div class="bar-row"><span class="bar-label">${esc(label)}</span><span class="bar-track"><span class="bar-fill" style="width:${Math.max(4, n / max * 100)}%"></span></span><span class="bar-n">${n}</span></div>`;
+  const mk = [...Object.entries(months)].sort();
+  const mmax = Math.max(...mk.map(([, n]) => n));
+  $("#byMonth").innerHTML = mk.map(([m, n]) => bar(new Date(m + "-15").toLocaleString("en", { month: "short", year: "2-digit", timeZone: "UTC" }), n, mmax)).join("");
+  const top = o => [...Object.entries(o)].sort((a, b) => b[1] - a[1]).slice(0, 6);
+  const pmax = Math.max(...top(provs).map(([, n]) => n));
+  $("#byProvider").innerHTML = top(provs).map(([p, n]) => bar(p, n, pmax)).join("");
+  const smax = Math.max(...top(sites).map(([, n]) => n));
+  $("#bySite").innerHTML = top(sites).map(([p, n]) => bar(p, n, smax)).join("");
+})();
+</script>
+
+  <p class="lp-fine"><a href="./">← All upcoming launches</a> · <a href="glossary.html">Glossary</a> · <a href="stats.html">Stats</a> · Data: <a href="https://thespacedevs.com/llapi" rel="noopener" target="_blank">Launch Library 2</a></p>
+</main>
+</body>
+</html>

@@ -110,6 +110,7 @@
           <a href="webcal://rocketlaunchtracker.com/launches.ics">Apple / Outlook (webcal)</a>
           <a href="launches.ics" download>Download .ics file</a>
           <a href="feed.xml" target="_blank" rel="noopener">RSS feed</a>
+          <a href="https://ntfy.sh/rocketlaunchtracker-alerts" target="_blank" rel="noopener" title="Install the free ntfy app and subscribe to this topic for a push ~45 min before every liftoff">Push alerts (ntfy)</a>
         </div>
       </div>
       <span class="updated-note" id="updatedNote"></span>
@@ -128,7 +129,7 @@
     <!-- ============ MAP VIEW ============ -->
     <section id="mapView" class="mapwrap" hidden aria-label="Launch site map">
       <canvas id="mapCv" aria-hidden="true"></canvas>
-      <p class="map-note">Every active launch site this window, sized by upcoming missions. The red pulse is the next liftoff. Drag-free — it turns on its own.</p>
+      <p class="map-note">Every active launch site this window, sized by upcoming missions. The red pulse is the next liftoff — tap a dot to see its launches. <button class="linklike" id="nearBtn">Find my nearest launch site</button><span id="nearOut"></span></p>
     </section>
 
     <!-- ============ CALENDAR VIEW ============ -->
@@ -196,7 +197,8 @@
         <p class="footer-fine">Times shown in your local timezone · Data refreshes every 6 h + live on visit · Not affiliated with any launch provider. Fly safe. · Built by <a href="https://www.linkedin.com/in/cakici/" target="_blank" rel="me noopener">Onat Cakici</a></p>
       </div>
       <p class="footer-credits">Data: <a href="https://thespacedevs.com/llapi" target="_blank" rel="noopener">Launch Library 2 · The Space Devs</a><br>
-        Feeds: <a href="launches.ics">calendar (.ics)</a> · <a href="feed.xml">RSS</a> · <a href="embed.html" target="_blank" rel="noopener">embeddable widget</a><br>
+        Feeds: <a href="launches.ics">calendar (.ics)</a> · <a href="feed.xml">RSS</a> · <a href="embed.html" target="_blank" rel="noopener">embeddable widget</a> · <a href="https://ntfy.sh/rocketlaunchtracker-alerts" rel="noopener" target="_blank">push alerts</a><br>
+        More: <a href="glossary.html">glossary</a> · <a href="stats.html">launch stats</a> · <a href="spacex.html">SpaceX</a> · <a href="rocket-lab.html">Rocket Lab</a> · <a href="falcon-9.html">Falcon 9</a> · <a href="starship.html">Starship</a><br>
         Photos: <a href="https://commons.wikimedia.org/wiki/File:Apollo_11_Launch_-_GPN-2000-000630.jpg" target="_blank" rel="noopener">NASA</a> ·
         <a href="https://commons.wikimedia.org/wiki/File:SpaceX_Demo-2_Launch_(NHQ202005300044).jpg" target="_blank" rel="noopener">NASA/B. Ingalls</a> — via Wikimedia Commons · mission imagery via Launch Library 2</p>
     </div>
@@ -213,5 +215,10 @@
 
 <script src="js/app.js"></script>
 <script src="js/orbit.js"></script>
+<div class="nudge" id="installNudge" hidden>
+  <span>Install Rocket Launch Tracker for quick access?</span>
+  <button class="btn btn-primary" id="nudgeGo">Install</button>
+  <button class="nudge-x" id="nudgeX" aria-label="Dismiss">×</button>
+</div>
 </body>
 </html>
