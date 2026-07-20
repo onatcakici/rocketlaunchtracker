@@ -6,7 +6,7 @@
    API in the browser. All times rendered in the viewer's zone.
    ============================================================ */
 "use strict";
-console.log("RLT build v4.6");
+console.log("RLT build v4.8");
 
 const DATA_URL = "data/launches.json";
 const API_URL  = "https://ll.thespacedevs.com/2.3.0/launches/upcoming/?limit=60&mode=detailed";
@@ -16,8 +16,13 @@ const LS_KEY   = "rlt.cache.v1";
 const $  = (s, el) => (el || document).querySelector(s);
 const $$ = (s, el) => Array.from((el || document).querySelectorAll(s));
 
+function starsGet(){ try{ return new Set(JSON.parse(localStorage.getItem("rlt.stars") || "[]")); }catch(e){ return new Set(); } }
+function starsSet(s){ try{ localStorage.setItem("rlt.stars", JSON.stringify([...s])); }catch(e){} }
+let stars = starsGet();
+
 const state = {
   launches: [],        // normalized, sorted by net
+  starredOnly: false,
   generated: null,     // Date the dataset was produced
   source: "…",
   sample: false,
@@ -139,6 +144,7 @@ function normalize(raw){
         windowStart: r.window_start ? new Date(r.window_start) : null,
         windowEnd: r.window_end ? new Date(r.window_end) : null,
         netPrecision: pick(r.net_precision && (r.net_precision.name || r.net_precision), null),
+        crew: Array.isArray(r.crew) ? r.crew.filter(c => c && c.name) : [],
         status: {
           abbrev: pick(r.status && r.status.abbrev, r.status && r.status.name, "TBD"),
           name: pick(r.status && r.status.name, "Unknown"),
@@ -236,6 +242,7 @@ async function loadPrevious(){
 function visibleLaunches(){
   const q = state.q.trim().toLowerCase();
   return state.launches.filter(l => {
+    if (state.starredOnly && !stars.has(String(l.id))) return false;
     if (state.provider && l.provider !== state.provider) return false;
     if (state.status && l.status.abbrev !== state.status) return false;
     if (q){
@@ -321,7 +328,7 @@ function cardHtml(l){
   return `
   <button class="launch-card" data-id="${escapeHtml(l.id)}" aria-label="${escapeHtml(l.name)} details">
     <div class="lc-img">${l.image ? `<img class="lc-photo" src="${escapeHtml(l.image)}" alt="${escapeHtml(l.name)}" loading="lazy" decoding="async" onload="this.classList.add('on')" onerror="this.remove()">` : ""}
-      ${chip(l)}<span class="lc-tminus" data-net="${l.net.toISOString()}"></span></div>
+      ${chip(l)}${stars.has(String(l.id)) ? `<span class="lc-star" title="Saved">★</span>` : ""}<span class="lc-tminus" data-net="${l.net.toISOString()}"></span></div>
     <div class="lc-body">
       <span class="lc-rocket">${escapeHtml(l.rocket)} · ${escapeHtml(l.provider)}</span>
       <span class="lc-name">${escapeHtml(l.missionName || l.name)}</span>
@@ -332,11 +339,29 @@ function cardHtml(l){
     </div>
   </button>`;
 }
+function dayBucket(net){
+  const now = new Date();
+  const d0 = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  const days = Math.floor((net - d0) / 864e5);
+  if (days <= 0) return "Today";
+  if (days === 1) return "Tomorrow";
+  if (days < 7) return "This week";
+  if (days < 14) return "Next week";
+  return "Later";
+}
 function renderList(){
   const ls = visibleLaunches();
-  $("#listView").innerHTML = ls.length
-    ? ls.map(cardHtml).join("")
-    : `<div class="empty-note">No launches match those filters.<button id="resetFilters" type="button">Reset filters</button></div>`;
+  if (!ls.length){
+    $("#listView").innerHTML = `<div class="empty-note">${state.starredOnly ? "No saved launches yet — open a mission and hit ☆ Save." : "No launches match those filters."}<button id="resetFilters" type="button">Reset filters</button></div>`;
+    return;
+  }
+  let html = "", bucket = null;
+  for (const l of ls){
+    const b = dayBucket(l.net);
+    if (b !== bucket){ bucket = b; html += `<h2 class="day-head">${b}</h2>`; }
+    html += cardHtml(l);
+  }
+  $("#listView").innerHTML = html;
   tickCards();
 }
 function tickCards(){
@@ -435,6 +460,7 @@ function openModal(id){
         ${l.probability != null ? `<span class="chip chip-other">Weather ${l.probability}% go</span>` : ""}
         ${l.webcastLive ? `<span class="chip chip-go">LIVE NOW</span>` : ""}</div>
       <p class="md-countdown" data-net="${l.net.toISOString()}">${t.short} to launch</p>
+      ${l.crew && l.crew.length ? `<div class="md-crew">${l.crew.map(c => `<span class="crew-chip">${c.img ? `<img src="${escapeHtml(c.img)}" alt="" loading="lazy" onerror="this.remove()">` : ""}<span><strong>${escapeHtml(c.name)}</strong>${c.role ? ` · ${escapeHtml(c.role)}` : ""}</span></span>`).join("")}</div>` : ""}
       <div class="md-facts">
         <div class="md-fact"><div class="k">Liftoff (your time)</div><div class="v">${escapeHtml(fmtLocal(l.net,{year:"numeric"}))}</div></div>
         <div class="md-fact"><div class="k">Liftoff (UTC)</div><div class="v mono">${escapeHtml(fmtUTC(l.net))}</div></div>
@@ -454,6 +480,8 @@ function openModal(id){
         <a class="btn btn-ghost" href="${escapeHtml(gcalLink(l))}" target="_blank" rel="noopener">+ Google Calendar</a>
         ${l.mapUrl ? `<a class="btn btn-ghost" href="${escapeHtml(l.mapUrl)}" target="_blank" rel="noopener">Pad map</a>` : ""}
         <a class="btn btn-ghost" href="launch/${slugFor(l)}.html">Mission page</a>
+        <a class="btn btn-ghost" href="sim.html?id=${encodeURIComponent(l.id)}">Simulator ▸</a>
+        <button class="btn btn-ghost star-save" data-sid="${escapeHtml(String(l.id))}" type="button">${stars.has(String(l.id)) ? "★ Saved" : "☆ Save"}</button>
       </div>
     </div>`;
   $("#modalBackdrop").hidden = false;
@@ -607,8 +635,19 @@ function renderMap(){
 }
 
 document.addEventListener("click", e => {
+  const ss = e.target.closest(".star-save");
+  if (ss){
+    const id = ss.dataset.sid;
+    if (stars.has(id)) stars.delete(id); else stars.add(id);
+    starsSet(stars);
+    ss.textContent = stars.has(id) ? "★ Saved" : "☆ Save";
+    const sf = $("#starFilter"); if (sf) sf.classList.toggle("has-stars", stars.size > 0);
+    if (state.view === "list") renderList();
+    return;
+  }
   if (e.target.id === "resetFilters"){
     state.q = state.provider = state.status = "";
+    state.starredOnly = false; $("#starFilter") && $("#starFilter").classList.remove("is-active");
     $("#searchBox").value = ""; $("#providerSel").value = ""; $("#statusSel").value = "";
     renderAll(); return;
   }
@@ -640,6 +679,12 @@ $("#btnMapView") && $("#btnMapView").addEventListener("click", () => setView("ma
 $("#searchBox").addEventListener("input", e => { state.q = e.target.value; renderAll(); });
 $("#providerSel").addEventListener("change", e => { state.provider = e.target.value; renderAll(); });
 $("#statusSel").addEventListener("change", e => { state.status = e.target.value; renderAll(); });
+$("#starFilter") && $("#starFilter").addEventListener("click", e => {
+  state.starredOnly = !state.starredOnly;
+  e.currentTarget.classList.toggle("is-active", state.starredOnly);
+  e.currentTarget.setAttribute("aria-pressed", state.starredOnly);
+  if (state.view !== "list") setView("list"); else renderList();
+});
 $("#refreshBtn").addEventListener("click", async e => {
   const b = e.currentTarget; b.classList.add("spinning");
   await loadData(true);

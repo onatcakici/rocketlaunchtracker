@@ -399,3 +399,34 @@ select.control{appearance:none;padding-right:32px;background-image:linear-gradie
 :root[data-theme="dark"] .star-filter.is-active,:root.auto-dark .star-filter.is-active{background:#3a2e12;color:#fbbf24;border-color:#b45309}
 :root[data-theme="dark"] .api-t code,:root.auto-dark .api-t code{color:#7db2ff}
 :root[data-theme="dark"] .hbar .f,:root.auto-dark .hbar .f{background:linear-gradient(90deg,#3b82f6,#7db2ff)}
+
+/* ===== v4.8 SIMULATOR ===== */
+.sim-main{max-width:1020px}
+.sim-tag{color:var(--muted);font-weight:500;text-transform:none;letter-spacing:0}
+.sim-sub{color:var(--muted);font-size:14px;margin:-4px 0 16px}
+.sim-stage{position:relative;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:var(--shadow-sm)}
+.sim-stage canvas{display:block;width:100%;aspect-ratio:16/9;touch-action:none;cursor:grab}
+.sim-stage canvas:active{cursor:grabbing}
+.sim-hud{position:absolute;font-size:11.5px;color:var(--muted);pointer-events:none}
+.sim-hud-tl{top:12px;left:14px;font-weight:600;letter-spacing:.1em;color:#2563eb}
+.sim-hud-bl{bottom:10px;left:14px;opacity:.75}
+.sim-hud-tr{top:12px;right:14px;display:grid;gap:6px;text-align:right}
+.hud-g{display:grid}
+.hud-k{font-size:9.5px;letter-spacing:.12em;opacity:.75}
+.hud-v{font-size:14.5px;font-weight:600;color:var(--text)}
+.sim-bar{display:flex;align-items:center;gap:12px;margin:12px 0 4px;flex-wrap:wrap}
+.sim-btn{border:1px solid var(--line);background:var(--card);border-radius:10px;min-width:42px;height:36px;font-size:14px;cursor:pointer;color:var(--text)}
+.sim-btn-txt{padding:0 14px}
+.sim-btn.is-active{border-color:#2563eb;color:#2563eb;background:rgba(37,99,235,.08)}
+.sim-scrub{position:relative;flex:1;min-width:220px;height:36px;display:flex;align-items:center}
+.sim-scrub input{width:100%;accent-color:#2563eb}
+.sim-ticks{position:absolute;inset:4px 8px auto 8px;height:0;pointer-events:none}
+.tick{position:absolute;top:0;width:2px;height:7px;background:var(--muted);opacity:.55;border-radius:1px}
+.sim-seg{display:flex;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--card)}
+.seg-btn{border:0;background:none;padding:8px 12px;font-size:12.5px;cursor:pointer;color:var(--muted);border-right:1px solid var(--line)}
+.seg-btn:last-child{border-right:0}
+.seg-btn.is-active{background:rgba(37,99,235,.1);color:#2563eb;font-weight:600}
+@media (max-width:640px){.sim-stage canvas{aspect-ratio:4/3.4}.sim-hud-tr{gap:3px}.hud-v{font-size:12.5px}}
+:root[data-theme="dark"] .sim-hud-tl,:root.auto-dark .sim-hud-tl{color:#7db2ff}
+:root[data-theme="dark"] .seg-btn.is-active,:root.auto-dark .seg-btn.is-active{color:#7db2ff;background:rgba(59,130,246,.16)}
+:root[data-theme="dark"] .sim-btn.is-active,:root.auto-dark .sim-btn.is-active{color:#7db2ff;border-color:#3b82f6;background:rgba(59,130,246,.14)}

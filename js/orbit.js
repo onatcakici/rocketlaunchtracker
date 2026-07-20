@@ -81,13 +81,13 @@
 
   function makeRenderer(cv){
     const ctx = cv.getContext("2d");
-    let W = 0, H = 0, DPR = 1, R = 0, cx = 0, cy = 0;
+    let W = 0, H = 0, DPR = 1, R = 0, cx = 0, cy = 0, Z = 1;
     let yw = 0, tl = 0, cy_ = 1, cs_ = 0, ty_ = 1, ts_ = 0;
     function resize(){
       DPR = Math.min(devicePixelRatio || 1, 1.5);
       W = cv.clientWidth * DPR; H = cv.clientHeight * DPR;
       if (cv.width !== W || cv.height !== H){ cv.width = W; cv.height = H; }
-      R = Math.min(W, H) * 0.36; cx = W / 2; cy = H / 2;
+      R = Math.min(W, H) * 0.36 * Z; cx = W / 2; cy = H / 2;
     }
     function setView(yaw, tilt){
       yw = yaw; tl = tilt;
@@ -230,7 +230,8 @@
       ctx.fillText(text.toUpperCase(), pad + 7 * DPR, H - pad);
       try{ ctx.letterSpacing = "0em"; }catch(e){}
     }
-    return { ctx, resize, earth, polyline, setView, pj, label,
+    function setZoom(z){ Z = Math.max(.55, Math.min(4, z)); R = Math.min(W, H) * 0.36 * Z; }
+    return { ctx, resize, earth, polyline, setView, pj, label, setZoom, get Z(){ return Z; },
       get R(){ return R; }, get DPR(){ return DPR; }, get W(){ return W; }, get H(){ return H; } };
   }
 
@@ -589,5 +590,6 @@
     raf = requestAnimationFrame(frame);
   }
 
-  window.RLTOrbit = { play, map, stop };
+  window.RLTOrbit = { play, map, stop,
+    engine: { makeRenderer, ll2xyz, llr, rotX, rotY, sunDir, colors, CA, CD } };
 })();
