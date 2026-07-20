@@ -1,10 +1,13 @@
 /* ============================================================
-   RLTOrbit — Earth globe + orbit animations (zero dependencies).
-   - Modal: globe turned to the launch pad, animated ascent into
-     the mission's target-orbit class (illustrative).
-   - Map view: all launch sites on a rotating Earth.
-   Real coastlines (Natural Earth 110m, simplified), theme-aware,
-   stops when hidden. Public domain basemap data.
+   RLTOrbit — Earth globe + flight animations (zero dependencies).
+   - Modal: globe turned to the launch pad, day/night terminator
+     computed for the actual liftoff time, animated ascent along
+     the real launch azimuth into the mission's orbit class,
+     booster separation, insertion flash, phase captions.
+   - Map view: all launch sites on a rotating Earth with the
+     live terminator.
+   Coastlines: Natural Earth 110m (public domain), simplified.
+   All trajectories illustrative.
    ============================================================ */
 (function(){
   "use strict";
@@ -33,43 +36,82 @@
     const dark = document.documentElement.dataset.theme === "dark" ||
       document.documentElement.classList.contains("auto-dark");
     return dark
-      ? { sphere0:"#182238", sphere1:"#0b1120", grid:"#2a3550", limb:"#3d4a68",
+      ? { dark, sphere0:"#182238", sphere1:"#0b1120", grid:"#2a3550", limb:"#3d4a68",
           coast:"rgba(148,168,208,.85)", coastBack:"rgba(148,168,208,.10)",
-          atmo:"rgba(96,165,250,.35)", orbit:"#3b82f6", rocket:"#7db2ff",
+          atmo:"rgba(96,165,250,.35)", night:"rgba(2,6,16,.45)",
+          orbit:"#3b82f6", rocket:"#7db2ff", star:"rgba(190,205,235,.55)",
           pad:"#f87171", txt:"#aab3cc", halo:"#0e1420" }
-      : { sphere0:"#f4f7fb", sphere1:"#dce3ee", grid:"#c9d2e0", limb:"#a7b3c6",
+      : { dark, sphere0:"#f4f7fb", sphere1:"#dce3ee", grid:"#c9d2e0", limb:"#a7b3c6",
           coast:"rgba(84,101,128,.80)", coastBack:"rgba(84,101,128,.10)",
-          atmo:"rgba(37,99,235,.20)", orbit:"#2563eb", rocket:"#2563eb",
+          atmo:"rgba(37,99,235,.20)", night:"rgba(40,55,84,.12)",
+          orbit:"#2563eb", rocket:"#2563eb", star:"rgba(0,0,0,0)",
           pad:"#dc2626", txt:"#5b6472", halo:"#f6f7f9" };
   }
   function ll2xyz(lat, lon){
     const la = lat * D2R, lo = lon * D2R;
     return [Math.cos(la) * Math.cos(lo), Math.sin(la), -Math.cos(la) * Math.sin(lo)];
   }
+  const llr = (la, lo, rad) => {
+    const c = Math.cos(la);
+    return [c * Math.cos(lo) * rad, Math.sin(la) * rad, -c * Math.sin(lo) * rad];
+  };
   function rotY(p, a){ const c = Math.cos(a), s = Math.sin(a); return [p[0]*c - p[2]*s, p[1], p[0]*s + p[2]*c]; }
   function rotX(p, a){ const c = Math.cos(a), s = Math.sin(a); return [p[0], p[1]*c - p[2]*s, p[1]*s + p[2]*c]; }
+  const cross = (a, b) => [a[1]*b[2]-a[2]*b[1], a[2]*b[0]-a[0]*b[2], a[0]*b[1]-a[1]*b[0]];
+  const dot = (a, b) => a[0]*b[0] + a[1]*b[1] + a[2]*b[2];
+  const norm = a => { const l = Math.hypot(a[0], a[1], a[2]) || 1; return [a[0]/l, a[1]/l, a[2]/l]; };
+
+  /* subsolar direction at a given time (good to ~1°) */
+  function sunDir(d){
+    const D = (d.getTime() - Date.UTC(d.getUTCFullYear(), 0, 0)) / 864e5;
+    const dec = -23.44 * Math.cos(TAU * (D + 10) / 365.24) * D2R;
+    const h = d.getUTCHours() + d.getUTCMinutes() / 60 + d.getUTCSeconds() / 3600;
+    const lonS = (12 - h) * 15 * D2R;
+    const c = Math.cos(dec);
+    return [c * Math.cos(lonS), Math.sin(dec), -c * Math.sin(lonS)];
+  }
+
+  /* deterministic starfield */
+  const STARS = (() => {
+    let s = 0x9e3779b9; const rnd = () => { s ^= s << 13; s ^= s >>> 17; s ^= s << 5; s >>>= 0; return s / 4294967296; };
+    const a = [];
+    for (let i = 0; i < 130; i++) a.push([rnd(), rnd(), .4 + rnd() * 1.1, .25 + rnd() * .75]);
+    return a;
+  })();
 
   function makeRenderer(cv){
     const ctx = cv.getContext("2d");
     let W = 0, H = 0, DPR = 1, R = 0, cx = 0, cy = 0;
-    let cy_, cs_, ty_, ts_;                     // cached rotation terms
+    let yw = 0, tl = 0, cy_ = 1, cs_ = 0, ty_ = 1, ts_ = 0;
     function resize(){
       DPR = Math.min(devicePixelRatio || 1, 1.5);
       W = cv.clientWidth * DPR; H = cv.clientHeight * DPR;
       if (cv.width !== W || cv.height !== H){ cv.width = W; cv.height = H; }
-      R = Math.min(W, H) * 0.37; cx = W / 2; cy = H / 2;
+      R = Math.min(W, H) * 0.36; cx = W / 2; cy = H / 2;
     }
     function setView(yaw, tilt){
+      yw = yaw; tl = tilt;
       cy_ = Math.cos(yaw); cs_ = Math.sin(yaw);
       ty_ = Math.cos(tilt); ts_ = Math.sin(tilt);
     }
-    function pj(x, y, z){                        // rotY(yaw) then rotX(tilt), project
+    function pj(x, y, z){
       const x1 = x * cy_ - z * cs_, z1 = x * cs_ + z * cy_;
       const y2 = y * ty_ - z1 * ts_, z2 = y * ts_ + z1 * ty_;
       return [cx + x1 * R, cy - y2 * R, z2];
     }
-    const proj = (p, yaw, tilt) => { setView(yaw, tilt); return pj(p[0], p[1], p[2]); };
-
+    const unview = v => rotY(rotX(v, -tl), -yw);   // camera space -> world
+    function stars(C){
+      if (!C.dark) return;
+      ctx.fillStyle = C.star;
+      for (const s of STARS){
+        const x = s[0] * W, y = s[1] * H;
+        const dx = x - cx, dy = y - cy;
+        if (dx * dx + dy * dy < R * R * 1.12) continue;
+        ctx.globalAlpha = s[3];
+        ctx.fillRect(x, y, s[2] * DPR, s[2] * DPR);
+      }
+      ctx.globalAlpha = 1;
+    }
     function sphere(C){
       const g = ctx.createRadialGradient(cx - R * .45, cy - R * .5, R * .1, cx, cy, R * 1.02);
       g.addColorStop(0, C.sphere0); g.addColorStop(1, C.sphere1);
@@ -108,6 +150,57 @@
         ctx.stroke();
       }
     }
+    /* night-side shading for a given sun direction */
+    function night(sun, C){
+      const v = unview([0, 0, 1]);                     // world vector toward camera
+      let k = Math.abs(sun[1]) < .9 ? [0, 1, 0] : [1, 0, 0];
+      const e1 = norm(cross(sun, k)), e2 = norm(cross(sun, e1));
+      const a = dot(e1, v), b = dot(e2, v), m = Math.hypot(a, b);
+      ctx.fillStyle = C.night;
+      if (m < .04){                                    // sun along view axis
+        if (dot(v, sun) < 0){ ctx.beginPath(); ctx.arc(cx, cy, R, 0, TAU); ctx.fill(); }
+        return;
+      }
+      const th0 = Math.atan2(b, a);
+      const P = [];                                    // front half of the terminator
+      const N = 36;
+      for (let j = 0; j <= N; j++){
+        const th = th0 - Math.PI / 2 + (j / N) * Math.PI;
+        const p = [e1[0]*Math.cos(th)+e2[0]*Math.sin(th),
+                   e1[1]*Math.cos(th)+e2[1]*Math.sin(th),
+                   e1[2]*Math.cos(th)+e2[2]*Math.sin(th)];
+        P.push(pj(p[0], p[1], p[2]));
+      }
+      const A = P[0], B = P[P.length - 1];
+      const angA = Math.atan2(A[1] - cy, A[0] - cx);
+      const angB = Math.atan2(B[1] - cy, B[0] - cx);
+      // pick the limb arc whose midpoint is on the night side
+      const mid = (from, to, ccw) => {
+        let d = to - from;
+        if (ccw && d > 0) d -= TAU;
+        if (!ccw && d < 0) d += TAU;
+        return from + d / 2;
+      };
+      let ccw = false;
+      let gm = mid(angB, angA, ccw);
+      let w = unview([Math.cos(gm), -Math.sin(gm), 0]);
+      if (dot(w, sun) > 0){ ccw = true; }
+      ctx.save();
+      ctx.beginPath(); ctx.arc(cx, cy, R + DPR, 0, TAU); ctx.clip();
+      ctx.beginPath();
+      ctx.moveTo(P[0][0], P[0][1]);
+      for (let j = 1; j < P.length; j++) ctx.lineTo(P[j][0], P[j][1]);
+      ctx.arc(cx, cy, R, angB, angA, !ccw);
+      ctx.closePath();
+      ctx.fill();
+      // soften the terminator line
+      ctx.strokeStyle = C.night; ctx.lineWidth = 5 * DPR; ctx.lineCap = "round";
+      ctx.beginPath();
+      ctx.moveTo(P[0][0], P[0][1]);
+      for (let j = 1; j < P.length; j++) ctx.lineTo(P[j][0], P[j][1]);
+      ctx.stroke();
+      ctx.restore();
+    }
     const latCircle = lat => { const p = []; for (let l = 0; l <= 360; l += 6) p.push(ll2xyz(lat, l)); return p; };
     const meridian = lon => { const p = []; for (let l = -90; l <= 90; l += 6) p.push(ll2xyz(l, lon)); p.push(...[...Array(31)].map((_, i) => ll2xyz(90 - i * 6, lon + 180))); return p; };
     function polyline(pts, back){
@@ -121,142 +214,317 @@
       }
       ctx.stroke();
     }
-    function earth(yaw, tilt, C){ setView(yaw, tilt); sphere(C); grid(C); coasts(C); }
-    return { ctx, resize, proj, earth, polyline, setView, pj,
+    function earth(yaw, tilt, C, sun){
+      setView(yaw, tilt);
+      stars(C); sphere(C); grid(C); coasts(C);
+      if (sun) night(sun, C);
+    }
+    function label(text, C){
+      if (!text) return;
+      ctx.font = `600 ${10 * DPR}px Inter, sans-serif`;
+      const pad = 14 * DPR;
+      ctx.fillStyle = C.orbit;
+      ctx.fillRect(pad, H - pad - 8 * DPR, 3 * DPR, 8 * DPR);
+      ctx.fillStyle = C.txt;
+      try{ ctx.letterSpacing = "0.12em"; }catch(e){}
+      ctx.fillText(text.toUpperCase(), pad + 7 * DPR, H - pad);
+      try{ ctx.letterSpacing = "0em"; }catch(e){}
+    }
+    return { ctx, resize, earth, polyline, setView, pj, label,
       get R(){ return R; }, get DPR(){ return DPR; }, get W(){ return W; }, get H(){ return H; } };
   }
 
-  /* ---------- orbit geometry per mission ---------- */
+  /* ---------- mission profile ---------- */
   function orbitSpec(orbitName, lat){
     const o = (orbitName || "").toLowerCase();
     const incl = Math.max(Math.abs(lat || 28) * D2R, 0.25);
     if (o.includes("sun-sync") || o.includes("sso") || o.includes("polar"))
-      return { rx: 1.3, rz: 1.3, incl: 97 * D2R, esc: false, label: "near-polar orbit" };
+      return { r: 1.3, incl: 97 * D2R, revs: 1, label: "near-polar orbit" };
     if (o.includes("geo") && !o.includes("transfer"))
-      return { rx: 1.85, rz: 1.85, incl: 0.12, esc: false, label: "geostationary orbit" };
+      return { r: 1.85, incl: 0.12, revs: .3, label: "geostationary orbit" };
     if (o.includes("gto") || o.includes("transfer"))
-      return { rx: 1.95, rz: 1.15, incl: incl, esc: false, ecc: .55, label: "transfer ellipse" };
-    if (o.includes("mars") || o.includes("lunar") || o.includes("moon") || o.includes("helio") || o.includes("escape") || o.includes("injection"))
-      return { rx: 2.4, rz: 2.4, incl: incl, esc: true, label: "escape trajectory" };
+      return { rPer: 1.16, rApo: 2.45, incl: incl, ell: true, revs: 1, label: "transfer ellipse" };
+    if (o.includes("mars"))
+      return { r: 1.35, incl: incl, esc: true, target: "Mars", label: "escape trajectory" };
+    if (o.includes("lunar") || o.includes("moon") || o.includes("selen"))
+      return { r: 1.35, incl: incl, esc: true, target: "Moon", label: "escape trajectory" };
+    if (o.includes("helio") || o.includes("escape") || o.includes("injection"))
+      return { r: 1.35, incl: incl, esc: true, target: "deep space", label: "escape trajectory" };
     if (o.includes("medium") || o.includes("meo"))
-      return { rx: 1.6, rz: 1.6, incl: Math.max(incl, .9), esc: false, label: "medium Earth orbit" };
+      return { r: 1.6, incl: Math.max(incl, .9), revs: .55, label: "medium Earth orbit" };
     if (o.includes("suborbital"))
-      return { rx: 1.18, rz: 1.18, incl: incl, esc: false, sub: true, label: "suborbital arc" };
-    return { rx: 1.28, rz: 1.28, incl: incl, esc: false, label: "low Earth orbit" };
-  }
-  function ringPoint(spec, th, lonOff){
-    let p = [Math.cos(th) * spec.rx, 0, -Math.sin(th) * (spec.rz || spec.rx)];
-    if (spec.ecc) p[0] -= spec.rx * spec.ecc * .5;
-    p = rotX(p, -spec.incl);
-    return rotY(p, lonOff);
+      return { r: 1.16, incl: incl, sub: true, label: "suborbital arc" };
+    return { r: 1.28, incl: incl, revs: 1, label: "low Earth orbit" };
   }
 
   let raf = 0, mode = null;
   function stop(){ mode = null; if (raf) cancelAnimationFrame(raf); raf = 0; }
 
-  /* ---------- per-launch ascent animation ---------- */
+  /* ---------- per-launch flight animation ---------- */
   function play(cv, launch){
     stop();
     const r = makeRenderer(cv);
     const lat = parseFloat(launch.latitude), lon = parseFloat(launch.longitude);
     const okLL = isFinite(lat) && isFinite(lon);
-    const spec = orbitSpec(launch.orbit, okLL ? lat : 28);
     const padLL = okLL ? [lat, lon] : [28.5, -80.6];
-    const lonOff = -(padLL[1] + 115) * D2R;  // insertion ~25° east of the pad, camera-front
+    const spec = orbitSpec(launch.orbit, padLL[0]);
+    const net = launch.net instanceof Date && isFinite(+launch.net) ? launch.net : new Date();
+    const sun = sunDir(net);
     const cap = document.getElementById("orbitCap");
-    if (cap) cap.textContent = `Illustrative ascent to ${spec.label}` + (launch.pad ? ` from ${launch.pad}` : "");
-    mode = "play";
-    let t0 = null, tPrev = 1, trail = [];
-    const CYCLE = 11000;
-    const pp = ll2xyz(padLL[0], padLL[1]);
-    const insertTh = -Math.PI * .5;   // ring lon -90° pre-offset; north-going in flipped frame
-    function ascPoint(k){
-      const surf = [pp[0] * 1.01, pp[1] * 1.01, pp[2] * 1.01];
-      const tgt = ringPoint(spec, insertTh, lonOff);
-      const e = k * k * (3 - 2 * k);
-      const bulge = 1 + Math.sin(e * Math.PI) * .14;
-      return [0, 1, 2].map(i => (surf[i] + (tgt[i] - surf[i]) * e) * bulge);
+    if (cap) cap.textContent = `Illustrative ascent to ${spec.label}` + (launch.pad ? ` from ${launch.pad}` : "") +
+      (spec.target ? ` — bound for ${spec.target}` : "");
+
+    /* --- orbital plane through the pad (real azimuth) --- */
+    const phi = padLL[0] * D2R, lam = padLL[1] * D2R;
+    let inc = spec.incl;
+    let dogleg = false;
+    if (Math.sin(inc) < Math.abs(Math.sin(phi)) + .01){ dogleg = true; }
+    const dlon = u => Math.atan2(Math.cos(inc) * Math.sin(u), Math.cos(u));
+    const u0b = Math.asin(Math.max(-1, Math.min(1, Math.sin(phi) / Math.sin(inc))));
+    const u0 = dogleg ? 0 : (inc > Math.PI / 2 ? Math.PI - u0b : u0b);
+    const DU = spec.sub ? 13 * D2R : 40 * D2R;
+    const uIns = u0 + DU;
+    const OM = dogleg ? (lam + 42 * D2R) - dlon(uIns) : lam - dlon(u0);
+    const rPer = spec.ell ? spec.rPer : spec.r;
+    const aSemi = spec.ell ? (spec.rPer + spec.rApo) / 2 : spec.r;
+    const ecc = spec.ell ? (spec.rApo - spec.rPer) / (spec.rApo + spec.rPer) : 0;
+    function ringP(u){
+      const sla = Math.sin(inc) * Math.sin(u);
+      const la = Math.asin(Math.max(-1, Math.min(1, sla)));
+      const lo = OM + dlon(u);
+      const rad = spec.ell ? aSemi * (1 - ecc * ecc) / (1 + ecc * Math.cos(u - uIns)) : spec.r;
+      return llr(la, lo, rad);
     }
+    const ease = k => k * k * (3 - 2 * k);
+    function ascP(k){                    // ascent point, k 0..1
+      const e = ease(k);
+      const alt = 1.004 + e * (rPer - 1.004) + Math.sin(e * Math.PI) * .09;
+      if (dogleg){
+        const la = phi + e * (Math.asin(Math.sin(inc) * Math.sin(uIns)) - phi);
+        const lo = lam + e * ((OM + dlon(uIns)) - lam);
+        return llr(la, lo, alt);
+      }
+      const u = u0 + e * DU;
+      const sla = Math.sin(inc) * Math.sin(u);
+      return llr(Math.asin(Math.max(-1, Math.min(1, sla))), OM + dlon(u), alt);
+    }
+    /* Kepler: uniform mean anomaly -> eccentric -> true (fast perigee, slow apogee) */
+    function keplerU(f){
+      if (!spec.ell) return uIns + f * TAU * (spec.revs || 1);
+      const M = f * TAU;
+      let E = M;
+      for (let i = 0; i < 4; i++) E = E - (E - ecc * Math.sin(E) - M) / (1 - ecc * Math.cos(E));
+      const nu = 2 * Math.atan2(Math.sqrt(1 + ecc) * Math.sin(E / 2), Math.sqrt(1 - ecc) * Math.cos(E / 2));
+      return uIns + nu;
+    }
+    const pp = ll2xyz(padLL[0], padLL[1]);
+    const yawBase = lam + Math.PI / 2;
+    const tilt = .38 - phi * .35;
+    const CYCLE = 12000, ASC = .40;
+    mode = "play";
+    let t0 = null, tPrev = 1, trail = [], booster = null;
+
+    function phaseText(t){
+      if (spec.sub){
+        const w = Math.min(1, t / .68);
+        if (w < .16) return "liftoff";
+        if (w < .42) return "boost";
+        if (w < .58) return "apogee";
+        if (w < .97) return "descent";
+        return "touchdown";
+      }
+      if (t < ASC){
+        const k = t / ASC;
+        if (k < .12) return "liftoff";
+        if (k < .30) return "max-q";
+        if (k < .48) return "stage separation";
+        if (k < .62) return "fairing separation";
+        return "upper stage burn";
+      }
+      if (t < ASC + .05) return spec.esc ? "injection burn" : "orbit insertion";
+      if (spec.esc) return "→ " + (spec.target || "escape");
+      return "coast";
+    }
+
     function frame(now){
       if (mode !== "play") return;
       if (!t0) t0 = now;
       const C = colors();
       r.resize();
-      const t = ((now - t0) % CYCLE) / CYCLE;
-      if (t < tPrev) trail.length = 0;           // new cycle
+      const t = reduced ? .55 : ((now - t0) % CYCLE) / CYCLE;
+      if (t < tPrev){ trail.length = 0; booster = null; }
       tPrev = t;
-      const yaw = padLL[1] * D2R + Math.PI / 2 + (reduced ? 0 : Math.sin((now - t0) / 9000) * .1);
-      const tilt = .38 - padLL[0] * D2R * .35;
+      const yaw = yawBase + (reduced ? 0 : Math.sin((now - t0) / 9000) * .1);
       const { ctx } = r;
       ctx.clearRect(0, 0, r.W, r.H);
-      r.earth(yaw, tilt, C);
+      r.earth(yaw, tilt, C, sun);
+
       // pad marker
       const [px, py, pz] = r.pj(pp[0], pp[1], pp[2]);
       if (pz > 0){
         ctx.fillStyle = C.pad;
         ctx.beginPath(); ctx.arc(px, py, 3 * r.DPR, 0, TAU); ctx.fill();
-        ctx.strokeStyle = C.pad; ctx.globalAlpha = Math.max(0, .55 - (t * 4) % .8);
-        ctx.beginPath(); ctx.arc(px, py, (4 + (t * 160) % 14) * r.DPR, 0, TAU); ctx.stroke();
-        ctx.globalAlpha = 1;
-      }
-      // target orbit ring (dashed)
-      ctx.setLineDash([4 * r.DPR, 5 * r.DPR]); ctx.strokeStyle = C.orbit; ctx.lineWidth = r.DPR;
-      const ring = []; for (let a = 0; a <= 360; a += 4) ring.push(ringPoint(spec, a * D2R, lonOff));
-      ctx.globalAlpha = .18; r.polyline(ring, true);
-      ctx.globalAlpha = .5;  r.polyline(ring, false);
-      ctx.setLineDash([]); ctx.globalAlpha = 1;
-      // ascent path (drawn portion)
-      const asc = Math.min(1, t / .42);
-      ctx.strokeStyle = C.rocket; ctx.lineWidth = 1.7 * r.DPR; ctx.lineCap = "round";
-      ctx.globalAlpha = .9;
-      ctx.beginPath();
-      let pen = false;
-      for (let k = 0; k <= asc + 1e-9; k += .02){
-        const q = ascPoint(Math.min(k, asc));
-        const [x, y, z] = r.pj(q[0], q[1], q[2]);
-        if (z > -0.1){ pen ? ctx.lineTo(x, y) : ctx.moveTo(x, y); pen = true; } else pen = false;
-      }
-      ctx.stroke(); ctx.globalAlpha = 1;
-      // head position
-      let head;
-      if (t < .42) head = ascPoint(asc);
-      else if (spec.esc){
-        const k = (t - .42) / .58;
-        const dir = ringPoint(spec, insertTh, lonOff);
-        head = dir.map(v => v * (1 + k * 1.7));
-      } else {
-        head = ringPoint(spec, insertTh + ((t - .42) / .58) * TAU * (spec.sub ? .35 : 1), lonOff);
-      }
-      // trail (coast phase)
-      if (t >= .42){
-        trail.push(head);
-        if (trail.length > 26) trail.shift();
-        for (let i = 1; i < trail.length; i++){
-          const a = r.pj(trail[i-1][0], trail[i-1][1], trail[i-1][2]);
-          const b = r.pj(trail[i][0], trail[i][1], trail[i][2]);
-          if (a[2] > -0.15 && b[2] > -0.15){
-            ctx.strokeStyle = C.rocket; ctx.globalAlpha = (i / trail.length) * .55;
-            ctx.lineWidth = (0.4 + (i / trail.length) * 1.3) * r.DPR;
-            ctx.beginPath(); ctx.moveTo(a[0], a[1]); ctx.lineTo(b[0], b[1]); ctx.stroke();
-          }
+        if (!reduced){
+          ctx.strokeStyle = C.pad; ctx.globalAlpha = Math.max(0, .5 - (t * 4) % .8);
+          ctx.beginPath(); ctx.arc(px, py, (4 + (t * 160) % 14) * r.DPR, 0, TAU); ctx.stroke();
+          ctx.globalAlpha = 1;
         }
-        ctx.globalAlpha = 1;
       }
-      const [hx, hy, hz] = r.pj(head[0], head[1], head[2]);
-      const fade = spec.esc && t > .9 ? (1 - t) * 10 : 1;
+
+      // target orbit ring (dashed) — or the full hop path for suborbital
+      ctx.setLineDash([4 * r.DPR, 5 * r.DPR]); ctx.strokeStyle = C.orbit; ctx.lineWidth = r.DPR;
+      if (spec.sub){
+        const hop = []; for (let k = 0; k <= 1.001; k += .04) hop.push(subP(Math.min(1, k)));
+        ctx.globalAlpha = .5; r.polyline(hop, false);
+      } else if (!spec.esc){
+        const ring = []; for (let u = 0; u <= 360; u += 3) ring.push(ringP(kepAngle(u)));
+        ctx.globalAlpha = .16; r.polyline(ring, true);
+        ctx.globalAlpha = .5;  r.polyline(ring, false);
+      }
+      ctx.setLineDash([]); ctx.globalAlpha = 1;
+
+      // flight
+      if (spec.sub) flySub(t, C);
+      else fly(t, C);
+
+      r.label(phaseText(t), C);
+      if (!reduced) raf = requestAnimationFrame(frame);
+    }
+    const kepAngle = deg => uIns + deg * D2R;
+
+    function drawPath(f, C){          // ascent trace up to fraction f of ascent
+      ctx_path(r.ctx, C);
+      let pen = false;
+      for (let k = 0; k <= f + 1e-9; k += .02){
+        const q = ascP(Math.min(k, f));
+        const [x, y, z] = r.pj(q[0], q[1], q[2]);
+        if (z > -0.1){ pen ? r.ctx.lineTo(x, y) : r.ctx.moveTo(x, y); pen = true; } else pen = false;
+      }
+      r.ctx.stroke(); r.ctx.globalAlpha = 1;
+    }
+    function ctx_path(ctx, C){
+      ctx.strokeStyle = C.rocket; ctx.lineWidth = 1.7 * r.DPR; ctx.lineCap = "round";
+      ctx.globalAlpha = .9; ctx.beginPath();
+    }
+    function head_(p, C, fade){
+      const [hx, hy, hz] = r.pj(p[0], p[1], p[2]);
       if (hz > -0.15 && fade > 0){
+        const { ctx } = r;
         ctx.fillStyle = C.rocket;
         ctx.shadowColor = C.rocket; ctx.shadowBlur = 9 * r.DPR;
         ctx.globalAlpha = Math.min(1, fade);
         ctx.beginPath(); ctx.arc(hx, hy, 2.8 * r.DPR, 0, TAU); ctx.fill();
         ctx.shadowBlur = 0; ctx.globalAlpha = 1;
       }
-      raf = requestAnimationFrame(frame);
+    }
+    function trail_(C){
+      const { ctx } = r;
+      for (let i = 1; i < trail.length; i++){
+        const a = r.pj(trail[i-1][0], trail[i-1][1], trail[i-1][2]);
+        const b = r.pj(trail[i][0], trail[i][1], trail[i][2]);
+        if (a[2] > -0.15 && b[2] > -0.15){
+          ctx.strokeStyle = C.rocket; ctx.globalAlpha = (i / trail.length) * .5;
+          ctx.lineWidth = (0.4 + (i / trail.length) * 1.3) * r.DPR;
+          ctx.beginPath(); ctx.moveTo(a[0], a[1]); ctx.lineTo(b[0], b[1]); ctx.stroke();
+        }
+      }
+      ctx.globalAlpha = 1;
+    }
+    function fly(t, C){
+      const { ctx } = r;
+      const asc = Math.min(1, t / ASC);
+      drawPath(asc, C);
+      // booster separation + fall-back
+      if (asc >= .40 && asc < 1 && !booster) booster = { k: asc };
+      if (booster){
+        const age = (t - booster.k * ASC) / .12;                    // 0..1 over ~1.4s
+        if (age < 1){
+          const back = booster.k - age * .16;
+          const q = ascP(Math.max(0, back));
+          const fall = q.map(v => v / Math.hypot(q[0], q[1], q[2]) * Math.max(1.002, Math.hypot(q[0], q[1], q[2]) - age * age * .28));
+          const [bx, by, bz] = r.pj(fall[0], fall[1], fall[2]);
+          if (bz > -0.1){
+            ctx.fillStyle = C.txt; ctx.globalAlpha = (1 - age) * .8;
+            ctx.beginPath(); ctx.arc(bx, by, 1.8 * r.DPR, 0, TAU); ctx.fill();
+            ctx.globalAlpha = 1;
+          }
+        }
+      }
+      let head;
+      if (t < ASC) head = ascP(asc);
+      else if (spec.esc){
+        const w = (t - ASC) / (1 - ASC);
+        const u = uIns + ease(Math.min(1, w * 1.4)) * .9;
+        const rad = rPer + w * w * 1.9;
+        const sla = Math.sin(inc) * Math.sin(u);
+        head = llr(Math.asin(Math.max(-1, Math.min(1, sla))), OM + dlon(u), Math.min(rad, 2.7));
+        // destination marker
+        const dst = llr(Math.asin(Math.max(-1, Math.min(1, Math.sin(inc) * Math.sin(uIns + .9)))), OM + dlon(uIns + .9), 2.55);
+        const [dx, dy, dz] = r.pj(dst[0], dst[1], dst[2]);
+        if (dz > -0.2 && spec.target){
+          ctx.strokeStyle = C.txt; ctx.globalAlpha = .7; ctx.lineWidth = r.DPR;
+          ctx.beginPath(); ctx.arc(dx, dy, 3.4 * r.DPR, 0, TAU); ctx.stroke();
+          ctx.font = `500 ${10 * r.DPR}px Inter, sans-serif`; ctx.fillStyle = C.txt;
+          ctx.fillText(spec.target, dx + 7 * r.DPR, dy + 3 * r.DPR);
+          ctx.globalAlpha = 1;
+        }
+      } else {
+        head = ringP(keplerU((t - ASC) / (1 - ASC)));
+      }
+      if (t >= ASC){
+        trail.push(head);
+        if (trail.length > 26) trail.shift();
+        trail_(C);
+      }
+      // insertion flash
+      if (t >= ASC && t < ASC + .05 && !reduced){
+        const q = ascP(1);
+        const [fx, fy, fz] = r.pj(q[0], q[1], q[2]);
+        if (fz > -0.1){
+          const g = (t - ASC) / .05;
+          ctx.strokeStyle = C.rocket; ctx.globalAlpha = (1 - g) * .7; ctx.lineWidth = 1.5 * r.DPR;
+          ctx.beginPath(); ctx.arc(fx, fy, (3 + g * 15) * r.DPR, 0, TAU); ctx.stroke();
+          ctx.globalAlpha = 1;
+        }
+      }
+      head_(head, C, spec.esc && t > .92 ? (1 - t) * 12 : 1);
+    }
+    function subP(w){                   // suborbital hop point
+      const e = ease(w);
+      const u = u0 + e * DU;
+      const alt = 1.004 + Math.sin(e * Math.PI) * .30;
+      const sla = Math.sin(inc) * Math.sin(u);
+      return llr(Math.asin(Math.max(-1, Math.min(1, sla))), OM + dlon(u), alt);
+    }
+    function flySub(t, C){
+      const { ctx } = r;
+      const w = Math.min(1, t / .68);
+      // trace so far
+      ctx_path(ctx, C);
+      let pen = false;
+      for (let k = 0; k <= w + 1e-9; k += .02){
+        const q = subP(Math.min(k, w));
+        const [x, y, z] = r.pj(q[0], q[1], q[2]);
+        if (z > -0.1){ pen ? ctx.lineTo(x, y) : ctx.moveTo(x, y); pen = true; } else pen = false;
+      }
+      ctx.stroke(); ctx.globalAlpha = 1;
+      head_(subP(w), C, t < .74 ? 1 : Math.max(0, 1 - (t - .74) * 8));
+      if (t >= .68 && t < .78 && !reduced){       // touchdown pulse
+        const q = subP(1);
+        const [fx, fy, fz] = r.pj(q[0], q[1], q[2]);
+        if (fz > -0.1){
+          const g = (t - .68) / .10;
+          ctx.strokeStyle = C.pad; ctx.globalAlpha = (1 - g) * .6; ctx.lineWidth = 1.4 * r.DPR;
+          ctx.beginPath(); ctx.arc(fx, fy, (2 + g * 12) * r.DPR, 0, TAU); ctx.stroke();
+          ctx.globalAlpha = 1;
+        }
+      }
     }
     raf = requestAnimationFrame(frame);
+    if (reduced) raf = requestAnimationFrame(frame);   // single static render
   }
 
-  /* ---------- map of all launch sites ---------- */
+  /* ---------- map of all launch sites (live terminator) ---------- */
   function map(cv, pads, highlightKey){
     stop();
     const r = makeRenderer(cv);
@@ -273,11 +541,12 @@
       const yaw = yaw0 + (reduced ? 0 : (now - t0) / 16000 * TAU * .3);
       const { ctx } = r;
       ctx.clearRect(0, 0, r.W, r.H);
-      r.earth(yaw, tilt, C);
+      r.earth(yaw, tilt, C, sunDir(new Date()));
       ctx.font = `${10.5 * r.DPR}px Inter, sans-serif`;
       const taken = [];
       for (const p of pads){
-        const [x, y, z] = r.proj(ll2xyz(p.lat, p.lon), yaw, tilt);
+        const q = ll2xyz(p.lat, p.lon);
+        const [x, y, z] = r.pj(q[0], q[1], q[2]);
         if (z <= 0) continue;
         const hotP = p.key === highlightKey;
         ctx.fillStyle = hotP ? C.pad : C.orbit;
@@ -285,20 +554,20 @@
         ctx.globalAlpha = .95;
         ctx.beginPath(); ctx.arc(x, y, (2.4 + Math.min(p.n, 8) * .55) * r.DPR, 0, TAU); ctx.fill();
         ctx.shadowBlur = 0;
-        if (hotP){
+        if (hotP && !reduced){
           ctx.strokeStyle = C.pad; ctx.globalAlpha = .5;
           ctx.beginPath(); ctx.arc(x, y, (7 + (now / 60 % 10)) * r.DPR / 1.2, 0, TAU); ctx.stroke();
         }
         const lbl = p.name + " · " + p.n;
         let ly = y + 3 * r.DPR;
-        while (taken.some(q => Math.abs(q[1] - ly) < 12 * r.DPR && Math.abs(q[0] - x) < 150 * r.DPR)) ly += 13 * r.DPR;
+        while (taken.some(q2 => Math.abs(q2[1] - ly) < 12 * r.DPR && Math.abs(q2[0] - x) < 150 * r.DPR)) ly += 13 * r.DPR;
         taken.push([x, ly]);
         ctx.globalAlpha = 1; ctx.lineWidth = 3 * r.DPR; ctx.strokeStyle = C.halo; ctx.lineJoin = "round";
         ctx.strokeText(lbl, x + 8 * r.DPR, ly);
         ctx.fillStyle = C.txt;
         ctx.fillText(lbl, x + 8 * r.DPR, ly);
       }
-      raf = requestAnimationFrame(frame);
+      if (!reduced) raf = requestAnimationFrame(frame);
     }
     raf = requestAnimationFrame(frame);
   }

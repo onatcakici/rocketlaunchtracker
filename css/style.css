@@ -44,7 +44,7 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
 
 /* ============ TOP BAR ============ */
 .topbar{position:sticky;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0;flex-wrap:wrap;
-  background:rgba(246,247,249,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  background:rgba(246,247,249,.97);border-bottom:1px solid var(--line)}
 .brand{display:flex;align-items:center;gap:10px;color:var(--text)}
 .brand:hover{text-decoration:none}
 .brand-mark{width:26px;height:26px;border-radius:8px;display:block}
@@ -196,7 +196,7 @@ select.control{appearance:none;padding-right:32px;background-image:linear-gradie
 .footer-credits a{color:var(--faint);text-decoration:underline}
 
 /* ============ MODAL ============ */
-.modal-backdrop{position:fixed;inset:0;z-index:50;background:rgba(15,23,42,.45);backdrop-filter:blur(4px);display:flex;align-items:center;justify-content:center;padding:18px;overflow-y:auto}
+.modal-backdrop{position:fixed;inset:0;z-index:50;background:rgba(15,23,42,.55);display:flex;align-items:center;justify-content:center;padding:18px;overflow-y:auto}
 .modal{position:relative;width:min(640px,100%);max-height:92vh;overflow-y:auto;border-radius:18px;background:#fff;box-shadow:0 24px 64px -16px rgba(15,23,42,.35);animation:rise .18s ease}
 @keyframes rise{from{transform:translateY(10px);opacity:0}}
 .modal-close{position:absolute;top:12px;right:12px;z-index:3;width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.92);box-shadow:var(--shadow);color:var(--muted);font-size:.9rem}
