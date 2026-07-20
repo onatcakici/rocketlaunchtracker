@@ -463,7 +463,29 @@
      "url": "https://plus.nasa.gov"
     }
    ],
-   "webcast_live": false
+   "webcast_live": false,
+   "crew": [
+    {
+     "name": "Commander (TBA)",
+     "role": "Commander",
+     "img": null
+    },
+    {
+     "name": "Pilot (TBA)",
+     "role": "Pilot",
+     "img": null
+    },
+    {
+     "name": "Mission Specialist 1 (TBA)",
+     "role": "Mission Specialist",
+     "img": null
+    },
+    {
+     "name": "Mission Specialist 2 (TBA)",
+     "role": "Mission Specialist",
+     "img": null
+    }
+   ]
   },
   {
    "id": "sample-14",

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free rocket launch API — JSON, ICS, RSS & push alerts | Rocket Launch Tracker</title>
+<meta name="description" content="A free, no-key rocket launch data feed: upcoming launches as JSON, iCalendar and RSS, plus push alert topics. Refreshed every 6 hours from Launch Library 2.">
+<link rel="canonical" href="https://rocketlaunchtracker.com/api.html">
+<meta name="robots" content="index,follow">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="lp">
+<header class="lp-head"><a class="lp-brand" href="./"><img src="favicon.png" alt="" width="22" height="22"> Rocket<span>Launch</span>Tracker</a></header>
+<main class="lp-main">
+  <p class="lp-kicker">For developers</p>
+  <h1 class="lp-title">Free launch-data feeds</h1>
+  <p class="lp-desc">Everything this site runs on is a set of static files you're welcome to use — no key, no rate limits beyond common sense, CORS enabled. Data originates from <a href="https://thespacedevs.com/llapi" target="_blank" rel="noopener">Launch Library 2 by The Space Devs</a> (please credit them); a link back to rocketlaunchtracker.com is appreciated.</p>
+
+  <h2 class="stat-h">Endpoints</h2>
+  <table class="api-t">
+    <tr><th>URL</th><th>Contents</th></tr>
+    <tr><td><code>/data/launches.json</code></td><td>Next ~60 launches, slimmed & normalized (schema below). Refreshed every 6 h.</td></tr>
+    <tr><td><code>/data/previous.json</code></td><td>Last ~30 launches with outcomes.</td></tr>
+    <tr><td><code>/archive/2026.json</code></td><td>Every launch tracked in a year (grows automatically; one file per year).</td></tr>
+    <tr><td><code>/launches.ics</code></td><td>iCalendar feed with a 30-minute alarm per launch — subscribe in Google/Apple/Outlook.</td></tr>
+    <tr><td><code>/feed.xml</code></td><td>RSS 2.0 feed of upcoming launches.</td></tr>
+    <tr><td><code>/embed.html</code></td><td>Embeddable next-launch countdown widget (<code>?theme=dark</code> supported).</td></tr>
+  </table>
+
+  <h2 class="stat-h">Launch object</h2>
+  <table class="api-t">
+    <tr><th>Field</th><th>Meaning</th></tr>
+    <tr><td><code>id</code></td><td>Launch Library 2 UUID — stable across updates.</td></tr>
+    <tr><td><code>name</code></td><td>"Rocket | Mission" display name.</td></tr>
+    <tr><td><code>net</code>, <code>window_start</code>, <code>window_end</code></td><td>ISO-8601 UTC. NET = no earlier than.</td></tr>
+    <tr><td><code>status</code></td><td><code>{abbrev, name, description}</code> — Go, TBC, TBD, Hold, Success, Failure.</td></tr>
+    <tr><td><code>probability</code></td><td>Weather "go" percentage, when published (or null).</td></tr>
+    <tr><td><code>provider</code>, <code>rocket</code></td><td>Operator and vehicle names.</td></tr>
+    <tr><td><code>mission</code></td><td><code>{name, description, type, orbit}</code>.</td></tr>
+    <tr><td><code>pad</code></td><td><code>{name, map_url, latitude, longitude, location:{name, country_code}}</code>.</td></tr>
+    <tr><td><code>image</code>, <code>webcasts</code>, <code>webcast_live</code></td><td>Mission image URL and webcast links.</td></tr>
+    <tr><td><code>crew</code></td><td><code>[{name, role, img}]</code> for crewed flights, else <code>[]</code>.</td></tr>
+  </table>
+
+  <h2 class="stat-h">Example</h2>
+  <pre class="code">const r = await fetch("https://rocketlaunchtracker.com/data/launches.json");
+const { generated, results } = await r.json();
+const next = results.find(l => new Date(l.net) > new Date());
+console.log(`Next: ${next.name} at ${next.net} from ${next.pad.location.name}`);</pre>
+
+  <h2 class="stat-h">Push alerts (ntfy)</h2>
+  <p class="lp-desc">We publish to free public <a href="https://ntfy.sh" target="_blank" rel="noopener">ntfy</a> topics ~30–60 minutes before every Go/TBC liftoff. Subscribe in the ntfy app to <code>rocketlaunchtracker-alerts</code> for everything, or a per-provider topic like <code>rocketlaunchtracker-alerts-spacex</code>, <code>rocketlaunchtracker-alerts-rocket-lab</code>, <code>rocketlaunchtracker-alerts-united-launch-alliance</code> (provider name, lowercased, non-alphanumerics as dashes).</p>
+
+  <h2 class="stat-h">Fair use</h2>
+  <p class="lp-desc">These are static files on a free host — cache on your side, don't poll faster than the 6-hour refresh, and don't strip attribution. If you build something with this, tell us — we'll link the best ones from here.</p>
+
+  <p class="lp-fine"><a href="./">← All upcoming launches</a> · <a href="glossary.html">Glossary</a> · <a href="stats.html">Stats</a> · Data: <a href="https://thespacedevs.com/llapi" rel="noopener" target="_blank">Launch Library 2</a></p>
+</main>
+</body>
+</html>
