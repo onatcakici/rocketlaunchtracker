@@ -54,6 +54,7 @@
         <button class="vt-btn is-active" id="btnListView" role="tab" aria-selected="true">List</button>
         <button class="vt-btn" id="btnCalView" role="tab" aria-selected="false">Calendar</button>
         <button class="vt-btn" id="btnRecentView" role="tab" aria-selected="false">Recent</button>
+        <button class="vt-btn" id="btnMapView" role="tab" aria-selected="false">Map</button>
       </nav>
     </div>
   </header>
@@ -118,6 +119,12 @@
 
     <!-- ============ RECENT VIEW ============ -->
     <section id="recentView" class="launch-grid" hidden aria-label="Recent launches"></section>
+
+    <!-- ============ MAP VIEW ============ -->
+    <section id="mapView" class="mapwrap" hidden aria-label="Launch site map">
+      <canvas id="mapCv" aria-hidden="true"></canvas>
+      <p class="map-note">Every active launch site this window, sized by upcoming missions. The red pulse is the next liftoff. Drag-free — it turns on its own.</p>
+    </section>
 
     <!-- ============ CALENDAR VIEW ============ -->
     <section id="calView" class="calendar" hidden aria-label="Launch calendar">
@@ -200,5 +207,6 @@
 </div>
 
 <script src="js/app.js"></script>
+<script src="js/orbit.js"></script>
 </body>
 </html>

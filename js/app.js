@@ -6,7 +6,7 @@
    API in the browser. All times rendered in the viewer's zone.
    ============================================================ */
 "use strict";
-console.log("RLT build v4.2");
+console.log("RLT build v4.3");
 
 const DATA_URL = "data/launches.json";
 const API_URL  = "https://ll.thespacedevs.com/2.3.0/launches/upcoming/?limit=60&mode=detailed";
@@ -412,6 +412,7 @@ function openModal(id){
         ${l.status.description ? `<div class="md-fact"><div class="k">Status note</div><div class="v">${escapeHtml(l.status.description)}</div></div>` : ""}
         <div class="md-fact" id="wxFact" hidden><div class="k">Pad weather now</div><div class="v">—</div></div>
       </div>
+      <div class="md-orbit"><canvas id="orbitCv" aria-hidden="true"></canvas><div class="orbit-cap" id="orbitCap">Illustrative trajectory</div></div>
       ${l.desc ? `<p class="md-desc">${escapeHtml(l.desc)}</p>` : ""}
       <div class="md-links">
         ${l.webcasts.slice(0,2).map(w => `<a class="btn btn-primary" href="${escapeHtml(w.url)}" target="_blank" rel="noopener">▶ ${escapeHtml(w.title)}</a>`).join("")}
@@ -423,6 +424,7 @@ function openModal(id){
   document.body.style.overflow = "hidden";
   try{ history.replaceState(null, "", "#l-" + encodeURIComponent(id)); }catch(e){}
   fetchWeather(l);
+  if (window.RLTOrbit) RLTOrbit.play($("#orbitCv"), l);
   $("#modalClose").focus();
 }
 function openFromHash(){
@@ -466,6 +468,7 @@ function openDayModal(k){
   tickCards();
 }
 function closeModal(){
+  if (window.RLTOrbit) RLTOrbit.stop();
   $("#modalBackdrop").hidden = true;
   document.body.style.overflow = "";
   if (location.hash.startsWith("#l-")){
@@ -484,7 +487,7 @@ function renderAll(){
 }
 function setView(v){
   state.view = v;
-  const map = { list: "#btnListView", cal: "#btnCalView", recent: "#btnRecentView" };
+  const map = { list: "#btnListView", cal: "#btnCalView", recent: "#btnRecentView", map: "#btnMapView" };
   for (const [key, sel] of Object.entries(map)){
     const b = $(sel);
     if (!b) continue;
@@ -494,9 +497,27 @@ function setView(v){
   $("#listView").hidden = v !== "list";
   $("#calView").hidden = v !== "cal";
   $("#recentView").hidden = v !== "recent";
+  $("#mapView").hidden = v !== "map";
+  if (v !== "map" && window.RLTOrbit) RLTOrbit.stop();
   if (v === "cal") renderCalendar();
   else if (v === "recent") renderRecent();
+  else if (v === "map") renderMap();
   else renderList();
+}
+function renderMap(){
+  if (!window.RLTOrbit) return;
+  const groups = {};
+  const nameOf = l => (l.location || l.pad || "Site").split(",")[0].trim();
+  for (const l of state.launches){
+    const la = parseFloat(l.latitude), lo = parseFloat(l.longitude);
+    if (!isFinite(la) || !isFinite(lo)) continue;
+    const key = nameOf(l);
+    if (!groups[key]) groups[key] = { key, lat: la, lon: lo, n: 0, name: key };
+    groups[key].n++;
+  }
+  const pads = Object.values(groups);
+  const next = state.launches.find(l => isFinite(parseFloat(l.latitude)));
+  RLTOrbit.map($("#mapCv"), pads, next ? nameOf(next) : null);
 }
 
 document.addEventListener("click", e => {
@@ -529,6 +550,7 @@ $("#modalClose").addEventListener("click", closeModal);
 $("#btnListView").addEventListener("click", () => setView("list"));
 $("#btnCalView").addEventListener("click", () => setView("cal"));
 $("#btnRecentView") && $("#btnRecentView").addEventListener("click", () => setView("recent"));
+$("#btnMapView") && $("#btnMapView").addEventListener("click", () => setView("map"));
 $("#searchBox").addEventListener("input", e => { state.q = e.target.value; renderAll(); });
 $("#providerSel").addEventListener("change", e => { state.provider = e.target.value; renderAll(); });
 $("#statusSel").addEventListener("change", e => { state.status = e.target.value; renderAll(); });
