@@ -1,12 +1,12 @@
 {
-  "generated": "2026-07-21T08:47:56Z",
+  "generated": "2026-07-21T14:26:12Z",
   "sample": false,
   "count": 60,
   "results": [
     {
       "id": "e1079d3a-c0a6-4b42-bc1d-92e48a5a78fc",
       "name": "Falcon 9 Block 5 | Starlink Group 17-39",
-      "net": "2026-07-21T14:43:04Z",
+      "net": "2026-07-21T14:49:34Z",
       "window_start": "2026-07-21T14:00:00Z",
       "window_end": "2026-07-21T17:47:00Z",
       "status": {
@@ -48,7 +48,7 @@
           "url": "https://x.com/i/broadcasts/1RJjppBPkALKw"
         }
       ],
-      "webcast_live": false
+      "webcast_live": true
     },
     {
       "id": "0f6780cf-edae-4d7c-99d6-ce7de784d140",
