@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-21T03:49:08Z",
+  "generated": "2026-07-21T08:47:56Z",
   "sample": false,
   "count": 60,
   "results": [
@@ -36,16 +36,16 @@
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
       "webcasts": [
         {
-          "title": "SCRUBBED - SpaceX - Falcon 9 - Starlink 17-39 - SLC-4E - Vandenberg SFB - July 20, 2026",
-          "url": "https://www.youtube.com/watch?v=p648NlL0fi4"
+          "title": "GO! - SpaceX - Falcon 9 - Starlink 17-39 - SLC-4E - Vandenberg SFB - Space Affairs Live",
+          "url": "https://www.youtube.com/watch?v=cT5v36PmSDQ"
         },
         {
-          "title": "Replay: SpaceX Falcon 9 rocket aborts liftoff from Vandenberg, California",
-          "url": "https://www.youtube.com/watch?v=mXVL1SQKNvE"
+          "title": "Live: SpaceX Falcon 9 rocket launches 24 Starlink internet satellites from Vandenberg, California",
+          "url": "https://www.youtube.com/watch?v=tOQwbRqCWV8"
         },
         {
           "title": "Starlink Mission",
-          "url": "https://x.com/i/broadcasts/1qGoNNQZvEMKv"
+          "url": "https://x.com/i/broadcasts/1RJjppBPkALKw"
         }
       ],
       "webcast_live": false
@@ -85,6 +85,14 @@
         {
           "title": "GO - SpaceX - Falcon 9 - MRV-MEP - SLC-40 - Cape Canaveral SFS - Space Affairs Live",
           "url": "https://www.youtube.com/watch?v=BEhu74LtIb0"
+        },
+        {
+          "title": "Live: SpaceX Falcon 9 rocket launches robotic space servicing mission from Cape Canaveral",
+          "url": "https://www.youtube.com/watch?v=2h4gxuQ9lPA"
+        },
+        {
+          "title": "SpaceX Launches Falcon 9 with MRV-1",
+          "url": "https://www.youtube.com/watch?v=dO71XO4lceM"
         },
         {
           "title": "MRV-MEP Mission",
