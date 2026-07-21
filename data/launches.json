@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-21T14:26:12Z",
+  "generated": "2026-07-21T19:54:19Z",
   "sample": false,
   "count": 60,
   "results": [
@@ -10,9 +10,9 @@
       "window_start": "2026-07-21T14:00:00Z",
       "window_end": "2026-07-21T17:47:00Z",
       "status": {
-        "abbrev": "Go",
-        "name": "Go for Launch",
-        "description": "Current T-0 confirmed by official or reliable sources."
+        "abbrev": "Success",
+        "name": "Launch Successful",
+        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
       },
       "probability": null,
       "provider": "SpaceX",
@@ -36,8 +36,8 @@
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
       "webcasts": [
         {
-          "title": "GO! - SpaceX - Falcon 9 - Starlink 17-39 - SLC-4E - Vandenberg SFB - Space Affairs Live",
-          "url": "https://www.youtube.com/watch?v=cT5v36PmSDQ"
+          "title": "SpaceX Starlink Group 17-39",
+          "url": "https://www.youtube.com/watch?v=cBlgROX6OO4"
         },
         {
           "title": "Live: SpaceX Falcon 9 rocket launches 24 Starlink internet satellites from Vandenberg, California",
@@ -48,7 +48,7 @@
           "url": "https://x.com/i/broadcasts/1RJjppBPkALKw"
         }
       ],
-      "webcast_live": true
+      "webcast_live": false
     },
     {
       "id": "0f6780cf-edae-4d7c-99d6-ce7de784d140",
@@ -80,7 +80,7 @@
           "country_code": "US"
         }
       },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_at_slc_image_20260721192735.jpg",
       "webcasts": [
         {
           "title": "GO - SpaceX - Falcon 9 - MRV-MEP - SLC-40 - Cape Canaveral SFS - Space Affairs Live",
