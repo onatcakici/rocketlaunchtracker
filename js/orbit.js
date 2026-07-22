@@ -36,16 +36,16 @@
     const dark = document.documentElement.dataset.theme === "dark" ||
       document.documentElement.classList.contains("auto-dark");
     return dark
-      ? { dark, sphere0:"#182238", sphere1:"#0b1120", grid:"#2a3550", limb:"#3d4a68",
-          coast:"rgba(148,168,208,.85)", coastBack:"rgba(148,168,208,.10)",
-          atmo:"rgba(96,165,250,.35)", night:"rgba(2,6,16,.45)",
-          orbit:"#3b82f6", rocket:"#7db2ff", star:"rgba(190,205,235,.55)",
-          pad:"#f87171", txt:"#aab3cc", halo:"#0e1420" }
-      : { dark, sphere0:"#f4f7fb", sphere1:"#dce3ee", grid:"#c9d2e0", limb:"#a7b3c6",
-          coast:"rgba(84,101,128,.80)", coastBack:"rgba(84,101,128,.10)",
-          atmo:"rgba(37,99,235,.20)", night:"rgba(40,55,84,.12)",
-          orbit:"#2563eb", rocket:"#2563eb", star:"rgba(0,0,0,0)",
-          pad:"#dc2626", txt:"#5b6472", halo:"#f6f7f9" };
+      ? { dark, sphere0:"#1d1d24", sphere1:"#0e0e13", grid:"#2e2e36", limb:"#44444e",
+          coast:"rgba(190,190,200,.8)", coastBack:"rgba(190,190,200,.10)",
+          atmo:"rgba(255,110,90,.25)", night:"rgba(0,0,4,.45)",
+          orbit:"#ff4f38", rocket:"#ff6e57", star:"rgba(228,228,231,.5)",
+          pad:"#f4f4f5", txt:"#a3a3ab", halo:"#0b0b0f" }
+      : { dark, sphere0:"#fafafa", sphere1:"#e8e8ec", grid:"#d4d4d8", limb:"#a1a1aa",
+          coast:"rgba(82,82,88,.8)", coastBack:"rgba(82,82,88,.10)",
+          atmo:"rgba(214,51,22,.13)", night:"rgba(23,23,27,.12)",
+          orbit:"#d63316", rocket:"#e03a22", star:"rgba(0,0,0,0)",
+          pad:"#17171b", txt:"#58585e", halo:"#ffffff" };
   }
   function ll2xyz(lat, lon){
     const la = lat * D2R, lo = lon * D2R;

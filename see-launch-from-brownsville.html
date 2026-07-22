@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Can you see a rocket launch from Brownsville, TX? Viewing guide &amp; next launches | Rocket Launch Tracker</title>
+<meta name="description" content="How to watch rocket launches from Brownsville, TX: Starbase is ~35 km west away — where to look, when it&#x27;s visible, and every upcoming launch with times in your timezone.">
+<link rel="canonical" href="https://rocketlaunchtracker.com/see-launch-from-brownsville.html">
+<meta name="robots" content="index,follow">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="stylesheet" href="css/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Can you see rocket launches from Brownsville, TX?", "acceptedAnswer": {"@type": "Answer", "text": "Brownsville is the nearest city to Starbase. Starship launches are visible \u2014 and very audible \u2014 across the area; the ascent clears the eastern horizon within seconds. Road closures around Boca Chica are announced before each attempt."}}, {"@type": "Question", "name": "Which direction should I look from Brownsville, TX?", "acceptedAnswer": {"@type": "Answer", "text": "Look east. Starbase is ~35 km west from Brownsville."}}]}</script>
+</head>
+<body class="lp">
+<header class="lp-head"><a class="lp-brand" href="./"><img src="favicon.png" alt="" width="22" height="22"> Rocket<span>Launch</span>Tracker</a></header>
+<main class="lp-main">
+  <p class="lp-kicker">Viewing guide · Brownsville, TX</p>
+  <h1 class="lp-title">Watching rocket launches from Brownsville, TX</h1>
+  <p class="lp-desc">Brownsville is the nearest city to Starbase. Starship launches are visible — and very audible — across the area; the ascent clears the eastern horizon within seconds. Road closures around Boca Chica are announced before each attempt. Distances are approximate.</p>
+  <div class="md-facts lp-facts">
+    <div class="md-fact"><div class="k">Nearest launch site</div><div class="v">Starbase</div></div>
+    <div class="md-fact"><div class="k">Distance</div><div class="v">~35 km west</div></div>
+    <div class="md-fact"><div class="k">Where to look</div><div class="v">east</div></div>
+  </div>
+  <h2 class="stat-h">Next launches you could see</h2>
+  <ul class="tn-list" id="cityList"><li class="tn-row rel-meta">Loading the schedule…</li></ul>
+  <p class="lp-desc" style="font-size:13.5px">Rule of thumb: night and twilight launches are visible much farther away than daytime ones. Get a <a href="https://ntfy.sh/rocketlaunchtracker-alerts" rel="noopener" target="_blank">free push alert</a> ~45 minutes before every liftoff, or subscribe to the <a href="launches.ics">calendar feed</a>.</p>
+<script>
+(async () => {
+  try {
+    const r = await fetch("data/launches.json"); if (!r.ok) return;
+    const list = ((await r.json()).results || []).filter(l => ((l.pad || {}).location || {}).name && l.pad.location.name.toLowerCase().includes("starbase"));
+    const esc = s => String(s == null ? "" : s).replace(/[&<>]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+    const el = document.getElementById("cityList");
+    if (!list.length) { el.innerHTML = '<li class="tn-row rel-meta">No launches from Starbase in the current window — <a href="./">see the full board</a>.</li>'; return; }
+    el.innerHTML = list.slice(0, 8).map(l => {
+      const d = new Date(l.net);
+      const local = new Intl.DateTimeFormat(undefined, { weekday: "short", month: "short", day: "numeric", hour: "numeric", minute: "2-digit" }).format(d);
+      const s = (l.name || "launch").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "").slice(0, 60) + "-" + String(l.id).replace(/[^a-z0-9]/gi, "").slice(0, 8);
+      return '<li class="tn-row"><a href="launch/' + s + '.html"><strong>' + esc(l.name) + "</strong></a> <span class=\"rel-meta\">" + local + " your time</span></li>";
+    }).join("");
+  } catch (e) {}
+})();
+</script>
+
+  <p class="lp-fine"><a href="./">← All upcoming launches</a> · <a href="tonight.html">Tonight</a> · <a href="this-week.html">This week</a> · <a href="glossary.html">Glossary</a> · <a href="about.html">About</a></p>
+</main>
+</body>
+</html>

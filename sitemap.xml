@@ -22,6 +22,24 @@
   <url><loc>https://rocketlaunchtracker.com/compare.html</loc><lastmod>2026-07-20</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
   <url><loc>https://rocketlaunchtracker.com/api.html</loc><lastmod>2026-07-20</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
   <url><loc>https://rocketlaunchtracker.com/sim.html</loc><lastmod>2026-07-20</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://rocketlaunchtracker.com/tonight.html</loc><lastmod>2026-07-20</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://rocketlaunchtracker.com/this-week.html</loc><lastmod>2026-07-20</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://rocketlaunchtracker.com/news.html</loc><lastmod>2026-07-20</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://rocketlaunchtracker.com/about.html</loc><lastmod>2026-07-20</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://rocketlaunchtracker.com/see-launch-from-orlando.html</loc><lastmod>2026-07-20</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://rocketlaunchtracker.com/see-launch-from-miami.html</loc><lastmod>2026-07-20</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://rocketlaunchtracker.com/see-launch-from-tampa.html</loc><lastmod>2026-07-20</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://rocketlaunchtracker.com/see-launch-from-jacksonville.html</loc><lastmod>2026-07-20</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://rocketlaunchtracker.com/see-launch-from-daytona-beach.html</loc><lastmod>2026-07-20</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://rocketlaunchtracker.com/see-launch-from-cocoa-beach.html</loc><lastmod>2026-07-20</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://rocketlaunchtracker.com/see-launch-from-melbourne-fl.html</loc><lastmod>2026-07-20</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://rocketlaunchtracker.com/see-launch-from-west-palm-beach.html</loc><lastmod>2026-07-20</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://rocketlaunchtracker.com/see-launch-from-los-angeles.html</loc><lastmod>2026-07-20</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://rocketlaunchtracker.com/see-launch-from-san-diego.html</loc><lastmod>2026-07-20</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://rocketlaunchtracker.com/see-launch-from-santa-barbara.html</loc><lastmod>2026-07-20</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://rocketlaunchtracker.com/see-launch-from-lompoc.html</loc><lastmod>2026-07-20</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://rocketlaunchtracker.com/see-launch-from-brownsville.html</loc><lastmod>2026-07-20</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://rocketlaunchtracker.com/see-launch-from-south-padre-island.html</loc><lastmod>2026-07-20</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
   <url><loc>https://rocketlaunchtracker.com/launches-2026.html</loc><lastmod>2026-07-20</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
   <url><loc>https://rocketlaunchtracker.com/launch/falcon-9-block-5-starlink-group-12-31-sample1.html</loc><lastmod>2026-07-20</lastmod><changefreq>hourly</changefreq><priority>0.8</priority></url>
   <url><loc>https://rocketlaunchtracker.com/launch/falcon-9-block-5-starlink-group-17-8-sample2.html</loc><lastmod>2026-07-20</lastmod><changefreq>hourly</changefreq><priority>0.8</priority></url>
@@ -38,4 +56,10 @@
   <url><loc>https://rocketlaunchtracker.com/launch/falcon-9-block-5-falcon-9-crew-14-expedition-rotation-sample13.html</loc><lastmod>2026-07-20</lastmod><changefreq>hourly</changefreq><priority>0.8</priority></url>
   <url><loc>https://rocketlaunchtracker.com/launch/neutron-neutron-return-to-sender-ii-sample14.html</loc><lastmod>2026-07-20</lastmod><changefreq>hourly</changefreq><priority>0.8</priority></url>
   <url><loc>https://rocketlaunchtracker.com/launch/falcon-9-block-5-starlink-group-12-34-sample15.html</loc><lastmod>2026-07-20</lastmod><changefreq>hourly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://rocketlaunchtracker.com/news/falcon-9-block-5-starlink-group-12-31-prev0-results.html</loc><lastmod>2026-07-20</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://rocketlaunchtracker.com/news/falcon-9-block-5-starlink-group-17-8-prev1-results.html</loc><lastmod>2026-07-20</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://rocketlaunchtracker.com/news/atlas-v-551-project-kuiper-ka-12-prev2-results.html</loc><lastmod>2026-07-20</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://rocketlaunchtracker.com/news/electron-electron-synspective-7-prev3-results.html</loc><lastmod>2026-07-20</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://rocketlaunchtracker.com/news/new-glenn-new-glenn-escapade-follow-on-prev4-results.html</loc><lastmod>2026-07-20</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://rocketlaunchtracker.com/news/starship-starship-flight-test-prev5-results.html</loc><lastmod>2026-07-20</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
 </urlset>

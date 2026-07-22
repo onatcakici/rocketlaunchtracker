@@ -30,9 +30,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://ll.thespacedevs.com">
 <link rel="preload" href="data/launches.json" as="fetch">
+<link rel="preload" as="image" href="img/next.jpg" fetchpriority="high">
+<meta name="rlt-hero-id" content="sample-1">
 <link rel="preconnect" href="https://commons.wikimedia.org">
 <link rel="preconnect" href="https://upload.wikimedia.org">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"WebSite","name":"Rocket Launch Tracker","url":"https://rocketlaunchtracker.com/","description":"Live rocket launch schedule, calendar and countdowns for upcoming launches worldwide.","publisher":{"@type":"Organization","name":"Rocket Launch Tracker","url":"https://rocketlaunchtracker.com/","logo":"https://rocketlaunchtracker.com/apple-touch-icon.png"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://rocketlaunchtracker.com/?q={search_term_string}"},"query-input":"required name=search_term_string"}}
@@ -120,6 +121,10 @@
     <div class="sites-row" id="sitesRow" aria-label="Filter by launch site"></div>
 
     <!-- ============ LIST VIEW ============ -->
+    <div class="sec-row">
+      <h2 class="sec-title">Upcoming launches</h2>
+      <a class="sec-link" href="api.html">Feeds &amp; alerts <span class="sec-arrow">→</span></a>
+    </div>
     <section id="listView" class="launch-grid" aria-label="Upcoming launches">
       <div class="sk-card" aria-hidden="true"></div><div class="sk-card" aria-hidden="true"></div><div class="sk-card" aria-hidden="true"></div><div class="sk-card" aria-hidden="true"></div><div class="sk-card" aria-hidden="true"></div><div class="sk-card" aria-hidden="true"></div>
     </section>
@@ -199,7 +204,7 @@
       </div>
       <p class="footer-credits">Data: <a href="https://thespacedevs.com/llapi" target="_blank" rel="noopener">Launch Library 2 · The Space Devs</a><br>
         Feeds: <a href="launches.ics">calendar (.ics)</a> · <a href="feed.xml">RSS</a> · <a href="embed.html" target="_blank" rel="noopener">embeddable widget</a> · <a href="https://ntfy.sh/rocketlaunchtracker-alerts" rel="noopener" target="_blank">push alerts</a><br>
-        More: <a href="glossary.html">glossary</a> · <a href="stats.html">launch stats</a> · <a href="compare.html">compare rockets</a> · <a href="api.html">free API</a> · <a href="spacex.html">SpaceX</a> · <a href="rocket-lab.html">Rocket Lab</a> · <a href="falcon-9.html">Falcon 9</a> · <a href="starship.html">Starship</a><br>
+        More: <a href="tonight.html">tonight</a> · <a href="this-week.html">this week</a> · <a href="news.html">results</a> · <a href="glossary.html">glossary</a> · <a href="stats.html">stats</a> · <a href="compare.html">compare rockets</a> · <a href="api.html">free API</a> · <a href="spacex.html">SpaceX</a> · <a href="falcon-9.html">Falcon 9</a> · <a href="starship.html">Starship</a> · <a href="see-launch-from-orlando.html">see from Orlando</a> · <a href="about.html">about</a><br>
         Photos: <a href="https://commons.wikimedia.org/wiki/File:Apollo_11_Launch_-_GPN-2000-000630.jpg" target="_blank" rel="noopener">NASA</a> ·
         <a href="https://commons.wikimedia.org/wiki/File:SpaceX_Demo-2_Launch_(NHQ202005300044).jpg" target="_blank" rel="noopener">NASA/B. Ingalls</a> — via Wikimedia Commons · mission imagery via Launch Library 2</p>
     </div>

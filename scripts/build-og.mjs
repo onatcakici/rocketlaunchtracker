@@ -24,16 +24,16 @@ mkdirSync("og", { recursive: true });
 
 const tpl = (m) => `<!doctype html><html><head><meta charset="utf-8"><style>
   *{margin:0;box-sizing:border-box}
-  html,body{width:1200px;height:630px;background:#f6f7f9}
+  html,body{width:1200px;height:630px;background:#ffffff}
   body{font-family:Inter,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;color:#0f172a;overflow:hidden;position:relative}
   .left{padding:64px 40px 0 64px;width:760px;position:relative;z-index:2}
-  .kick{font-size:26px;font-weight:600;color:#2563eb;letter-spacing:.02em}
-  .name{font-size:${m.name.length > 46 ? 52 : 62}px;font-weight:700;line-height:1.08;letter-spacing:-.02em;margin-top:14px;
+  .kick{font-size:19px;font-weight:500;color:#d63316;letter-spacing:.2em;text-transform:uppercase;font-family:'DM Mono',Menlo,monospace}
+  .name{font-size:${m.name.length > 46 ? 54 : 66}px;font-weight:800;line-height:1.04;letter-spacing:-.028em;margin-top:16px;color:#0b0b0f;
     display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
   .when{font-size:30px;color:#475569;margin-top:18px}
   .when b{color:#0f172a;font-weight:600}
   .brand{position:absolute;left:64px;bottom:52px;display:flex;align-items:center;gap:14px;font-size:24px;font-weight:600;letter-spacing:.06em;color:#475569;z-index:2}
-  .dot{width:14px;height:14px;border-radius:50%;background:#2563eb}
+  .dot{width:14px;height:14px;border-radius:50%;background:#e03a22}
   svg{position:absolute;right:-160px;top:50%;transform:translateY(-50%)}
 </style></head><body>
   <div class="left">
@@ -43,15 +43,15 @@ const tpl = (m) => `<!doctype html><html><head><meta charset="utf-8"><style>
   </div>
   <div class="brand"><span class="dot"></span>ROCKETLAUNCHTRACKER.COM</div>
   <svg width="720" height="720" viewBox="0 0 720 720" fill="none">
-    <circle cx="360" cy="360" r="300" fill="#eef2f8" stroke="#c9d2e0" stroke-width="2"/>
+    <circle cx="360" cy="360" r="300" fill="#f4f4f5" stroke="#d4d4d8" stroke-width="2"/>
     <ellipse cx="360" cy="360" rx="300" ry="110" stroke="#c9d2e0" fill="none"/>
     <ellipse cx="360" cy="360" rx="300" ry="220" stroke="#dde3ee" fill="none"/>
     <ellipse cx="360" cy="360" rx="110" ry="300" stroke="#c9d2e0" fill="none"/>
     <ellipse cx="360" cy="360" rx="220" ry="300" stroke="#dde3ee" fill="none"/>
-    <ellipse cx="360" cy="360" rx="345" ry="150" stroke="#2563eb" stroke-width="3" stroke-dasharray="10 12" fill="none" transform="rotate(-24 360 360)"/>
-    <circle cx="220" cy="212" r="11" fill="#2563eb"/>
-    <path d="M330 415 Q 290 330 225 218" stroke="#2563eb" stroke-width="4" fill="none" stroke-linecap="round"/>
-    <circle cx="332" cy="418" r="6" fill="#dc2626"/>
+    <ellipse cx="360" cy="360" rx="345" ry="150" stroke="#e03a22" stroke-width="3" stroke-dasharray="10 12" fill="none" transform="rotate(-24 360 360)"/>
+    <circle cx="220" cy="212" r="11" fill="#e03a22"/>
+    <path d="M330 415 Q 290 330 225 218" stroke="#e03a22" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <circle cx="332" cy="418" r="6" fill="#0b0b0f"/>
   </svg>
 </body></html>`;
 

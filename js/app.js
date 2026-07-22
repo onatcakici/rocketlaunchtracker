@@ -6,7 +6,7 @@
    API in the browser. All times rendered in the viewer's zone.
    ============================================================ */
 "use strict";
-console.log("RLT build v4.8");
+console.log("RLT build v4.10");
 
 const DATA_URL = "data/launches.json";
 const API_URL  = "https://ll.thespacedevs.com/2.3.0/launches/upcoming/?limit=60&mode=detailed";
@@ -287,6 +287,13 @@ function renderHero(){
   det.hidden = false;
   det.onclick = () => openModal(l.id);
   const hp = $("#heroPhoto");
+  const heroMeta = document.querySelector('meta[name="rlt-hero-id"]');
+  if (heroMeta && heroMeta.content === String(l.id)){
+    hp.hidden = false;
+    hp.src = "img/next.jpg";
+    hp.onerror = () => { if (l.image){ hp.onerror = () => hp.hidden = true; hp.src = l.image; } else hp.hidden = true; };
+    return;
+  }
   if (hp){
     if (l.image){ hp.src = l.image; hp.alt = l.name; hp.hidden = false; }
     else hp.hidden = true;
