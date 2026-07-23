@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-23T14:35:27Z",
+  "generated": "2026-07-23T19:48:16Z",
   "sample": false,
   "count": 60,
   "results": [
@@ -87,6 +87,10 @@
           "url": "https://www.youtube.com/watch?v=lC3RDO7tdLc"
         },
         {
+          "title": "Starship's Thirteenth Flight Test",
+          "url": "https://x.com/i/broadcasts/1AJEmmYdMDnJL"
+        },
+        {
           "title": "Watch SpaceX Launch Starship Flight 13!!",
           "url": "https://www.youtube.com/watch?v=-pR0eOj9hK0"
         }
@@ -160,7 +164,7 @@
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
       "webcasts": [
         {
-          "title": "Starlink Mission",
+          "title": "Livestream on X",
           "url": "https://x.com/i/broadcasts/1wxWjjQvmrkJQ"
         }
       ],
@@ -276,13 +280,13 @@
     {
       "id": "24675e3d-2458-48a3-8c70-5196e44d4dc3",
       "name": "Falcon 9 Block 5 | NROL-95",
-      "net": "2026-07-30T06:37:00Z",
+      "net": "2026-07-30T07:09:00Z",
       "window_start": "2026-07-30T06:37:00Z",
-      "window_end": "2026-07-30T08:04:00Z",
+      "window_end": "2026-07-30T07:21:00Z",
       "status": {
-        "abbrev": "TBC",
-        "name": "To Be Confirmed",
-        "description": "Awaiting official confirmation - current date is known with some certainty."
+        "abbrev": "Go",
+        "name": "Go for Launch",
+        "description": "Current T-0 confirmed by official or reliable sources."
       },
       "probability": null,
       "provider": "SpaceX",
@@ -304,7 +308,12 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
-      "webcasts": [],
+      "webcasts": [
+        {
+          "title": "NROL-95 Mission",
+          "url": "https://x.com/i/broadcasts/1DxLddLoqayxm"
+        }
+      ],
       "webcast_live": false
     },
     {
@@ -446,6 +455,45 @@
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/south2520korea_image_20231204145331.png",
       "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "0448d030-5175-4c1f-bd0b-4f3f87072921",
+      "name": "Falcon 9 Block 5 | Starlink Group 17-53",
+      "net": "2026-08-01T14:00:00Z",
+      "window_start": "2026-08-01T14:00:00Z",
+      "window_end": "2026-08-01T18:00:00Z",
+      "status": {
+        "abbrev": "Go",
+        "name": "Go for Launch",
+        "description": "Current T-0 confirmed by official or reliable sources."
+      },
+      "probability": null,
+      "provider": "SpaceX",
+      "rocket": "Falcon 9 Block 5",
+      "mission": {
+        "name": "Starlink Group 17-53",
+        "description": "A batch of 24 satellites for the Starlink mega-constellation - SpaceX's project for space-based Internet communication system.",
+        "type": "Communications",
+        "orbit": "Low Earth Orbit"
+      },
+      "pad": {
+        "name": "Space Launch Complex 4E",
+        "map_url": "https://www.google.com/maps?q=34.632,-120.611",
+        "latitude": 34.632,
+        "longitude": -120.611,
+        "location": {
+          "name": "Vandenberg SFB, CA, USA",
+          "country_code": "US"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
+      "webcasts": [
+        {
+          "title": "Starlink Mission",
+          "url": "https://x.com/i/broadcasts/1yKAPPDejLzxb"
+        }
+      ],
       "webcast_live": false
     },
     {
@@ -2057,40 +2105,6 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20210520085648.jpeg",
-      "webcasts": [],
-      "webcast_live": false
-    },
-    {
-      "id": "01ca3653-126a-4c01-94fb-a9467b39cdac",
-      "name": "Falcon 9 Block 5 | Inmarsat-7 F1 (GX-7)",
-      "net": "2026-12-31T00:00:00Z",
-      "window_start": "2026-12-31T00:00:00Z",
-      "window_end": "2026-12-31T00:00:00Z",
-      "status": {
-        "abbrev": "TBD",
-        "name": "To Be Determined",
-        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
-      },
-      "probability": null,
-      "provider": "SpaceX",
-      "rocket": "Falcon 9 Block 5",
-      "mission": {
-        "name": "Inmarsat-7 F1 (GX-7)",
-        "description": "Inmarsat-7 is the seventh generation of satellites for the London-based global mobile satellite communications operator Inmarsat. The three satellites of the series - GX-7, 8 & 9 - will have an improved fully reconfigurable Ka-band payload for Inmarsat's Global Xpress services. They are optimized for real-time mobility and feature thousands of dynamically-formed beams that direct capacity with laser-like precision over high-demand areas, to provide HTS (High Throughput) broadband connectivity for the mobility market.\r\n\r\nThe satellites will be based on Airbus’ new standard and fully reconfigurable satellite product line OneSat. Fully reconfigurable and featuring on board processing and active antennas, the three Ka-band spacecraft will be able to adjust their coverage, capacity and frequency.",
-        "type": "Communications",
-        "orbit": "Geostationary Transfer Orbit"
-      },
-      "pad": {
-        "name": "Unknown Pad",
-        "map_url": "https://www.google.com/maps?q=28.458,-80.528",
-        "latitude": 28.458,
-        "longitude": -80.528,
-        "location": {
-          "name": "Cape Canaveral SFS, FL, USA",
-          "country_code": "US"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
       "webcasts": [],
       "webcast_live": false
     }
