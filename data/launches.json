@@ -1,47 +1,8 @@
 {
-  "generated": "2026-07-24T08:44:52Z",
+  "generated": "2026-07-24T14:15:23Z",
   "sample": false,
   "count": 60,
   "results": [
-    {
-      "id": "5421e43a-1623-40ac-9dac-201075064e24",
-      "name": "Long March 3B/E | Tianlian 2-06",
-      "net": "2026-07-23T12:00:00Z",
-      "window_start": "2026-07-23T11:52:00Z",
-      "window_end": "2026-07-23T12:54:00Z",
-      "status": {
-        "abbrev": "Success",
-        "name": "Launch Successful",
-        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
-      },
-      "probability": null,
-      "provider": "China Aerospace Science and Technology Corporation",
-      "rocket": "Long March 3B/E",
-      "mission": {
-        "name": "Tianlian 2-06",
-        "description": "Tianlian is a Chinese data tracking and relay communications geostationary satellite series. The TL 2 (Tian Lian 2) satellites represent the second generation of this relay satellite network, and is based on the DFH-4 Bus, a three-axis-stabilized telecommunications satellite platform.\r\n\r\nTL 2 will be used to support real-time communications between orbiting satellites and ground control stations. This system will replace the current network of ground-based space tracking and telemetry stations and space tracking ships.",
-        "type": "Communications",
-        "orbit": "Geostationary Transfer Orbit"
-      },
-      "pad": {
-        "name": "Launch Complex 2 (LC-2)",
-        "map_url": "https://www.google.com/maps?q=28.245504,102.026768",
-        "latitude": 28.245504,
-        "longitude": 102.026768,
-        "location": {
-          "name": "Xichang Satellite Launch Center, People's Republic of China",
-          "country_code": "CN"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/long2520march_image_20230907120240.jpeg",
-      "webcasts": [
-        {
-          "title": "(ON LOCATION) Watch Long March 3B Launch Tianlian-2 06 from Xichang, LIVE!!",
-          "url": "https://www.youtube.com/watch?v=H6ZqSTcsZko"
-        }
-      ],
-      "webcast_live": false
-    },
     {
       "id": "fa42624c-1e30-4b4b-a06b-59b6153bc4e5",
       "name": "Kinetica 1 | 5 satellites",
@@ -2110,6 +2071,40 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20210520085648.jpeg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "01ca3653-126a-4c01-94fb-a9467b39cdac",
+      "name": "Falcon 9 Block 5 | Inmarsat-7 F1 (GX-7)",
+      "net": "2026-12-31T00:00:00Z",
+      "window_start": "2026-12-31T00:00:00Z",
+      "window_end": "2026-12-31T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "SpaceX",
+      "rocket": "Falcon 9 Block 5",
+      "mission": {
+        "name": "Inmarsat-7 F1 (GX-7)",
+        "description": "Inmarsat-7 is the seventh generation of satellites for the London-based global mobile satellite communications operator Inmarsat. The three satellites of the series - GX-7, 8 & 9 - will have an improved fully reconfigurable Ka-band payload for Inmarsat's Global Xpress services. They are optimized for real-time mobility and feature thousands of dynamically-formed beams that direct capacity with laser-like precision over high-demand areas, to provide HTS (High Throughput) broadband connectivity for the mobility market.\r\n\r\nThe satellites will be based on Airbus’ new standard and fully reconfigurable satellite product line OneSat. Fully reconfigurable and featuring on board processing and active antennas, the three Ka-band spacecraft will be able to adjust their coverage, capacity and frequency.",
+        "type": "Communications",
+        "orbit": "Geostationary Transfer Orbit"
+      },
+      "pad": {
+        "name": "Unknown Pad",
+        "map_url": "https://www.google.com/maps?q=28.458,-80.528",
+        "latitude": 28.458,
+        "longitude": -80.528,
+        "location": {
+          "name": "Cape Canaveral SFS, FL, USA",
+          "country_code": "US"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
       "webcasts": [],
       "webcast_live": false
     }
