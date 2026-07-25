@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-25T14:04:34Z",
+  "generated": "2026-07-25T19:37:01Z",
   "sample": false,
   "count": 60,
   "results": [
@@ -65,9 +65,9 @@
       "window_start": "2026-07-25T14:00:00Z",
       "window_end": "2026-07-25T18:00:00Z",
       "status": {
-        "abbrev": "Go",
-        "name": "Go for Launch",
-        "description": "Current T-0 confirmed by official or reliable sources."
+        "abbrev": "Success",
+        "name": "Launch Successful",
+        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
       },
       "probability": null,
       "provider": "SpaceX",
@@ -91,16 +91,16 @@
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
       "webcasts": [
         {
-          "title": "GO! - SpaceX - Falcon 9 - Starlink 17-51 - SLC-4E - Vandenberg SFB - Space Affairs Live",
-          "url": "https://www.youtube.com/watch?v=Hg9PlxfvN4k"
+          "title": "SpaceX Starlink Group 17-51",
+          "url": "https://www.youtube.com/watch?v=Lvt-g-X6JPs"
         },
         {
           "title": "Live: SpaceX Falcon 9 rocket launches from California with 24 Starlink internet satellites",
           "url": "https://www.youtube.com/watch?v=OLi0lfrkN3Q"
         },
         {
-          "title": "Livestream on X",
-          "url": "https://x.com/i/broadcasts/1wxWjjQvmrkJQ"
+          "title": "Starlink Mission",
+          "url": "https://x.com/i/broadcasts/1vKpPPAeQvoKE"
         }
       ],
       "webcast_live": false
