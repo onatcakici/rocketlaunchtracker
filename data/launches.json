@@ -1,55 +1,8 @@
 {
-  "generated": "2026-07-26T14:02:04Z",
+  "generated": "2026-07-26T19:37:18Z",
   "sample": false,
   "count": 60,
   "results": [
-    {
-      "id": "5b2f05d7-9052-49fb-9bd7-2a05d4910576",
-      "name": "Falcon 9 Block 5 | Starlink Group 17-51",
-      "net": "2026-07-25T15:51:55Z",
-      "window_start": "2026-07-25T14:00:00Z",
-      "window_end": "2026-07-25T18:00:00Z",
-      "status": {
-        "abbrev": "Success",
-        "name": "Launch Successful",
-        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
-      },
-      "probability": null,
-      "provider": "SpaceX",
-      "rocket": "Falcon 9 Block 5",
-      "mission": {
-        "name": "Starlink Group 17-51",
-        "description": "A batch of 24 satellites for the Starlink mega-constellation - SpaceX's project for space-based Internet communication system.",
-        "type": "Communications",
-        "orbit": "Low Earth Orbit"
-      },
-      "pad": {
-        "name": "Space Launch Complex 4E",
-        "map_url": "https://www.google.com/maps?q=34.632,-120.611",
-        "latitude": 34.632,
-        "longitude": -120.611,
-        "location": {
-          "name": "Vandenberg SFB, CA, USA",
-          "country_code": "US"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
-      "webcasts": [
-        {
-          "title": "SpaceX Starlink Group 17-51",
-          "url": "https://www.youtube.com/watch?v=Lvt-g-X6JPs"
-        },
-        {
-          "title": "Live: SpaceX Falcon 9 rocket launches from California with 24 Starlink internet satellites",
-          "url": "https://www.youtube.com/watch?v=OLi0lfrkN3Q"
-        },
-        {
-          "title": "Starlink Mission",
-          "url": "https://x.com/i/broadcasts/1vKpPPAeQvoKE"
-        }
-      ],
-      "webcast_live": false
-    },
     {
       "id": "e7e55b53-6f69-4c22-9fc5-df00df653a3f",
       "name": "Falcon 9 Block 5 | Starlink Group 17-52",
@@ -2087,6 +2040,40 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/neutron_image_20230727171443.jpeg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "bff2fc91-eddd-4dfc-af26-ac0674cfab4d",
+      "name": "Soyuz 2.1a/Fregat-M | MKA Kinosputnik, KOEN and others",
+      "net": "2026-12-31T00:00:00Z",
+      "window_start": "2026-12-31T00:00:00Z",
+      "window_end": "2026-12-31T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "Russian Federal Space Agency (ROSCOSMOS)",
+      "rocket": "Soyuz 2.1a Fregat-M",
+      "mission": {
+        "name": "MKA Kinosputnik, KOEN and others",
+        "description": "Share-ride of multiple satellites, including dual-use optical Earth observation satellites and drone-guiding satellites:\r\n\r\n* MKA Kinosputnik\r\n* KOEN, KA MT-LAB\r\n* NPO Kaisant 6U cubesat with a Germes modem\r\n* NPO Kaisant 16U cubesat with Gonets modems",
+        "type": "Technology",
+        "orbit": "Sun-Synchronous Orbit"
+      },
+      "pad": {
+        "name": "Cosmodrome Site 1S",
+        "map_url": "https://www.google.com/maps?q=51.884395,128.333932",
+        "latitude": 51.884395,
+        "longitude": 128.333932,
+        "location": {
+          "name": "Vostochny Cosmodrome, Siberia, Russian Federation",
+          "country_code": "RU"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/soyuz25202.1a_image_20190726062341.png",
       "webcasts": [],
       "webcast_live": false
     }
