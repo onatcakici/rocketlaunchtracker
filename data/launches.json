@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-27T19:57:54Z",
+  "generated": "2026-07-28T03:40:36Z",
   "sample": false,
   "count": 60,
   "results": [
@@ -211,7 +211,7 @@
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/electron_image_20190705175640.jpeg",
       "webcasts": [
         {
-          "title": "Rocket Lab - 'The Grain Goddess Provides' Launch",
+          "title": "SCRUB | Rocket Lab - 'The Grain Goddess Provides' Launch",
           "url": "https://www.youtube.com/watch?v=C_JarlUSk5I"
         }
       ],
@@ -696,9 +696,9 @@
     {
       "id": "521f3a1c-f977-4306-9b7f-495858719adf",
       "name": "Falcon Heavy | Nancy Grace Roman Space Telescope",
-      "net": "2026-08-30T11:20:00Z",
-      "window_start": "2026-08-30T11:20:00Z",
-      "window_end": "2026-08-30T11:20:00Z",
+      "net": "2026-08-30T11:26:00Z",
+      "window_start": "2026-08-30T11:26:00Z",
+      "window_end": "2026-08-30T11:26:00Z",
       "status": {
         "abbrev": "Go",
         "name": "Go for Launch",
