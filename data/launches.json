@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-28T09:07:41Z",
+  "generated": "2026-07-28T14:41:33Z",
   "sample": false,
   "count": 60,
   "results": [
@@ -106,113 +106,6 @@
         {
           "title": "NROL-95 Mission",
           "url": "https://x.com/i/broadcasts/1DxLddLoqayxm"
-        }
-      ],
-      "webcast_live": false
-    },
-    {
-      "id": "599ba2df-7483-4b2f-a083-2b5ddc06e069",
-      "name": "Electron | LOXSAT 1",
-      "net": "2026-07-31T00:00:00Z",
-      "window_start": "2026-07-31T00:00:00Z",
-      "window_end": "2026-07-31T00:00:00Z",
-      "status": {
-        "abbrev": "TBD",
-        "name": "To Be Determined",
-        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
-      },
-      "probability": null,
-      "provider": "Rocket Lab",
-      "rocket": "Electron",
-      "mission": {
-        "name": "LOXSAT 1",
-        "description": "LOXSAT 1 is a demonstration satellite of a complete cryogenic oxygen fluid management system in orbit, developed by Eta Space and sponsored by NASA's Tipping Point program.\r\n\r\nThe system will be integrated on a Rocket Lab Photon-LEO satellite bus and collect critical cryogenic fluid management data in orbit for 9 months, demonstrating capabilities of in-space cryogenic storage and transferal. Eta Space plans to use technology developed for this mission to develop a truly commercial depot intended to serve multiple customers in the future.",
-        "type": "Technology",
-        "orbit": "Low Earth Orbit"
-      },
-      "pad": {
-        "name": "Unknown Pad",
-        "map_url": null,
-        "latitude": -39.260881,
-        "longitude": 177.865826,
-        "location": {
-          "name": "Rocket Lab Launch Complex 1, Mahia Peninsula, New Zealand",
-          "country_code": "NZ"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/electron_image_20190705175640.jpeg",
-      "webcasts": [],
-      "webcast_live": false
-    },
-    {
-      "id": "9f5a4cb6-63f9-47e1-9512-b468bae2a8e6",
-      "name": "Electron | StriX Launch 11",
-      "net": "2026-07-31T00:00:00Z",
-      "window_start": "2026-07-31T00:00:00Z",
-      "window_end": "2026-07-31T00:00:00Z",
-      "status": {
-        "abbrev": "TBD",
-        "name": "To Be Determined",
-        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
-      },
-      "probability": null,
-      "provider": "Rocket Lab",
-      "rocket": "Electron",
-      "mission": {
-        "name": "StriX Launch 11",
-        "description": "Synthetic aperture radar satellite for Japanese Earth imaging company Synspective.",
-        "type": "Earth Science",
-        "orbit": "Sun-Synchronous Orbit"
-      },
-      "pad": {
-        "name": "Unknown Pad",
-        "map_url": null,
-        "latitude": -39.260881,
-        "longitude": 177.865826,
-        "location": {
-          "name": "Rocket Lab Launch Complex 1, Mahia Peninsula, New Zealand",
-          "country_code": "NZ"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/electron_image_20190705175640.jpeg",
-      "webcasts": [],
-      "webcast_live": false
-    },
-    {
-      "id": "8b7e748c-6ed5-4681-a898-827b4a23b8d7",
-      "name": "Electron | The Grain Goddess Provides (iQPS Launch 7)",
-      "net": "2026-07-31T00:00:00Z",
-      "window_start": "2026-07-31T00:00:00Z",
-      "window_end": "2026-07-31T00:00:00Z",
-      "status": {
-        "abbrev": "TBD",
-        "name": "To Be Determined",
-        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
-      },
-      "probability": null,
-      "provider": "Rocket Lab",
-      "rocket": "Electron",
-      "mission": {
-        "name": "The Grain Goddess Provides (iQPS Launch 7)",
-        "description": "Synthetic aperture radar Earth observation satellite for Japanese Earth imaging company iQPS.",
-        "type": "Earth Science",
-        "orbit": "Low Earth Orbit"
-      },
-      "pad": {
-        "name": "Rocket Lab Launch Complex 1A",
-        "map_url": "https://www.google.com/maps?q=-39.262833,177.864469",
-        "latitude": -39.262833,
-        "longitude": 177.864469,
-        "location": {
-          "name": "Rocket Lab Launch Complex 1, Mahia Peninsula, New Zealand",
-          "country_code": "NZ"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/electron_image_20190705175640.jpeg",
-      "webcasts": [
-        {
-          "title": "SCRUB | Rocket Lab - 'The Grain Goddess Provides' Launch",
-          "url": "https://www.youtube.com/watch?v=C_JarlUSk5I"
         }
       ],
       "webcast_live": false
@@ -360,6 +253,40 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/cz-8a_launch_2_image_20251206093107.jpeg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "56a85c82-ea71-449b-828c-b583f6f4a18b",
+      "name": "Falcon 9 Block 5 | BlueBird Block 2 #6-8",
+      "net": "2026-08-05T07:42:00Z",
+      "window_start": "2026-08-05T07:42:00Z",
+      "window_end": "2026-08-05T09:10:00Z",
+      "status": {
+        "abbrev": "Go",
+        "name": "Go for Launch",
+        "description": "Current T-0 confirmed by official or reliable sources."
+      },
+      "probability": null,
+      "provider": "SpaceX",
+      "rocket": "Falcon 9 Block 5",
+      "mission": {
+        "name": "BlueBird Block 2 #6-8",
+        "description": "AST SpaceMobile’s Block 2 BlueBird satellites are designed to deliver up to 10 times the bandwidth capacity of the BlueBird Block 1 satellites, required to achieve 24/7 continuous cellular broadband service coverage in the United States, with beams designed to support a capacity of up to 40 MHz, enabling peak data transmission speeds up to 120 Mbps, supporting voice, full data and video applications. The Block 2 BlueBirds, featuring as large as 2400 square foot communications arrays, will be the largest satellites ever commercially deployed in Low Earth orbit once launched.\r\n\r\nThis launch will feature 3 satellites.",
+        "type": "Communications",
+        "orbit": "Low Earth Orbit"
+      },
+      "pad": {
+        "name": "Space Launch Complex 40",
+        "map_url": "https://www.google.com/maps?q=28.56194122,-80.57735736",
+        "latitude": 28.56194122,
+        "longitude": -80.57735736,
+        "location": {
+          "name": "Cape Canaveral SFS, FL, USA",
+          "country_code": "US"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/f9_on_slc-40_2_image_20240919072420.jpg",
       "webcasts": [],
       "webcast_live": false
     },
@@ -728,8 +655,8 @@
       "webcast_live": false
     },
     {
-      "id": "56a85c82-ea71-449b-828c-b583f6f4a18b",
-      "name": "Falcon 9 Block 5 | BlueBird Block 2 #6-8",
+      "id": "599ba2df-7483-4b2f-a083-2b5ddc06e069",
+      "name": "Electron | LOXSAT 1",
       "net": "2026-08-31T00:00:00Z",
       "window_start": "2026-08-31T00:00:00Z",
       "window_end": "2026-08-31T00:00:00Z",
@@ -739,26 +666,99 @@
         "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
       },
       "probability": null,
-      "provider": "SpaceX",
-      "rocket": "Falcon 9 Block 5",
+      "provider": "Rocket Lab",
+      "rocket": "Electron",
       "mission": {
-        "name": "BlueBird Block 2 #6-8",
-        "description": "AST SpaceMobile’s Block 2 BlueBird satellites are designed to deliver up to 10 times the bandwidth capacity of the BlueBird Block 1 satellites, required to achieve 24/7 continuous cellular broadband service coverage in the United States, with beams designed to support a capacity of up to 40 MHz, enabling peak data transmission speeds up to 120 Mbps, supporting voice, full data and video applications. The Block 2 BlueBirds, featuring as large as 2400 square foot communications arrays, will be the largest satellites ever commercially deployed in Low Earth orbit once launched.\r\n\r\nThis launch will feature 3 satellites.",
-        "type": "Communications",
+        "name": "LOXSAT 1",
+        "description": "LOXSAT 1 is a demonstration satellite of a complete cryogenic oxygen fluid management system in orbit, developed by Eta Space and sponsored by NASA's Tipping Point program.\r\n\r\nThe system will be integrated on a Rocket Lab Photon-LEO satellite bus and collect critical cryogenic fluid management data in orbit for 9 months, demonstrating capabilities of in-space cryogenic storage and transferal. Eta Space plans to use technology developed for this mission to develop a truly commercial depot intended to serve multiple customers in the future.",
+        "type": "Technology",
         "orbit": "Low Earth Orbit"
       },
       "pad": {
-        "name": "Space Launch Complex 40",
-        "map_url": "https://www.google.com/maps?q=28.56194122,-80.57735736",
-        "latitude": 28.56194122,
-        "longitude": -80.57735736,
+        "name": "Unknown Pad",
+        "map_url": null,
+        "latitude": -39.260881,
+        "longitude": 177.865826,
         "location": {
-          "name": "Cape Canaveral SFS, FL, USA",
-          "country_code": "US"
+          "name": "Rocket Lab Launch Complex 1, Mahia Peninsula, New Zealand",
+          "country_code": "NZ"
         }
       },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/f9_on_slc-40_2_image_20240919072420.jpg",
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/electron_image_20190705175640.jpeg",
       "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "9f5a4cb6-63f9-47e1-9512-b468bae2a8e6",
+      "name": "Electron | StriX Launch 11",
+      "net": "2026-08-31T00:00:00Z",
+      "window_start": "2026-08-31T00:00:00Z",
+      "window_end": "2026-08-31T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "Rocket Lab",
+      "rocket": "Electron",
+      "mission": {
+        "name": "StriX Launch 11",
+        "description": "Synthetic aperture radar satellite for Japanese Earth imaging company Synspective.",
+        "type": "Earth Science",
+        "orbit": "Sun-Synchronous Orbit"
+      },
+      "pad": {
+        "name": "Unknown Pad",
+        "map_url": null,
+        "latitude": -39.260881,
+        "longitude": 177.865826,
+        "location": {
+          "name": "Rocket Lab Launch Complex 1, Mahia Peninsula, New Zealand",
+          "country_code": "NZ"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/electron_image_20190705175640.jpeg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "8b7e748c-6ed5-4681-a898-827b4a23b8d7",
+      "name": "Electron | The Grain Goddess Provides (iQPS Launch 7)",
+      "net": "2026-08-31T00:00:00Z",
+      "window_start": "2026-08-31T00:00:00Z",
+      "window_end": "2026-08-31T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "Rocket Lab",
+      "rocket": "Electron",
+      "mission": {
+        "name": "The Grain Goddess Provides (iQPS Launch 7)",
+        "description": "Synthetic aperture radar Earth observation satellite for Japanese Earth imaging company iQPS.",
+        "type": "Earth Science",
+        "orbit": "Low Earth Orbit"
+      },
+      "pad": {
+        "name": "Rocket Lab Launch Complex 1A",
+        "map_url": "https://www.google.com/maps?q=-39.262833,177.864469",
+        "latitude": -39.262833,
+        "longitude": 177.864469,
+        "location": {
+          "name": "Rocket Lab Launch Complex 1, Mahia Peninsula, New Zealand",
+          "country_code": "NZ"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/electron_image_20190705175640.jpeg",
+      "webcasts": [
+        {
+          "title": "SCRUB | Rocket Lab - 'The Grain Goddess Provides' Launch",
+          "url": "https://www.youtube.com/watch?v=C_JarlUSk5I"
+        }
+      ],
       "webcast_live": false
     },
     {
