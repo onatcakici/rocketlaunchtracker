@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-03T10:07:54Z",
+  "generated": "2026-08-03T15:19:48Z",
   "sample": false,
   "count": 60,
   "results": [
@@ -154,40 +154,6 @@
       "webcast_live": false
     },
     {
-      "id": "b89ab080-66c3-4831-85a9-38d85da71d30",
-      "name": "H3-22 | Michibiki 7 (QZS-7)",
-      "net": "2026-08-06T19:30:00Z",
-      "window_start": "2026-08-06T19:30:00Z",
-      "window_end": "2026-08-06T21:00:00Z",
-      "status": {
-        "abbrev": "Go",
-        "name": "Go for Launch",
-        "description": "Current T-0 confirmed by official or reliable sources."
-      },
-      "probability": null,
-      "provider": "Mitsubishi Heavy Industries",
-      "rocket": "H3-22",
-      "mission": {
-        "name": "Michibiki 7 (QZS-7)",
-        "description": "QZSS (Quasi Zenith Satellite System) is a Japanese satellite navigation system operating from inclined, elliptical geosynchronous orbits to achieve optimal high-elevation visibility in urban canyons and mountainous areas. The navigation system objective is to broadcast GPS-interoperable and augmentation signals as well as original Japanese (QZSS) signals from a three-spacecraft constellation.\r\n\r\nThe navigation system objective is to broadcast GPS-interoperable and augmentation signals as well as original Japanese (QZSS) signals from a three-spacecraft constellation in inclined, elliptical geosynchronous orbits.",
-        "type": "Navigation",
-        "orbit": "Geostationary Transfer Orbit"
-      },
-      "pad": {
-        "name": "Yoshinobu Launch Complex LP-2",
-        "map_url": "https://www.google.com/maps?q=30.400938,130.97564",
-        "latitude": 30.400938,
-        "longitude": 130.97564,
-        "location": {
-          "name": "Tanegashima Space Center, Japan",
-          "country_code": "JP"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/h3-22_liftoff__image_20251028183835.jpg",
-      "webcasts": [],
-      "webcast_live": false
-    },
-    {
       "id": "e4316d4c-9eb8-4a18-9b0d-4307c3970ef6",
       "name": "Falcon 9 Block 5 | Starlink Group 17-38",
       "net": "2026-08-08T14:00:00Z",
@@ -334,6 +300,45 @@
         {
           "title": "Starlink Mission",
           "url": "https://x.com/i/broadcasts/1nGnRRpkMDLGO"
+        }
+      ],
+      "webcast_live": false
+    },
+    {
+      "id": "be8b4b0d-1989-48a5-a96d-e8e4d59ed8b3",
+      "name": "Falcon 9 Block 5 | Globalstar 2-R Mission 1 (x 9)",
+      "net": "2026-08-16T01:12:00Z",
+      "window_start": "2026-08-16T01:02:00Z",
+      "window_end": "2026-08-16T02:20:00Z",
+      "status": {
+        "abbrev": "TBC",
+        "name": "To Be Confirmed",
+        "description": "Awaiting official confirmation - current date is known with some certainty."
+      },
+      "probability": null,
+      "provider": "SpaceX",
+      "rocket": "Falcon 9 Block 5",
+      "mission": {
+        "name": "Globalstar 2-R Mission 1 (x 9)",
+        "description": "The Globalstar global mobile communications network offers global, digital real time voice, data and fax services via its Low Earth Orbit satellite constellation. The constellation operates in a 1410 km orbit inclined at 52 degrees.\r\n\r\nIn early 2022, Globalstar contracted with MDA for the construction of 17 new 2nd generation refresh satellites to replenish the existing constellation. Rocket Lab is sub-contracted to build the satellites' buses and the launch dispensers.",
+        "type": "Communications",
+        "orbit": "Low Earth Orbit"
+      },
+      "pad": {
+        "name": "Space Launch Complex 40",
+        "map_url": "https://www.google.com/maps?q=28.56194122,-80.57735736",
+        "latitude": 28.56194122,
+        "longitude": -80.57735736,
+        "location": {
+          "name": "Cape Canaveral SFS, FL, USA",
+          "country_code": "US"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
+      "webcasts": [
+        {
+          "title": "Globalstar 2-R Launch 1 Mission",
+          "url": "https://x.com/i/broadcasts/1nJOLERVPDzxR"
         }
       ],
       "webcast_live": false
@@ -582,8 +587,8 @@
       "webcast_live": false
     },
     {
-      "id": "be8b4b0d-1989-48a5-a96d-e8e4d59ed8b3",
-      "name": "Falcon 9 Block 5 | Globalstar 2-R Mission 1 (x 9)",
+      "id": "b89ab080-66c3-4831-85a9-38d85da71d30",
+      "name": "H3-22 | Michibiki 7 (QZS-7)",
       "net": "2026-08-31T00:00:00Z",
       "window_start": "2026-08-31T00:00:00Z",
       "window_end": "2026-08-31T00:00:00Z",
@@ -593,31 +598,26 @@
         "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
       },
       "probability": null,
-      "provider": "SpaceX",
-      "rocket": "Falcon 9 Block 5",
+      "provider": "Mitsubishi Heavy Industries",
+      "rocket": "H3-22",
       "mission": {
-        "name": "Globalstar 2-R Mission 1 (x 9)",
-        "description": "The Globalstar global mobile communications network offers global, digital real time voice, data and fax services via its Low Earth Orbit satellite constellation. The constellation operates in a 1410 km orbit inclined at 52 degrees.\r\n\r\nIn early 2022, Globalstar contracted with MDA for the construction of 17 new 2nd generation refresh satellites to replenish the existing constellation. Rocket Lab is sub-contracted to build the satellites' buses and the launch dispensers.",
-        "type": "Communications",
-        "orbit": "Low Earth Orbit"
+        "name": "Michibiki 7 (QZS-7)",
+        "description": "QZSS (Quasi Zenith Satellite System) is a Japanese satellite navigation system operating from inclined, elliptical geosynchronous orbits to achieve optimal high-elevation visibility in urban canyons and mountainous areas. The navigation system objective is to broadcast GPS-interoperable and augmentation signals as well as original Japanese (QZSS) signals from a three-spacecraft constellation.\r\n\r\nThe navigation system objective is to broadcast GPS-interoperable and augmentation signals as well as original Japanese (QZSS) signals from a three-spacecraft constellation in inclined, elliptical geosynchronous orbits.",
+        "type": "Navigation",
+        "orbit": "Geostationary Transfer Orbit"
       },
       "pad": {
-        "name": "Space Launch Complex 40",
-        "map_url": "https://www.google.com/maps?q=28.56194122,-80.57735736",
-        "latitude": 28.56194122,
-        "longitude": -80.57735736,
+        "name": "Yoshinobu Launch Complex LP-2",
+        "map_url": "https://www.google.com/maps?q=30.400938,130.97564",
+        "latitude": 30.400938,
+        "longitude": 130.97564,
         "location": {
-          "name": "Cape Canaveral SFS, FL, USA",
-          "country_code": "US"
+          "name": "Tanegashima Space Center, Japan",
+          "country_code": "JP"
         }
       },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
-      "webcasts": [
-        {
-          "title": "Globalstar 2-R Launch 1 Mission",
-          "url": "https://x.com/i/broadcasts/1nJOLERVPDzxR"
-        }
-      ],
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/h3-22_liftoff__image_20251028183835.jpg",
+      "webcasts": [],
       "webcast_live": false
     },
     {
