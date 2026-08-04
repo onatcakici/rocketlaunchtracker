@@ -1,27 +1,27 @@
 {
-  "generated": "2026-08-04T09:11:23Z",
+  "generated": "2026-08-04T14:41:44Z",
   "sample": false,
   "count": 60,
   "results": [
     {
       "id": "12b9454b-d48b-4fd5-9c11-17c18f45dafe",
-      "name": "Long March 8A | Unknown Payload",
+      "name": "Long March 8A | SatNet LEO Group 23",
       "net": "2026-08-04T08:52:00Z",
       "window_start": "2026-08-04T08:44:00Z",
       "window_end": "2026-08-04T09:09:00Z",
       "status": {
-        "abbrev": "In Flight",
-        "name": "Launch in Flight",
-        "description": "The launch vehicle has lifted off from the launchpad."
+        "abbrev": "Success",
+        "name": "Launch Successful",
+        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
       },
       "probability": null,
       "provider": "China Aerospace Science and Technology Corporation",
       "rocket": "Long March 8A",
       "mission": {
-        "name": "Unknown Payload",
-        "description": "Details TBD.",
-        "type": "Unknown",
-        "orbit": "Unknown"
+        "name": "SatNet LEO Group 23",
+        "description": "A batch of 9 Low Earth Orbit communication satellites for the Chinese state owned SatNet constellation operated by the China Satellite Network Group.\r\n\r\nThe constellation will eventually consists of 13000 satellites.",
+        "type": "Communications",
+        "orbit": "Low Earth Orbit"
       },
       "pad": {
         "name": "Commercial LC-1",
@@ -49,7 +49,7 @@
     {
       "id": "0448d030-5175-4c1f-bd0b-4f3f87072921",
       "name": "Falcon 9 Block 5 | Starlink Group 17-53",
-      "net": "2026-08-04T16:29:39Z",
+      "net": "2026-08-04T17:05:03Z",
       "window_start": "2026-08-04T14:00:00Z",
       "window_end": "2026-08-04T18:00:00Z",
       "status": {
