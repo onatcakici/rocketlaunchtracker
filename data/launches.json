@@ -1,18 +1,18 @@
 {
-  "generated": "2026-08-04T03:41:33Z",
+  "generated": "2026-08-04T09:11:23Z",
   "sample": false,
   "count": 60,
   "results": [
     {
       "id": "12b9454b-d48b-4fd5-9c11-17c18f45dafe",
       "name": "Long March 8A | Unknown Payload",
-      "net": "2026-08-04T08:50:00Z",
+      "net": "2026-08-04T08:52:00Z",
       "window_start": "2026-08-04T08:44:00Z",
       "window_end": "2026-08-04T09:09:00Z",
       "status": {
-        "abbrev": "Go",
-        "name": "Go for Launch",
-        "description": "Current T-0 confirmed by official or reliable sources."
+        "abbrev": "In Flight",
+        "name": "Launch in Flight",
+        "description": "The launch vehicle has lifted off from the launchpad."
       },
       "probability": null,
       "provider": "China Aerospace Science and Technology Corporation",
@@ -34,13 +34,22 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/cz-8a_launch_2_image_20251206093107.jpeg",
-      "webcasts": [],
+      "webcasts": [
+        {
+          "title": "Live: Long March 8A Flight 10 Launch (No Commentary)",
+          "url": "https://www.youtube.com/watch?v=U50JIfKPGCk"
+        },
+        {
+          "title": "Watch Long March 8A Launch SatNet LEO Group 23 Wenchang, LIVE!!",
+          "url": "https://www.youtube.com/watch?v=boUA2gAkWI4"
+        }
+      ],
       "webcast_live": false
     },
     {
       "id": "0448d030-5175-4c1f-bd0b-4f3f87072921",
       "name": "Falcon 9 Block 5 | Starlink Group 17-53",
-      "net": "2026-08-04T16:24:55Z",
+      "net": "2026-08-04T16:29:39Z",
       "window_start": "2026-08-04T14:00:00Z",
       "window_end": "2026-08-04T18:00:00Z",
       "status": {
