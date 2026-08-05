@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-04T19:59:31Z",
+  "generated": "2026-08-05T03:36:27Z",
   "sample": false,
   "count": 60,
   "results": [
@@ -95,23 +95,23 @@
     },
     {
       "id": "d46cab82-dcf5-4d70-b698-d7bead7f638c",
-      "name": "Smart Dragon 3 | Unknown Payload",
-      "net": "2026-08-05T02:35:00Z",
+      "name": "Smart Dragon 3 | OSE HS-01 & 02",
+      "net": "2026-08-05T02:38:00Z",
       "window_start": "2026-08-05T02:27:00Z",
       "window_end": "2026-08-05T02:48:00Z",
       "status": {
-        "abbrev": "Go",
-        "name": "Go for Launch",
-        "description": "Current T-0 confirmed by official or reliable sources."
+        "abbrev": "Success",
+        "name": "Launch Successful",
+        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
       },
       "probability": null,
       "provider": "China Rocket Co. Ltd.",
       "rocket": "Smart Dragon 3",
       "mission": {
-        "name": "Unknown Payload",
-        "description": "Details TBD.",
-        "type": "Unknown",
-        "orbit": "Unknown"
+        "name": "OSE HS-01 & 02",
+        "description": "2 hyper-spectral Earth observation satellites from Chinese company STAR.VISION. Both satellites are built in corporation with foreign customers:\r\n\r\n* Lampung-1: Built in close partnership with Lampung Province, Indonesia, to accelerate marine economy growth, environmental governance, and regional industry collaboration.\r\n\r\n* Samarkand 2028: Jointly created with Uzcosmos, Uzbekistan, to support regional ecological monitoring and technological innovation.",
+        "type": "Earth Science",
+        "orbit": "Sun-Synchronous Orbit"
       },
       "pad": {
         "name": "Haiyang offshore launch location",
@@ -124,7 +124,12 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/smart_dragon_3__image_20240925074606.jpg",
-      "webcasts": [],
+      "webcasts": [
+        {
+          "title": "Live: Smart Dragon 3 Flight 12 Launch (No Commentary)",
+          "url": "https://www.youtube.com/watch?v=QElbEmB1PUM"
+        }
+      ],
       "webcast_live": false
     },
     {
@@ -162,6 +167,18 @@
         {
           "title": "GO! - SpaceX - Falcon 9 - BlueBird 11 - 13 - SLC-40 - Cape Canaveral SFS -  Space Affairs Live",
           "url": "https://www.youtube.com/watch?v=xlb3ukMQ-Ec"
+        },
+        {
+          "title": "Live: SpaceX Falcon 9 rocket launches 3 Bluebird satellites + rocket stage moon impact coverage",
+          "url": "https://www.youtube.com/watch?v=zp4xFr1grXk"
+        },
+        {
+          "title": "SpaceX Launches Falcon 9 with Bluebird 11-13",
+          "url": "https://www.youtube.com/watch?v=Bw4Ql3WS0y0"
+        },
+        {
+          "title": "BlueBird 11-13 Mission ",
+          "url": "https://x.com/i/broadcasts/1RJjppmjYjgKw"
         }
       ],
       "webcast_live": false
@@ -208,13 +225,13 @@
     {
       "id": "cff704ab-8098-4f65-899e-50adaf908e59",
       "name": "Long March 7A | Unknown Payload",
-      "net": "2026-08-09T11:00:00Z",
-      "window_start": "2026-08-09T11:00:00Z",
-      "window_end": "2026-08-09T14:00:00Z",
+      "net": "2026-08-10T12:00:00Z",
+      "window_start": "2026-08-10T11:54:00Z",
+      "window_end": "2026-08-10T13:12:00Z",
       "status": {
-        "abbrev": "TBC",
-        "name": "To Be Confirmed",
-        "description": "Awaiting official confirmation - current date is known with some certainty."
+        "abbrev": "Go",
+        "name": "Go for Launch",
+        "description": "Current T-0 confirmed by official or reliable sources."
       },
       "probability": null,
       "provider": "China Aerospace Science and Technology Corporation",
@@ -634,6 +651,40 @@
       "webcast_live": false
     },
     {
+      "id": "dc570565-4dcf-4ab9-8174-bf88efef477f",
+      "name": "Long March 12A | Flight 2",
+      "net": "2026-08-31T00:00:00Z",
+      "window_start": "2026-08-31T00:00:00Z",
+      "window_end": "2026-08-31T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "China Aerospace Science and Technology Corporation",
+      "rocket": "Long March 12A",
+      "mission": {
+        "name": "Flight 2",
+        "description": "Second test launch of CASC/SAST’s Long March 12A rocket. Payload identities are TBD.",
+        "type": "Test Flight",
+        "orbit": "Low Earth Orbit"
+      },
+      "pad": {
+        "name": "Long March 12 series Pad",
+        "map_url": "https://www.google.com/maps?q=40.891596,100.217289",
+        "latitude": 40.891596,
+        "longitude": 100.217289,
+        "location": {
+          "name": "Jiuquan Satellite Launch Center, People's Republic of China",
+          "country_code": "CN"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/long_march_12a__image_20251224005749.jpg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
       "id": "9e27a1ed-e81a-4918-b32b-0380cf3a9f8f",
       "name": "Mir | Demo Flight",
       "net": "2026-08-31T00:00:00Z",
@@ -664,6 +715,40 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/south2520korea_image_20231204145331.png",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "a927b2f9-f9a5-4196-9abb-2e275e4a6b96",
+      "name": "Pallas-1 | Demo Flight",
+      "net": "2026-08-31T00:00:00Z",
+      "window_start": "2026-08-31T00:00:00Z",
+      "window_end": "2026-08-31T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "Galactic Energy",
+      "rocket": "Pallas-1",
+      "mission": {
+        "name": "Demo Flight",
+        "description": "First test launch of Galactic Energy’s Pallas-1 rocket.",
+        "type": "Test Flight",
+        "orbit": "Unknown"
+      },
+      "pad": {
+        "name": "Pallas-1 Launch Pad",
+        "map_url": "https://www.google.com/maps?q=40.775962,100.107214",
+        "latitude": 40.775962,
+        "longitude": 100.107214,
+        "location": {
+          "name": "Jiuquan Satellite Launch Center, People's Republic of China",
+          "country_code": "CN"
+        }
+      },
+      "image": null,
       "webcasts": [],
       "webcast_live": false
     },
@@ -2033,74 +2118,6 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
-      "webcasts": [],
-      "webcast_live": false
-    },
-    {
-      "id": "a96ece1c-c745-43cc-a08a-b623e7b93957",
-      "name": "Neutron | Maiden Flight",
-      "net": "2026-12-31T00:00:00Z",
-      "window_start": "2026-12-31T00:00:00Z",
-      "window_end": "2026-12-31T00:00:00Z",
-      "status": {
-        "abbrev": "TBD",
-        "name": "To Be Determined",
-        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
-      },
-      "probability": null,
-      "provider": "Rocket Lab",
-      "rocket": "Neutron",
-      "mission": {
-        "name": "Maiden Flight",
-        "description": "Maiden flight of the Neutron launch vehicle.",
-        "type": "Test Flight",
-        "orbit": "Unknown"
-      },
-      "pad": {
-        "name": "Rocket Lab Launch Complex 3 (Launch Area 0 D)",
-        "map_url": "https://www.google.com/maps?q=37.8321693,-75.4899046",
-        "latitude": 37.8321693,
-        "longitude": -75.4899046,
-        "location": {
-          "name": "Wallops Flight Facility, Virginia, USA",
-          "country_code": "US"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/neutron_image_20230727171443.jpeg",
-      "webcasts": [],
-      "webcast_live": false
-    },
-    {
-      "id": "bff2fc91-eddd-4dfc-af26-ac0674cfab4d",
-      "name": "Soyuz 2.1a/Fregat-M | MKA Kinosputnik, KOEN and others",
-      "net": "2026-12-31T00:00:00Z",
-      "window_start": "2026-12-31T00:00:00Z",
-      "window_end": "2026-12-31T00:00:00Z",
-      "status": {
-        "abbrev": "TBD",
-        "name": "To Be Determined",
-        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
-      },
-      "probability": null,
-      "provider": "Russian Federal Space Agency (ROSCOSMOS)",
-      "rocket": "Soyuz 2.1a Fregat-M",
-      "mission": {
-        "name": "MKA Kinosputnik, KOEN and others",
-        "description": "Share-ride of multiple satellites, including dual-use optical Earth observation satellites and drone-guiding satellites:\r\n\r\n* MKA Kinosputnik\r\n* KOEN, KA MT-LAB\r\n* NPO Kaisant 6U cubesat with a Germes modem\r\n* NPO Kaisant 16U cubesat with Gonets modems",
-        "type": "Technology",
-        "orbit": "Sun-Synchronous Orbit"
-      },
-      "pad": {
-        "name": "Cosmodrome Site 1S",
-        "map_url": "https://www.google.com/maps?q=51.884395,128.333932",
-        "latitude": 51.884395,
-        "longitude": 128.333932,
-        "location": {
-          "name": "Vostochny Cosmodrome, Siberia, Russian Federation",
-          "country_code": "RU"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/soyuz25202.1a_image_20190726062341.png",
       "webcasts": [],
       "webcast_live": false
     }
