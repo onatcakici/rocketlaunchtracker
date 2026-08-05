@@ -1,51 +1,8 @@
 {
-  "generated": "2026-08-05T03:36:27Z",
+  "generated": "2026-08-05T09:08:20Z",
   "sample": false,
   "count": 60,
   "results": [
-    {
-      "id": "12b9454b-d48b-4fd5-9c11-17c18f45dafe",
-      "name": "Long March 8A | SatNet LEO Group 23",
-      "net": "2026-08-04T08:52:00Z",
-      "window_start": "2026-08-04T08:44:00Z",
-      "window_end": "2026-08-04T09:09:00Z",
-      "status": {
-        "abbrev": "Success",
-        "name": "Launch Successful",
-        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
-      },
-      "probability": null,
-      "provider": "China Aerospace Science and Technology Corporation",
-      "rocket": "Long March 8A",
-      "mission": {
-        "name": "SatNet LEO Group 23",
-        "description": "A batch of 9 Low Earth Orbit communication satellites for the Chinese state owned SatNet constellation operated by the China Satellite Network Group.\r\n\r\nThe constellation will eventually consists of 13000 satellites.",
-        "type": "Communications",
-        "orbit": "Low Earth Orbit"
-      },
-      "pad": {
-        "name": "Commercial LC-1",
-        "map_url": "https://www.google.com/maps?q=19.597275,110.930753",
-        "latitude": 19.597275,
-        "longitude": 110.930753,
-        "location": {
-          "name": "Wenchang Space Launch Site, People's Republic of China",
-          "country_code": "CN"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/cz-8a_launch_2_image_20251206093107.jpeg",
-      "webcasts": [
-        {
-          "title": "Live: Long March 8A Flight 10 Launch (No Commentary)",
-          "url": "https://www.youtube.com/watch?v=U50JIfKPGCk"
-        },
-        {
-          "title": "Watch Long March 8A Launch SatNet LEO Group 23 Wenchang, LIVE!!",
-          "url": "https://www.youtube.com/watch?v=boUA2gAkWI4"
-        }
-      ],
-      "webcast_live": false
-    },
     {
       "id": "0448d030-5175-4c1f-bd0b-4f3f87072921",
       "name": "Falcon 9 Block 5 | Starlink Group 17-53",
@@ -135,15 +92,15 @@
     {
       "id": "56a85c82-ea71-449b-828c-b583f6f4a18b",
       "name": "Falcon 9 Block 5 | BlueBird 11-13 (Block 2 #6-8)",
-      "net": "2026-08-05T07:42:00Z",
+      "net": "2026-08-05T07:49:00Z",
       "window_start": "2026-08-05T07:42:00Z",
       "window_end": "2026-08-05T09:18:00Z",
       "status": {
-        "abbrev": "Go",
-        "name": "Go for Launch",
-        "description": "Current T-0 confirmed by official or reliable sources."
+        "abbrev": "Deployed",
+        "name": "Payload Deployed",
+        "description": "Deployment of the payload(s) has been confirmed."
       },
-      "probability": 85,
+      "probability": 75,
       "provider": "SpaceX",
       "rocket": "Falcon 9 Block 5",
       "mission": {
@@ -165,8 +122,8 @@
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/f9_on_slc-40_2_image_20240919072420.jpg",
       "webcasts": [
         {
-          "title": "GO! - SpaceX - Falcon 9 - BlueBird 11 - 13 - SLC-40 - Cape Canaveral SFS -  Space Affairs Live",
-          "url": "https://www.youtube.com/watch?v=xlb3ukMQ-Ec"
+          "title": "SpaceX BlueBird 11-13 (Block 2 #6-8)",
+          "url": "https://www.youtube.com/watch?v=6un1y7bK0XY"
         },
         {
           "title": "Live: SpaceX Falcon 9 rocket launches 3 Bluebird satellites + rocket stage moon impact coverage",
@@ -177,7 +134,7 @@
           "url": "https://www.youtube.com/watch?v=Bw4Ql3WS0y0"
         },
         {
-          "title": "BlueBird 11-13 Mission ",
+          "title": "BlueBird 11-13 Mission",
           "url": "https://x.com/i/broadcasts/1RJjppmjYjgKw"
         }
       ],
@@ -293,6 +250,40 @@
           "url": "https://x.com/i/broadcasts/1nxeLLRRMQWJX"
         }
       ],
+      "webcast_live": false
+    },
+    {
+      "id": "ef02e2cf-e617-4b38-a526-951ac9204b0a",
+      "name": "Zhuque-3 | Flight 2",
+      "net": "2026-08-10T23:45:00Z",
+      "window_start": "2026-08-10T23:37:00Z",
+      "window_end": "2026-08-11T00:14:00Z",
+      "status": {
+        "abbrev": "Go",
+        "name": "Go for Launch",
+        "description": "Current T-0 confirmed by official or reliable sources."
+      },
+      "probability": null,
+      "provider": "LandSpace",
+      "rocket": "Zhuque-3",
+      "mission": {
+        "name": "Flight 2",
+        "description": "Second test launch of LandSpace’s ZQ-3 rocket. Payload identities are TBD.",
+        "type": "Test Flight",
+        "orbit": "Low Earth Orbit"
+      },
+      "pad": {
+        "name": "Launch Area 96B",
+        "map_url": "https://www.google.com/maps?q=40.92017,100.25129",
+        "latitude": 40.92017,
+        "longitude": 100.25129,
+        "location": {
+          "name": "Jiuquan Satellite Launch Center, People's Republic of China",
+          "country_code": "CN"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/zq-3_flight_1_l_image_20251203064230.jpg",
+      "webcasts": [],
       "webcast_live": false
     },
     {
@@ -793,40 +784,6 @@
           "url": "https://www.youtube.com/watch?v=uUc2d_NPBN0"
         }
       ],
-      "webcast_live": false
-    },
-    {
-      "id": "ef02e2cf-e617-4b38-a526-951ac9204b0a",
-      "name": "Zhuque-3 | Flight 2",
-      "net": "2026-08-31T00:00:00Z",
-      "window_start": "2026-08-31T00:00:00Z",
-      "window_end": "2026-08-31T00:00:00Z",
-      "status": {
-        "abbrev": "TBD",
-        "name": "To Be Determined",
-        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
-      },
-      "probability": null,
-      "provider": "LandSpace",
-      "rocket": "Zhuque-3",
-      "mission": {
-        "name": "Flight 2",
-        "description": "Second test launch of LandSpace’s ZQ-3 rocket. Payload identities are TBD.",
-        "type": "Test Flight",
-        "orbit": "Low Earth Orbit"
-      },
-      "pad": {
-        "name": "Launch Area 96B",
-        "map_url": "https://www.google.com/maps?q=40.92017,100.25129",
-        "latitude": 40.92017,
-        "longitude": 100.25129,
-        "location": {
-          "name": "Jiuquan Satellite Launch Center, People's Republic of China",
-          "country_code": "CN"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/zq-3_flight_1_l_image_20251203064230.jpg",
-      "webcasts": [],
       "webcast_live": false
     },
     {
@@ -2118,6 +2075,40 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "a96ece1c-c745-43cc-a08a-b623e7b93957",
+      "name": "Neutron | Maiden Flight",
+      "net": "2026-12-31T00:00:00Z",
+      "window_start": "2026-12-31T00:00:00Z",
+      "window_end": "2026-12-31T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "Rocket Lab",
+      "rocket": "Neutron",
+      "mission": {
+        "name": "Maiden Flight",
+        "description": "Maiden flight of the Neutron launch vehicle.",
+        "type": "Test Flight",
+        "orbit": "Unknown"
+      },
+      "pad": {
+        "name": "Rocket Lab Launch Complex 3 (Launch Area 0 D)",
+        "map_url": "https://www.google.com/maps?q=37.8321693,-75.4899046",
+        "latitude": 37.8321693,
+        "longitude": -75.4899046,
+        "location": {
+          "name": "Wallops Flight Facility, Virginia, USA",
+          "country_code": "US"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/neutron_image_20230727171443.jpeg",
       "webcasts": [],
       "webcast_live": false
     }
