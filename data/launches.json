@@ -1,47 +1,8 @@
 {
-  "generated": "2026-08-05T19:57:23Z",
+  "generated": "2026-08-06T03:42:41Z",
   "sample": false,
   "count": 60,
   "results": [
-    {
-      "id": "d46cab82-dcf5-4d70-b698-d7bead7f638c",
-      "name": "Smart Dragon 3 | OSE HS-01 & 02",
-      "net": "2026-08-05T02:38:00Z",
-      "window_start": "2026-08-05T02:27:00Z",
-      "window_end": "2026-08-05T02:48:00Z",
-      "status": {
-        "abbrev": "Success",
-        "name": "Launch Successful",
-        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
-      },
-      "probability": null,
-      "provider": "China Rocket Co. Ltd.",
-      "rocket": "Smart Dragon 3",
-      "mission": {
-        "name": "OSE HS-01 & 02",
-        "description": "2 hyper-spectral Earth observation satellites from Chinese company STAR.VISION. Both satellites are built in corporation with foreign customers:\r\n\r\n* Lampung-1: Built in close partnership with Lampung Province, Indonesia, to accelerate marine economy growth, environmental governance, and regional industry collaboration.\r\n\r\n* Samarkand 2028: Jointly created with Uzcosmos, Uzbekistan, to support regional ecological monitoring and technological innovation.",
-        "type": "Earth Science",
-        "orbit": "Sun-Synchronous Orbit"
-      },
-      "pad": {
-        "name": "Haiyang offshore launch location",
-        "map_url": "https://www.google.com/maps?q=36.631333,121.198361",
-        "latitude": 36.631333,
-        "longitude": 121.198361,
-        "location": {
-          "name": "Haiyang Oriental Spaceport",
-          "country_code": "CN"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/smart_dragon_3__image_20240925074606.jpg",
-      "webcasts": [
-        {
-          "title": "Live: Smart Dragon 3 Flight 12 Launch (No Commentary)",
-          "url": "https://www.youtube.com/watch?v=QElbEmB1PUM"
-        }
-      ],
-      "webcast_live": false
-    },
     {
       "id": "56a85c82-ea71-449b-828c-b583f6f4a18b",
       "name": "Falcon 9 Block 5 | BlueBird 11-13 (Block 2 #6-8)",
@@ -89,6 +50,45 @@
         {
           "title": "BlueBird 11-13 Mission",
           "url": "https://x.com/i/broadcasts/1RJjppmjYjgKw"
+        }
+      ],
+      "webcast_live": false
+    },
+    {
+      "id": "8b7e748c-6ed5-4681-a898-827b4a23b8d7",
+      "name": "Electron | The Grain Goddess Provides (iQPS Launch 7)",
+      "net": "2026-08-06T09:00:00Z",
+      "window_start": "2026-08-06T09:00:00Z",
+      "window_end": "2026-08-06T09:00:00Z",
+      "status": {
+        "abbrev": "Go",
+        "name": "Go for Launch",
+        "description": "Current T-0 confirmed by official or reliable sources."
+      },
+      "probability": null,
+      "provider": "Rocket Lab",
+      "rocket": "Electron",
+      "mission": {
+        "name": "The Grain Goddess Provides (iQPS Launch 7)",
+        "description": "Synthetic aperture radar Earth observation satellite for Japanese Earth imaging company iQPS.",
+        "type": "Earth Science",
+        "orbit": "Low Earth Orbit"
+      },
+      "pad": {
+        "name": "Rocket Lab Launch Complex 1A",
+        "map_url": "https://www.google.com/maps?q=-39.262833,177.864469",
+        "latitude": -39.262833,
+        "longitude": 177.864469,
+        "location": {
+          "name": "Rocket Lab Launch Complex 1, Mahia Peninsula, New Zealand",
+          "country_code": "NZ"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/electron_image_20190705175640.jpeg",
+      "webcasts": [
+        {
+          "title": "Rocket Lab - 'The Grain Goddess Provides' Launch",
+          "url": "https://www.youtube.com/watch?v=TR4bkBCR6VI"
         }
       ],
       "webcast_live": false
@@ -519,45 +519,6 @@
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/electron_image_20190705175640.jpeg",
       "webcasts": [],
-      "webcast_live": false
-    },
-    {
-      "id": "8b7e748c-6ed5-4681-a898-827b4a23b8d7",
-      "name": "Electron | The Grain Goddess Provides (iQPS Launch 7)",
-      "net": "2026-08-31T00:00:00Z",
-      "window_start": "2026-08-31T00:00:00Z",
-      "window_end": "2026-08-31T00:00:00Z",
-      "status": {
-        "abbrev": "TBD",
-        "name": "To Be Determined",
-        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
-      },
-      "probability": null,
-      "provider": "Rocket Lab",
-      "rocket": "Electron",
-      "mission": {
-        "name": "The Grain Goddess Provides (iQPS Launch 7)",
-        "description": "Synthetic aperture radar Earth observation satellite for Japanese Earth imaging company iQPS.",
-        "type": "Earth Science",
-        "orbit": "Low Earth Orbit"
-      },
-      "pad": {
-        "name": "Rocket Lab Launch Complex 1A",
-        "map_url": "https://www.google.com/maps?q=-39.262833,177.864469",
-        "latitude": -39.262833,
-        "longitude": 177.864469,
-        "location": {
-          "name": "Rocket Lab Launch Complex 1, Mahia Peninsula, New Zealand",
-          "country_code": "NZ"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/electron_image_20190705175640.jpeg",
-      "webcasts": [
-        {
-          "title": "SCRUB | Rocket Lab - 'The Grain Goddess Provides' Launch",
-          "url": "https://www.youtube.com/watch?v=C_JarlUSk5I"
-        }
-      ],
       "webcast_live": false
     },
     {
@@ -2096,6 +2057,40 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/soyuz25202.1a_image_20190726062341.png",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "60f4ba6c-4201-4727-94aa-0015a5a0023f",
+      "name": "Spectrum | 1 x Pelican satellite",
+      "net": "2026-12-31T00:00:00Z",
+      "window_start": "2026-12-31T00:00:00Z",
+      "window_end": "2026-12-31T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "Isar Aerospace",
+      "rocket": "Spectrum",
+      "mission": {
+        "name": "1 x Pelican satellite",
+        "description": "Payload consists of a single Pelican high-resolution imaging satellite for Planet Labs Germany.",
+        "type": "Earth Science",
+        "orbit": "Sun-Synchronous Orbit"
+      },
+      "pad": {
+        "name": "Orbital Launch Pad",
+        "map_url": "https://www.google.com/maps?q=69.1084,15.5895",
+        "latitude": 69.1084,
+        "longitude": 15.5895,
+        "location": {
+          "name": "Andøya Spaceport",
+          "country_code": "NO"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/spectrum_on_the_image_20250321072643.jpeg",
       "webcasts": [],
       "webcast_live": false
     }
