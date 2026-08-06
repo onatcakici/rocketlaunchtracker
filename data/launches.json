@@ -1,65 +1,14 @@
 {
-  "generated": "2026-08-06T03:42:41Z",
+  "generated": "2026-08-06T09:08:28Z",
   "sample": false,
   "count": 60,
   "results": [
     {
-      "id": "56a85c82-ea71-449b-828c-b583f6f4a18b",
-      "name": "Falcon 9 Block 5 | BlueBird 11-13 (Block 2 #6-8)",
-      "net": "2026-08-05T07:49:00Z",
-      "window_start": "2026-08-05T07:42:00Z",
-      "window_end": "2026-08-05T09:18:00Z",
-      "status": {
-        "abbrev": "Success",
-        "name": "Launch Successful",
-        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
-      },
-      "probability": 75,
-      "provider": "SpaceX",
-      "rocket": "Falcon 9 Block 5",
-      "mission": {
-        "name": "BlueBird 11-13 (Block 2 #6-8)",
-        "description": "AST SpaceMobile’s Block 2 BlueBird satellites are designed to deliver up to 10 times the bandwidth capacity of the BlueBird Block 1 satellites, required to achieve 24/7 continuous cellular broadband service coverage in the United States, with beams designed to support a capacity of up to 40 MHz, enabling peak data transmission speeds up to 120 Mbps, supporting voice, full data and video applications. The Block 2 BlueBirds, featuring as large as 2400 square foot communications arrays, will be the largest satellites ever commercially deployed in Low Earth orbit once launched.\r\n\r\nThis launch will feature 3 satellites.",
-        "type": "Communications",
-        "orbit": "Low Earth Orbit"
-      },
-      "pad": {
-        "name": "Space Launch Complex 40",
-        "map_url": "https://www.google.com/maps?q=28.56194122,-80.57735736",
-        "latitude": 28.56194122,
-        "longitude": -80.57735736,
-        "location": {
-          "name": "Cape Canaveral SFS, FL, USA",
-          "country_code": "US"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/f9_on_slc-40_2_image_20240919072420.jpg",
-      "webcasts": [
-        {
-          "title": "SpaceX BlueBird 11-13 (Block 2 #6-8)",
-          "url": "https://www.youtube.com/watch?v=6un1y7bK0XY"
-        },
-        {
-          "title": "Live: SpaceX Falcon 9 rocket launches 3 Bluebird satellites + rocket stage moon impact coverage",
-          "url": "https://www.youtube.com/watch?v=zp4xFr1grXk"
-        },
-        {
-          "title": "SpaceX Launches Falcon 9 with Bluebird 11-13",
-          "url": "https://www.youtube.com/watch?v=Bw4Ql3WS0y0"
-        },
-        {
-          "title": "BlueBird 11-13 Mission",
-          "url": "https://x.com/i/broadcasts/1RJjppmjYjgKw"
-        }
-      ],
-      "webcast_live": false
-    },
-    {
       "id": "8b7e748c-6ed5-4681-a898-827b4a23b8d7",
       "name": "Electron | The Grain Goddess Provides (iQPS Launch 7)",
-      "net": "2026-08-06T09:00:00Z",
+      "net": "2026-08-06T09:18:00Z",
       "window_start": "2026-08-06T09:00:00Z",
-      "window_end": "2026-08-06T09:00:00Z",
+      "window_end": "2026-08-06T09:18:00Z",
       "status": {
         "abbrev": "Go",
         "name": "Go for Launch",
@@ -91,7 +40,7 @@
           "url": "https://www.youtube.com/watch?v=TR4bkBCR6VI"
         }
       ],
-      "webcast_live": false
+      "webcast_live": true
     },
     {
       "id": "e4316d4c-9eb8-4a18-9b0d-4307c3970ef6",
@@ -2079,6 +2028,40 @@
         "description": "Payload consists of a single Pelican high-resolution imaging satellite for Planet Labs Germany.",
         "type": "Earth Science",
         "orbit": "Sun-Synchronous Orbit"
+      },
+      "pad": {
+        "name": "Orbital Launch Pad",
+        "map_url": "https://www.google.com/maps?q=69.1084,15.5895",
+        "latitude": 69.1084,
+        "longitude": 15.5895,
+        "location": {
+          "name": "Andøya Spaceport",
+          "country_code": "NO"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/spectrum_on_the_image_20250321072643.jpeg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "b48e32c5-3776-4684-a956-5ea4df032e90",
+      "name": "Spectrum | ΣYNDEO-3",
+      "net": "2026-12-31T00:00:00Z",
+      "window_start": "2026-12-31T00:00:00Z",
+      "window_end": "2026-12-31T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "Isar Aerospace",
+      "rocket": "Spectrum",
+      "mission": {
+        "name": "ΣYNDEO-3",
+        "description": "ΣYNDEO-3 is a satellite built by Redwire Corporation for the European Union/European Space Agency (ESA)’s In-Orbit Demonstration and In-Orbit Validation Programme (IOD/IOV), which will carry 10 different technological demonstration payload from institutions of Spain, France, Germany, Italy, Luxembourg and the European Commission. The satellite is built on Redwire's Hammerhead spacecraft platform.",
+        "type": "Technology",
+        "orbit": "Low Earth Orbit"
       },
       "pad": {
         "name": "Orbital Launch Pad",
