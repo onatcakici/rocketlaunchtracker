@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-06T09:08:28Z",
+  "generated": "2026-08-06T14:37:31Z",
   "sample": false,
   "count": 60,
   "results": [
@@ -10,9 +10,9 @@
       "window_start": "2026-08-06T09:00:00Z",
       "window_end": "2026-08-06T09:18:00Z",
       "status": {
-        "abbrev": "Go",
-        "name": "Go for Launch",
-        "description": "Current T-0 confirmed by official or reliable sources."
+        "abbrev": "Deployed",
+        "name": "Payload Deployed",
+        "description": "Deployment of the payload(s) has been confirmed."
       },
       "probability": null,
       "provider": "Rocket Lab",
@@ -40,7 +40,7 @@
           "url": "https://www.youtube.com/watch?v=TR4bkBCR6VI"
         }
       ],
-      "webcast_live": true
+      "webcast_live": false
     },
     {
       "id": "e4316d4c-9eb8-4a18-9b0d-4307c3970ef6",
