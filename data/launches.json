@@ -1,12 +1,12 @@
 {
-  "generated": "2026-08-07T13:41:15Z",
+  "generated": "2026-08-07T19:18:41Z",
   "sample": false,
   "count": 60,
   "results": [
     {
       "id": "e4316d4c-9eb8-4a18-9b0d-4307c3970ef6",
       "name": "Falcon 9 Block 5 | Starlink Group 17-38",
-      "net": "2026-08-08T14:00:00Z",
+      "net": "2026-08-08T16:24:49Z",
       "window_start": "2026-08-08T14:00:00Z",
       "window_end": "2026-08-08T18:00:00Z",
       "status": {
@@ -260,12 +260,12 @@
       "id": "be8b4b0d-1989-48a5-a96d-e8e4d59ed8b3",
       "name": "Falcon 9 Block 5 | Globalstar 2-R Mission 1 (x 9)",
       "net": "2026-08-16T01:12:00Z",
-      "window_start": "2026-08-16T01:02:00Z",
-      "window_end": "2026-08-16T02:20:00Z",
+      "window_start": "2026-08-16T01:12:00Z",
+      "window_end": "2026-08-16T01:27:00Z",
       "status": {
-        "abbrev": "TBC",
-        "name": "To Be Confirmed",
-        "description": "Awaiting official confirmation - current date is known with some certainty."
+        "abbrev": "Go",
+        "name": "Go for Launch",
+        "description": "Current T-0 confirmed by official or reliable sources."
       },
       "probability": null,
       "provider": "SpaceX",
@@ -289,8 +289,8 @@
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
       "webcasts": [
         {
-          "title": "Globalstar 2-R Launch 1 Mission",
-          "url": "https://x.com/i/broadcasts/1nJOLERVPDzxR"
+          "title": "Globalstar 2-R Launch 1 mission ",
+          "url": "https://x.com/i/broadcasts/1pJkOOkmyQyJj"
         }
       ],
       "webcast_live": false
