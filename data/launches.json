@@ -1,12 +1,12 @@
 {
-  "generated": "2026-08-07T19:18:41Z",
+  "generated": "2026-08-08T02:23:35Z",
   "sample": false,
   "count": 60,
   "results": [
     {
       "id": "e4316d4c-9eb8-4a18-9b0d-4307c3970ef6",
       "name": "Falcon 9 Block 5 | Starlink Group 17-38",
-      "net": "2026-08-08T16:24:49Z",
+      "net": "2026-08-08T16:23:41Z",
       "window_start": "2026-08-08T14:00:00Z",
       "window_end": "2026-08-08T18:00:00Z",
       "status": {
@@ -35,6 +35,10 @@
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
       "webcasts": [
+        {
+          "title": "GO! - SpaceX - Falcon 9 - Starlink 17-38 - SLC-4E - Vandenberg SFB - Space Affairs Live",
+          "url": "https://www.youtube.com/watch?v=IKpbroR9kuk"
+        },
         {
           "title": "Starlink Mission",
           "url": "https://x.com/i/broadcasts/1qxoNNApQWyJv"
@@ -142,6 +146,14 @@
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
       "webcasts": [
+        {
+          "title": "GO! - SpaceX - Falcon 9 - Starlink 10-19 - SLC-40 - Cape Canaveral SFS - Space Affairs Live",
+          "url": "https://www.youtube.com/watch?v=x6FNFhI98xw"
+        },
+        {
+          "title": "SpaceX Launches Falcon 9 with  Starlink 10-19",
+          "url": "https://www.youtube.com/watch?v=LMsqa3xGQTo"
+        },
         {
           "title": "Starlink Mission",
           "url": "https://x.com/i/broadcasts/1nxeLLRRMQWJX"
