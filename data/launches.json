@@ -1,18 +1,18 @@
 {
-  "generated": "2026-08-08T13:14:09Z",
+  "generated": "2026-08-08T19:01:09Z",
   "sample": false,
   "count": 60,
   "results": [
     {
       "id": "e4316d4c-9eb8-4a18-9b0d-4307c3970ef6",
       "name": "Falcon 9 Block 5 | Starlink Group 17-38",
-      "net": "2026-08-08T16:23:41Z",
+      "net": "2026-08-08T16:35:02Z",
       "window_start": "2026-08-08T14:00:00Z",
       "window_end": "2026-08-08T18:00:00Z",
       "status": {
-        "abbrev": "Go",
-        "name": "Go for Launch",
-        "description": "Current T-0 confirmed by official or reliable sources."
+        "abbrev": "Success",
+        "name": "Launch Successful",
+        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
       },
       "probability": null,
       "provider": "SpaceX",
@@ -36,8 +36,12 @@
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
       "webcasts": [
         {
-          "title": "GO! - SpaceX - Falcon 9 - Starlink 17-38 - SLC-4E - Vandenberg SFB - Space Affairs Live",
-          "url": "https://www.youtube.com/watch?v=IKpbroR9kuk"
+          "title": "SpaceX Starlink Group 17-38",
+          "url": "https://www.youtube.com/watch?v=6NIplZ5SyFY"
+        },
+        {
+          "title": "Live: SpaceX Falcon 9 rocket launches 24 Starlink satellites from Vandenberg, California",
+          "url": "https://www.youtube.com/watch?v=HOTEJM2cvl0"
         },
         {
           "title": "Starlink Mission",
@@ -91,7 +95,7 @@
         "name": "Go for Launch",
         "description": "Current T-0 confirmed by official or reliable sources."
       },
-      "probability": null,
+      "probability": 90,
       "provider": "SpaceX",
       "rocket": "Falcon 9 Block 5",
       "mission": {
