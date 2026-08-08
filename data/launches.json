@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-08T02:23:35Z",
+  "generated": "2026-08-08T07:17:52Z",
   "sample": false,
   "count": 60,
   "results": [
@@ -44,40 +44,6 @@
           "url": "https://x.com/i/broadcasts/1qxoNNApQWyJv"
         }
       ],
-      "webcast_live": false
-    },
-    {
-      "id": "b89ab080-66c3-4831-85a9-38d85da71d30",
-      "name": "H3-22 | Michibiki 7 (QZS-7)",
-      "net": "2026-08-09T19:00:00Z",
-      "window_start": "2026-08-09T19:00:00Z",
-      "window_end": "2026-08-09T20:30:00Z",
-      "status": {
-        "abbrev": "Go",
-        "name": "Go for Launch",
-        "description": "Current T-0 confirmed by official or reliable sources."
-      },
-      "probability": null,
-      "provider": "Mitsubishi Heavy Industries",
-      "rocket": "H3-22",
-      "mission": {
-        "name": "Michibiki 7 (QZS-7)",
-        "description": "QZSS (Quasi Zenith Satellite System) is a Japanese satellite navigation system operating from inclined, elliptical geosynchronous orbits to achieve optimal high-elevation visibility in urban canyons and mountainous areas. The navigation system objective is to broadcast GPS-interoperable and augmentation signals as well as original Japanese (QZSS) signals from a three-spacecraft constellation.\r\n\r\nThe navigation system objective is to broadcast GPS-interoperable and augmentation signals as well as original Japanese (QZSS) signals from a three-spacecraft constellation in inclined, elliptical geosynchronous orbits.",
-        "type": "Navigation",
-        "orbit": "Geostationary Transfer Orbit"
-      },
-      "pad": {
-        "name": "Yoshinobu Launch Complex LP-2",
-        "map_url": "https://www.google.com/maps?q=30.400938,130.97564",
-        "latitude": 30.400938,
-        "longitude": 130.97564,
-        "location": {
-          "name": "Tanegashima Space Center, Japan",
-          "country_code": "JP"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/h3-22_liftoff__image_20251028183835.jpg",
-      "webcasts": [],
       "webcast_live": false
     },
     {
@@ -159,6 +125,40 @@
           "url": "https://x.com/i/broadcasts/1nxeLLRRMQWJX"
         }
       ],
+      "webcast_live": false
+    },
+    {
+      "id": "b89ab080-66c3-4831-85a9-38d85da71d30",
+      "name": "H3-22 | Michibiki 7 (QZS-7)",
+      "net": "2026-08-10T19:00:00Z",
+      "window_start": "2026-08-10T19:00:00Z",
+      "window_end": "2026-08-10T20:30:00Z",
+      "status": {
+        "abbrev": "Go",
+        "name": "Go for Launch",
+        "description": "Current T-0 confirmed by official or reliable sources."
+      },
+      "probability": null,
+      "provider": "Mitsubishi Heavy Industries",
+      "rocket": "H3-22",
+      "mission": {
+        "name": "Michibiki 7 (QZS-7)",
+        "description": "QZSS (Quasi Zenith Satellite System) is a Japanese satellite navigation system operating from inclined, elliptical geosynchronous orbits to achieve optimal high-elevation visibility in urban canyons and mountainous areas. The navigation system objective is to broadcast GPS-interoperable and augmentation signals as well as original Japanese (QZSS) signals from a three-spacecraft constellation.\r\n\r\nThe navigation system objective is to broadcast GPS-interoperable and augmentation signals as well as original Japanese (QZSS) signals from a three-spacecraft constellation in inclined, elliptical geosynchronous orbits.",
+        "type": "Navigation",
+        "orbit": "Geostationary Transfer Orbit"
+      },
+      "pad": {
+        "name": "Yoshinobu Launch Complex LP-2",
+        "map_url": "https://www.google.com/maps?q=30.400938,130.97564",
+        "latitude": 30.400938,
+        "longitude": 130.97564,
+        "location": {
+          "name": "Tanegashima Space Center, Japan",
+          "country_code": "JP"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/h3-22_liftoff__image_20251028183835.jpg",
+      "webcasts": [],
       "webcast_live": false
     },
     {
