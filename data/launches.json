@@ -1,55 +1,8 @@
 {
-  "generated": "2026-08-09T13:17:19Z",
+  "generated": "2026-08-09T19:04:02Z",
   "sample": false,
   "count": 60,
   "results": [
-    {
-      "id": "e4316d4c-9eb8-4a18-9b0d-4307c3970ef6",
-      "name": "Falcon 9 Block 5 | Starlink Group 17-38",
-      "net": "2026-08-08T16:35:02Z",
-      "window_start": "2026-08-08T14:00:00Z",
-      "window_end": "2026-08-08T18:00:00Z",
-      "status": {
-        "abbrev": "Success",
-        "name": "Launch Successful",
-        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
-      },
-      "probability": null,
-      "provider": "SpaceX",
-      "rocket": "Falcon 9 Block 5",
-      "mission": {
-        "name": "Starlink Group 17-38",
-        "description": "A batch of 24 satellites for the Starlink mega-constellation - SpaceX's project for space-based Internet communication system.",
-        "type": "Communications",
-        "orbit": "Low Earth Orbit"
-      },
-      "pad": {
-        "name": "Space Launch Complex 4E",
-        "map_url": "https://www.google.com/maps?q=34.632,-120.611",
-        "latitude": 34.632,
-        "longitude": -120.611,
-        "location": {
-          "name": "Vandenberg SFB, CA, USA",
-          "country_code": "US"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
-      "webcasts": [
-        {
-          "title": "SpaceX Starlink Group 17-38",
-          "url": "https://www.youtube.com/watch?v=6NIplZ5SyFY"
-        },
-        {
-          "title": "Live: SpaceX Falcon 9 rocket launches 24 Starlink satellites from Vandenberg, California",
-          "url": "https://www.youtube.com/watch?v=HOTEJM2cvl0"
-        },
-        {
-          "title": "Starlink Mission",
-          "url": "https://x.com/i/broadcasts/1qxoNNApQWyJv"
-        }
-      ],
-      "webcast_live": false
-    },
     {
       "id": "cff704ab-8098-4f65-899e-50adaf908e59",
       "name": "Long March 7A | Unknown Payload",
@@ -2090,6 +2043,40 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "dfac5ab7-7017-454f-b6cf-eeed277a97b5",
+      "name": "LVM-3 | Gaganyaan-1",
+      "net": "2026-12-31T00:00:00Z",
+      "window_start": "2026-12-31T00:00:00Z",
+      "window_end": "2026-12-31T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "Indian Space Research Organization",
+      "rocket": "Launch Vehicle Mark-3 (GSLV Mk III)",
+      "mission": {
+        "name": "Gaganyaan-1",
+        "description": "First uncrewed orbital test flight of the Gaganyaan capsule.",
+        "type": "Test Flight",
+        "orbit": "Low Earth Orbit"
+      },
+      "pad": {
+        "name": "Satish Dhawan Space Centre Second Launch Pad",
+        "map_url": "https://www.google.com/maps?q=13.7199,80.2304",
+        "latitude": 13.7199,
+        "longitude": 80.2304,
+        "location": {
+          "name": "Satish Dhawan Space Centre, India",
+          "country_code": "IN"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/gslv2520mk2520iii_image_20190604000938.jpg",
       "webcasts": [],
       "webcast_live": false
     }
