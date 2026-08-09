@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-09T07:18:46Z",
+  "generated": "2026-08-09T13:17:19Z",
   "sample": false,
   "count": 60,
   "results": [
@@ -134,9 +134,9 @@
     {
       "id": "b89ab080-66c3-4831-85a9-38d85da71d30",
       "name": "H3-22 | Michibiki 7 (QZS-7)",
-      "net": "2026-08-10T19:00:00Z",
-      "window_start": "2026-08-10T19:00:00Z",
-      "window_end": "2026-08-10T20:30:00Z",
+      "net": "2026-08-10T19:23:31Z",
+      "window_start": "2026-08-10T19:23:31Z",
+      "window_end": "2026-08-10T20:23:31Z",
       "status": {
         "abbrev": "Go",
         "name": "Go for Launch",
