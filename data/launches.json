@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-09T19:04:02Z",
+  "generated": "2026-08-10T02:36:51Z",
   "sample": false,
   "count": 60,
   "results": [
@@ -40,7 +40,7 @@
     {
       "id": "36ab6924-bb36-416a-b71d-cda9e88004be",
       "name": "Falcon 9 Block 5 | Starlink Group 10-19",
-      "net": "2026-08-10T14:49:00Z",
+      "net": "2026-08-10T15:07:28Z",
       "window_start": "2026-08-10T14:49:00Z",
       "window_end": "2026-08-10T18:49:00Z",
       "status": {
@@ -115,7 +115,16 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/h3-22_liftoff__image_20251028183835.jpg",
-      "webcasts": [],
+      "webcasts": [
+        {
+          "title": "準天頂衛星システム「みちびき7号機」/H3ロケット9号機打上げライブ中継",
+          "url": "https://www.youtube.com/watch?v=fH9hQn8ebp4"
+        },
+        {
+          "title": "2026.8.11　3:30～ H３ロケット9号機 「みちびき7号機」打上げ　H3 Rocket F9 QZS-7 Launch",
+          "url": "https://www.youtube.com/watch?v=V5Xx1gXtcr8"
+        }
+      ],
       "webcast_live": false
     },
     {
@@ -436,6 +445,40 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_heavy_image_20220129192819.jpeg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "ab3c1e6c-03fe-48a7-b6ce-30c79569bdfb",
+      "name": "Angara 1.2 | Kosmos (Unknown Payload)",
+      "net": "2026-08-31T00:00:00Z",
+      "window_start": "2026-08-31T00:00:00Z",
+      "window_end": "2026-08-31T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "Russian Space Forces",
+      "rocket": "Angara 1.2",
+      "mission": {
+        "name": "Kosmos (Unknown Payload)",
+        "description": "Unknown classified satellite(s) for the Russian military.",
+        "type": "Government/Top Secret",
+        "orbit": "Unknown"
+      },
+      "pad": {
+        "name": "35/1",
+        "map_url": "https://www.google.com/maps?q=62.927319,40.574897",
+        "latitude": 62.927319,
+        "longitude": 40.574897,
+        "location": {
+          "name": "Plesetsk Cosmodrome, Russian Federation",
+          "country_code": "RU"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/angara25201.2_image_20190224012254.jpeg",
       "webcasts": [],
       "webcast_live": false
     },
@@ -2043,40 +2086,6 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
-      "webcasts": [],
-      "webcast_live": false
-    },
-    {
-      "id": "dfac5ab7-7017-454f-b6cf-eeed277a97b5",
-      "name": "LVM-3 | Gaganyaan-1",
-      "net": "2026-12-31T00:00:00Z",
-      "window_start": "2026-12-31T00:00:00Z",
-      "window_end": "2026-12-31T00:00:00Z",
-      "status": {
-        "abbrev": "TBD",
-        "name": "To Be Determined",
-        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
-      },
-      "probability": null,
-      "provider": "Indian Space Research Organization",
-      "rocket": "Launch Vehicle Mark-3 (GSLV Mk III)",
-      "mission": {
-        "name": "Gaganyaan-1",
-        "description": "First uncrewed orbital test flight of the Gaganyaan capsule.",
-        "type": "Test Flight",
-        "orbit": "Low Earth Orbit"
-      },
-      "pad": {
-        "name": "Satish Dhawan Space Centre Second Launch Pad",
-        "map_url": "https://www.google.com/maps?q=13.7199,80.2304",
-        "latitude": 13.7199,
-        "longitude": 80.2304,
-        "location": {
-          "name": "Satish Dhawan Space Centre, India",
-          "country_code": "IN"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/gslv2520mk2520iii_image_20190604000938.jpg",
       "webcasts": [],
       "webcast_live": false
     }
