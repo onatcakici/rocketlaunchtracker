@@ -1,18 +1,18 @@
 {
-  "generated": "2026-08-10T08:06:49Z",
+  "generated": "2026-08-10T13:47:25Z",
   "sample": false,
   "count": 60,
   "results": [
     {
       "id": "cff704ab-8098-4f65-899e-50adaf908e59",
       "name": "Long March 7A | Unknown Payload",
-      "net": "2026-08-10T12:00:00Z",
+      "net": "2026-08-10T12:02:00Z",
       "window_start": "2026-08-10T11:54:00Z",
       "window_end": "2026-08-10T13:12:00Z",
       "status": {
-        "abbrev": "Go",
-        "name": "Go for Launch",
-        "description": "Current T-0 confirmed by official or reliable sources."
+        "abbrev": "Failure",
+        "name": "Launch Failure",
+        "description": "Either the launch vehicle did not reach orbit, or the payload(s) failed to separate."
       },
       "probability": null,
       "provider": "China Aerospace Science and Technology Corporation",
@@ -34,13 +34,22 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/cz-7a_launch_2_image_20251206093324.jpeg",
-      "webcasts": [],
+      "webcasts": [
+        {
+          "title": "(CLEAN FEED) Watch Long March 7A Launch from Wenchang, LIVE!!",
+          "url": "https://www.youtube.com/watch?v=cwy5FbgI7n8"
+        },
+        {
+          "title": "(FAILED) Watch Long March 7A Launch from Wenchang, LIVE!!",
+          "url": "https://www.youtube.com/watch?v=cZjlQq4JcBM"
+        }
+      ],
       "webcast_live": false
     },
     {
       "id": "36ab6924-bb36-416a-b71d-cda9e88004be",
       "name": "Falcon 9 Block 5 | Starlink Group 10-19",
-      "net": "2026-08-10T15:07:28Z",
+      "net": "2026-08-10T16:20:09Z",
       "window_start": "2026-08-10T14:49:00Z",
       "window_end": "2026-08-10T18:49:00Z",
       "status": {
