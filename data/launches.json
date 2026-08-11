@@ -1,51 +1,8 @@
 {
-  "generated": "2026-08-11T13:45:22Z",
+  "generated": "2026-08-11T19:28:16Z",
   "sample": false,
   "count": 60,
   "results": [
-    {
-      "id": "b89ab080-66c3-4831-85a9-38d85da71d30",
-      "name": "H3-22 | Michibiki 7 (QZS-7)",
-      "net": "2026-08-10T19:23:31Z",
-      "window_start": "2026-08-10T19:23:31Z",
-      "window_end": "2026-08-10T20:23:31Z",
-      "status": {
-        "abbrev": "Success",
-        "name": "Launch Successful",
-        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
-      },
-      "probability": null,
-      "provider": "Mitsubishi Heavy Industries",
-      "rocket": "H3-22",
-      "mission": {
-        "name": "Michibiki 7 (QZS-7)",
-        "description": "QZSS (Quasi Zenith Satellite System) is a Japanese satellite navigation system operating from inclined, elliptical geosynchronous orbits to achieve optimal high-elevation visibility in urban canyons and mountainous areas. The navigation system objective is to broadcast GPS-interoperable and augmentation signals as well as original Japanese (QZSS) signals from a three-spacecraft constellation.\r\n\r\nThe navigation system objective is to broadcast GPS-interoperable and augmentation signals as well as original Japanese (QZSS) signals from a three-spacecraft constellation in inclined, elliptical geosynchronous orbits.",
-        "type": "Navigation",
-        "orbit": "Geostationary Transfer Orbit"
-      },
-      "pad": {
-        "name": "Yoshinobu Launch Complex LP-2",
-        "map_url": "https://www.google.com/maps?q=30.400938,130.97564",
-        "latitude": 30.400938,
-        "longitude": 130.97564,
-        "location": {
-          "name": "Tanegashima Space Center, Japan",
-          "country_code": "JP"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/h3-22_liftoff__image_20251028183835.jpg",
-      "webcasts": [
-        {
-          "title": "準天頂衛星システム「みちびき7号機」/H3ロケット9号機打上げライブ中継",
-          "url": "https://www.youtube.com/watch?v=fH9hQn8ebp4"
-        },
-        {
-          "title": "2026.8.11　3:30～ H３ロケット9号機 「みちびき7号機」打上げ　H3 Rocket F9 QZS-7 Launch",
-          "url": "https://www.youtube.com/watch?v=V5Xx1gXtcr8"
-        }
-      ],
-      "webcast_live": false
-    },
     {
       "id": "36ab6924-bb36-416a-b71d-cda9e88004be",
       "name": "Falcon 9 Block 5 | Starlink Group 10-19",
@@ -53,9 +10,9 @@
       "window_start": "2026-08-11T14:26:00Z",
       "window_end": "2026-08-11T18:26:00Z",
       "status": {
-        "abbrev": "Go",
-        "name": "Go for Launch",
-        "description": "Current T-0 confirmed by official or reliable sources."
+        "abbrev": "Success",
+        "name": "Launch Successful",
+        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
       },
       "probability": 85,
       "provider": "SpaceX",
@@ -79,8 +36,8 @@
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
       "webcasts": [
         {
-          "title": "GO! - SpaceX - Falcon 9 - Starlink 10-19 - SLC-40 - Cape Canaveral SFS - Space Affairs Live",
-          "url": "https://www.youtube.com/watch?v=x6FNFhI98xw"
+          "title": "SpaceX Starlink Group 10-19",
+          "url": "https://www.youtube.com/watch?v=p1UQU7ax4t8"
         },
         {
           "title": "Live: SpaceX Falcon 9 rocket launches from Cape Canaveral with 29 Starlink satellites",
@@ -2104,6 +2061,40 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "dfac5ab7-7017-454f-b6cf-eeed277a97b5",
+      "name": "LVM-3 | Gaganyaan-1",
+      "net": "2026-12-31T00:00:00Z",
+      "window_start": "2026-12-31T00:00:00Z",
+      "window_end": "2026-12-31T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "Indian Space Research Organization",
+      "rocket": "Launch Vehicle Mark-3 (GSLV Mk III)",
+      "mission": {
+        "name": "Gaganyaan-1",
+        "description": "First uncrewed orbital test flight of the Gaganyaan capsule.",
+        "type": "Test Flight",
+        "orbit": "Low Earth Orbit"
+      },
+      "pad": {
+        "name": "Satish Dhawan Space Centre Second Launch Pad",
+        "map_url": "https://www.google.com/maps?q=13.7199,80.2304",
+        "latitude": 13.7199,
+        "longitude": 80.2304,
+        "location": {
+          "name": "Satish Dhawan Space Centre, India",
+          "country_code": "IN"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/gslv2520mk2520iii_image_20190604000938.jpg",
       "webcasts": [],
       "webcast_live": false
     }
