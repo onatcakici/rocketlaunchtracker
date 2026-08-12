@@ -1,59 +1,8 @@
 {
-  "generated": "2026-08-12T13:50:54Z",
+  "generated": "2026-08-12T19:29:12Z",
   "sample": false,
   "count": 60,
   "results": [
-    {
-      "id": "36ab6924-bb36-416a-b71d-cda9e88004be",
-      "name": "Falcon 9 Block 5 | Starlink Group 10-19",
-      "net": "2026-08-11T15:58:26Z",
-      "window_start": "2026-08-11T14:26:00Z",
-      "window_end": "2026-08-11T18:26:00Z",
-      "status": {
-        "abbrev": "Success",
-        "name": "Launch Successful",
-        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
-      },
-      "probability": 85,
-      "provider": "SpaceX",
-      "rocket": "Falcon 9 Block 5",
-      "mission": {
-        "name": "Starlink Group 10-19",
-        "description": "A batch of 29 satellites for the Starlink mega-constellation - SpaceX's project for space-based Internet communication system.",
-        "type": "Communications",
-        "orbit": "Low Earth Orbit"
-      },
-      "pad": {
-        "name": "Space Launch Complex 40",
-        "map_url": "https://www.google.com/maps?q=28.56194122,-80.57735736",
-        "latitude": 28.56194122,
-        "longitude": -80.57735736,
-        "location": {
-          "name": "Cape Canaveral SFS, FL, USA",
-          "country_code": "US"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
-      "webcasts": [
-        {
-          "title": "SpaceX Starlink Group 10-19",
-          "url": "https://www.youtube.com/watch?v=p1UQU7ax4t8"
-        },
-        {
-          "title": "Live: SpaceX Falcon 9 rocket launches from Cape Canaveral with 29 Starlink satellites",
-          "url": "https://www.youtube.com/watch?v=grXTQnopJ80"
-        },
-        {
-          "title": "SpaceX Launches Falcon 9 with  Starlink 10-19",
-          "url": "https://www.youtube.com/watch?v=LMsqa3xGQTo"
-        },
-        {
-          "title": "Starlink Mission",
-          "url": "https://x.com/i/broadcasts/1nxeLLRRMQWJX"
-        }
-      ],
-      "webcast_live": false
-    },
     {
       "id": "6f94dbe4-1318-4ffb-a53d-351bbdcba733",
       "name": "Falcon 9 Block 5 | Starlink Group 17-49",
@@ -182,13 +131,13 @@
     {
       "id": "b0e7d1cc-24dd-4da4-bb60-b15b6791d08e",
       "name": "Long March 12 | Unknown Payload",
-      "net": "2026-08-17T02:00:00Z",
-      "window_start": "2026-08-17T02:00:00Z",
-      "window_end": "2026-08-17T06:00:00Z",
+      "net": "2026-08-16T04:10:00Z",
+      "window_start": "2026-08-16T04:03:00Z",
+      "window_end": "2026-08-16T04:32:00Z",
       "status": {
-        "abbrev": "TBC",
-        "name": "To Be Confirmed",
-        "description": "Awaiting official confirmation - current date is known with some certainty."
+        "abbrev": "Go",
+        "name": "Go for Launch",
+        "description": "Current T-0 confirmed by official or reliable sources."
       },
       "probability": null,
       "provider": "China Aerospace Science and Technology Corporation",
@@ -210,6 +159,40 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/cz-12_on_its_la_image_20241128132937.jpg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "cb6f4df1-c045-423b-904c-e63bf1ee5168",
+      "name": "Long March 2C | Unknown Payload",
+      "net": "2026-08-17T03:00:00Z",
+      "window_start": "2026-08-17T02:53:00Z",
+      "window_end": "2026-08-17T03:17:00Z",
+      "status": {
+        "abbrev": "Go",
+        "name": "Go for Launch",
+        "description": "Current T-0 confirmed by official or reliable sources."
+      },
+      "probability": null,
+      "provider": "China Aerospace Science and Technology Corporation",
+      "rocket": "Long March 2C",
+      "mission": {
+        "name": "Unknown Payload",
+        "description": "Details TBD.",
+        "type": "Unknown",
+        "orbit": "Unknown"
+      },
+      "pad": {
+        "name": "Launch Complex 9",
+        "map_url": "https://www.google.com/maps?q=38.863128,111.589567",
+        "latitude": 38.863128,
+        "longitude": 111.589567,
+        "location": {
+          "name": "Taiyuan Satellite Launch Center, People's Republic of China",
+          "country_code": "CN"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/long_march_2_image_20230803100234.jpeg",
       "webcasts": [],
       "webcast_live": false
     },
@@ -323,6 +306,45 @@
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/long_march_5_tj_image_20260612043435.jpg",
       "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "ad501ebd-a357-4305-90c1-c46c6feb2ecf",
+      "name": "Falcon 9 Block 5 | Starlink Group 10-49",
+      "net": "2026-08-25T11:00:00Z",
+      "window_start": "2026-08-25T11:00:00Z",
+      "window_end": "2026-08-25T15:00:00Z",
+      "status": {
+        "abbrev": "Go",
+        "name": "Go for Launch",
+        "description": "Current T-0 confirmed by official or reliable sources."
+      },
+      "probability": null,
+      "provider": "SpaceX",
+      "rocket": "Falcon 9 Block 5",
+      "mission": {
+        "name": "Starlink Group 10-49",
+        "description": "A batch of 29 satellites for the Starlink mega-constellation - SpaceX's project for space-based Internet communication system.",
+        "type": "Communications",
+        "orbit": "Low Earth Orbit"
+      },
+      "pad": {
+        "name": "Space Launch Complex 40",
+        "map_url": "https://www.google.com/maps?q=28.56194122,-80.57735736",
+        "latitude": 28.56194122,
+        "longitude": -80.57735736,
+        "location": {
+          "name": "Cape Canaveral SFS, FL, USA",
+          "country_code": "US"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
+      "webcasts": [
+        {
+          "title": "Starlink Mission",
+          "url": "https://x.com/i/broadcasts/1AKEmvmQBwgKL"
+        }
+      ],
       "webcast_live": false
     },
     {
@@ -2065,40 +2087,6 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/gslv2520mk2520iii_image_20190604000938.jpg",
-      "webcasts": [],
-      "webcast_live": false
-    },
-    {
-      "id": "bff2fc91-eddd-4dfc-af26-ac0674cfab4d",
-      "name": "Soyuz 2.1a/Fregat-M | MKA Kinosputnik, KOEN and others",
-      "net": "2026-12-31T00:00:00Z",
-      "window_start": "2026-12-31T00:00:00Z",
-      "window_end": "2026-12-31T00:00:00Z",
-      "status": {
-        "abbrev": "TBD",
-        "name": "To Be Determined",
-        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
-      },
-      "probability": null,
-      "provider": "Russian Federal Space Agency (ROSCOSMOS)",
-      "rocket": "Soyuz 2.1a Fregat-M",
-      "mission": {
-        "name": "MKA Kinosputnik, KOEN and others",
-        "description": "Share-ride of multiple satellites, including dual-use optical Earth observation satellites and drone-guiding satellites:\r\n\r\n* MKA Kinosputnik\r\n* KOEN, KA MT-LAB\r\n* NPO Kaisant 6U cubesat with a Germes modem\r\n* NPO Kaisant 16U cubesat with Gonets modems",
-        "type": "Technology",
-        "orbit": "Sun-Synchronous Orbit"
-      },
-      "pad": {
-        "name": "Cosmodrome Site 1S",
-        "map_url": "https://www.google.com/maps?q=51.884395,128.333932",
-        "latitude": 51.884395,
-        "longitude": 128.333932,
-        "location": {
-          "name": "Vostochny Cosmodrome, Siberia, Russian Federation",
-          "country_code": "RU"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/soyuz25202.1a_image_20190726062341.png",
       "webcasts": [],
       "webcast_live": false
     }
