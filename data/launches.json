@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-13T13:50:45Z",
+  "generated": "2026-08-13T19:28:13Z",
   "sample": false,
   "count": 60,
   "results": [
@@ -228,6 +228,40 @@
       "webcast_live": false
     },
     {
+      "id": "6208f972-18ec-490f-bbe5-6f5c6cfcd48c",
+      "name": "Falcon 9 Block 5 | Starlink Group 15-20",
+      "net": "2026-08-22T07:25:00Z",
+      "window_start": "2026-08-22T07:25:00Z",
+      "window_end": "2026-08-22T11:25:00Z",
+      "status": {
+        "abbrev": "TBC",
+        "name": "To Be Confirmed",
+        "description": "Awaiting official confirmation - current date is known with some certainty."
+      },
+      "probability": null,
+      "provider": "SpaceX",
+      "rocket": "Falcon 9 Block 5",
+      "mission": {
+        "name": "Starlink Group 15-20",
+        "description": "A batch of 27 satellites for the Starlink mega-constellation - SpaceX's project for space-based Internet communication system.",
+        "type": "Communications",
+        "orbit": "Low Earth Orbit"
+      },
+      "pad": {
+        "name": "Space Launch Complex 4E",
+        "map_url": "https://www.google.com/maps?q=34.632,-120.611",
+        "latitude": 34.632,
+        "longitude": -120.611,
+        "location": {
+          "name": "Vandenberg SFB, CA, USA",
+          "country_code": "US"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
       "id": "9d402fb6-9115-424d-b6f0-bd3b13ee310e",
       "name": "Long March 5 | Chang'e 7",
       "net": "2026-08-24T00:00:00Z",
@@ -298,6 +332,40 @@
           "url": "https://x.com/i/broadcasts/1AKEmvmQBwgKL"
         }
       ],
+      "webcast_live": false
+    },
+    {
+      "id": "95653d52-bb77-4860-a815-dd7141778d17",
+      "name": "Falcon 9 Block 5 | Starlink Group 15-22",
+      "net": "2026-08-25T16:44:00Z",
+      "window_start": "2026-08-25T16:44:00Z",
+      "window_end": "2026-08-25T20:44:00Z",
+      "status": {
+        "abbrev": "TBC",
+        "name": "To Be Confirmed",
+        "description": "Awaiting official confirmation - current date is known with some certainty."
+      },
+      "probability": null,
+      "provider": "SpaceX",
+      "rocket": "Falcon 9 Block 5",
+      "mission": {
+        "name": "Starlink Group 15-22",
+        "description": "A batch of 27 satellites for the Starlink mega-constellation - SpaceX's project for space-based Internet communication system.",
+        "type": "Communications",
+        "orbit": "Low Earth Orbit"
+      },
+      "pad": {
+        "name": "Space Launch Complex 4E",
+        "map_url": "https://www.google.com/maps?q=34.632,-120.611",
+        "latitude": 34.632,
+        "longitude": -120.611,
+        "location": {
+          "name": "Vandenberg SFB, CA, USA",
+          "country_code": "US"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
+      "webcasts": [],
       "webcast_live": false
     },
     {
@@ -1772,40 +1840,6 @@
       "webcast_live": false
     },
     {
-      "id": "0d6ad64c-3aed-4041-b095-e1d951bc6d29",
-      "name": "Electron | Aspera",
-      "net": "2026-12-31T00:00:00Z",
-      "window_start": "2026-12-31T00:00:00Z",
-      "window_end": "2026-12-31T00:00:00Z",
-      "status": {
-        "abbrev": "TBD",
-        "name": "To Be Determined",
-        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
-      },
-      "probability": null,
-      "provider": "Rocket Lab",
-      "rocket": "Electron",
-      "mission": {
-        "name": "Aspera",
-        "description": "Aspera houses an ultraviolet telescope and will examine hot gas in the  intergalactic medium, thought to be contributing to the birth of stars and planets. Aspera will be the first NASA astrophysics mission to gather and map these ultraviolet light signatures, potentially unlocking a deeper understanding of the origins of stars, planets, and life in the universe.",
-        "type": "Astrophysics",
-        "orbit": "Low Earth Orbit"
-      },
-      "pad": {
-        "name": "Unknown Pad",
-        "map_url": null,
-        "latitude": -39.260881,
-        "longitude": 177.865826,
-        "location": {
-          "name": "Rocket Lab Launch Complex 1, Mahia Peninsula, New Zealand",
-          "country_code": "NZ"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/electron_image_20190705175640.jpeg",
-      "webcasts": [],
-      "webcast_live": false
-    },
-    {
       "id": "8bf5f61e-a7e1-41e6-aede-7b87e4beebab",
       "name": "Falcon 9 Block 5 | CHORUS",
       "net": "2026-12-31T00:00:00Z",
@@ -2040,40 +2074,6 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/gslv2520mk2520iii_image_20190604000938.jpg",
-      "webcasts": [],
-      "webcast_live": false
-    },
-    {
-      "id": "bff2fc91-eddd-4dfc-af26-ac0674cfab4d",
-      "name": "Soyuz 2.1a/Fregat-M | MKA Kinosputnik, KOEN and others",
-      "net": "2026-12-31T00:00:00Z",
-      "window_start": "2026-12-31T00:00:00Z",
-      "window_end": "2026-12-31T00:00:00Z",
-      "status": {
-        "abbrev": "TBD",
-        "name": "To Be Determined",
-        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
-      },
-      "probability": null,
-      "provider": "Russian Federal Space Agency (ROSCOSMOS)",
-      "rocket": "Soyuz 2.1a Fregat-M",
-      "mission": {
-        "name": "MKA Kinosputnik, KOEN and others",
-        "description": "Share-ride of multiple satellites, including dual-use optical Earth observation satellites and drone-guiding satellites:\r\n\r\n* MKA Kinosputnik\r\n* KOEN, KA MT-LAB\r\n* NPO Kaisant 6U cubesat with a Germes modem\r\n* NPO Kaisant 16U cubesat with Gonets modems",
-        "type": "Technology",
-        "orbit": "Sun-Synchronous Orbit"
-      },
-      "pad": {
-        "name": "Cosmodrome Site 1S",
-        "map_url": "https://www.google.com/maps?q=51.884395,128.333932",
-        "latitude": 51.884395,
-        "longitude": 128.333932,
-        "location": {
-          "name": "Vostochny Cosmodrome, Siberia, Russian Federation",
-          "country_code": "RU"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/soyuz25202.1a_image_20190726062341.png",
       "webcasts": [],
       "webcast_live": false
     }
