@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-14T13:46:01Z",
+  "generated": "2026-08-14T19:16:33Z",
   "sample": false,
   "count": 60,
   "results": [
@@ -268,9 +268,9 @@
       "window_start": "2026-08-22T07:25:00Z",
       "window_end": "2026-08-22T11:25:00Z",
       "status": {
-        "abbrev": "TBC",
-        "name": "To Be Confirmed",
-        "description": "Awaiting official confirmation - current date is known with some certainty."
+        "abbrev": "Go",
+        "name": "Go for Launch",
+        "description": "Current T-0 confirmed by official or reliable sources."
       },
       "probability": null,
       "provider": "SpaceX",
@@ -292,7 +292,12 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
-      "webcasts": [],
+      "webcasts": [
+        {
+          "title": "Starlink Mission",
+          "url": "https://x.com/i/broadcasts/1PKqrNNknkZGb"
+        }
+      ],
       "webcast_live": false
     },
     {
@@ -399,7 +404,12 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
-      "webcasts": [],
+      "webcasts": [
+        {
+          "title": "Starlink Mission",
+          "url": "https://x.com/i/broadcasts/1AKEmvvQLayKL"
+        }
+      ],
       "webcast_live": false
     },
     {
@@ -922,6 +932,40 @@
       "webcast_live": false
     },
     {
+      "id": "7d1afb26-6f9c-429b-9ccf-29012fd1e519",
+      "name": "Starship | Flight 14",
+      "net": "2026-09-30T00:00:00Z",
+      "window_start": "2026-09-30T00:00:00Z",
+      "window_end": "2026-09-30T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "SpaceX",
+      "rocket": "Starship V3",
+      "mission": {
+        "name": "Flight 14",
+        "description": "14th test flight of the two-stage Starship launch vehicle. 3rd flight of Starship V3.",
+        "type": "Test Flight",
+        "orbit": "Unknown"
+      },
+      "pad": {
+        "name": "Orbital Launch Pad 2",
+        "map_url": "https://www.google.com/maps?q=25.996770,-97.157990",
+        "latitude": 25.99677,
+        "longitude": -97.15799,
+        "location": {
+          "name": "SpaceX Starbase, TX, USA",
+          "country_code": "US"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/starship_on_the_image_20260724044615.jpg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
       "id": "ef9850ad-1096-425b-9d27-f7bbd186e61a",
       "name": "Vulcan VC6L | Amazon Leo (LV-01)",
       "net": "2026-09-30T00:00:00Z",
@@ -1258,40 +1302,6 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
-      "webcasts": [],
-      "webcast_live": false
-    },
-    {
-      "id": "7d1afb26-6f9c-429b-9ccf-29012fd1e519",
-      "name": "Starship | Flight 14",
-      "net": "2026-09-30T00:00:00Z",
-      "window_start": "2026-09-30T00:00:00Z",
-      "window_end": "2026-09-30T00:00:00Z",
-      "status": {
-        "abbrev": "TBD",
-        "name": "To Be Determined",
-        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
-      },
-      "probability": null,
-      "provider": "SpaceX",
-      "rocket": "Starship V3",
-      "mission": {
-        "name": "Flight 14",
-        "description": "14th test flight of the two-stage Starship launch vehicle. 3rd flight of Starship V3.",
-        "type": "Test Flight",
-        "orbit": "Unknown"
-      },
-      "pad": {
-        "name": "Orbital Launch Pad 2",
-        "map_url": "https://www.google.com/maps?q=25.996770,-97.157990",
-        "latitude": 25.99677,
-        "longitude": -97.15799,
-        "location": {
-          "name": "SpaceX Starbase, TX, USA",
-          "country_code": "US"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/starship_on_the_image_20260724044615.jpg",
       "webcasts": [],
       "webcast_live": false
     },
