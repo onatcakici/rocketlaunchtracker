@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-14T07:52:59Z",
+  "generated": "2026-08-14T13:46:01Z",
   "sample": false,
   "count": 60,
   "results": [
@@ -146,6 +146,40 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/long_march_2_image_20230803100234.jpeg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "ef02e2cf-e617-4b38-a526-951ac9204b0a",
+      "name": "Zhuque-3 | Flight 2",
+      "net": "2026-08-18T23:35:00Z",
+      "window_start": "2026-08-18T23:27:00Z",
+      "window_end": "2026-08-19T00:04:00Z",
+      "status": {
+        "abbrev": "Go",
+        "name": "Go for Launch",
+        "description": "Current T-0 confirmed by official or reliable sources."
+      },
+      "probability": null,
+      "provider": "LandSpace",
+      "rocket": "Zhuque-3",
+      "mission": {
+        "name": "Flight 2",
+        "description": "Second test launch of LandSpace’s ZQ-3 rocket. Payload identities are TBD.",
+        "type": "Test Flight",
+        "orbit": "Low Earth Orbit"
+      },
+      "pad": {
+        "name": "Launch Area 96B",
+        "map_url": "https://www.google.com/maps?q=40.92017,100.25129",
+        "latitude": 40.92017,
+        "longitude": 100.25129,
+        "location": {
+          "name": "Jiuquan Satellite Launch Center, People's Republic of China",
+          "country_code": "CN"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/zq-3_flight_1_l_image_20251203064230.jpg",
       "webcasts": [],
       "webcast_live": false
     },
@@ -715,40 +749,6 @@
           "url": "https://www.youtube.com/watch?v=uUc2d_NPBN0"
         }
       ],
-      "webcast_live": false
-    },
-    {
-      "id": "ef02e2cf-e617-4b38-a526-951ac9204b0a",
-      "name": "Zhuque-3 | Flight 2",
-      "net": "2026-08-31T00:00:00Z",
-      "window_start": "2026-08-31T00:00:00Z",
-      "window_end": "2026-08-31T00:00:00Z",
-      "status": {
-        "abbrev": "TBD",
-        "name": "To Be Determined",
-        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
-      },
-      "probability": null,
-      "provider": "LandSpace",
-      "rocket": "Zhuque-3",
-      "mission": {
-        "name": "Flight 2",
-        "description": "Second test launch of LandSpace’s ZQ-3 rocket. Payload identities are TBD.",
-        "type": "Test Flight",
-        "orbit": "Low Earth Orbit"
-      },
-      "pad": {
-        "name": "Launch Area 96B",
-        "map_url": "https://www.google.com/maps?q=40.92017,100.25129",
-        "latitude": 40.92017,
-        "longitude": 100.25129,
-        "location": {
-          "name": "Jiuquan Satellite Launch Center, People's Republic of China",
-          "country_code": "CN"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/zq-3_flight_1_l_image_20251203064230.jpg",
-      "webcasts": [],
       "webcast_live": false
     },
     {
