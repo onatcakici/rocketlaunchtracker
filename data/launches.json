@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-15T06:59:54Z",
+  "generated": "2026-08-15T13:01:55Z",
   "sample": false,
   "count": 60,
   "results": [
@@ -928,6 +928,40 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/gslv2520mk2520ii_image_20190825171642.jpg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "20d5676e-111b-40e3-8923-b218c3665ca2",
+      "name": "GSLV Mk II | IRNSS-1L (NVS-03)",
+      "net": "2026-09-30T00:00:00Z",
+      "window_start": "2026-09-30T00:00:00Z",
+      "window_end": "2026-09-30T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "Indian Space Research Organization",
+      "rocket": "GSLV Mk. II",
+      "mission": {
+        "name": "IRNSS-1L (NVS-03)",
+        "description": "This is a replacement satellite for the Indian Regional Navigation Satellite System. The constellation will provide India with an alternative to GPS and will be used for military and civilian use. Located at a geosynchronous orbit, the system will be operated by the Indian government.",
+        "type": "Navigation",
+        "orbit": "Geostationary Transfer Orbit"
+      },
+      "pad": {
+        "name": "Satish Dhawan Space Centre Second Launch Pad",
+        "map_url": "https://www.google.com/maps?q=13.7199,80.2304",
+        "latitude": 13.7199,
+        "longitude": 80.2304,
+        "location": {
+          "name": "Satish Dhawan Space Centre, India",
+          "country_code": "IN"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/gslv2520mk252_image_20240101090337.jpg",
       "webcasts": [],
       "webcast_live": false
     },
@@ -2050,40 +2084,6 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/soyuz25202.1a_image_20190726062341.png",
-      "webcasts": [],
-      "webcast_live": false
-    },
-    {
-      "id": "60f4ba6c-4201-4727-94aa-0015a5a0023f",
-      "name": "Spectrum | 1 x Pelican satellite",
-      "net": "2026-12-31T00:00:00Z",
-      "window_start": "2026-12-31T00:00:00Z",
-      "window_end": "2026-12-31T00:00:00Z",
-      "status": {
-        "abbrev": "TBD",
-        "name": "To Be Determined",
-        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
-      },
-      "probability": null,
-      "provider": "Isar Aerospace",
-      "rocket": "Spectrum",
-      "mission": {
-        "name": "1 x Pelican satellite",
-        "description": "Payload consists of a single Pelican high-resolution imaging satellite for Planet Labs Germany.",
-        "type": "Earth Science",
-        "orbit": "Sun-Synchronous Orbit"
-      },
-      "pad": {
-        "name": "Orbital Launch Pad",
-        "map_url": "https://www.google.com/maps?q=69.1084,15.5895",
-        "latitude": 69.1084,
-        "longitude": 15.5895,
-        "location": {
-          "name": "Andøya Spaceport",
-          "country_code": "NO"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/spectrum_on_the_image_20250321072643.jpeg",
       "webcasts": [],
       "webcast_live": false
     }
