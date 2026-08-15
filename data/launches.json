@@ -1,12 +1,12 @@
 {
-  "generated": "2026-08-15T01:52:14Z",
+  "generated": "2026-08-15T06:59:54Z",
   "sample": false,
   "count": 60,
   "results": [
     {
       "id": "55b79515-ddbf-4198-8a59-29a12ed21330",
       "name": "Falcon 9 Block 5 | USSF-366",
-      "net": "2026-08-15T21:52:00Z",
+      "net": "2026-08-15T21:54:02Z",
       "window_start": "2026-08-15T21:52:00Z",
       "window_end": "2026-08-16T01:52:00Z",
       "status": {
@@ -337,9 +337,9 @@
     {
       "id": "ad501ebd-a357-4305-90c1-c46c6feb2ecf",
       "name": "Falcon 9 Block 5 | Starlink Group 10-49",
-      "net": "2026-08-25T11:00:00Z",
-      "window_start": "2026-08-25T11:00:00Z",
-      "window_end": "2026-08-25T15:00:00Z",
+      "net": "2026-08-25T05:49:00Z",
+      "window_start": "2026-08-25T05:49:00Z",
+      "window_end": "2026-08-25T09:49:00Z",
       "status": {
         "abbrev": "Go",
         "name": "Go for Launch",
@@ -1646,40 +1646,6 @@
       "webcast_live": false
     },
     {
-      "id": "387aadc6-68ca-4090-9be7-d57603ad7c79",
-      "name": "Falcon 9 Block 5 | Blue Ghost Lunar Lander Mission 2",
-      "net": "2026-12-31T00:00:00Z",
-      "window_start": "2026-12-31T00:00:00Z",
-      "window_end": "2026-12-31T00:00:00Z",
-      "status": {
-        "abbrev": "TBD",
-        "name": "To Be Determined",
-        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
-      },
-      "probability": null,
-      "provider": "SpaceX",
-      "rocket": "Falcon 9 Block 5",
-      "mission": {
-        "name": "Blue Ghost Lunar Lander Mission 2",
-        "description": "2nd lunar lander developed by Firefly Aerospace. The Blue Ghost lander will be of a new two-stage version utilizing an Elytra Dark transfer vehicle to place it and the European Space Agency's Lunar Pathfinder experimental communication satellite into Lunar orbit.\r\n\r\nThe lander will land on the far side of the Moon with 2 NASA payloads:\r\n\r\n* Lunar Surface Electromagnetics Experiment (LuSEE-Night)\r\n* User Terminal (UT)",
-        "type": "Lunar Exploration",
-        "orbit": "Lunar Orbit"
-      },
-      "pad": {
-        "name": "Unknown Pad",
-        "map_url": "https://www.google.com/maps?q=28.458,-80.528",
-        "latitude": 28.458,
-        "longitude": -80.528,
-        "location": {
-          "name": "Cape Canaveral SFS, FL, USA",
-          "country_code": "US"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
-      "webcasts": [],
-      "webcast_live": false
-    },
-    {
       "id": "d74afbc7-0de5-491c-be05-4e9c31f736ac",
       "name": "Falcon 9 Block 5 | Cygnus CRS-2 NG-25",
       "net": "2026-12-31T00:00:00Z",
@@ -2084,6 +2050,40 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/soyuz25202.1a_image_20190726062341.png",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "60f4ba6c-4201-4727-94aa-0015a5a0023f",
+      "name": "Spectrum | 1 x Pelican satellite",
+      "net": "2026-12-31T00:00:00Z",
+      "window_start": "2026-12-31T00:00:00Z",
+      "window_end": "2026-12-31T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "Isar Aerospace",
+      "rocket": "Spectrum",
+      "mission": {
+        "name": "1 x Pelican satellite",
+        "description": "Payload consists of a single Pelican high-resolution imaging satellite for Planet Labs Germany.",
+        "type": "Earth Science",
+        "orbit": "Sun-Synchronous Orbit"
+      },
+      "pad": {
+        "name": "Orbital Launch Pad",
+        "map_url": "https://www.google.com/maps?q=69.1084,15.5895",
+        "latitude": 69.1084,
+        "longitude": 15.5895,
+        "location": {
+          "name": "Andøya Spaceport",
+          "country_code": "NO"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/spectrum_on_the_image_20250321072643.jpeg",
       "webcasts": [],
       "webcast_live": false
     }
