@@ -1,12 +1,12 @@
 {
-  "generated": "2026-08-15T13:01:55Z",
+  "generated": "2026-08-15T18:49:01Z",
   "sample": false,
   "count": 60,
   "results": [
     {
       "id": "55b79515-ddbf-4198-8a59-29a12ed21330",
       "name": "Falcon 9 Block 5 | USSF-366",
-      "net": "2026-08-15T21:54:02Z",
+      "net": "2026-08-15T23:47:12Z",
       "window_start": "2026-08-15T21:52:00Z",
       "window_end": "2026-08-16T01:52:00Z",
       "status": {
@@ -36,6 +36,18 @@
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
       "webcasts": [
         {
+          "title": "GO! - SpaceX - Falcon 9 - USSF-366 - SLC-4E - Vandenberg Space Force Base, CA - Space Affairs Live",
+          "url": "https://www.youtube.com/watch?v=kHEJHhUndgk"
+        },
+        {
+          "title": "Live: SpaceX Falcon 9 rocket launches secretive mission for U.S. Space Force",
+          "url": "https://www.youtube.com/watch?v=hBRXDnr-b_0"
+        },
+        {
+          "title": "SpaceX Launches Falcon 9 with USSF-366",
+          "url": "https://www.youtube.com/watch?v=MfkUzz93xZQ"
+        },
+        {
           "title": "USSF-366 Mission",
           "url": "https://x.com/i/broadcasts/1DxleVErQBdKL"
         }
@@ -53,7 +65,7 @@
         "name": "Go for Launch",
         "description": "Current T-0 confirmed by official or reliable sources."
       },
-      "probability": null,
+      "probability": 90,
       "provider": "SpaceX",
       "rocket": "Falcon 9 Block 5",
       "mission": {
@@ -74,6 +86,18 @@
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
       "webcasts": [
+        {
+          "title": "GO! - SpaceX - Falcon 9 - GLOBALSTAR 2-R M #1 - SLC-40 - Cape Canaveral SFS - Space Affairs Live",
+          "url": "https://www.youtube.com/watch?v=f760SB4MWjg"
+        },
+        {
+          "title": "Live: SpaceX Falcon 9 rocket launches and lands at Cape Canaveral for Globalstar mission",
+          "url": "https://www.youtube.com/watch?v=nRnjNthHtSU"
+        },
+        {
+          "title": "SpaceX Launches Falcon 9 with  Globalstar 2-R Mission 1",
+          "url": "https://www.youtube.com/watch?v=2lJyYhaRcZM"
+        },
         {
           "title": "Globalstar 2-R Launch 1 mission ",
           "url": "https://x.com/i/broadcasts/1pJkOOkmyQyJj"
@@ -380,9 +404,9 @@
       "window_start": "2026-08-25T16:44:00Z",
       "window_end": "2026-08-25T20:44:00Z",
       "status": {
-        "abbrev": "TBC",
-        "name": "To Be Confirmed",
-        "description": "Awaiting official confirmation - current date is known with some certainty."
+        "abbrev": "Go",
+        "name": "Go for Launch",
+        "description": "Current T-0 confirmed by official or reliable sources."
       },
       "probability": null,
       "provider": "SpaceX",
