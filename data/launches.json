@@ -1,24 +1,24 @@
 {
-  "generated": "2026-08-16T01:58:42Z",
+  "generated": "2026-08-16T07:02:35Z",
   "sample": false,
   "count": 60,
   "results": [
     {
       "id": "be8b4b0d-1989-48a5-a96d-e8e4d59ed8b3",
-      "name": "Falcon 9 Block 5 | Globalstar 2-R Mission 1 (x 9)",
+      "name": "Falcon 9 Block 5 | Globalstar 2-R Mission 1 (x 8)",
       "net": "2026-08-16T01:12:14Z",
       "window_start": "2026-08-16T01:12:00Z",
       "window_end": "2026-08-16T01:27:00Z",
       "status": {
-        "abbrev": "In Flight",
-        "name": "Launch in Flight",
-        "description": "The launch vehicle has lifted off from the launchpad."
+        "abbrev": "Success",
+        "name": "Launch Successful",
+        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
       },
       "probability": 90,
       "provider": "SpaceX",
       "rocket": "Falcon 9 Block 5",
       "mission": {
-        "name": "Globalstar 2-R Mission 1 (x 9)",
+        "name": "Globalstar 2-R Mission 1 (x 8)",
         "description": "The Globalstar global mobile communications network offers global, digital real time voice, data and fax services via its Low Earth Orbit satellite constellation. The constellation operates in a 1410 km orbit inclined at 52 degrees.\r\n\r\nIn early 2022, Globalstar contracted with MDA for the construction of 17 new 2nd generation refresh satellites to replenish the existing constellation. Rocket Lab is sub-contracted to build the satellites' buses and the launch dispensers.",
         "type": "Communications",
         "orbit": "Low Earth Orbit"
@@ -36,8 +36,8 @@
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
       "webcasts": [
         {
-          "title": "GO! - SpaceX - Falcon 9 - GLOBALSTAR 2-R M #1 - SLC-40 - Cape Canaveral SFS - Space Affairs Live",
-          "url": "https://www.youtube.com/watch?v=f760SB4MWjg"
+          "title": "SpaceX Globalstar 2-R Mission 1 (x 8)",
+          "url": "https://www.youtube.com/watch?v=o3t9usE9y5w"
         },
         {
           "title": "Live: SpaceX Falcon 9 rocket launches and lands at Cape Canaveral for Globalstar mission",
@@ -52,7 +52,7 @@
           "url": "https://x.com/i/broadcasts/1pJkOOkmyQyJj"
         }
       ],
-      "webcast_live": true
+      "webcast_live": false
     },
     {
       "id": "55b79515-ddbf-4198-8a59-29a12ed21330",
@@ -61,9 +61,9 @@
       "window_start": "2026-08-15T21:52:00Z",
       "window_end": "2026-08-16T01:52:00Z",
       "status": {
-        "abbrev": "In Flight",
-        "name": "Launch in Flight",
-        "description": "The launch vehicle has lifted off from the launchpad."
+        "abbrev": "Deployed",
+        "name": "Payload Deployed",
+        "description": "Deployment of the payload(s) has been confirmed."
       },
       "probability": 90,
       "provider": "SpaceX",
@@ -87,8 +87,8 @@
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
       "webcasts": [
         {
-          "title": "GO! - SpaceX - Falcon 9 - USSF-366 - SLC-4E - Vandenberg Space Force Base, CA - Space Affairs Live",
-          "url": "https://www.youtube.com/watch?v=kHEJHhUndgk"
+          "title": "SpaceX USSF-366",
+          "url": "https://www.youtube.com/watch?v=GCdmtmYyInM"
         },
         {
           "title": "Live: SpaceX Falcon 9 rocket launches secretive mission for U.S. Space Force",
@@ -103,27 +103,27 @@
           "url": "https://x.com/i/broadcasts/1DxleVErQBdKL"
         }
       ],
-      "webcast_live": true
+      "webcast_live": false
     },
     {
       "id": "b0e7d1cc-24dd-4da4-bb60-b15b6791d08e",
-      "name": "Long March 12 | Unknown Payload",
+      "name": "Long March 12 | SatNet LEO Group 24",
       "net": "2026-08-16T04:10:00Z",
       "window_start": "2026-08-16T04:03:00Z",
       "window_end": "2026-08-16T04:32:00Z",
       "status": {
-        "abbrev": "Go",
-        "name": "Go for Launch",
-        "description": "Current T-0 confirmed by official or reliable sources."
+        "abbrev": "Success",
+        "name": "Launch Successful",
+        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
       },
       "probability": null,
       "provider": "China Aerospace Science and Technology Corporation",
       "rocket": "Long March 12",
       "mission": {
-        "name": "Unknown Payload",
-        "description": "Details TBD.",
-        "type": "Unknown",
-        "orbit": "Unknown"
+        "name": "SatNet LEO Group 24",
+        "description": "A batch of 9 Low Earth Orbit communication satellites for the Chinese state owned SatNet constellation operated by the China Satellite Network Group.\r\n\r\nThe constellation will eventually consists of 13000 satellites.",
+        "type": "Communications",
+        "orbit": "Low Earth Orbit"
       },
       "pad": {
         "name": "Commercial LC-2",
@@ -136,7 +136,16 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/cz-12_on_its_la_image_20241128132937.jpg",
-      "webcasts": [],
+      "webcasts": [
+        {
+          "title": "Live: Long March 12 Flight 7 Launch (No Commentary)",
+          "url": "https://www.youtube.com/watch?v=UifMQ8J8jMY"
+        },
+        {
+          "title": "(MIRRORED) Watch Long March 12 Launch from Wenchang, LIVE!!",
+          "url": "https://www.youtube.com/watch?v=Iv3Ve3nLQK4"
+        }
+      ],
       "webcast_live": false
     },
     {
