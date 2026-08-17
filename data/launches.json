@@ -1,51 +1,8 @@
 {
-  "generated": "2026-08-17T01:56:41Z",
+  "generated": "2026-08-17T07:18:16Z",
   "sample": false,
   "count": 60,
   "results": [
-    {
-      "id": "b0e7d1cc-24dd-4da4-bb60-b15b6791d08e",
-      "name": "Long March 12 | SatNet LEO Group 24",
-      "net": "2026-08-16T04:10:00Z",
-      "window_start": "2026-08-16T04:03:00Z",
-      "window_end": "2026-08-16T04:32:00Z",
-      "status": {
-        "abbrev": "Success",
-        "name": "Launch Successful",
-        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
-      },
-      "probability": null,
-      "provider": "China Aerospace Science and Technology Corporation",
-      "rocket": "Long March 12",
-      "mission": {
-        "name": "SatNet LEO Group 24",
-        "description": "A batch of 9 Low Earth Orbit communication satellites for the Chinese state owned SatNet constellation operated by the China Satellite Network Group.\r\n\r\nThe constellation will eventually consists of 13000 satellites.",
-        "type": "Communications",
-        "orbit": "Low Earth Orbit"
-      },
-      "pad": {
-        "name": "Commercial LC-2",
-        "map_url": "https://www.google.com/maps?q=19.59755,110.936481",
-        "latitude": 19.59755,
-        "longitude": 110.936481,
-        "location": {
-          "name": "Wenchang Space Launch Site, People's Republic of China",
-          "country_code": "CN"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/cz-12_on_its_la_image_20241128132937.jpg",
-      "webcasts": [
-        {
-          "title": "Live: Long March 12 Flight 7 Launch (No Commentary)",
-          "url": "https://www.youtube.com/watch?v=UifMQ8J8jMY"
-        },
-        {
-          "title": "(MIRRORED) Watch Long March 12 Launch from Wenchang, LIVE!!",
-          "url": "https://www.youtube.com/watch?v=Iv3Ve3nLQK4"
-        }
-      ],
-      "webcast_live": false
-    },
     {
       "id": "cb6f4df1-c045-423b-904c-e63bf1ee5168",
       "name": "Long March 2C | Unknown Payload",
@@ -2083,6 +2040,40 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/spectrum_on_the_image_20250321072643.jpeg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "a67b40f9-cfcc-4614-a355-a156280b4bb3",
+      "name": "Vulcan VC4L | Dream Chaser CRS 2 Flight 1",
+      "net": "2026-12-31T00:00:00Z",
+      "window_start": "2026-12-31T00:00:00Z",
+      "window_end": "2026-12-31T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "United Launch Alliance",
+      "rocket": "Vulcan VC4L",
+      "mission": {
+        "name": "Dream Chaser CRS 2 Flight 1",
+        "description": "First flight of the Dream Chaser Spaceplane, on a free-flying mission in Low Earth Orbit.",
+        "type": "Test Flight",
+        "orbit": "Low Earth Orbit"
+      },
+      "pad": {
+        "name": "Space Launch Complex 41",
+        "map_url": "https://www.google.com/maps?q=28.58341025,-80.58303644",
+        "latitude": 28.58341025,
+        "longitude": -80.58303644,
+        "location": {
+          "name": "Cape Canaveral SFS, FL, USA",
+          "country_code": "US"
+        }
+      },
+      "image": null,
       "webcasts": [],
       "webcast_live": false
     }
