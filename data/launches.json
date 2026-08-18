@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-18T13:11:11Z",
+  "generated": "2026-08-18T18:58:59Z",
   "sample": false,
   "count": 60,
   "results": [
@@ -40,7 +40,7 @@
     {
       "id": "f6958a77-37bb-4559-a108-40ba0ff9e34a",
       "name": "Falcon 9 Block 5 | Starlink Group 17-50",
-      "net": "2026-08-19T03:45:08Z",
+      "net": "2026-08-19T03:46:10Z",
       "window_start": "2026-08-19T02:00:00Z",
       "window_end": "2026-08-19T06:00:00Z",
       "status": {
@@ -72,6 +72,10 @@
         {
           "title": "GO! - SpaceX - Falcon 9 - Starlink 17-50 - SLC-4E - Vandenberg SFB - Space Affairs Live",
           "url": "https://www.youtube.com/watch?v=Nsw6vYpjtaw"
+        },
+        {
+          "title": "Live: SpaceX Falcon 9 rocket launches from Vandenberg, California, with Starlink satellites",
+          "url": "https://www.youtube.com/watch?v=XLnziohHvA4"
         },
         {
           "title": "Starlink Mission",
