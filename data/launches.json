@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-19T13:11:55Z",
+  "generated": "2026-08-19T18:55:50Z",
   "sample": false,
   "count": 60,
   "results": [
@@ -95,7 +95,7 @@
         "name": "Go for Launch",
         "description": "Current T-0 confirmed by official or reliable sources."
       },
-      "probability": null,
+      "probability": 80,
       "provider": "SpaceX",
       "rocket": "Falcon 9 Block 5",
       "mission": {
@@ -116,6 +116,14 @@
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
       "webcasts": [
+        {
+          "title": "GO - SpaceX - Falcon 9 - Starlink 10-39 - SLC-40 - Cape Canaveral SFS - Space Affairs Live",
+          "url": "https://www.youtube.com/watch?v=Ju2WywBXlco"
+        },
+        {
+          "title": "SpaceX Launches Falcon 9 Starlink 10-39",
+          "url": "https://www.youtube.com/watch?v=PjtnTIjDUys"
+        },
         {
           "title": "Starlink Mission",
           "url": "https://x.com/i/broadcasts/1qKDzWPePyaJV"
@@ -1304,6 +1312,40 @@
       "webcast_live": false
     },
     {
+      "id": "69ebbcd2-b257-4070-9ef9-21e7d1f8a883",
+      "name": "H3-24 | Martian Moon eXplorer (MMX)",
+      "net": "2026-10-20T00:00:00Z",
+      "window_start": "2026-10-20T00:00:00Z",
+      "window_end": "2026-10-20T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "Mitsubishi Heavy Industries",
+      "rocket": "H3-24",
+      "mission": {
+        "name": "Martian Moon eXplorer (MMX)",
+        "description": "MMX is a Japanese scientific mission to land on Phobos, one of the two moons of Mars, to collect samples before bringing them back to Earth.\r\n\r\nThe mission includes a small French/German rover to explore the surface of Phobos.",
+        "type": "Planetary Science",
+        "orbit": "Mars Orbit"
+      },
+      "pad": {
+        "name": "Yoshinobu Launch Complex LP-2",
+        "map_url": "https://www.google.com/maps?q=30.400938,130.97564",
+        "latitude": 30.400938,
+        "longitude": 130.97564,
+        "location": {
+          "name": "Tanegashima Space Center, Japan",
+          "country_code": "JP"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/h3-24_liftoff__image_20251028184029.jpeg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
       "id": "f4c720ce-0cfd-43e6-b8dd-00273073bc01",
       "name": "Electron | StriX Launch 12",
       "net": "2026-10-31T00:00:00Z",
@@ -1402,40 +1444,6 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
-      "webcasts": [],
-      "webcast_live": false
-    },
-    {
-      "id": "69ebbcd2-b257-4070-9ef9-21e7d1f8a883",
-      "name": "H3-24 | Martian Moon eXplorer (MMX)",
-      "net": "2026-10-31T00:00:00Z",
-      "window_start": "2026-10-31T00:00:00Z",
-      "window_end": "2026-10-31T00:00:00Z",
-      "status": {
-        "abbrev": "TBD",
-        "name": "To Be Determined",
-        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
-      },
-      "probability": null,
-      "provider": "Mitsubishi Heavy Industries",
-      "rocket": "H3-24",
-      "mission": {
-        "name": "Martian Moon eXplorer (MMX)",
-        "description": "MMX is a Japanese scientific mission to land on Phobos, one of the two moons of Mars, to collect samples before bringing them back to Earth.\r\n\r\nThe mission includes a small French/German rover to explore the surface of Phobos.",
-        "type": "Planetary Science",
-        "orbit": "Mars Orbit"
-      },
-      "pad": {
-        "name": "Yoshinobu Launch Complex LP-2",
-        "map_url": "https://www.google.com/maps?q=30.400938,130.97564",
-        "latitude": 30.400938,
-        "longitude": 130.97564,
-        "location": {
-          "name": "Tanegashima Space Center, Japan",
-          "country_code": "JP"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/h3-24_liftoff__image_20251028184029.jpeg",
       "webcasts": [],
       "webcast_live": false
     },
