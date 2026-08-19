@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-19T01:54:54Z",
+  "generated": "2026-08-19T07:07:49Z",
   "sample": false,
   "count": 60,
   "results": [
@@ -44,9 +44,9 @@
       "window_start": "2026-08-19T02:00:00Z",
       "window_end": "2026-08-19T06:00:00Z",
       "status": {
-        "abbrev": "Go",
-        "name": "Go for Launch",
-        "description": "Current T-0 confirmed by official or reliable sources."
+        "abbrev": "Success",
+        "name": "Launch Successful",
+        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
       },
       "probability": null,
       "provider": "SpaceX",
@@ -70,8 +70,8 @@
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
       "webcasts": [
         {
-          "title": "GO! - SpaceX - Falcon 9 - Starlink 17-50 - SLC-4E - Vandenberg SFB - Space Affairs Live",
-          "url": "https://www.youtube.com/watch?v=Nsw6vYpjtaw"
+          "title": "SpaceX Starlink Group 17-50",
+          "url": "https://www.youtube.com/watch?v=3vX-zLAGM38"
         },
         {
           "title": "Live: SpaceX Falcon 9 rocket launches from Vandenberg, California, with Starlink satellites",
@@ -577,6 +577,40 @@
         }
       },
       "image": null,
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "458e2e52-87b0-4707-96d8-6899f92e53ee",
+      "name": "Soyuz 2.1b/Fregat | Glonass-K1 No. 19",
+      "net": "2026-08-31T00:00:00Z",
+      "window_start": "2026-08-31T00:00:00Z",
+      "window_end": "2026-08-31T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "Russian Space Forces",
+      "rocket": "Soyuz 2.1b Fregat",
+      "mission": {
+        "name": "Glonass-K1 No. 19",
+        "description": "Glonass-K are the third generation of satellite design for GLONASS satellite navigation system. GLONASS is a Russian space-based navigation system comparable to the similar GPS and Galileo systems. This generation improves on accuracy, power consumption and design life. Each satellite is unpressurized and weighs 935 kg,  and has an operational lifetime of 10 years.",
+        "type": "Navigation",
+        "orbit": "Medium Earth Orbit"
+      },
+      "pad": {
+        "name": "Unknown Pad",
+        "map_url": "https://www.google.com/maps?q=62.925556,40.577778",
+        "latitude": 62.925556,
+        "longitude": 40.577778,
+        "location": {
+          "name": "Plesetsk Cosmodrome, Russian Federation",
+          "country_code": "RU"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/soyuz_2.1b_image_20230802085331.jpg",
       "webcasts": [],
       "webcast_live": false
     },
@@ -2048,40 +2082,6 @@
         }
       },
       "image": null,
-      "webcasts": [],
-      "webcast_live": false
-    },
-    {
-      "id": "e61d353c-db55-4a57-8184-0fab187231e6",
-      "name": "Falcon 9 Block 5 | Globalstar 2-R Mission 2 (x 9)",
-      "net": "2026-12-31T00:00:00Z",
-      "window_start": "2026-12-31T00:00:00Z",
-      "window_end": "2026-12-31T00:00:00Z",
-      "status": {
-        "abbrev": "TBD",
-        "name": "To Be Determined",
-        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
-      },
-      "probability": null,
-      "provider": "SpaceX",
-      "rocket": "Falcon 9 Block 5",
-      "mission": {
-        "name": "Globalstar 2-R Mission 2 (x 9)",
-        "description": "The Globalstar global mobile communications network offers global, digital real time voice, data and fax services via its Low Earth Orbit satellite constellation. The constellation operates in a 1410 km orbit inclined at 52 degrees.\r\n\r\nIn early 2022, Globalstar contracted with MDA for the construction of 17 new 2nd generation refresh satellites to replenish the existing constellation. Rocket Lab is sub-contracted to build the satellites' buses and the launch dispensers.",
-        "type": "Communications",
-        "orbit": "Low Earth Orbit"
-      },
-      "pad": {
-        "name": "Space Launch Complex 40",
-        "map_url": "https://www.google.com/maps?q=28.56194122,-80.57735736",
-        "latitude": 28.56194122,
-        "longitude": -80.57735736,
-        "location": {
-          "name": "Cape Canaveral SFS, FL, USA",
-          "country_code": "US"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
       "webcasts": [],
       "webcast_live": false
     }
