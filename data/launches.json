@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-20T13:13:38Z",
+  "generated": "2026-08-20T19:02:39Z",
   "sample": false,
   "count": 60,
   "results": [
@@ -10,9 +10,9 @@
       "window_start": "2026-08-20T13:04:45Z",
       "window_end": "2026-08-20T13:04:45Z",
       "status": {
-        "abbrev": "In Flight",
-        "name": "Launch in Flight",
-        "description": "The launch vehicle has lifted off from the launchpad."
+        "abbrev": "Deployed",
+        "name": "Payload Deployed",
+        "description": "Deployment of the payload(s) has been confirmed."
       },
       "probability": 80,
       "provider": "Rocket Lab",
@@ -40,14 +40,14 @@
           "url": "https://www.youtube.com/watch?v=wLc1C15jbgY"
         }
       ],
-      "webcast_live": true
+      "webcast_live": false
     },
     {
       "id": "bbdc4d47-1de3-428e-9fe1-bbf45d9b1e04",
       "name": "Falcon 9 Block 5 | Starlink Group 10-39",
-      "net": "2026-08-20T15:38:44Z",
-      "window_start": "2026-08-20T15:19:00Z",
-      "window_end": "2026-08-20T19:19:00Z",
+      "net": "2026-08-21T14:57:00Z",
+      "window_start": "2026-08-21T14:57:00Z",
+      "window_end": "2026-08-21T18:57:00Z",
       "status": {
         "abbrev": "Go",
         "name": "Go for Launch",
@@ -75,11 +75,15 @@
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
       "webcasts": [
         {
-          "title": "GO - SpaceX - Falcon 9 - Starlink 10-39 - SLC-40 - Cape Canaveral SFS - Space Affairs Live",
+          "title": "SCRUBBED - SpaceX - Falcon 9 - Starlink 10-39 - SLC-40 - Cape Canaveral SFS - August 20, 2026",
           "url": "https://www.youtube.com/watch?v=Ju2WywBXlco"
         },
         {
-          "title": "SpaceX Launches Falcon 9 Starlink 10-39",
+          "title": "Live: SpaceX Falcon 9 rocket launches 29 Starlink satellites from Cape Canaveral",
+          "url": "https://www.youtube.com/watch?v=c0RiIZtCxEM"
+        },
+        {
+          "title": "[SCRUB] SpaceX Launches Falcon 9 Starlink 10-39",
           "url": "https://www.youtube.com/watch?v=PjtnTIjDUys"
         },
         {
