@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-21T13:13:19Z",
+  "generated": "2026-08-21T18:58:54Z",
   "sample": false,
   "count": 60,
   "results": [
@@ -10,9 +10,9 @@
       "window_start": "2026-08-21T14:57:00Z",
       "window_end": "2026-08-21T18:57:00Z",
       "status": {
-        "abbrev": "Go",
-        "name": "Go for Launch",
-        "description": "Current T-0 confirmed by official or reliable sources."
+        "abbrev": "Success",
+        "name": "Launch Successful",
+        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
       },
       "probability": 85,
       "provider": "SpaceX",
@@ -36,8 +36,8 @@
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
       "webcasts": [
         {
-          "title": "GO! - SpaceX - Falcon 9 - Starlink 10-39 - SLC-40 - Cape Canaveral SFS - Space Affairs Live",
-          "url": "https://www.youtube.com/watch?v=O7AiY8J7iy8"
+          "title": "SpaceX Starlink Group 10-39",
+          "url": "https://www.youtube.com/watch?v=1051Kv6YfKM"
         },
         {
           "title": "Live: SpaceX Falcon 9 rocket launches 29 Starlink satellites from Cape Canaveral",
@@ -57,7 +57,7 @@
     {
       "id": "6208f972-18ec-490f-bbe5-6f5c6cfcd48c",
       "name": "Falcon 9 Block 5 | Starlink Group 15-20",
-      "net": "2026-08-22T07:25:00Z",
+      "net": "2026-08-22T07:25:09Z",
       "window_start": "2026-08-22T07:25:00Z",
       "window_end": "2026-08-22T11:25:00Z",
       "status": {
@@ -86,6 +86,14 @@
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
       "webcasts": [
+        {
+          "title": "GO! - SpaceX - Falcon 9 - Starlink 15-20 - SLC-4E - Vandenberg SFB, CA - Space Affairs Live",
+          "url": "https://www.youtube.com/watch?v=PE3fVHlNxko"
+        },
+        {
+          "title": "SpaceX Launches Falcon 9 Starlink 15-20",
+          "url": "https://www.youtube.com/watch?v=tU2YgT-mEhI"
+        },
         {
           "title": "Starlink Mission",
           "url": "https://x.com/i/broadcasts/1PKqrNNknkZGb"
@@ -628,6 +636,45 @@
         {
           "title": "Starlink Mission",
           "url": "https://x.com/i/broadcasts/1yKAPwXpMlqxb"
+        }
+      ],
+      "webcast_live": false
+    },
+    {
+      "id": "153ef8ef-b12b-43f4-a4bf-05b225c0cd37",
+      "name": "Falcon 9 Block 5 | Starlink Group 15-24",
+      "net": "2026-09-04T11:28:00Z",
+      "window_start": "2026-09-04T11:28:00Z",
+      "window_end": "2026-09-04T15:28:00Z",
+      "status": {
+        "abbrev": "Go",
+        "name": "Go for Launch",
+        "description": "Current T-0 confirmed by official or reliable sources."
+      },
+      "probability": null,
+      "provider": "SpaceX",
+      "rocket": "Falcon 9 Block 5",
+      "mission": {
+        "name": "Starlink Group 15-24",
+        "description": "A batch of 27 satellites for the Starlink mega-constellation - SpaceX's project for space-based Internet communication system.",
+        "type": "Communications",
+        "orbit": "Low Earth Orbit"
+      },
+      "pad": {
+        "name": "Space Launch Complex 4E",
+        "map_url": "https://www.google.com/maps?q=34.632,-120.611",
+        "latitude": 34.632,
+        "longitude": -120.611,
+        "location": {
+          "name": "Vandenberg SFB, CA, USA",
+          "country_code": "US"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
+      "webcasts": [
+        {
+          "title": "Starlink Mission",
+          "url": "https://x.com/i/broadcasts/1NxaroyrEngKj"
         }
       ],
       "webcast_live": false
@@ -2057,40 +2104,6 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/spectrum_on_the_image_20250321072643.jpeg",
-      "webcasts": [],
-      "webcast_live": false
-    },
-    {
-      "id": "a67b40f9-cfcc-4614-a355-a156280b4bb3",
-      "name": "Vulcan VC4L | Dream Chaser CRS 2 Flight 1",
-      "net": "2026-12-31T00:00:00Z",
-      "window_start": "2026-12-31T00:00:00Z",
-      "window_end": "2026-12-31T00:00:00Z",
-      "status": {
-        "abbrev": "TBD",
-        "name": "To Be Determined",
-        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
-      },
-      "probability": null,
-      "provider": "United Launch Alliance",
-      "rocket": "Vulcan VC4L",
-      "mission": {
-        "name": "Dream Chaser CRS 2 Flight 1",
-        "description": "First flight of the Dream Chaser Spaceplane, on a free-flying mission in Low Earth Orbit.",
-        "type": "Test Flight",
-        "orbit": "Low Earth Orbit"
-      },
-      "pad": {
-        "name": "Space Launch Complex 41",
-        "map_url": "https://www.google.com/maps?q=28.58341025,-80.58303644",
-        "latitude": 28.58341025,
-        "longitude": -80.58303644,
-        "location": {
-          "name": "Cape Canaveral SFS, FL, USA",
-          "country_code": "US"
-        }
-      },
-      "image": null,
       "webcasts": [],
       "webcast_live": false
     }
