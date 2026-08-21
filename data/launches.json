@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-20T19:02:39Z",
+  "generated": "2026-08-21T01:59:45Z",
   "sample": false,
   "count": 60,
   "results": [
@@ -10,9 +10,9 @@
       "window_start": "2026-08-20T13:04:45Z",
       "window_end": "2026-08-20T13:04:45Z",
       "status": {
-        "abbrev": "Deployed",
-        "name": "Payload Deployed",
-        "description": "Deployment of the payload(s) has been confirmed."
+        "abbrev": "Success",
+        "name": "Launch Successful",
+        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
       },
       "probability": 80,
       "provider": "Rocket Lab",
@@ -45,7 +45,7 @@
     {
       "id": "bbdc4d47-1de3-428e-9fe1-bbf45d9b1e04",
       "name": "Falcon 9 Block 5 | Starlink Group 10-39",
-      "net": "2026-08-21T14:57:00Z",
+      "net": "2026-08-21T15:14:22Z",
       "window_start": "2026-08-21T14:57:00Z",
       "window_end": "2026-08-21T18:57:00Z",
       "status": {
@@ -53,7 +53,7 @@
         "name": "Go for Launch",
         "description": "Current T-0 confirmed by official or reliable sources."
       },
-      "probability": 80,
+      "probability": 85,
       "provider": "SpaceX",
       "rocket": "Falcon 9 Block 5",
       "mission": {
@@ -75,20 +75,20 @@
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
       "webcasts": [
         {
-          "title": "SCRUBBED - SpaceX - Falcon 9 - Starlink 10-39 - SLC-40 - Cape Canaveral SFS - August 20, 2026",
-          "url": "https://www.youtube.com/watch?v=Ju2WywBXlco"
+          "title": "GO! - SpaceX - Falcon 9 - Starlink 10-39 - SLC-40 - Cape Canaveral SFS - Space Affairs Live",
+          "url": "https://www.youtube.com/watch?v=O7AiY8J7iy8"
         },
         {
           "title": "Live: SpaceX Falcon 9 rocket launches 29 Starlink satellites from Cape Canaveral",
-          "url": "https://www.youtube.com/watch?v=c0RiIZtCxEM"
+          "url": "https://www.youtube.com/watch?v=cXMbCrnxOpI"
         },
         {
-          "title": "[SCRUB] SpaceX Launches Falcon 9 Starlink 10-39",
-          "url": "https://www.youtube.com/watch?v=PjtnTIjDUys"
+          "title": "SpaceX Launches Falcon 9 Starlink 10-39 - Second Attempt",
+          "url": "https://www.youtube.com/watch?v=Rp1KdM7_82s"
         },
         {
           "title": "Starlink Mission",
-          "url": "https://x.com/i/broadcasts/1qKDzWPePyaJV"
+          "url": "https://x.com/i/broadcasts/1oKMvNQVqmkGQ"
         }
       ],
       "webcast_live": false
@@ -343,7 +343,12 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_heavy_image_20220129192819.jpeg",
-      "webcasts": [],
+      "webcasts": [
+        {
+          "title": "Roman Space Telescope Mission",
+          "url": "https://x.com/i/broadcasts/1jxXgBanvZeJZ"
+        }
+      ],
       "webcast_live": false
     },
     {
@@ -623,6 +628,45 @@
         {
           "title": "Isar Aerospace Launches \"Onward and Upward\" Mission",
           "url": "https://www.youtube.com/watch?v=uUc2d_NPBN0"
+        }
+      ],
+      "webcast_live": false
+    },
+    {
+      "id": "63181269-b125-4c36-951c-c9bd9bbc4b55",
+      "name": "Falcon 9 Block 5 | Starlink Group 15-23",
+      "net": "2026-09-01T08:01:00Z",
+      "window_start": "2026-09-01T08:01:00Z",
+      "window_end": "2026-09-01T12:01:00Z",
+      "status": {
+        "abbrev": "Go",
+        "name": "Go for Launch",
+        "description": "Current T-0 confirmed by official or reliable sources."
+      },
+      "probability": null,
+      "provider": "SpaceX",
+      "rocket": "Falcon 9 Block 5",
+      "mission": {
+        "name": "Starlink Group 15-23",
+        "description": "A batch of 27 satellites for the Starlink mega-constellation - SpaceX's project for space-based Internet communication system.",
+        "type": "Communications",
+        "orbit": "Low Earth Orbit"
+      },
+      "pad": {
+        "name": "Space Launch Complex 4E",
+        "map_url": "https://www.google.com/maps?q=34.632,-120.611",
+        "latitude": 34.632,
+        "longitude": -120.611,
+        "location": {
+          "name": "Vandenberg SFB, CA, USA",
+          "country_code": "US"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
+      "webcasts": [
+        {
+          "title": "Starlink Mission",
+          "url": "https://x.com/i/broadcasts/1yKAPwXpMlqxb"
         }
       ],
       "webcast_live": false
@@ -1342,6 +1386,40 @@
       "webcast_live": false
     },
     {
+      "id": "3b430f81-0ff1-4d85-8a1a-cef0de326198",
+      "name": "Falcon 9 Block 5 | Bandwagon 5 (Dedicated Mid-Inclination Rideshare)",
+      "net": "2026-10-31T00:00:00Z",
+      "window_start": "2026-10-31T00:00:00Z",
+      "window_end": "2026-10-31T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "SpaceX",
+      "rocket": "Falcon 9 Block 5",
+      "mission": {
+        "name": "Bandwagon 5 (Dedicated Mid-Inclination Rideshare)",
+        "description": "Dedicated rideshare flight to a mid-inclination orbit with dozens of small microsatellites and nanosatellites for commercial and government customers.",
+        "type": "Dedicated Rideshare",
+        "orbit": "Low Earth Orbit"
+      },
+      "pad": {
+        "name": "Space Launch Complex 40",
+        "map_url": "https://www.google.com/maps?q=28.56194122,-80.57735736",
+        "latitude": 28.56194122,
+        "longitude": -80.57735736,
+        "location": {
+          "name": "Cape Canaveral SFS, FL, USA",
+          "country_code": "US"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_20251102082912.jpg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
       "id": "bf2c3027-a314-403e-a416-2bfd5d165ad1",
       "name": "Falcon 9 Block 5 | Dragon CRS-2 SpX-35",
       "net": "2026-10-31T00:00:00Z",
@@ -2018,74 +2096,6 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/spectrum_on_the_image_20250321072643.jpeg",
-      "webcasts": [],
-      "webcast_live": false
-    },
-    {
-      "id": "a67b40f9-cfcc-4614-a355-a156280b4bb3",
-      "name": "Vulcan VC4L | Dream Chaser CRS 2 Flight 1",
-      "net": "2026-12-31T00:00:00Z",
-      "window_start": "2026-12-31T00:00:00Z",
-      "window_end": "2026-12-31T00:00:00Z",
-      "status": {
-        "abbrev": "TBD",
-        "name": "To Be Determined",
-        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
-      },
-      "probability": null,
-      "provider": "United Launch Alliance",
-      "rocket": "Vulcan VC4L",
-      "mission": {
-        "name": "Dream Chaser CRS 2 Flight 1",
-        "description": "First flight of the Dream Chaser Spaceplane, on a free-flying mission in Low Earth Orbit.",
-        "type": "Test Flight",
-        "orbit": "Low Earth Orbit"
-      },
-      "pad": {
-        "name": "Space Launch Complex 41",
-        "map_url": "https://www.google.com/maps?q=28.58341025,-80.58303644",
-        "latitude": 28.58341025,
-        "longitude": -80.58303644,
-        "location": {
-          "name": "Cape Canaveral SFS, FL, USA",
-          "country_code": "US"
-        }
-      },
-      "image": null,
-      "webcasts": [],
-      "webcast_live": false
-    },
-    {
-      "id": "e61d353c-db55-4a57-8184-0fab187231e6",
-      "name": "Falcon 9 Block 5 | Globalstar 2-R Mission 2 (x 9)",
-      "net": "2026-12-31T00:00:00Z",
-      "window_start": "2026-12-31T00:00:00Z",
-      "window_end": "2026-12-31T00:00:00Z",
-      "status": {
-        "abbrev": "TBD",
-        "name": "To Be Determined",
-        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
-      },
-      "probability": null,
-      "provider": "SpaceX",
-      "rocket": "Falcon 9 Block 5",
-      "mission": {
-        "name": "Globalstar 2-R Mission 2 (x 9)",
-        "description": "The Globalstar global mobile communications network offers global, digital real time voice, data and fax services via its Low Earth Orbit satellite constellation. The constellation operates in a 1410 km orbit inclined at 52 degrees.\r\n\r\nIn early 2022, Globalstar contracted with MDA for the construction of 17 new 2nd generation refresh satellites to replenish the existing constellation. Rocket Lab is sub-contracted to build the satellites' buses and the launch dispensers.",
-        "type": "Communications",
-        "orbit": "Low Earth Orbit"
-      },
-      "pad": {
-        "name": "Space Launch Complex 40",
-        "map_url": "https://www.google.com/maps?q=28.56194122,-80.57735736",
-        "latitude": 28.56194122,
-        "longitude": -80.57735736,
-        "location": {
-          "name": "Cape Canaveral SFS, FL, USA",
-          "country_code": "US"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
       "webcasts": [],
       "webcast_live": false
     }
