@@ -1,47 +1,8 @@
 {
-  "generated": "2026-08-21T07:10:07Z",
+  "generated": "2026-08-21T13:13:19Z",
   "sample": false,
   "count": 60,
   "results": [
-    {
-      "id": "57280454-470e-4c5d-8de1-1bbd0ea41b49",
-      "name": "Electron | The Lightning God Defends (iQPS Launch 8)",
-      "net": "2026-08-20T13:04:45Z",
-      "window_start": "2026-08-20T13:04:45Z",
-      "window_end": "2026-08-20T13:04:45Z",
-      "status": {
-        "abbrev": "Success",
-        "name": "Launch Successful",
-        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
-      },
-      "probability": 80,
-      "provider": "Rocket Lab",
-      "rocket": "Electron",
-      "mission": {
-        "name": "The Lightning God Defends (iQPS Launch 8)",
-        "description": "Synthetic aperture radar Earth observation satellite for Japanese Earth imaging company iQPS.",
-        "type": "Earth Science",
-        "orbit": "Low Earth Orbit"
-      },
-      "pad": {
-        "name": "Rocket Lab Launch Complex 1B",
-        "map_url": "https://www.google.com/maps?q=-39.262833,177.864469",
-        "latitude": -39.262833,
-        "longitude": 177.864469,
-        "location": {
-          "name": "Rocket Lab Launch Complex 1, Mahia Peninsula, New Zealand",
-          "country_code": "NZ"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/electron_image_20190705175640.jpeg",
-      "webcasts": [
-        {
-          "title": "Rocket Lab - 'The Lightning God Defends' Launch",
-          "url": "https://www.youtube.com/watch?v=wLc1C15jbgY"
-        }
-      ],
-      "webcast_live": false
-    },
     {
       "id": "bbdc4d47-1de3-428e-9fe1-bbf45d9b1e04",
       "name": "Falcon 9 Block 5 | Starlink Group 10-39",
@@ -2096,6 +2057,40 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/spectrum_on_the_image_20250321072643.jpeg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "a67b40f9-cfcc-4614-a355-a156280b4bb3",
+      "name": "Vulcan VC4L | Dream Chaser CRS 2 Flight 1",
+      "net": "2026-12-31T00:00:00Z",
+      "window_start": "2026-12-31T00:00:00Z",
+      "window_end": "2026-12-31T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "United Launch Alliance",
+      "rocket": "Vulcan VC4L",
+      "mission": {
+        "name": "Dream Chaser CRS 2 Flight 1",
+        "description": "First flight of the Dream Chaser Spaceplane, on a free-flying mission in Low Earth Orbit.",
+        "type": "Test Flight",
+        "orbit": "Low Earth Orbit"
+      },
+      "pad": {
+        "name": "Space Launch Complex 41",
+        "map_url": "https://www.google.com/maps?q=28.58341025,-80.58303644",
+        "latitude": 28.58341025,
+        "longitude": -80.58303644,
+        "location": {
+          "name": "Cape Canaveral SFS, FL, USA",
+          "country_code": "US"
+        }
+      },
+      "image": null,
       "webcasts": [],
       "webcast_live": false
     }
