@@ -1,59 +1,8 @@
 {
-  "generated": "2026-08-22T13:02:51Z",
+  "generated": "2026-08-22T18:51:09Z",
   "sample": false,
   "count": 60,
   "results": [
-    {
-      "id": "bbdc4d47-1de3-428e-9fe1-bbf45d9b1e04",
-      "name": "Falcon 9 Block 5 | Starlink Group 10-39",
-      "net": "2026-08-21T15:14:22Z",
-      "window_start": "2026-08-21T14:57:00Z",
-      "window_end": "2026-08-21T18:57:00Z",
-      "status": {
-        "abbrev": "Success",
-        "name": "Launch Successful",
-        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
-      },
-      "probability": 85,
-      "provider": "SpaceX",
-      "rocket": "Falcon 9 Block 5",
-      "mission": {
-        "name": "Starlink Group 10-39",
-        "description": "A batch of 29 satellites for the Starlink mega-constellation - SpaceX's project for space-based Internet communication system.",
-        "type": "Communications",
-        "orbit": "Low Earth Orbit"
-      },
-      "pad": {
-        "name": "Space Launch Complex 40",
-        "map_url": "https://www.google.com/maps?q=28.56194122,-80.57735736",
-        "latitude": 28.56194122,
-        "longitude": -80.57735736,
-        "location": {
-          "name": "Cape Canaveral SFS, FL, USA",
-          "country_code": "US"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
-      "webcasts": [
-        {
-          "title": "SpaceX Starlink Group 10-39",
-          "url": "https://www.youtube.com/watch?v=1051Kv6YfKM"
-        },
-        {
-          "title": "Live: SpaceX Falcon 9 rocket launches 29 Starlink satellites from Cape Canaveral",
-          "url": "https://www.youtube.com/watch?v=cXMbCrnxOpI"
-        },
-        {
-          "title": "SpaceX Launches Falcon 9 Starlink 10-39 - Second Attempt",
-          "url": "https://www.youtube.com/watch?v=Rp1KdM7_82s"
-        },
-        {
-          "title": "Starlink Mission",
-          "url": "https://x.com/i/broadcasts/1oKMvNQVqmkGQ"
-        }
-      ],
-      "webcast_live": false
-    },
     {
       "id": "6208f972-18ec-490f-bbe5-6f5c6cfcd48c",
       "name": "Falcon 9 Block 5 | Starlink Group 15-20",
@@ -108,9 +57,9 @@
     {
       "id": "9d402fb6-9115-424d-b6f0-bd3b13ee310e",
       "name": "Long March 5 | Chang'e 7",
-      "net": "2026-08-24T00:05:00Z",
-      "window_start": "2026-08-24T00:00:00Z",
-      "window_end": "2026-08-24T01:06:00Z",
+      "net": "2026-08-25T00:30:00Z",
+      "window_start": "2026-08-25T00:24:00Z",
+      "window_end": "2026-08-25T01:32:00Z",
       "status": {
         "abbrev": "Go",
         "name": "Go for Launch",
@@ -2108,6 +2057,40 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/spectrum_on_the_image_20250321072643.jpeg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "a67b40f9-cfcc-4614-a355-a156280b4bb3",
+      "name": "Vulcan VC4L | Dream Chaser CRS 2 Flight 1",
+      "net": "2026-12-31T00:00:00Z",
+      "window_start": "2026-12-31T00:00:00Z",
+      "window_end": "2026-12-31T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "United Launch Alliance",
+      "rocket": "Vulcan VC4L",
+      "mission": {
+        "name": "Dream Chaser CRS 2 Flight 1",
+        "description": "First flight of the Dream Chaser Spaceplane, on a free-flying mission in Low Earth Orbit.",
+        "type": "Test Flight",
+        "orbit": "Low Earth Orbit"
+      },
+      "pad": {
+        "name": "Space Launch Complex 41",
+        "map_url": "https://www.google.com/maps?q=28.58341025,-80.58303644",
+        "latitude": 28.58341025,
+        "longitude": -80.58303644,
+        "location": {
+          "name": "Cape Canaveral SFS, FL, USA",
+          "country_code": "US"
+        }
+      },
+      "image": null,
       "webcasts": [],
       "webcast_live": false
     }
