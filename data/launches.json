@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-22T01:52:40Z",
+  "generated": "2026-08-22T07:01:56Z",
   "sample": false,
   "count": 60,
   "results": [
@@ -57,7 +57,7 @@
     {
       "id": "6208f972-18ec-490f-bbe5-6f5c6cfcd48c",
       "name": "Falcon 9 Block 5 | Starlink Group 15-20",
-      "net": "2026-08-22T07:25:09Z",
+      "net": "2026-08-22T07:25:16Z",
       "window_start": "2026-08-22T07:25:00Z",
       "window_end": "2026-08-22T11:25:00Z",
       "status": {
@@ -91,6 +91,10 @@
           "url": "https://www.youtube.com/watch?v=PE3fVHlNxko"
         },
         {
+          "title": "Live: SpaceX Falcon 9 rocket launches Starlink satellites from the West Coast",
+          "url": "https://www.youtube.com/watch?v=YWa56tU09qk"
+        },
+        {
           "title": "SpaceX Launches Falcon 9 Starlink 15-20",
           "url": "https://www.youtube.com/watch?v=tU2YgT-mEhI"
         },
@@ -99,7 +103,7 @@
           "url": "https://x.com/i/broadcasts/1PKqrNNknkZGb"
         }
       ],
-      "webcast_live": false
+      "webcast_live": true
     },
     {
       "id": "9d402fb6-9115-424d-b6f0-bd3b13ee310e",
