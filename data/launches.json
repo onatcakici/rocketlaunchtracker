@@ -1,59 +1,8 @@
 {
-  "generated": "2026-08-23T07:04:12Z",
+  "generated": "2026-08-23T13:04:10Z",
   "sample": false,
   "count": 60,
   "results": [
-    {
-      "id": "6208f972-18ec-490f-bbe5-6f5c6cfcd48c",
-      "name": "Falcon 9 Block 5 | Starlink Group 15-20",
-      "net": "2026-08-22T07:25:16Z",
-      "window_start": "2026-08-22T07:25:00Z",
-      "window_end": "2026-08-22T11:25:00Z",
-      "status": {
-        "abbrev": "Success",
-        "name": "Launch Successful",
-        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
-      },
-      "probability": null,
-      "provider": "SpaceX",
-      "rocket": "Falcon 9 Block 5",
-      "mission": {
-        "name": "Starlink Group 15-20",
-        "description": "A batch of 27 satellites for the Starlink mega-constellation - SpaceX's project for space-based Internet communication system.",
-        "type": "Communications",
-        "orbit": "Low Earth Orbit"
-      },
-      "pad": {
-        "name": "Space Launch Complex 4E",
-        "map_url": "https://www.google.com/maps?q=34.632,-120.611",
-        "latitude": 34.632,
-        "longitude": -120.611,
-        "location": {
-          "name": "Vandenberg SFB, CA, USA",
-          "country_code": "US"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
-      "webcasts": [
-        {
-          "title": "SpaceX Starlink Group 15-20",
-          "url": "https://www.youtube.com/watch?v=7r0RfmKbr_Q"
-        },
-        {
-          "title": "Live: SpaceX Falcon 9 rocket launches Starlink satellites from the West Coast",
-          "url": "https://www.youtube.com/watch?v=YWa56tU09qk"
-        },
-        {
-          "title": "SpaceX Launches Falcon 9 Starlink 15-20",
-          "url": "https://www.youtube.com/watch?v=tU2YgT-mEhI"
-        },
-        {
-          "title": "Starlink Mission",
-          "url": "https://x.com/i/broadcasts/1PKqrNNknkZGb"
-        }
-      ],
-      "webcast_live": false
-    },
     {
       "id": "9d402fb6-9115-424d-b6f0-bd3b13ee310e",
       "name": "Long March 5 | Chang'e 7",
@@ -2091,6 +2040,40 @@
         }
       },
       "image": null,
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "e61d353c-db55-4a57-8184-0fab187231e6",
+      "name": "Falcon 9 Block 5 | Globalstar 2-R Mission 2 (x 9)",
+      "net": "2026-12-31T00:00:00Z",
+      "window_start": "2026-12-31T00:00:00Z",
+      "window_end": "2026-12-31T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "SpaceX",
+      "rocket": "Falcon 9 Block 5",
+      "mission": {
+        "name": "Globalstar 2-R Mission 2 (x 9)",
+        "description": "The Globalstar global mobile communications network offers global, digital real time voice, data and fax services via its Low Earth Orbit satellite constellation. The constellation operates in a 1410 km orbit inclined at 52 degrees.\r\n\r\nIn early 2022, Globalstar contracted with MDA for the construction of 17 new 2nd generation refresh satellites to replenish the existing constellation. Rocket Lab is sub-contracted to build the satellites' buses and the launch dispensers.",
+        "type": "Communications",
+        "orbit": "Low Earth Orbit"
+      },
+      "pad": {
+        "name": "Space Launch Complex 40",
+        "map_url": "https://www.google.com/maps?q=28.56194122,-80.57735736",
+        "latitude": 28.56194122,
+        "longitude": -80.57735736,
+        "location": {
+          "name": "Cape Canaveral SFS, FL, USA",
+          "country_code": "US"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
       "webcasts": [],
       "webcast_live": false
     }
