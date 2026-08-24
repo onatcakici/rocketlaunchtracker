@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-24T13:15:59Z",
+  "generated": "2026-08-24T19:02:33Z",
   "sample": false,
   "count": 60,
   "results": [
@@ -74,7 +74,7 @@
     {
       "id": "ad501ebd-a357-4305-90c1-c46c6feb2ecf",
       "name": "Falcon 9 Block 5 | Starlink Group 10-49",
-      "net": "2026-08-25T09:33:17Z",
+      "net": "2026-08-25T09:33:38Z",
       "window_start": "2026-08-25T05:49:00Z",
       "window_end": "2026-08-25T09:49:00Z",
       "status": {
@@ -82,7 +82,7 @@
         "name": "Go for Launch",
         "description": "Current T-0 confirmed by official or reliable sources."
       },
-      "probability": null,
+      "probability": 90,
       "provider": "SpaceX",
       "rocket": "Falcon 9 Block 5",
       "mission": {
@@ -103,6 +103,18 @@
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
       "webcasts": [
+        {
+          "title": "GO! - SpaceX - Falcon 9 - Starlink 10-49 - SLC-40 - Cape Canaveral SFS - Space Affairs Live",
+          "url": "https://www.youtube.com/watch?v=6uhVimd_l2s"
+        },
+        {
+          "title": "Live: SpaceX Falcon 9 rocket launches from Cape Canaveral on Starlink mission",
+          "url": "https://www.youtube.com/watch?v=QMm5d54Xrbo"
+        },
+        {
+          "title": "SpaceX Launches Falcon 9 Starlink 10-49",
+          "url": "https://www.youtube.com/watch?v=m5c9Gn5DH0o"
+        },
         {
           "title": "Starlink Mission",
           "url": "https://x.com/i/broadcasts/1AKEmvmQBwgKL"
@@ -356,49 +368,6 @@
       },
       "image": null,
       "webcasts": [],
-      "webcast_live": false
-    },
-    {
-      "id": "1b23eb18-e06e-4058-9b42-e95ca0980511",
-      "name": "Spectrum | Onward and Upward",
-      "net": "2026-08-31T00:00:00Z",
-      "window_start": "2026-08-31T00:00:00Z",
-      "window_end": "2026-08-31T00:00:00Z",
-      "status": {
-        "abbrev": "TBD",
-        "name": "To Be Determined",
-        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
-      },
-      "probability": null,
-      "provider": "Isar Aerospace",
-      "rocket": "Spectrum",
-      "mission": {
-        "name": "Onward and Upward",
-        "description": "Second test flight of the Isar Spectrum launch vehicle. This launch will carry 5 cubesats and 1 non-separable experiment as part of European Space Agency (ESA)'s “Boost!” program:\r\n\r\n* CyBEEsat (TU Berlin)\r\n* TriSat-S (University of Maribor)\r\n* Platform 6 (EnduroSat)\r\n* FramSat-1 (NTNU)\r\n* SpaceTeamSat1 (TU Wien Space Team)\r\n* Let It Go (Dcubed, non-separable experiment)",
-        "type": "Test Flight",
-        "orbit": "Sun-Synchronous Orbit"
-      },
-      "pad": {
-        "name": "Orbital Launch Pad",
-        "map_url": "https://www.google.com/maps?q=69.1084,15.5895",
-        "latitude": 69.1084,
-        "longitude": 15.5895,
-        "location": {
-          "name": "Andøya Spaceport",
-          "country_code": "NO"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/spectrum_on_the_image_20250321072643.jpeg",
-      "webcasts": [
-        {
-          "title": "\"Onward and Upward\" Mission of Isar Aerospace",
-          "url": "https://www.youtube.com/watch?v=Ss1DUqLjecc"
-        },
-        {
-          "title": "Isar Aerospace Launches \"Onward and Upward\" Mission",
-          "url": "https://www.youtube.com/watch?v=uUc2d_NPBN0"
-        }
-      ],
       "webcast_live": false
     },
     {
@@ -783,6 +752,49 @@
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/long_march_5_tj_image_20260612043435.jpg",
       "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "1b23eb18-e06e-4058-9b42-e95ca0980511",
+      "name": "Spectrum | Onward and Upward",
+      "net": "2026-09-30T00:00:00Z",
+      "window_start": "2026-09-30T00:00:00Z",
+      "window_end": "2026-09-30T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "Isar Aerospace",
+      "rocket": "Spectrum",
+      "mission": {
+        "name": "Onward and Upward",
+        "description": "Second test flight of the Isar Spectrum launch vehicle. This launch will carry 5 cubesats and 1 non-separable experiment as part of European Space Agency (ESA)'s “Boost!” program:\r\n\r\n* CyBEEsat (TU Berlin)\r\n* TriSat-S (University of Maribor)\r\n* Platform 6 (EnduroSat)\r\n* FramSat-1 (NTNU)\r\n* SpaceTeamSat1 (TU Wien Space Team)\r\n* Let It Go (Dcubed, non-separable experiment)",
+        "type": "Test Flight",
+        "orbit": "Sun-Synchronous Orbit"
+      },
+      "pad": {
+        "name": "Orbital Launch Pad",
+        "map_url": "https://www.google.com/maps?q=69.1084,15.5895",
+        "latitude": 69.1084,
+        "longitude": 15.5895,
+        "location": {
+          "name": "Andøya Spaceport",
+          "country_code": "NO"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/spectrum_on_the_image_20250321072643.jpeg",
+      "webcasts": [
+        {
+          "title": "\"Onward and Upward\" Mission of Isar Aerospace",
+          "url": "https://www.youtube.com/watch?v=Ss1DUqLjecc"
+        },
+        {
+          "title": "Isar Aerospace Launches \"Onward and Upward\" Mission",
+          "url": "https://www.youtube.com/watch?v=uUc2d_NPBN0"
+        }
+      ],
       "webcast_live": false
     },
     {
