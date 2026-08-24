@@ -1,8 +1,42 @@
 {
-  "generated": "2026-08-24T07:30:43Z",
+  "generated": "2026-08-24T13:15:59Z",
   "sample": false,
   "count": 60,
   "results": [
+    {
+      "id": "458e2e52-87b0-4707-96d8-6899f92e53ee",
+      "name": "Soyuz 2.1b/Fregat | Glonass-K1 No. 19",
+      "net": "2026-08-24T02:40:00Z",
+      "window_start": "2026-08-24T02:40:00Z",
+      "window_end": "2026-08-24T02:40:00Z",
+      "status": {
+        "abbrev": "Success",
+        "name": "Launch Successful",
+        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
+      },
+      "probability": null,
+      "provider": "Russian Space Forces",
+      "rocket": "Soyuz 2.1b Fregat",
+      "mission": {
+        "name": "Glonass-K1 No. 19",
+        "description": "Note: Payload identity not confirmed.\r\n\r\nGlonass-K are the third generation of satellite design for GLONASS satellite navigation system. GLONASS is a Russian space-based navigation system comparable to the similar GPS and Galileo systems. This generation improves on accuracy, power consumption and design life. Each satellite is unpressurized and weighs 935 kg,  and has an operational lifetime of 10 years.",
+        "type": "Navigation",
+        "orbit": "Medium Earth Orbit"
+      },
+      "pad": {
+        "name": "43/3 (43L)",
+        "map_url": "https://www.google.com/maps?q=62.9273,40.45",
+        "latitude": 62.9273,
+        "longitude": 40.45,
+        "location": {
+          "name": "Plesetsk Cosmodrome, Russian Federation",
+          "country_code": "RU"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/soyuz_2.1b_image_20230802085331.jpg",
+      "webcasts": [],
+      "webcast_live": false
+    },
     {
       "id": "48c449c2-3c09-4d36-9c2a-d853b3a39289",
       "name": "Long March 6C | Unknown Payload",
@@ -40,7 +74,7 @@
     {
       "id": "ad501ebd-a357-4305-90c1-c46c6feb2ecf",
       "name": "Falcon 9 Block 5 | Starlink Group 10-49",
-      "net": "2026-08-25T05:49:00Z",
+      "net": "2026-08-25T09:33:17Z",
       "window_start": "2026-08-25T05:49:00Z",
       "window_end": "2026-08-25T09:49:00Z",
       "status": {
@@ -321,40 +355,6 @@
         }
       },
       "image": null,
-      "webcasts": [],
-      "webcast_live": false
-    },
-    {
-      "id": "458e2e52-87b0-4707-96d8-6899f92e53ee",
-      "name": "Soyuz 2.1b/Fregat | Glonass-K1 No. 19",
-      "net": "2026-08-31T00:00:00Z",
-      "window_start": "2026-08-31T00:00:00Z",
-      "window_end": "2026-08-31T00:00:00Z",
-      "status": {
-        "abbrev": "TBD",
-        "name": "To Be Determined",
-        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
-      },
-      "probability": null,
-      "provider": "Russian Space Forces",
-      "rocket": "Soyuz 2.1b Fregat",
-      "mission": {
-        "name": "Glonass-K1 No. 19",
-        "description": "Glonass-K are the third generation of satellite design for GLONASS satellite navigation system. GLONASS is a Russian space-based navigation system comparable to the similar GPS and Galileo systems. This generation improves on accuracy, power consumption and design life. Each satellite is unpressurized and weighs 935 kg,  and has an operational lifetime of 10 years.",
-        "type": "Navigation",
-        "orbit": "Medium Earth Orbit"
-      },
-      "pad": {
-        "name": "Unknown Pad",
-        "map_url": "https://www.google.com/maps?q=62.925556,40.577778",
-        "latitude": 62.925556,
-        "longitude": 40.577778,
-        "location": {
-          "name": "Plesetsk Cosmodrome, Russian Federation",
-          "country_code": "RU"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/soyuz_2.1b_image_20230802085331.jpg",
       "webcasts": [],
       "webcast_live": false
     },
