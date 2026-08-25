@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-25T13:13:36Z",
+  "generated": "2026-08-25T18:59:43Z",
   "sample": false,
   "count": 60,
   "results": [
@@ -78,7 +78,7 @@
           "url": "https://www.youtube.com/watch?v=QMm5d54Xrbo"
         },
         {
-          "title": "SpaceX Launches Falcon 9 Starlink 10-49",
+          "title": "Final Falcon 9 Starlink from Florida: SpaceX Launches Starlink 10-49",
           "url": "https://www.youtube.com/watch?v=m5c9Gn5DH0o"
         },
         {
@@ -91,7 +91,7 @@
     {
       "id": "95653d52-bb77-4860-a815-dd7141778d17",
       "name": "Falcon 9 Block 5 | Starlink Group 15-22",
-      "net": "2026-08-26T09:27:09Z",
+      "net": "2026-08-26T09:34:48Z",
       "window_start": "2026-08-26T09:27:00Z",
       "window_end": "2026-08-26T13:27:00Z",
       "status": {
@@ -123,6 +123,10 @@
         {
           "title": "GO! - SpaceX - Falcon 9 - Starlink 15-22 - SLC-4E - Vandenberg SFB, CA - Space Affairs Live",
           "url": "https://www.youtube.com/watch?v=w6mni2p1Jqc"
+        },
+        {
+          "title": "Live: SpaceX Falcon 9 rocket launches 27 Starlink satellites from Vandenberg, California",
+          "url": "https://www.youtube.com/watch?v=ww3y8y5RLwU"
         },
         {
           "title": "Starlink Mission",
@@ -360,9 +364,9 @@
     {
       "id": "9f5a4cb6-63f9-47e1-9512-b468bae2a8e6",
       "name": "Electron | Owl Around The World (StriX Launch 11)",
-      "net": "2026-08-31T12:00:00Z",
-      "window_start": "2026-08-31T12:00:00Z",
-      "window_end": "2026-08-31T12:00:00Z",
+      "net": "2026-08-31T12:05:00Z",
+      "window_start": "2026-08-31T12:05:00Z",
+      "window_end": "2026-08-31T12:05:00Z",
       "status": {
         "abbrev": "Go",
         "name": "Go for Launch",
