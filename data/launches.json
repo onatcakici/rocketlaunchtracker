@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-24T19:02:33Z",
+  "generated": "2026-08-25T01:54:18Z",
   "sample": false,
   "count": 60,
   "results": [
@@ -228,8 +228,16 @@
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_heavy_image_20220129192819.jpeg",
       "webcasts": [
         {
+          "title": "Nancy Grace Roman Space Telescope Launch",
+          "url": "https://www.youtube.com/watch?v=9wq3VHsL_bE"
+        },
+        {
           "title": "Roman Space Telescope Mission",
           "url": "https://x.com/i/broadcasts/1jxXgBanvZeJZ"
+        },
+        {
+          "title": "Nancy Grace Roman Space Telescope Launch",
+          "url": "https://plus.nasa.gov/scheduled-video/nancy-grace-roman-space-telescope-launch/"
         }
       ],
       "webcast_live": false
