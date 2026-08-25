@@ -1,61 +1,27 @@
 {
-  "generated": "2026-08-25T01:54:18Z",
+  "generated": "2026-08-25T07:10:30Z",
   "sample": false,
   "count": 60,
   "results": [
     {
-      "id": "458e2e52-87b0-4707-96d8-6899f92e53ee",
-      "name": "Soyuz 2.1b/Fregat | Glonass-K1 No. 19",
-      "net": "2026-08-24T02:40:00Z",
-      "window_start": "2026-08-24T02:40:00Z",
-      "window_end": "2026-08-24T02:40:00Z",
+      "id": "48c449c2-3c09-4d36-9c2a-d853b3a39289",
+      "name": "Long March 6C | 7 satellites",
+      "net": "2026-08-25T03:21:00Z",
+      "window_start": "2026-08-25T03:15:00Z",
+      "window_end": "2026-08-25T03:40:00Z",
       "status": {
         "abbrev": "Success",
         "name": "Launch Successful",
         "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
       },
       "probability": null,
-      "provider": "Russian Space Forces",
-      "rocket": "Soyuz 2.1b Fregat",
-      "mission": {
-        "name": "Glonass-K1 No. 19",
-        "description": "Note: Payload identity not confirmed.\r\n\r\nGlonass-K are the third generation of satellite design for GLONASS satellite navigation system. GLONASS is a Russian space-based navigation system comparable to the similar GPS and Galileo systems. This generation improves on accuracy, power consumption and design life. Each satellite is unpressurized and weighs 935 kg,  and has an operational lifetime of 10 years.",
-        "type": "Navigation",
-        "orbit": "Medium Earth Orbit"
-      },
-      "pad": {
-        "name": "43/3 (43L)",
-        "map_url": "https://www.google.com/maps?q=62.9273,40.45",
-        "latitude": 62.9273,
-        "longitude": 40.45,
-        "location": {
-          "name": "Plesetsk Cosmodrome, Russian Federation",
-          "country_code": "RU"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/soyuz_2.1b_image_20230802085331.jpg",
-      "webcasts": [],
-      "webcast_live": false
-    },
-    {
-      "id": "48c449c2-3c09-4d36-9c2a-d853b3a39289",
-      "name": "Long March 6C | Unknown Payload",
-      "net": "2026-08-25T03:20:00Z",
-      "window_start": "2026-08-25T03:15:00Z",
-      "window_end": "2026-08-25T03:40:00Z",
-      "status": {
-        "abbrev": "Go",
-        "name": "Go for Launch",
-        "description": "Current T-0 confirmed by official or reliable sources."
-      },
-      "probability": null,
       "provider": "China Aerospace Science and Technology Corporation",
       "rocket": "Long March 6C",
       "mission": {
-        "name": "Unknown Payload",
-        "description": "Details TBD.",
-        "type": "Unknown",
-        "orbit": "Unknown"
+        "name": "7 satellites",
+        "description": "Share ride of 7 satellites to sun-synchronous orbit, including the ham radio satellite BY70-4.\r\nDetails TBD.",
+        "type": "Technology",
+        "orbit": "Sun-Synchronous Orbit"
       },
       "pad": {
         "name": "Launch Complex 9A",
@@ -192,7 +158,16 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/ariane_62_lifto_image_20240711132056.jpeg",
-      "webcasts": [],
+      "webcasts": [
+        {
+          "title": "Flight VA270 | MTG-I2 | Ariane 6 | Arianespace",
+          "url": "https://www.youtube.com/watch?v=CLTbPdGfMJw"
+        },
+        {
+          "title": "Vol VA270 | MTG-I2 | Ariane 6 | Arianespace",
+          "url": "https://www.youtube.com/watch?v=bEB-VbMwBuY"
+        }
+      ],
       "webcast_live": false
     },
     {
@@ -2094,6 +2069,40 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "c9605b67-8a53-4239-a8ae-577fe3b79799",
+      "name": "Long March 2F/G | Shenzhou 24",
+      "net": "2026-12-31T00:00:00Z",
+      "window_start": "2026-12-31T00:00:00Z",
+      "window_end": "2026-12-31T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "China Aerospace Science and Technology Corporation",
+      "rocket": "Long March 2F/G",
+      "mission": {
+        "name": "Shenzhou 24",
+        "description": "Shenzhou 24 will be the 24th flight of the Shenzhou program.",
+        "type": "Human Exploration",
+        "orbit": "Low Earth Orbit"
+      },
+      "pad": {
+        "name": "Launch Area 91 (SLS-1 / 921)",
+        "map_url": "https://www.google.com/maps?q=40.957893,100.290944",
+        "latitude": 40.957893,
+        "longitude": 100.290944,
+        "location": {
+          "name": "Jiuquan Satellite Launch Center, People's Republic of China",
+          "country_code": "CN"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/shenzhou_22_lau_image_20251129175823.jpg",
       "webcasts": [],
       "webcast_live": false
     }
