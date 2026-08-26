@@ -1,42 +1,8 @@
 {
-  "generated": "2026-08-26T02:02:24Z",
+  "generated": "2026-08-26T07:10:47Z",
   "sample": false,
   "count": 60,
   "results": [
-    {
-      "id": "48c449c2-3c09-4d36-9c2a-d853b3a39289",
-      "name": "Long March 6C | 7 satellites",
-      "net": "2026-08-25T03:21:00Z",
-      "window_start": "2026-08-25T03:15:00Z",
-      "window_end": "2026-08-25T03:40:00Z",
-      "status": {
-        "abbrev": "Success",
-        "name": "Launch Successful",
-        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
-      },
-      "probability": null,
-      "provider": "China Aerospace Science and Technology Corporation",
-      "rocket": "Long March 6C",
-      "mission": {
-        "name": "7 satellites",
-        "description": "Share ride of 7 satellites to sun-synchronous orbit, including the ham radio satellite BY70-4.\r\nDetails TBD.",
-        "type": "Technology",
-        "orbit": "Sun-Synchronous Orbit"
-      },
-      "pad": {
-        "name": "Launch Complex 9A",
-        "map_url": "https://www.google.com/maps?q=38.8583,111.5802",
-        "latitude": 38.8583,
-        "longitude": 111.5802,
-        "location": {
-          "name": "Taiyuan Satellite Launch Center, People's Republic of China",
-          "country_code": "CN"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/cz-6c_on_the_la_image_20240507065151.jpg",
-      "webcasts": [],
-      "webcast_live": false
-    },
     {
       "id": "ad501ebd-a357-4305-90c1-c46c6feb2ecf",
       "name": "Falcon 9 Block 5 | Starlink Group 10-49",
@@ -2111,6 +2077,40 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/spectrum_on_the_image_20250321072643.jpeg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "22e117bf-041c-49d5-9d09-7b180036e143",
+      "name": "Ariane 62 | Metop-SG B1",
+      "net": "2026-12-31T00:00:00Z",
+      "window_start": "2026-12-31T00:00:00Z",
+      "window_end": "2026-12-31T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "Arianespace",
+      "rocket": "Ariane 62",
+      "mission": {
+        "name": "Metop-SG B1",
+        "description": "Second of EUMETSAT's second generation of Metop weather satellites.",
+        "type": "Earth Science",
+        "orbit": "Sun-Synchronous Orbit"
+      },
+      "pad": {
+        "name": "Ariane Launch Area 4",
+        "map_url": "https://www.google.com/maps?q=5.256319,-52.786838",
+        "latitude": 5.256319,
+        "longitude": -52.786838,
+        "location": {
+          "name": "Guiana Space Centre, French Guiana",
+          "country_code": "GF"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/ariane_62_lifto_image_20240711132056.jpeg",
       "webcasts": [],
       "webcast_live": false
     }
