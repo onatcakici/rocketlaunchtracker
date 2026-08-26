@@ -1,59 +1,8 @@
 {
-  "generated": "2026-08-26T07:10:47Z",
+  "generated": "2026-08-26T13:18:49Z",
   "sample": false,
   "count": 60,
   "results": [
-    {
-      "id": "ad501ebd-a357-4305-90c1-c46c6feb2ecf",
-      "name": "Falcon 9 Block 5 | Starlink Group 10-49",
-      "net": "2026-08-25T09:33:38Z",
-      "window_start": "2026-08-25T05:49:00Z",
-      "window_end": "2026-08-25T09:49:00Z",
-      "status": {
-        "abbrev": "Success",
-        "name": "Launch Successful",
-        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
-      },
-      "probability": 90,
-      "provider": "SpaceX",
-      "rocket": "Falcon 9 Block 5",
-      "mission": {
-        "name": "Starlink Group 10-49",
-        "description": "A batch of 29 satellites for the Starlink mega-constellation - SpaceX's project for space-based Internet communication system.",
-        "type": "Communications",
-        "orbit": "Low Earth Orbit"
-      },
-      "pad": {
-        "name": "Space Launch Complex 40",
-        "map_url": "https://www.google.com/maps?q=28.56194122,-80.57735736",
-        "latitude": 28.56194122,
-        "longitude": -80.57735736,
-        "location": {
-          "name": "Cape Canaveral SFS, FL, USA",
-          "country_code": "US"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
-      "webcasts": [
-        {
-          "title": "SpaceX Starlink Group 10-49",
-          "url": "https://www.youtube.com/watch?v=iXcAJQ5r0jI"
-        },
-        {
-          "title": "Live: SpaceX Falcon 9 rocket launches from Cape Canaveral on Starlink mission",
-          "url": "https://www.youtube.com/watch?v=QMm5d54Xrbo"
-        },
-        {
-          "title": "Final Falcon 9 Starlink from Florida: SpaceX Launches Starlink 10-49",
-          "url": "https://www.youtube.com/watch?v=m5c9Gn5DH0o"
-        },
-        {
-          "title": "Starlink Mission",
-          "url": "https://x.com/i/broadcasts/1AKEmvmQBwgKL"
-        }
-      ],
-      "webcast_live": false
-    },
     {
       "id": "95653d52-bb77-4860-a815-dd7141778d17",
       "name": "Falcon 9 Block 5 | Starlink Group 15-22",
@@ -61,9 +10,9 @@
       "window_start": "2026-08-26T09:27:00Z",
       "window_end": "2026-08-26T13:27:00Z",
       "status": {
-        "abbrev": "Go",
-        "name": "Go for Launch",
-        "description": "Current T-0 confirmed by official or reliable sources."
+        "abbrev": "Success",
+        "name": "Launch Successful",
+        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
       },
       "probability": null,
       "provider": "SpaceX",
@@ -87,8 +36,8 @@
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
       "webcasts": [
         {
-          "title": "GO! - SpaceX - Falcon 9 - Starlink 15-22 - SLC-4E - Vandenberg SFB, CA - Space Affairs Live",
-          "url": "https://www.youtube.com/watch?v=w6mni2p1Jqc"
+          "title": "SpaceX Starlink Group 15-22",
+          "url": "https://www.youtube.com/watch?v=ZUSimYVey_c"
         },
         {
           "title": "Live: SpaceX Falcon 9 rocket launches 27 Starlink satellites from Vandenberg, California",
@@ -256,40 +205,6 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/long_march_12a__image_20251224005749.jpg",
-      "webcasts": [],
-      "webcast_live": false
-    },
-    {
-      "id": "9e27a1ed-e81a-4918-b32b-0380cf3a9f8f",
-      "name": "Mir | Demo Flight",
-      "net": "2026-08-31T00:00:00Z",
-      "window_start": "2026-08-31T00:00:00Z",
-      "window_end": "2026-08-31T00:00:00Z",
-      "status": {
-        "abbrev": "TBD",
-        "name": "To Be Determined",
-        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
-      },
-      "probability": null,
-      "provider": "Agency for Defense Development",
-      "rocket": "Mir",
-      "mission": {
-        "name": "Demo Flight",
-        "description": "Note: Launch vehicle name is provisional.\r\n\r\nFirst orbital full version launch of the South Korean military small satellite launch vehicle, after 2 sub-orbital tests of individual stages on 30 March and 30 December 2022, and 1 orbital test flight without the 2nd stage on 4 December 2023. Details TBD.",
-        "type": "Test Flight",
-        "orbit": "Low Earth Orbit"
-      },
-      "pad": {
-        "name": "ADD Offshore launch platform",
-        "map_url": null,
-        "latitude": 33.216667,
-        "longitude": 126.366667,
-        "location": {
-          "name": "Sea Launch",
-          "country_code": "??"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/south2520korea_image_20231204145331.png",
       "webcasts": [],
       "webcast_live": false
     },
@@ -2111,6 +2026,74 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/ariane_62_lifto_image_20240711132056.jpeg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "b78857c4-3b8d-4462-929e-bc76f39c0e6d",
+      "name": "Ariane 64 | GO-1",
+      "net": "2026-12-31T00:00:00Z",
+      "window_start": "2026-12-31T00:00:00Z",
+      "window_end": "2026-12-31T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "Arianespace",
+      "rocket": "Ariane 64",
+      "mission": {
+        "name": null,
+        "description": null,
+        "type": null,
+        "orbit": null
+      },
+      "pad": {
+        "name": "Ariane Launch Area 4",
+        "map_url": "https://www.google.com/maps?q=5.256319,-52.786838",
+        "latitude": 5.256319,
+        "longitude": -52.786838,
+        "location": {
+          "name": "Guiana Space Centre, French Guiana",
+          "country_code": "GF"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/ariane_64_lifto_image_20260213070745.jpg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "3ac1bd74-bf9a-4afe-ae00-3e1d180142dd",
+      "name": "Astra Rocket 4 | Maiden Flight",
+      "net": "2026-12-31T00:00:00Z",
+      "window_start": "2026-12-31T00:00:00Z",
+      "window_end": "2026-12-31T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "Astra Space",
+      "rocket": "Astra Rocket 4",
+      "mission": {
+        "name": "Maiden Flight",
+        "description": "First flight of Astra Space's second generation small satellite launch vehicle.",
+        "type": "Test Flight",
+        "orbit": "Low Earth Orbit"
+      },
+      "pad": {
+        "name": "Launch Complex 48",
+        "map_url": "https://www.google.com/maps?q=28.5990626125553,-80.60428186",
+        "latitude": 28.5990626125553,
+        "longitude": -80.60428186,
+        "location": {
+          "name": "Kennedy Space Center, FL, USA",
+          "country_code": "US"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/astra_rocket_4_image_20250918165934.jpg",
       "webcasts": [],
       "webcast_live": false
     }
