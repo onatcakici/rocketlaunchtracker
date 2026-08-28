@@ -1,59 +1,8 @@
 {
-  "generated": "2026-08-28T11:28:46Z",
+  "generated": "2026-08-28T22:25:19Z",
   "sample": false,
   "count": 60,
   "results": [
-    {
-      "id": "a57aed97-b94f-42e1-905e-9421dbd96ac8",
-      "name": "Ariane 62 | MTG-I2",
-      "net": "2026-08-27T20:11:00Z",
-      "window_start": "2026-08-27T20:10:00Z",
-      "window_end": "2026-08-27T22:40:00Z",
-      "status": {
-        "abbrev": "Success",
-        "name": "Launch Successful",
-        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
-      },
-      "probability": null,
-      "provider": "Arianespace",
-      "rocket": "Ariane 62",
-      "mission": {
-        "name": "MTG-I2",
-        "description": "Third of EUMETSAT's third generation of weather satellite.",
-        "type": "Earth Science",
-        "orbit": "Geostationary Transfer Orbit"
-      },
-      "pad": {
-        "name": "Ariane Launch Area 4",
-        "map_url": "https://www.google.com/maps?q=5.256319,-52.786838",
-        "latitude": 5.256319,
-        "longitude": -52.786838,
-        "location": {
-          "name": "Guiana Space Centre, French Guiana",
-          "country_code": "GF"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/ariane_62_lifto_image_20240711132056.jpeg",
-      "webcasts": [
-        {
-          "title": "Flight VA270 | MTG-I2 | Ariane 6 | Arianespace",
-          "url": "https://www.youtube.com/watch?v=CLTbPdGfMJw"
-        },
-        {
-          "title": "Vol VA270 | MTG-I2 | Ariane 6 | Arianespace",
-          "url": "https://www.youtube.com/watch?v=bEB-VbMwBuY"
-        },
-        {
-          "title": "MTG-I2 launch (Official broadcast)",
-          "url": "https://www.youtube.com/watch?v=vzytcrGSqUU"
-        },
-        {
-          "title": "Ariane 6 launches MTG-I2 Weather Satellite for EUMETSAT",
-          "url": "https://www.youtube.com/watch?v=eF4s2Zga3uw"
-        }
-      ],
-      "webcast_live": false
-    },
     {
       "id": "521f3a1c-f977-4306-9b7f-495858719adf",
       "name": "Falcon Heavy | Nancy Grace Roman Space Telescope",
@@ -65,7 +14,7 @@
         "name": "Go for Launch",
         "description": "Current T-0 confirmed by official or reliable sources."
       },
-      "probability": null,
+      "probability": 60,
       "provider": "SpaceX",
       "rocket": "Falcon Heavy",
       "mission": {
@@ -99,40 +48,6 @@
           "url": "https://plus.nasa.gov/scheduled-video/nancy-grace-roman-space-telescope-launch/"
         }
       ],
-      "webcast_live": false
-    },
-    {
-      "id": "ab3c1e6c-03fe-48a7-b6ce-30c79569bdfb",
-      "name": "Angara 1.2 | Kosmos (Unknown Payload)",
-      "net": "2026-08-31T00:00:00Z",
-      "window_start": "2026-08-31T00:00:00Z",
-      "window_end": "2026-08-31T00:00:00Z",
-      "status": {
-        "abbrev": "TBD",
-        "name": "To Be Determined",
-        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
-      },
-      "probability": null,
-      "provider": "Russian Space Forces",
-      "rocket": "Angara 1.2",
-      "mission": {
-        "name": "Kosmos (Unknown Payload)",
-        "description": "Unknown classified satellite(s) for the Russian military.",
-        "type": "Government/Top Secret",
-        "orbit": "Unknown"
-      },
-      "pad": {
-        "name": "35/1",
-        "map_url": "https://www.google.com/maps?q=62.927319,40.574897",
-        "latitude": 62.927319,
-        "longitude": 40.574897,
-        "location": {
-          "name": "Plesetsk Cosmodrome, Russian Federation",
-          "country_code": "RU"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/angara25201.2_image_20190224012254.jpeg",
-      "webcasts": [],
       "webcast_live": false
     },
     {
@@ -322,9 +237,9 @@
     {
       "id": "153ef8ef-b12b-43f4-a4bf-05b225c0cd37",
       "name": "Falcon 9 Block 5 | Starlink Group 15-24",
-      "net": "2026-09-05T11:13:00Z",
-      "window_start": "2026-09-05T11:13:00Z",
-      "window_end": "2026-09-05T15:13:00Z",
+      "net": "2026-09-06T10:59:00Z",
+      "window_start": "2026-09-06T10:59:00Z",
+      "window_end": "2026-09-06T14:59:00Z",
       "status": {
         "abbrev": "Go",
         "name": "Go for Launch",
@@ -1957,6 +1872,40 @@
       "webcast_live": false
     },
     {
+      "id": "ab3c1e6c-03fe-48a7-b6ce-30c79569bdfb",
+      "name": "Angara 1.2 | Kosmos (Unknown Payload)",
+      "net": "2026-12-31T00:00:00Z",
+      "window_start": "2026-12-31T00:00:00Z",
+      "window_end": "2026-12-31T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "Russian Space Forces",
+      "rocket": "Angara 1.2",
+      "mission": {
+        "name": "Kosmos (Unknown Payload)",
+        "description": "Unknown classified satellite(s) for the Russian military.",
+        "type": "Government/Top Secret",
+        "orbit": "Unknown"
+      },
+      "pad": {
+        "name": "35/1",
+        "map_url": "https://www.google.com/maps?q=62.927319,40.574897",
+        "latitude": 62.927319,
+        "longitude": 40.574897,
+        "location": {
+          "name": "Plesetsk Cosmodrome, Russian Federation",
+          "country_code": "RU"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/angara25201.2_image_20190224012254.jpeg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
       "id": "22e117bf-041c-49d5-9d09-7b180036e143",
       "name": "Ariane 62 | Metop-SG B1",
       "net": "2026-12-31T00:00:00Z",
@@ -2089,6 +2038,40 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/atlas_v_n22_image_20210813082339.jpeg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "5aa3575e-f3ff-48ec-969f-e7e4c669f866",
+      "name": "Electron | BlackSky Gen-3 7",
+      "net": "2026-12-31T00:00:00Z",
+      "window_start": "2026-12-31T00:00:00Z",
+      "window_end": "2026-12-31T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "Rocket Lab",
+      "rocket": "Electron",
+      "mission": {
+        "name": "BlackSky Gen-3 7",
+        "description": "BlackSky Gen-3 Earth-imaging satellites",
+        "type": "Earth Science",
+        "orbit": "Low Earth Orbit"
+      },
+      "pad": {
+        "name": "Unknown Pad",
+        "map_url": null,
+        "latitude": -39.260881,
+        "longitude": 177.865826,
+        "location": {
+          "name": "Rocket Lab Launch Complex 1, Mahia Peninsula, New Zealand",
+          "country_code": "NZ"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/electron_image_20190705175640.jpeg",
       "webcasts": [],
       "webcast_live": false
     }
