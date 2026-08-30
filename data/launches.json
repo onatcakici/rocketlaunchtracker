@@ -1,20 +1,20 @@
 {
-  "generated": "2026-08-30T05:29:14Z",
+  "generated": "2026-08-30T11:58:18Z",
   "sample": false,
   "count": 60,
   "results": [
     {
       "id": "521f3a1c-f977-4306-9b7f-495858719adf",
       "name": "Falcon Heavy | Nancy Grace Roman Space Telescope",
-      "net": "2026-08-30T11:25:49Z",
+      "net": "2026-08-30T11:26:04Z",
       "window_start": "2026-08-30T11:25:49Z",
       "window_end": "2026-08-30T11:26:19Z",
       "status": {
-        "abbrev": "Go",
-        "name": "Go for Launch",
-        "description": "Current T-0 confirmed by official or reliable sources."
+        "abbrev": "In Flight",
+        "name": "Launch in Flight",
+        "description": "The launch vehicle has lifted off from the launchpad."
       },
-      "probability": 50,
+      "probability": 70,
       "provider": "SpaceX",
       "rocket": "Falcon Heavy",
       "mission": {
@@ -33,7 +33,7 @@
           "country_code": "US"
         }
       },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_heavy_image_20220129192819.jpeg",
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_heavy_on_image_20260830111425.jpeg",
       "webcasts": [
         {
           "title": "Nancy Grace Roman Space Telescope Launch",
@@ -48,7 +48,7 @@
           "url": "https://plus.nasa.gov/scheduled-video/nancy-grace-roman-space-telescope-launch/"
         }
       ],
-      "webcast_live": false
+      "webcast_live": true
     },
     {
       "id": "9f5a4cb6-63f9-47e1-9512-b468bae2a8e6",
