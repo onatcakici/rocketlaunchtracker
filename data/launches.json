@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-31T22:53:50Z",
+  "generated": "2026-09-01T05:15:41Z",
   "sample": false,
   "count": 60,
   "results": [
@@ -10,18 +10,18 @@
       "window_start": "2026-09-01T01:52:00Z",
       "window_end": "2026-09-01T04:09:00Z",
       "status": {
-        "abbrev": "Go",
-        "name": "Go for Launch",
-        "description": "Current T-0 confirmed by official or reliable sources."
+        "abbrev": "Success",
+        "name": "Launch Successful",
+        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
       },
       "probability": null,
       "provider": "Galactic Energy",
       "rocket": "Pallas-1",
       "mission": {
         "name": "Demo Flight",
-        "description": "First test launch of Galactic Energy’s Pallas-1 rocket.",
+        "description": "First test launch of Galactic Energy’s Pallas-1 rocket, with a dummy payload on board.",
         "type": "Test Flight",
-        "orbit": "Unknown"
+        "orbit": "Sun-Synchronous Orbit"
       },
       "pad": {
         "name": "Pallas-1 Launch Pad",
@@ -33,7 +33,7 @@
           "country_code": "CN"
         }
       },
-      "image": null,
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/pallas-1_y1_image_20260901030251.jpg",
       "webcasts": [],
       "webcast_live": false
     },
