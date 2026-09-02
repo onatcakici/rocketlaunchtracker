@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-02T11:24:05Z",
+  "generated": "2026-09-02T16:38:03Z",
   "sample": false,
   "count": 60,
   "results": [
@@ -61,9 +61,9 @@
       "window_start": "2026-09-02T11:12:00Z",
       "window_end": "2026-09-02T12:01:00Z",
       "status": {
-        "abbrev": "Go",
-        "name": "Go for Launch",
-        "description": "Current T-0 confirmed by official or reliable sources."
+        "abbrev": "Success",
+        "name": "Launch Successful",
+        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
       },
       "probability": 70,
       "provider": "Rocket Lab",
@@ -91,7 +91,7 @@
           "url": "https://www.youtube.com/watch?v=oLovbBQFxI8"
         }
       ],
-      "webcast_live": true
+      "webcast_live": false
     },
     {
       "id": "17d0ec68-f466-4916-9dc5-16123eda6484",
@@ -212,6 +212,40 @@
           "url": "https://x.com/i/broadcasts/1NxaroyrEngKj"
         }
       ],
+      "webcast_live": false
+    },
+    {
+      "id": "95eb9265-bdbe-43ad-b08c-6be7eb4e58f4",
+      "name": "Long March 2D/YZ-3 | Unknown Payload",
+      "net": "2026-09-09T09:00:00Z",
+      "window_start": "2026-09-09T08:52:00Z",
+      "window_end": "2026-09-09T09:13:00Z",
+      "status": {
+        "abbrev": "Go",
+        "name": "Go for Launch",
+        "description": "Current T-0 confirmed by official or reliable sources."
+      },
+      "probability": null,
+      "provider": "China Aerospace Science and Technology Corporation",
+      "rocket": "Long March 2D/YZ-3",
+      "mission": {
+        "name": "Unknown Payload",
+        "description": "Details TBD.",
+        "type": "Unknown",
+        "orbit": "Unknown"
+      },
+      "pad": {
+        "name": "Launch Area 94 (SLS-2 / 603)",
+        "map_url": "https://www.google.com/maps?q=40.960482,100.298059",
+        "latitude": 40.960482,
+        "longitude": 100.298059,
+        "location": {
+          "name": "Jiuquan Satellite Launch Center, People's Republic of China",
+          "country_code": "CN"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/long_march_2d2_image_20231123203521.jpeg",
+      "webcasts": [],
       "webcast_live": false
     },
     {
@@ -2032,40 +2066,6 @@
       "rocket": "Electron",
       "mission": {
         "name": "BlackSky Gen-3 7",
-        "description": "BlackSky Gen-3 Earth-imaging satellites",
-        "type": "Earth Science",
-        "orbit": "Low Earth Orbit"
-      },
-      "pad": {
-        "name": "Unknown Pad",
-        "map_url": null,
-        "latitude": -39.260881,
-        "longitude": 177.865826,
-        "location": {
-          "name": "Rocket Lab Launch Complex 1, Mahia Peninsula, New Zealand",
-          "country_code": "NZ"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/electron_image_20190705175640.jpeg",
-      "webcasts": [],
-      "webcast_live": false
-    },
-    {
-      "id": "280fba47-8e6e-4a4f-8bdd-b9687d99a9c5",
-      "name": "Electron | BlackSky Gen-3 8",
-      "net": "2026-12-31T00:00:00Z",
-      "window_start": "2026-12-31T00:00:00Z",
-      "window_end": "2026-12-31T00:00:00Z",
-      "status": {
-        "abbrev": "TBD",
-        "name": "To Be Determined",
-        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
-      },
-      "probability": null,
-      "provider": "Rocket Lab",
-      "rocket": "Electron",
-      "mission": {
-        "name": "BlackSky Gen-3 8",
         "description": "BlackSky Gen-3 Earth-imaging satellites",
         "type": "Earth Science",
         "orbit": "Low Earth Orbit"
