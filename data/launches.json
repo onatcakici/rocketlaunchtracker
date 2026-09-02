@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-02T16:38:03Z",
+  "generated": "2026-09-02T21:06:56Z",
   "sample": false,
   "count": 60,
   "results": [
@@ -284,21 +284,21 @@
     },
     {
       "id": "3e0456da-14b1-4ac3-b59e-35fefb1d1530",
-      "name": "Falcon 9 Block 5 | USSF-xxx (\"R-2\")",
+      "name": "Falcon 9 Block 5 | USSF-153",
       "net": "2026-09-10T15:37:00Z",
       "window_start": "2026-09-10T15:37:00Z",
-      "window_end": "2026-09-10T19:20:00Z",
+      "window_end": "2026-09-10T18:37:00Z",
       "status": {
-        "abbrev": "TBC",
-        "name": "To Be Confirmed",
-        "description": "Awaiting official confirmation - current date is known with some certainty."
+        "abbrev": "Go",
+        "name": "Go for Launch",
+        "description": "Current T-0 confirmed by official or reliable sources."
       },
       "probability": null,
       "provider": "SpaceX",
       "rocket": "Falcon 9 Block 5",
       "mission": {
-        "name": "USSF-xxx (\"R-2\")",
-        "description": "Note: Actual USSF launch mission number to be confirmed.\r\n\r\nClassified mission for the United States Space Force. It is possibly a batch of classified LEO satellites for a US government entity based on SpaceX’s Starshield satellite bus, based on locations of rocket stage drop zones being exact fits with previous Starlink Group 15 launches.",
+        "name": "USSF-153",
+        "description": "USSF-153 is a classified mission for the United States Space Force. It is possibly a batch of classified LEO satellites for a US government entity based on SpaceX’s Starshield satellite bus, based on locations of rocket stage drop zones being exact fits with previous Starlink Group 15 launches.",
         "type": "Government/Top Secret",
         "orbit": "Low Earth Orbit"
       },
@@ -313,7 +313,12 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_20260816171423.jpg",
-      "webcasts": [],
+      "webcasts": [
+        {
+          "title": "USSF-153 Mission",
+          "url": "https://x.com/i/broadcasts/1nxnRBWejLOxO"
+        }
+      ],
       "webcast_live": false
     },
     {
