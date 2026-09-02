@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-02T04:40:53Z",
+  "generated": "2026-09-02T11:24:05Z",
   "sample": false,
   "count": 60,
   "results": [
@@ -10,9 +10,9 @@
       "window_start": "2026-09-02T07:46:00Z",
       "window_end": "2026-09-02T11:46:00Z",
       "status": {
-        "abbrev": "Go",
-        "name": "Go for Launch",
-        "description": "Current T-0 confirmed by official or reliable sources."
+        "abbrev": "Success",
+        "name": "Launch Successful",
+        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
       },
       "probability": null,
       "provider": "SpaceX",
@@ -36,8 +36,8 @@
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
       "webcasts": [
         {
-          "title": "GO! - SpaceX - Falcon 9 - Starlink 15-23 - SLC-4E - Vandenberg SFB, CA - Space Affairs Live",
-          "url": "https://www.youtube.com/watch?v=C2M8CpEjHJk"
+          "title": "SpaceX Starlink Group 15-23",
+          "url": "https://www.youtube.com/watch?v=d-uqfWcK6no"
         },
         {
           "title": "Live: SpaceX Falcon 9 rocket from West Coast with 27 satellites for Starlink internet service",
@@ -57,15 +57,15 @@
     {
       "id": "9f5a4cb6-63f9-47e1-9512-b468bae2a8e6",
       "name": "Electron | Owl Around The World (StriX Launch 11)",
-      "net": "2026-09-02T11:11:00Z",
-      "window_start": "2026-09-02T11:11:00Z",
-      "window_end": "2026-09-02T11:11:00Z",
+      "net": "2026-09-02T12:01:00Z",
+      "window_start": "2026-09-02T11:12:00Z",
+      "window_end": "2026-09-02T12:01:00Z",
       "status": {
         "abbrev": "Go",
         "name": "Go for Launch",
         "description": "Current T-0 confirmed by official or reliable sources."
       },
-      "probability": null,
+      "probability": 70,
       "provider": "Rocket Lab",
       "rocket": "Electron",
       "mission": {
@@ -75,10 +75,10 @@
         "orbit": "Low Earth Orbit"
       },
       "pad": {
-        "name": "Unknown Pad",
-        "map_url": null,
-        "latitude": -39.260881,
-        "longitude": 177.865826,
+        "name": "Rocket Lab Launch Complex 1B",
+        "map_url": "https://www.google.com/maps?q=-39.262833,177.864469",
+        "latitude": -39.262833,
+        "longitude": 177.864469,
         "location": {
           "name": "Rocket Lab Launch Complex 1, Mahia Peninsula, New Zealand",
           "country_code": "NZ"
@@ -91,7 +91,7 @@
           "url": "https://www.youtube.com/watch?v=oLovbBQFxI8"
         }
       ],
-      "webcast_live": false
+      "webcast_live": true
     },
     {
       "id": "17d0ec68-f466-4916-9dc5-16123eda6484",
