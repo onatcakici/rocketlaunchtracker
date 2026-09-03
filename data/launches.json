@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-03T16:29:59Z",
+  "generated": "2026-09-03T21:05:37Z",
   "sample": false,
   "count": 60,
   "results": [
@@ -40,7 +40,7 @@
           "url": "https://www.youtube.com/watch?v=Q9OdYc3KpEw"
         }
       ],
-      "webcast_live": false
+      "webcast_live": true
     },
     {
       "id": "1b23eb18-e06e-4058-9b42-e95ca0980511",
@@ -189,7 +189,12 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/soyuz_2.1b_image_20230802085331.jpg",
-      "webcasts": [],
+      "webcasts": [
+        {
+          "title": "Progress 96 Cargo Ship Launch",
+          "url": "https://plus.nasa.gov/scheduled-video/progress-96-cargo-ship-launch/"
+        }
+      ],
       "webcast_live": false
     },
     {
