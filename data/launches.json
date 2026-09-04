@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-03T21:05:37Z",
+  "generated": "2026-09-04T04:39:06Z",
   "sample": false,
   "count": 60,
   "results": [
@@ -10,9 +10,9 @@
       "window_start": "2026-09-03T21:00:00Z",
       "window_end": "2026-09-04T01:00:00Z",
       "status": {
-        "abbrev": "Go",
-        "name": "Go for Launch",
-        "description": "Current T-0 confirmed by official or reliable sources."
+        "abbrev": "Success",
+        "name": "Launch Successful",
+        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
       },
       "probability": null,
       "provider": "Indian Space Research Organization",
@@ -40,7 +40,7 @@
           "url": "https://www.youtube.com/watch?v=Q9OdYc3KpEw"
         }
       ],
-      "webcast_live": true
+      "webcast_live": false
     },
     {
       "id": "1b23eb18-e06e-4058-9b42-e95ca0980511",
@@ -73,16 +73,7 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/spectrum_on_the_image_20250321072643.jpeg",
-      "webcasts": [
-        {
-          "title": "\"Onward and Upward\" Mission of Isar Aerospace",
-          "url": "https://www.youtube.com/watch?v=Ss1DUqLjecc"
-        },
-        {
-          "title": "Isar Aerospace Launches \"Onward and Upward\" Mission",
-          "url": "https://www.youtube.com/watch?v=uUc2d_NPBN0"
-        }
-      ],
+      "webcasts": [],
       "webcast_live": false
     },
     {
