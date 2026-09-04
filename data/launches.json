@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-04T11:23:54Z",
+  "generated": "2026-09-04T16:25:31Z",
   "sample": false,
   "count": 60,
   "results": [
@@ -45,9 +45,9 @@
     {
       "id": "1b23eb18-e06e-4058-9b42-e95ca0980511",
       "name": "Spectrum | Onward and Upward",
-      "net": "2026-09-04T20:00:00Z",
-      "window_start": "2026-09-04T20:00:00Z",
-      "window_end": "2026-09-04T21:00:00Z",
+      "net": "2026-09-05T20:00:00Z",
+      "window_start": "2026-09-05T20:00:00Z",
+      "window_end": "2026-09-05T21:00:00Z",
       "status": {
         "abbrev": "TBC",
         "name": "To Be Confirmed",
