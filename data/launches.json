@@ -1,18 +1,18 @@
 {
-  "generated": "2026-09-05T15:18:01Z",
+  "generated": "2026-09-05T20:26:16Z",
   "sample": false,
   "count": 60,
   "results": [
     {
       "id": "1b23eb18-e06e-4058-9b42-e95ca0980511",
       "name": "Spectrum | Onward and Upward",
-      "net": "2026-09-05T20:00:00Z",
+      "net": "2026-09-05T20:12:00Z",
       "window_start": "2026-09-05T20:00:00Z",
       "window_end": "2026-09-05T21:00:00Z",
       "status": {
-        "abbrev": "Go",
-        "name": "Go for Launch",
-        "description": "Current T-0 confirmed by official or reliable sources."
+        "abbrev": "In Flight",
+        "name": "Launch in Flight",
+        "description": "The launch vehicle has lifted off from the launchpad."
       },
       "probability": null,
       "provider": "Isar Aerospace",
@@ -44,7 +44,7 @@
           "url": "https://www.youtube.com/watch?v=uUc2d_NPBN0"
         }
       ],
-      "webcast_live": false
+      "webcast_live": true
     },
     {
       "id": "153ef8ef-b12b-43f4-a4bf-05b225c0cd37",
