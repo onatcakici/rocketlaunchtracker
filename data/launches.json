@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-05T10:40:35Z",
+  "generated": "2026-09-05T15:18:01Z",
   "sample": false,
   "count": 60,
   "results": [
@@ -10,9 +10,9 @@
       "window_start": "2026-09-05T20:00:00Z",
       "window_end": "2026-09-05T21:00:00Z",
       "status": {
-        "abbrev": "TBC",
-        "name": "To Be Confirmed",
-        "description": "Awaiting official confirmation - current date is known with some certainty."
+        "abbrev": "Go",
+        "name": "Go for Launch",
+        "description": "Current T-0 confirmed by official or reliable sources."
       },
       "probability": null,
       "provider": "Isar Aerospace",
@@ -34,7 +34,16 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/spectrum_on_the_image_20250321072643.jpeg",
-      "webcasts": [],
+      "webcasts": [
+        {
+          "title": "\"Onward and Upward\" Mission of Isar Aerospace",
+          "url": "https://www.youtube.com/watch?v=Ss1DUqLjecc"
+        },
+        {
+          "title": "Isar Aerospace Launches \"Onward and Upward\" Mission",
+          "url": "https://www.youtube.com/watch?v=uUc2d_NPBN0"
+        }
+      ],
       "webcast_live": false
     },
     {
