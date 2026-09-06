@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-05T20:26:16Z",
+  "generated": "2026-09-06T04:45:30Z",
   "sample": false,
   "count": 60,
   "results": [
@@ -10,9 +10,9 @@
       "window_start": "2026-09-05T20:00:00Z",
       "window_end": "2026-09-05T21:00:00Z",
       "status": {
-        "abbrev": "In Flight",
-        "name": "Launch in Flight",
-        "description": "The launch vehicle has lifted off from the launchpad."
+        "abbrev": "Success",
+        "name": "Launch Successful",
+        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
       },
       "probability": null,
       "provider": "Isar Aerospace",
@@ -44,12 +44,12 @@
           "url": "https://www.youtube.com/watch?v=uUc2d_NPBN0"
         }
       ],
-      "webcast_live": true
+      "webcast_live": false
     },
     {
       "id": "153ef8ef-b12b-43f4-a4bf-05b225c0cd37",
       "name": "Falcon 9 Block 5 | Starlink Group 15-24",
-      "net": "2026-09-06T10:59:00Z",
+      "net": "2026-09-06T14:26:28Z",
       "window_start": "2026-09-06T10:59:00Z",
       "window_end": "2026-09-06T14:59:00Z",
       "status": {
@@ -78,6 +78,14 @@
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
       "webcasts": [
+        {
+          "title": "GO! - SpaceX - Falcon 9 - Starlink 15-24 - SLC-4E - Vandenberg SFB, CA - Space Affairs Live",
+          "url": "https://www.youtube.com/watch?v=pykl4k7D0GQ"
+        },
+        {
+          "title": "Live: SpaceX Falcon 9 rocket launches 27 Starlink satellites from California",
+          "url": "https://www.youtube.com/watch?v=cnU8ocJmRVA"
+        },
         {
           "title": "Starlink Mission",
           "url": "https://x.com/i/broadcasts/1NxaroyrEngKj"
@@ -151,6 +159,10 @@
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/soyuz_2.1b_image_20230802085331.jpg",
       "webcasts": [
+        {
+          "title": "Progress 96 Cargo Ship Launch",
+          "url": "https://www.youtube.com/watch?v=cCpf0BOjlLE"
+        },
         {
           "title": "Progress 96 Cargo Ship Launch",
           "url": "https://plus.nasa.gov/scheduled-video/progress-96-cargo-ship-launch/"
