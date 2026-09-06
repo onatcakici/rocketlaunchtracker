@@ -1,51 +1,8 @@
 {
-  "generated": "2026-09-06T15:30:53Z",
+  "generated": "2026-09-06T20:27:37Z",
   "sample": false,
   "count": 60,
   "results": [
-    {
-      "id": "1b23eb18-e06e-4058-9b42-e95ca0980511",
-      "name": "Spectrum | Onward and Upward",
-      "net": "2026-09-05T20:12:00Z",
-      "window_start": "2026-09-05T20:00:00Z",
-      "window_end": "2026-09-05T21:00:00Z",
-      "status": {
-        "abbrev": "Success",
-        "name": "Launch Successful",
-        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
-      },
-      "probability": null,
-      "provider": "Isar Aerospace",
-      "rocket": "Spectrum",
-      "mission": {
-        "name": "Onward and Upward",
-        "description": "Second test flight of the Isar Spectrum launch vehicle. This launch will carry 5 cubesats and 1 non-separable experiment as part of European Space Agency (ESA)'s “Boost!” program:\r\n\r\n* CyBEEsat (TU Berlin)\r\n* TriSat-S (University of Maribor)\r\n* Platform 6 (EnduroSat)\r\n* FramSat-1 (NTNU)\r\n* SpaceTeamSat1 (TU Wien Space Team)\r\n* Let It Go (Dcubed, non-separable experiment)",
-        "type": "Test Flight",
-        "orbit": "Sun-Synchronous Orbit"
-      },
-      "pad": {
-        "name": "Orbital Launch Pad",
-        "map_url": "https://www.google.com/maps?q=69.1084,15.5895",
-        "latitude": 69.1084,
-        "longitude": 15.5895,
-        "location": {
-          "name": "Andøya Spaceport",
-          "country_code": "NO"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/spectrum_on_the_image_20250321072643.jpeg",
-      "webcasts": [
-        {
-          "title": "\"Onward and Upward\" Mission of Isar Aerospace",
-          "url": "https://www.youtube.com/watch?v=Ss1DUqLjecc"
-        },
-        {
-          "title": "Isar Aerospace Launches \"Onward and Upward\" Mission",
-          "url": "https://www.youtube.com/watch?v=uUc2d_NPBN0"
-        }
-      ],
-      "webcast_live": false
-    },
     {
       "id": "153ef8ef-b12b-43f4-a4bf-05b225c0cd37",
       "name": "Falcon 9 Block 5 | Starlink Group 15-24",
@@ -53,9 +10,9 @@
       "window_start": "2026-09-06T10:59:00Z",
       "window_end": "2026-09-06T14:59:00Z",
       "status": {
-        "abbrev": "In Flight",
-        "name": "Launch in Flight",
-        "description": "The launch vehicle has lifted off from the launchpad."
+        "abbrev": "Success",
+        "name": "Launch Successful",
+        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
       },
       "probability": null,
       "provider": "SpaceX",
@@ -2061,6 +2018,40 @@
       "rocket": "Electron",
       "mission": {
         "name": "iQPS Launch 10",
+        "description": "Synthetic aperture radar Earth observation satellite for Japanese Earth imaging company iQPS.",
+        "type": "Earth Science",
+        "orbit": "Low Earth Orbit"
+      },
+      "pad": {
+        "name": "Unknown Pad",
+        "map_url": null,
+        "latitude": -39.260881,
+        "longitude": 177.865826,
+        "location": {
+          "name": "Rocket Lab Launch Complex 1, Mahia Peninsula, New Zealand",
+          "country_code": "NZ"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/electron_image_20190705175640.jpeg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "f9a8c9f6-5dc4-4e83-9876-2a51140ec806",
+      "name": "Electron | iQPS Launch 11",
+      "net": "2026-12-31T00:00:00Z",
+      "window_start": "2026-12-31T00:00:00Z",
+      "window_end": "2026-12-31T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "Rocket Lab",
+      "rocket": "Electron",
+      "mission": {
+        "name": "iQPS Launch 11",
         "description": "Synthetic aperture radar Earth observation satellite for Japanese Earth imaging company iQPS.",
         "type": "Earth Science",
         "orbit": "Low Earth Orbit"
