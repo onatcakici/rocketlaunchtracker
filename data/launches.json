@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-06T11:02:06Z",
+  "generated": "2026-09-06T15:30:53Z",
   "sample": false,
   "count": 60,
   "results": [
@@ -49,13 +49,13 @@
     {
       "id": "153ef8ef-b12b-43f4-a4bf-05b225c0cd37",
       "name": "Falcon 9 Block 5 | Starlink Group 15-24",
-      "net": "2026-09-06T14:26:28Z",
+      "net": "2026-09-06T14:26:54Z",
       "window_start": "2026-09-06T10:59:00Z",
       "window_end": "2026-09-06T14:59:00Z",
       "status": {
-        "abbrev": "Go",
-        "name": "Go for Launch",
-        "description": "Current T-0 confirmed by official or reliable sources."
+        "abbrev": "In Flight",
+        "name": "Launch in Flight",
+        "description": "The launch vehicle has lifted off from the launchpad."
       },
       "probability": null,
       "provider": "SpaceX",
@@ -79,8 +79,8 @@
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
       "webcasts": [
         {
-          "title": "GO! - SpaceX - Falcon 9 - Starlink 15-24 - SLC-4E - Vandenberg SFB, CA - Space Affairs Live",
-          "url": "https://www.youtube.com/watch?v=pykl4k7D0GQ"
+          "title": "SpaceX Starlink Group 15-24",
+          "url": "https://www.youtube.com/watch?v=hqxM5Ui1t2E"
         },
         {
           "title": "Live: SpaceX Falcon 9 rocket launches 27 Starlink satellites from California",
