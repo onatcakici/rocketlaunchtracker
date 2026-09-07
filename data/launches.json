@@ -1,89 +1,8 @@
 {
-  "generated": "2026-09-07T12:41:01Z",
+  "generated": "2026-09-07T21:33:35Z",
   "sample": false,
   "count": 60,
   "results": [
-    {
-      "id": "153ef8ef-b12b-43f4-a4bf-05b225c0cd37",
-      "name": "Falcon 9 Block 5 | Starlink Group 15-24",
-      "net": "2026-09-06T14:26:54Z",
-      "window_start": "2026-09-06T10:59:00Z",
-      "window_end": "2026-09-06T14:59:00Z",
-      "status": {
-        "abbrev": "Success",
-        "name": "Launch Successful",
-        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
-      },
-      "probability": null,
-      "provider": "SpaceX",
-      "rocket": "Falcon 9 Block 5",
-      "mission": {
-        "name": "Starlink Group 15-24",
-        "description": "A batch of 27 satellites for the Starlink mega-constellation - SpaceX's project for space-based Internet communication system.",
-        "type": "Communications",
-        "orbit": "Low Earth Orbit"
-      },
-      "pad": {
-        "name": "Space Launch Complex 4E",
-        "map_url": "https://www.google.com/maps?q=34.632,-120.611",
-        "latitude": 34.632,
-        "longitude": -120.611,
-        "location": {
-          "name": "Vandenberg SFB, CA, USA",
-          "country_code": "US"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
-      "webcasts": [
-        {
-          "title": "SpaceX Starlink Group 15-24",
-          "url": "https://www.youtube.com/watch?v=hqxM5Ui1t2E"
-        },
-        {
-          "title": "Live: SpaceX Falcon 9 rocket launches 27 Starlink satellites from California",
-          "url": "https://www.youtube.com/watch?v=cnU8ocJmRVA"
-        },
-        {
-          "title": "Starlink Mission",
-          "url": "https://x.com/i/broadcasts/1NxaroyrEngKj"
-        }
-      ],
-      "webcast_live": false
-    },
-    {
-      "id": "95eb9265-bdbe-43ad-b08c-6be7eb4e58f4",
-      "name": "Long March 2D/YZ-3 | Unknown Payload",
-      "net": "2026-09-09T09:00:00Z",
-      "window_start": "2026-09-09T08:52:00Z",
-      "window_end": "2026-09-09T09:13:00Z",
-      "status": {
-        "abbrev": "Go",
-        "name": "Go for Launch",
-        "description": "Current T-0 confirmed by official or reliable sources."
-      },
-      "probability": null,
-      "provider": "China Aerospace Science and Technology Corporation",
-      "rocket": "Long March 2D/YZ-3",
-      "mission": {
-        "name": "Unknown Payload",
-        "description": "Details TBD.",
-        "type": "Unknown",
-        "orbit": "Unknown"
-      },
-      "pad": {
-        "name": "Launch Area 94 (SLS-2 / 603)",
-        "map_url": "https://www.google.com/maps?q=40.960482,100.298059",
-        "latitude": 40.960482,
-        "longitude": 100.298059,
-        "location": {
-          "name": "Jiuquan Satellite Launch Center, People's Republic of China",
-          "country_code": "CN"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/long_march_2d2_image_20231123203521.jpeg",
-      "webcasts": [],
-      "webcast_live": false
-    },
     {
       "id": "d793ba47-faf5-4bab-a386-39a9ccc49c90",
       "name": "Soyuz 2.1b | Progress MS-35 (96P)",
@@ -125,6 +44,40 @@
           "url": "https://plus.nasa.gov/scheduled-video/progress-96-cargo-ship-launch/"
         }
       ],
+      "webcast_live": false
+    },
+    {
+      "id": "95eb9265-bdbe-43ad-b08c-6be7eb4e58f4",
+      "name": "Long March 2D/YZ-3 | Unknown Payload",
+      "net": "2026-09-10T09:00:00Z",
+      "window_start": "2026-09-10T08:52:00Z",
+      "window_end": "2026-09-10T09:13:00Z",
+      "status": {
+        "abbrev": "Go",
+        "name": "Go for Launch",
+        "description": "Current T-0 confirmed by official or reliable sources."
+      },
+      "probability": null,
+      "provider": "China Aerospace Science and Technology Corporation",
+      "rocket": "Long March 2D/YZ-3",
+      "mission": {
+        "name": "Unknown Payload",
+        "description": "Details TBD.",
+        "type": "Unknown",
+        "orbit": "Unknown"
+      },
+      "pad": {
+        "name": "Launch Area 94 (SLS-2 / 603)",
+        "map_url": "https://www.google.com/maps?q=40.960482,100.298059",
+        "latitude": 40.960482,
+        "longitude": 100.298059,
+        "location": {
+          "name": "Jiuquan Satellite Launch Center, People's Republic of China",
+          "country_code": "CN"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/long_march_2d2_image_20231123203521.jpeg",
+      "webcasts": [],
       "webcast_live": false
     },
     {
@@ -2052,6 +2005,40 @@
       "rocket": "Electron",
       "mission": {
         "name": "iQPS Launch 11",
+        "description": "Synthetic aperture radar Earth observation satellite for Japanese Earth imaging company iQPS.",
+        "type": "Earth Science",
+        "orbit": "Low Earth Orbit"
+      },
+      "pad": {
+        "name": "Unknown Pad",
+        "map_url": null,
+        "latitude": -39.260881,
+        "longitude": 177.865826,
+        "location": {
+          "name": "Rocket Lab Launch Complex 1, Mahia Peninsula, New Zealand",
+          "country_code": "NZ"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/electron_image_20190705175640.jpeg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "426bd2a5-02dd-4fbd-9f4d-2b8439c3a1ff",
+      "name": "Electron | iQPS Launch 9",
+      "net": "2026-12-31T00:00:00Z",
+      "window_start": "2026-12-31T00:00:00Z",
+      "window_end": "2026-12-31T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "Rocket Lab",
+      "rocket": "Electron",
+      "mission": {
+        "name": "iQPS Launch 9",
         "description": "Synthetic aperture radar Earth observation satellite for Japanese Earth imaging company iQPS.",
         "type": "Earth Science",
         "orbit": "Low Earth Orbit"
