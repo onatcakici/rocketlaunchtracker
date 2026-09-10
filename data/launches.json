@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-09T20:58:25Z",
+  "generated": "2026-09-10T04:49:23Z",
   "sample": false,
   "count": 60,
   "results": [
@@ -40,7 +40,7 @@
     {
       "id": "3e0456da-14b1-4ac3-b59e-35fefb1d1530",
       "name": "Falcon 9 Block 5 | USSF-153",
-      "net": "2026-09-10T15:37:00Z",
+      "net": "2026-09-10T15:42:00Z",
       "window_start": "2026-09-10T15:37:00Z",
       "window_end": "2026-09-10T18:37:00Z",
       "status": {
@@ -69,6 +69,14 @@
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_20260816171423.jpg",
       "webcasts": [
+        {
+          "title": "GO! - SpaceX - Falcon 9 - USSF-153 - SLC-4E - Vandenberg SFB, CA - Space Affairs Live",
+          "url": "https://www.youtube.com/watch?v=UboPGsLWIBI"
+        },
+        {
+          "title": "Live: SpaceX Falcon 9 rocket launches secretive U.S. Space Force mission from California",
+          "url": "https://www.youtube.com/watch?v=hHjWLWxhjqk"
+        },
         {
           "title": "USSF-153 Mission",
           "url": "https://x.com/i/broadcasts/1nxnRBWejLOxO"
