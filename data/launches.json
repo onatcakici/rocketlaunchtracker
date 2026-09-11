@@ -1,42 +1,8 @@
 {
-  "generated": "2026-09-11T04:46:18Z",
+  "generated": "2026-09-11T11:27:45Z",
   "sample": false,
   "count": 60,
   "results": [
-    {
-      "id": "95eb9265-bdbe-43ad-b08c-6be7eb4e58f4",
-      "name": "Long March 4B | Yaogan 53-01 to 03/56-01 to 03",
-      "net": "2026-09-10T09:00:00Z",
-      "window_start": "2026-09-10T08:52:00Z",
-      "window_end": "2026-09-10T09:13:00Z",
-      "status": {
-        "abbrev": "Success",
-        "name": "Launch Successful",
-        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
-      },
-      "probability": null,
-      "provider": "China Aerospace Science and Technology Corporation",
-      "rocket": "Long March 4B",
-      "mission": {
-        "name": "Yaogan 53-01 to 03/56-01 to 03",
-        "description": "6 Chinese military “remote sensing” satellite of unknown purposes.",
-        "type": "Government/Top Secret",
-        "orbit": "Low Earth Orbit"
-      },
-      "pad": {
-        "name": "Launch Area 94 (SLS-2 / 603)",
-        "map_url": "https://www.google.com/maps?q=40.960482,100.298059",
-        "latitude": 40.960482,
-        "longitude": 100.298059,
-        "location": {
-          "name": "Jiuquan Satellite Launch Center, People's Republic of China",
-          "country_code": "CN"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/long_march_4b_l_image_20251209044050.jpeg",
-      "webcasts": [],
-      "webcast_live": false
-    },
     {
       "id": "3e0456da-14b1-4ac3-b59e-35fefb1d1530",
       "name": "Falcon 9 Block 5 | USSF-153",
@@ -82,6 +48,40 @@
           "url": "https://x.com/i/broadcasts/1nxnRBWejLOxO"
         }
       ],
+      "webcast_live": false
+    },
+    {
+      "id": "b81156da-c0b8-46c8-aebd-8af8d2be83cd",
+      "name": "Electron | Happily Ever Faster (BlackSky Gen-3 5)",
+      "net": "2026-09-11T03:28:00Z",
+      "window_start": "2026-09-11T01:00:00Z",
+      "window_end": "2026-09-11T03:28:00Z",
+      "status": {
+        "abbrev": "Success",
+        "name": "Launch Successful",
+        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
+      },
+      "probability": null,
+      "provider": "Rocket Lab",
+      "rocket": "Electron",
+      "mission": {
+        "name": "Happily Ever Faster (BlackSky Gen-3 5)",
+        "description": "Note: Payload and customer identities were not publicly announced.\r\n\r\n5th of the BlackSky Gen-3 high resolution Earth-imaging satellites.",
+        "type": "Earth Science",
+        "orbit": "Low Earth Orbit"
+      },
+      "pad": {
+        "name": "Rocket Lab Launch Complex 1A",
+        "map_url": "https://www.google.com/maps?q=-39.262833,177.864469",
+        "latitude": -39.262833,
+        "longitude": 177.864469,
+        "location": {
+          "name": "Rocket Lab Launch Complex 1, Mahia Peninsula, New Zealand",
+          "country_code": "NZ"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/electron_image_20190705175640.jpeg",
+      "webcasts": [],
       "webcast_live": false
     },
     {
@@ -351,6 +351,40 @@
       "webcast_live": false
     },
     {
+      "id": "71aa4d56-0ce9-4c7d-a808-cc22f2ac5a84",
+      "name": "Kuaizhou 11 | Unknown Payload",
+      "net": "2026-09-17T02:35:00Z",
+      "window_start": "2026-09-17T02:31:00Z",
+      "window_end": "2026-09-17T03:12:00Z",
+      "status": {
+        "abbrev": "Go",
+        "name": "Go for Launch",
+        "description": "Current T-0 confirmed by official or reliable sources."
+      },
+      "probability": null,
+      "provider": "ExPace",
+      "rocket": "Kuaizhou 11",
+      "mission": {
+        "name": "Unknown Payload",
+        "description": "Details TBD.",
+        "type": "Unknown",
+        "orbit": "Unknown"
+      },
+      "pad": {
+        "name": "Launch Area 95A",
+        "map_url": "https://www.google.com/maps?q=40.969117,100.343333",
+        "latitude": 40.969117,
+        "longitude": 100.343333,
+        "location": {
+          "name": "Jiuquan Satellite Launch Center, People's Republic of China",
+          "country_code": "CN"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/kuaizhou_11_lif_image_20240520155835.jpg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
       "id": "7d1afb26-6f9c-429b-9ccf-29012fd1e519",
       "name": "Starship | Flight 14",
       "net": "2026-09-18T00:00:00Z",
@@ -381,6 +415,40 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/starship_on_the_image_20260724044615.jpg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "a527b585-f01f-4ecc-9230-711dcef72ef1",
+      "name": "Long March 2D | Unknown Payload",
+      "net": "2026-09-19T10:50:00Z",
+      "window_start": "2026-09-19T10:43:00Z",
+      "window_end": "2026-09-19T11:06:00Z",
+      "status": {
+        "abbrev": "Go",
+        "name": "Go for Launch",
+        "description": "Current T-0 confirmed by official or reliable sources."
+      },
+      "probability": null,
+      "provider": "China Aerospace Science and Technology Corporation",
+      "rocket": "Long March 2D",
+      "mission": {
+        "name": "Unknown Payload",
+        "description": "Details TBD.",
+        "type": "Unknown",
+        "orbit": "Unknown"
+      },
+      "pad": {
+        "name": "Launch Complex 9",
+        "map_url": "https://www.google.com/maps?q=38.863128,111.589567",
+        "latitude": 38.863128,
+        "longitude": 111.589567,
+        "location": {
+          "name": "Taiyuan Satellite Launch Center, People's Republic of China",
+          "country_code": "CN"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/long2520march25202d_image_20190222031211.jpeg",
       "webcasts": [],
       "webcast_live": false
     },
@@ -644,40 +712,6 @@
       "mission": {
         "name": "6x HawkEye 360",
         "description": "HawkEye 360 is a a space-based civil global intelligence satellite network using radio frequency (RF) technology to help monitor transportation across air, land and sea and assist with emergencies, and to provide civil SIGINT (Signal Intelligence) mission.\r\n\r\nThe constellation of small satellites (named Hawk ) will collect information on specific radio signals worldwide to provide high-precision radio frequency mapping and analytics from Low Earth orbit (LEO).",
-        "type": "Earth Science",
-        "orbit": "Low Earth Orbit"
-      },
-      "pad": {
-        "name": "Unknown Pad",
-        "map_url": null,
-        "latitude": -39.260881,
-        "longitude": 177.865826,
-        "location": {
-          "name": "Rocket Lab Launch Complex 1, Mahia Peninsula, New Zealand",
-          "country_code": "NZ"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/electron_image_20190705175640.jpeg",
-      "webcasts": [],
-      "webcast_live": false
-    },
-    {
-      "id": "b81156da-c0b8-46c8-aebd-8af8d2be83cd",
-      "name": "Electron | BlackSky Gen-3 5",
-      "net": "2026-09-30T00:00:00Z",
-      "window_start": "2026-09-30T00:00:00Z",
-      "window_end": "2026-09-30T00:00:00Z",
-      "status": {
-        "abbrev": "TBD",
-        "name": "To Be Determined",
-        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
-      },
-      "probability": null,
-      "provider": "Rocket Lab",
-      "rocket": "Electron",
-      "mission": {
-        "name": "BlackSky Gen-3 5",
-        "description": "BlackSky Gen-3 Earth-imaging satellites",
         "type": "Earth Science",
         "orbit": "Low Earth Orbit"
       },
@@ -2052,40 +2086,6 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/astra_rocket_4_image_20250918165934.jpg",
-      "webcasts": [],
-      "webcast_live": false
-    },
-    {
-      "id": "07e945c1-2ec6-4d29-a500-1afbe920440f",
-      "name": "Atlas V N22 | Starliner-1",
-      "net": "2026-12-31T00:00:00Z",
-      "window_start": "2026-12-31T00:00:00Z",
-      "window_end": "2026-12-31T00:00:00Z",
-      "status": {
-        "abbrev": "TBD",
-        "name": "To Be Determined",
-        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
-      },
-      "probability": null,
-      "provider": "United Launch Alliance",
-      "rocket": "Atlas V N22",
-      "mission": {
-        "name": "Starliner-1",
-        "description": "Starliner-1 is the first operational flight of a Starliner spacecraft to the International Space Station as part of NASA's Commercial Crew Program. Due to problems with the Starliner spacecraft's RCS attitude control system during the Crew Flight Test mission in 2024, this mission has been re-scoped to not carry a crew by NASA. It will instead deliver necessary cargo to the orbital laboratory and allow in-flight validation of the system upgrades implemented following the Crew Flight Test mission last year.",
-        "type": "Human Exploration",
-        "orbit": "Low Earth Orbit"
-      },
-      "pad": {
-        "name": "Space Launch Complex 41",
-        "map_url": "https://www.google.com/maps?q=28.58341025,-80.58303644",
-        "latitude": 28.58341025,
-        "longitude": -80.58303644,
-        "location": {
-          "name": "Cape Canaveral SFS, FL, USA",
-          "country_code": "US"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/atlas_v_n22_image_20210813082339.jpeg",
       "webcasts": [],
       "webcast_live": false
     }
