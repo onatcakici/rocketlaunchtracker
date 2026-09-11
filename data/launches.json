@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-10T20:54:42Z",
+  "generated": "2026-09-11T04:46:18Z",
   "sample": false,
   "count": 60,
   "results": [
@@ -44,9 +44,9 @@
       "window_start": "2026-09-10T15:37:00Z",
       "window_end": "2026-09-10T18:37:00Z",
       "status": {
-        "abbrev": "Deployed",
-        "name": "Payload Deployed",
-        "description": "Deployment of the payload(s) has been confirmed."
+        "abbrev": "Success",
+        "name": "Launch Successful",
+        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
       },
       "probability": 70,
       "provider": "SpaceX",
@@ -154,7 +154,16 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/vega-c_image_20220713154437.jpg",
-      "webcasts": [],
+      "webcasts": [
+        {
+          "title": "Vega C | Flight VV30 | Sentinel-3C - FLEX | Avio",
+          "url": "https://www.youtube.com/watch?v=Rb4CN2avz90"
+        },
+        {
+          "title": "FLEX and Sentinel-3C launch (Official broadcast)",
+          "url": "https://www.youtube.com/watch?v=fmrgyh5s-is"
+        }
+      ],
       "webcast_live": false
     },
     {
