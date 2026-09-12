@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-12T15:35:00Z",
+  "generated": "2026-09-12T20:37:18Z",
   "sample": false,
   "count": 60,
   "results": [
@@ -14,7 +14,7 @@
         "name": "Go for Launch",
         "description": "Current T-0 confirmed by official or reliable sources."
       },
-      "probability": null,
+      "probability": 60,
       "provider": "SpaceX",
       "rocket": "Falcon 9 Block 5",
       "mission": {
@@ -35,6 +35,18 @@
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
       "webcasts": [
+        {
+          "title": "GO! - SpaceX - Falcon 9 - O3b mPOWER 11, 12 & 13 - SLC-40 - Cape Canaveral SFS - Space Affairs Live",
+          "url": "https://www.youtube.com/watch?v=2n8k4DZUln8"
+        },
+        {
+          "title": "Live: SpaceX Falcon 9 rocket launches three O3b mPOWER satellites for Luxembourg-based SES",
+          "url": "https://www.youtube.com/watch?v=r0avdYfJO2Q"
+        },
+        {
+          "title": "SpaceX Launches Falcon 9 with O3b mPOWER 11, 12 & 13",
+          "url": "https://www.youtube.com/watch?v=FgKKtSsyYD4"
+        },
         {
           "title": "O3b mPOWER Mission",
           "url": "https://x.com/i/broadcasts/1RKjpbVdykQJw"
