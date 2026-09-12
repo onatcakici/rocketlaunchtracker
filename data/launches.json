@@ -1,42 +1,8 @@
 {
-  "generated": "2026-09-11T21:00:48Z",
+  "generated": "2026-09-12T04:40:24Z",
   "sample": false,
   "count": 60,
   "results": [
-    {
-      "id": "b81156da-c0b8-46c8-aebd-8af8d2be83cd",
-      "name": "Electron | Happily Ever Faster (BlackSky Gen-3 5)",
-      "net": "2026-09-11T03:28:00Z",
-      "window_start": "2026-09-11T01:00:00Z",
-      "window_end": "2026-09-11T03:28:00Z",
-      "status": {
-        "abbrev": "Success",
-        "name": "Launch Successful",
-        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
-      },
-      "probability": null,
-      "provider": "Rocket Lab",
-      "rocket": "Electron",
-      "mission": {
-        "name": "Happily Ever Faster (BlackSky Gen-3 5)",
-        "description": "Note: Payload and customer identities were not publicly announced.\r\n\r\n5th of the BlackSky Gen-3 high resolution Earth-imaging satellites.",
-        "type": "Earth Science",
-        "orbit": "Low Earth Orbit"
-      },
-      "pad": {
-        "name": "Rocket Lab Launch Complex 1A",
-        "map_url": "https://www.google.com/maps?q=-39.262833,177.864469",
-        "latitude": -39.262833,
-        "longitude": 177.864469,
-        "location": {
-          "name": "Rocket Lab Launch Complex 1, Mahia Peninsula, New Zealand",
-          "country_code": "NZ"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/electron_image_20190705175640.jpeg",
-      "webcasts": [],
-      "webcast_live": false
-    },
     {
       "id": "ad358a4d-c541-409b-9366-9c2f2da4aeb9",
       "name": "Falcon 9 Block 5 | O3b mPower 11-13",
@@ -2073,6 +2039,40 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/atlas_v_n22_image_20210813082339.jpeg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "5aa3575e-f3ff-48ec-969f-e7e4c669f866",
+      "name": "Electron | BlackSky Gen-3 7",
+      "net": "2026-12-31T00:00:00Z",
+      "window_start": "2026-12-31T00:00:00Z",
+      "window_end": "2026-12-31T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "Rocket Lab",
+      "rocket": "Electron",
+      "mission": {
+        "name": "BlackSky Gen-3 7",
+        "description": "BlackSky Gen-3 Earth-imaging satellites",
+        "type": "Earth Science",
+        "orbit": "Low Earth Orbit"
+      },
+      "pad": {
+        "name": "Unknown Pad",
+        "map_url": null,
+        "latitude": -39.260881,
+        "longitude": 177.865826,
+        "location": {
+          "name": "Rocket Lab Launch Complex 1, Mahia Peninsula, New Zealand",
+          "country_code": "NZ"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/electron_image_20190705175640.jpeg",
       "webcasts": [],
       "webcast_live": false
     }
