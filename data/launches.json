@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-13T16:23:33Z",
+  "generated": "2026-09-13T20:53:31Z",
   "sample": false,
   "count": 60,
   "results": [
@@ -10,11 +10,11 @@
       "window_start": "2026-09-13T18:49:00Z",
       "window_end": "2026-09-13T20:16:00Z",
       "status": {
-        "abbrev": "Go",
-        "name": "Go for Launch",
-        "description": "Current T-0 confirmed by official or reliable sources."
+        "abbrev": "Deployed",
+        "name": "Payload Deployed",
+        "description": "Deployment of the payload(s) has been confirmed."
       },
-      "probability": 60,
+      "probability": 75,
       "provider": "SpaceX",
       "rocket": "Falcon 9 Block 5",
       "mission": {
@@ -36,8 +36,8 @@
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
       "webcasts": [
         {
-          "title": "GO! - SpaceX - Falcon 9 - O3b mPOWER 11, 12 & 13 - SLC-40 - Cape Canaveral SFS - Space Affairs Live",
-          "url": "https://www.youtube.com/watch?v=2n8k4DZUln8"
+          "title": "SpaceX O3b mPower 11-13",
+          "url": "https://www.youtube.com/watch?v=zZHnf8QB5ok"
         },
         {
           "title": "Live: SpaceX Falcon 9 rocket launches three O3b mPOWER satellites from Cape Canaveral",
