@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-15T17:03:46Z",
+  "generated": "2026-09-15T21:25:12Z",
   "sample": false,
   "count": 60,
   "results": [
@@ -346,19 +346,19 @@
       "name": "Starship | Flight 14",
       "net": "2026-09-22T12:15:00Z",
       "window_start": "2026-09-22T12:15:00Z",
-      "window_end": "2026-09-22T14:14:00Z",
+      "window_end": "2026-09-22T13:30:00Z",
       "status": {
-        "abbrev": "TBC",
-        "name": "To Be Confirmed",
-        "description": "Awaiting official confirmation - current date is known with some certainty."
+        "abbrev": "Go",
+        "name": "Go for Launch",
+        "description": "Current T-0 confirmed by official or reliable sources."
       },
       "probability": null,
       "provider": "SpaceX",
       "rocket": "Starship V3",
       "mission": {
         "name": "Flight 14",
-        "description": "14th test flight of the two-stage Starship launch vehicle. 3rd flight of Starship V3 and the first Starship flight to deploy satellites (a group of Starlink satellites) into stable Low Earth Orbit.",
-        "type": "Test Flight",
+        "description": "14th test flight of the two-stage Starship launch vehicle. 3rd flight of Starship V3 and the first Starship flight to deploy satellites (a group of Starlink satellites) into stable Low Earth Orbit.\r\n\r\nThe ship is expected to fly at an altitude approximately 275 km above Earth and complete approximately 6 orbits around the planet for nearly 10 hours, with splashdown targeted in the Pacific Ocean west of Chile.\r\n\r\nThe booster’s primary test objective on Flight 14 will be executing a successful launch, ascent, stage separation, boostback burn, and landing burn at an offshore landing point in the Gulf.\r\n\r\nStarship will deliver 26 Starlink V3 satellites to orbit for the first time, which aim to greatly expand the network's capacity and user speeds. Each Starlink V3 satellite will add 1 Tbps of capacity to the constellation.",
+        "type": "Communications",
         "orbit": "Low Earth Orbit"
       },
       "pad": {
