@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-14T21:52:21Z",
+  "generated": "2026-09-15T04:59:16Z",
   "sample": false,
   "count": 60,
   "results": [
@@ -10,9 +10,9 @@
       "window_start": "2026-09-15T01:21:07Z",
       "window_end": "2026-09-15T01:21:07Z",
       "status": {
-        "abbrev": "Go",
-        "name": "Go for Launch",
-        "description": "Current T-0 confirmed by official or reliable sources."
+        "abbrev": "Success",
+        "name": "Launch Successful",
+        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
       },
       "probability": null,
       "provider": "Avio S.p.A",
