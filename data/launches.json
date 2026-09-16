@@ -1,55 +1,8 @@
 {
-  "generated": "2026-09-15T21:25:12Z",
+  "generated": "2026-09-16T04:54:13Z",
   "sample": false,
   "count": 60,
   "results": [
-    {
-      "id": "8effc13a-c658-4d2e-9f15-8dba4d7fe2dd",
-      "name": "Vega-C | Sentinel-3C & FLEX",
-      "net": "2026-09-15T01:21:07Z",
-      "window_start": "2026-09-15T01:21:07Z",
-      "window_end": "2026-09-15T01:21:07Z",
-      "status": {
-        "abbrev": "Success",
-        "name": "Launch Successful",
-        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
-      },
-      "probability": null,
-      "provider": "Avio S.p.A",
-      "rocket": "Vega-C",
-      "mission": {
-        "name": "Sentinel-3C & FLEX",
-        "description": "Sentinel-3C is the third satellite in the Sentinel-3 constellation, which provides high-accuracy optical, radar and altimetry data for marine and land services.\r\n\r\nThe Fluorescence Explorer (FLEX) satellite is a part of ESA's Earth Explorer program. The satellite will map vegetation fluorescence to quantify photosynthetic activity.",
-        "type": "Earth Science",
-        "orbit": "Sun-Synchronous Orbit"
-      },
-      "pad": {
-        "name": "Ariane Launch Area 1 (ELV)",
-        "map_url": "https://www.google.com/maps?q=5.236,-52.775",
-        "latitude": 5.236,
-        "longitude": -52.775,
-        "location": {
-          "name": "Guiana Space Centre, French Guiana",
-          "country_code": "GF"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/vega-c_image_20220713154437.jpg",
-      "webcasts": [
-        {
-          "title": "Vega C | Flight VV30 | Sentinel-3C - FLEX | Avio",
-          "url": "https://www.youtube.com/watch?v=Rb4CN2avz90"
-        },
-        {
-          "title": "FLEX and Sentinel-3C launch (Official broadcast)",
-          "url": "https://www.youtube.com/watch?v=fmrgyh5s-is"
-        },
-        {
-          "title": "Vega C launches Sentinel-3C & FLEX",
-          "url": "https://www.youtube.com/watch?v=_7nBPHF-hAE"
-        }
-      ],
-      "webcast_live": false
-    },
     {
       "id": "de446468-057f-4c9d-a6a1-af99c93b541e",
       "name": "Zhuque-2E Block 2 | SpaceSail Polar Group #15",
@@ -86,23 +39,23 @@
     },
     {
       "id": "767f7827-53d8-4621-803b-f456a1e6b512",
-      "name": "Gravity-1 | Unknown Payload",
-      "net": "2026-09-15T21:55:00Z",
+      "name": "Gravity-1 | SpaceSail Polar Group #16",
+      "net": "2026-09-15T22:00:00Z",
       "window_start": "2026-09-15T21:50:00Z",
       "window_end": "2026-09-15T22:11:00Z",
       "status": {
-        "abbrev": "Go",
-        "name": "Go for Launch",
-        "description": "Current T-0 confirmed by official or reliable sources."
+        "abbrev": "Success",
+        "name": "Launch Successful",
+        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
       },
       "probability": null,
       "provider": "Orienspace Technology",
       "rocket": "Gravity-1",
       "mission": {
-        "name": "Unknown Payload",
-        "description": "Possibly launch of a batch of SpaceSail LEO communication satellites. Details TBD.",
-        "type": "Unknown",
-        "orbit": "Unknown"
+        "name": "SpaceSail Polar Group #16",
+        "description": "9 Low Earth Orbit communication satellites with Ku, Q and V band payloads for the G60 constellation operated by Shanghai Spacesail Technologies with funding backed by the Shanghai local government.\r\n\r\nInitial constellation will consist of 1296 satellites by 2027 with long term plans to expand it to 12000 satellites.",
+        "type": "Communications",
+        "orbit": "Polar Orbit"
       },
       "pad": {
         "name": "Yellow Sea (launch location 5)",
@@ -116,45 +69,6 @@
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/gravity-1_image_20240108105446.jpeg",
       "webcasts": [],
-      "webcast_live": false
-    },
-    {
-      "id": "17c71937-dd80-406f-bb47-0c9ee9a24276",
-      "name": "Falcon 9 Block 5 | USSF-259",
-      "net": "2026-09-16T01:29:18Z",
-      "window_start": "2026-09-16T01:00:00Z",
-      "window_end": "2026-09-16T05:00:00Z",
-      "status": {
-        "abbrev": "Go",
-        "name": "Go for Launch",
-        "description": "Current T-0 confirmed by official or reliable sources."
-      },
-      "probability": null,
-      "provider": "SpaceX",
-      "rocket": "Falcon 9 Block 5",
-      "mission": {
-        "name": "USSF-259",
-        "description": "USSF-259 is a classified mission for the United States Space Force. It is possibly a batch of classified LEO satellites based on SpaceX’s Starshield satellite bus, based on locations of ascent rocket stage drop zones being fits with previous SDA Transport Layer launches.",
-        "type": "Government/Top Secret",
-        "orbit": "Polar Orbit"
-      },
-      "pad": {
-        "name": "Space Launch Complex 4E",
-        "map_url": "https://www.google.com/maps?q=34.632,-120.611",
-        "latitude": 34.632,
-        "longitude": -120.611,
-        "location": {
-          "name": "Vandenberg SFB, CA, USA",
-          "country_code": "US"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_20260816171423.jpg",
-      "webcasts": [
-        {
-          "title": "USSF-259 Mission",
-          "url": "https://x.com/i/broadcasts/1nGeLMWbkpaKX"
-        }
-      ],
       "webcast_live": false
     },
     {
@@ -235,6 +149,53 @@
       "webcast_live": false
     },
     {
+      "id": "17c71937-dd80-406f-bb47-0c9ee9a24276",
+      "name": "Falcon 9 Block 5 | USSF-259",
+      "net": "2026-09-17T01:00:00Z",
+      "window_start": "2026-09-17T01:00:00Z",
+      "window_end": "2026-09-17T05:00:00Z",
+      "status": {
+        "abbrev": "Go",
+        "name": "Go for Launch",
+        "description": "Current T-0 confirmed by official or reliable sources."
+      },
+      "probability": null,
+      "provider": "SpaceX",
+      "rocket": "Falcon 9 Block 5",
+      "mission": {
+        "name": "USSF-259",
+        "description": "USSF-259 is a classified mission for the United States Space Force. It is possibly a batch of classified LEO satellites based on SpaceX’s Starshield satellite bus, based on locations of ascent rocket stage drop zones being fits with previous SDA Transport Layer launches.",
+        "type": "Government/Top Secret",
+        "orbit": "Polar Orbit"
+      },
+      "pad": {
+        "name": "Space Launch Complex 4E",
+        "map_url": "https://www.google.com/maps?q=34.632,-120.611",
+        "latitude": 34.632,
+        "longitude": -120.611,
+        "location": {
+          "name": "Vandenberg SFB, CA, USA",
+          "country_code": "US"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_20260816171423.jpg",
+      "webcasts": [
+        {
+          "title": "GO! - SpaceX - Falcon 9 - USSF-259 - SLC-4E - Vandenberg SFB, CA - Space Affairs Live",
+          "url": "https://www.youtube.com/watch?v=X0Rc1uf_6nw"
+        },
+        {
+          "title": "SpaceX Falcon 9 rocket launches from California on secretive U.S. Space Force mission",
+          "url": "https://www.youtube.com/watch?v=zKKHrz80iEQ"
+        },
+        {
+          "title": "USSF-259 Mission",
+          "url": "https://x.com/i/broadcasts/1nGeLMWbkpaKX"
+        }
+      ],
+      "webcast_live": false
+    },
+    {
       "id": "71aa4d56-0ce9-4c7d-a808-cc22f2ac5a84",
       "name": "Kuaizhou 11 | Unknown Payload",
       "net": "2026-09-17T02:35:00Z",
@@ -265,6 +226,40 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/kuaizhou_11_lif_image_20240520155835.jpg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "f4c720ce-0cfd-43e6-b8dd-00273073bc01",
+      "name": "Electron | Owl By The Dozen (StriX Launch 12)",
+      "net": "2026-09-19T03:15:00Z",
+      "window_start": "2026-09-19T03:15:00Z",
+      "window_end": "2026-09-19T03:15:00Z",
+      "status": {
+        "abbrev": "Go",
+        "name": "Go for Launch",
+        "description": "Current T-0 confirmed by official or reliable sources."
+      },
+      "probability": null,
+      "provider": "Rocket Lab",
+      "rocket": "Electron",
+      "mission": {
+        "name": "Owl By The Dozen (StriX Launch 12)",
+        "description": "Synthetic aperture radar satellite for Japanese Earth imaging company Synspective.",
+        "type": "Earth Science",
+        "orbit": "Low Earth Orbit"
+      },
+      "pad": {
+        "name": "Unknown Pad",
+        "map_url": null,
+        "latitude": -39.260881,
+        "longitude": 177.865826,
+        "location": {
+          "name": "Rocket Lab Launch Complex 1, Mahia Peninsula, New Zealand",
+          "country_code": "NZ"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/electron_image_20190705175640.jpeg",
       "webcasts": [],
       "webcast_live": false
     },
@@ -339,6 +334,40 @@
           "url": "https://x.com/i/broadcasts/1nxnRBXEladxO"
         }
       ],
+      "webcast_live": false
+    },
+    {
+      "id": "5af31461-bce5-4cfb-a0ee-b527cf285d90",
+      "name": "Kinetica 1 | Unknown Payload",
+      "net": "2026-09-20T04:00:00Z",
+      "window_start": "2026-09-20T03:54:00Z",
+      "window_end": "2026-09-20T04:15:00Z",
+      "status": {
+        "abbrev": "Go",
+        "name": "Go for Launch",
+        "description": "Current T-0 confirmed by official or reliable sources."
+      },
+      "probability": null,
+      "provider": "CAS Space",
+      "rocket": "Kinetica 1",
+      "mission": {
+        "name": "Unknown Payload",
+        "description": "Details TBD.",
+        "type": "Unknown",
+        "orbit": "Unknown"
+      },
+      "pad": {
+        "name": "Launch Area 130",
+        "map_url": "https://www.google.com/maps?q=40.8182,100.22514",
+        "latitude": 40.8182,
+        "longitude": 100.22514,
+        "location": {
+          "name": "Jiuquan Satellite Launch Center, People's Republic of China",
+          "country_code": "CN"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/zhongke-1a_image_20220912002218.png",
+      "webcasts": [],
       "webcast_live": false
     },
     {
@@ -814,40 +843,6 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/h3-24_liftoff__image_20251028184029.jpeg",
-      "webcasts": [],
-      "webcast_live": false
-    },
-    {
-      "id": "f4c720ce-0cfd-43e6-b8dd-00273073bc01",
-      "name": "Electron | StriX Launch 12",
-      "net": "2026-10-31T00:00:00Z",
-      "window_start": "2026-10-31T00:00:00Z",
-      "window_end": "2026-10-31T00:00:00Z",
-      "status": {
-        "abbrev": "TBD",
-        "name": "To Be Determined",
-        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
-      },
-      "probability": null,
-      "provider": "Rocket Lab",
-      "rocket": "Electron",
-      "mission": {
-        "name": "StriX Launch 12",
-        "description": "Synthetic aperture radar satellite for Japanese Earth imaging company Synspective.",
-        "type": "Earth Science",
-        "orbit": "Sun-Synchronous Orbit"
-      },
-      "pad": {
-        "name": "Unknown Pad",
-        "map_url": null,
-        "latitude": -39.260881,
-        "longitude": 177.865826,
-        "location": {
-          "name": "Rocket Lab Launch Complex 1, Mahia Peninsula, New Zealand",
-          "country_code": "NZ"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/electron_image_20190705175640.jpeg",
       "webcasts": [],
       "webcast_live": false
     },
