@@ -1,42 +1,8 @@
 {
-  "generated": "2026-09-16T04:54:13Z",
+  "generated": "2026-09-16T11:42:43Z",
   "sample": false,
   "count": 60,
   "results": [
-    {
-      "id": "de446468-057f-4c9d-a6a1-af99c93b541e",
-      "name": "Zhuque-2E Block 2 | SpaceSail Polar Group #15",
-      "net": "2026-09-15T06:26:00Z",
-      "window_start": "2026-09-15T06:18:00Z",
-      "window_end": "2026-09-15T06:40:00Z",
-      "status": {
-        "abbrev": "Success",
-        "name": "Launch Successful",
-        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
-      },
-      "probability": null,
-      "provider": "LandSpace",
-      "rocket": "Zhuque-2E Block 2",
-      "mission": {
-        "name": "SpaceSail Polar Group #15",
-        "description": "10 Low Earth Orbit communication satellites with Ku, Q and V band payloads for the G60 constellation operated by Shanghai Spacesail Technologies with funding backed by the Shanghai local government.\r\n\r\nInitial constellation will consist of 1296 satellites by 2027 with long term plans to expand it to 12000 satellites.",
-        "type": "Communications",
-        "orbit": "Polar Orbit"
-      },
-      "pad": {
-        "name": "Launch Area 96A",
-        "map_url": "https://www.google.com/maps?q=40.91491,100.245488",
-        "latitude": 40.91491,
-        "longitude": 100.245488,
-        "location": {
-          "name": "Jiuquan Satellite Launch Center, People's Republic of China",
-          "country_code": "CN"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/zhuque-2e_y6_la_image_20260609122825.jpeg",
-      "webcasts": [],
-      "webcast_live": false
-    },
     {
       "id": "767f7827-53d8-4621-803b-f456a1e6b512",
       "name": "Gravity-1 | SpaceSail Polar Group #16",
@@ -2052,6 +2018,40 @@
       "rocket": "Electron",
       "mission": {
         "name": "BlackSky Gen-3 7",
+        "description": "BlackSky Gen-3 Earth-imaging satellites",
+        "type": "Earth Science",
+        "orbit": "Low Earth Orbit"
+      },
+      "pad": {
+        "name": "Unknown Pad",
+        "map_url": null,
+        "latitude": -39.260881,
+        "longitude": 177.865826,
+        "location": {
+          "name": "Rocket Lab Launch Complex 1, Mahia Peninsula, New Zealand",
+          "country_code": "NZ"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/electron_image_20190705175640.jpeg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "280fba47-8e6e-4a4f-8bdd-b9687d99a9c5",
+      "name": "Electron | BlackSky Gen-3 8",
+      "net": "2026-12-31T00:00:00Z",
+      "window_start": "2026-12-31T00:00:00Z",
+      "window_end": "2026-12-31T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "Rocket Lab",
+      "rocket": "Electron",
+      "mission": {
+        "name": "BlackSky Gen-3 8",
         "description": "BlackSky Gen-3 Earth-imaging satellites",
         "type": "Earth Science",
         "orbit": "Low Earth Orbit"
