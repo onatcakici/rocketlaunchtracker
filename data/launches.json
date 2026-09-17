@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-17T17:04:14Z",
+  "generated": "2026-09-17T21:26:22Z",
   "sample": false,
   "count": 60,
   "results": [
@@ -265,49 +265,6 @@
       "webcast_live": false
     },
     {
-      "id": "7d1afb26-6f9c-429b-9ccf-29012fd1e519",
-      "name": "Starship | Starlink Group 31-1 (Starship Flight 14)",
-      "net": "2026-09-22T12:15:00Z",
-      "window_start": "2026-09-22T12:15:00Z",
-      "window_end": "2026-09-22T13:30:00Z",
-      "status": {
-        "abbrev": "Go",
-        "name": "Go for Launch",
-        "description": "Current T-0 confirmed by official or reliable sources."
-      },
-      "probability": null,
-      "provider": "SpaceX",
-      "rocket": "Starship V3",
-      "mission": {
-        "name": "Starlink Group 31-1 (Starship Flight 14)",
-        "description": "14th test flight of the two-stage Starship launch vehicle. 3rd flight of Starship V3 and the first Starship flight to deploy satellites (a group of Starlink satellites known as Starlink Group 31-1) into stable Low Earth Orbit.\r\n\r\nThe ship is expected to fly at an altitude approximately 275 km above Earth and complete approximately 6 orbits around the planet for nearly 10 hours, with splashdown targeted in the Pacific Ocean west of Chile.\r\n\r\nThe booster’s primary test objective on Flight 14 will be executing a successful launch, ascent, stage separation, boostback burn, and landing burn at an offshore landing point in the Gulf.\r\n\r\nStarship will deliver 26 Starlink V3 satellites to orbit for the first time, which aim to greatly expand the network's capacity and user speeds. Each Starlink V3 satellite will add 1 Tbps of capacity to the constellation.",
-        "type": "Communications",
-        "orbit": "Low Earth Orbit"
-      },
-      "pad": {
-        "name": "Orbital Launch Pad 2",
-        "map_url": "https://www.google.com/maps?q=25.996770,-97.157990",
-        "latitude": 25.99677,
-        "longitude": -97.15799,
-        "location": {
-          "name": "SpaceX Starbase, TX, USA",
-          "country_code": "US"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/starship_on_the_image_20260724044615.jpg",
-      "webcasts": [
-        {
-          "title": "GO! - SpaceX - Starship - Starship Flight 14 - Pad 2 - Starbase, TX - Space Affairs Live",
-          "url": "https://www.youtube.com/watch?v=SqSGeLDIG-0"
-        },
-        {
-          "title": "SpaceX Starship Flight 14 - Launch & Booster Splashdown - LAUNCH STREAM",
-          "url": "https://www.youtube.com/watch?v=9gDxG-pm1Zo"
-        }
-      ],
-      "webcast_live": false
-    },
-    {
       "id": "7330d83b-c478-426c-8859-f9e3a335876d",
       "name": "Falcon 9 Block 5 | USSF-385",
       "net": "2026-09-26T11:56:00Z",
@@ -342,6 +299,49 @@
         {
           "title": "USSF-385 Mission",
           "url": "https://x.com/i/broadcasts/1mxPaZqBEDjKN"
+        }
+      ],
+      "webcast_live": false
+    },
+    {
+      "id": "7d1afb26-6f9c-429b-9ccf-29012fd1e519",
+      "name": "Starship | Starlink Group 31-1 (Starship Flight 14)",
+      "net": "2026-09-28T12:15:00Z",
+      "window_start": "2026-09-28T12:15:00Z",
+      "window_end": "2026-09-28T13:30:00Z",
+      "status": {
+        "abbrev": "TBC",
+        "name": "To Be Confirmed",
+        "description": "Awaiting official confirmation - current date is known with some certainty."
+      },
+      "probability": null,
+      "provider": "SpaceX",
+      "rocket": "Starship V3",
+      "mission": {
+        "name": "Starlink Group 31-1 (Starship Flight 14)",
+        "description": "14th test flight of the two-stage Starship launch vehicle. 3rd flight of Starship V3 and the first Starship flight to deploy satellites (a group of Starlink satellites known as Starlink Group 31-1) into stable Low Earth Orbit.\r\n\r\nThe ship is expected to fly at an altitude approximately 275 km above Earth and complete approximately 6 orbits around the planet for nearly 10 hours, with splashdown targeted in the Pacific Ocean west of Chile.\r\n\r\nThe booster’s primary test objective on Flight 14 will be executing a successful launch, ascent, stage separation, boostback burn, and landing burn at an offshore landing point in the Gulf.\r\n\r\nStarship will deliver 26 Starlink V3 satellites to orbit for the first time, which aim to greatly expand the network's capacity and user speeds. Each Starlink V3 satellite will add 1 Tbps of capacity to the constellation.",
+        "type": "Communications",
+        "orbit": "Low Earth Orbit"
+      },
+      "pad": {
+        "name": "Orbital Launch Pad 2",
+        "map_url": "https://www.google.com/maps?q=25.996770,-97.157990",
+        "latitude": 25.99677,
+        "longitude": -97.15799,
+        "location": {
+          "name": "SpaceX Starbase, TX, USA",
+          "country_code": "US"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/starship_on_the_image_20260724044615.jpg",
+      "webcasts": [
+        {
+          "title": "GO! - SpaceX - Starship - Starship Flight 14 - Pad 2 - Starbase, TX - Space Affairs Live",
+          "url": "https://www.youtube.com/watch?v=SqSGeLDIG-0"
+        },
+        {
+          "title": "SpaceX Starship Flight 14 - Launch & Booster Splashdown - LAUNCH STREAM",
+          "url": "https://www.youtube.com/watch?v=9gDxG-pm1Zo"
         }
       ],
       "webcast_live": false
