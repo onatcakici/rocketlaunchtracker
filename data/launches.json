@@ -1,42 +1,8 @@
 {
-  "generated": "2026-09-16T21:22:19Z",
+  "generated": "2026-09-17T04:57:19Z",
   "sample": false,
   "count": 60,
   "results": [
-    {
-      "id": "767f7827-53d8-4621-803b-f456a1e6b512",
-      "name": "Gravity-1 | SpaceSail Polar Group #16",
-      "net": "2026-09-15T22:00:00Z",
-      "window_start": "2026-09-15T21:50:00Z",
-      "window_end": "2026-09-15T22:11:00Z",
-      "status": {
-        "abbrev": "Success",
-        "name": "Launch Successful",
-        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
-      },
-      "probability": null,
-      "provider": "Orienspace Technology",
-      "rocket": "Gravity-1",
-      "mission": {
-        "name": "SpaceSail Polar Group #16",
-        "description": "9 Low Earth Orbit communication satellites with Ku, Q and V band payloads for the G60 constellation operated by Shanghai Spacesail Technologies with funding backed by the Shanghai local government.\r\n\r\nInitial constellation will consist of 1296 satellites by 2027 with long term plans to expand it to 12000 satellites.",
-        "type": "Communications",
-        "orbit": "Polar Orbit"
-      },
-      "pad": {
-        "name": "Yellow Sea (launch location 5)",
-        "map_url": "https://www.google.com/maps?q=31.2,123.7",
-        "latitude": 31.2,
-        "longitude": 123.7,
-        "location": {
-          "name": "Haiyang Oriental Spaceport",
-          "country_code": "CN"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/gravity-1_image_20240108105446.jpeg",
-      "webcasts": [],
-      "webcast_live": false
-    },
     {
       "id": "d793ba47-faf5-4bab-a386-39a9ccc49c90",
       "name": "Soyuz 2.1b | Progress MS-35 (96P)",
@@ -86,23 +52,23 @@
     },
     {
       "id": "898f7df0-b6ce-4a5c-80b4-67e81842124e",
-      "name": "Long March 12 | Unknown Payload",
-      "net": "2026-09-17T00:30:00Z",
+      "name": "Long March 12 | SatNet LEO Group 25",
+      "net": "2026-09-17T00:32:00Z",
       "window_start": "2026-09-17T00:25:00Z",
       "window_end": "2026-09-17T00:54:00Z",
       "status": {
-        "abbrev": "Go",
-        "name": "Go for Launch",
-        "description": "Current T-0 confirmed by official or reliable sources."
+        "abbrev": "Success",
+        "name": "Launch Successful",
+        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
       },
       "probability": null,
       "provider": "China Aerospace Science and Technology Corporation",
       "rocket": "Long March 12",
       "mission": {
-        "name": "Unknown Payload",
-        "description": "Details TBD.",
-        "type": "Unknown",
-        "orbit": "Unknown"
+        "name": "SatNet LEO Group 25",
+        "description": "A batch of 9 Low Earth Orbit communication satellites for the Chinese state owned SatNet constellation operated by the China Satellite Network Group.\r\n\r\nThe constellation will eventually consists of 13000 satellites.",
+        "type": "Communications",
+        "orbit": "Low Earth Orbit"
       },
       "pad": {
         "name": "Commercial LC-2",
@@ -115,7 +81,12 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/cz-12_on_its_la_image_20241128132937.jpg",
-      "webcasts": [],
+      "webcasts": [
+        {
+          "title": "Live: Long March 12 Flight 8 Launch (No Commentary)",
+          "url": "https://www.youtube.com/watch?v=M7fx59LjfJ8"
+        }
+      ],
       "webcast_live": false
     },
     {
@@ -125,11 +96,11 @@
       "window_start": "2026-09-17T01:00:00Z",
       "window_end": "2026-09-17T05:00:00Z",
       "status": {
-        "abbrev": "Go",
-        "name": "Go for Launch",
-        "description": "Current T-0 confirmed by official or reliable sources."
+        "abbrev": "In Flight",
+        "name": "Launch in Flight",
+        "description": "The launch vehicle has lifted off from the launchpad."
       },
-      "probability": null,
+      "probability": 95,
       "provider": "SpaceX",
       "rocket": "Falcon 9 Block 5",
       "mission": {
@@ -151,8 +122,8 @@
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_20260816171423.jpg",
       "webcasts": [
         {
-          "title": "GO! - SpaceX - Falcon 9 - USSF-259 - SLC-4E - Vandenberg SFB, CA - Space Affairs Live",
-          "url": "https://www.youtube.com/watch?v=X0Rc1uf_6nw"
+          "title": "SpaceX USSF-259",
+          "url": "https://www.youtube.com/watch?v=7SMBsQ5MQCk"
         },
         {
           "title": "SpaceX Falcon 9 rocket launches from California on secretive U.S. Space Force mission",
@@ -167,23 +138,23 @@
     },
     {
       "id": "71aa4d56-0ce9-4c7d-a808-cc22f2ac5a84",
-      "name": "Kuaizhou 11 | Unknown Payload",
-      "net": "2026-09-17T02:35:00Z",
+      "name": "Kuaizhou 11 | SpaceTY-51 & 52",
+      "net": "2026-09-17T02:40:00Z",
       "window_start": "2026-09-17T02:31:00Z",
       "window_end": "2026-09-17T03:12:00Z",
       "status": {
-        "abbrev": "Go",
-        "name": "Go for Launch",
-        "description": "Current T-0 confirmed by official or reliable sources."
+        "abbrev": "Success",
+        "name": "Launch Successful",
+        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
       },
       "probability": null,
       "provider": "ExPace",
       "rocket": "Kuaizhou 11",
       "mission": {
-        "name": "Unknown Payload",
-        "description": "Details TBD.",
-        "type": "Unknown",
-        "orbit": "Unknown"
+        "name": "SpaceTY-51 & 52",
+        "description": "2 Earth observation radar satellites built by the Chinese satellite manufacturer SpaceTY.",
+        "type": "Earth Science",
+        "orbit": "Low Earth Orbit"
       },
       "pad": {
         "name": "Launch Area 95A",
@@ -555,6 +526,40 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/cz-8a_launch_2_image_20251206093107.jpeg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "ab3c1e6c-03fe-48a7-b6ce-30c79569bdfb",
+      "name": "Soyuz 2.1b/Fregat | Kosmos (Unknown Payload)",
+      "net": "2026-09-30T00:00:00Z",
+      "window_start": "2026-09-30T00:00:00Z",
+      "window_end": "2026-09-30T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "Russian Space Forces",
+      "rocket": "Soyuz 2.1b Fregat-M",
+      "mission": {
+        "name": "Kosmos (Unknown Payload)",
+        "description": "Note: Launch vehicle and payload identities highly uncertain.\r\n\r\nUnknown classified satellite(s) for the Russian military.",
+        "type": "Government/Top Secret",
+        "orbit": "Unknown"
+      },
+      "pad": {
+        "name": "Unknown Pad",
+        "map_url": "https://www.google.com/maps?q=62.925556,40.577778",
+        "latitude": 62.925556,
+        "longitude": 40.577778,
+        "location": {
+          "name": "Plesetsk Cosmodrome, Russian Federation",
+          "country_code": "RU"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/soyuz_2.1b_image_20230802085331.jpg",
       "webcasts": [],
       "webcast_live": false
     },
@@ -1885,40 +1890,6 @@
       "webcast_live": false
     },
     {
-      "id": "ab3c1e6c-03fe-48a7-b6ce-30c79569bdfb",
-      "name": "Angara 1.2 | Kosmos (Unknown Payload)",
-      "net": "2026-12-31T00:00:00Z",
-      "window_start": "2026-12-31T00:00:00Z",
-      "window_end": "2026-12-31T00:00:00Z",
-      "status": {
-        "abbrev": "TBD",
-        "name": "To Be Determined",
-        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
-      },
-      "probability": null,
-      "provider": "Russian Space Forces",
-      "rocket": "Angara 1.2",
-      "mission": {
-        "name": "Kosmos (Unknown Payload)",
-        "description": "Unknown classified satellite(s) for the Russian military.",
-        "type": "Government/Top Secret",
-        "orbit": "Unknown"
-      },
-      "pad": {
-        "name": "35/1",
-        "map_url": "https://www.google.com/maps?q=62.927319,40.574897",
-        "latitude": 62.927319,
-        "longitude": 40.574897,
-        "location": {
-          "name": "Plesetsk Cosmodrome, Russian Federation",
-          "country_code": "RU"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/angara25201.2_image_20190224012254.jpeg",
-      "webcasts": [],
-      "webcast_live": false
-    },
-    {
       "id": "b78857c4-3b8d-4462-929e-bc76f39c0e6d",
       "name": "Ariane 64 | GO-1",
       "net": "2026-12-31T00:00:00Z",
@@ -2071,6 +2042,40 @@
       "mission": {
         "name": "BlackSky Gen-3 9",
         "description": "BlackSky Gen-3 Earth-imaging satellites",
+        "type": "Earth Science",
+        "orbit": "Low Earth Orbit"
+      },
+      "pad": {
+        "name": "Unknown Pad",
+        "map_url": null,
+        "latitude": -39.260881,
+        "longitude": 177.865826,
+        "location": {
+          "name": "Rocket Lab Launch Complex 1, Mahia Peninsula, New Zealand",
+          "country_code": "NZ"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/electron_image_20190705175640.jpeg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "db3500ac-965b-4ad8-b417-cb8d8d005586",
+      "name": "Electron | iQPS Launch 10",
+      "net": "2026-12-31T00:00:00Z",
+      "window_start": "2026-12-31T00:00:00Z",
+      "window_end": "2026-12-31T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "Rocket Lab",
+      "rocket": "Electron",
+      "mission": {
+        "name": "iQPS Launch 10",
+        "description": "Synthetic aperture radar Earth observation satellite for Japanese Earth imaging company iQPS.",
         "type": "Earth Science",
         "orbit": "Low Earth Orbit"
       },
