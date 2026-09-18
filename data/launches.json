@@ -1,42 +1,8 @@
 {
-  "generated": "2026-09-18T16:28:42Z",
+  "generated": "2026-09-18T20:57:19Z",
   "sample": false,
   "count": 60,
   "results": [
-    {
-      "id": "ab3c1e6c-03fe-48a7-b6ce-30c79569bdfb",
-      "name": "Soyuz 2.1b/Fregat | Glonass-K1 No. 20 (?)",
-      "net": "2026-09-17T16:50:00Z",
-      "window_start": "2026-09-17T16:50:00Z",
-      "window_end": "2026-09-17T16:50:00Z",
-      "status": {
-        "abbrev": "Success",
-        "name": "Launch Successful",
-        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
-      },
-      "probability": null,
-      "provider": "Russian Space Forces",
-      "rocket": "Soyuz 2.1b Fregat-M",
-      "mission": {
-        "name": "Glonass-K1 No. 20 (?)",
-        "description": "Note: Satellite serial number and Cosmos designation not confirmed.\r\n\r\nGlonass-K are the third generation of satellite design for GLONASS satellite navigation system. GLONASS is a Russian space-based navigation system comparable to the similar GPS and Galileo systems. This generation improves on accuracy, power consumption and design life. Each satellite is unpressurized and weighs 935 kg,  and has an operational lifetime of 10 years.",
-        "type": "Navigation",
-        "orbit": "Medium Earth Orbit"
-      },
-      "pad": {
-        "name": "43/3 (43L)",
-        "map_url": "https://www.google.com/maps?q=62.9273,40.45",
-        "latitude": 62.9273,
-        "longitude": 40.45,
-        "location": {
-          "name": "Plesetsk Cosmodrome, Russian Federation",
-          "country_code": "RU"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/soyuz_2.1b_image_20230802085331.jpg",
-      "webcasts": [],
-      "webcast_live": false
-    },
     {
       "id": "f4c720ce-0cfd-43e6-b8dd-00273073bc01",
       "name": "Electron | Owl By The Dozen (StriX Launch 12)",
@@ -68,7 +34,12 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/electron_image_20190705175640.jpeg",
-      "webcasts": [],
+      "webcasts": [
+        {
+          "title": "Rocket Lab - 'Owl By The Dozen' Launch",
+          "url": "https://www.youtube.com/watch?v=AnN8Pj8WvSo"
+        }
+      ],
       "webcast_live": false
     },
     {
@@ -2059,6 +2030,40 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/epsilon_image_20190207032600.jpeg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "9bfa0324-db74-444f-8dc3-1c7d373ca659",
+      "name": "Falcon 9 Block 5 | 5x Astranis MicroGEO",
+      "net": "2026-12-31T00:00:00Z",
+      "window_start": "2026-12-31T00:00:00Z",
+      "window_end": "2026-12-31T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "SpaceX",
+      "rocket": "Falcon 9 Block 5",
+      "mission": {
+        "name": "5x Astranis MicroGEO",
+        "description": "Five Astranis MicroGEO communications satellite to be inserted in a custom geostationary orbit, from where they conduct on-orbit maneuvers to reach their individual slots.\r\n\r\nThe 5 satellites include:\r\n\r\n* Apco 1 & Apco 2 (Mexico)\r\n\r\n* Thaicom-9 (Thailand)\r\n\r\n* 1x for Chunghwa Telecom (Taiwan)\r\n\r\n* 1x for MB Group (Oman)",
+        "type": "Communications",
+        "orbit": "Geostationary Transfer Orbit"
+      },
+      "pad": {
+        "name": "Unknown Pad",
+        "map_url": "https://www.google.com/maps?q=28.458,-80.528",
+        "latitude": 28.458,
+        "longitude": -80.528,
+        "location": {
+          "name": "Cape Canaveral SFS, FL, USA",
+          "country_code": "US"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_on_slc_image_20241221043403.jpg",
       "webcasts": [],
       "webcast_live": false
     }
