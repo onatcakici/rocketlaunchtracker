@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-19T11:05:46Z",
+  "generated": "2026-09-19T15:55:33Z",
   "sample": false,
   "count": 60,
   "results": [
@@ -10,9 +10,9 @@
       "window_start": "2026-09-19T03:22:00Z",
       "window_end": "2026-09-19T03:22:00Z",
       "status": {
-        "abbrev": "Deployed",
-        "name": "Payload Deployed",
-        "description": "Deployment of the payload(s) has been confirmed."
+        "abbrev": "Success",
+        "name": "Launch Successful",
+        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
       },
       "probability": 85,
       "provider": "Rocket Lab",
@@ -44,23 +44,23 @@
     },
     {
       "id": "a527b585-f01f-4ecc-9230-711dcef72ef1",
-      "name": "Long March 2D | Unknown Payload",
+      "name": "Long March 2D | PIESAT-2 13-16",
       "net": "2026-09-19T10:50:00Z",
       "window_start": "2026-09-19T10:43:00Z",
       "window_end": "2026-09-19T11:06:00Z",
       "status": {
-        "abbrev": "Go",
-        "name": "Go for Launch",
-        "description": "Current T-0 confirmed by official or reliable sources."
+        "abbrev": "Success",
+        "name": "Launch Successful",
+        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
       },
       "probability": null,
       "provider": "China Aerospace Science and Technology Corporation",
       "rocket": "Long March 2D",
       "mission": {
-        "name": "Unknown Payload",
-        "description": "Details TBD.",
-        "type": "Unknown",
-        "orbit": "Unknown"
+        "name": "PIESAT-2 13-16",
+        "description": "4 X-band synthetic-aperture radar Earth observation satellites for the Chinese Earth observation satellite company PIESAT.",
+        "type": "Earth Science",
+        "orbit": "Sun-Synchronous Orbit"
       },
       "pad": {
         "name": "Launch Complex 9",
