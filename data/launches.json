@@ -1,42 +1,8 @@
 {
-  "generated": "2026-09-20T04:58:04Z",
+  "generated": "2026-09-20T11:30:34Z",
   "sample": false,
   "count": 60,
   "results": [
-    {
-      "id": "a527b585-f01f-4ecc-9230-711dcef72ef1",
-      "name": "Long March 2D | PIESAT-2 13-16",
-      "net": "2026-09-19T10:50:00Z",
-      "window_start": "2026-09-19T10:43:00Z",
-      "window_end": "2026-09-19T11:06:00Z",
-      "status": {
-        "abbrev": "Success",
-        "name": "Launch Successful",
-        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
-      },
-      "probability": null,
-      "provider": "China Aerospace Science and Technology Corporation",
-      "rocket": "Long March 2D",
-      "mission": {
-        "name": "PIESAT-2 13-16",
-        "description": "4 X-band synthetic-aperture radar Earth observation satellites for the Chinese Earth observation satellite company PIESAT.",
-        "type": "Earth Science",
-        "orbit": "Sun-Synchronous Orbit"
-      },
-      "pad": {
-        "name": "Launch Complex 9",
-        "map_url": "https://www.google.com/maps?q=38.863128,111.589567",
-        "latitude": 38.863128,
-        "longitude": 111.589567,
-        "location": {
-          "name": "Taiyuan Satellite Launch Center, People's Republic of China",
-          "country_code": "CN"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/long2520march25202d_image_20190222031211.jpeg",
-      "webcasts": [],
-      "webcast_live": false
-    },
     {
       "id": "d1471f9d-e9d0-4146-8e97-90863e48bfc8",
       "name": "Falcon 9 Block 5 | Starlink Group 15-27",
@@ -2068,6 +2034,40 @@
         "longitude": -80.528,
         "location": {
           "name": "Cape Canaveral SFS, FL, USA",
+          "country_code": "US"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "dfd444f9-ddda-4b35-8f51-cda7cd801809",
+      "name": "Falcon 9 Block 5 | Rivada 1",
+      "net": "2026-12-31T00:00:00Z",
+      "window_start": "2026-12-31T00:00:00Z",
+      "window_end": "2026-12-31T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "SpaceX",
+      "rocket": "Falcon 9 Block 5",
+      "mission": {
+        "name": "Rivada 1",
+        "description": "24 satellites for Rivada's internet constellation.",
+        "type": "Communications",
+        "orbit": "Polar Orbit"
+      },
+      "pad": {
+        "name": "Space Launch Complex 4E",
+        "map_url": "https://www.google.com/maps?q=34.632,-120.611",
+        "latitude": 34.632,
+        "longitude": -120.611,
+        "location": {
+          "name": "Vandenberg SFB, CA, USA",
           "country_code": "US"
         }
       },
