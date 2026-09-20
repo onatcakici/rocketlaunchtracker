@@ -1,47 +1,8 @@
 {
-  "generated": "2026-09-19T20:45:32Z",
+  "generated": "2026-09-20T04:58:04Z",
   "sample": false,
   "count": 60,
   "results": [
-    {
-      "id": "f4c720ce-0cfd-43e6-b8dd-00273073bc01",
-      "name": "Electron | Owl By The Dozen (StriX Launch 12)",
-      "net": "2026-09-19T03:22:00Z",
-      "window_start": "2026-09-19T03:22:00Z",
-      "window_end": "2026-09-19T03:22:00Z",
-      "status": {
-        "abbrev": "Success",
-        "name": "Launch Successful",
-        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
-      },
-      "probability": 85,
-      "provider": "Rocket Lab",
-      "rocket": "Electron",
-      "mission": {
-        "name": "Owl By The Dozen (StriX Launch 12)",
-        "description": "Synthetic aperture radar satellite for Japanese Earth imaging company Synspective.",
-        "type": "Earth Science",
-        "orbit": "Low Earth Orbit"
-      },
-      "pad": {
-        "name": "Rocket Lab Launch Complex 1B",
-        "map_url": "https://www.google.com/maps?q=-39.262833,177.864469",
-        "latitude": -39.262833,
-        "longitude": 177.864469,
-        "location": {
-          "name": "Rocket Lab Launch Complex 1, Mahia Peninsula, New Zealand",
-          "country_code": "NZ"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/electron_image_20190705175640.jpeg",
-      "webcasts": [
-        {
-          "title": "Rocket Lab - 'Owl By The Dozen' Launch",
-          "url": "https://www.youtube.com/watch?v=AnN8Pj8WvSo"
-        }
-      ],
-      "webcast_live": false
-    },
     {
       "id": "a527b585-f01f-4ecc-9230-711dcef72ef1",
       "name": "Long March 2D | PIESAT-2 13-16",
@@ -83,9 +44,9 @@
       "window_start": "2026-09-20T01:47:00Z",
       "window_end": "2026-09-20T05:47:00Z",
       "status": {
-        "abbrev": "Go",
-        "name": "Go for Launch",
-        "description": "Current T-0 confirmed by official or reliable sources."
+        "abbrev": "Success",
+        "name": "Launch Successful",
+        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
       },
       "probability": null,
       "provider": "SpaceX",
@@ -109,6 +70,14 @@
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
       "webcasts": [
         {
+          "title": "SpaceX Starlink Group 15-27",
+          "url": "https://www.youtube.com/watch?v=gOcigcsXtHk"
+        },
+        {
+          "title": "SpaceX Falcon 9 rocket launches from California with 27 Starlink satellites",
+          "url": "https://www.youtube.com/watch?v=GjBMPqhEBTg"
+        },
+        {
           "title": "Starlink Mission",
           "url": "https://x.com/i/broadcasts/1nxnRBXEladxO"
         }
@@ -117,23 +86,23 @@
     },
     {
       "id": "5af31461-bce5-4cfb-a0ee-b527cf285d90",
-      "name": "Kinetica 1 | Unknown Payload",
-      "net": "2026-09-20T04:00:00Z",
+      "name": "Kinetica 1 | 9 satellites",
+      "net": "2026-09-20T04:03:00Z",
       "window_start": "2026-09-20T03:54:00Z",
       "window_end": "2026-09-20T04:15:00Z",
       "status": {
-        "abbrev": "Go",
-        "name": "Go for Launch",
-        "description": "Current T-0 confirmed by official or reliable sources."
+        "abbrev": "Success",
+        "name": "Launch Successful",
+        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
       },
       "probability": null,
       "provider": "CAS Space",
       "rocket": "Kinetica 1",
       "mission": {
-        "name": "Unknown Payload",
-        "description": "Details TBD.",
-        "type": "Unknown",
-        "orbit": "Unknown"
+        "name": "9 satellites",
+        "description": "Share-ride of 9 commercial Earth observation and technology demonstration satellites to SSO, details TBD.",
+        "type": "Earth Science",
+        "orbit": "Sun-Synchronous Orbit"
       },
       "pad": {
         "name": "Launch Area 130",
@@ -334,71 +303,42 @@
       "webcast_live": false
     },
     {
-      "id": "dc570565-4dcf-4ab9-8174-bf88efef477f",
-      "name": "Long March 12A | Flight 2",
-      "net": "2026-09-30T00:00:00Z",
-      "window_start": "2026-09-30T00:00:00Z",
-      "window_end": "2026-09-30T00:00:00Z",
+      "id": "97c6f5e1-299e-4652-b72d-9618ac047076",
+      "name": "Falcon 9 Block 5 | Starlink Group 15-25",
+      "net": "2026-09-30T14:00:00Z",
+      "window_start": "2026-09-30T14:00:00Z",
+      "window_end": "2026-09-30T18:00:00Z",
       "status": {
-        "abbrev": "TBD",
-        "name": "To Be Determined",
-        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+        "abbrev": "Go",
+        "name": "Go for Launch",
+        "description": "Current T-0 confirmed by official or reliable sources."
       },
       "probability": null,
-      "provider": "China Aerospace Science and Technology Corporation",
-      "rocket": "Long March 12A",
+      "provider": "SpaceX",
+      "rocket": "Falcon 9 Block 5",
       "mission": {
-        "name": "Flight 2",
-        "description": "Second test launch of CASC/SAST’s Long March 12A rocket. Payload identities are TBD.",
-        "type": "Test Flight",
-        "orbit": "Low Earth Orbit"
-      },
-      "pad": {
-        "name": "Long March 12 series Pad",
-        "map_url": "https://www.google.com/maps?q=40.891596,100.217289",
-        "latitude": 40.891596,
-        "longitude": 100.217289,
-        "location": {
-          "name": "Jiuquan Satellite Launch Center, People's Republic of China",
-          "country_code": "CN"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/long_march_12a__image_20251224005749.jpg",
-      "webcasts": [],
-      "webcast_live": false
-    },
-    {
-      "id": "ef9850ad-1096-425b-9d27-f7bbd186e61a",
-      "name": "Vulcan VC6L | Amazon Leo (LV-01)",
-      "net": "2026-09-30T00:00:00Z",
-      "window_start": "2026-09-30T00:00:00Z",
-      "window_end": "2026-09-30T00:00:00Z",
-      "status": {
-        "abbrev": "TBD",
-        "name": "To Be Determined",
-        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
-      },
-      "probability": null,
-      "provider": "United Launch Alliance",
-      "rocket": "Vulcan VC6L",
-      "mission": {
-        "name": "Amazon Leo (LV-01)",
-        "description": "Amazon Leo, formerly known as Project Kuiper, is a mega constellation of satellites in Low Earth Orbit that will offer broadband internet access, this constellation will be managed by Kuiper Systems LLC, a subsidiary of Amazon. This constellation is planned to be composed of 3,276 satellites. The satellites are projected to be placed in 98 orbital planes in three orbital layers, one at 590 km, 610 km and 630 km altitude.\r\n\r\n45 satellites will be carried on each Vulcan launch.",
+        "name": "Starlink Group 15-25",
+        "description": "A batch of 27 satellites for the Starlink mega-constellation - SpaceX's project for space-based Internet communication system.",
         "type": "Communications",
         "orbit": "Low Earth Orbit"
       },
       "pad": {
-        "name": "Space Launch Complex 41",
-        "map_url": "https://www.google.com/maps?q=28.58341025,-80.58303644",
-        "latitude": 28.58341025,
-        "longitude": -80.58303644,
+        "name": "Space Launch Complex 4E",
+        "map_url": "https://www.google.com/maps?q=34.632,-120.611",
+        "latitude": 34.632,
+        "longitude": -120.611,
         "location": {
-          "name": "Cape Canaveral SFS, FL, USA",
+          "name": "Vandenberg SFB, CA, USA",
           "country_code": "US"
         }
       },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/vulcan_vc6l_image_20220406123130.jpg",
-      "webcasts": [],
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
+      "webcasts": [
+        {
+          "title": "Starlink Mission",
+          "url": "https://x.com/i/broadcasts/1yKAPwdemygxb"
+        }
+      ],
       "webcast_live": false
     },
     {
@@ -704,6 +644,74 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "dc570565-4dcf-4ab9-8174-bf88efef477f",
+      "name": "Long March 12A | Flight 2",
+      "net": "2026-10-31T00:00:00Z",
+      "window_start": "2026-10-31T00:00:00Z",
+      "window_end": "2026-10-31T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "China Aerospace Science and Technology Corporation",
+      "rocket": "Long March 12A",
+      "mission": {
+        "name": "Flight 2",
+        "description": "Second test launch of CASC/SAST’s Long March 12A rocket. Payload identities are TBD.",
+        "type": "Test Flight",
+        "orbit": "Low Earth Orbit"
+      },
+      "pad": {
+        "name": "Long March 12 series Pad",
+        "map_url": "https://www.google.com/maps?q=40.891596,100.217289",
+        "latitude": 40.891596,
+        "longitude": 100.217289,
+        "location": {
+          "name": "Jiuquan Satellite Launch Center, People's Republic of China",
+          "country_code": "CN"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/long_march_12a__image_20251224005749.jpg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "ef9850ad-1096-425b-9d27-f7bbd186e61a",
+      "name": "Vulcan VC6L | Amazon Leo (LV-01)",
+      "net": "2026-10-31T00:00:00Z",
+      "window_start": "2026-10-31T00:00:00Z",
+      "window_end": "2026-10-31T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "United Launch Alliance",
+      "rocket": "Vulcan VC6L",
+      "mission": {
+        "name": "Amazon Leo (LV-01)",
+        "description": "Amazon Leo, formerly known as Project Kuiper, is a mega constellation of satellites in Low Earth Orbit that will offer broadband internet access, this constellation will be managed by Kuiper Systems LLC, a subsidiary of Amazon. This constellation is planned to be composed of 3,276 satellites. The satellites are projected to be placed in 98 orbital planes in three orbital layers, one at 590 km, 610 km and 630 km altitude.\r\n\r\n45 satellites will be carried on each Vulcan launch.",
+        "type": "Communications",
+        "orbit": "Low Earth Orbit"
+      },
+      "pad": {
+        "name": "Space Launch Complex 41",
+        "map_url": "https://www.google.com/maps?q=28.58341025,-80.58303644",
+        "latitude": 28.58341025,
+        "longitude": -80.58303644,
+        "location": {
+          "name": "Cape Canaveral SFS, FL, USA",
+          "country_code": "US"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/vulcan_vc6l_image_20220406123130.jpg",
       "webcasts": [],
       "webcast_live": false
     },
@@ -2034,8 +2042,8 @@
       "webcast_live": false
     },
     {
-      "id": "9bfa0324-db74-444f-8dc3-1c7d373ca659",
-      "name": "Falcon 9 Block 5 | 5x Astranis MicroGEO",
+      "id": "4d3943e9-c894-46c4-a318-84d526d0ef40",
+      "name": "Falcon 9 Block 5 | Cygnus CRS-2 NG-22",
       "net": "2026-12-31T00:00:00Z",
       "window_start": "2026-12-31T00:00:00Z",
       "window_end": "2026-12-31T00:00:00Z",
@@ -2048,10 +2056,10 @@
       "provider": "SpaceX",
       "rocket": "Falcon 9 Block 5",
       "mission": {
-        "name": "5x Astranis MicroGEO",
-        "description": "Five Astranis MicroGEO communications satellite to be inserted in a custom geostationary orbit, from where they conduct on-orbit maneuvers to reach their individual slots.\r\n\r\nThe 5 satellites include:\r\n\r\n* Apco 1 & Apco 2 (Mexico)\r\n\r\n* Thaicom-9 (Thailand)\r\n\r\n* 1x for Chunghwa Telecom (Taiwan)\r\n\r\n* 1x for MB Group (Oman)",
-        "type": "Communications",
-        "orbit": "Geostationary Transfer Orbit"
+        "name": "Cygnus CRS-2 NG-22",
+        "description": "This is the 25th flight of the Orbital ATK's uncrewed resupply spacecraft Cygnus and its 24th flight to the International Space Station under the Commercial Resupply Services contract with NASA.\r\n\r\nThe NG-22 Cygnus spacecraft was damaged during transport to Cape Canaveral in March 2025 and was shipped back to factory for repairs.",
+        "type": "Resupply",
+        "orbit": "Low Earth Orbit"
       },
       "pad": {
         "name": "Unknown Pad",
@@ -2063,7 +2071,7 @@
           "country_code": "US"
         }
       },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_on_slc_image_20241221043403.jpg",
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
       "webcasts": [],
       "webcast_live": false
     }
