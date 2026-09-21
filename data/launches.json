@@ -1,89 +1,8 @@
 {
-  "generated": "2026-09-20T20:52:39Z",
+  "generated": "2026-09-21T05:02:35Z",
   "sample": false,
   "count": 60,
   "results": [
-    {
-      "id": "d1471f9d-e9d0-4146-8e97-90863e48bfc8",
-      "name": "Falcon 9 Block 5 | Starlink Group 15-27",
-      "net": "2026-09-20T01:47:00Z",
-      "window_start": "2026-09-20T01:47:00Z",
-      "window_end": "2026-09-20T05:47:00Z",
-      "status": {
-        "abbrev": "Success",
-        "name": "Launch Successful",
-        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
-      },
-      "probability": null,
-      "provider": "SpaceX",
-      "rocket": "Falcon 9 Block 5",
-      "mission": {
-        "name": "Starlink Group 15-27",
-        "description": "A batch of 27 satellites for the Starlink mega-constellation - SpaceX's project for space-based Internet communication system.",
-        "type": "Communications",
-        "orbit": "Low Earth Orbit"
-      },
-      "pad": {
-        "name": "Space Launch Complex 4E",
-        "map_url": "https://www.google.com/maps?q=34.632,-120.611",
-        "latitude": 34.632,
-        "longitude": -120.611,
-        "location": {
-          "name": "Vandenberg SFB, CA, USA",
-          "country_code": "US"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
-      "webcasts": [
-        {
-          "title": "SpaceX Starlink Group 15-27",
-          "url": "https://www.youtube.com/watch?v=gOcigcsXtHk"
-        },
-        {
-          "title": "SpaceX Falcon 9 rocket launches from California with 27 Starlink satellites",
-          "url": "https://www.youtube.com/watch?v=GjBMPqhEBTg"
-        },
-        {
-          "title": "Starlink Mission",
-          "url": "https://x.com/i/broadcasts/1nxnRBXEladxO"
-        }
-      ],
-      "webcast_live": false
-    },
-    {
-      "id": "5af31461-bce5-4cfb-a0ee-b527cf285d90",
-      "name": "Kinetica 1 | 9 satellites",
-      "net": "2026-09-20T04:03:00Z",
-      "window_start": "2026-09-20T03:54:00Z",
-      "window_end": "2026-09-20T04:15:00Z",
-      "status": {
-        "abbrev": "Success",
-        "name": "Launch Successful",
-        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
-      },
-      "probability": null,
-      "provider": "CAS Space",
-      "rocket": "Kinetica 1",
-      "mission": {
-        "name": "9 satellites",
-        "description": "Share-ride of 9 commercial Earth observation and technology demonstration satellites to SSO, details TBD.",
-        "type": "Earth Science",
-        "orbit": "Sun-Synchronous Orbit"
-      },
-      "pad": {
-        "name": "Launch Area 130",
-        "map_url": "https://www.google.com/maps?q=40.8182,100.22514",
-        "latitude": 40.8182,
-        "longitude": 100.22514,
-        "location": {
-          "name": "Jiuquan Satellite Launch Center, People's Republic of China",
-          "country_code": "CN"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/zhongke-1a_image_20220912002218.png",
-      "webcasts": [],
-      "webcast_live": false
-    },
     {
       "id": "63063b9d-ade9-4448-8717-6f910aa81188",
       "name": "Long March 8A | Unknown Payload",
@@ -2057,6 +1976,74 @@
       "rocket": "Falcon 9 Block 5",
       "mission": {
         "name": "Rivada 1",
+        "description": "24 satellites for Rivada's internet constellation.",
+        "type": "Communications",
+        "orbit": "Polar Orbit"
+      },
+      "pad": {
+        "name": "Space Launch Complex 4E",
+        "map_url": "https://www.google.com/maps?q=34.632,-120.611",
+        "latitude": 34.632,
+        "longitude": -120.611,
+        "location": {
+          "name": "Vandenberg SFB, CA, USA",
+          "country_code": "US"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "511a3ef8-799e-4723-9293-b954d9d2eb83",
+      "name": "Falcon 9 Block 5 | Rivada 10",
+      "net": "2026-12-31T00:00:00Z",
+      "window_start": "2026-12-31T00:00:00Z",
+      "window_end": "2026-12-31T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "SpaceX",
+      "rocket": "Falcon 9 Block 5",
+      "mission": {
+        "name": "Rivada 10",
+        "description": "24 satellites for Rivada's internet constellation.",
+        "type": "Communications",
+        "orbit": "Polar Orbit"
+      },
+      "pad": {
+        "name": "Space Launch Complex 4E",
+        "map_url": "https://www.google.com/maps?q=34.632,-120.611",
+        "latitude": 34.632,
+        "longitude": -120.611,
+        "location": {
+          "name": "Vandenberg SFB, CA, USA",
+          "country_code": "US"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "d08d8b46-353b-4eee-ab5e-e1385b329008",
+      "name": "Falcon 9 Block 5 | Rivada 11",
+      "net": "2026-12-31T00:00:00Z",
+      "window_start": "2026-12-31T00:00:00Z",
+      "window_end": "2026-12-31T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "SpaceX",
+      "rocket": "Falcon 9 Block 5",
+      "mission": {
+        "name": "Rivada 11",
         "description": "24 satellites for Rivada's internet constellation.",
         "type": "Communications",
         "orbit": "Polar Orbit"
