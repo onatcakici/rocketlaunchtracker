@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-22T21:23:06Z",
+  "generated": "2026-09-23T04:49:56Z",
   "sample": false,
   "count": 60,
   "results": [
@@ -194,9 +194,9 @@
       "window_start": "2026-10-01T15:10:06Z",
       "window_end": "2026-10-01T15:10:06Z",
       "status": {
-        "abbrev": "TBC",
-        "name": "To Be Confirmed",
-        "description": "Awaiting official confirmation - current date is known with some certainty."
+        "abbrev": "Go",
+        "name": "Go for Launch",
+        "description": "Current T-0 confirmed by official or reliable sources."
       },
       "probability": null,
       "provider": "SpaceX",
@@ -218,7 +218,12 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20220301072106.jpeg",
-      "webcasts": [],
+      "webcasts": [
+        {
+          "title": "Crew-13 Mission",
+          "url": "https://x.com/i/broadcasts/1qxvvepEVdRxB"
+        }
+      ],
       "webcast_live": false
     },
     {
@@ -394,6 +399,40 @@
           "url": "https://x.com/i/broadcasts/1yKAPwdemygxb"
         }
       ],
+      "webcast_live": false
+    },
+    {
+      "id": "20d5676e-111b-40e3-8923-b218c3665ca2",
+      "name": "GSLV Mk II | IRNSS-1L (NVS-03)",
+      "net": "2026-10-15T00:00:00Z",
+      "window_start": "2026-10-15T00:00:00Z",
+      "window_end": "2026-10-15T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "Indian Space Research Organization",
+      "rocket": "GSLV Mk. II",
+      "mission": {
+        "name": "IRNSS-1L (NVS-03)",
+        "description": "This is a replacement satellite for the Indian Regional Navigation Satellite System. The constellation will provide India with an alternative to GPS and will be used for military and civilian use. Located at a geosynchronous orbit, the system will be operated by the Indian government.",
+        "type": "Navigation",
+        "orbit": "Geostationary Transfer Orbit"
+      },
+      "pad": {
+        "name": "Satish Dhawan Space Centre Second Launch Pad",
+        "map_url": "https://www.google.com/maps?q=13.7199,80.2304",
+        "latitude": 13.7199,
+        "longitude": 80.2304,
+        "location": {
+          "name": "Satish Dhawan Space Centre, India",
+          "country_code": "IN"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/gslv2520mk252_image_20240101090337.jpg",
+      "webcasts": [],
       "webcast_live": false
     },
     {
@@ -2010,40 +2049,6 @@
       "rocket": "Falcon 9 Block 5",
       "mission": {
         "name": "Rivada 10",
-        "description": "24 satellites for Rivada's internet constellation.",
-        "type": "Communications",
-        "orbit": "Polar Orbit"
-      },
-      "pad": {
-        "name": "Space Launch Complex 4E",
-        "map_url": "https://www.google.com/maps?q=34.632,-120.611",
-        "latitude": 34.632,
-        "longitude": -120.611,
-        "location": {
-          "name": "Vandenberg SFB, CA, USA",
-          "country_code": "US"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
-      "webcasts": [],
-      "webcast_live": false
-    },
-    {
-      "id": "d08d8b46-353b-4eee-ab5e-e1385b329008",
-      "name": "Falcon 9 Block 5 | Rivada 11",
-      "net": "2026-12-31T00:00:00Z",
-      "window_start": "2026-12-31T00:00:00Z",
-      "window_end": "2026-12-31T00:00:00Z",
-      "status": {
-        "abbrev": "TBD",
-        "name": "To Be Determined",
-        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
-      },
-      "probability": null,
-      "provider": "SpaceX",
-      "rocket": "Falcon 9 Block 5",
-      "mission": {
-        "name": "Rivada 11",
         "description": "24 satellites for Rivada's internet constellation.",
         "type": "Communications",
         "orbit": "Polar Orbit"
