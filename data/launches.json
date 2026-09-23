@@ -1,27 +1,27 @@
 {
-  "generated": "2026-09-23T11:44:30Z",
+  "generated": "2026-09-23T17:08:00Z",
   "sample": false,
   "count": 60,
   "results": [
     {
       "id": "63063b9d-ade9-4448-8717-6f910aa81188",
-      "name": "Long March 8A | Unknown Payload",
-      "net": "2026-09-23T13:30:00Z",
+      "name": "Long March 8A | SatNet LEO Group 26",
+      "net": "2026-09-23T13:32:00Z",
       "window_start": "2026-09-23T13:24:00Z",
       "window_end": "2026-09-23T13:49:00Z",
       "status": {
-        "abbrev": "Go",
-        "name": "Go for Launch",
-        "description": "Current T-0 confirmed by official or reliable sources."
+        "abbrev": "Success",
+        "name": "Launch Successful",
+        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
       },
       "probability": null,
       "provider": "China Aerospace Science and Technology Corporation",
       "rocket": "Long March 8A",
       "mission": {
-        "name": "Unknown Payload",
-        "description": "Details TBD.",
-        "type": "Unknown",
-        "orbit": "Unknown"
+        "name": "SatNet LEO Group 26",
+        "description": "A batch of 9 Low Earth Orbit communication satellites for the Chinese state owned SatNet constellation operated by the China Satellite Network Group.\r\n\r\nThe constellation will eventually consists of 13000 satellites.",
+        "type": "Communications",
+        "orbit": "Low Earth Orbit"
       },
       "pad": {
         "name": "Commercial LC-1",
@@ -34,7 +34,12 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/cz-8a_launch_2_image_20251206093107.jpeg",
-      "webcasts": [],
+      "webcasts": [
+        {
+          "title": "(CLEAN FEED) Watch Long March 8A Launch from Wenchang, LIVE!!",
+          "url": "https://www.youtube.com/watch?v=vRrITqt9Ttg"
+        }
+      ],
       "webcast_live": false
     },
     {
