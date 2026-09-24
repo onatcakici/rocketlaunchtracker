@@ -1,47 +1,8 @@
 {
-  "generated": "2026-09-24T11:52:54Z",
+  "generated": "2026-09-24T17:15:52Z",
   "sample": false,
   "count": 60,
   "results": [
-    {
-      "id": "63063b9d-ade9-4448-8717-6f910aa81188",
-      "name": "Long March 8A | SatNet LEO Group 26",
-      "net": "2026-09-23T13:32:00Z",
-      "window_start": "2026-09-23T13:24:00Z",
-      "window_end": "2026-09-23T13:49:00Z",
-      "status": {
-        "abbrev": "Success",
-        "name": "Launch Successful",
-        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
-      },
-      "probability": null,
-      "provider": "China Aerospace Science and Technology Corporation",
-      "rocket": "Long March 8A",
-      "mission": {
-        "name": "SatNet LEO Group 26",
-        "description": "A batch of 9 Low Earth Orbit communication satellites for the Chinese state owned SatNet constellation operated by the China Satellite Network Group.\r\n\r\nThe constellation will eventually consists of 13000 satellites.",
-        "type": "Communications",
-        "orbit": "Low Earth Orbit"
-      },
-      "pad": {
-        "name": "Commercial LC-1",
-        "map_url": "https://www.google.com/maps?q=19.597275,110.930753",
-        "latitude": 19.597275,
-        "longitude": 110.930753,
-        "location": {
-          "name": "Wenchang Space Launch Site, People's Republic of China",
-          "country_code": "CN"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/cz-8a_launch_2_image_20251206093107.jpeg",
-      "webcasts": [
-        {
-          "title": "(CLEAN FEED) Watch Long March 8A Launch from Wenchang, LIVE!!",
-          "url": "https://www.youtube.com/watch?v=vRrITqt9Ttg"
-        }
-      ],
-      "webcast_live": false
-    },
     {
       "id": "aed67837-b567-43e0-8071-c3ccc24aa496",
       "name": "Long March 6A | Yaogan 40 Group 04",
@@ -263,6 +224,45 @@
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
       "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "4651fd8a-43de-4166-bf8f-c168b3bd1d2c",
+      "name": "Falcon Heavy | NROL-97",
+      "net": "2026-10-02T03:53:00Z",
+      "window_start": "2026-10-02T03:53:00Z",
+      "window_end": "2026-10-02T03:53:00Z",
+      "status": {
+        "abbrev": "Go",
+        "name": "Go for Launch",
+        "description": "Current T-0 confirmed by official or reliable sources."
+      },
+      "probability": null,
+      "provider": "SpaceX",
+      "rocket": "Falcon Heavy",
+      "mission": {
+        "name": "NROL-97",
+        "description": "Classified payload for the US National Reconnaissance Office.",
+        "type": "Government/Top Secret",
+        "orbit": "Unknown"
+      },
+      "pad": {
+        "name": "Launch Complex 39A",
+        "map_url": "https://www.google.com/maps?q=28.60822681,-80.60428186",
+        "latitude": 28.60822681,
+        "longitude": -80.60428186,
+        "location": {
+          "name": "Kennedy Space Center, FL, USA",
+          "country_code": "US"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_heavy_image_20220129192819.jpeg",
+      "webcasts": [
+        {
+          "title": "NROL-97 Mission",
+          "url": "https://x.com/i/broadcasts/1oJMvNkPPXlxQ"
+        }
+      ],
       "webcast_live": false
     },
     {
@@ -641,40 +641,6 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/vulcan_vc6l_image_20220406123130.jpg",
-      "webcasts": [],
-      "webcast_live": false
-    },
-    {
-      "id": "4651fd8a-43de-4166-bf8f-c168b3bd1d2c",
-      "name": "Falcon Heavy | NROL-97",
-      "net": "2026-10-31T00:00:00Z",
-      "window_start": "2026-10-31T00:00:00Z",
-      "window_end": "2026-10-31T00:00:00Z",
-      "status": {
-        "abbrev": "TBD",
-        "name": "To Be Determined",
-        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
-      },
-      "probability": null,
-      "provider": "SpaceX",
-      "rocket": "Falcon Heavy",
-      "mission": {
-        "name": "NROL-97",
-        "description": "Classified payload for the US National Reconnaissance Office",
-        "type": "Government/Top Secret",
-        "orbit": "Unknown"
-      },
-      "pad": {
-        "name": "Launch Complex 39A",
-        "map_url": "https://www.google.com/maps?q=28.60822681,-80.60428186",
-        "latitude": 28.60822681,
-        "longitude": -80.60428186,
-        "location": {
-          "name": "Kennedy Space Center, FL, USA",
-          "country_code": "US"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_heavy_image_20220129192819.jpeg",
       "webcasts": [],
       "webcast_live": false
     },
@@ -2054,6 +2020,40 @@
       "rocket": "Falcon 9 Block 5",
       "mission": {
         "name": "Rivada 10",
+        "description": "24 satellites for Rivada's internet constellation.",
+        "type": "Communications",
+        "orbit": "Polar Orbit"
+      },
+      "pad": {
+        "name": "Space Launch Complex 4E",
+        "map_url": "https://www.google.com/maps?q=34.632,-120.611",
+        "latitude": 34.632,
+        "longitude": -120.611,
+        "location": {
+          "name": "Vandenberg SFB, CA, USA",
+          "country_code": "US"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "d08d8b46-353b-4eee-ab5e-e1385b329008",
+      "name": "Falcon 9 Block 5 | Rivada 11",
+      "net": "2026-12-31T00:00:00Z",
+      "window_start": "2026-12-31T00:00:00Z",
+      "window_end": "2026-12-31T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "SpaceX",
+      "rocket": "Falcon 9 Block 5",
+      "mission": {
+        "name": "Rivada 11",
         "description": "24 satellites for Rivada's internet constellation.",
         "type": "Communications",
         "orbit": "Polar Orbit"
