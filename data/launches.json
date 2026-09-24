@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-24T04:57:52Z",
+  "generated": "2026-09-24T11:52:54Z",
   "sample": false,
   "count": 60,
   "results": [
@@ -44,23 +44,23 @@
     },
     {
       "id": "aed67837-b567-43e0-8071-c3ccc24aa496",
-      "name": "Long March 6A | Unknown Payload",
-      "net": "2026-09-24T08:45:00Z",
+      "name": "Long March 6A | Yaogan 40 Group 04",
+      "net": "2026-09-24T08:46:00Z",
       "window_start": "2026-09-24T08:38:00Z",
       "window_end": "2026-09-24T09:04:00Z",
       "status": {
-        "abbrev": "Go",
-        "name": "Go for Launch",
-        "description": "Current T-0 confirmed by official or reliable sources."
+        "abbrev": "Success",
+        "name": "Launch Successful",
+        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
       },
       "probability": null,
       "provider": "China Aerospace Science and Technology Corporation",
       "rocket": "Long March 6A",
       "mission": {
-        "name": "Unknown Payload",
-        "description": "Details TBD.",
-        "type": "Unknown",
-        "orbit": "Unknown"
+        "name": "Yaogan 40 Group 04",
+        "description": "3 Chinese reconnaissance satellites of unknown purposes, officially reported as for \"Electromagnetic environment probing\".",
+        "type": "Government/Top Secret",
+        "orbit": "Polar Orbit"
       },
       "pad": {
         "name": "Launch Complex 9A",
