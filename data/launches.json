@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-24T17:15:52Z",
+  "generated": "2026-09-24T21:33:57Z",
   "sample": false,
   "count": 60,
   "results": [
@@ -231,7 +231,7 @@
       "name": "Falcon Heavy | NROL-97",
       "net": "2026-10-02T03:53:00Z",
       "window_start": "2026-10-02T03:53:00Z",
-      "window_end": "2026-10-02T03:53:00Z",
+      "window_end": "2026-10-02T04:42:00Z",
       "status": {
         "abbrev": "Go",
         "name": "Go for Launch",
