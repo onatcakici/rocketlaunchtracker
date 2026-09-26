@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-26T16:27:30Z",
+  "generated": "2026-09-26T21:14:29Z",
   "sample": false,
   "count": 60,
   "results": [
@@ -49,9 +49,9 @@
       "window_start": "2026-09-26T11:56:00Z",
       "window_end": "2026-09-26T14:56:00Z",
       "status": {
-        "abbrev": "In Flight",
-        "name": "Launch in Flight",
-        "description": "The launch vehicle has lifted off from the launchpad."
+        "abbrev": "Success",
+        "name": "Launch Successful",
+        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
       },
       "probability": null,
       "provider": "SpaceX",
@@ -96,9 +96,9 @@
       "window_start": "2026-09-28T12:15:00Z",
       "window_end": "2026-09-28T13:30:00Z",
       "status": {
-        "abbrev": "TBC",
-        "name": "To Be Confirmed",
-        "description": "Awaiting official confirmation - current date is known with some certainty."
+        "abbrev": "Go",
+        "name": "Go for Launch",
+        "description": "Current T-0 confirmed by official or reliable sources."
       },
       "probability": null,
       "provider": "SpaceX",
