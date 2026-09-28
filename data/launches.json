@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-28T14:03:35Z",
+  "generated": "2026-09-28T23:19:38Z",
   "sample": false,
   "count": 60,
   "results": [
@@ -10,9 +10,9 @@
       "window_start": "2026-09-28T12:15:00Z",
       "window_end": "2026-09-28T13:30:00Z",
       "status": {
-        "abbrev": "In Flight",
-        "name": "Launch in Flight",
-        "description": "The launch vehicle has lifted off from the launchpad."
+        "abbrev": "Success",
+        "name": "Launch Successful",
+        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
       },
       "probability": null,
       "provider": "SpaceX",
@@ -36,8 +36,8 @@
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/starship_on_the_image_20260724044615.jpg",
       "webcasts": [
         {
-          "title": "GO! - SpaceX - Starship - Starship Flight 14 - Pad 2 - Starbase, TX - Space Affairs Live",
-          "url": "https://www.youtube.com/watch?v=SqSGeLDIG-0"
+          "title": "SpaceX Starlink Group 31-1 (Starship Flight 14)",
+          "url": "https://www.youtube.com/watch?v=Dun8yJ6qvmA"
         },
         {
           "title": "Starship Flight 14",
@@ -56,7 +56,7 @@
           "url": "https://www.youtube.com/watch?v=LeKY53pwArw"
         }
       ],
-      "webcast_live": true
+      "webcast_live": false
     },
     {
       "id": "18441371-8b2e-457c-afb5-1ec1b11ab630",
@@ -789,6 +789,40 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/pslv_image_20190224012254.jpeg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "07e945c1-2ec6-4d29-a500-1afbe920440f",
+      "name": "Atlas V N22 | Starliner-1",
+      "net": "2026-12-31T00:00:00Z",
+      "window_start": "2026-12-31T00:00:00Z",
+      "window_end": "2026-12-31T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "United Launch Alliance",
+      "rocket": "Atlas V N22",
+      "mission": {
+        "name": "Starliner-1",
+        "description": "Starliner-1 is the first operational flight of a Starliner spacecraft to the International Space Station as part of NASA's Commercial Crew Program. Due to problems with the Starliner spacecraft's RCS attitude control system during the Crew Flight Test mission in 2024, this mission has been re-scoped to not carry a crew by NASA. It will instead deliver necessary cargo to the orbital laboratory and allow in-flight validation of the system upgrades implemented following the Crew Flight Test mission last year.",
+        "type": "Human Exploration",
+        "orbit": "Low Earth Orbit"
+      },
+      "pad": {
+        "name": "Space Launch Complex 41",
+        "map_url": "https://www.google.com/maps?q=28.58341025,-80.58303644",
+        "latitude": 28.58341025,
+        "longitude": -80.58303644,
+        "location": {
+          "name": "Cape Canaveral SFS, FL, USA",
+          "country_code": "US"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/atlas_v_n22_image_20210813082339.jpeg",
       "webcasts": [],
       "webcast_live": false
     },
@@ -1571,40 +1605,6 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/ariane_64_lifto_image_20260213070745.jpg",
-      "webcasts": [],
-      "webcast_live": false
-    },
-    {
-      "id": "07e945c1-2ec6-4d29-a500-1afbe920440f",
-      "name": "Atlas V N22 | Starliner-1",
-      "net": "2026-12-31T00:00:00Z",
-      "window_start": "2026-12-31T00:00:00Z",
-      "window_end": "2026-12-31T00:00:00Z",
-      "status": {
-        "abbrev": "TBD",
-        "name": "To Be Determined",
-        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
-      },
-      "probability": null,
-      "provider": "United Launch Alliance",
-      "rocket": "Atlas V N22",
-      "mission": {
-        "name": "Starliner-1",
-        "description": "Starliner-1 is the first operational flight of a Starliner spacecraft to the International Space Station as part of NASA's Commercial Crew Program. Due to problems with the Starliner spacecraft's RCS attitude control system during the Crew Flight Test mission in 2024, this mission has been re-scoped to not carry a crew by NASA. It will instead deliver necessary cargo to the orbital laboratory and allow in-flight validation of the system upgrades implemented following the Crew Flight Test mission last year.",
-        "type": "Human Exploration",
-        "orbit": "Low Earth Orbit"
-      },
-      "pad": {
-        "name": "Space Launch Complex 41",
-        "map_url": "https://www.google.com/maps?q=28.58341025,-80.58303644",
-        "latitude": 28.58341025,
-        "longitude": -80.58303644,
-        "location": {
-          "name": "Cape Canaveral SFS, FL, USA",
-          "country_code": "US"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/atlas_v_n22_image_20210813082339.jpeg",
       "webcasts": [],
       "webcast_live": false
     },
