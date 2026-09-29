@@ -1,63 +1,8 @@
 {
-  "generated": "2026-09-29T05:48:33Z",
+  "generated": "2026-09-29T12:59:23Z",
   "sample": false,
   "count": 60,
   "results": [
-    {
-      "id": "7d1afb26-6f9c-429b-9ccf-29012fd1e519",
-      "name": "Starship | Starlink Group 31-1 (Starship Flight 14)",
-      "net": "2026-09-28T12:48:59Z",
-      "window_start": "2026-09-28T12:15:00Z",
-      "window_end": "2026-09-28T13:30:00Z",
-      "status": {
-        "abbrev": "Success",
-        "name": "Launch Successful",
-        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
-      },
-      "probability": null,
-      "provider": "SpaceX",
-      "rocket": "Starship V3",
-      "mission": {
-        "name": "Starlink Group 31-1 (Starship Flight 14)",
-        "description": "14th test flight of the two-stage Starship launch vehicle. 3rd flight of Starship V3 and the first Starship flight to deploy satellites (a group of Starlink satellites known as Starlink Group 31-1) into stable Low Earth Orbit.\r\n\r\nThe ship is expected to fly at an altitude approximately 275 km above Earth and complete approximately 6 orbits around the planet for nearly 10 hours, with splashdown targeted in the Pacific Ocean west of Chile.\r\n\r\nThe booster’s primary test objective on Flight 14 will be executing a successful launch, ascent, stage separation, boostback burn, and landing burn at an offshore landing point in the Gulf.\r\n\r\nStarship will deliver 26 Starlink V3 satellites to orbit for the first time, which aim to greatly expand the network's capacity and user speeds. Each Starlink V3 satellite will add 1 Tbps of capacity to the constellation.",
-        "type": "Communications",
-        "orbit": "Low Earth Orbit"
-      },
-      "pad": {
-        "name": "Orbital Launch Pad 2",
-        "map_url": "https://www.google.com/maps?q=25.996770,-97.157990",
-        "latitude": 25.99677,
-        "longitude": -97.15799,
-        "location": {
-          "name": "SpaceX Starbase, TX, USA",
-          "country_code": "US"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/starship_on_the_image_20260724044615.jpg",
-      "webcasts": [
-        {
-          "title": "SpaceX Starlink Group 31-1 (Starship Flight 14)",
-          "url": "https://www.youtube.com/watch?v=Dun8yJ6qvmA"
-        },
-        {
-          "title": "Starship Flight 14",
-          "url": "https://x.com/i/broadcasts/1qxvvenMPMQxB"
-        },
-        {
-          "title": "Watch Live: SpaceX Starship heads for orbit on 14th flight",
-          "url": "https://www.youtube.com/watch?v=FyQU5NdpfXQ"
-        },
-        {
-          "title": "SpaceX Starship Flight 14 - Launch & Booster Splashdown - LAUNCH STREAM",
-          "url": "https://www.youtube.com/watch?v=9gDxG-pm1Zo"
-        },
-        {
-          "title": "[4K] Watch the FIRST Orbital Starship Mission!!!",
-          "url": "https://www.youtube.com/watch?v=LeKY53pwArw"
-        }
-      ],
-      "webcast_live": false
-    },
     {
       "id": "18441371-8b2e-457c-afb5-1ec1b11ab630",
       "name": "Falcon 9 Block 5 | Crew-13",
@@ -319,13 +264,13 @@
     {
       "id": "20d5676e-111b-40e3-8923-b218c3665ca2",
       "name": "GSLV Mk II | IRNSS-1L (NVS-03)",
-      "net": "2026-10-15T00:00:00Z",
-      "window_start": "2026-10-15T00:00:00Z",
-      "window_end": "2026-10-15T00:00:00Z",
+      "net": "2026-10-13T17:00:00Z",
+      "window_start": "2026-10-13T17:00:00Z",
+      "window_end": "2026-10-13T21:00:00Z",
       "status": {
-        "abbrev": "TBD",
-        "name": "To Be Determined",
-        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+        "abbrev": "TBC",
+        "name": "To Be Confirmed",
+        "description": "Awaiting official confirmation - current date is known with some certainty."
       },
       "probability": null,
       "provider": "Indian Space Research Organization",
@@ -2066,6 +2011,40 @@
       "rocket": "Falcon 9 Block 5",
       "mission": {
         "name": "Rivada 11",
+        "description": "24 satellites for Rivada's internet constellation.",
+        "type": "Communications",
+        "orbit": "Polar Orbit"
+      },
+      "pad": {
+        "name": "Space Launch Complex 4E",
+        "map_url": "https://www.google.com/maps?q=34.632,-120.611",
+        "latitude": 34.632,
+        "longitude": -120.611,
+        "location": {
+          "name": "Vandenberg SFB, CA, USA",
+          "country_code": "US"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "bf5c6fa2-3add-49ff-aad6-c6450148cd89",
+      "name": "Falcon 9 Block 5 | Rivada 12",
+      "net": "2026-12-31T00:00:00Z",
+      "window_start": "2026-12-31T00:00:00Z",
+      "window_end": "2026-12-31T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "SpaceX",
+      "rocket": "Falcon 9 Block 5",
+      "mission": {
+        "name": "Rivada 12",
         "description": "24 satellites for Rivada's internet constellation.",
         "type": "Communications",
         "orbit": "Polar Orbit"
