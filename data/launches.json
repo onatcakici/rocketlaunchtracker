@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-30T05:38:13Z",
+  "generated": "2026-09-30T12:41:31Z",
   "sample": false,
   "count": 60,
   "results": [
@@ -36,8 +36,24 @@
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20220301072106.jpeg",
       "webcasts": [
         {
+          "title": "NASA's SpaceX Crew-13 Launch",
+          "url": "https://www.youtube.com/watch?v=7ZiUbT1-djA"
+        },
+        {
+          "title": "NASA’s SpaceX Crew-13 Launch",
+          "url": "https://plus.nasa.gov/scheduled-video/nasas-spacex-crew-13-launch/"
+        },
+        {
           "title": "Crew-13 Mission",
           "url": "https://x.com/i/broadcasts/1qxvvepEVdRxB"
+        },
+        {
+          "title": "SpaceX Falcon 9 rocket launches NASA's Crew 13 mission to the space station",
+          "url": "https://www.youtube.com/watch?v=6_Vbc21msHU"
+        },
+        {
+          "title": "SpaceX Launches Crew-13 Dragon to the International Space Station",
+          "url": "https://www.youtube.com/watch?v=jxLT_ckNbIs"
         }
       ],
       "webcast_live": false
@@ -74,6 +90,14 @@
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
       "webcasts": [
+        {
+          "title": "GO! - SpaceX - Falcon 9 - Transporter-18 - SLC-4E - Vandenberg SFB, CA - Space Affairs Live",
+          "url": "https://www.youtube.com/watch?v=9tmgAlQ33AM"
+        },
+        {
+          "title": "SpaceX Falcon 9 rocket launches 130 payloads from California on Transporter 18 mission",
+          "url": "https://www.youtube.com/watch?v=AT_7CY5brRo"
+        },
         {
           "title": "Transporter-18 Mission",
           "url": "https://x.com/i/broadcasts/1RJjpbyQpOBKw"
@@ -113,6 +137,18 @@
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_heavy_image_20220129192819.jpeg",
       "webcasts": [
+        {
+          "title": "GO! - SpaceX - Falcon Heavy - NROL-97 - LC-39A - Kennedy Space Center - Space Affairs Live",
+          "url": "https://www.youtube.com/watch?v=0ugtQtSNh4w"
+        },
+        {
+          "title": "SpaceX Falcon Heavy launches its first mission for U.S. spy satellite agency",
+          "url": "https://www.youtube.com/watch?v=4KZtaO-VtrI"
+        },
+        {
+          "title": "SpaceX Falcon Heavy Launches NROL-97",
+          "url": "https://www.youtube.com/watch?v=aqYtiH1UduQ"
+        },
         {
           "title": "NROL-97 Mission",
           "url": "https://x.com/i/broadcasts/1oJMvNkPPXlxQ"
