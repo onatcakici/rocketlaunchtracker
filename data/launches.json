@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-01T13:24:58Z",
+  "generated": "2026-10-01T22:44:18Z",
   "sample": false,
   "count": 60,
   "results": [
@@ -10,11 +10,11 @@
       "window_start": "2026-10-01T15:10:06Z",
       "window_end": "2026-10-01T15:10:06Z",
       "status": {
-        "abbrev": "Go",
-        "name": "Go for Launch",
-        "description": "Current T-0 confirmed by official or reliable sources."
+        "abbrev": "Success",
+        "name": "Launch Successful",
+        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
       },
-      "probability": 40,
+      "probability": 60,
       "provider": "SpaceX",
       "rocket": "Falcon 9 Block 5",
       "mission": {
@@ -56,22 +56,26 @@
           "url": "https://www.youtube.com/watch?v=jxLT_ckNbIs"
         },
         {
+          "title": "Launch of Joshua Kutryk to the International Space Station",
+          "url": "https://www.youtube.com/watch?v=gxR5eK8JE_I"
+        },
+        {
           "title": "Трансляция запуска экипажа Crew-13 c космонавтом Роскосмоса Сергеем Тетерятниковым",
           "url": "https://www.youtube.com/watch?v=Mkf_wAw8kLc"
         }
       ],
-      "webcast_live": true
+      "webcast_live": false
     },
     {
       "id": "67213393-7983-4c06-8b44-b8c785a5ed79",
       "name": "Falcon 9 Block 5 | Transporter 18 (Dedicated SSO Rideshare)",
-      "net": "2026-10-01T18:18:00Z",
+      "net": "2026-10-01T18:32:00Z",
       "window_start": "2026-10-01T18:18:00Z",
       "window_end": "2026-10-01T19:16:00Z",
       "status": {
-        "abbrev": "Go",
-        "name": "Go for Launch",
-        "description": "Current T-0 confirmed by official or reliable sources."
+        "abbrev": "Success",
+        "name": "Launch Successful",
+        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
       },
       "probability": null,
       "provider": "SpaceX",
@@ -95,8 +99,8 @@
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
       "webcasts": [
         {
-          "title": "GO! - SpaceX - Falcon 9 - Transporter-18 - SLC-4E - Vandenberg SFB, CA - Space Affairs Live",
-          "url": "https://www.youtube.com/watch?v=9tmgAlQ33AM"
+          "title": "SpaceX Transporter 18 (Dedicated SSO Rideshare)",
+          "url": "https://www.youtube.com/watch?v=pjEhZcddNgc"
         },
         {
           "title": "SpaceX Falcon 9 rocket launches 130 payloads from California on Transporter 18 mission",
@@ -163,9 +167,9 @@
     {
       "id": "da43dc2c-00af-4cc1-8ef1-90a60b2eb9e5",
       "name": "Falcon 9 Block 5 | SDA Tranche 1 Transport Layer A",
-      "net": "2026-10-05T08:16:00Z",
-      "window_start": "2026-10-05T08:16:00Z",
-      "window_end": "2026-10-05T08:28:00Z",
+      "net": "2026-10-05T08:17:00Z",
+      "window_start": "2026-10-05T08:17:00Z",
+      "window_end": "2026-10-05T08:17:00Z",
       "status": {
         "abbrev": "Go",
         "name": "Go for Launch",
@@ -307,36 +311,36 @@
       "webcast_live": false
     },
     {
-      "id": "20d5676e-111b-40e3-8923-b218c3665ca2",
-      "name": "GSLV Mk II | IRNSS-1L (NVS-03)",
-      "net": "2026-10-13T17:00:00Z",
-      "window_start": "2026-10-13T17:00:00Z",
-      "window_end": "2026-10-13T21:00:00Z",
+      "id": "bf2c3027-a314-403e-a416-2bfd5d165ad1",
+      "name": "Falcon 9 Block 5 | Dragon CRS-2 SpX-35",
+      "net": "2026-10-13T10:33:00Z",
+      "window_start": "2026-10-13T10:33:00Z",
+      "window_end": "2026-10-13T10:33:00Z",
       "status": {
         "abbrev": "TBC",
         "name": "To Be Confirmed",
         "description": "Awaiting official confirmation - current date is known with some certainty."
       },
       "probability": null,
-      "provider": "Indian Space Research Organization",
-      "rocket": "GSLV Mk. II",
+      "provider": "SpaceX",
+      "rocket": "Falcon 9 Block 5",
       "mission": {
-        "name": "IRNSS-1L (NVS-03)",
-        "description": "This is a replacement satellite for the Indian Regional Navigation Satellite System. The constellation will provide India with an alternative to GPS and will be used for military and civilian use. Located at a geosynchronous orbit, the system will be operated by the Indian government.",
-        "type": "Navigation",
-        "orbit": "Geostationary Transfer Orbit"
+        "name": "Dragon CRS-2 SpX-35",
+        "description": "35th commercial resupply services mission to the International Space Station operated by SpaceX. The flight will be conducted under the second Commercial Resupply Services contract with NASA.\r\n\r\nCargo Dragon 2 brings supplies and payloads, including critical materials to directly support science and research investigations that occur onboard the orbiting laboratory.",
+        "type": "Resupply",
+        "orbit": "Low Earth Orbit"
       },
       "pad": {
-        "name": "Satish Dhawan Space Centre Second Launch Pad",
-        "map_url": "https://www.google.com/maps?q=13.7199,80.2304",
-        "latitude": 13.7199,
-        "longitude": 80.2304,
+        "name": "Space Launch Complex 40",
+        "map_url": "https://www.google.com/maps?q=28.56194122,-80.57735736",
+        "latitude": 28.56194122,
+        "longitude": -80.57735736,
         "location": {
-          "name": "Satish Dhawan Space Centre, India",
-          "country_code": "IN"
+          "name": "Cape Canaveral SFS, FL, USA",
+          "country_code": "US"
         }
       },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/gslv2520mk252_image_20240101090337.jpg",
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20210520085648.jpeg",
       "webcasts": [],
       "webcast_live": false
     },
@@ -443,8 +447,8 @@
       "webcast_live": false
     },
     {
-      "id": "bf2c3027-a314-403e-a416-2bfd5d165ad1",
-      "name": "Falcon 9 Block 5 | Dragon CRS-2 SpX-35",
+      "id": "20d5676e-111b-40e3-8923-b218c3665ca2",
+      "name": "GSLV Mk II | IRNSS-1L (NVS-03)",
       "net": "2026-10-31T00:00:00Z",
       "window_start": "2026-10-31T00:00:00Z",
       "window_end": "2026-10-31T00:00:00Z",
@@ -454,25 +458,25 @@
         "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
       },
       "probability": null,
-      "provider": "SpaceX",
-      "rocket": "Falcon 9 Block 5",
+      "provider": "Indian Space Research Organization",
+      "rocket": "GSLV Mk. II",
       "mission": {
-        "name": "Dragon CRS-2 SpX-35",
-        "description": "35th commercial resupply services mission to the International Space Station operated by SpaceX. The flight will be conducted under the second Commercial Resupply Services contract with NASA.\r\n\r\nCargo Dragon 2 brings supplies and payloads, including critical materials to directly support science and research investigations that occur onboard the orbiting laboratory.",
-        "type": "Resupply",
-        "orbit": "Low Earth Orbit"
+        "name": "IRNSS-1L (NVS-03)",
+        "description": "This is a replacement satellite for the Indian Regional Navigation Satellite System. The constellation will provide India with an alternative to GPS and will be used for military and civilian use. Located at a geosynchronous orbit, the system will be operated by the Indian government.",
+        "type": "Navigation",
+        "orbit": "Geostationary Transfer Orbit"
       },
       "pad": {
-        "name": "Space Launch Complex 40",
-        "map_url": "https://www.google.com/maps?q=28.56194122,-80.57735736",
-        "latitude": 28.56194122,
-        "longitude": -80.57735736,
+        "name": "Satish Dhawan Space Centre Second Launch Pad",
+        "map_url": "https://www.google.com/maps?q=13.7199,80.2304",
+        "latitude": 13.7199,
+        "longitude": 80.2304,
         "location": {
-          "name": "Cape Canaveral SFS, FL, USA",
-          "country_code": "US"
+          "name": "Satish Dhawan Space Centre, India",
+          "country_code": "IN"
         }
       },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20210520085648.jpeg",
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/gslv2520mk252_image_20240101090337.jpg",
       "webcasts": [],
       "webcast_live": false
     },
@@ -647,40 +651,6 @@
       "webcast_live": false
     },
     {
-      "id": "d3bd7fb2-fac6-49fc-ae52-cee07d2fde67",
-      "name": "Falcon Heavy | Griffin Mission One",
-      "net": "2026-11-30T00:00:00Z",
-      "window_start": "2026-11-30T00:00:00Z",
-      "window_end": "2026-11-30T00:00:00Z",
-      "status": {
-        "abbrev": "TBD",
-        "name": "To Be Determined",
-        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
-      },
-      "probability": null,
-      "provider": "SpaceX",
-      "rocket": "Falcon Heavy",
-      "mission": {
-        "name": "Griffin Mission One",
-        "description": "Demonstration flight of the Astrobotic Griffin lander and its engines, initially contracted for the cancelled NASA VIPER (Volatiles Investigating Polar Exploration Rover) mission. The vacated payload spot will now host the FLIP (FLEX Lunar Innovation Platform) lunar rover from Astrolab.",
-        "type": "Lunar Exploration",
-        "orbit": "Lunar Orbit"
-      },
-      "pad": {
-        "name": "Launch Complex 39A",
-        "map_url": "https://www.google.com/maps?q=28.60822681,-80.60428186",
-        "latitude": 28.60822681,
-        "longitude": -80.60428186,
-        "location": {
-          "name": "Kennedy Space Center, FL, USA",
-          "country_code": "US"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_heavy_image_20220129192819.jpeg",
-      "webcasts": [],
-      "webcast_live": false
-    },
-    {
       "id": "7c891a0b-7194-4425-8cfd-2e8c75af2924",
       "name": "HANBIT-Nano | InnoSat-0",
       "net": "2026-11-30T00:00:00Z",
@@ -798,7 +768,7 @@
       "rocket": "Atlas V N22",
       "mission": {
         "name": "Starliner-1",
-        "description": "Starliner-1 is the first operational flight of a Starliner spacecraft to the International Space Station as part of NASA's Commercial Crew Program. Due to problems with the Starliner spacecraft's RCS attitude control system during the Crew Flight Test mission in 2024, this mission has been re-scoped to not carry a crew by NASA. It will instead deliver necessary cargo to the orbital laboratory and allow in-flight validation of the system upgrades implemented following the Crew Flight Test mission last year.",
+        "description": "Starliner-1 is the first operational flight of a Starliner spacecraft to the International Space Station as part of NASA's Commercial Crew Program. Due to problems with the Starliner spacecraft's RCS attitude control system during the Crew Flight Test mission in 2024, this mission has been re-scoped to not carry a crew by NASA. It will instead deliver necessary cargo to the orbital laboratory and allow in-flight validation of the system upgrades implemented following the Crew Flight Test mission.",
         "type": "Human Exploration",
         "orbit": "Low Earth Orbit"
       },
@@ -949,6 +919,40 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "d3bd7fb2-fac6-49fc-ae52-cee07d2fde67",
+      "name": "Falcon Heavy | Griffin Mission One",
+      "net": "2026-12-31T00:00:00Z",
+      "window_start": "2026-12-31T00:00:00Z",
+      "window_end": "2026-12-31T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "SpaceX",
+      "rocket": "Falcon Heavy",
+      "mission": {
+        "name": "Griffin Mission One",
+        "description": "Demonstration flight of the Astrobotic Griffin lander and its engines, initially contracted for the cancelled NASA VIPER (Volatiles Investigating Polar Exploration Rover) mission. The vacated payload spot will now host the FLIP (FLEX Lunar Innovation Platform) lunar rover from Astrolab.",
+        "type": "Lunar Exploration",
+        "orbit": "Lunar Orbit"
+      },
+      "pad": {
+        "name": "Launch Complex 39A",
+        "map_url": "https://www.google.com/maps?q=28.60822681,-80.60428186",
+        "latitude": 28.60822681,
+        "longitude": -80.60428186,
+        "location": {
+          "name": "Kennedy Space Center, FL, USA",
+          "country_code": "US"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_heavy_image_20220129192819.jpeg",
       "webcasts": [],
       "webcast_live": false
     },
