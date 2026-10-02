@@ -1,118 +1,8 @@
 {
-  "generated": "2026-10-02T12:43:38Z",
+  "generated": "2026-10-02T22:17:52Z",
   "sample": false,
   "count": 60,
   "results": [
-    {
-      "id": "18441371-8b2e-457c-afb5-1ec1b11ab630",
-      "name": "Falcon 9 Block 5 | Crew-13",
-      "net": "2026-10-01T15:10:06Z",
-      "window_start": "2026-10-01T15:10:06Z",
-      "window_end": "2026-10-01T15:10:06Z",
-      "status": {
-        "abbrev": "Success",
-        "name": "Launch Successful",
-        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
-      },
-      "probability": 60,
-      "provider": "SpaceX",
-      "rocket": "Falcon 9 Block 5",
-      "mission": {
-        "name": "Crew-13",
-        "description": "SpaceX Crew-13 is the thirteenth crewed operational flight of a Crew Dragon spacecraft to the International Space Station as part of NASA's Commercial Crew Program.",
-        "type": "Human Exploration",
-        "orbit": "Low Earth Orbit"
-      },
-      "pad": {
-        "name": "Space Launch Complex 40",
-        "map_url": "https://www.google.com/maps?q=28.56194122,-80.57735736",
-        "latitude": 28.56194122,
-        "longitude": -80.57735736,
-        "location": {
-          "name": "Cape Canaveral SFS, FL, USA",
-          "country_code": "US"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20220301072106.jpeg",
-      "webcasts": [
-        {
-          "title": "NASA's SpaceX Crew-13 Launch",
-          "url": "https://www.youtube.com/watch?v=7ZiUbT1-djA"
-        },
-        {
-          "title": "NASA’s SpaceX Crew-13 Launch",
-          "url": "https://plus.nasa.gov/scheduled-video/nasas-spacex-crew-13-launch/"
-        },
-        {
-          "title": "Crew-13 Mission",
-          "url": "https://x.com/i/broadcasts/1qxvvepEVdRxB"
-        },
-        {
-          "title": "SpaceX Falcon 9 rocket launches NASA's Crew 13 mission to the space station",
-          "url": "https://www.youtube.com/watch?v=6_Vbc21msHU"
-        },
-        {
-          "title": "SpaceX Launches Crew-13 Dragon to the International Space Station",
-          "url": "https://www.youtube.com/watch?v=jxLT_ckNbIs"
-        },
-        {
-          "title": "Launch of Joshua Kutryk to the International Space Station",
-          "url": "https://www.youtube.com/watch?v=gxR5eK8JE_I"
-        },
-        {
-          "title": "Трансляция запуска экипажа Crew-13 c космонавтом Роскосмоса Сергеем Тетерятниковым",
-          "url": "https://www.youtube.com/watch?v=Mkf_wAw8kLc"
-        }
-      ],
-      "webcast_live": false
-    },
-    {
-      "id": "67213393-7983-4c06-8b44-b8c785a5ed79",
-      "name": "Falcon 9 Block 5 | Transporter 18 (Dedicated SSO Rideshare)",
-      "net": "2026-10-01T18:32:00Z",
-      "window_start": "2026-10-01T18:18:00Z",
-      "window_end": "2026-10-01T19:16:00Z",
-      "status": {
-        "abbrev": "Success",
-        "name": "Launch Successful",
-        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
-      },
-      "probability": null,
-      "provider": "SpaceX",
-      "rocket": "Falcon 9 Block 5",
-      "mission": {
-        "name": "Transporter 18 (Dedicated SSO Rideshare)",
-        "description": "Dedicated rideshare flight to a sun-synchronous orbit with dozens of small microsatellites and nanosatellites for commercial and government customers.",
-        "type": "Dedicated Rideshare",
-        "orbit": "Sun-Synchronous Orbit"
-      },
-      "pad": {
-        "name": "Space Launch Complex 4E",
-        "map_url": "https://www.google.com/maps?q=34.632,-120.611",
-        "latitude": 34.632,
-        "longitude": -120.611,
-        "location": {
-          "name": "Vandenberg SFB, CA, USA",
-          "country_code": "US"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
-      "webcasts": [
-        {
-          "title": "SpaceX Transporter 18 (Dedicated SSO Rideshare)",
-          "url": "https://www.youtube.com/watch?v=pjEhZcddNgc"
-        },
-        {
-          "title": "SpaceX Falcon 9 rocket launches 130 payloads from California on Transporter 18 mission",
-          "url": "https://www.youtube.com/watch?v=AT_7CY5brRo"
-        },
-        {
-          "title": "Transporter-18 Mission",
-          "url": "https://x.com/i/broadcasts/1RJjpbyQpOBKw"
-        }
-      ],
-      "webcast_live": false
-    },
     {
       "id": "4651fd8a-43de-4166-bf8f-c168b3bd1d2c",
       "name": "Falcon Heavy | NROL-97",
@@ -313,13 +203,13 @@
     {
       "id": "bf2c3027-a314-403e-a416-2bfd5d165ad1",
       "name": "Falcon 9 Block 5 | Dragon CRS-2 SpX-35",
-      "net": "2026-10-13T10:33:00Z",
-      "window_start": "2026-10-13T10:33:00Z",
-      "window_end": "2026-10-13T10:33:00Z",
+      "net": "2026-10-13T10:33:44Z",
+      "window_start": "2026-10-13T10:33:44Z",
+      "window_end": "2026-10-13T10:33:44Z",
       "status": {
-        "abbrev": "TBC",
-        "name": "To Be Confirmed",
-        "description": "Awaiting official confirmation - current date is known with some certainty."
+        "abbrev": "Go",
+        "name": "Go for Launch",
+        "description": "Current T-0 confirmed by official or reliable sources."
       },
       "probability": null,
       "provider": "SpaceX",
@@ -2094,6 +1984,74 @@
       "rocket": "Falcon 9 Block 5",
       "mission": {
         "name": "Rivada 2",
+        "description": "24 satellites for Rivada's internet constellation.",
+        "type": "Communications",
+        "orbit": "Polar Orbit"
+      },
+      "pad": {
+        "name": "Space Launch Complex 4E",
+        "map_url": "https://www.google.com/maps?q=34.632,-120.611",
+        "latitude": 34.632,
+        "longitude": -120.611,
+        "location": {
+          "name": "Vandenberg SFB, CA, USA",
+          "country_code": "US"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "ab932c60-d808-4825-ab71-b6fe0a745f15",
+      "name": "Falcon 9 Block 5 | Rivada 3",
+      "net": "2026-12-31T00:00:00Z",
+      "window_start": "2026-12-31T00:00:00Z",
+      "window_end": "2026-12-31T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "SpaceX",
+      "rocket": "Falcon 9 Block 5",
+      "mission": {
+        "name": "Rivada 3",
+        "description": "24 satellites for Rivada's internet constellation.",
+        "type": "Communications",
+        "orbit": "Polar Orbit"
+      },
+      "pad": {
+        "name": "Space Launch Complex 4E",
+        "map_url": "https://www.google.com/maps?q=34.632,-120.611",
+        "latitude": 34.632,
+        "longitude": -120.611,
+        "location": {
+          "name": "Vandenberg SFB, CA, USA",
+          "country_code": "US"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "2f31a7f0-968a-448d-b447-333bf0341078",
+      "name": "Falcon 9 Block 5 | Rivada 4",
+      "net": "2026-12-31T00:00:00Z",
+      "window_start": "2026-12-31T00:00:00Z",
+      "window_end": "2026-12-31T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "SpaceX",
+      "rocket": "Falcon 9 Block 5",
+      "mission": {
+        "name": "Rivada 4",
         "description": "24 satellites for Rivada's internet constellation.",
         "type": "Communications",
         "orbit": "Polar Orbit"
