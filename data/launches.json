@@ -1,59 +1,8 @@
 {
-  "generated": "2026-10-02T22:17:52Z",
+  "generated": "2026-10-03T05:23:27Z",
   "sample": false,
   "count": 60,
   "results": [
-    {
-      "id": "4651fd8a-43de-4166-bf8f-c168b3bd1d2c",
-      "name": "Falcon Heavy | NROL-97",
-      "net": "2026-10-02T03:54:00Z",
-      "window_start": "2026-10-02T03:53:00Z",
-      "window_end": "2026-10-02T04:42:00Z",
-      "status": {
-        "abbrev": "Success",
-        "name": "Launch Successful",
-        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
-      },
-      "probability": 90,
-      "provider": "SpaceX",
-      "rocket": "Falcon Heavy",
-      "mission": {
-        "name": "NROL-97",
-        "description": "Classified payload for the US National Reconnaissance Office.",
-        "type": "Government/Top Secret",
-        "orbit": "Unknown"
-      },
-      "pad": {
-        "name": "Launch Complex 39A",
-        "map_url": "https://www.google.com/maps?q=28.60822681,-80.60428186",
-        "latitude": 28.60822681,
-        "longitude": -80.60428186,
-        "location": {
-          "name": "Kennedy Space Center, FL, USA",
-          "country_code": "US"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_heavy_image_20220129192819.jpeg",
-      "webcasts": [
-        {
-          "title": "SpaceX NROL-97",
-          "url": "https://www.youtube.com/watch?v=5ypJLI6uwNs"
-        },
-        {
-          "title": "SpaceX Falcon Heavy launches its first mission for U.S. spy satellite agency",
-          "url": "https://www.youtube.com/watch?v=4KZtaO-VtrI"
-        },
-        {
-          "title": "SpaceX Falcon Heavy Launches NROL-97",
-          "url": "https://www.youtube.com/watch?v=aqYtiH1UduQ"
-        },
-        {
-          "title": "NROL-97 Mission",
-          "url": "https://x.com/i/broadcasts/1oJMvNkPPXlxQ"
-        }
-      ],
-      "webcast_live": false
-    },
     {
       "id": "da43dc2c-00af-4cc1-8ef1-90a60b2eb9e5",
       "name": "Falcon 9 Block 5 | SDA Tranche 1 Transport Layer A",
@@ -2052,6 +2001,40 @@
       "rocket": "Falcon 9 Block 5",
       "mission": {
         "name": "Rivada 4",
+        "description": "24 satellites for Rivada's internet constellation.",
+        "type": "Communications",
+        "orbit": "Polar Orbit"
+      },
+      "pad": {
+        "name": "Space Launch Complex 4E",
+        "map_url": "https://www.google.com/maps?q=34.632,-120.611",
+        "latitude": 34.632,
+        "longitude": -120.611,
+        "location": {
+          "name": "Vandenberg SFB, CA, USA",
+          "country_code": "US"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "fa895702-687b-4ba3-95fb-9462a2c9844b",
+      "name": "Falcon 9 Block 5 | Rivada 5",
+      "net": "2026-12-31T00:00:00Z",
+      "window_start": "2026-12-31T00:00:00Z",
+      "window_end": "2026-12-31T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "SpaceX",
+      "rocket": "Falcon 9 Block 5",
+      "mission": {
+        "name": "Rivada 5",
         "description": "24 satellites for Rivada's internet constellation.",
         "type": "Communications",
         "orbit": "Polar Orbit"
