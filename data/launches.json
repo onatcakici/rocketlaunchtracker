@@ -1,14 +1,14 @@
 {
-  "generated": "2026-10-05T05:48:05Z",
+  "generated": "2026-10-05T14:48:51Z",
   "sample": false,
   "count": 60,
   "results": [
     {
       "id": "da43dc2c-00af-4cc1-8ef1-90a60b2eb9e5",
       "name": "Falcon 9 Block 5 | SDA Tranche 1 Transport Layer A",
-      "net": "2026-10-05T08:17:21Z",
-      "window_start": "2026-10-05T08:17:21Z",
-      "window_end": "2026-10-05T08:17:21Z",
+      "net": "2026-10-06T08:17:00Z",
+      "window_start": "2026-10-06T08:17:00Z",
+      "window_end": "2026-10-06T08:17:00Z",
       "status": {
         "abbrev": "Go",
         "name": "Go for Launch",
@@ -36,7 +36,7 @@
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
       "webcasts": [
         {
-          "title": "SpaceX - Falcon 9 - Tranche 1 Transport Layer A - SLC-4E - VSFB, CA - Space Affairs Live",
+          "title": "SCRUBBED - SpaceX - Falcon 9 - Tranche 1 Transport Layer A - SLC-4E - VSFB, CA - Space Affairs Live",
           "url": "https://www.youtube.com/watch?v=-SYfgSTJsyM"
         },
         {
