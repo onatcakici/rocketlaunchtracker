@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-06T06:27:17Z",
+  "generated": "2026-10-06T18:25:45Z",
   "sample": false,
   "count": 60,
   "results": [
@@ -1280,6 +1280,40 @@
       "webcast_live": false
     },
     {
+      "id": "3b94ad50-3505-496e-8a95-b0bc4c0dadc6",
+      "name": "Themis Demonstrator | T1H-1",
+      "net": "2026-12-31T00:00:00Z",
+      "window_start": "2026-12-31T00:00:00Z",
+      "window_end": "2026-12-31T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "European Space Agency",
+      "rocket": "Themis Demonstrator",
+      "mission": {
+        "name": "T1H-1",
+        "description": "First low-altitude hop test of a Themis demonstrator, with a targeted altitude up to 100 m.",
+        "type": "Test Flight",
+        "orbit": "Suborbital"
+      },
+      "pad": {
+        "name": "Launch Complex 3B",
+        "map_url": "https://www.google.com/maps?q=67.877368,21.165001",
+        "latitude": 67.877368,
+        "longitude": 21.165001,
+        "location": {
+          "name": "Esrange Space Center",
+          "country_code": "SE"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/themis_t1h_on_t_image_20250919095336.jpg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
       "id": "a67b40f9-cfcc-4614-a355-a156280b4bb3",
       "name": "Vulcan VC4L | Dream Chaser CRS 2 Flight 1",
       "net": "2026-12-31T00:00:00Z",
@@ -2009,40 +2043,6 @@
       "rocket": "Falcon 9 Block 5",
       "mission": {
         "name": "Rivada 3",
-        "description": "24 satellites for Rivada's internet constellation.",
-        "type": "Communications",
-        "orbit": "Polar Orbit"
-      },
-      "pad": {
-        "name": "Space Launch Complex 4E",
-        "map_url": "https://www.google.com/maps?q=34.632,-120.611",
-        "latitude": 34.632,
-        "longitude": -120.611,
-        "location": {
-          "name": "Vandenberg SFB, CA, USA",
-          "country_code": "US"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
-      "webcasts": [],
-      "webcast_live": false
-    },
-    {
-      "id": "2f31a7f0-968a-448d-b447-333bf0341078",
-      "name": "Falcon 9 Block 5 | Rivada 4",
-      "net": "2026-12-31T00:00:00Z",
-      "window_start": "2026-12-31T00:00:00Z",
-      "window_end": "2026-12-31T00:00:00Z",
-      "status": {
-        "abbrev": "TBD",
-        "name": "To Be Determined",
-        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
-      },
-      "probability": null,
-      "provider": "SpaceX",
-      "rocket": "Falcon 9 Block 5",
-      "mission": {
-        "name": "Rivada 4",
         "description": "24 satellites for Rivada's internet constellation.",
         "type": "Communications",
         "orbit": "Polar Orbit"
