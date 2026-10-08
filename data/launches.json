@@ -1,57 +1,48 @@
 {
-  "generated": "2026-10-07T23:08:35Z",
+  "generated": "2026-10-08T06:11:52Z",
   "sample": false,
   "count": 60,
   "results": [
     {
-      "id": "e0741415-6c63-4236-9736-24a6c04485bc",
-      "name": "Nuri | NeonSat-2 to 6",
-      "net": "2026-10-07T03:25:00Z",
-      "window_start": "2026-10-07T03:23:00Z",
-      "window_end": "2026-10-07T04:23:00Z",
+      "id": "a1bb0984-19d4-4b47-9bba-706d225573e2",
+      "name": "Long March 12 | Unknown Payload",
+      "net": "2026-10-09T19:25:00Z",
+      "window_start": "2026-10-09T19:20:00Z",
+      "window_end": "2026-10-09T19:49:00Z",
       "status": {
-        "abbrev": "Success",
-        "name": "Launch Successful",
-        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
+        "abbrev": "Go",
+        "name": "Go for Launch",
+        "description": "Current T-0 confirmed by official or reliable sources."
       },
       "probability": null,
-      "provider": "Korea Aerospace Research Institute",
-      "rocket": "KSLV-2 Nuri",
+      "provider": "China Aerospace Science and Technology Corporation",
+      "rocket": "Long March 12",
       "mission": {
-        "name": "NeonSat-2 to 6",
-        "description": "NeonSat-2 to 6 are part of the South Korean government's Earth observation micro-satellite constellation NeonSat (New-space Earth Observation Satellite). The NeonSat constellation is the first satellite system developed by the government using a mass-production approach for precise monitoring of the Korean Peninsula.\r\n\r\n10 ride-sharing small satellites from various Korean institutes and organizations will also fly on this launch:\r\n* SLEDGE\r\n* GBSAT\r\n* PERSAT02\r\n* UEL-Y-Sys\r\n* SD-1 SAT\r\n* E3_TESTER-KARI-2\r\n* DaejonSat-1\r\n* BEE-1012\r\n* JACK-007\r\n* CPSat",
-        "type": "Earth Science",
-        "orbit": "Sun-Synchronous Orbit"
+        "name": "Unknown Payload",
+        "description": "Details TBD.",
+        "type": "Unknown",
+        "orbit": "Unknown"
       },
       "pad": {
-        "name": "LC-2",
-        "map_url": "https://www.google.com/maps?q=34.431867,127.535069",
-        "latitude": 34.431867,
-        "longitude": 127.535069,
+        "name": "Commercial LC-2",
+        "map_url": "https://www.google.com/maps?q=19.59755,110.936481",
+        "latitude": 19.59755,
+        "longitude": 110.936481,
         "location": {
-          "name": "Naro Space Center, South Korea",
-          "country_code": "KR"
+          "name": "Wenchang Space Launch Site, People's Republic of China",
+          "country_code": "CN"
         }
       },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/nuri_liftoff_2_image_20240820080542.jpeg",
-      "webcasts": [
-        {
-          "title": "국내 최초 군집위성 탑재 누리호 5차 발사 LIVE",
-          "url": "https://www.youtube.com/watch?v=pA96fyDkqMw"
-        },
-        {
-          "title": "[LIVE] 누리호 5차 발사 공식 생중계 🚀 2026.10.07.",
-          "url": "https://www.youtube.com/watch?v=v9gY7VkVT0w"
-        }
-      ],
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/cz-12_on_its_la_image_20241128132937.jpg",
+      "webcasts": [],
       "webcast_live": false
     },
     {
       "id": "da43dc2c-00af-4cc1-8ef1-90a60b2eb9e5",
       "name": "Falcon 9 Block 5 | SDA Tranche 1 Transport Layer A",
-      "net": "2026-10-09T07:36:00Z",
-      "window_start": "2026-10-09T07:36:00Z",
-      "window_end": "2026-10-09T07:36:00Z",
+      "net": "2026-10-10T07:29:00Z",
+      "window_start": "2026-10-10T07:29:00Z",
+      "window_end": "2026-10-10T07:29:00Z",
       "status": {
         "abbrev": "Go",
         "name": "Go for Launch",
@@ -91,40 +82,6 @@
           "url": "https://x.com/i/broadcasts/1oJMvNEQewoxQ"
         }
       ],
-      "webcast_live": false
-    },
-    {
-      "id": "a1bb0984-19d4-4b47-9bba-706d225573e2",
-      "name": "Long March 12 | Unknown Payload",
-      "net": "2026-10-09T19:25:00Z",
-      "window_start": "2026-10-09T19:20:00Z",
-      "window_end": "2026-10-09T19:49:00Z",
-      "status": {
-        "abbrev": "Go",
-        "name": "Go for Launch",
-        "description": "Current T-0 confirmed by official or reliable sources."
-      },
-      "probability": null,
-      "provider": "China Aerospace Science and Technology Corporation",
-      "rocket": "Long March 12",
-      "mission": {
-        "name": "Unknown Payload",
-        "description": "Details TBD.",
-        "type": "Unknown",
-        "orbit": "Unknown"
-      },
-      "pad": {
-        "name": "Commercial LC-2",
-        "map_url": "https://www.google.com/maps?q=19.59755,110.936481",
-        "latitude": 19.59755,
-        "longitude": 110.936481,
-        "location": {
-          "name": "Wenchang Space Launch Site, People's Republic of China",
-          "country_code": "CN"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/cz-12_on_its_la_image_20241128132937.jpg",
-      "webcasts": [],
       "webcast_live": false
     },
     {
@@ -198,6 +155,10 @@
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20210520085648.jpeg",
       "webcasts": [
+        {
+          "title": "NASA’s SpaceX 35th Commercial Resupply Services Launch",
+          "url": "https://plus.nasa.gov/scheduled-video/nasas-spacex-35th-commercial-resupply-services-launch/"
+        },
         {
           "title": "CRS-35 Mission",
           "url": "https://x.com/i/broadcasts/1aJbdEzoAvYKX"
@@ -2057,6 +2018,40 @@
       "rocket": "Falcon 9 Block 5",
       "mission": {
         "name": "Rivada 4",
+        "description": "24 satellites for Rivada's internet constellation.",
+        "type": "Communications",
+        "orbit": "Polar Orbit"
+      },
+      "pad": {
+        "name": "Space Launch Complex 4E",
+        "map_url": "https://www.google.com/maps?q=34.632,-120.611",
+        "latitude": 34.632,
+        "longitude": -120.611,
+        "location": {
+          "name": "Vandenberg SFB, CA, USA",
+          "country_code": "US"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "fa895702-687b-4ba3-95fb-9462a2c9844b",
+      "name": "Falcon 9 Block 5 | Rivada 5",
+      "net": "2026-12-31T00:00:00Z",
+      "window_start": "2026-12-31T00:00:00Z",
+      "window_end": "2026-12-31T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "SpaceX",
+      "rocket": "Falcon 9 Block 5",
+      "mission": {
+        "name": "Rivada 5",
         "description": "24 satellites for Rivada's internet constellation.",
         "type": "Communications",
         "orbit": "Polar Orbit"
