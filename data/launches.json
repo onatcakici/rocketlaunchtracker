@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-10T05:58:33Z",
+  "generated": "2026-10-10T12:38:25Z",
   "sample": false,
   "count": 60,
   "results": [
@@ -53,11 +53,11 @@
       "window_start": "2026-10-10T07:39:44Z",
       "window_end": "2026-10-10T07:39:44Z",
       "status": {
-        "abbrev": "Go",
-        "name": "Go for Launch",
-        "description": "Current T-0 confirmed by official or reliable sources."
+        "abbrev": "In Flight",
+        "name": "Launch in Flight",
+        "description": "The launch vehicle has lifted off from the launchpad."
       },
-      "probability": null,
+      "probability": 80,
       "provider": "SpaceX",
       "rocket": "Falcon 9 Block 5",
       "mission": {
@@ -79,7 +79,7 @@
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
       "webcasts": [
         {
-          "title": "SpaceX - Falcon 9 - Tranche 1 Transport Layer A - SLC-4E - VSFB, CA - Space Affairs Live",
+          "title": "SpaceX - Falcon 9 - Tranche 1 Transport Layer A - SLC-4E - VSFB, CA - October 10, 2026",
           "url": "https://www.youtube.com/watch?v=g2zSmp6e2Vs"
         },
         {
@@ -220,7 +220,7 @@
     },
     {
       "id": "69ebbcd2-b257-4070-9ef9-21e7d1f8a883",
-      "name": "H3-24 | Martian Moon eXplorer (MMX)",
+      "name": "H3-24 | Martian Moons eXploration (MMX)",
       "net": "2026-10-19T19:41:03Z",
       "window_start": "2026-10-19T19:41:03Z",
       "window_end": "2026-10-19T19:41:03Z",
@@ -233,7 +233,7 @@
       "provider": "Mitsubishi Heavy Industries",
       "rocket": "H3-24",
       "mission": {
-        "name": "Martian Moon eXplorer (MMX)",
+        "name": "Martian Moons eXploration (MMX)",
         "description": "MMX is a Japanese scientific mission to land on Phobos, one of the two moons of Mars, to collect samples before bringing them back to Earth.\r\n\r\nThe mission includes a small French/German rover to explore the surface of Phobos.",
         "type": "Planetary Science",
         "orbit": "Mars Orbit"
