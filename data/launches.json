@@ -1,51 +1,8 @@
 {
-  "generated": "2026-10-10T12:38:25Z",
+  "generated": "2026-10-10T21:48:41Z",
   "sample": false,
   "count": 60,
   "results": [
-    {
-      "id": "a1bb0984-19d4-4b47-9bba-706d225573e2",
-      "name": "Long March 12 | SatNet LEO Group 27",
-      "net": "2026-10-09T19:27:00Z",
-      "window_start": "2026-10-09T19:20:00Z",
-      "window_end": "2026-10-09T19:49:00Z",
-      "status": {
-        "abbrev": "Success",
-        "name": "Launch Successful",
-        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
-      },
-      "probability": null,
-      "provider": "China Aerospace Science and Technology Corporation",
-      "rocket": "Long March 12",
-      "mission": {
-        "name": "SatNet LEO Group 27",
-        "description": "A batch of 9 Low Earth Orbit communication satellites for the Chinese state owned SatNet constellation operated by the China Satellite Network Group.\r\n\r\nThe constellation will eventually consists of 13000 satellites.",
-        "type": "Communications",
-        "orbit": "Low Earth Orbit"
-      },
-      "pad": {
-        "name": "Commercial LC-2",
-        "map_url": "https://www.google.com/maps?q=19.59755,110.936481",
-        "latitude": 19.59755,
-        "longitude": 110.936481,
-        "location": {
-          "name": "Wenchang Space Launch Site, People's Republic of China",
-          "country_code": "CN"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/cz-12_on_its_la_image_20241128132937.jpg",
-      "webcasts": [
-        {
-          "title": "Live: Long March 12 Flight 9 Launch (No Commentary)",
-          "url": "https://www.youtube.com/watch?v=PK6P6nhiDJs"
-        },
-        {
-          "title": "(CLEAN FEED) Watch Long March 12 Launch from Wenchang, LIVE!!",
-          "url": "https://www.youtube.com/watch?v=axM1JNLK3ew"
-        }
-      ],
-      "webcast_live": false
-    },
     {
       "id": "da43dc2c-00af-4cc1-8ef1-90a60b2eb9e5",
       "name": "Falcon 9 Block 5 | SDA Tranche 1 Transport Layer A",
@@ -53,9 +10,9 @@
       "window_start": "2026-10-10T07:39:44Z",
       "window_end": "2026-10-10T07:39:44Z",
       "status": {
-        "abbrev": "In Flight",
-        "name": "Launch in Flight",
-        "description": "The launch vehicle has lifted off from the launchpad."
+        "abbrev": "Success",
+        "name": "Launch Successful",
+        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
       },
       "probability": 80,
       "provider": "SpaceX",
@@ -79,8 +36,8 @@
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
       "webcasts": [
         {
-          "title": "SpaceX - Falcon 9 - Tranche 1 Transport Layer A - SLC-4E - VSFB, CA - October 10, 2026",
-          "url": "https://www.youtube.com/watch?v=g2zSmp6e2Vs"
+          "title": "SpaceX SDA Tranche 1 Transport Layer A",
+          "url": "https://www.youtube.com/watch?v=lrCq8bWuExs"
         },
         {
           "title": "Live: SpaceX Falcon 9 rocket launches from California for U.S. Military's Space Development Agency",
@@ -793,6 +750,40 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/gslv2520mk2520iii_image_20190604000938.jpg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "a5e81552-ecdd-4d89-b6bd-b594e22ca891",
+      "name": "New Glenn | Blue Ring-1",
+      "net": "2026-12-31T00:00:00Z",
+      "window_start": "2026-12-31T00:00:00Z",
+      "window_end": "2026-12-31T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "Blue Origin",
+      "rocket": "New Glenn",
+      "mission": {
+        "name": "Blue Ring-1",
+        "description": "The first mission of Blue Ring, Blue Origin's all-in-one, high-powered hybrid solar electric and chemical propelled spacecraft, will test the spacecraft's operations in Geostationary Transfer Orbit (GTO), as well as subsequent operations after reaching Geostationary Orbit (GEO).\r\n\r\nIt will carry one of Scout Space's flagship next-generation space domain awareness (SDA) Owl sensors, which is designed to enhance real-time tracking, characterization, and assessment of space objects by integrating advanced optical sensing, onboard artificial intelligence-driven processing, and autonomous decision-making capabilities to deliver domain-wide intelligence in space in support of the U.S. Space Force’s space control mission set.\r\n\r\nBlue Ring will also carry Optimum Technologies (OpTech)'s next-generation Caracal optical payload, which is designed to provide actionable insights on resident space objects and orbital activity and includes onboard image storage, object detection algorithms, and passive thermal control. The payload is designed to operate flexibly across dynamic orbits over a year-long mission profile.\r\n\r\nSeveral internal Blue Origin payloads will also be hosted.",
+        "type": "Space Situational Awareness",
+        "orbit": "Geostationary Transfer Orbit"
+      },
+      "pad": {
+        "name": "Launch Complex 36A",
+        "map_url": "https://www.google.com/maps?q=28.4705556,-80.542194",
+        "latitude": 28.4705556,
+        "longitude": -80.542194,
+        "location": {
+          "name": "Cape Canaveral SFS, FL, USA",
+          "country_code": "US"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/new_glenn_on_lc_image_20240313170026.jpeg",
       "webcasts": [],
       "webcast_live": false
     },
