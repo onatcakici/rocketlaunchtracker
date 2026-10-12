@@ -1,12 +1,12 @@
 {
-  "generated": "2026-10-11T22:02:31Z",
+  "generated": "2026-10-12T06:05:14Z",
   "sample": false,
   "count": 60,
   "results": [
     {
       "id": "97c6f5e1-299e-4652-b72d-9618ac047076",
       "name": "Falcon 9 Block 5 | Starlink Group 15-25",
-      "net": "2026-10-12T23:00:00Z",
+      "net": "2026-10-13T00:11:47Z",
       "window_start": "2026-10-12T23:00:00Z",
       "window_end": "2026-10-13T03:00:00Z",
       "status": {
@@ -35,6 +35,18 @@
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
       "webcasts": [
+        {
+          "title": "GO! - SpaceX - Falcon 9 - Starlink 15-25 - SLC-4E - Vandenberg SFB, CA - Space Affairs Live",
+          "url": "https://www.youtube.com/watch?v=tnX-_tmsNgU"
+        },
+        {
+          "title": "SpaceX Falcon 9 rocket launches from California with 27 Starlink satellites",
+          "url": "https://www.youtube.com/watch?v=NZ19nf99NXA"
+        },
+        {
+          "title": "SpaceX Launches Falcon 9 with Starlink 15-25",
+          "url": "https://www.youtube.com/watch?v=KwOyWO98vGI"
+        },
         {
           "title": "Starlink Mission",
           "url": "https://x.com/i/broadcasts/1yKAPwdemygxb"
@@ -85,6 +97,14 @@
         {
           "title": "CRS-35 Mission",
           "url": "https://x.com/i/broadcasts/1aJbdEzoAvYKX"
+        },
+        {
+          "title": "Live: SpaceX Falcon 9 rocket launches NASA Space Station cargo mission from Cape Canaveral",
+          "url": "https://www.youtube.com/watch?v=qYXjwonSquQ"
+        },
+        {
+          "title": "SpaceX Laumches CRS-35 Dragon to the International Space Station",
+          "url": "https://www.youtube.com/watch?v=_gdbS1AAkq0"
         }
       ],
       "webcast_live": false
