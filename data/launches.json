@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-13T00:46:25Z",
+  "generated": "2026-10-13T14:17:57Z",
   "sample": false,
   "count": 60,
   "results": [
@@ -10,9 +10,9 @@
       "window_start": "2026-10-12T23:00:00Z",
       "window_end": "2026-10-13T03:00:00Z",
       "status": {
-        "abbrev": "In Flight",
-        "name": "Launch in Flight",
-        "description": "The launch vehicle has lifted off from the launchpad."
+        "abbrev": "Success",
+        "name": "Launch Successful",
+        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
       },
       "probability": null,
       "provider": "SpaceX",
@@ -52,7 +52,7 @@
           "url": "https://x.com/i/broadcasts/1yKAPwdemygxb"
         }
       ],
-      "webcast_live": true
+      "webcast_live": false
     },
     {
       "id": "bf2c3027-a314-403e-a416-2bfd5d165ad1",
@@ -61,9 +61,9 @@
       "window_start": "2026-10-13T10:33:44Z",
       "window_end": "2026-10-13T10:33:44Z",
       "status": {
-        "abbrev": "Go",
-        "name": "Go for Launch",
-        "description": "Current T-0 confirmed by official or reliable sources."
+        "abbrev": "Success",
+        "name": "Launch Successful",
+        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
       },
       "probability": 99,
       "provider": "SpaceX",
@@ -110,6 +110,40 @@
       "webcast_live": false
     },
     {
+      "id": "dfcabb3c-078b-4f5b-a47c-0161f248cee9",
+      "name": "Zhuque-2E | Unknown Payload",
+      "net": "2026-10-14T11:40:00Z",
+      "window_start": "2026-10-14T11:33:00Z",
+      "window_end": "2026-10-14T12:19:00Z",
+      "status": {
+        "abbrev": "Go",
+        "name": "Go for Launch",
+        "description": "Current T-0 confirmed by official or reliable sources."
+      },
+      "probability": null,
+      "provider": "LandSpace",
+      "rocket": "Zhuque-2E",
+      "mission": {
+        "name": "Unknown Payload",
+        "description": "Details TBD.",
+        "type": "Unknown",
+        "orbit": "Unknown"
+      },
+      "pad": {
+        "name": "Launch Area 96A",
+        "map_url": "https://www.google.com/maps?q=40.91491,100.245488",
+        "latitude": 40.91491,
+        "longitude": 100.245488,
+        "location": {
+          "name": "Jiuquan Satellite Launch Center, People's Republic of China",
+          "country_code": "CN"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/zhunque_2e_on_t_image_20241216101643.jpg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
       "id": "df88cfbf-f504-4e11-8370-e33dd6280b5b",
       "name": "Falcon 9 Block 5 | USSF-481",
       "net": "2026-10-15T23:44:00Z",
@@ -151,13 +185,13 @@
     {
       "id": "3b430f81-0ff1-4d85-8a1a-cef0de326198",
       "name": "Falcon 9 Block 5 | Bandwagon 5 (Dedicated Mid-Inclination Rideshare)",
-      "net": "2026-10-19T00:00:00Z",
-      "window_start": "2026-10-19T00:00:00Z",
-      "window_end": "2026-10-19T00:00:00Z",
+      "net": "2026-10-19T10:30:00Z",
+      "window_start": "2026-10-19T10:30:00Z",
+      "window_end": "2026-10-19T12:13:00Z",
       "status": {
-        "abbrev": "TBD",
-        "name": "To Be Determined",
-        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+        "abbrev": "TBC",
+        "name": "To Be Confirmed",
+        "description": "Awaiting official confirmation - current date is known with some certainty."
       },
       "probability": null,
       "provider": "SpaceX",
@@ -2039,40 +2073,6 @@
       "rocket": "Falcon 9 Block 5",
       "mission": {
         "name": "Rivada 4",
-        "description": "24 satellites for Rivada's internet constellation.",
-        "type": "Communications",
-        "orbit": "Polar Orbit"
-      },
-      "pad": {
-        "name": "Space Launch Complex 4E",
-        "map_url": "https://www.google.com/maps?q=34.632,-120.611",
-        "latitude": 34.632,
-        "longitude": -120.611,
-        "location": {
-          "name": "Vandenberg SFB, CA, USA",
-          "country_code": "US"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
-      "webcasts": [],
-      "webcast_live": false
-    },
-    {
-      "id": "fa895702-687b-4ba3-95fb-9462a2c9844b",
-      "name": "Falcon 9 Block 5 | Rivada 5",
-      "net": "2026-12-31T00:00:00Z",
-      "window_start": "2026-12-31T00:00:00Z",
-      "window_end": "2026-12-31T00:00:00Z",
-      "status": {
-        "abbrev": "TBD",
-        "name": "To Be Determined",
-        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
-      },
-      "probability": null,
-      "provider": "SpaceX",
-      "rocket": "Falcon 9 Block 5",
-      "mission": {
-        "name": "Rivada 5",
         "description": "24 satellites for Rivada's internet constellation.",
         "type": "Communications",
         "orbit": "Polar Orbit"
