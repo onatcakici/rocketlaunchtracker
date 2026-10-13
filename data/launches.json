@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-13T14:17:57Z",
+  "generated": "2026-10-13T22:49:42Z",
   "sample": false,
   "count": 60,
   "results": [
@@ -187,11 +187,11 @@
       "name": "Falcon 9 Block 5 | Bandwagon 5 (Dedicated Mid-Inclination Rideshare)",
       "net": "2026-10-19T10:30:00Z",
       "window_start": "2026-10-19T10:30:00Z",
-      "window_end": "2026-10-19T12:13:00Z",
+      "window_end": "2026-10-19T11:30:00Z",
       "status": {
-        "abbrev": "TBC",
-        "name": "To Be Confirmed",
-        "description": "Awaiting official confirmation - current date is known with some certainty."
+        "abbrev": "Go",
+        "name": "Go for Launch",
+        "description": "Current T-0 confirmed by official or reliable sources."
       },
       "probability": null,
       "provider": "SpaceX",
@@ -213,7 +213,12 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_20251102082912.jpg",
-      "webcasts": [],
+      "webcasts": [
+        {
+          "title": "Bandwagon-5 Mission",
+          "url": "https://x.com/i/broadcasts/1nxeLMddZlEJX"
+        }
+      ],
       "webcast_live": false
     },
     {
@@ -324,6 +329,45 @@
       "webcast_live": false
     },
     {
+      "id": "e2886a96-5ce9-4f45-872f-4e25a00be837",
+      "name": "Falcon 9 Block 5 | Starlink Group 15-16",
+      "net": "2026-10-24T05:29:00Z",
+      "window_start": "2026-10-24T05:29:00Z",
+      "window_end": "2026-10-24T09:29:00Z",
+      "status": {
+        "abbrev": "Go",
+        "name": "Go for Launch",
+        "description": "Current T-0 confirmed by official or reliable sources."
+      },
+      "probability": null,
+      "provider": "SpaceX",
+      "rocket": "Falcon 9 Block 5",
+      "mission": {
+        "name": "Starlink Group 15-16",
+        "description": "A batch of 27 satellites for the Starlink mega-constellation - SpaceX's project for space-based Internet communication system.",
+        "type": "Communications",
+        "orbit": "Low Earth Orbit"
+      },
+      "pad": {
+        "name": "Space Launch Complex 4E",
+        "map_url": "https://www.google.com/maps?q=34.632,-120.611",
+        "latitude": 34.632,
+        "longitude": -120.611,
+        "location": {
+          "name": "Vandenberg SFB, CA, USA",
+          "country_code": "US"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
+      "webcasts": [
+        {
+          "title": "Starlink Mission",
+          "url": "https://x.com/i/broadcasts/1mGPaZgYgLDJN"
+        }
+      ],
+      "webcast_live": false
+    },
+    {
       "id": "ef9850ad-1096-425b-9d27-f7bbd186e61a",
       "name": "Vulcan VC6L | Amazon Leo (LV-01)",
       "net": "2026-10-29T00:00:00Z",
@@ -354,40 +398,6 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/vulcan_vc6l_image_20220406123130.jpg",
-      "webcasts": [],
-      "webcast_live": false
-    },
-    {
-      "id": "7bdc412b-c965-4517-a131-f57a01189803",
-      "name": "Ariane 64 Block 2 | Amazon Leo (LE-04)",
-      "net": "2026-10-31T00:00:00Z",
-      "window_start": "2026-10-31T00:00:00Z",
-      "window_end": "2026-10-31T00:00:00Z",
-      "status": {
-        "abbrev": "TBD",
-        "name": "To Be Determined",
-        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
-      },
-      "probability": null,
-      "provider": "Arianespace",
-      "rocket": "Ariane 64 Block 2",
-      "mission": {
-        "name": "Amazon Leo (LE-04)",
-        "description": "Amazon Leo, formerly known as Project Kuiper, is a mega constellation of satellites in Low Earth Orbit that will offer broadband internet access, this constellation will be managed by Kuiper Systems LLC, a subsidiary of Amazon. This constellation is planned to be composed of 3,276 satellites. The satellites are projected to be placed in 98 orbital planes in three orbital layers, one at 590 km, 610 km and 630 km altitude.\r\n\r\n35-40 satellites will be carried on each Ariane 6 launch.",
-        "type": "Communications",
-        "orbit": "Low Earth Orbit"
-      },
-      "pad": {
-        "name": "Ariane Launch Area 4",
-        "map_url": "https://www.google.com/maps?q=5.256319,-52.786838",
-        "latitude": 5.256319,
-        "longitude": -52.786838,
-        "location": {
-          "name": "Guiana Space Centre, French Guiana",
-          "country_code": "GF"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/ariane_64_lifto_image_20260618063419.jpg",
       "webcasts": [],
       "webcast_live": false
     },
@@ -596,8 +606,8 @@
       "webcast_live": false
     },
     {
-      "id": "22e117bf-041c-49d5-9d09-7b180036e143",
-      "name": "Ariane 62 | Metop-SG B1",
+      "id": "7bdc412b-c965-4517-a131-f57a01189803",
+      "name": "Ariane 64 Block 2 | Amazon Leo (LE-04)",
       "net": "2026-11-30T00:00:00Z",
       "window_start": "2026-11-30T00:00:00Z",
       "window_end": "2026-11-30T00:00:00Z",
@@ -608,12 +618,12 @@
       },
       "probability": null,
       "provider": "Arianespace",
-      "rocket": "Ariane 62",
+      "rocket": "Ariane 64 Block 2",
       "mission": {
-        "name": "Metop-SG B1",
-        "description": "Second of EUMETSAT's second generation of Metop weather satellites.",
-        "type": "Earth Science",
-        "orbit": "Sun-Synchronous Orbit"
+        "name": "Amazon Leo (LE-04)",
+        "description": "Amazon Leo, formerly known as Project Kuiper, is a mega constellation of satellites in Low Earth Orbit that will offer broadband internet access, this constellation will be managed by Kuiper Systems LLC, a subsidiary of Amazon. This constellation is planned to be composed of 3,276 satellites. The satellites are projected to be placed in 98 orbital planes in three orbital layers, one at 590 km, 610 km and 630 km altitude.\r\n\r\n35-40 satellites will be carried on each Ariane 6 launch.",
+        "type": "Communications",
+        "orbit": "Low Earth Orbit"
       },
       "pad": {
         "name": "Ariane Launch Area 4",
@@ -625,7 +635,7 @@
           "country_code": "GF"
         }
       },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/ariane_62_lifto_image_20240711132056.jpeg",
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/ariane_64_lifto_image_20260618063419.jpg",
       "webcasts": [],
       "webcast_live": false
     },
@@ -728,6 +738,40 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/pslv_image_20190224012254.jpeg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "22e117bf-041c-49d5-9d09-7b180036e143",
+      "name": "Ariane 62 | Metop-SG B1",
+      "net": "2026-12-31T00:00:00Z",
+      "window_start": "2026-12-31T00:00:00Z",
+      "window_end": "2026-12-31T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "Arianespace",
+      "rocket": "Ariane 62",
+      "mission": {
+        "name": "Metop-SG B1",
+        "description": "Second of EUMETSAT's second generation of Metop weather satellites.",
+        "type": "Earth Science",
+        "orbit": "Sun-Synchronous Orbit"
+      },
+      "pad": {
+        "name": "Ariane Launch Area 4",
+        "map_url": "https://www.google.com/maps?q=5.256319,-52.786838",
+        "latitude": 5.256319,
+        "longitude": -52.786838,
+        "location": {
+          "name": "Guiana Space Centre, French Guiana",
+          "country_code": "GF"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/ariane_62_lifto_image_20240711132056.jpeg",
       "webcasts": [],
       "webcast_live": false
     },
@@ -932,40 +976,6 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/new_glenn_on_lc_image_20240313170026.jpeg",
-      "webcasts": [],
-      "webcast_live": false
-    },
-    {
-      "id": "0b85fcca-5252-48d7-9ccb-c10b1da9d183",
-      "name": "Ariane 62 | Galileo L15 (FOC FM28 & FM31)",
-      "net": "2026-12-31T00:00:00Z",
-      "window_start": "2026-12-31T00:00:00Z",
-      "window_end": "2026-12-31T00:00:00Z",
-      "status": {
-        "abbrev": "TBD",
-        "name": "To Be Determined",
-        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
-      },
-      "probability": null,
-      "provider": "Arianespace",
-      "rocket": "Ariane 62",
-      "mission": {
-        "name": "Galileo L15 (FOC FM28 & FM31)",
-        "description": "Payload consists of two satellites for Europe's Galileo navigation system.",
-        "type": "Navigation",
-        "orbit": "Medium Earth Orbit"
-      },
-      "pad": {
-        "name": "Ariane Launch Area 4",
-        "map_url": "https://www.google.com/maps?q=5.256319,-52.786838",
-        "latitude": 5.256319,
-        "longitude": -52.786838,
-        "location": {
-          "name": "Guiana Space Centre, French Guiana",
-          "country_code": "GF"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/ariane_62_lifto_image_20240711132056.jpeg",
       "webcasts": [],
       "webcast_live": false
     },
@@ -1548,40 +1558,6 @@
       "webcast_live": false
     },
     {
-      "id": "b78857c4-3b8d-4462-929e-bc76f39c0e6d",
-      "name": "Ariane 64 | GO-1",
-      "net": "2026-12-31T00:00:00Z",
-      "window_start": "2026-12-31T00:00:00Z",
-      "window_end": "2026-12-31T00:00:00Z",
-      "status": {
-        "abbrev": "TBD",
-        "name": "To Be Determined",
-        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
-      },
-      "probability": null,
-      "provider": "Arianespace",
-      "rocket": "Ariane 64",
-      "mission": {
-        "name": null,
-        "description": null,
-        "type": null,
-        "orbit": null
-      },
-      "pad": {
-        "name": "Ariane Launch Area 4",
-        "map_url": "https://www.google.com/maps?q=5.256319,-52.786838",
-        "latitude": 5.256319,
-        "longitude": -52.786838,
-        "location": {
-          "name": "Guiana Space Centre, French Guiana",
-          "country_code": "GF"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/ariane_64_lifto_image_20260213070745.jpg",
-      "webcasts": [],
-      "webcast_live": false
-    },
-    {
       "id": "548df42c-ae26-4cc9-921a-f0042941911a",
       "name": "Electron | BlackSky Gen-3 6",
       "net": "2026-12-31T00:00:00Z",
@@ -2073,6 +2049,40 @@
       "rocket": "Falcon 9 Block 5",
       "mission": {
         "name": "Rivada 4",
+        "description": "24 satellites for Rivada's internet constellation.",
+        "type": "Communications",
+        "orbit": "Polar Orbit"
+      },
+      "pad": {
+        "name": "Space Launch Complex 4E",
+        "map_url": "https://www.google.com/maps?q=34.632,-120.611",
+        "latitude": 34.632,
+        "longitude": -120.611,
+        "location": {
+          "name": "Vandenberg SFB, CA, USA",
+          "country_code": "US"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "fa895702-687b-4ba3-95fb-9462a2c9844b",
+      "name": "Falcon 9 Block 5 | Rivada 5",
+      "net": "2026-12-31T00:00:00Z",
+      "window_start": "2026-12-31T00:00:00Z",
+      "window_end": "2026-12-31T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "SpaceX",
+      "rocket": "Falcon 9 Block 5",
+      "mission": {
+        "name": "Rivada 5",
         "description": "24 satellites for Rivada's internet constellation.",
         "type": "Communications",
         "orbit": "Polar Orbit"
