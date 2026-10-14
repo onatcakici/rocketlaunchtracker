@@ -1,63 +1,8 @@
 {
-  "generated": "2026-10-14T04:59:19Z",
+  "generated": "2026-10-14T11:59:34Z",
   "sample": false,
   "count": 60,
   "results": [
-    {
-      "id": "bf2c3027-a314-403e-a416-2bfd5d165ad1",
-      "name": "Falcon 9 Block 5 | Dragon CRS-2 SpX-35",
-      "net": "2026-10-13T10:33:44Z",
-      "window_start": "2026-10-13T10:33:44Z",
-      "window_end": "2026-10-13T10:33:44Z",
-      "status": {
-        "abbrev": "Success",
-        "name": "Launch Successful",
-        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
-      },
-      "probability": 99,
-      "provider": "SpaceX",
-      "rocket": "Falcon 9 Block 5",
-      "mission": {
-        "name": "Dragon CRS-2 SpX-35",
-        "description": "35th commercial resupply services mission to the International Space Station operated by SpaceX. The flight will be conducted under the second Commercial Resupply Services contract with NASA.\r\n\r\nCargo Dragon 2 brings supplies and payloads, including critical materials to directly support science and research investigations that occur onboard the orbiting laboratory.",
-        "type": "Resupply",
-        "orbit": "Low Earth Orbit"
-      },
-      "pad": {
-        "name": "Space Launch Complex 40",
-        "map_url": "https://www.google.com/maps?q=28.56194122,-80.57735736",
-        "latitude": 28.56194122,
-        "longitude": -80.57735736,
-        "location": {
-          "name": "Cape Canaveral SFS, FL, USA",
-          "country_code": "US"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20210520085648.jpeg",
-      "webcasts": [
-        {
-          "title": "NASA's SpaceX 35th Commercial Resupply Services Launch",
-          "url": "https://www.youtube.com/watch?v=f8FE2R7esZ0"
-        },
-        {
-          "title": "NASA’s SpaceX 35th Commercial Resupply Services Launch",
-          "url": "https://plus.nasa.gov/scheduled-video/nasas-spacex-35th-commercial-resupply-services-launch/"
-        },
-        {
-          "title": "CRS-35 Mission",
-          "url": "https://x.com/i/broadcasts/1aJbdEzoAvYKX"
-        },
-        {
-          "title": "Live: SpaceX Falcon 9 rocket launches NASA Space Station cargo mission from Cape Canaveral",
-          "url": "https://www.youtube.com/watch?v=qYXjwonSquQ"
-        },
-        {
-          "title": "SpaceX Launches CRS-35 Dragon to the International Space Station",
-          "url": "https://www.youtube.com/watch?v=_gdbS1AAkq0"
-        }
-      ],
-      "webcast_live": false
-    },
     {
       "id": "dfcabb3c-078b-4f5b-a47c-0161f248cee9",
       "name": "Zhuque-2E | Unknown Payload",
@@ -2066,6 +2011,40 @@
       "rocket": "Falcon 9 Block 5",
       "mission": {
         "name": "Rivada 6",
+        "description": "24 satellites for Rivada's internet constellation.",
+        "type": "Communications",
+        "orbit": "Polar Orbit"
+      },
+      "pad": {
+        "name": "Space Launch Complex 4E",
+        "map_url": "https://www.google.com/maps?q=34.632,-120.611",
+        "latitude": 34.632,
+        "longitude": -120.611,
+        "location": {
+          "name": "Vandenberg SFB, CA, USA",
+          "country_code": "US"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "1fa3741c-3339-4954-a026-2cd9d36161c0",
+      "name": "Falcon 9 Block 5 | Rivada 7",
+      "net": "2026-12-31T00:00:00Z",
+      "window_start": "2026-12-31T00:00:00Z",
+      "window_end": "2026-12-31T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "SpaceX",
+      "rocket": "Falcon 9 Block 5",
+      "mission": {
+        "name": "Rivada 7",
         "description": "24 satellites for Rivada's internet constellation.",
         "type": "Communications",
         "orbit": "Polar Orbit"
