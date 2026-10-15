@@ -1,42 +1,8 @@
 {
-  "generated": "2026-10-15T11:36:24Z",
+  "generated": "2026-10-15T17:06:00Z",
   "sample": false,
   "count": 60,
   "results": [
-    {
-      "id": "dfcabb3c-078b-4f5b-a47c-0161f248cee9",
-      "name": "Zhuque-2E Block 2 | 10 satellites",
-      "net": "2026-10-14T11:40:00Z",
-      "window_start": "2026-10-14T11:33:00Z",
-      "window_end": "2026-10-14T12:19:00Z",
-      "status": {
-        "abbrev": "Success",
-        "name": "Launch Successful",
-        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
-      },
-      "probability": null,
-      "provider": "LandSpace",
-      "rocket": "Zhuque-2E Block 2",
-      "mission": {
-        "name": "10 satellites",
-        "description": "Ride-share of 10 satellites to sun-synchronous orbit, including LandSpace's own Guangchuan-03 & 04 for testing and demonstrating LEO communication satellite constellation technologies. Details TBD.",
-        "type": "Technology",
-        "orbit": "Sun-Synchronous Orbit"
-      },
-      "pad": {
-        "name": "Launch Area 96A",
-        "map_url": "https://www.google.com/maps?q=40.91491,100.245488",
-        "latitude": 40.91491,
-        "longitude": 100.245488,
-        "location": {
-          "name": "Jiuquan Satellite Launch Center, People's Republic of China",
-          "country_code": "CN"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/zhuque-2e_y6_la_image_20260609122825.jpeg",
-      "webcasts": [],
-      "webcast_live": false
-    },
     {
       "id": "df88cfbf-f504-4e11-8370-e33dd6280b5b",
       "name": "Falcon 9 Block 5 | USSF-481",
@@ -870,6 +836,40 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/new_glenn_on_lc_image_20240313170026.jpeg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "11b218b1-5e40-4b9d-854e-50320299239d",
+      "name": "Falcon 9 Block 5 | BlueBird 14-16 (Block 2 #9-11)",
+      "net": "2026-12-31T00:00:00Z",
+      "window_start": "2026-12-31T00:00:00Z",
+      "window_end": "2026-12-31T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "SpaceX",
+      "rocket": "Falcon 9 Block 5",
+      "mission": {
+        "name": "BlueBird 14-16 (Block 2 #9-11)",
+        "description": "AST SpaceMobile’s Block 2 BlueBird satellites are designed to deliver up to 10 times the bandwidth capacity of the BlueBird Block 1 satellites, required to achieve 24/7 continuous cellular broadband service coverage in the United States, with beams designed to support a capacity of up to 40 MHz, enabling peak data transmission speeds up to 120 Mbps, supporting voice, full data and video applications. The Block 2 BlueBirds, featuring as large as 2400 square foot communications arrays, will be the largest satellites ever commercially deployed in Low Earth orbit once launched.\r\n\r\nThis launch will feature 3 satellites.",
+        "type": "Communications",
+        "orbit": "Low Earth Orbit"
+      },
+      "pad": {
+        "name": "Space Launch Complex 40",
+        "map_url": "https://www.google.com/maps?q=28.56194122,-80.57735736",
+        "latitude": 28.56194122,
+        "longitude": -80.57735736,
+        "location": {
+          "name": "Cape Canaveral SFS, FL, USA",
+          "country_code": "US"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/f9_on_slc-40_2_image_20240919072420.jpg",
       "webcasts": [],
       "webcast_live": false
     },
