@@ -1,12 +1,12 @@
 {
-  "generated": "2026-10-15T17:06:00Z",
+  "generated": "2026-10-15T21:27:51Z",
   "sample": false,
   "count": 60,
   "results": [
     {
       "id": "df88cfbf-f504-4e11-8370-e33dd6280b5b",
       "name": "Falcon 9 Block 5 | USSF-481",
-      "net": "2026-10-15T23:57:05Z",
+      "net": "2026-10-16T00:01:05Z",
       "window_start": "2026-10-15T23:44:00Z",
       "window_end": "2026-10-16T03:44:00Z",
       "status": {
@@ -35,6 +35,14 @@
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_20260816171423.jpg",
       "webcasts": [
+        {
+          "title": "GO! - SpaceX - Falcon 9 - USSF-481 - SLC-4E - Vandenberg SFB, CA - Space Affairs Live",
+          "url": "https://www.youtube.com/watch?v=CYXidmyZlG4"
+        },
+        {
+          "title": "SpaceX Falcon 9 rocket launches from California on classified U.S. Space Force mission",
+          "url": "https://www.youtube.com/watch?v=vzFtQ3zsl4s"
+        },
         {
           "title": "USSF-481 Mission",
           "url": "https://x.com/i/broadcasts/1aJbdEzYpPaKX"
@@ -155,15 +163,49 @@
       "webcast_live": false
     },
     {
+      "id": "c6f8b6b0-6bae-460a-99bb-c12a3d29effd",
+      "name": "Ceres-1S | Unknown Payload",
+      "net": "2026-10-21T03:35:00Z",
+      "window_start": "2026-10-21T03:29:00Z",
+      "window_end": "2026-10-21T03:50:00Z",
+      "status": {
+        "abbrev": "Go",
+        "name": "Go for Launch",
+        "description": "Current T-0 confirmed by official or reliable sources."
+      },
+      "probability": null,
+      "provider": "Galactic Energy",
+      "rocket": "Ceres-1S",
+      "mission": {
+        "name": "Unknown Payload",
+        "description": "Details TBD.",
+        "type": "Unknown",
+        "orbit": "Unknown"
+      },
+      "pad": {
+        "name": "Rizhao offshore launch location",
+        "map_url": "https://www.google.com/maps?q=35.391667,119.598667",
+        "latitude": 35.391667,
+        "longitude": 119.598667,
+        "location": {
+          "name": "Haiyang Oriental Spaceport",
+          "country_code": "CN"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/ceres-1s_image_20230905114324.jpeg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
       "id": "7766f3bb-674c-4c71-b986-963bd633fcfe",
       "name": "Electron | We're Not Hawking Around (3x HawkEye 360)",
-      "net": "2026-10-21T00:00:00Z",
-      "window_start": "2026-10-21T00:00:00Z",
-      "window_end": "2026-10-21T00:00:00Z",
+      "net": "2026-10-21T05:00:00Z",
+      "window_start": "2026-10-21T05:00:00Z",
+      "window_end": "2026-10-21T08:45:00Z",
       "status": {
-        "abbrev": "TBD",
-        "name": "To Be Determined",
-        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+        "abbrev": "TBC",
+        "name": "To Be Confirmed",
+        "description": "Awaiting official confirmation - current date is known with some certainty."
       },
       "probability": null,
       "provider": "Rocket Lab",
@@ -185,6 +227,74 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/electron_image_20190705175640.jpeg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "6b95bcc8-1f88-4539-84fe-f63630138766",
+      "name": "Long March 8A | Unknown Payload",
+      "net": "2026-10-22T02:00:00Z",
+      "window_start": "2026-10-22T02:00:00Z",
+      "window_end": "2026-10-22T05:00:00Z",
+      "status": {
+        "abbrev": "TBC",
+        "name": "To Be Confirmed",
+        "description": "Awaiting official confirmation - current date is known with some certainty."
+      },
+      "probability": null,
+      "provider": "China Aerospace Science and Technology Corporation",
+      "rocket": "Long March 8A",
+      "mission": {
+        "name": "Unknown Payload",
+        "description": "Details TBD.",
+        "type": "Unknown",
+        "orbit": "Unknown"
+      },
+      "pad": {
+        "name": "Commercial LC-1",
+        "map_url": "https://www.google.com/maps?q=19.597275,110.930753",
+        "latitude": 19.597275,
+        "longitude": 110.930753,
+        "location": {
+          "name": "Wenchang Space Launch Site, People's Republic of China",
+          "country_code": "CN"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/cz-8a_launch_2_image_20251206093107.jpeg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "3621085f-deae-4f89-bd54-c0f96ee44421",
+      "name": "Long March 4B | Unknown Payload",
+      "net": "2026-10-23T18:00:00Z",
+      "window_start": "2026-10-23T18:00:00Z",
+      "window_end": "2026-10-23T21:00:00Z",
+      "status": {
+        "abbrev": "TBC",
+        "name": "To Be Confirmed",
+        "description": "Awaiting official confirmation - current date is known with some certainty."
+      },
+      "probability": null,
+      "provider": "China Aerospace Science and Technology Corporation",
+      "rocket": "Long March 4B",
+      "mission": {
+        "name": "Unknown Payload",
+        "description": "Details TBD.",
+        "type": "Unknown",
+        "orbit": "Unknown"
+      },
+      "pad": {
+        "name": "Launch Area 94 (SLS-2 / 603)",
+        "map_url": "https://www.google.com/maps?q=40.960482,100.298059",
+        "latitude": 40.960482,
+        "longitude": 100.298059,
+        "location": {
+          "name": "Jiuquan Satellite Launch Center, People's Republic of China",
+          "country_code": "CN"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/long_march_4b_l_image_20251209044050.jpeg",
       "webcasts": [],
       "webcast_live": false
     },
@@ -1943,108 +2053,6 @@
       "rocket": "Falcon 9 Block 5",
       "mission": {
         "name": "Rivada 4",
-        "description": "24 satellites for Rivada's internet constellation.",
-        "type": "Communications",
-        "orbit": "Polar Orbit"
-      },
-      "pad": {
-        "name": "Space Launch Complex 4E",
-        "map_url": "https://www.google.com/maps?q=34.632,-120.611",
-        "latitude": 34.632,
-        "longitude": -120.611,
-        "location": {
-          "name": "Vandenberg SFB, CA, USA",
-          "country_code": "US"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
-      "webcasts": [],
-      "webcast_live": false
-    },
-    {
-      "id": "fa895702-687b-4ba3-95fb-9462a2c9844b",
-      "name": "Falcon 9 Block 5 | Rivada 5",
-      "net": "2026-12-31T00:00:00Z",
-      "window_start": "2026-12-31T00:00:00Z",
-      "window_end": "2026-12-31T00:00:00Z",
-      "status": {
-        "abbrev": "TBD",
-        "name": "To Be Determined",
-        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
-      },
-      "probability": null,
-      "provider": "SpaceX",
-      "rocket": "Falcon 9 Block 5",
-      "mission": {
-        "name": "Rivada 5",
-        "description": "24 satellites for Rivada's internet constellation.",
-        "type": "Communications",
-        "orbit": "Polar Orbit"
-      },
-      "pad": {
-        "name": "Space Launch Complex 4E",
-        "map_url": "https://www.google.com/maps?q=34.632,-120.611",
-        "latitude": 34.632,
-        "longitude": -120.611,
-        "location": {
-          "name": "Vandenberg SFB, CA, USA",
-          "country_code": "US"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
-      "webcasts": [],
-      "webcast_live": false
-    },
-    {
-      "id": "46d6822b-82aa-452c-aa34-80b6f052de84",
-      "name": "Falcon 9 Block 5 | Rivada 6",
-      "net": "2026-12-31T00:00:00Z",
-      "window_start": "2026-12-31T00:00:00Z",
-      "window_end": "2026-12-31T00:00:00Z",
-      "status": {
-        "abbrev": "TBD",
-        "name": "To Be Determined",
-        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
-      },
-      "probability": null,
-      "provider": "SpaceX",
-      "rocket": "Falcon 9 Block 5",
-      "mission": {
-        "name": "Rivada 6",
-        "description": "24 satellites for Rivada's internet constellation.",
-        "type": "Communications",
-        "orbit": "Polar Orbit"
-      },
-      "pad": {
-        "name": "Space Launch Complex 4E",
-        "map_url": "https://www.google.com/maps?q=34.632,-120.611",
-        "latitude": 34.632,
-        "longitude": -120.611,
-        "location": {
-          "name": "Vandenberg SFB, CA, USA",
-          "country_code": "US"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
-      "webcasts": [],
-      "webcast_live": false
-    },
-    {
-      "id": "1fa3741c-3339-4954-a026-2cd9d36161c0",
-      "name": "Falcon 9 Block 5 | Rivada 7",
-      "net": "2026-12-31T00:00:00Z",
-      "window_start": "2026-12-31T00:00:00Z",
-      "window_end": "2026-12-31T00:00:00Z",
-      "status": {
-        "abbrev": "TBD",
-        "name": "To Be Determined",
-        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
-      },
-      "probability": null,
-      "provider": "SpaceX",
-      "rocket": "Falcon 9 Block 5",
-      "mission": {
-        "name": "Rivada 7",
         "description": "24 satellites for Rivada's internet constellation.",
         "type": "Communications",
         "orbit": "Polar Orbit"
