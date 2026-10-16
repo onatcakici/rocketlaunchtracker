@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-16T11:30:34Z",
+  "generated": "2026-10-16T16:43:16Z",
   "sample": false,
   "count": 60,
   "results": [
@@ -233,13 +233,13 @@
     {
       "id": "6b95bcc8-1f88-4539-84fe-f63630138766",
       "name": "Long March 8A | Unknown Payload",
-      "net": "2026-10-22T02:00:00Z",
-      "window_start": "2026-10-22T02:00:00Z",
-      "window_end": "2026-10-22T05:00:00Z",
+      "net": "2026-10-22T02:57:00Z",
+      "window_start": "2026-10-22T02:50:00Z",
+      "window_end": "2026-10-22T03:15:00Z",
       "status": {
-        "abbrev": "TBC",
-        "name": "To Be Confirmed",
-        "description": "Awaiting official confirmation - current date is known with some certainty."
+        "abbrev": "Go",
+        "name": "Go for Launch",
+        "description": "Current T-0 confirmed by official or reliable sources."
       },
       "probability": null,
       "provider": "China Aerospace Science and Technology Corporation",
