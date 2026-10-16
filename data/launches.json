@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-15T21:27:51Z",
+  "generated": "2026-10-16T04:37:36Z",
   "sample": false,
   "count": 60,
   "results": [
@@ -10,9 +10,9 @@
       "window_start": "2026-10-15T23:44:00Z",
       "window_end": "2026-10-16T03:44:00Z",
       "status": {
-        "abbrev": "Go",
-        "name": "Go for Launch",
-        "description": "Current T-0 confirmed by official or reliable sources."
+        "abbrev": "Success",
+        "name": "Launch Successful",
+        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
       },
       "probability": null,
       "provider": "SpaceX",
@@ -36,8 +36,8 @@
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_20260816171423.jpg",
       "webcasts": [
         {
-          "title": "GO! - SpaceX - Falcon 9 - USSF-481 - SLC-4E - Vandenberg SFB, CA - Space Affairs Live",
-          "url": "https://www.youtube.com/watch?v=CYXidmyZlG4"
+          "title": "SpaceX USSF-481",
+          "url": "https://www.youtube.com/watch?v=0rd-mypixIg"
         },
         {
           "title": "SpaceX Falcon 9 rocket launches from California on classified U.S. Space Force mission",
