@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-17T10:50:44Z",
+  "generated": "2026-10-17T15:40:00Z",
   "sample": false,
   "count": 60,
   "results": [
@@ -218,15 +218,49 @@
       "webcast_live": false
     },
     {
+      "id": "9648124f-8568-46d2-86d7-4b4d6f12187f",
+      "name": "Long March 6A | Unknown Payload",
+      "net": "2026-10-23T10:15:00Z",
+      "window_start": "2026-10-23T10:07:00Z",
+      "window_end": "2026-10-23T10:28:00Z",
+      "status": {
+        "abbrev": "Go",
+        "name": "Go for Launch",
+        "description": "Current T-0 confirmed by official or reliable sources."
+      },
+      "probability": null,
+      "provider": "China Aerospace Science and Technology Corporation",
+      "rocket": "Long March 6A",
+      "mission": {
+        "name": "Unknown Payload",
+        "description": "Details TBD.",
+        "type": "Unknown",
+        "orbit": "Unknown"
+      },
+      "pad": {
+        "name": "Launch Complex 9A",
+        "map_url": "https://www.google.com/maps?q=38.8583,111.5802",
+        "latitude": 38.8583,
+        "longitude": 111.5802,
+        "location": {
+          "name": "Taiyuan Satellite Launch Center, People's Republic of China",
+          "country_code": "CN"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/long_march_6a__image_20251209050223.jpeg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
       "id": "3621085f-deae-4f89-bd54-c0f96ee44421",
       "name": "Long March 4B | Unknown Payload",
-      "net": "2026-10-23T18:00:00Z",
-      "window_start": "2026-10-23T18:00:00Z",
-      "window_end": "2026-10-23T21:00:00Z",
+      "net": "2026-10-23T19:25:00Z",
+      "window_start": "2026-10-23T19:17:00Z",
+      "window_end": "2026-10-23T19:39:00Z",
       "status": {
-        "abbrev": "TBC",
-        "name": "To Be Confirmed",
-        "description": "Awaiting official confirmation - current date is known with some certainty."
+        "abbrev": "Go",
+        "name": "Go for Launch",
+        "description": "Current T-0 confirmed by official or reliable sources."
       },
       "probability": null,
       "provider": "China Aerospace Science and Technology Corporation",
@@ -2006,40 +2040,6 @@
       "rocket": "Falcon 9 Block 5",
       "mission": {
         "name": "Rivada 4",
-        "description": "24 satellites for Rivada's internet constellation.",
-        "type": "Communications",
-        "orbit": "Polar Orbit"
-      },
-      "pad": {
-        "name": "Space Launch Complex 4E",
-        "map_url": "https://www.google.com/maps?q=34.632,-120.611",
-        "latitude": 34.632,
-        "longitude": -120.611,
-        "location": {
-          "name": "Vandenberg SFB, CA, USA",
-          "country_code": "US"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
-      "webcasts": [],
-      "webcast_live": false
-    },
-    {
-      "id": "fa895702-687b-4ba3-95fb-9462a2c9844b",
-      "name": "Falcon 9 Block 5 | Rivada 5",
-      "net": "2026-12-31T00:00:00Z",
-      "window_start": "2026-12-31T00:00:00Z",
-      "window_end": "2026-12-31T00:00:00Z",
-      "status": {
-        "abbrev": "TBD",
-        "name": "To Be Determined",
-        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
-      },
-      "probability": null,
-      "provider": "SpaceX",
-      "rocket": "Falcon 9 Block 5",
-      "mission": {
-        "name": "Rivada 5",
         "description": "24 satellites for Rivada's internet constellation.",
         "type": "Communications",
         "orbit": "Polar Orbit"
