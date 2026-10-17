@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-17T15:40:00Z",
+  "generated": "2026-10-17T20:39:58Z",
   "sample": false,
   "count": 60,
   "results": [
@@ -14,12 +14,12 @@
         "name": "Go for Launch",
         "description": "Current T-0 confirmed by official or reliable sources."
       },
-      "probability": null,
+      "probability": 55,
       "provider": "SpaceX",
       "rocket": "Falcon 9 Block 5",
       "mission": {
         "name": "Bandwagon 5 (Dedicated Mid-Inclination Rideshare)",
-        "description": "Dedicated rideshare flight to a mid-inclination orbit with dozens of small microsatellites and nanosatellites for commercial and government customers.",
+        "description": "Dedicated rideshare flight to a mid-inclination orbit with dozens of small microsatellites and nanosatellites for commercial and government customers.\r\n\r\nThis launch also carries the second demonstration mission for SpaceX’s Project Starfall, which aims to mass-produce reentry capsules designed to autonomously transport valuable customer experiments and other payloads safely back from space to Earth, including for in-orbit manufacturing. \r\n\r\nStarfall is a cylindrical shaped capsule approximately 0.75 meters tall with a diameter of 3.1 meters, weighing approximately 2100 kilograms, and capable of carrying 1000 kilograms of payload. It is designed to be carried on Starship flights.",
         "type": "Dedicated Rideshare",
         "orbit": "Low Earth Orbit"
       },
