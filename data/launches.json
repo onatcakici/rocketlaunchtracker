@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-18T15:55:07Z",
+  "generated": "2026-10-18T20:49:37Z",
   "sample": false,
   "count": 60,
   "results": [
@@ -73,7 +73,16 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/h3-24_liftoff__image_20251028184029.jpeg",
-      "webcasts": [],
+      "webcasts": [
+        {
+          "title": "Launch live streaming of Martian Moons eXploration (MMX)/H3 Launch Vehicle flight No.10(English)",
+          "url": "https://www.youtube.com/watch?v=Fn6gzuGa-6c"
+        },
+        {
+          "title": "火星衛星探査機(MMX)/H3ロケット10号機打上げライブ中継",
+          "url": "https://www.youtube.com/watch?v=sZGyK9jfoy4"
+        }
+      ],
       "webcast_live": false
     },
     {
