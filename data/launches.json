@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-20T11:45:22Z",
+  "generated": "2026-10-20T17:14:28Z",
   "sample": false,
   "count": 60,
   "results": [
@@ -57,9 +57,9 @@
       "window_start": "2026-10-20T10:30:00Z",
       "window_end": "2026-10-20T11:30:00Z",
       "status": {
-        "abbrev": "In Flight",
-        "name": "Launch in Flight",
-        "description": "The launch vehicle has lifted off from the launchpad."
+        "abbrev": "Success",
+        "name": "Launch Successful",
+        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
       },
       "probability": 95,
       "provider": "SpaceX",
@@ -83,8 +83,8 @@
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_20251102082912.jpg",
       "webcasts": [
         {
-          "title": "GO! - SpaceX/NASA - Falcon 9 - Bandwagon-5 - SLC-40 - Cape Canaveral SFS - Space Affairs Live",
-          "url": "https://www.youtube.com/watch?v=GxvZk5YHfR4"
+          "title": "SpaceX Bandwagon 5 (Dedicated Mid-Inclination Rideshare)",
+          "url": "https://www.youtube.com/watch?v=UJmcwHwxip0"
         },
         {
           "title": "Live: SpaceX Falcon 9 rocket launches Bandwagon-5 rideshare mission from Cape Canaveral",
@@ -99,7 +99,7 @@
           "url": "https://x.com/i/broadcasts/1nxeLMddZlEJX"
         }
       ],
-      "webcast_live": true
+      "webcast_live": false
     },
     {
       "id": "f6af629d-39b5-4f86-bc0c-f8776444a858",
@@ -213,40 +213,6 @@
       "webcast_live": false
     },
     {
-      "id": "6b95bcc8-1f88-4539-84fe-f63630138766",
-      "name": "Long March 8A | Unknown Payload",
-      "net": "2026-10-22T02:57:00Z",
-      "window_start": "2026-10-22T02:50:00Z",
-      "window_end": "2026-10-22T03:15:00Z",
-      "status": {
-        "abbrev": "Go",
-        "name": "Go for Launch",
-        "description": "Current T-0 confirmed by official or reliable sources."
-      },
-      "probability": null,
-      "provider": "China Aerospace Science and Technology Corporation",
-      "rocket": "Long March 8A",
-      "mission": {
-        "name": "Unknown Payload",
-        "description": "Details TBD.",
-        "type": "Unknown",
-        "orbit": "Unknown"
-      },
-      "pad": {
-        "name": "Commercial LC-1",
-        "map_url": "https://www.google.com/maps?q=19.597275,110.930753",
-        "latitude": 19.597275,
-        "longitude": 110.930753,
-        "location": {
-          "name": "Wenchang Space Launch Site, People's Republic of China",
-          "country_code": "CN"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/cz-8a_launch_2_image_20251206093107.jpeg",
-      "webcasts": [],
-      "webcast_live": false
-    },
-    {
       "id": "9648124f-8568-46d2-86d7-4b4d6f12187f",
       "name": "Long March 6A | Unknown Payload",
       "net": "2026-10-23T10:15:00Z",
@@ -351,6 +317,40 @@
           "url": "https://x.com/i/broadcasts/1mGPaZgYgLDJN"
         }
       ],
+      "webcast_live": false
+    },
+    {
+      "id": "6b95bcc8-1f88-4539-84fe-f63630138766",
+      "name": "Long March 8A | Unknown Payload",
+      "net": "2026-10-25T01:50:00Z",
+      "window_start": "2026-10-25T01:42:00Z",
+      "window_end": "2026-10-25T02:32:00Z",
+      "status": {
+        "abbrev": "Go",
+        "name": "Go for Launch",
+        "description": "Current T-0 confirmed by official or reliable sources."
+      },
+      "probability": null,
+      "provider": "China Aerospace Science and Technology Corporation",
+      "rocket": "Long March 8A",
+      "mission": {
+        "name": "Unknown Payload",
+        "description": "Details TBD.",
+        "type": "Unknown",
+        "orbit": "Unknown"
+      },
+      "pad": {
+        "name": "Commercial LC-1",
+        "map_url": "https://www.google.com/maps?q=19.597275,110.930753",
+        "latitude": 19.597275,
+        "longitude": 110.930753,
+        "location": {
+          "name": "Wenchang Space Launch Site, People's Republic of China",
+          "country_code": "CN"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/cz-8a_launch_2_image_20251206093107.jpeg",
+      "webcasts": [],
       "webcast_live": false
     },
     {
@@ -559,6 +559,40 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/electron_image_20190705175640.jpeg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "56ca6058-7ccc-4ec0-b1b0-fb49f3bfee49",
+      "name": "Falcon 9 Block 5 | NROL-195",
+      "net": "2026-11-05T22:34:00Z",
+      "window_start": "2026-11-05T22:34:00Z",
+      "window_end": "2026-11-06T02:34:00Z",
+      "status": {
+        "abbrev": "TBC",
+        "name": "To Be Confirmed",
+        "description": "Awaiting official confirmation - current date is known with some certainty."
+      },
+      "probability": null,
+      "provider": "SpaceX",
+      "rocket": "Falcon 9 Block 5",
+      "mission": {
+        "name": "NROL-195",
+        "description": "Fifteenth batch of satellites for a reconnaissance satellite constellation built by SpaceX and Northrop Grumman for the National Reconnaissance Office to provide imaging and other reconnaissance capabilities.",
+        "type": "Government/Top Secret",
+        "orbit": "Low Earth Orbit"
+      },
+      "pad": {
+        "name": "Space Launch Complex 4E",
+        "map_url": "https://www.google.com/maps?q=34.632,-120.611",
+        "latitude": 34.632,
+        "longitude": -120.611,
+        "location": {
+          "name": "Vandenberg SFB, CA, USA",
+          "country_code": "US"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_on_slc_image_20241024165956.jpg",
       "webcasts": [],
       "webcast_live": false
     },
@@ -2045,40 +2079,6 @@
       "rocket": "Falcon 9 Block 5",
       "mission": {
         "name": "Rivada 12",
-        "description": "24 satellites for Rivada's internet constellation.",
-        "type": "Communications",
-        "orbit": "Polar Orbit"
-      },
-      "pad": {
-        "name": "Space Launch Complex 4E",
-        "map_url": "https://www.google.com/maps?q=34.632,-120.611",
-        "latitude": 34.632,
-        "longitude": -120.611,
-        "location": {
-          "name": "Vandenberg SFB, CA, USA",
-          "country_code": "US"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
-      "webcasts": [],
-      "webcast_live": false
-    },
-    {
-      "id": "20fa8dc4-8cab-41cf-b452-98a2620f7e86",
-      "name": "Falcon 9 Block 5 | Rivada 2",
-      "net": "2026-12-31T00:00:00Z",
-      "window_start": "2026-12-31T00:00:00Z",
-      "window_end": "2026-12-31T00:00:00Z",
-      "status": {
-        "abbrev": "TBD",
-        "name": "To Be Determined",
-        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
-      },
-      "probability": null,
-      "provider": "SpaceX",
-      "rocket": "Falcon 9 Block 5",
-      "mission": {
-        "name": "Rivada 2",
         "description": "24 satellites for Rivada's internet constellation.",
         "type": "Communications",
         "orbit": "Polar Orbit"
