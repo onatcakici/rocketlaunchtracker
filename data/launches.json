@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-20T21:40:55Z",
+  "generated": "2026-10-21T04:56:08Z",
   "sample": false,
   "count": 60,
   "results": [
@@ -55,67 +55,24 @@
       "webcast_live": false
     },
     {
-      "id": "f6af629d-39b5-4f86-bc0c-f8776444a858",
-      "name": "Falcon 9 Block 5 | Starlink Group 15-15",
-      "net": "2026-10-20T23:10:02Z",
-      "window_start": "2026-10-20T22:14:00Z",
-      "window_end": "2026-10-21T02:14:00Z",
-      "status": {
-        "abbrev": "Go",
-        "name": "Go for Launch",
-        "description": "Current T-0 confirmed by official or reliable sources."
-      },
-      "probability": null,
-      "provider": "SpaceX",
-      "rocket": "Falcon 9 Block 5",
-      "mission": {
-        "name": "Starlink Group 15-15",
-        "description": "A batch of 27 satellites for the Starlink mega-constellation - SpaceX's project for space-based Internet communication system.",
-        "type": "Communications",
-        "orbit": "Low Earth Orbit"
-      },
-      "pad": {
-        "name": "Space Launch Complex 4E",
-        "map_url": "https://www.google.com/maps?q=34.632,-120.611",
-        "latitude": 34.632,
-        "longitude": -120.611,
-        "location": {
-          "name": "Vandenberg SFB, CA, USA",
-          "country_code": "US"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
-      "webcasts": [
-        {
-          "title": "GO! - SpaceX - Falcon 9 - Starlink 15-15 - SLC-4E - Vandenberg SFB, CA - Space Affairs Live",
-          "url": "https://www.youtube.com/watch?v=k-TFfeJD8T4"
-        },
-        {
-          "title": "Starlink Mission",
-          "url": "https://x.com/i/broadcasts/1YGNrbnzdqLGw"
-        }
-      ],
-      "webcast_live": false
-    },
-    {
       "id": "c6f8b6b0-6bae-460a-99bb-c12a3d29effd",
-      "name": "Ceres-1S | Unknown Payload",
-      "net": "2026-10-21T03:35:00Z",
+      "name": "Ceres-1S | Xiguang-4 01",
+      "net": "2026-10-21T03:39:00Z",
       "window_start": "2026-10-21T03:29:00Z",
       "window_end": "2026-10-21T03:50:00Z",
       "status": {
-        "abbrev": "Go",
-        "name": "Go for Launch",
-        "description": "Current T-0 confirmed by official or reliable sources."
+        "abbrev": "Success",
+        "name": "Launch Successful",
+        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
       },
       "probability": null,
       "provider": "Galactic Energy",
       "rocket": "Ceres-1S",
       "mission": {
-        "name": "Unknown Payload",
-        "description": "Details TBD.",
-        "type": "Unknown",
-        "orbit": "Unknown"
+        "name": "Xiguang-4 01",
+        "description": "0.5 meter resolution Earth observation satellite for the city of Guangzhou government and Guangzhou University with multi-spectral imaging capability. Prototype of a proposed 25 satellites constellation.",
+        "type": "Earth Science",
+        "orbit": "Low Earth Orbit"
       },
       "pad": {
         "name": "Rizhao offshore launch location",
@@ -128,8 +85,17 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/ceres-1s_image_20230905114324.jpeg",
-      "webcasts": [],
-      "webcast_live": false
+      "webcasts": [
+        {
+          "title": "Live: Ceres-1S Flight 7 Launch (No Commentary)",
+          "url": "https://www.youtube.com/watch?v=KvRfNtJocuo"
+        },
+        {
+          "title": "",
+          "url": "https://www.youtube.com/watch?v=74J2gr_yRHE"
+        }
+      ],
+      "webcast_live": true
     },
     {
       "id": "7766f3bb-674c-4c71-b986-963bd633fcfe",
@@ -166,6 +132,49 @@
         {
           "title": "Rocket Lab - 'We're Not Hawking Around' Launch",
           "url": "https://www.youtube.com/watch?v=qY2qCqF1PvE"
+        }
+      ],
+      "webcast_live": false
+    },
+    {
+      "id": "f6af629d-39b5-4f86-bc0c-f8776444a858",
+      "name": "Falcon 9 Block 5 | Starlink Group 15-15",
+      "net": "2026-10-21T21:59:00Z",
+      "window_start": "2026-10-21T21:59:00Z",
+      "window_end": "2026-10-22T01:59:00Z",
+      "status": {
+        "abbrev": "Go",
+        "name": "Go for Launch",
+        "description": "Current T-0 confirmed by official or reliable sources."
+      },
+      "probability": null,
+      "provider": "SpaceX",
+      "rocket": "Falcon 9 Block 5",
+      "mission": {
+        "name": "Starlink Group 15-15",
+        "description": "A batch of 27 satellites for the Starlink mega-constellation - SpaceX's project for space-based Internet communication system.",
+        "type": "Communications",
+        "orbit": "Low Earth Orbit"
+      },
+      "pad": {
+        "name": "Space Launch Complex 4E",
+        "map_url": "https://www.google.com/maps?q=34.632,-120.611",
+        "latitude": 34.632,
+        "longitude": -120.611,
+        "location": {
+          "name": "Vandenberg SFB, CA, USA",
+          "country_code": "US"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
+      "webcasts": [
+        {
+          "title": "GO! - SpaceX - Falcon 9 - Starlink 15-15 - SLC-4E - Vandenberg SFB, CA - Space Affairs Live",
+          "url": "https://www.youtube.com/watch?v=k-TFfeJD8T4"
+        },
+        {
+          "title": "Starlink Mission",
+          "url": "https://x.com/i/broadcasts/1YGNrbnzdqLGw"
         }
       ],
       "webcast_live": false
