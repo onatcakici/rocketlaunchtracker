@@ -1,59 +1,8 @@
 {
-  "generated": "2026-10-21T04:56:08Z",
+  "generated": "2026-10-21T11:57:26Z",
   "sample": false,
   "count": 60,
   "results": [
-    {
-      "id": "3b430f81-0ff1-4d85-8a1a-cef0de326198",
-      "name": "Falcon 9 Block 5 | Bandwagon 5 (Dedicated Mid-Inclination Rideshare)",
-      "net": "2026-10-20T11:04:00Z",
-      "window_start": "2026-10-20T10:30:00Z",
-      "window_end": "2026-10-20T11:30:00Z",
-      "status": {
-        "abbrev": "Success",
-        "name": "Launch Successful",
-        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
-      },
-      "probability": 95,
-      "provider": "SpaceX",
-      "rocket": "Falcon 9 Block 5",
-      "mission": {
-        "name": "Bandwagon 5 (Dedicated Mid-Inclination Rideshare)",
-        "description": "Dedicated rideshare flight to a mid-inclination orbit with dozens of small microsatellites and nanosatellites for commercial and government customers.\r\n\r\nThis launch also carries the second demonstration mission for SpaceX’s Project Starfall, which aims to mass-produce reentry capsules designed to autonomously transport valuable customer experiments and other payloads safely back from space to Earth, including for in-orbit manufacturing. \r\n\r\nStarfall is a cylindrical shaped capsule approximately 0.75 meters tall with a diameter of 3.1 meters, weighing approximately 2100 kilograms, and capable of carrying 1000 kilograms of payload. It is designed to be carried on Starship flights.",
-        "type": "Dedicated Rideshare",
-        "orbit": "Low Earth Orbit"
-      },
-      "pad": {
-        "name": "Space Launch Complex 40",
-        "map_url": "https://www.google.com/maps?q=28.56194122,-80.57735736",
-        "latitude": 28.56194122,
-        "longitude": -80.57735736,
-        "location": {
-          "name": "Cape Canaveral SFS, FL, USA",
-          "country_code": "US"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_20251102082912.jpg",
-      "webcasts": [
-        {
-          "title": "SpaceX Bandwagon 5 (Dedicated Mid-Inclination Rideshare)",
-          "url": "https://www.youtube.com/watch?v=UJmcwHwxip0"
-        },
-        {
-          "title": "Live: SpaceX Falcon 9 rocket launches Bandwagon-5 rideshare mission from Cape Canaveral",
-          "url": "https://www.youtube.com/watch?v=WtuZaR5vryo"
-        },
-        {
-          "title": "SpaceX Launches Falcon 9 with Bandwagon-5",
-          "url": "https://www.youtube.com/watch?v=8t6CQp9-bpk"
-        },
-        {
-          "title": "Bandwagon-5 Mission",
-          "url": "https://x.com/i/broadcasts/1nxeLMddZlEJX"
-        }
-      ],
-      "webcast_live": false
-    },
     {
       "id": "c6f8b6b0-6bae-460a-99bb-c12a3d29effd",
       "name": "Ceres-1S | Xiguang-4 01",
@@ -91,47 +40,8 @@
           "url": "https://www.youtube.com/watch?v=KvRfNtJocuo"
         },
         {
-          "title": "",
+          "title": "Watch Ceres-1S Launch from Haiyang, LIVE!!",
           "url": "https://www.youtube.com/watch?v=74J2gr_yRHE"
-        }
-      ],
-      "webcast_live": true
-    },
-    {
-      "id": "7766f3bb-674c-4c71-b986-963bd633fcfe",
-      "name": "Electron | We're Not Hawking Around (3x HawkEye 360)",
-      "net": "2026-10-21T07:00:00Z",
-      "window_start": "2026-10-21T07:00:00Z",
-      "window_end": "2026-10-21T08:45:00Z",
-      "status": {
-        "abbrev": "Go",
-        "name": "Go for Launch",
-        "description": "Current T-0 confirmed by official or reliable sources."
-      },
-      "probability": null,
-      "provider": "Rocket Lab",
-      "rocket": "Electron",
-      "mission": {
-        "name": "We're Not Hawking Around (3x HawkEye 360)",
-        "description": "HawkEye 360 is a a space-based civil global intelligence satellite network using radio frequency (RF) technology to help monitor transportation across air, land and sea and assist with emergencies, and to provide civil SIGINT (Signal Intelligence) mission.\r\n\r\nThe constellation of small satellites (named Hawk ) will collect information on specific radio signals worldwide to provide high-precision radio frequency mapping and analytics from Low Earth orbit (LEO).",
-        "type": "Earth Science",
-        "orbit": "Sun-Synchronous Orbit"
-      },
-      "pad": {
-        "name": "Rocket Lab Launch Complex 1A",
-        "map_url": "https://www.google.com/maps?q=-39.262833,177.864469",
-        "latitude": -39.262833,
-        "longitude": 177.864469,
-        "location": {
-          "name": "Rocket Lab Launch Complex 1, Mahia Peninsula, New Zealand",
-          "country_code": "NZ"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/electron_image_20190705175640.jpeg",
-      "webcasts": [
-        {
-          "title": "Rocket Lab - 'We're Not Hawking Around' Launch",
-          "url": "https://www.youtube.com/watch?v=qY2qCqF1PvE"
         }
       ],
       "webcast_live": false
@@ -139,7 +49,7 @@
     {
       "id": "f6af629d-39b5-4f86-bc0c-f8776444a858",
       "name": "Falcon 9 Block 5 | Starlink Group 15-15",
-      "net": "2026-10-21T21:59:00Z",
+      "net": "2026-10-21T23:02:41Z",
       "window_start": "2026-10-21T21:59:00Z",
       "window_end": "2026-10-22T01:59:00Z",
       "status": {
@@ -173,8 +83,51 @@
           "url": "https://www.youtube.com/watch?v=k-TFfeJD8T4"
         },
         {
+          "title": "SpaceX Falcon 9 rocket launches from California with 27 Starlink satellites",
+          "url": "https://www.youtube.com/watch?v=d4zn2Tth8O0"
+        },
+        {
           "title": "Starlink Mission",
           "url": "https://x.com/i/broadcasts/1YGNrbnzdqLGw"
+        }
+      ],
+      "webcast_live": false
+    },
+    {
+      "id": "7766f3bb-674c-4c71-b986-963bd633fcfe",
+      "name": "Electron | We're Not Hawking Around (3x HawkEye 360)",
+      "net": "2026-10-22T07:00:00Z",
+      "window_start": "2026-10-22T07:00:00Z",
+      "window_end": "2026-10-22T07:00:00Z",
+      "status": {
+        "abbrev": "TBC",
+        "name": "To Be Confirmed",
+        "description": "Awaiting official confirmation - current date is known with some certainty."
+      },
+      "probability": null,
+      "provider": "Rocket Lab",
+      "rocket": "Electron",
+      "mission": {
+        "name": "We're Not Hawking Around (3x HawkEye 360)",
+        "description": "HawkEye 360 is a a space-based civil global intelligence satellite network using radio frequency (RF) technology to help monitor transportation across air, land and sea and assist with emergencies, and to provide civil SIGINT (Signal Intelligence) mission.\r\n\r\nThe constellation of small satellites (named Hawk ) will collect information on specific radio signals worldwide to provide high-precision radio frequency mapping and analytics from Low Earth orbit (LEO).",
+        "type": "Earth Science",
+        "orbit": "Sun-Synchronous Orbit"
+      },
+      "pad": {
+        "name": "Rocket Lab Launch Complex 1A",
+        "map_url": "https://www.google.com/maps?q=-39.262833,177.864469",
+        "latitude": -39.262833,
+        "longitude": 177.864469,
+        "location": {
+          "name": "Rocket Lab Launch Complex 1, Mahia Peninsula, New Zealand",
+          "country_code": "NZ"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/electron_image_20190705175640.jpeg",
+      "webcasts": [
+        {
+          "title": "Rocket Lab - 'We're Not Hawking Around' Launch",
+          "url": "https://www.youtube.com/watch?v=qY2qCqF1PvE"
         }
       ],
       "webcast_live": false
@@ -2080,6 +2033,40 @@
       "rocket": "Falcon 9 Block 5",
       "mission": {
         "name": "Rivada 2",
+        "description": "24 satellites for Rivada's internet constellation.",
+        "type": "Communications",
+        "orbit": "Polar Orbit"
+      },
+      "pad": {
+        "name": "Space Launch Complex 4E",
+        "map_url": "https://www.google.com/maps?q=34.632,-120.611",
+        "latitude": 34.632,
+        "longitude": -120.611,
+        "location": {
+          "name": "Vandenberg SFB, CA, USA",
+          "country_code": "US"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "ab932c60-d808-4825-ab71-b6fe0a745f15",
+      "name": "Falcon 9 Block 5 | Rivada 3",
+      "net": "2026-12-31T00:00:00Z",
+      "window_start": "2026-12-31T00:00:00Z",
+      "window_end": "2026-12-31T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "SpaceX",
+      "rocket": "Falcon 9 Block 5",
+      "mission": {
+        "name": "Rivada 3",
         "description": "24 satellites for Rivada's internet constellation.",
         "type": "Communications",
         "orbit": "Polar Orbit"
