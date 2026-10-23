@@ -1,20 +1,20 @@
 {
-  "generated": "2026-10-23T04:58:06Z",
+  "generated": "2026-10-23T11:45:18Z",
   "sample": false,
   "count": 60,
   "results": [
     {
       "id": "7766f3bb-674c-4c71-b986-963bd633fcfe",
       "name": "Electron | We're Not Hawking Around (3x HawkEye 360)",
-      "net": "2026-10-23T07:00:00Z",
+      "net": "2026-10-23T07:11:00Z",
       "window_start": "2026-10-23T07:00:00Z",
       "window_end": "2026-10-23T08:45:00Z",
       "status": {
-        "abbrev": "Go",
-        "name": "Go for Launch",
-        "description": "Current T-0 confirmed by official or reliable sources."
+        "abbrev": "Success",
+        "name": "Launch Successful",
+        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
       },
-      "probability": null,
+      "probability": 90,
       "provider": "Rocket Lab",
       "rocket": "Electron",
       "mission": {
@@ -44,23 +44,23 @@
     },
     {
       "id": "9648124f-8568-46d2-86d7-4b4d6f12187f",
-      "name": "Long March 6A | Unknown Payload",
+      "name": "Long March 6A | Yaogan 50-03",
       "net": "2026-10-23T10:15:00Z",
       "window_start": "2026-10-23T10:07:00Z",
       "window_end": "2026-10-23T10:28:00Z",
       "status": {
-        "abbrev": "Go",
-        "name": "Go for Launch",
-        "description": "Current T-0 confirmed by official or reliable sources."
+        "abbrev": "Success",
+        "name": "Launch Successful",
+        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
       },
       "probability": null,
       "provider": "China Aerospace Science and Technology Corporation",
       "rocket": "Long March 6A",
       "mission": {
-        "name": "Unknown Payload",
-        "description": "Details TBD.",
-        "type": "Unknown",
-        "orbit": "Unknown"
+        "name": "Yaogan 50-03",
+        "description": "The Yaogan 50-03 is a Chinese military “remote sensing” satellite of unknown purposes.",
+        "type": "Government/Top Secret",
+        "orbit": "Low Earth Orbit"
       },
       "pad": {
         "name": "Launch Complex 9A",
@@ -141,7 +141,12 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
-      "webcasts": [],
+      "webcasts": [
+        {
+          "title": "GO! - SpaceX - Falcon 9 - Starlink 15-15 - SLC-4E - Vandenberg SFB, CA - Space Affairs Live",
+          "url": "https://www.youtube.com/watch?v=zGZUw70ASg0"
+        }
+      ],
       "webcast_live": false
     },
     {
@@ -293,13 +298,13 @@
     {
       "id": "20d5676e-111b-40e3-8923-b218c3665ca2",
       "name": "GSLV Mk II | IRNSS-1L (NVS-03)",
-      "net": "2026-10-30T00:00:00Z",
-      "window_start": "2026-10-30T00:00:00Z",
-      "window_end": "2026-10-30T00:00:00Z",
+      "net": "2026-10-30T17:00:00Z",
+      "window_start": "2026-10-30T17:00:00Z",
+      "window_end": "2026-10-30T21:00:00Z",
       "status": {
-        "abbrev": "TBD",
-        "name": "To Be Determined",
-        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+        "abbrev": "TBC",
+        "name": "To Be Confirmed",
+        "description": "Awaiting official confirmation - current date is known with some certainty."
       },
       "probability": null,
       "provider": "Indian Space Research Organization",
@@ -361,9 +366,9 @@
     {
       "id": "426bd2a5-02dd-4fbd-9f4d-2b8439c3a1ff",
       "name": "Electron | The Sea God Surveys (iQPS Launch 9)",
-      "net": "2026-11-04T00:00:00Z",
-      "window_start": "2026-11-04T00:00:00Z",
-      "window_end": "2026-11-04T00:00:00Z",
+      "net": "2026-11-03T00:00:00Z",
+      "window_start": "2026-11-03T00:00:00Z",
+      "window_end": "2026-11-03T00:00:00Z",
       "status": {
         "abbrev": "TBD",
         "name": "To Be Determined",
@@ -821,7 +826,7 @@
       "rocket": "Falcon 9 Block 5",
       "mission": {
         "name": "Telesat Lightspeed 1",
-        "description": "Up to 18 satellites manufactured by MDA for Canadian satellite operator Telesat's Lightspeed constellation.",
+        "description": "First two satellites manufactured by MDA for Canadian satellite operator Telesat's Lightspeed constellation.",
         "type": "Communications",
         "orbit": "Low Earth Orbit"
       },
@@ -855,7 +860,7 @@
       "rocket": "Falcon Heavy",
       "mission": {
         "name": "Griffin Mission One",
-        "description": "Demonstration flight of the Astrobotic Griffin lander and its engines, initially contracted for the cancelled NASA VIPER (Volatiles Investigating Polar Exploration Rover) mission. The vacated payload spot will now host the FLIP (FLEX Lunar Innovation Platform) lunar rover from Astrolab.",
+        "description": "Demonstration flight of the Astrobotic Griffin lander and its engines, initially contracted for the NASA VIPER (Volatiles Investigating Polar Exploration Rover) mission. The vacated payload spot will now host the FLIP (FLEX Lunar Innovation Platform) lunar rover from Astrolab.",
         "type": "Lunar Exploration",
         "orbit": "Lunar Orbit"
       },
@@ -1792,40 +1797,6 @@
       "webcast_live": false
     },
     {
-      "id": "4d3943e9-c894-46c4-a318-84d526d0ef40",
-      "name": "Falcon 9 Block 5 | Cygnus CRS-2 NG-22",
-      "net": "2026-12-31T00:00:00Z",
-      "window_start": "2026-12-31T00:00:00Z",
-      "window_end": "2026-12-31T00:00:00Z",
-      "status": {
-        "abbrev": "TBD",
-        "name": "To Be Determined",
-        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
-      },
-      "probability": null,
-      "provider": "SpaceX",
-      "rocket": "Falcon 9 Block 5",
-      "mission": {
-        "name": "Cygnus CRS-2 NG-22",
-        "description": "This is the 25th flight of the Orbital ATK's uncrewed resupply spacecraft Cygnus and its 24th flight to the International Space Station under the Commercial Resupply Services contract with NASA.\r\n\r\nThe NG-22 Cygnus spacecraft was damaged during transport to Cape Canaveral in March 2025 and was shipped back to factory for repairs.",
-        "type": "Resupply",
-        "orbit": "Low Earth Orbit"
-      },
-      "pad": {
-        "name": "Unknown Pad",
-        "map_url": "https://www.google.com/maps?q=28.458,-80.528",
-        "latitude": 28.458,
-        "longitude": -80.528,
-        "location": {
-          "name": "Cape Canaveral SFS, FL, USA",
-          "country_code": "US"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
-      "webcasts": [],
-      "webcast_live": false
-    },
-    {
       "id": "dfd444f9-ddda-4b35-8f51-cda7cd801809",
       "name": "Falcon 9 Block 5 | Rivada 1",
       "net": "2026-12-31T00:00:00Z",
@@ -2045,6 +2016,40 @@
       "rocket": "Falcon 9 Block 5",
       "mission": {
         "name": "Rivada 4",
+        "description": "24 satellites for Rivada's internet constellation.",
+        "type": "Communications",
+        "orbit": "Polar Orbit"
+      },
+      "pad": {
+        "name": "Space Launch Complex 4E",
+        "map_url": "https://www.google.com/maps?q=34.632,-120.611",
+        "latitude": 34.632,
+        "longitude": -120.611,
+        "location": {
+          "name": "Vandenberg SFB, CA, USA",
+          "country_code": "US"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "fa895702-687b-4ba3-95fb-9462a2c9844b",
+      "name": "Falcon 9 Block 5 | Rivada 5",
+      "net": "2026-12-31T00:00:00Z",
+      "window_start": "2026-12-31T00:00:00Z",
+      "window_end": "2026-12-31T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "SpaceX",
+      "rocket": "Falcon 9 Block 5",
+      "mission": {
+        "name": "Rivada 5",
         "description": "24 satellites for Rivada's internet constellation.",
         "type": "Communications",
         "orbit": "Polar Orbit"
