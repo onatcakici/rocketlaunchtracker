@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-23T21:27:51Z",
+  "generated": "2026-10-24T04:42:59Z",
   "sample": false,
   "count": 60,
   "results": [
@@ -78,23 +78,23 @@
     },
     {
       "id": "3621085f-deae-4f89-bd54-c0f96ee44421",
-      "name": "Long March 4B | Unknown Payload",
+      "name": "Long March 4B | Yaogan 53-07 to 09/56-19 to 21",
       "net": "2026-10-23T19:25:00Z",
       "window_start": "2026-10-23T19:17:00Z",
       "window_end": "2026-10-23T19:39:00Z",
       "status": {
-        "abbrev": "Go",
-        "name": "Go for Launch",
-        "description": "Current T-0 confirmed by official or reliable sources."
+        "abbrev": "Success",
+        "name": "Launch Successful",
+        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
       },
       "probability": null,
       "provider": "China Aerospace Science and Technology Corporation",
       "rocket": "Long March 4B",
       "mission": {
-        "name": "Unknown Payload",
-        "description": "Details TBD.",
-        "type": "Unknown",
-        "orbit": "Unknown"
+        "name": "Yaogan 53-07 to 09/56-19 to 21",
+        "description": "6 Chinese military “remote sensing” satellite of unknown purposes.",
+        "type": "Government/Top Secret",
+        "orbit": "Low Earth Orbit"
       },
       "pad": {
         "name": "Launch Area 94 (SLS-2 / 603)",
@@ -113,13 +113,13 @@
     {
       "id": "f6af629d-39b5-4f86-bc0c-f8776444a858",
       "name": "Falcon 9 Block 5 | Starlink Group 15-15",
-      "net": "2026-10-23T22:28:53Z",
+      "net": "2026-10-23T22:48:44Z",
       "window_start": "2026-10-23T21:30:00Z",
       "window_end": "2026-10-24T01:30:00Z",
       "status": {
-        "abbrev": "Go",
-        "name": "Go for Launch",
-        "description": "Current T-0 confirmed by official or reliable sources."
+        "abbrev": "Success",
+        "name": "Launch Successful",
+        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
       },
       "probability": null,
       "provider": "SpaceX",
@@ -143,8 +143,8 @@
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
       "webcasts": [
         {
-          "title": "GO! - SpaceX - Falcon 9 - Starlink 15-15 - SLC-4E - Vandenberg SFB, CA - Space Affairs Live",
-          "url": "https://www.youtube.com/watch?v=zGZUw70ASg0"
+          "title": "SpaceX Starlink Group 15-15",
+          "url": "https://www.youtube.com/watch?v=cyJtopOtMZA"
         },
         {
           "title": "SpaceX Falcon 9 rocket launches from California with 27 Starlink satellites",
