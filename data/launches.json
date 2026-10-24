@@ -1,42 +1,8 @@
 {
-  "generated": "2026-10-24T16:00:35Z",
+  "generated": "2026-10-24T20:54:18Z",
   "sample": false,
   "count": 60,
   "results": [
-    {
-      "id": "3621085f-deae-4f89-bd54-c0f96ee44421",
-      "name": "Long March 4B | Yaogan 53-07 to 09/56-19 to 21",
-      "net": "2026-10-23T19:25:00Z",
-      "window_start": "2026-10-23T19:17:00Z",
-      "window_end": "2026-10-23T19:39:00Z",
-      "status": {
-        "abbrev": "Success",
-        "name": "Launch Successful",
-        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
-      },
-      "probability": null,
-      "provider": "China Aerospace Science and Technology Corporation",
-      "rocket": "Long March 4B",
-      "mission": {
-        "name": "Yaogan 53-07 to 09/56-19 to 21",
-        "description": "6 Chinese military “remote sensing” satellite of unknown purposes.",
-        "type": "Government/Top Secret",
-        "orbit": "Low Earth Orbit"
-      },
-      "pad": {
-        "name": "Launch Area 94 (SLS-2 / 603)",
-        "map_url": "https://www.google.com/maps?q=40.960482,100.298059",
-        "latitude": 40.960482,
-        "longitude": 100.298059,
-        "location": {
-          "name": "Jiuquan Satellite Launch Center, People's Republic of China",
-          "country_code": "CN"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/long_march_4b_l_image_20251209044050.jpeg",
-      "webcasts": [],
-      "webcast_live": false
-    },
     {
       "id": "f6af629d-39b5-4f86-bc0c-f8776444a858",
       "name": "Falcon 9 Block 5 | Starlink Group 15-15",
@@ -2053,6 +2019,40 @@
       "rocket": "Falcon 9 Block 5",
       "mission": {
         "name": "Rivada 7",
+        "description": "24 satellites for Rivada's internet constellation.",
+        "type": "Communications",
+        "orbit": "Polar Orbit"
+      },
+      "pad": {
+        "name": "Space Launch Complex 4E",
+        "map_url": "https://www.google.com/maps?q=34.632,-120.611",
+        "latitude": 34.632,
+        "longitude": -120.611,
+        "location": {
+          "name": "Vandenberg SFB, CA, USA",
+          "country_code": "US"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "7d77bd89-af23-4a5a-b632-de0034003a64",
+      "name": "Falcon 9 Block 5 | Rivada 8",
+      "net": "2026-12-31T00:00:00Z",
+      "window_start": "2026-12-31T00:00:00Z",
+      "window_end": "2026-12-31T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "SpaceX",
+      "rocket": "Falcon 9 Block 5",
+      "mission": {
+        "name": "Rivada 8",
         "description": "24 satellites for Rivada's internet constellation.",
         "type": "Communications",
         "orbit": "Polar Orbit"
