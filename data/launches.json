@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-25T04:49:33Z",
+  "generated": "2026-10-25T11:39:17Z",
   "sample": false,
   "count": 60,
   "results": [
@@ -40,7 +40,7 @@
           "url": "https://www.youtube.com/watch?v=fULnqPwZBPg"
         },
         {
-          "title": "Watch Long March 8A Launch from Wenchang, LIVE!!",
+          "title": "(NO COMMENTARY) Watch Long March 8A Launch SatNet LEO Group 28 from Wenchang, LIVE!!",
           "url": "https://www.youtube.com/watch?v=hpnZg2TXfqU"
         }
       ],
@@ -1014,8 +1014,8 @@
       "webcast_live": false
     },
     {
-      "id": "fcbc4550-e69e-4458-a9e6-4a5b6b6b15a5",
-      "name": "Falcon 9 Block 5 | SDA Tranche 1 Tracking Layer E",
+      "id": "a9ee8337-127d-4f17-9e3a-a07999f80099",
+      "name": "Falcon 9 Block 5 | SDA Tranche 1 Tracking Layer D",
       "net": "2026-12-31T00:00:00Z",
       "window_start": "2026-12-31T00:00:00Z",
       "window_end": "2026-12-31T00:00:00Z",
@@ -1028,8 +1028,8 @@
       "provider": "SpaceX",
       "rocket": "Falcon 9 Block 5",
       "mission": {
-        "name": "SDA Tranche 1 Tracking Layer E",
-        "description": "Tranche 1 Tracking Layer E is one of five missions by the United States Space Force Space Development Agency (SDA) for the Proliferated Warfighter Space Architecture (PWSA) Tranche 1 Tracking Layer constellation, which will provide global indications, warning, tracking, and targeting of advanced missile threats, including hypersonic missile systems.",
+        "name": "SDA Tranche 1 Tracking Layer D",
+        "description": "Tranche 1 Tracking Layer D is one of five missions by the United States Space Force Space Development Agency (SDA) for the Proliferated Warfighter Space Architecture (PWSA) Tranche 1 Tracking Layer constellation, which will provide global indications, warning, tracking, and targeting of advanced missile threats, including hypersonic missile systems.",
         "type": "Government/Top Secret",
         "orbit": "Polar Orbit"
       },
