@@ -1,51 +1,8 @@
 {
-  "generated": "2026-10-25T20:55:21Z",
+  "generated": "2026-10-26T04:54:15Z",
   "sample": false,
   "count": 60,
   "results": [
-    {
-      "id": "6b95bcc8-1f88-4539-84fe-f63630138766",
-      "name": "Long March 8A | SatNet LEO Group 28",
-      "net": "2026-10-25T02:03:00Z",
-      "window_start": "2026-10-25T01:42:00Z",
-      "window_end": "2026-10-25T02:32:00Z",
-      "status": {
-        "abbrev": "Success",
-        "name": "Launch Successful",
-        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
-      },
-      "probability": null,
-      "provider": "China Aerospace Science and Technology Corporation",
-      "rocket": "Long March 8A",
-      "mission": {
-        "name": "SatNet LEO Group 28",
-        "description": "A batch of 9 Low Earth Orbit communication satellites for the Chinese state owned SatNet constellation operated by the China Satellite Network Group.\r\n\r\nThe constellation will eventually consists of 13000 satellites.",
-        "type": "Communications",
-        "orbit": "Low Earth Orbit"
-      },
-      "pad": {
-        "name": "Commercial LC-1",
-        "map_url": "https://www.google.com/maps?q=19.597275,110.930753",
-        "latitude": 19.597275,
-        "longitude": 110.930753,
-        "location": {
-          "name": "Wenchang Space Launch Site, People's Republic of China",
-          "country_code": "CN"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/cz-8a_launch_2_image_20251206093107.jpeg",
-      "webcasts": [
-        {
-          "title": "Live: Long March 8A Flight 12 Launch (No Commentary)",
-          "url": "https://www.youtube.com/watch?v=fULnqPwZBPg"
-        },
-        {
-          "title": "(NO COMMENTARY) Watch Long March 8A Launch SatNet LEO Group 28 from Wenchang, LIVE!!",
-          "url": "https://www.youtube.com/watch?v=hpnZg2TXfqU"
-        }
-      ],
-      "webcast_live": false
-    },
     {
       "id": "e2886a96-5ce9-4f45-872f-4e25a00be837",
       "name": "Falcon 9 Block 5 | Starlink Group 15-16",
@@ -2060,6 +2017,40 @@
         "longitude": -120.611,
         "location": {
           "name": "Vandenberg SFB, CA, USA",
+          "country_code": "US"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "0a07a23e-606a-4589-bf3e-c3e41bd4de51",
+      "name": "Falcon 9 Block 5 | SDA Tranche 2 Tracking Layer A",
+      "net": "2026-12-31T00:00:00Z",
+      "window_start": "2026-12-31T00:00:00Z",
+      "window_end": "2026-12-31T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "SpaceX",
+      "rocket": "Falcon 9 Block 5",
+      "mission": {
+        "name": "SDA Tranche 2 Tracking Layer A",
+        "description": "Classified mission launched by the Space Development Agency (SDA) for Tranche 2 Tracking Layer.",
+        "type": "Government/Top Secret",
+        "orbit": "Polar Orbit"
+      },
+      "pad": {
+        "name": "Unknown Pad",
+        "map_url": "https://www.google.com/maps?q=28.458,-80.528",
+        "latitude": 28.458,
+        "longitude": -80.528,
+        "location": {
+          "name": "Cape Canaveral SFS, FL, USA",
           "country_code": "US"
         }
       },
