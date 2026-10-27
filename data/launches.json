@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-27T05:11:54Z",
+  "generated": "2026-10-27T12:19:37Z",
   "sample": false,
   "count": 60,
   "results": [
@@ -10,9 +10,9 @@
       "window_start": "2026-10-27T04:45:00Z",
       "window_end": "2026-10-27T08:45:00Z",
       "status": {
-        "abbrev": "Go",
-        "name": "Go for Launch",
-        "description": "Current T-0 confirmed by official or reliable sources."
+        "abbrev": "Success",
+        "name": "Launch Successful",
+        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
       },
       "probability": null,
       "provider": "SpaceX",
@@ -36,8 +36,8 @@
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
       "webcasts": [
         {
-          "title": "GO! - SpaceX - Falcon 9 - Starlink 15-16 - SLC-4E - Vandenberg SFB, CA - Space Affairs Live",
-          "url": "https://www.youtube.com/watch?v=DnPEZ8GAvOU"
+          "title": "SpaceX Starlink Group 15-16",
+          "url": "https://www.youtube.com/watch?v=hj1OtIh4gCw"
         },
         {
           "title": "SpaceX Falcon 9 rocket launches 27 Starlink satellites from California",
