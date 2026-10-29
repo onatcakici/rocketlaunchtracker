@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-29T13:10:12Z",
+  "generated": "2026-10-29T22:48:28Z",
   "sample": false,
   "count": 60,
   "results": [
@@ -546,15 +546,49 @@
       "webcast_live": false
     },
     {
+      "id": "dff42a2e-f047-48d7-b260-3888d3a4fe33",
+      "name": "Spectrum | AT-Astra and Others (Spectrum Flight 3)",
+      "net": "2026-11-26T20:00:00Z",
+      "window_start": "2026-11-26T20:00:00Z",
+      "window_end": "2026-11-26T21:30:00Z",
+      "status": {
+        "abbrev": "TBC",
+        "name": "To Be Confirmed",
+        "description": "Awaiting official confirmation - current date is known with some certainty."
+      },
+      "probability": null,
+      "provider": "Isar Aerospace",
+      "rocket": "Spectrum",
+      "mission": {
+        "name": "AT-Astra and Others (Spectrum Flight 3)",
+        "description": "Third test flight of the Isar Spectrum launch vehicle. This launch will carry various satellites including R-Space’s AT-Astra/IOD-01, which will perform in-orbit demonstrations for ENPULSION, SUNBOOSTER GmbH, and Synopsis Planet.",
+        "type": "Technology",
+        "orbit": "Sun-Synchronous Orbit"
+      },
+      "pad": {
+        "name": "Orbital Launch Pad",
+        "map_url": "https://www.google.com/maps?q=69.1084,15.5895",
+        "latitude": 69.1084,
+        "longitude": 15.5895,
+        "location": {
+          "name": "Andøya Spaceport",
+          "country_code": "NO"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/spectrum_on_the_image_20250321072643.jpeg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
       "id": "d74afbc7-0de5-491c-be05-4e9c31f736ac",
       "name": "Falcon 9 Block 5 | Cygnus CRS-2 NG-25",
-      "net": "2026-11-30T00:00:00Z",
-      "window_start": "2026-11-30T00:00:00Z",
-      "window_end": "2026-11-30T00:00:00Z",
+      "net": "2026-11-29T16:00:00Z",
+      "window_start": "2026-11-29T16:00:00Z",
+      "window_end": "2026-11-29T16:00:00Z",
       "status": {
-        "abbrev": "TBD",
-        "name": "To Be Determined",
-        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+        "abbrev": "TBC",
+        "name": "To Be Confirmed",
+        "description": "Awaiting official confirmation - current date is known with some certainty."
       },
       "probability": null,
       "provider": "SpaceX",
@@ -844,40 +878,6 @@
         "longitude": -120.611,
         "location": {
           "name": "Vandenberg SFB, CA, USA",
-          "country_code": "US"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
-      "webcasts": [],
-      "webcast_live": false
-    },
-    {
-      "id": "ce1317de-ec94-4479-9b28-38ebf11f13ae",
-      "name": "Falcon 9 Block 5 | Telesat Lightspeed 1",
-      "net": "2026-12-31T00:00:00Z",
-      "window_start": "2026-12-31T00:00:00Z",
-      "window_end": "2026-12-31T00:00:00Z",
-      "status": {
-        "abbrev": "TBD",
-        "name": "To Be Determined",
-        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
-      },
-      "probability": null,
-      "provider": "SpaceX",
-      "rocket": "Falcon 9 Block 5",
-      "mission": {
-        "name": "Telesat Lightspeed 1",
-        "description": "First two satellites manufactured by MDA for Canadian satellite operator Telesat's Lightspeed constellation.",
-        "type": "Communications",
-        "orbit": "Low Earth Orbit"
-      },
-      "pad": {
-        "name": "Unknown Pad",
-        "map_url": "https://www.google.com/maps?q=28.458,-80.528",
-        "latitude": 28.458,
-        "longitude": -80.528,
-        "location": {
-          "name": "Cape Canaveral SFS, FL, USA",
           "country_code": "US"
         }
       },
@@ -1498,40 +1498,6 @@
       "webcast_live": false
     },
     {
-      "id": "dff42a2e-f047-48d7-b260-3888d3a4fe33",
-      "name": "Spectrum | AT-Astra and Others (Spectrum Flight 3)",
-      "net": "2026-12-31T00:00:00Z",
-      "window_start": "2026-12-31T00:00:00Z",
-      "window_end": "2026-12-31T00:00:00Z",
-      "status": {
-        "abbrev": "TBD",
-        "name": "To Be Determined",
-        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
-      },
-      "probability": null,
-      "provider": "Isar Aerospace",
-      "rocket": "Spectrum",
-      "mission": {
-        "name": "AT-Astra and Others (Spectrum Flight 3)",
-        "description": "Third test flight of the Isar Spectrum launch vehicle. This launch will carry various satellites including R-Space’s AT-Astra/IOD-01, which will perform in-orbit demonstrations for ENPULSION, SUNBOOSTER GmbH, and Synopsis Planet.",
-        "type": "Technology",
-        "orbit": "Sun-Synchronous Orbit"
-      },
-      "pad": {
-        "name": "Orbital Launch Pad",
-        "map_url": "https://www.google.com/maps?q=69.1084,15.5895",
-        "latitude": 69.1084,
-        "longitude": 15.5895,
-        "location": {
-          "name": "Andøya Spaceport",
-          "country_code": "NO"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/spectrum_on_the_image_20250321072643.jpeg",
-      "webcasts": [],
-      "webcast_live": false
-    },
-    {
       "id": "548df42c-ae26-4cc9-921a-f0042941911a",
       "name": "Electron | BlackSky Gen-3 6",
       "net": "2026-12-31T00:00:00Z",
@@ -2057,6 +2023,40 @@
       "rocket": "Falcon 9 Block 5",
       "mission": {
         "name": "Rivada 6",
+        "description": "24 satellites for Rivada's internet constellation.",
+        "type": "Communications",
+        "orbit": "Polar Orbit"
+      },
+      "pad": {
+        "name": "Space Launch Complex 4E",
+        "map_url": "https://www.google.com/maps?q=34.632,-120.611",
+        "latitude": 34.632,
+        "longitude": -120.611,
+        "location": {
+          "name": "Vandenberg SFB, CA, USA",
+          "country_code": "US"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "1fa3741c-3339-4954-a026-2cd9d36161c0",
+      "name": "Falcon 9 Block 5 | Rivada 7",
+      "net": "2026-12-31T00:00:00Z",
+      "window_start": "2026-12-31T00:00:00Z",
+      "window_end": "2026-12-31T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "SpaceX",
+      "rocket": "Falcon 9 Block 5",
+      "mission": {
+        "name": "Rivada 7",
         "description": "24 satellites for Rivada's internet constellation.",
         "type": "Communications",
         "orbit": "Polar Orbit"
