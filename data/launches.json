@@ -1,47 +1,8 @@
 {
-  "generated": "2026-10-31T12:41:03Z",
+  "generated": "2026-10-31T21:40:42Z",
   "sample": false,
   "count": 60,
   "results": [
-    {
-      "id": "20d5676e-111b-40e3-8923-b218c3665ca2",
-      "name": "GSLV Mk II | IRNSS-1L (NVS-03)",
-      "net": "2026-10-30T18:21:00Z",
-      "window_start": "2026-10-30T17:00:00Z",
-      "window_end": "2026-10-30T21:00:00Z",
-      "status": {
-        "abbrev": "Success",
-        "name": "Launch Successful",
-        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
-      },
-      "probability": null,
-      "provider": "Indian Space Research Organization",
-      "rocket": "GSLV Mk. II",
-      "mission": {
-        "name": "IRNSS-1L (NVS-03)",
-        "description": "This is a replacement satellite for the Indian Regional Navigation Satellite System. The constellation will provide India with an alternative to GPS and will be used for military and civilian use. Located at a geosynchronous orbit, the system will be operated by the Indian government.",
-        "type": "Navigation",
-        "orbit": "Geostationary Transfer Orbit"
-      },
-      "pad": {
-        "name": "Satish Dhawan Space Centre Second Launch Pad",
-        "map_url": "https://www.google.com/maps?q=13.7199,80.2304",
-        "latitude": 13.7199,
-        "longitude": 80.2304,
-        "location": {
-          "name": "Satish Dhawan Space Centre, India",
-          "country_code": "IN"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/gslv-f182fnvs-_image_20261030172350.jpeg",
-      "webcasts": [
-        {
-          "title": "GSLV-F18/NVS-03 MISSION",
-          "url": "https://www.youtube.com/watch?v=qIiYr3tRSqE"
-        }
-      ],
-      "webcast_live": false
-    },
     {
       "id": "57ce0a39-d035-4f16-a418-bd6108f78199",
       "name": "Falcon 9 Block 5 | Starlink Group 15-18",
@@ -92,13 +53,13 @@
     {
       "id": "426bd2a5-02dd-4fbd-9f4d-2b8439c3a1ff",
       "name": "Electron | The Sea God Surveys (iQPS Launch 9)",
-      "net": "2026-11-02T16:00:00Z",
+      "net": "2026-11-02T16:41:00Z",
       "window_start": "2026-11-02T16:00:00Z",
       "window_end": "2026-11-02T18:20:00Z",
       "status": {
-        "abbrev": "TBC",
-        "name": "To Be Confirmed",
-        "description": "Awaiting official confirmation - current date is known with some certainty."
+        "abbrev": "Go",
+        "name": "Go for Launch",
+        "description": "Current T-0 confirmed by official or reliable sources."
       },
       "probability": null,
       "provider": "Rocket Lab",
@@ -2061,6 +2022,40 @@
       "rocket": "Falcon 9 Block 5",
       "mission": {
         "name": "Rivada 4",
+        "description": "24 satellites for Rivada's internet constellation.",
+        "type": "Communications",
+        "orbit": "Polar Orbit"
+      },
+      "pad": {
+        "name": "Space Launch Complex 4E",
+        "map_url": "https://www.google.com/maps?q=34.632,-120.611",
+        "latitude": 34.632,
+        "longitude": -120.611,
+        "location": {
+          "name": "Vandenberg SFB, CA, USA",
+          "country_code": "US"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "fa895702-687b-4ba3-95fb-9462a2c9844b",
+      "name": "Falcon 9 Block 5 | Rivada 5",
+      "net": "2026-12-31T00:00:00Z",
+      "window_start": "2026-12-31T00:00:00Z",
+      "window_end": "2026-12-31T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "SpaceX",
+      "rocket": "Falcon 9 Block 5",
+      "mission": {
+        "name": "Rivada 5",
         "description": "24 satellites for Rivada's internet constellation.",
         "type": "Communications",
         "orbit": "Polar Orbit"
