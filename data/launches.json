@@ -1,27 +1,27 @@
 {
-  "generated": "2026-11-06T19:28:22Z",
+  "generated": "2026-11-07T06:05:32Z",
   "sample": false,
   "count": 60,
   "results": [
     {
       "id": "e91d1da2-819b-4523-95bf-39ac7daa871d",
-      "name": "Ceres-2 | Unknown Payload",
-      "net": "2026-11-06T23:35:00Z",
+      "name": "Ceres-2 | 4 satellites",
+      "net": "2026-11-06T23:37:00Z",
       "window_start": "2026-11-06T23:28:00Z",
       "window_end": "2026-11-06T23:50:00Z",
       "status": {
-        "abbrev": "Go",
-        "name": "Go for Launch",
-        "description": "Current T-0 confirmed by official or reliable sources."
+        "abbrev": "Success",
+        "name": "Launch Successful",
+        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
       },
       "probability": null,
       "provider": "Galactic Energy",
       "rocket": "Ceres-2",
       "mission": {
-        "name": "Unknown Payload",
-        "description": "Details TBD.",
-        "type": "Unknown",
-        "orbit": "Unknown"
+        "name": "4 satellites",
+        "description": "Share-ride of 4 commercial Earth observation and technology demonstration satellites to SSO, details TBD.",
+        "type": "Earth Science",
+        "orbit": "Sun-Synchronous Orbit"
       },
       "pad": {
         "name": "Launch Area 95A",
@@ -33,7 +33,7 @@
           "country_code": "CN"
         }
       },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/ceres-2_illustr_image_20251210054657.png",
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/ceres-2_y3_lift_image_20261107010855.jpg",
       "webcasts": [],
       "webcast_live": false
     },
@@ -44,9 +44,9 @@
       "window_start": "2026-11-07T00:46:00Z",
       "window_end": "2026-11-07T04:46:00Z",
       "status": {
-        "abbrev": "Go",
-        "name": "Go for Launch",
-        "description": "Current T-0 confirmed by official or reliable sources."
+        "abbrev": "Success",
+        "name": "Launch Successful",
+        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
       },
       "probability": null,
       "provider": "SpaceX",
@@ -70,8 +70,16 @@
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_20260816171423.jpg",
       "webcasts": [
         {
-          "title": "GO! - SpaceX - Falcon 9 - USSF-432 - SLC-4E - Vandenberg SFB, CA - Space Affairs Live",
-          "url": "https://www.youtube.com/watch?v=cANr44iNjd8"
+          "title": "SpaceX USSF-432",
+          "url": "https://www.youtube.com/watch?v=x6z8DpYqTho"
+        },
+        {
+          "title": "SpaceX Falcon 9 rocket launches classified U.S. Space Force mission from California",
+          "url": "https://www.youtube.com/watch?v=5zPZKJicp0s"
+        },
+        {
+          "title": "Maximum Power Incoming - The Flame Trench",
+          "url": "https://www.youtube.com/watch?v=e3oGHhO3xpw"
         },
         {
           "title": "USSF-432 Mission",
