@@ -1,93 +1,8 @@
 {
-  "generated": "2026-11-07T21:55:44Z",
+  "generated": "2026-11-08T06:10:00Z",
   "sample": false,
   "count": 60,
   "results": [
-    {
-      "id": "e91d1da2-819b-4523-95bf-39ac7daa871d",
-      "name": "Ceres-2 | 4 satellites",
-      "net": "2026-11-06T23:37:00Z",
-      "window_start": "2026-11-06T23:28:00Z",
-      "window_end": "2026-11-06T23:50:00Z",
-      "status": {
-        "abbrev": "Success",
-        "name": "Launch Successful",
-        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
-      },
-      "probability": null,
-      "provider": "Galactic Energy",
-      "rocket": "Ceres-2",
-      "mission": {
-        "name": "4 satellites",
-        "description": "Share-ride of 4 commercial Earth observation and technology demonstration satellites to SSO, details TBD.",
-        "type": "Earth Science",
-        "orbit": "Sun-Synchronous Orbit"
-      },
-      "pad": {
-        "name": "Launch Area 95A",
-        "map_url": "https://www.google.com/maps?q=40.969117,100.343333",
-        "latitude": 40.969117,
-        "longitude": 100.343333,
-        "location": {
-          "name": "Jiuquan Satellite Launch Center, People's Republic of China",
-          "country_code": "CN"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/ceres-2_y3_lift_image_20261107010855.jpg",
-      "webcasts": [],
-      "webcast_live": false
-    },
-    {
-      "id": "54d471e8-695c-4fa7-a3cf-dbd8b389e8ae",
-      "name": "Falcon 9 Block 5 | USSF-432",
-      "net": "2026-11-07T00:48:42Z",
-      "window_start": "2026-11-07T00:46:00Z",
-      "window_end": "2026-11-07T04:46:00Z",
-      "status": {
-        "abbrev": "Success",
-        "name": "Launch Successful",
-        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
-      },
-      "probability": null,
-      "provider": "SpaceX",
-      "rocket": "Falcon 9 Block 5",
-      "mission": {
-        "name": "USSF-432",
-        "description": "A classified mission for the United States Space Force. It is possibly a batch of classified LEO satellites based on SpaceX’s Starshield satellite bus, based on locations of rocket stage drop zones being exact fits with previous Starlink Group 15 launches.",
-        "type": "Government/Top Secret",
-        "orbit": "Low Earth Orbit"
-      },
-      "pad": {
-        "name": "Space Launch Complex 4E",
-        "map_url": "https://www.google.com/maps?q=34.632,-120.611",
-        "latitude": 34.632,
-        "longitude": -120.611,
-        "location": {
-          "name": "Vandenberg SFB, CA, USA",
-          "country_code": "US"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_20260816171423.jpg",
-      "webcasts": [
-        {
-          "title": "SpaceX USSF-432",
-          "url": "https://www.youtube.com/watch?v=x6z8DpYqTho"
-        },
-        {
-          "title": "SpaceX Falcon 9 rocket launches classified U.S. Space Force mission from California",
-          "url": "https://www.youtube.com/watch?v=5zPZKJicp0s"
-        },
-        {
-          "title": "Maximum Power Incoming - The Flame Trench",
-          "url": "https://www.youtube.com/watch?v=e3oGHhO3xpw"
-        },
-        {
-          "title": "USSF-432 Mission",
-          "url": "https://x.com/i/broadcasts/1kKzDPYrZNdJv"
-        }
-      ],
-      "webcast_live": false
-    },
     {
       "id": "c476fea7-7814-4adb-91d1-98918bc2cc57",
       "name": "Soyuz 2.1b/Fregat | Glonass-K1? (Kosmos 2621?)",
@@ -2069,6 +1984,74 @@
         "description": "Classified mission launched by the Space Development Agency (SDA) for Tranche 2 Tracking Layer.",
         "type": "Government/Top Secret",
         "orbit": "Polar Orbit"
+      },
+      "pad": {
+        "name": "Unknown Pad",
+        "map_url": "https://www.google.com/maps?q=28.458,-80.528",
+        "latitude": 28.458,
+        "longitude": -80.528,
+        "location": {
+          "name": "Cape Canaveral SFS, FL, USA",
+          "country_code": "US"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "c703fab3-2ce4-4cf1-861d-754da3f3ad42",
+      "name": "Falcon 9 Block 5 | SDA Tranche 2 Transport Layer A",
+      "net": "2026-12-31T00:00:00Z",
+      "window_start": "2026-12-31T00:00:00Z",
+      "window_end": "2026-12-31T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "SpaceX",
+      "rocket": "Falcon 9 Block 5",
+      "mission": {
+        "name": "SDA Tranche 2 Transport Layer A",
+        "description": "Classified mission launched by the Space Development Agency (SDA) for Tranche 2 Transport Layer.",
+        "type": "Government/Top Secret",
+        "orbit": "Polar Orbit"
+      },
+      "pad": {
+        "name": "Space Launch Complex 4E",
+        "map_url": "https://www.google.com/maps?q=34.632,-120.611",
+        "latitude": 34.632,
+        "longitude": -120.611,
+        "location": {
+          "name": "Vandenberg SFB, CA, USA",
+          "country_code": "US"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "4c78e865-8f03-4f47-a081-b507da270d19",
+      "name": "Falcon 9 Block 5 | USSF-31",
+      "net": "2026-12-31T00:00:00Z",
+      "window_start": "2026-12-31T00:00:00Z",
+      "window_end": "2026-12-31T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "SpaceX",
+      "rocket": "Falcon 9 Block 5",
+      "mission": {
+        "name": "USSF-31",
+        "description": "Classified US Space Force carrying two payloads directly to geostationary orbit.",
+        "type": "Government/Top Secret",
+        "orbit": "Geostationary Orbit"
       },
       "pad": {
         "name": "Unknown Pad",
