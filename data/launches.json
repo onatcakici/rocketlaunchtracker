@@ -1,24 +1,24 @@
 {
-  "generated": "2026-11-08T22:11:45Z",
+  "generated": "2026-11-09T06:44:03Z",
   "sample": false,
   "count": 60,
   "results": [
     {
       "id": "a2423132-f965-423f-8b03-6891b775dc54",
-      "name": "Long March 12 | SatNet LEO Group TBD?",
+      "name": "Long March 12 | SatNet LEO Group 29",
       "net": "2026-11-08T20:24:00Z",
       "window_start": "2026-11-08T20:17:00Z",
       "window_end": "2026-11-08T20:47:00Z",
       "status": {
-        "abbrev": "In Flight",
-        "name": "Launch in Flight",
-        "description": "The launch vehicle has lifted off from the launchpad."
+        "abbrev": "Success",
+        "name": "Launch Successful",
+        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
       },
       "probability": null,
       "provider": "China Aerospace Science and Technology Corporation",
       "rocket": "Long March 12",
       "mission": {
-        "name": "SatNet LEO Group TBD?",
+        "name": "SatNet LEO Group 29",
         "description": "A batch of 9 Low Earth Orbit communication satellites for the Chinese state owned SatNet constellation operated by the China Satellite Network Group.\r\n\r\nThe constellation will eventually consists of 13000 satellites.",
         "type": "Communications",
         "orbit": "Low Earth Orbit"
@@ -1465,40 +1465,6 @@
       "webcast_live": false
     },
     {
-      "id": "cb0c27fd-496c-4f74-aa04-9c0e5af33e3c",
-      "name": "Epsilon S | JV-LOTUSat-1",
-      "net": "2026-12-31T00:00:00Z",
-      "window_start": "2026-12-31T00:00:00Z",
-      "window_end": "2026-12-31T00:00:00Z",
-      "status": {
-        "abbrev": "TBD",
-        "name": "To Be Determined",
-        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
-      },
-      "probability": null,
-      "provider": "Japan Aerospace Exploration Agency",
-      "rocket": "Epsilon S",
-      "mission": {
-        "name": "JV-LOTUSat-1",
-        "description": "Vietnamese Synthetic Aperture Radar Earth observation satellite build by NEC Corporation of Japan, based on Japan's ASNARO 2 satellite and the NEXTAR NX-300L satellite bus. The satellite will contribute to measures against natural disasters and climate change in Vietnam.",
-        "type": "Earth Science",
-        "orbit": "Sun-Synchronous Orbit"
-      },
-      "pad": {
-        "name": "Mu Center",
-        "map_url": "https://www.google.com/maps?q=31.2509794,131.0821319",
-        "latitude": 31.2509794,
-        "longitude": 131.0821319,
-        "location": {
-          "name": "Uchinoura Space Center, Japan",
-          "country_code": "JP"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/epsilon_image_20190207032600.jpeg",
-      "webcasts": [],
-      "webcast_live": false
-    },
-    {
       "id": "dfd444f9-ddda-4b35-8f51-cda7cd801809",
       "name": "Falcon 9 Block 5 | Rivada 1",
       "net": "2026-12-31T00:00:00Z",
@@ -2073,6 +2039,40 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "c1bd775a-2fff-45bb-9726-765b69817c19",
+      "name": "Falcon Heavy | USSF-75",
+      "net": "2026-12-31T00:00:00Z",
+      "window_start": "2026-12-31T00:00:00Z",
+      "window_end": "2026-12-31T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "SpaceX",
+      "rocket": "Falcon Heavy",
+      "mission": {
+        "name": "USSF-75",
+        "description": "Classified payload for the United States Space Force",
+        "type": "Government/Top Secret",
+        "orbit": "Geostationary Orbit"
+      },
+      "pad": {
+        "name": "Launch Complex 39A",
+        "map_url": "https://www.google.com/maps?q=28.60822681,-80.60428186",
+        "latitude": 28.60822681,
+        "longitude": -80.60428186,
+        "location": {
+          "name": "Kennedy Space Center, FL, USA",
+          "country_code": "US"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_heavy_image_20220129192819.jpeg",
       "webcasts": [],
       "webcast_live": false
     }
