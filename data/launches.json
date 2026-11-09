@@ -1,57 +1,14 @@
 {
-  "generated": "2026-11-09T06:44:03Z",
+  "generated": "2026-11-09T22:26:39Z",
   "sample": false,
   "count": 60,
   "results": [
     {
-      "id": "a2423132-f965-423f-8b03-6891b775dc54",
-      "name": "Long March 12 | SatNet LEO Group 29",
-      "net": "2026-11-08T20:24:00Z",
-      "window_start": "2026-11-08T20:17:00Z",
-      "window_end": "2026-11-08T20:47:00Z",
-      "status": {
-        "abbrev": "Success",
-        "name": "Launch Successful",
-        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
-      },
-      "probability": null,
-      "provider": "China Aerospace Science and Technology Corporation",
-      "rocket": "Long March 12",
-      "mission": {
-        "name": "SatNet LEO Group 29",
-        "description": "A batch of 9 Low Earth Orbit communication satellites for the Chinese state owned SatNet constellation operated by the China Satellite Network Group.\r\n\r\nThe constellation will eventually consists of 13000 satellites.",
-        "type": "Communications",
-        "orbit": "Low Earth Orbit"
-      },
-      "pad": {
-        "name": "Commercial LC-2",
-        "map_url": "https://www.google.com/maps?q=19.59755,110.936481",
-        "latitude": 19.59755,
-        "longitude": 110.936481,
-        "location": {
-          "name": "Wenchang Space Launch Site, People's Republic of China",
-          "country_code": "CN"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/cz-12_on_its_la_image_20241128132937.jpg",
-      "webcasts": [
-        {
-          "title": "Live: Long March 12 Launches SatNet LEO Group 29 (No Commentary)",
-          "url": "https://www.youtube.com/watch?v=rQWLSUjfJ-Q"
-        },
-        {
-          "title": "Watch Long March 12 Launch SatNet LEO Group 29 from Wenchang, LIVE!!",
-          "url": "https://www.youtube.com/watch?v=LhEjaM500Ek"
-        }
-      ],
-      "webcast_live": false
-    },
-    {
       "id": "6aa7b90b-e5ed-45d8-a52e-04fbf399d178",
       "name": "Falcon 9 Block 5 | USSF-627",
-      "net": "2026-11-10T03:03:00Z",
-      "window_start": "2026-11-10T03:03:00Z",
-      "window_end": "2026-11-10T07:03:00Z",
+      "net": "2026-11-11T02:49:00Z",
+      "window_start": "2026-11-11T02:49:00Z",
+      "window_end": "2026-11-11T06:49:00Z",
       "status": {
         "abbrev": "Go",
         "name": "Go for Launch",
@@ -78,6 +35,10 @@
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_20260816171423.jpg",
       "webcasts": [
+        {
+          "title": "GO! - SpaceX - Falcon 9 - USSF-627 - SLC-4E - Vandenberg SFB, CA - Space Affairs Live",
+          "url": "https://www.youtube.com/watch?v=1jhH0mR5ICA"
+        },
         {
           "title": "USSF-627 Mission",
           "url": "https://x.com/i/broadcasts/2brkWyolnlBbLM"
@@ -154,42 +115,37 @@
       "webcast_live": false
     },
     {
-      "id": "76617033-4dc0-4448-b50c-e5b0d5a18539",
-      "name": "Falcon 9 Block 5 | USSF-317",
-      "net": "2026-11-13T04:23:00Z",
-      "window_start": "2026-11-13T04:23:00Z",
-      "window_end": "2026-11-13T08:23:00Z",
+      "id": "e2523821-9760-4cb4-ad1f-7ce2e30419bd",
+      "name": "Kuaizhou 11 | Unknown Payload",
+      "net": "2026-11-12T19:50:00Z",
+      "window_start": "2026-11-12T19:44:00Z",
+      "window_end": "2026-11-12T20:29:00Z",
       "status": {
         "abbrev": "Go",
         "name": "Go for Launch",
         "description": "Current T-0 confirmed by official or reliable sources."
       },
       "probability": null,
-      "provider": "SpaceX",
-      "rocket": "Falcon 9 Block 5",
+      "provider": "ExPace",
+      "rocket": "Kuaizhou 11",
       "mission": {
-        "name": "USSF-317",
-        "description": "A classified mission for the United States Space Force. It is possibly a batch of classified LEO satellites based on SpaceX’s Starshield satellite bus, based on locations of rocket stage drop zones being exact fits with previous Starlink Group 15 launches.",
-        "type": "Government/Top Secret",
-        "orbit": "Low Earth Orbit"
+        "name": "Unknown Payload",
+        "description": "Details TBD.",
+        "type": "Unknown",
+        "orbit": "Unknown"
       },
       "pad": {
-        "name": "Space Launch Complex 4E",
-        "map_url": "https://www.google.com/maps?q=34.632,-120.611",
-        "latitude": 34.632,
-        "longitude": -120.611,
+        "name": "Launch Area 95A",
+        "map_url": "https://www.google.com/maps?q=40.969117,100.343333",
+        "latitude": 40.969117,
+        "longitude": 100.343333,
         "location": {
-          "name": "Vandenberg SFB, CA, USA",
-          "country_code": "US"
+          "name": "Jiuquan Satellite Launch Center, People's Republic of China",
+          "country_code": "CN"
         }
       },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_20260816171423.jpg",
-      "webcasts": [
-        {
-          "title": "USSF-317 Mission",
-          "url": "https://x.com/i/broadcasts/2lgkMvaRVPMdYR"
-        }
-      ],
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/kuaizhou_11_lif_image_20240520155835.jpg",
+      "webcasts": [],
       "webcast_live": false
     },
     {
@@ -266,6 +222,45 @@
       "webcast_live": false
     },
     {
+      "id": "76617033-4dc0-4448-b50c-e5b0d5a18539",
+      "name": "Falcon 9 Block 5 | USSF-317",
+      "net": "2026-11-14T04:09:00Z",
+      "window_start": "2026-11-14T04:09:00Z",
+      "window_end": "2026-11-14T08:09:00Z",
+      "status": {
+        "abbrev": "Go",
+        "name": "Go for Launch",
+        "description": "Current T-0 confirmed by official or reliable sources."
+      },
+      "probability": null,
+      "provider": "SpaceX",
+      "rocket": "Falcon 9 Block 5",
+      "mission": {
+        "name": "USSF-317",
+        "description": "A classified mission for the United States Space Force. It is possibly a batch of classified LEO satellites based on SpaceX’s Starshield satellite bus, based on locations of rocket stage drop zones being exact fits with previous Starlink Group 15 launches.",
+        "type": "Government/Top Secret",
+        "orbit": "Low Earth Orbit"
+      },
+      "pad": {
+        "name": "Space Launch Complex 4E",
+        "map_url": "https://www.google.com/maps?q=34.632,-120.611",
+        "latitude": 34.632,
+        "longitude": -120.611,
+        "location": {
+          "name": "Vandenberg SFB, CA, USA",
+          "country_code": "US"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_20260816171423.jpg",
+      "webcasts": [
+        {
+          "title": "USSF-317 Mission",
+          "url": "https://x.com/i/broadcasts/2lgkMvaRVPMdYR"
+        }
+      ],
+      "webcast_live": false
+    },
+    {
       "id": "db3500ac-965b-4ad8-b417-cb8d8d005586",
       "name": "Electron | The Mountain God Rises (iQPS Launch 10)",
       "net": "2026-11-14T05:30:00Z",
@@ -297,6 +292,45 @@
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/electron_image_20190705175640.jpeg",
       "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "460d9db7-eaf6-4cd9-b095-cff433534c09",
+      "name": "Falcon 9 Block 5 | USSF-266",
+      "net": "2026-11-17T16:58:00Z",
+      "window_start": "2026-11-17T16:58:00Z",
+      "window_end": "2026-11-17T20:58:00Z",
+      "status": {
+        "abbrev": "Go",
+        "name": "Go for Launch",
+        "description": "Current T-0 confirmed by official or reliable sources."
+      },
+      "probability": null,
+      "provider": "SpaceX",
+      "rocket": "Falcon 9 Block 5",
+      "mission": {
+        "name": "USSF-266",
+        "description": "A classified mission for the United States Space Force. It is possibly a batch of classified LEO satellites based on SpaceX’s Starshield satellite bus, based on locations of ascent rocket stage drop zones being fits with previous SDA Transport Layer launches.",
+        "type": "Government/Top Secret",
+        "orbit": "Polar Orbit"
+      },
+      "pad": {
+        "name": "Space Launch Complex 4E",
+        "map_url": "https://www.google.com/maps?q=34.632,-120.611",
+        "latitude": 34.632,
+        "longitude": -120.611,
+        "location": {
+          "name": "Vandenberg SFB, CA, USA",
+          "country_code": "US"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_20260816171423.jpg",
+      "webcasts": [
+        {
+          "title": "USSF-266 Mission",
+          "url": "https://x.com/i/broadcasts/2JQXBjLyYOQrpX"
+        }
+      ],
       "webcast_live": false
     },
     {
@@ -1359,40 +1393,6 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/themis_t1h_on_t_image_20250919095336.jpg",
-      "webcasts": [],
-      "webcast_live": false
-    },
-    {
-      "id": "a67b40f9-cfcc-4614-a355-a156280b4bb3",
-      "name": "Vulcan VC4L | Dream Chaser CRS 2 Flight 1",
-      "net": "2026-12-31T00:00:00Z",
-      "window_start": "2026-12-31T00:00:00Z",
-      "window_end": "2026-12-31T00:00:00Z",
-      "status": {
-        "abbrev": "TBD",
-        "name": "To Be Determined",
-        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
-      },
-      "probability": null,
-      "provider": "United Launch Alliance",
-      "rocket": "Vulcan VC4L",
-      "mission": {
-        "name": "Dream Chaser CRS 2 Flight 1",
-        "description": "First flight of the Dream Chaser Spaceplane, on a free-flying mission in Low Earth Orbit.",
-        "type": "Test Flight",
-        "orbit": "Low Earth Orbit"
-      },
-      "pad": {
-        "name": "Space Launch Complex 41",
-        "map_url": "https://www.google.com/maps?q=28.58341025,-80.58303644",
-        "latitude": 28.58341025,
-        "longitude": -80.58303644,
-        "location": {
-          "name": "Cape Canaveral SFS, FL, USA",
-          "country_code": "US"
-        }
-      },
-      "image": null,
       "webcasts": [],
       "webcast_live": false
     },
