@@ -1,27 +1,27 @@
 {
-  "generated": "2026-11-11T06:34:42Z",
+  "generated": "2026-11-11T19:39:45Z",
   "sample": false,
   "count": 60,
   "results": [
     {
       "id": "d66590ab-b273-47ff-b85a-608b62851b4b",
-      "name": "Long March 2D | Unknown Payload",
-      "net": "2026-11-11T11:40:00Z",
+      "name": "Long March 2D | CAS Pathfinder-1",
+      "net": "2026-11-11T11:41:00Z",
       "window_start": "2026-11-11T11:32:00Z",
       "window_end": "2026-11-11T12:05:00Z",
       "status": {
-        "abbrev": "Go",
-        "name": "Go for Launch",
-        "description": "Current T-0 confirmed by official or reliable sources."
+        "abbrev": "Success",
+        "name": "Launch Successful",
+        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
       },
       "probability": null,
       "provider": "China Aerospace Science and Technology Corporation",
       "rocket": "Long March 2D",
       "mission": {
-        "name": "Unknown Payload",
-        "description": "Details TBD.",
-        "type": "Unknown",
-        "orbit": "Unknown"
+        "name": "CAS Pathfinder-1",
+        "description": "The Chinese Academy of Science (CAS)' Pathfinder-1 satellites is built for in-orbit validation of critical technologies for the upcoming main missions of CAS' \"Origins” Space Science Program, which consists of 4 upcoming astronomical observatory missions to be launched by 2030:\r\n\r\n* Discovering the Sky at the Longest wavelength (DSL\r\n* Solar Polar Orbit Observatory (SPO)\r\n* Earth 2.0 (ET)\r\n* Enhanced X-ray Timing and Polarimetry (eXTP)\r\n\r\nThe mission consists of a main satellite and 3 sub-satellites, the later of which flies in formation to demonstrate a low frequency radio astronomy interferometry instrument.\r\n\r\nThe main satellite also contains the following science instrument:\r\n* Very Large Area Gamma-ray Space Telescope Pathfinder (VLAST-P)\r\n* a magnetometer (MHI)\r\n* an upper atmosphere LiDAR (HiRAL)\r\n* a Langmuir Probe (LMP)\r\n* a space weather monitor (SWEM)",
+        "type": "Technology",
+        "orbit": "Sun-Synchronous Orbit"
       },
       "pad": {
         "name": "Launch Area 94 (SLS-2 / 603)",
@@ -40,7 +40,7 @@
     {
       "id": "6aa7b90b-e5ed-45d8-a52e-04fbf399d178",
       "name": "Falcon 9 Block 5 | USSF-627",
-      "net": "2026-11-12T02:35:00Z",
+      "net": "2026-11-12T02:36:18Z",
       "window_start": "2026-11-12T02:35:00Z",
       "window_end": "2026-11-12T06:35:00Z",
       "status": {
@@ -153,13 +153,13 @@
       "name": "Vulcan VC6L | Amazon Leo (LV-01)",
       "net": "2026-11-13T17:54:00Z",
       "window_start": "2026-11-13T17:54:00Z",
-      "window_end": "2026-11-13T18:24:00Z",
+      "window_end": "2026-11-13T18:23:00Z",
       "status": {
         "abbrev": "Go",
         "name": "Go for Launch",
         "description": "Current T-0 confirmed by official or reliable sources."
       },
-      "probability": null,
+      "probability": 90,
       "provider": "United Launch Alliance",
       "rocket": "Vulcan VC6L",
       "mission": {
@@ -1227,74 +1227,6 @@
       "webcast_live": false
     },
     {
-      "id": "875ba957-be5f-42bd-8a6e-ed98254f572a",
-      "name": "Firefly Alpha Block 2 | ConnectedCosmos Launch 1",
-      "net": "2026-12-31T00:00:00Z",
-      "window_start": "2026-12-31T00:00:00Z",
-      "window_end": "2026-12-31T00:00:00Z",
-      "status": {
-        "abbrev": "TBD",
-        "name": "To Be Determined",
-        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
-      },
-      "probability": null,
-      "provider": "Firefly Aerospace",
-      "rocket": "Firefly Alpha Block 2",
-      "mission": {
-        "name": "ConnectedCosmos Launch 1",
-        "description": "First of at least four missions carrying 6 satellites for Open Cosmos' secure LEO broadband constellation, designed to provide independent and resilient connectivity infrastructure for Europe and the world using high-priority Ka-band spectrum filings by the Principality of Liechtenstein.",
-        "type": "Communications",
-        "orbit": "Polar Orbit"
-      },
-      "pad": {
-        "name": "Space Launch Complex 2W",
-        "map_url": "https://www.google.com/maps?q=34.7556,-120.6224",
-        "latitude": 34.7556,
-        "longitude": -120.6224,
-        "location": {
-          "name": "Vandenberg SFB, CA, USA",
-          "country_code": "US"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/firefly_alpha_l_image_20240605174156.jpeg",
-      "webcasts": [],
-      "webcast_live": false
-    },
-    {
-      "id": "d47cbca4-48c1-455a-b357-f156833b189e",
-      "name": "Firefly Alpha Block 2 | ConnectedCosmos Launch 2",
-      "net": "2026-12-31T00:00:00Z",
-      "window_start": "2026-12-31T00:00:00Z",
-      "window_end": "2026-12-31T00:00:00Z",
-      "status": {
-        "abbrev": "TBD",
-        "name": "To Be Determined",
-        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
-      },
-      "probability": null,
-      "provider": "Firefly Aerospace",
-      "rocket": "Firefly Alpha Block 2",
-      "mission": {
-        "name": "ConnectedCosmos Launch 2",
-        "description": "Second of at least four missions carrying 6 satellites for Open Cosmos' secure LEO broadband constellation, designed to provide independent and resilient connectivity infrastructure for Europe and the world using high-priority Ka-band spectrum filings by the Principality of Liechtenstein.",
-        "type": "Communications",
-        "orbit": "Polar Orbit"
-      },
-      "pad": {
-        "name": "Space Launch Complex 2W",
-        "map_url": "https://www.google.com/maps?q=34.7556,-120.6224",
-        "latitude": 34.7556,
-        "longitude": -120.6224,
-        "location": {
-          "name": "Vandenberg SFB, CA, USA",
-          "country_code": "US"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/firefly_alpha_l_image_20240605174156.jpeg",
-      "webcasts": [],
-      "webcast_live": false
-    },
-    {
       "id": "60f4ba6c-4201-4727-94aa-0015a5a0023f",
       "name": "Spectrum | 1 x Pelican satellite",
       "net": "2026-12-31T00:00:00Z",
@@ -2073,6 +2005,74 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_heavy_image_20220129192819.jpeg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "05864985-e660-4723-b489-32a78d4b53fc",
+      "name": "Gaganyaan Abort Test Booster | TV-D2",
+      "net": "2026-12-31T00:00:00Z",
+      "window_start": "2026-12-31T00:00:00Z",
+      "window_end": "2026-12-31T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "Indian Space Research Organization",
+      "rocket": "Gaganyaan Abort Test Booster",
+      "mission": {
+        "name": "TV-D2",
+        "description": "The second inflight abort test of the Gaganyaan program.",
+        "type": "Test Flight",
+        "orbit": "Suborbital"
+      },
+      "pad": {
+        "name": "Satish Dhawan Space Centre First Launch Pad",
+        "map_url": "https://www.google.com/maps?q=13.733,80.235",
+        "latitude": 13.733,
+        "longitude": 80.235,
+        "location": {
+          "name": "Satish Dhawan Space Centre, India",
+          "country_code": "IN"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/gaganyaan_abort_image_20231021132156.jpeg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "4ca86de3-2ff8-4fd3-a22c-35b7fc618610",
+      "name": "Gravity-2 | Demo Flight",
+      "net": "2026-12-31T00:00:00Z",
+      "window_start": "2026-12-31T00:00:00Z",
+      "window_end": "2026-12-31T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "Orienspace Technology",
+      "rocket": "Gravity-2",
+      "mission": {
+        "name": "Demo Flight",
+        "description": "First test launch of OrienSpace’s Gravity-2 rocket.",
+        "type": "Test Flight",
+        "orbit": "Unknown"
+      },
+      "pad": {
+        "name": "Unknown launch location",
+        "map_url": "https://www.google.com/maps?q=36.676794,121.235103",
+        "latitude": 36.676794,
+        "longitude": 121.235103,
+        "location": {
+          "name": "Haiyang Oriental Spaceport",
+          "country_code": "CN"
+        }
+      },
+      "image": null,
       "webcasts": [],
       "webcast_live": false
     }
