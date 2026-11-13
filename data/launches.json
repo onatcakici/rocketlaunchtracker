@@ -1,55 +1,8 @@
 {
-  "generated": "2026-11-12T19:59:41Z",
+  "generated": "2026-11-13T06:52:07Z",
   "sample": false,
   "count": 60,
   "results": [
-    {
-      "id": "6aa7b90b-e5ed-45d8-a52e-04fbf399d178",
-      "name": "Falcon 9 Block 5 | USSF-627",
-      "net": "2026-11-12T04:36:30Z",
-      "window_start": "2026-11-12T02:35:00Z",
-      "window_end": "2026-11-12T06:35:00Z",
-      "status": {
-        "abbrev": "Success",
-        "name": "Launch Successful",
-        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
-      },
-      "probability": null,
-      "provider": "SpaceX",
-      "rocket": "Falcon 9 Block 5",
-      "mission": {
-        "name": "USSF-627",
-        "description": "A classified mission for the United States Space Force. It is possibly a batch of classified LEO satellites based on SpaceX’s Starshield satellite bus, based on locations of rocket stage drop zones being exact fits with previous Starlink Group 15 launches.",
-        "type": "Government/Top Secret",
-        "orbit": "Low Earth Orbit"
-      },
-      "pad": {
-        "name": "Space Launch Complex 4E",
-        "map_url": "https://www.google.com/maps?q=34.632,-120.611",
-        "latitude": 34.632,
-        "longitude": -120.611,
-        "location": {
-          "name": "Vandenberg SFB, CA, USA",
-          "country_code": "US"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_20260816171423.jpg",
-      "webcasts": [
-        {
-          "title": "SpaceX USSF-627",
-          "url": "https://www.youtube.com/watch?v=rq7SLpK5vlY"
-        },
-        {
-          "title": "SpaceX Falcon 9 rocket launches classified U.S. Space Force mission from California",
-          "url": "https://www.youtube.com/watch?v=tM6K9RMvx0Y"
-        },
-        {
-          "title": "USSF-627 Mission",
-          "url": "https://x.com/i/broadcasts/2brkWyolnlBbLM"
-        }
-      ],
-      "webcast_live": false
-    },
     {
       "id": "ef9850ad-1096-425b-9d27-f7bbd186e61a",
       "name": "Vulcan VC6L | Amazon Leo (LV-01)",
@@ -178,25 +131,30 @@
         "orbit": "Low Earth Orbit"
       },
       "pad": {
-        "name": "Unknown Pad",
-        "map_url": null,
-        "latitude": -39.260881,
-        "longitude": 177.865826,
+        "name": "Rocket Lab Launch Complex 1A",
+        "map_url": "https://www.google.com/maps?q=-39.262833,177.864469",
+        "latitude": -39.262833,
+        "longitude": 177.864469,
         "location": {
           "name": "Rocket Lab Launch Complex 1, Mahia Peninsula, New Zealand",
           "country_code": "NZ"
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/electron_image_20190705175640.jpeg",
-      "webcasts": [],
+      "webcasts": [
+        {
+          "title": "Rocket Lab | LAUNCH 100 - The Mountain God Rises",
+          "url": "https://www.youtube.com/watch?v=kyR8kZ2XlhQ"
+        }
+      ],
       "webcast_live": false
     },
     {
       "id": "76617033-4dc0-4448-b50c-e5b0d5a18539",
       "name": "Falcon 9 Block 5 | USSF-317",
-      "net": "2026-11-15T03:55:00Z",
-      "window_start": "2026-11-15T03:55:00Z",
-      "window_end": "2026-11-15T07:55:00Z",
+      "net": "2026-11-18T03:14:00Z",
+      "window_start": "2026-11-18T03:14:00Z",
+      "window_end": "2026-11-18T07:14:00Z",
       "status": {
         "abbrev": "Go",
         "name": "Go for Launch",
@@ -2082,6 +2040,40 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_heavy_image_20220129192819.jpeg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "05864985-e660-4723-b489-32a78d4b53fc",
+      "name": "Gaganyaan Abort Test Booster | TV-D2",
+      "net": "2026-12-31T00:00:00Z",
+      "window_start": "2026-12-31T00:00:00Z",
+      "window_end": "2026-12-31T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "Indian Space Research Organization",
+      "rocket": "Gaganyaan Abort Test Booster",
+      "mission": {
+        "name": "TV-D2",
+        "description": "The second inflight abort test of the Gaganyaan program.",
+        "type": "Test Flight",
+        "orbit": "Suborbital"
+      },
+      "pad": {
+        "name": "Satish Dhawan Space Centre First Launch Pad",
+        "map_url": "https://www.google.com/maps?q=13.733,80.235",
+        "latitude": 13.733,
+        "longitude": 80.235,
+        "location": {
+          "name": "Satish Dhawan Space Centre, India",
+          "country_code": "IN"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/gaganyaan_abort_image_20231021132156.jpeg",
       "webcasts": [],
       "webcast_live": false
     }
