@@ -1,18 +1,18 @@
 {
-  "generated": "2026-11-13T19:47:47Z",
+  "generated": "2026-11-14T06:33:21Z",
   "sample": false,
   "count": 60,
   "results": [
     {
       "id": "0f867f0c-5422-4d44-93b8-d7faaae7019b",
       "name": "Starship | Starlink Group 31-2 (Starship Flight 15)",
-      "net": "2026-11-13T22:45:00Z",
+      "net": "2026-11-13T22:47:36Z",
       "window_start": "2026-11-13T22:45:00Z",
       "window_end": "2026-11-14T00:00:00Z",
       "status": {
-        "abbrev": "Go",
-        "name": "Go for Launch",
-        "description": "Current T-0 confirmed by official or reliable sources."
+        "abbrev": "Deployed",
+        "name": "Payload Deployed",
+        "description": "Deployment of the payload(s) has been confirmed."
       },
       "probability": null,
       "provider": "SpaceX",
@@ -34,8 +34,29 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/starship_on_the_image_20260724044615.jpg",
-      "webcasts": [],
-      "webcast_live": false
+      "webcasts": [
+        {
+          "title": "STREAM 1 - GO! - SpaceX - Starship - Starship Flight 15 - Pad 2 - Starbase, TX - Space Affairs Live",
+          "url": "https://www.youtube.com/watch?v=dl4O6RqbvOs"
+        },
+        {
+          "title": "Starship Flight 15",
+          "url": "https://x.com/i/broadcasts/2brajgZlOKRMka"
+        },
+        {
+          "title": "Watch Live: SpaceX Starship launches on 15th flight with double catch planned",
+          "url": "https://www.youtube.com/watch?v=QlR1agMLyMk"
+        },
+        {
+          "title": "SPACEX LAUNCHES STARSHIP FLIGHT 15 - Launch & Booster Catch",
+          "url": "https://www.youtube.com/watch?v=9XM0lpVlvo0"
+        },
+        {
+          "title": "[4K] Watch Starship's First DOUBLE CATCH!!!",
+          "url": "https://www.youtube.com/watch?v=QJFdKoKNn2M"
+        }
+      ],
+      "webcast_live": true
     },
     {
       "id": "bff2fc91-eddd-4dfc-af26-ac0674cfab4d",
@@ -44,9 +65,9 @@
       "window_start": "2026-11-14T00:50:00Z",
       "window_end": "2026-11-14T01:50:00Z",
       "status": {
-        "abbrev": "Go",
-        "name": "Go for Launch",
-        "description": "Current T-0 confirmed by official or reliable sources."
+        "abbrev": "In Flight",
+        "name": "Launch in Flight",
+        "description": "The launch vehicle has lifted off from the launchpad."
       },
       "probability": null,
       "provider": "Russian Federal Space Agency (ROSCOSMOS)",
@@ -78,11 +99,11 @@
       "window_start": "2026-11-14T05:30:00Z",
       "window_end": "2026-11-14T05:30:00Z",
       "status": {
-        "abbrev": "Go",
-        "name": "Go for Launch",
-        "description": "Current T-0 confirmed by official or reliable sources."
+        "abbrev": "Deployed",
+        "name": "Payload Deployed",
+        "description": "Deployment of the payload(s) has been confirmed."
       },
-      "probability": null,
+      "probability": 90,
       "provider": "Rocket Lab",
       "rocket": "Electron",
       "mission": {
@@ -108,7 +129,7 @@
           "url": "https://www.youtube.com/watch?v=kyR8kZ2XlhQ"
         }
       ],
-      "webcast_live": false
+      "webcast_live": true
     },
     {
       "id": "ef9850ad-1096-425b-9d27-f7bbd186e61a",
