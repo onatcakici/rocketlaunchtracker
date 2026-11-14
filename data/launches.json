@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-14T18:11:19Z",
+  "generated": "2026-11-14T22:30:19Z",
   "sample": false,
   "count": 60,
   "results": [
@@ -10,9 +10,9 @@
       "window_start": "2026-11-13T22:45:00Z",
       "window_end": "2026-11-14T00:00:00Z",
       "status": {
-        "abbrev": "Deployed",
-        "name": "Payload Deployed",
-        "description": "Deployment of the payload(s) has been confirmed."
+        "abbrev": "Success",
+        "name": "Launch Successful",
+        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
       },
       "probability": null,
       "provider": "SpaceX",
