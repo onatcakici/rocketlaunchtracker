@@ -1,18 +1,18 @@
 {
-  "generated": "2026-11-15T06:41:54Z",
+  "generated": "2026-11-15T18:54:46Z",
   "sample": false,
   "count": 60,
   "results": [
     {
       "id": "ef9850ad-1096-425b-9d27-f7bbd186e61a",
       "name": "Vulcan VC6L | Amazon Leo (LV-01)",
-      "net": "2026-11-15T17:11:30Z",
+      "net": "2026-11-15T17:40:30Z",
       "window_start": "2026-11-15T17:11:30Z",
-      "window_end": "2026-11-15T17:31:00Z",
+      "window_end": "2026-11-15T17:40:30Z",
       "status": {
-        "abbrev": "Go",
-        "name": "Go for Launch",
-        "description": "Current T-0 confirmed by official or reliable sources."
+        "abbrev": "Failure",
+        "name": "Launch Failure",
+        "description": "Either the launch vehicle did not reach orbit, or the payload(s) failed to separate."
       },
       "probability": null,
       "provider": "United Launch Alliance",
@@ -40,7 +40,7 @@
           "url": "https://www.youtube.com/watch?v=qM5A1ZO9oh8"
         },
         {
-          "title": "Watch live: ULA Vulcan rocket launches from Cape Canaveral with 40 satellites for Amazon Leo",
+          "title": "Watch live: ULA Vulcan rocket fails after launch from Cape Canaveral",
           "url": "https://www.youtube.com/watch?v=qcA9uMBhTmo"
         }
       ],
