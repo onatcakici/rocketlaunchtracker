@@ -1,51 +1,8 @@
 {
-  "generated": "2026-11-16T06:39:20Z",
+  "generated": "2026-11-16T22:12:06Z",
   "sample": false,
   "count": 60,
   "results": [
-    {
-      "id": "ef9850ad-1096-425b-9d27-f7bbd186e61a",
-      "name": "Vulcan VC6L | Amazon Leo (LV-01)",
-      "net": "2026-11-15T17:40:30Z",
-      "window_start": "2026-11-15T17:11:30Z",
-      "window_end": "2026-11-15T17:40:30Z",
-      "status": {
-        "abbrev": "Failure",
-        "name": "Launch Failure",
-        "description": "Either the launch vehicle did not reach orbit, or the payload(s) failed to separate."
-      },
-      "probability": null,
-      "provider": "United Launch Alliance",
-      "rocket": "Vulcan VC6L",
-      "mission": {
-        "name": "Amazon Leo (LV-01)",
-        "description": "Amazon Leo, formerly known as Project Kuiper, is a mega constellation of satellites in Low Earth Orbit that will offer broadband internet access, this constellation will be managed by Kuiper Systems LLC, a subsidiary of Amazon. This constellation is planned to be composed of 3,276 satellites. The satellites are projected to be placed in 98 orbital planes in three orbital layers, one at 590 km, 610 km and 630 km altitude.\r\n\r\n45 satellites will be carried on each Vulcan launch.",
-        "type": "Communications",
-        "orbit": "Low Earth Orbit"
-      },
-      "pad": {
-        "name": "Space Launch Complex 41",
-        "map_url": "https://www.google.com/maps?q=28.58341025,-80.58303644",
-        "latitude": 28.58341025,
-        "longitude": -80.58303644,
-        "location": {
-          "name": "Cape Canaveral SFS, FL, USA",
-          "country_code": "US"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/vulcan_vc6l_on__image_20261114102518.jpeg",
-      "webcasts": [
-        {
-          "title": "Rocket Launch: Vulcan Leo 1",
-          "url": "https://www.youtube.com/watch?v=qM5A1ZO9oh8"
-        },
-        {
-          "title": "Replay: ULA Vulcan rocket fails after launch from Cape Canaveral",
-          "url": "https://www.youtube.com/watch?v=qcA9uMBhTmo"
-        }
-      ],
-      "webcast_live": false
-    },
     {
       "id": "e0a11eb1-0bda-4872-b36b-140247fd5c60",
       "name": "Long March 2D | Unknown Payload",
@@ -917,6 +874,40 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/gslv2520mk2520iii_image_20190604000938.jpg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "912a8aee-8fc2-47b4-81a5-040fa0e0a36f",
+      "name": "Vega-C | IRIDE 1",
+      "net": "2026-12-31T00:00:00Z",
+      "window_start": "2026-12-31T00:00:00Z",
+      "window_end": "2026-12-31T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "Avio S.p.A",
+      "rocket": "Vega-C",
+      "mission": {
+        "name": "IRIDE 1",
+        "description": "First dedicated launch for the European Space Agency's IRIDE Earth observation constellation, with six satellites onboard.",
+        "type": "Earth Science",
+        "orbit": "Sun-Synchronous Orbit"
+      },
+      "pad": {
+        "name": "Ariane Launch Area 1 (ELV)",
+        "map_url": "https://www.google.com/maps?q=5.236,-52.775",
+        "latitude": 5.236,
+        "longitude": -52.775,
+        "location": {
+          "name": "Guiana Space Centre, French Guiana",
+          "country_code": "GF"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/vega-c_image_20220713154437.jpg",
       "webcasts": [],
       "webcast_live": false
     },
