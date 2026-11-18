@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-18T07:36:27Z",
+  "generated": "2026-11-18T20:37:57Z",
   "sample": false,
   "count": 60,
   "results": [
@@ -79,13 +79,13 @@
     {
       "id": "a2975167-7c6f-4403-99e1-b40df17c8140",
       "name": "Long March 8A | SatNet LEO Group TBD?",
-      "net": "2026-11-20T11:00:00Z",
-      "window_start": "2026-11-20T11:00:00Z",
-      "window_end": "2026-11-20T14:00:00Z",
+      "net": "2026-11-20T11:59:00Z",
+      "window_start": "2026-11-20T11:51:00Z",
+      "window_end": "2026-11-20T12:17:00Z",
       "status": {
-        "abbrev": "TBC",
-        "name": "To Be Confirmed",
-        "description": "Awaiting official confirmation - current date is known with some certainty."
+        "abbrev": "Go",
+        "name": "Go for Launch",
+        "description": "Current T-0 confirmed by official or reliable sources."
       },
       "probability": null,
       "provider": "China Aerospace Science and Technology Corporation",
@@ -107,6 +107,40 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/cz-8a_launch_2_image_20251206093107.jpeg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "13270554-4bdb-42ae-916f-1bb54492204f",
+      "name": "Long March 6C | Unknown Payload",
+      "net": "2026-11-21T03:50:00Z",
+      "window_start": "2026-11-21T03:46:00Z",
+      "window_end": "2026-11-21T04:15:00Z",
+      "status": {
+        "abbrev": "Go",
+        "name": "Go for Launch",
+        "description": "Current T-0 confirmed by official or reliable sources."
+      },
+      "probability": null,
+      "provider": "China Aerospace Science and Technology Corporation",
+      "rocket": "Long March 6C",
+      "mission": {
+        "name": "Unknown Payload",
+        "description": "Details TBD.",
+        "type": "Unknown",
+        "orbit": "Unknown"
+      },
+      "pad": {
+        "name": "Launch Complex 9A",
+        "map_url": "https://www.google.com/maps?q=38.8583,111.5802",
+        "latitude": 38.8583,
+        "longitude": 111.5802,
+        "location": {
+          "name": "Taiyuan Satellite Launch Center, People's Republic of China",
+          "country_code": "CN"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/cz-6c_on_the_la_image_20240507065151.jpg",
       "webcasts": [],
       "webcast_live": false
     },
@@ -180,7 +214,20 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/ariane_64_lifto_image_20260618063419.jpg",
-      "webcasts": [],
+      "webcasts": [
+        {
+          "title": "Flight VA271 | Amazon Leo LE-04 | Ariane 6 | Arianespace",
+          "url": "https://www.youtube.com/watch?v=k2adMyxSoJE"
+        },
+        {
+          "title": "Vol VA271 | Amazon Leo LE-04 | Ariane 6 | Arianespace",
+          "url": "https://www.youtube.com/watch?v=w9Wokj3rBH4"
+        },
+        {
+          "title": "Lancement Ariane 6 pour la constellation Amazon LEO (VA271)",
+          "url": "https://www.youtube.com/watch?v=F4xjWb4OEs4"
+        }
+      ],
       "webcast_live": false
     },
     {
@@ -356,6 +403,45 @@
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/spectrum_on_the_image_20250321072643.jpeg",
       "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "b0d27def-0a88-44c3-a947-1fd5b8503e2c",
+      "name": "Falcon 9 Block 5 | USSF-380",
+      "net": "2026-11-28T04:53:00Z",
+      "window_start": "2026-11-28T04:53:00Z",
+      "window_end": "2026-11-28T08:53:00Z",
+      "status": {
+        "abbrev": "Go",
+        "name": "Go for Launch",
+        "description": "Current T-0 confirmed by official or reliable sources."
+      },
+      "probability": null,
+      "provider": "SpaceX",
+      "rocket": "Falcon 9 Block 5",
+      "mission": {
+        "name": "USSF-380",
+        "description": "A classified mission for the United States Space Force. It is possibly a batch of classified LEO satellites based on SpaceX’s Starshield satellite bus, based on locations of rocket stage drop zones being exact fits with previous Starlink Group 15 launches.",
+        "type": "Government/Top Secret",
+        "orbit": "Low Earth Orbit"
+      },
+      "pad": {
+        "name": "Space Launch Complex 4E",
+        "map_url": "https://www.google.com/maps?q=34.632,-120.611",
+        "latitude": 34.632,
+        "longitude": -120.611,
+        "location": {
+          "name": "Vandenberg SFB, CA, USA",
+          "country_code": "US"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_20260816171423.jpg",
+      "webcasts": [
+        {
+          "title": "USSF-380 Mission",
+          "url": "https://x.com/i/broadcasts/2ybQqgpAAEJmBB"
+        }
+      ],
       "webcast_live": false
     },
     {
@@ -1996,74 +2082,6 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/gaganyaan_abort_image_20231021132156.jpeg",
-      "webcasts": [],
-      "webcast_live": false
-    },
-    {
-      "id": "4ca86de3-2ff8-4fd3-a22c-35b7fc618610",
-      "name": "Gravity-2 | Demo Flight",
-      "net": "2026-12-31T00:00:00Z",
-      "window_start": "2026-12-31T00:00:00Z",
-      "window_end": "2026-12-31T00:00:00Z",
-      "status": {
-        "abbrev": "TBD",
-        "name": "To Be Determined",
-        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
-      },
-      "probability": null,
-      "provider": "Orienspace Technology",
-      "rocket": "Gravity-2",
-      "mission": {
-        "name": "Demo Flight",
-        "description": "First test launch of OrienSpace’s Gravity-2 rocket.",
-        "type": "Test Flight",
-        "orbit": "Unknown"
-      },
-      "pad": {
-        "name": "Unknown launch location",
-        "map_url": "https://www.google.com/maps?q=36.676794,121.235103",
-        "latitude": 36.676794,
-        "longitude": 121.235103,
-        "location": {
-          "name": "Haiyang Oriental Spaceport",
-          "country_code": "CN"
-        }
-      },
-      "image": null,
-      "webcasts": [],
-      "webcast_live": false
-    },
-    {
-      "id": "ac02da00-6e8b-45a0-b829-09d614891e6a",
-      "name": "H3-22 | ETS-9",
-      "net": "2026-12-31T00:00:00Z",
-      "window_start": "2026-12-31T00:00:00Z",
-      "window_end": "2026-12-31T00:00:00Z",
-      "status": {
-        "abbrev": "TBD",
-        "name": "To Be Determined",
-        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
-      },
-      "probability": null,
-      "provider": "Mitsubishi Heavy Industries",
-      "rocket": "H3-22",
-      "mission": {
-        "name": "ETS-9",
-        "description": "The Engineering Test Satellite 9 (ETS-9) is a JAXA project aimed to develop an advanced satellite bus, or common model, for various high-throughput satellites (HTS) for communications. \r\n\r\nThe new satellite bus by Mitsubishi Electric will focus specifically on advanced communication needs:\r\n- Up to 25kW of power to support HTS communications\r\n- Light mass, all-electric bus system achieved with 6kW high-power Hall thrusters (Japan-made).\r\n- High-power Hall thrusters significantly shorten delivery of orbiting satellite compared to other manufacturer’s 4.5kW-class electric-propulsion bus systems\r\n- The first Japanese geostationary satellite equipped with GPS receivers (Japan-made) for laborsaving autonomous orbital transfer and orbital maneuvering.",
-        "type": "Communications",
-        "orbit": "Geostationary Transfer Orbit"
-      },
-      "pad": {
-        "name": "Yoshinobu Launch Complex LP-2",
-        "map_url": "https://www.google.com/maps?q=30.400938,130.97564",
-        "latitude": 30.400938,
-        "longitude": 130.97564,
-        "location": {
-          "name": "Tanegashima Space Center, Japan",
-          "country_code": "JP"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/h3-22_liftoff__image_20251028183835.jpg",
       "webcasts": [],
       "webcast_live": false
     }
