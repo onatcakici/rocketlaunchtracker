@@ -1,27 +1,27 @@
 {
-  "generated": "2026-11-18T20:37:57Z",
+  "generated": "2026-11-19T07:32:37Z",
   "sample": false,
   "count": 60,
   "results": [
     {
       "id": "e0a11eb1-0bda-4872-b36b-140247fd5c60",
-      "name": "Long March 2D | Unknown Payload",
-      "net": "2026-11-18T22:50:00Z",
+      "name": "Long March 2D | Shijian 24",
+      "net": "2026-11-18T22:51:00Z",
       "window_start": "2026-11-18T22:43:00Z",
       "window_end": "2026-11-18T23:05:00Z",
       "status": {
-        "abbrev": "Go",
-        "name": "Go for Launch",
-        "description": "Current T-0 confirmed by official or reliable sources."
+        "abbrev": "Success",
+        "name": "Launch Successful",
+        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
       },
       "probability": null,
       "provider": "China Aerospace Science and Technology Corporation",
       "rocket": "Long March 2D",
       "mission": {
-        "name": "Unknown Payload",
-        "description": "Details TBD.",
-        "type": "Unknown",
-        "orbit": "Unknown"
+        "name": "Shijian 24",
+        "description": "Experimental Chinese satellite of unknown purposes.",
+        "type": "Government/Top Secret",
+        "orbit": "Sun-Synchronous Orbit"
       },
       "pad": {
         "name": "Launch Complex 9",
@@ -40,7 +40,7 @@
     {
       "id": "76617033-4dc0-4448-b50c-e5b0d5a18539",
       "name": "Falcon 9 Block 5 | USSF-317",
-      "net": "2026-11-20T02:46:00Z",
+      "net": "2026-11-20T04:28:55Z",
       "window_start": "2026-11-20T02:46:00Z",
       "window_end": "2026-11-20T06:46:00Z",
       "status": {
@@ -69,6 +69,14 @@
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_20260816171423.jpg",
       "webcasts": [
+        {
+          "title": "GO! - SpaceX - Falcon 9 - USSF-317 - SLC-4E - Vandenberg SFB, CA - Space Affairs Live",
+          "url": "https://www.youtube.com/watch?v=Zi7vbfr5FPI"
+        },
+        {
+          "title": "SpaceX Falcon 9 rocket launches from Vandenberg on classified U.S. Space Force mission",
+          "url": "https://www.youtube.com/watch?v=fk84K7QVWgw"
+        },
         {
           "title": "USSF-317 Mission",
           "url": "https://x.com/i/broadcasts/2lgkMvaRVPMdYR"
