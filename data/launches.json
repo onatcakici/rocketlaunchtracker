@@ -1,47 +1,8 @@
 {
-  "generated": "2026-11-21T07:17:01Z",
+  "generated": "2026-11-21T19:22:27Z",
   "sample": false,
   "count": 60,
   "results": [
-    {
-      "id": "a2975167-7c6f-4403-99e1-b40df17c8140",
-      "name": "Long March 8A | SatNet LEO Group 30",
-      "net": "2026-11-20T11:59:00Z",
-      "window_start": "2026-11-20T11:51:00Z",
-      "window_end": "2026-11-20T12:17:00Z",
-      "status": {
-        "abbrev": "Success",
-        "name": "Launch Successful",
-        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
-      },
-      "probability": null,
-      "provider": "China Aerospace Science and Technology Corporation",
-      "rocket": "Long March 8A",
-      "mission": {
-        "name": "SatNet LEO Group 30",
-        "description": "A batch of 9 Low Earth Orbit communication satellites for the Chinese state owned SatNet constellation operated by the China Satellite Network Group.\r\n\r\nThe constellation will eventually consists of 13000 satellites.",
-        "type": "Communications",
-        "orbit": "Low Earth Orbit"
-      },
-      "pad": {
-        "name": "Commercial LC-1",
-        "map_url": "https://www.google.com/maps?q=19.597275,110.930753",
-        "latitude": 19.597275,
-        "longitude": 110.930753,
-        "location": {
-          "name": "Wenchang Space Launch Site, People's Republic of China",
-          "country_code": "CN"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/cz-8a_launch_2_image_20251206093107.jpeg",
-      "webcasts": [
-        {
-          "title": "Live: Long March 8A Launches SatNet LEO Group 30 (No Commentary)",
-          "url": "https://www.youtube.com/watch?v=dUxmQvNnQEI"
-        }
-      ],
-      "webcast_live": false
-    },
     {
       "id": "76617033-4dc0-4448-b50c-e5b0d5a18539",
       "name": "Falcon 9 Block 5 | USSF-317",
@@ -2108,6 +2069,40 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/gaganyaan_abort_image_20231021132156.jpeg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "4ca86de3-2ff8-4fd3-a22c-35b7fc618610",
+      "name": "Gravity-2 | Demo Flight",
+      "net": "2026-12-31T00:00:00Z",
+      "window_start": "2026-12-31T00:00:00Z",
+      "window_end": "2026-12-31T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "Orienspace Technology",
+      "rocket": "Gravity-2",
+      "mission": {
+        "name": "Demo Flight",
+        "description": "First test launch of OrienSpace’s Gravity-2 rocket.",
+        "type": "Test Flight",
+        "orbit": "Unknown"
+      },
+      "pad": {
+        "name": "Unknown launch location",
+        "map_url": "https://www.google.com/maps?q=36.676794,121.235103",
+        "latitude": 36.676794,
+        "longitude": 121.235103,
+        "location": {
+          "name": "Haiyang Oriental Spaceport",
+          "country_code": "CN"
+        }
+      },
+      "image": null,
       "webcasts": [],
       "webcast_live": false
     }
