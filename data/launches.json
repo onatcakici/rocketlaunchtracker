@@ -1,55 +1,8 @@
 {
-  "generated": "2026-11-23T07:47:20Z",
+  "generated": "2026-11-23T23:58:25Z",
   "sample": false,
   "count": 60,
   "results": [
-    {
-      "id": "951a341f-236b-42fe-a667-4ab2fcf36eac",
-      "name": "Falcon 9 Block 5 | NROL-136",
-      "net": "2026-11-22T12:23:56Z",
-      "window_start": "2026-11-22T12:16:00Z",
-      "window_end": "2026-11-22T12:46:00Z",
-      "status": {
-        "abbrev": "Success",
-        "name": "Launch Successful",
-        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
-      },
-      "probability": 100,
-      "provider": "SpaceX",
-      "rocket": "Falcon 9 Block 5",
-      "mission": {
-        "name": "NROL-136",
-        "description": "Fifteenth batch of satellites for a reconnaissance satellite constellation built by SpaceX and Northrop Grumman for the National Reconnaissance Office to provide imaging and other reconnaissance capabilities.",
-        "type": "Government/Top Secret",
-        "orbit": "Low Earth Orbit"
-      },
-      "pad": {
-        "name": "Space Launch Complex 4E",
-        "map_url": "https://www.google.com/maps?q=34.632,-120.611",
-        "latitude": 34.632,
-        "longitude": -120.611,
-        "location": {
-          "name": "Vandenberg SFB, CA, USA",
-          "country_code": "US"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_on_slc_image_20241024165956.jpg",
-      "webcasts": [
-        {
-          "title": "SpaceX NROL-136",
-          "url": "https://www.youtube.com/watch?v=NFIjyRFTPao"
-        },
-        {
-          "title": "Live: SpaceX Falcon 9 rocket launches from California with satellites for U.S. spy satellite agency",
-          "url": "https://www.youtube.com/watch?v=um48_-sSFrE"
-        },
-        {
-          "title": "NROL-136 Mission",
-          "url": "https://x.com/i/broadcasts/2yboJapzrmYNbe"
-        }
-      ],
-      "webcast_live": false
-    },
     {
       "id": "8dd5de11-831b-445f-86f0-bffefe0550d9",
       "name": "Soyuz 2.1b | Progress MS-36 (97P)",
@@ -87,13 +40,13 @@
     {
       "id": "7bdc412b-c965-4517-a131-f57a01189803",
       "name": "Ariane 64 Block 2 | Amazon Leo (LE-04)",
-      "net": "2026-11-24T11:09:00Z",
-      "window_start": "2026-11-24T11:09:00Z",
-      "window_end": "2026-11-24T11:38:00Z",
+      "net": "2026-11-24T10:45:00Z",
+      "window_start": "2026-11-24T10:45:00Z",
+      "window_end": "2026-11-24T11:14:00Z",
       "status": {
-        "abbrev": "TBC",
-        "name": "To Be Confirmed",
-        "description": "Awaiting official confirmation - current date is known with some certainty."
+        "abbrev": "Go",
+        "name": "Go for Launch",
+        "description": "Current T-0 confirmed by official or reliable sources."
       },
       "probability": null,
       "provider": "Arianespace",
@@ -315,40 +268,6 @@
       "webcast_live": false
     },
     {
-      "id": "8b46d360-6b3b-423f-9036-d5568e485624",
-      "name": "Kinetica 1 | Unknown Payload",
-      "net": "2026-11-29T01:00:00Z",
-      "window_start": "2026-11-29T01:00:00Z",
-      "window_end": "2026-11-29T04:00:00Z",
-      "status": {
-        "abbrev": "TBC",
-        "name": "To Be Confirmed",
-        "description": "Awaiting official confirmation - current date is known with some certainty."
-      },
-      "probability": null,
-      "provider": "CAS Space",
-      "rocket": "Kinetica 1",
-      "mission": {
-        "name": "Unknown Payload",
-        "description": "Details TBD.",
-        "type": "Unknown",
-        "orbit": "Unknown"
-      },
-      "pad": {
-        "name": "South China Sea (launch location 3)",
-        "map_url": "https://www.google.com/maps?q=21.366667,112.116667",
-        "latitude": 21.366667,
-        "longitude": 112.116667,
-        "location": {
-          "name": "Haiyang Oriental Spaceport",
-          "country_code": "CN"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/zhongke-1a_image_20220912002218.png",
-      "webcasts": [],
-      "webcast_live": false
-    },
-    {
       "id": "13270554-4bdb-42ae-916f-1bb54492204f",
       "name": "Long March 6C | Unknown Payload",
       "net": "2026-11-29T03:50:00Z",
@@ -529,6 +448,74 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/south2520korea_image_20231204145331.png",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "8b46d360-6b3b-423f-9036-d5568e485624",
+      "name": "Kinetica 1 | Unknown Payload",
+      "net": "2026-12-01T01:45:00Z",
+      "window_start": "2026-12-01T01:38:00Z",
+      "window_end": "2026-12-01T02:03:00Z",
+      "status": {
+        "abbrev": "Go",
+        "name": "Go for Launch",
+        "description": "Current T-0 confirmed by official or reliable sources."
+      },
+      "probability": null,
+      "provider": "CAS Space",
+      "rocket": "Kinetica 1",
+      "mission": {
+        "name": "Unknown Payload",
+        "description": "Details TBD.",
+        "type": "Unknown",
+        "orbit": "Unknown"
+      },
+      "pad": {
+        "name": "South China Sea (launch location 4)",
+        "map_url": "https://www.google.com/maps?q=21.133333%2C112.683333",
+        "latitude": 21.133333,
+        "longitude": 112.683333,
+        "location": {
+          "name": "Haiyang Oriental Spaceport",
+          "country_code": "CN"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/zhongke-1a_image_20220912002218.png",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "5591cfa3-6336-41ab-a37a-7c57aa28ab5f",
+      "name": "Falcon 9 Block 5 | NROL-132",
+      "net": "2026-12-02T20:30:00Z",
+      "window_start": "2026-12-02T20:30:00Z",
+      "window_end": "2026-12-03T00:30:00Z",
+      "status": {
+        "abbrev": "TBC",
+        "name": "To Be Confirmed",
+        "description": "Awaiting official confirmation - current date is known with some certainty."
+      },
+      "probability": null,
+      "provider": "SpaceX",
+      "rocket": "Falcon 9 Block 5",
+      "mission": {
+        "name": "NROL-132",
+        "description": "Sixteenth batch of satellites for a reconnaissance satellite constellation built by SpaceX and Northrop Grumman for the National Reconnaissance Office to provide imaging and other reconnaissance capabilities.",
+        "type": "Government/Top Secret",
+        "orbit": "Low Earth Orbit"
+      },
+      "pad": {
+        "name": "Space Launch Complex 4E",
+        "map_url": "https://www.google.com/maps?q=34.632,-120.611",
+        "latitude": 34.632,
+        "longitude": -120.611,
+        "location": {
+          "name": "Vandenberg SFB, CA, USA",
+          "country_code": "US"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_on_slc_image_20241024165956.jpg",
       "webcasts": [],
       "webcast_live": false
     },
