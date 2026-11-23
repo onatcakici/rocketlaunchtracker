@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-22T19:45:57Z",
+  "generated": "2026-11-23T07:47:20Z",
   "sample": false,
   "count": 60,
   "results": [
@@ -51,58 +51,11 @@
       "webcast_live": false
     },
     {
-      "id": "7bdc412b-c965-4517-a131-f57a01189803",
-      "name": "Ariane 64 Block 2 | Amazon Leo (LE-04)",
-      "net": "2026-11-23T11:09:00Z",
-      "window_start": "2026-11-23T11:09:00Z",
-      "window_end": "2026-11-23T11:38:00Z",
-      "status": {
-        "abbrev": "Go",
-        "name": "Go for Launch",
-        "description": "Current T-0 confirmed by official or reliable sources."
-      },
-      "probability": null,
-      "provider": "Arianespace",
-      "rocket": "Ariane 64 Block 2",
-      "mission": {
-        "name": "Amazon Leo (LE-04)",
-        "description": "Amazon Leo, formerly known as Project Kuiper, is a mega constellation of satellites in Low Earth Orbit that will offer broadband internet access, this constellation will be managed by Kuiper Systems LLC, a subsidiary of Amazon. This constellation is planned to be composed of 3,276 satellites. The satellites are projected to be placed in 98 orbital planes in three orbital layers, one at 590 km, 610 km and 630 km altitude.\r\n\r\n35-40 satellites will be carried on each Ariane 6 launch.",
-        "type": "Communications",
-        "orbit": "Low Earth Orbit"
-      },
-      "pad": {
-        "name": "Ariane Launch Area 4",
-        "map_url": "https://www.google.com/maps?q=5.256319,-52.786838",
-        "latitude": 5.256319,
-        "longitude": -52.786838,
-        "location": {
-          "name": "Guiana Space Centre, French Guiana",
-          "country_code": "GF"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/ariane_64_lifto_image_20260618063419.jpg",
-      "webcasts": [
-        {
-          "title": "Flight VA271 | Amazon Leo LE-04 | Ariane 6 | Arianespace",
-          "url": "https://www.youtube.com/watch?v=k2adMyxSoJE"
-        },
-        {
-          "title": "Vol VA271 | Amazon Leo LE-04 | Ariane 6 | Arianespace",
-          "url": "https://www.youtube.com/watch?v=w9Wokj3rBH4"
-        },
-        {
-          "title": "Lancement Ariane 6 pour la constellation Amazon LEO (VA271)",
-          "url": "https://www.youtube.com/watch?v=F4xjWb4OEs4"
-        }
-      ],
-      "webcast_live": false
-    },
-    {
       "id": "8dd5de11-831b-445f-86f0-bffefe0550d9",
       "name": "Soyuz 2.1b | Progress MS-36 (97P)",
-      "net": "2026-11-24T05:03:00Z",
-      "window_start": "2026-11-24T05:03:00Z",
-      "window_end": "2026-11-24T05:03:00Z",
+      "net": "2026-11-24T10:13:00Z",
+      "window_start": "2026-11-24T10:13:00Z",
+      "window_end": "2026-11-24T10:13:00Z",
       "status": {
         "abbrev": "TBC",
         "name": "To Be Confirmed",
@@ -129,6 +82,53 @@
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/soyuz_2.1b_image_20230802085331.jpg",
       "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "7bdc412b-c965-4517-a131-f57a01189803",
+      "name": "Ariane 64 Block 2 | Amazon Leo (LE-04)",
+      "net": "2026-11-24T11:09:00Z",
+      "window_start": "2026-11-24T11:09:00Z",
+      "window_end": "2026-11-24T11:38:00Z",
+      "status": {
+        "abbrev": "TBC",
+        "name": "To Be Confirmed",
+        "description": "Awaiting official confirmation - current date is known with some certainty."
+      },
+      "probability": null,
+      "provider": "Arianespace",
+      "rocket": "Ariane 64 Block 2",
+      "mission": {
+        "name": "Amazon Leo (LE-04)",
+        "description": "Amazon Leo, formerly known as Project Kuiper, is a mega constellation of satellites in Low Earth Orbit that will offer broadband internet access, this constellation will be managed by Kuiper Systems LLC, a subsidiary of Amazon. This constellation is planned to be composed of 3,276 satellites. The satellites are projected to be placed in 98 orbital planes in three orbital layers, one at 590 km, 610 km and 630 km altitude.\r\n\r\n35-40 satellites will be carried on each Ariane 6 launch.",
+        "type": "Communications",
+        "orbit": "Low Earth Orbit"
+      },
+      "pad": {
+        "name": "Ariane Launch Area 4",
+        "map_url": "https://www.google.com/maps?q=5.256319,-52.786838",
+        "latitude": 5.256319,
+        "longitude": -52.786838,
+        "location": {
+          "name": "Guiana Space Centre, French Guiana",
+          "country_code": "GF"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/ariane_64_lifto_image_20260618063419.jpg",
+      "webcasts": [
+        {
+          "title": "Postponed | Flight VA271 | Amazon Leo LE-04 | Ariane 6 | Arianespace",
+          "url": "https://www.youtube.com/watch?v=k2adMyxSoJE"
+        },
+        {
+          "title": "Reporté | Vol VA271 | Amazon Leo LE-04 | Ariane 6 | Arianespace",
+          "url": "https://www.youtube.com/watch?v=w9Wokj3rBH4"
+        },
+        {
+          "title": "Lancement Ariane 6 pour la constellation Amazon LEO (VA271)",
+          "url": "https://www.youtube.com/watch?v=F4xjWb4OEs4"
+        }
+      ],
       "webcast_live": false
     },
     {
@@ -163,6 +163,14 @@
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_20260816171423.jpg",
       "webcasts": [
+        {
+          "title": "GO! - SpaceX - Falcon 9 - USSF-266 - SLC-4E - Vandenberg SFB, CA - Space Affairs Live",
+          "url": "https://www.youtube.com/watch?v=oELkxR9uY8Q"
+        },
+        {
+          "title": "SpaceX Launches Falcon 9 with USSF-266",
+          "url": "https://www.youtube.com/watch?v=0HG7obl5IAo"
+        },
         {
           "title": "USSF-266 Mission",
           "url": "https://x.com/i/broadcasts/2JQXBjLyYOQrpX"
