@@ -1,18 +1,18 @@
 {
-  "generated": "2026-11-23T23:58:25Z",
+  "generated": "2026-11-24T09:59:45Z",
   "sample": false,
   "count": 60,
   "results": [
     {
       "id": "8dd5de11-831b-445f-86f0-bffefe0550d9",
       "name": "Soyuz 2.1b | Progress MS-36 (97P)",
-      "net": "2026-11-24T10:13:00Z",
-      "window_start": "2026-11-24T10:13:00Z",
-      "window_end": "2026-11-24T10:13:00Z",
+      "net": "2026-11-24T10:17:00Z",
+      "window_start": "2026-11-24T10:17:00Z",
+      "window_end": "2026-11-24T10:17:00Z",
       "status": {
-        "abbrev": "TBC",
-        "name": "To Be Confirmed",
-        "description": "Awaiting official confirmation - current date is known with some certainty."
+        "abbrev": "Go",
+        "name": "Go for Launch",
+        "description": "Current T-0 confirmed by official or reliable sources."
       },
       "probability": null,
       "provider": "Russian Federal Space Agency (ROSCOSMOS)",
@@ -34,8 +34,21 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/soyuz_2.1b_image_20230802085331.jpg",
-      "webcasts": [],
-      "webcast_live": false
+      "webcasts": [
+        {
+          "title": "Progress 97 Cargo Ship Launch",
+          "url": "https://www.youtube.com/watch?v=LwQMevphh10"
+        },
+        {
+          "title": "Progress 97 Cargo Ship Launch",
+          "url": "https://plus.nasa.gov/scheduled-video/progress-97-cargo-ship-launch/"
+        },
+        {
+          "title": "Трансляция запуска грузового корабля «Прогресс МС-36»",
+          "url": "https://www.youtube.com/watch?v=-UddWcF9BTM"
+        }
+      ],
+      "webcast_live": true
     },
     {
       "id": "7bdc412b-c965-4517-a131-f57a01189803",
@@ -87,7 +100,7 @@
     {
       "id": "460d9db7-eaf6-4cd9-b095-cff433534c09",
       "name": "Falcon 9 Block 5 | USSF-266",
-      "net": "2026-11-24T15:55:00Z",
+      "net": "2026-11-24T16:08:59Z",
       "window_start": "2026-11-24T15:55:00Z",
       "window_end": "2026-11-24T19:55:00Z",
       "status": {
@@ -119,6 +132,10 @@
         {
           "title": "GO! - SpaceX - Falcon 9 - USSF-266 - SLC-4E - Vandenberg SFB, CA - Space Affairs Live",
           "url": "https://www.youtube.com/watch?v=oELkxR9uY8Q"
+        },
+        {
+          "title": "SpaceX Falcon 9 rocket launches from Vandenberg on secretive U.S. Space Force mission",
+          "url": "https://www.youtube.com/watch?v=Mx26fq3CcnQ"
         },
         {
           "title": "SpaceX Launches Falcon 9 with USSF-266",
