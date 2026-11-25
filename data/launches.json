@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-24T22:30:52Z",
+  "generated": "2026-11-25T08:43:38Z",
   "sample": false,
   "count": 60,
   "results": [
@@ -151,13 +151,13 @@
     {
       "id": "c9605b67-8a53-4239-a8ae-577fe3b79799",
       "name": "Long March 2F/G | Shenzhou 24",
-      "net": "2026-11-25T00:18:00Z",
+      "net": "2026-11-25T00:18:52Z",
       "window_start": "2026-11-25T00:08:00Z",
       "window_end": "2026-11-25T00:48:00Z",
       "status": {
-        "abbrev": "Go",
-        "name": "Go for Launch",
-        "description": "Current T-0 confirmed by official or reliable sources."
+        "abbrev": "Success",
+        "name": "Launch Successful",
+        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
       },
       "probability": null,
       "provider": "China Aerospace Science and Technology Corporation",
@@ -189,7 +189,7 @@
           "url": "https://www.youtube.com/watch?v=Jd_rM2JlOi4"
         }
       ],
-      "webcast_live": true
+      "webcast_live": false
     },
     {
       "id": "b00f0e9a-48d6-4f26-9cb5-7d19169ff7c4",
