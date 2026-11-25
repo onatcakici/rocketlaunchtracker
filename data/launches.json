@@ -1,153 +1,8 @@
 {
-  "generated": "2026-11-25T08:43:38Z",
+  "generated": "2026-11-25T21:45:42Z",
   "sample": false,
   "count": 60,
   "results": [
-    {
-      "id": "8dd5de11-831b-445f-86f0-bffefe0550d9",
-      "name": "Soyuz 2.1b | Progress MS-36 (97P)",
-      "net": "2026-11-24T10:17:46Z",
-      "window_start": "2026-11-24T10:17:46Z",
-      "window_end": "2026-11-24T10:17:46Z",
-      "status": {
-        "abbrev": "Success",
-        "name": "Launch Successful",
-        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
-      },
-      "probability": null,
-      "provider": "Russian Federal Space Agency (ROSCOSMOS)",
-      "rocket": "Soyuz 2.1b",
-      "mission": {
-        "name": "Progress MS-36 (97P)",
-        "description": "Progress resupply mission to the International Space Station.",
-        "type": "Resupply",
-        "orbit": "Low Earth Orbit"
-      },
-      "pad": {
-        "name": "31/6",
-        "map_url": "https://www.google.com/maps?q=45.996034,63.564003",
-        "latitude": 45.996034,
-        "longitude": 63.564003,
-        "location": {
-          "name": "Baikonur Cosmodrome, Republic of Kazakhstan",
-          "country_code": "KZ"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/soyuz_2.1b_image_20230802085331.jpg",
-      "webcasts": [
-        {
-          "title": "Progress 97 Cargo Ship Launch",
-          "url": "https://www.youtube.com/watch?v=LwQMevphh10"
-        },
-        {
-          "title": "Progress 97 Cargo Ship Launch",
-          "url": "https://plus.nasa.gov/scheduled-video/progress-97-cargo-ship-launch/"
-        },
-        {
-          "title": "Трансляция запуска грузового корабля «Прогресс МС-36»",
-          "url": "https://www.youtube.com/watch?v=-UddWcF9BTM"
-        }
-      ],
-      "webcast_live": false
-    },
-    {
-      "id": "7bdc412b-c965-4517-a131-f57a01189803",
-      "name": "Ariane 64 Block 2 | Amazon Leo (LE-04)",
-      "net": "2026-11-24T11:14:52Z",
-      "window_start": "2026-11-24T10:45:00Z",
-      "window_end": "2026-11-24T11:14:52Z",
-      "status": {
-        "abbrev": "Success",
-        "name": "Launch Successful",
-        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
-      },
-      "probability": null,
-      "provider": "Arianespace",
-      "rocket": "Ariane 64 Block 2",
-      "mission": {
-        "name": "Amazon Leo (LE-04)",
-        "description": "Amazon Leo, formerly known as Project Kuiper, is a mega constellation of satellites in Low Earth Orbit that will offer broadband internet access, this constellation will be managed by Kuiper Systems LLC, a subsidiary of Amazon. This constellation is planned to be composed of 3,276 satellites. The satellites are projected to be placed in 98 orbital planes in three orbital layers, one at 590 km, 610 km and 630 km altitude.\r\n\r\n35-40 satellites will be carried on each Ariane 6 launch.",
-        "type": "Communications",
-        "orbit": "Low Earth Orbit"
-      },
-      "pad": {
-        "name": "Ariane Launch Area 4",
-        "map_url": "https://www.google.com/maps?q=5.256319,-52.786838",
-        "latitude": 5.256319,
-        "longitude": -52.786838,
-        "location": {
-          "name": "Guiana Space Centre, French Guiana",
-          "country_code": "GF"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/ariane_64_lifto_image_20260618063419.jpg",
-      "webcasts": [
-        {
-          "title": "Flight VA271 | Amazon Leo LE-04 | Ariane 6 | Arianespace",
-          "url": "https://www.youtube.com/watch?v=k2adMyxSoJE"
-        },
-        {
-          "title": "Vol VA271 | Amazon Leo LE-04 | Ariane 6 | Arianespace",
-          "url": "https://www.youtube.com/watch?v=w9Wokj3rBH4"
-        },
-        {
-          "title": "Lancement Ariane 6 pour la constellation Amazon LEO (VA271)",
-          "url": "https://www.youtube.com/watch?v=F4xjWb4OEs4"
-        }
-      ],
-      "webcast_live": false
-    },
-    {
-      "id": "460d9db7-eaf6-4cd9-b095-cff433534c09",
-      "name": "Falcon 9 Block 5 | USSF-266",
-      "net": "2026-11-24T16:08:59Z",
-      "window_start": "2026-11-24T15:55:00Z",
-      "window_end": "2026-11-24T19:55:00Z",
-      "status": {
-        "abbrev": "Success",
-        "name": "Launch Successful",
-        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
-      },
-      "probability": null,
-      "provider": "SpaceX",
-      "rocket": "Falcon 9 Block 5",
-      "mission": {
-        "name": "USSF-266",
-        "description": "A classified mission for the United States Space Force. It is possibly a batch of classified LEO satellites based on SpaceX’s Starshield satellite bus, based on locations of ascent rocket stage drop zones being fits with previous SDA Transport Layer launches.",
-        "type": "Government/Top Secret",
-        "orbit": "Polar Orbit"
-      },
-      "pad": {
-        "name": "Space Launch Complex 4E",
-        "map_url": "https://www.google.com/maps?q=34.632,-120.611",
-        "latitude": 34.632,
-        "longitude": -120.611,
-        "location": {
-          "name": "Vandenberg SFB, CA, USA",
-          "country_code": "US"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_20260816171423.jpg",
-      "webcasts": [
-        {
-          "title": "SpaceX USSF-266",
-          "url": "https://www.youtube.com/watch?v=Fb7P2xSoF28"
-        },
-        {
-          "title": "SpaceX Falcon 9 rocket launches from Vandenberg on secretive U.S. Space Force mission",
-          "url": "https://www.youtube.com/watch?v=Mx26fq3CcnQ"
-        },
-        {
-          "title": "SpaceX Launches Falcon 9 with USSF-266",
-          "url": "https://www.youtube.com/watch?v=0HG7obl5IAo"
-        },
-        {
-          "title": "USSF-266 Mission",
-          "url": "https://x.com/i/broadcasts/2JQXBjLyYOQrpX"
-        }
-      ],
-      "webcast_live": false
-    },
     {
       "id": "c9605b67-8a53-4239-a8ae-577fe3b79799",
       "name": "Long March 2F/G | Shenzhou 24",
@@ -399,6 +254,10 @@
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
       "webcasts": [
         {
+          "title": "NASA's Northrop Grumman Commercial Resupply Services 25 Launch",
+          "url": "https://www.youtube.com/watch?v=YLrybIli73I"
+        },
+        {
           "title": "NASA’s Northrop Grumman Commercial Resupply Services 25 Launch",
           "url": "https://plus.nasa.gov/scheduled-video/nasas-northrop-grumman-commercial-resupply-services-25-launch/"
         },
@@ -546,6 +405,45 @@
       "webcast_live": false
     },
     {
+      "id": "8bf5f61e-a7e1-41e6-aede-7b87e4beebab",
+      "name": "Falcon 9 Block 5 | CHORUS",
+      "net": "2026-12-04T12:55:00Z",
+      "window_start": "2026-12-04T12:55:00Z",
+      "window_end": "2026-12-04T13:24:00Z",
+      "status": {
+        "abbrev": "Go",
+        "name": "Go for Launch",
+        "description": "Current T-0 confirmed by official or reliable sources."
+      },
+      "probability": null,
+      "provider": "SpaceX",
+      "rocket": "Falcon 9 Block 5",
+      "mission": {
+        "name": "CHORUS",
+        "description": "CHORUS is MDA's next generation Earth observation constellation, consisting of 2 radar satellites (C-band SAR and X-band SAR), in a 53.5 degree 600 km altitude LEO, with the X-band trailing the C-band by 60 minutes. A collaborative multi-sensor constellation, CHORUS will bring together diverse and unique imagery and data sources and provide a new level of near real-time insight and innovative Earth observation services. Operating in a unique mid-inclination orbit, CHORUS will be able to image day or night, regardless of weather conditions, with daily access of up to 95% of the coverage area. From an industry-leading 700km-wide imaging swath down to sub-metre high resolution, CHORUS will provide the most extensive and unrivalled Earth observation radar imaging capacity available on the market in a single mission.\r\n\r\nAlso on board this mission are 2 satellites from ICEYE and PECCY.",
+        "type": "Earth Science",
+        "orbit": "Low Earth Orbit"
+      },
+      "pad": {
+        "name": "Space Launch Complex 40",
+        "map_url": "https://www.google.com/maps?q=28.56194122,-80.57735736",
+        "latitude": 28.56194122,
+        "longitude": -80.57735736,
+        "location": {
+          "name": "Cape Canaveral SFS, FL, USA",
+          "country_code": "US"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
+      "webcasts": [
+        {
+          "title": "MDA Space – MDA CHORUS Mission",
+          "url": "https://x.com/i/broadcasts/2VNlrbYvYNmMgM"
+        }
+      ],
+      "webcast_live": false
+    },
+    {
       "id": "5ce59e3a-c343-430f-ae4e-e608ba536754",
       "name": "Long March 12 | SatNet LEO Group TBD?",
       "net": "2026-12-10T07:00:00Z",
@@ -582,13 +480,13 @@
     {
       "id": "22e117bf-041c-49d5-9d09-7b180036e143",
       "name": "Ariane 62 | Metop-SG B1",
-      "net": "2026-12-17T00:00:00Z",
-      "window_start": "2026-12-17T00:00:00Z",
-      "window_end": "2026-12-17T00:00:00Z",
+      "net": "2026-12-18T00:36:00Z",
+      "window_start": "2026-12-18T00:36:00Z",
+      "window_end": "2026-12-18T00:36:00Z",
       "status": {
-        "abbrev": "TBD",
-        "name": "To Be Determined",
-        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+        "abbrev": "Go",
+        "name": "Go for Launch",
+        "description": "Current T-0 confirmed by official or reliable sources."
       },
       "probability": null,
       "provider": "Arianespace",
@@ -631,40 +529,6 @@
         "name": "Amazon Leo (LF-04)",
         "description": "Amazon Leo, formerly known as Project Kuiper, is a mega constellation of satellites in Low Earth Orbit designed to offer broadband internet access managed by Kuiper Systems LLC, a subsidiary of Amazon. This constellation is planned to be composed of 3,276 satellites. The satellites are projected to be placed in 98 orbital planes in three orbital layers, one at 590 km, 610 km and 630 km altitude.",
         "type": "Communications",
-        "orbit": "Low Earth Orbit"
-      },
-      "pad": {
-        "name": "Unknown Pad",
-        "map_url": "https://www.google.com/maps?q=28.458,-80.528",
-        "latitude": 28.458,
-        "longitude": -80.528,
-        "location": {
-          "name": "Cape Canaveral SFS, FL, USA",
-          "country_code": "US"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
-      "webcasts": [],
-      "webcast_live": false
-    },
-    {
-      "id": "8bf5f61e-a7e1-41e6-aede-7b87e4beebab",
-      "name": "Falcon 9 Block 5 | CHORUS",
-      "net": "2026-12-31T00:00:00Z",
-      "window_start": "2026-12-31T00:00:00Z",
-      "window_end": "2026-12-31T00:00:00Z",
-      "status": {
-        "abbrev": "TBD",
-        "name": "To Be Determined",
-        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
-      },
-      "probability": null,
-      "provider": "SpaceX",
-      "rocket": "Falcon 9 Block 5",
-      "mission": {
-        "name": "CHORUS",
-        "description": "CHORUS is MDA's next generation Earth observation constellation, consisting of 2 radar satellites (C-band SAR and X-band SAR), in a 53.5 degree 600 km altitude LEO, with the X-band trailing the C-band by 60 minutes. A collaborative multi-sensor constellation, CHORUS will bring together diverse and unique imagery and data sources and provide a new level of near real-time insight and innovative Earth observation services. Operating in a unique mid-inclination orbit, CHORUS will be able to image day or night, regardless of weather conditions, with daily access of up to 95% of the coverage area. From an industry-leading 700km-wide imaging swath down to sub-metre high resolution, CHORUS will provide the most extensive and unrivalled Earth observation radar imaging capacity available on the market in a single mission.",
-        "type": "Earth Science",
         "orbit": "Low Earth Orbit"
       },
       "pad": {
@@ -2115,6 +1979,108 @@
         }
       },
       "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/atlas_v_n22_image_20210813082339.jpeg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "7149bbf6-bf27-4115-bb19-8c7c7b93fad9",
+      "name": "KAIROS | JSDF SDA Demonstration satellite",
+      "net": "2027-01-22T06:00:00Z",
+      "window_start": "2027-01-22T06:00:00Z",
+      "window_end": "2027-01-22T06:20:00Z",
+      "status": {
+        "abbrev": "Go",
+        "name": "Go for Launch",
+        "description": "Current T-0 confirmed by official or reliable sources."
+      },
+      "probability": null,
+      "provider": "Space One",
+      "rocket": "Kii-based Advanced & Instant ROcket System",
+      "mission": {
+        "name": "JSDF SDA Demonstration satellite",
+        "description": "Demonstration satellite for Space Domain Awareness (SDA) observations of objects in low and high Earth orbits for the Japanese Ministry of Defense.",
+        "type": "Space Situational Awareness",
+        "orbit": "Sun-Synchronous Orbit"
+      },
+      "pad": {
+        "name": "Space One Launch Pad",
+        "map_url": null,
+        "latitude": 33.544224,
+        "longitude": 135.889502,
+        "location": {
+          "name": "Spaceport Kii, Japan",
+          "country_code": "JP"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/kairos_image_20240216144656.jpeg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "0d6ad64c-3aed-4041-b095-e1d951bc6d29",
+      "name": "Electron | Aspera",
+      "net": "2027-01-29T00:00:00Z",
+      "window_start": "2027-01-29T00:00:00Z",
+      "window_end": "2027-01-29T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "Rocket Lab",
+      "rocket": "Electron",
+      "mission": {
+        "name": "Aspera",
+        "description": "Aspera houses an ultraviolet telescope and will examine hot gas in the  intergalactic medium, thought to be contributing to the birth of stars and planets. Aspera will be the first NASA astrophysics mission to gather and map these ultraviolet light signatures, potentially unlocking a deeper understanding of the origins of stars, planets, and life in the universe.",
+        "type": "Astrophysics",
+        "orbit": "Low Earth Orbit"
+      },
+      "pad": {
+        "name": "Unknown Pad",
+        "map_url": null,
+        "latitude": -39.260881,
+        "longitude": 177.865826,
+        "location": {
+          "name": "Rocket Lab Launch Complex 1, Mahia Peninsula, New Zealand",
+          "country_code": "NZ"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/electron_image_20190705175640.jpeg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "de3d5d91-f115-4a86-b923-203a91a08735",
+      "name": "Falcon 9 Block 5 | Axiom Space Mission 5",
+      "net": "2027-01-31T00:00:00Z",
+      "window_start": "2027-01-31T00:00:00Z",
+      "window_end": "2027-01-31T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "SpaceX",
+      "rocket": "Falcon 9 Block 5",
+      "mission": {
+        "name": "Axiom Space Mission 5",
+        "description": "This is a Crew Dragon flight for a private company Axiom Space. The mission will carry a professionally trained commander alongside three private astronauts to and from the International Space Station for a month.",
+        "type": "Tourism",
+        "orbit": "Low Earth Orbit"
+      },
+      "pad": {
+        "name": "Space Launch Complex 40",
+        "map_url": "https://www.google.com/maps?q=28.56194122,-80.57735736",
+        "latitude": 28.56194122,
+        "longitude": -80.57735736,
+        "location": {
+          "name": "Cape Canaveral SFS, FL, USA",
+          "country_code": "US"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20210525170218.jpeg",
       "webcasts": [],
       "webcast_live": false
     }
