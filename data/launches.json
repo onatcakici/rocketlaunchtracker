@@ -1,42 +1,8 @@
 {
-  "generated": "2026-11-27T08:42:50Z",
+  "generated": "2026-11-27T21:23:41Z",
   "sample": false,
   "count": 60,
   "results": [
-    {
-      "id": "b00f0e9a-48d6-4f26-9cb5-7d19169ff7c4",
-      "name": "Long March 2D | Yaogan 49 Group 01",
-      "net": "2026-11-26T09:38:00Z",
-      "window_start": "2026-11-26T09:30:00Z",
-      "window_end": "2026-11-26T09:52:00Z",
-      "status": {
-        "abbrev": "Success",
-        "name": "Launch Successful",
-        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
-      },
-      "probability": null,
-      "provider": "China Aerospace Science and Technology Corporation",
-      "rocket": "Long March 2D",
-      "mission": {
-        "name": "Yaogan 49 Group 01",
-        "description": "Chinese reconnaissance satellites of unknown functions.",
-        "type": "Government/Top Secret",
-        "orbit": "Low Earth Orbit"
-      },
-      "pad": {
-        "name": "Launch Complex 3 (LC-3/LA-1)",
-        "map_url": "https://www.google.com/maps?q=28.247059,102.029008",
-        "latitude": 28.247059,
-        "longitude": 102.029008,
-        "location": {
-          "name": "Xichang Satellite Launch Center, People's Republic of China",
-          "country_code": "CN"
-        }
-      },
-      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/long2520march25202d_image_20190222031211.jpeg",
-      "webcasts": [],
-      "webcast_live": false
-    },
     {
       "id": "2093e4fc-ac8c-4296-a1b5-deececee6a72",
       "name": "Electron | Night Owls Never Sleep (StriX Launch 14)",
@@ -78,23 +44,23 @@
     },
     {
       "id": "a6421db3-7c8a-4cf7-a659-cec195140f7f",
-      "name": "Long March 6A | Unknown Payload",
-      "net": "2026-11-27T13:00:00Z",
+      "name": "Long March 6A | Yaogan 50-04",
+      "net": "2026-11-27T13:05:00Z",
       "window_start": "2026-11-27T12:53:00Z",
       "window_end": "2026-11-27T13:15:00Z",
       "status": {
-        "abbrev": "Go",
-        "name": "Go for Launch",
-        "description": "Current T-0 confirmed by official or reliable sources."
+        "abbrev": "Success",
+        "name": "Launch Successful",
+        "description": "The launch vehicle successfully inserted its payload(s) into the target orbit(s)."
       },
       "probability": null,
       "provider": "China Aerospace Science and Technology Corporation",
       "rocket": "Long March 6A",
       "mission": {
-        "name": "Unknown Payload",
-        "description": "Details TBD.",
-        "type": "Unknown",
-        "orbit": "Unknown"
+        "name": "Yaogan 50-04",
+        "description": "The Yaogan 50-04 is a Chinese military “remote sensing” satellite of unknown purposes.",
+        "type": "Government/Top Secret",
+        "orbit": "Low Earth Orbit"
       },
       "pad": {
         "name": "Launch Complex 9A",
@@ -181,6 +147,10 @@
           "url": "https://www.youtube.com/watch?v=xpfmP-4EGIw"
         },
         {
+          "title": "SpaceX Falcon 9 rocket launches U.S. Space Force satellites from Vandenberg, California",
+          "url": "https://www.youtube.com/watch?v=IwYSJ4ne7GM"
+        },
+        {
           "title": "SpaceX Launches Falcon 9 with USSF-380",
           "url": "https://www.youtube.com/watch?v=CLULlErcxF4"
         },
@@ -202,7 +172,7 @@
         "name": "Go for Launch",
         "description": "Current T-0 confirmed by official or reliable sources."
       },
-      "probability": null,
+      "probability": 60,
       "provider": "SpaceX",
       "rocket": "Falcon 9 Block 5",
       "mission": {
@@ -2085,6 +2055,40 @@
         "longitude": -80.528,
         "location": {
           "name": "Cape Canaveral SFS, FL, USA",
+          "country_code": "US"
+        }
+      },
+      "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
+      "webcasts": [],
+      "webcast_live": false
+    },
+    {
+      "id": "5276b922-e440-466b-9b19-5851a2d67e75",
+      "name": "Falcon 9 Block 5 | SDA Tranche 2 Transport Layer F",
+      "net": "2027-01-31T00:00:00Z",
+      "window_start": "2027-01-31T00:00:00Z",
+      "window_end": "2027-01-31T00:00:00Z",
+      "status": {
+        "abbrev": "TBD",
+        "name": "To Be Determined",
+        "description": "Current date is a placeholder or rough estimation based on unreliable or interpreted sources."
+      },
+      "probability": null,
+      "provider": "SpaceX",
+      "rocket": "Falcon 9 Block 5",
+      "mission": {
+        "name": "SDA Tranche 2 Transport Layer F",
+        "description": "Classified mission launched by the Space Development Agency (SDA) for Tranche 2 Transport Layer.",
+        "type": "Government/Top Secret",
+        "orbit": "Polar Orbit"
+      },
+      "pad": {
+        "name": "Space Launch Complex 4E",
+        "map_url": "https://www.google.com/maps?q=34.632,-120.611",
+        "latitude": 34.632,
+        "longitude": -120.611,
+        "location": {
+          "name": "Vandenberg SFB, CA, USA",
           "country_code": "US"
         }
       },
